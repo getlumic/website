@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lumic — your business, in your hands</title>
+<meta name="description" content="Lumic turns your business apps, spreadsheets, and tools into one beautiful, live dashboard. Automate the reports. Take command of every number.">
+
+<script>
+(function () {
+  var t = localStorage.getItem('lumicTheme') || 'light';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+
+<style>
+:root {
+  /* Aligned with the Lumic dashboards — navy primary, slate text, blue-gray bg.
+     Same exact tokens as sales_template.html / templates/office.html so the
+     website and the live demo feel like one product. */
+  --bg:           #f6f7fb;
+  --bg-2:         #eef1f8;       /* slightly deeper for alternating sections */
+  --card:         #ffffff;
+  --border:       #e2e8f0;
+  --border-soft:  #eef1f6;
+  --text:         #1e293b;       /* slate-800, dashboard body color */
+  --text-strong:  #0f172a;       /* slate-900 for big headlines */
+  --muted:        #64748b;       /* slate-500, dashboard muted */
+  --muted-2:      #94a3b8;
+
+  /* Lumic navy — same primary as the dashboards (Acme/Sealers brand color) */
+  --primary:      #5e5ce6;
+  --primary-2:    #4845c2;       /* hover/pressed */
+  --primary-soft: #eeedfd;       /* pale indigo wash for chips / icon bg */
+
+  /* Dashboard's bright Tailwind-600 indicators — direction signals */
+  --accent:       #16a34a;
+  --accent-soft:  #dcfce7;
+  --down:         #dc2626;
+  --down-soft:    #fee2e2;
+
+  --row-hover:    #f1f5f9;
+  /* Floating shadow — same multi-layer values used by both dashboards now */
+  --shadow-sm:    0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md:    0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 14px rgba(15, 23, 42, 0.07);
+  --shadow-lg:    0 4px 14px rgba(15, 23, 42, 0.07), 0 24px 48px rgba(15, 23, 42, 0.10);
+  --topnav-h:     64px;
+  --max-w:        1180px;
+}
+
+[data-theme="dark"] {
+  /* Aligned with the Lumic dashboards' dark mode — deep blue, lifted cards */
+  --bg:           #0e1525;
+  --bg-2:         #131b32;
+  --card:         #18213a;
+  --border:       #243152;
+  --border-soft:  #1d2742;
+  --text:         #e8edf7;
+  --text-strong:  #ffffff;
+  --muted:        #8a9ab8;
+  --muted-2:      #6b7a99;
+
+  /* Lighter blue for dark-mode contrast — same as dashboards */
+  --primary:      #7a78f0;
+  --primary-2:    #9694f5;
+  --primary-soft: #1f1d3a;
+
+  --accent:       #4ade80;
+  --accent-soft:  #0e3a22;
+  --down:         #fca5a5;
+  --down-soft:    #3d1414;
+
+  --row-hover:    #1f2a47;
+  --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.20);
+  --shadow-md:    0 1px 2px rgba(0, 0, 0, 0.20), 0 6px 18px rgba(0, 0, 0, 0.32);
+  --shadow-lg:    0 6px 18px rgba(0, 0, 0, 0.32), 0 24px 60px rgba(0, 0, 0, 0.50);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+html, body { background: var(--bg); color: var(--text); transition: background-color .25s ease, color .25s ease; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+::selection { background: var(--primary-soft); color: var(--text-strong); }
+
+.container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+/* ----------------- Top nav (glassmorphic, blur on scroll) ----------------- */
+.topnav {
+  position: fixed; top: 0; left: 0; right: 0; height: var(--topnav-h);
+  z-index: 100;
+  display: flex; align-items: center;
+  background: transparent;
+  transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+  border-bottom: 1px solid transparent;
+}
+.topnav.scrolled {
+  background: rgba(246, 247, 251, 0.78);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+[data-theme="dark"] .topnav.scrolled { background: rgba(14, 21, 37, 0.80); border-bottom-color: var(--border); }
+.topnav .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand {
+  font-size: 17px; font-weight: 700; letter-spacing: -.4px; color: var(--text-strong);
+  display: flex; align-items: center; gap: 9px;
+}
+.brand-mark {
+  width: 26px; height: 26px; border-radius: 7px;
+  background: var(--primary);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 6px rgba(94, 92, 230, 0.32);
+}
+.brand-mark svg { width: 14px; height: 14px; color: var(--card); }
+[data-theme="dark"] .brand-mark { background: var(--primary); }
+[data-theme="dark"] .brand-mark svg { color: var(--bg); }
+
+.nav-links { display: flex; align-items: center; gap: 6px; }
+.nav-link {
+  padding: 7px 13px; font-size: 13.5px; font-weight: 500;
+  color: var(--muted); border-radius: 8px; transition: color .15s, background .15s;
+}
+.nav-link:hover { color: var(--text-strong); background: var(--row-hover); }
+
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+.theme-toggle {
+  width: 34px; height: 34px; border-radius: 9px;
+  background: transparent; border: 1px solid var(--border);
+  color: var(--muted); display: flex; align-items: center; justify-content: center;
+  transition: .15s;
+}
+.theme-toggle:hover { background: var(--row-hover); color: var(--text-strong); }
+.theme-toggle svg { width: 16px; height: 16px; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+:root:not([data-theme="dark"]) .theme-toggle .icon-sun { display: none; }
+:root:not([data-theme="dark"]) .theme-toggle .icon-moon { display: block; }
+
+/* ----------------- Buttons (charcoal-on-cream / cream-on-coffee in dark) ----------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 10px 18px; font-size: 14px; font-weight: 600;
+  border-radius: 10px; border: 1px solid var(--border);
+  background: var(--card); color: var(--text-strong);
+  transition: .18s ease;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--row-hover); border-color: var(--muted-2); }
+.btn-primary {
+  background: var(--primary); color: var(--card);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(94, 92, 230, 0.28);
+}
+[data-theme="dark"] .btn-primary { color: var(--bg); }
+.btn-primary:hover {
+  background: var(--primary-2); border-color: var(--primary-2);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(94, 92, 230, 0.42);
+}
+.btn-lg { padding: 13px 24px; font-size: 15px; border-radius: 11px; }
+.btn-ghost { background: transparent; border-color: transparent; color: var(--text-strong); }
+.btn-ghost:hover { background: var(--row-hover); border-color: transparent; }
+.btn .arrow { transition: transform .2s; }
+.btn:hover .arrow { transform: translateX(3px); }
+
+/* ----------------- Hero ----------------- */
+.hero {
+  position: relative;
+  padding: calc(var(--topnav-h) + 64px) 0 80px;
+  overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px;
+  background-position: -1px -1px;
+  opacity: .35;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, #000 35%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, #000 35%, transparent 80%);
+  pointer-events: none;
+}
+[data-theme="dark"] .hero-grid { opacity: .22; }
+
+.hero-inner { position: relative; text-align: center; z-index: 2; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border-radius: 999px;
+  background: var(--primary-soft); color: var(--text-strong);
+  font-size: 12.5px; font-weight: 600; letter-spacing: .1px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-soft);
+}
+.eyebrow .dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+
+h1.hero-title {
+  font-size: clamp(40px, 6vw, 64px); font-weight: 700;
+  letter-spacing: -1.4px; line-height: 1.06;
+  color: var(--text-strong);
+  margin-bottom: 22px;
+  max-width: 820px; margin-left: auto; margin-right: auto;
+}
+.hero-title .grad {
+  background: linear-gradient(120deg, var(--text-strong) 0%, var(--muted) 90%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-sub {
+  font-size: clamp(16px, 1.6vw, 19px); color: var(--muted);
+  max-width: 640px; margin: 0 auto 36px;
+  line-height: 1.55;
+}
+.hero-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+
+/* ----- Hero dashboard preview (mock) ----- */
+.hero-preview {
+  position: relative; z-index: 2;
+  margin: 70px auto 0;
+  max-width: 980px;
+  border-radius: 18px; overflow: hidden;
+  background: var(--card); border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  transform: perspective(1400px) rotateX(2deg);
+  transition: transform .6s ease;
+}
+.hero-preview:hover { transform: perspective(1400px) rotateX(0); }
+.hp-bar {
+  display: flex; align-items: center; gap: 6px;
+  padding: 11px 16px; background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+}
+.hp-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--border); }
+.hp-dot:nth-child(1) { background: #ff5f57; }
+.hp-dot:nth-child(2) { background: #febc2e; }
+.hp-dot:nth-child(3) { background: #28c840; }
+.hp-url {
+  margin-left: 14px; padding: 4px 14px; border-radius: 6px;
+  background: var(--card); border: 1px solid var(--border);
+  font-size: 11.5px; color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.hp-body { padding: 22px 26px; }
+.hp-row1 {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px;
+}
+.hp-kpi {
+  background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--primary);
+  border-radius: 10px; padding: 12px 14px;
+  box-shadow: var(--shadow-sm);
+}
+.hp-kpi.good { border-left-color: var(--accent); }
+.hp-kpi.bad  { border-left-color: var(--down); }
+.hp-kpi-l { font-size: 9.5px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+.hp-kpi-v { font-size: 18px; font-weight: 700; color: var(--text-strong); margin-top: 4px; letter-spacing: -.3px; }
+.hp-kpi-d { font-size: 10px; color: var(--accent); font-weight: 600; margin-top: 2px; }
+.hp-kpi-d.bad { color: var(--down); }
+.hp-kpi-d.flat { color: var(--muted); }
+.hp-chart {
+  height: 220px; background: var(--bg-2); border-radius: 10px;
+  border: 1px solid var(--border); padding: 14px 16px;
+  display: flex; align-items: flex-end; gap: 8px;
+  position: relative; overflow: hidden;
+}
+.hp-chart::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(15, 23, 42, 0.06));
+  pointer-events: none;
+}
+.hp-bar-col {
+  flex: 1; background: linear-gradient(180deg, var(--primary) 0%, var(--primary-2) 100%);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  animation: barRise 1.1s ease forwards;
+  transform-origin: bottom;
+}
+@keyframes barRise { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+/* ----------------- Floating background KPI tiles (parallax) ----------------- */
+.float-tiles {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+.float-tile {
+  position: absolute;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: var(--shadow-md);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  opacity: 0;
+  will-change: transform;
+}
+.float-tile.in { opacity: .92; transition: opacity 1s ease; }
+[data-theme="dark"] .float-tile.in { opacity: .85; }
+.ft-l {
+  font-size: 9.5px; color: var(--muted); font-weight: 600;
+  text-transform: uppercase; letter-spacing: .55px;
+}
+.ft-v {
+  font-size: 18px; font-weight: 700; color: var(--text-strong);
+  margin-top: 4px; letter-spacing: -.3px;
+  font-variant-numeric: tabular-nums;
+}
+.ft-d { font-size: 10.5px; font-weight: 600; margin-top: 3px; }
+.ft-d.up   { color: var(--accent); }
+.ft-d.down { color: var(--down); }
+.ft-d.flat { color: var(--muted); }
+.float-tile.tile-spark { padding: 12px 16px 10px; }
+.ft-spark { display: flex; align-items: flex-end; gap: 3px; margin-top: 6px; height: 26px; }
+.ft-spark span {
+  flex: 1; background: var(--primary); border-radius: 2px 2px 0 0; opacity: .85;
+}
+
+/* Progress-bar tile variant */
+.ft-bar { margin-top: 8px; height: 5px; background: var(--row-hover); border-radius: 3px; overflow: hidden; }
+.ft-bar > span {
+  display: block; height: 100%;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-2) 100%);
+  border-radius: 3px;
+}
+.ft-bar-meta { font-size: 10px; color: var(--muted); font-weight: 500; margin-top: 4px; display: flex; justify-content: space-between; }
+
+/* Status-pill tile variant */
+.ft-pill {
+  display: inline-block; margin-top: 6px;
+  padding: 2px 9px; border-radius: 999px;
+  font-size: 10px; font-weight: 600; line-height: 1.6;
+}
+.ft-pill.ok   { background: var(--accent-soft); color: var(--accent); }
+.ft-pill.warn { background: #fef3c7; color: #ca8a04; }
+.ft-pill.bad  { background: var(--down-soft); color: var(--down); }
+[data-theme="dark"] .ft-pill.warn { background: #3a3107; color: #fbd147; }
+
+/* Minimal tile variant — just label + number, no delta */
+.float-tile.tile-min { padding: 12px 16px; }
+.float-tile.tile-min .ft-v { font-size: 22px; }
+
+/* "Live" pulsing dot — subtle attention without being annoying */
+.eyebrow .dot {
+  position: relative;
+}
+.eyebrow .dot::after {
+  content: ""; position: absolute; inset: -2px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2.4s ease-out infinite;
+  opacity: 0;
+}
+@keyframes pulse {
+  0%   { transform: scale(1);   opacity: .55; }
+  80%  { transform: scale(2.6); opacity: 0; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+
+/* ----------------- Sections ----------------- */
+section { padding: 100px 0; position: relative; }
+.section-head { text-align: center; margin-bottom: 56px; max-width: 680px; margin-left: auto; margin-right: auto; }
+.section-eyebrow {
+  font-size: 12.5px; font-weight: 600; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1.4px;
+  margin-bottom: 14px;
+}
+h2.section-title {
+  font-size: clamp(28px, 4vw, 42px); font-weight: 700;
+  letter-spacing: -.8px; line-height: 1.12;
+  color: var(--text-strong); margin-bottom: 16px;
+}
+.section-sub { font-size: 17px; color: var(--muted); line-height: 1.55; }
+
+/* ----- Problem section ----- */
+.problem { background: var(--bg-2); }
+.problem-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
+.problem-list { display: flex; flex-direction: column; gap: 14px; }
+.problem-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px 18px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+.pi-icon {
+  width: 36px; height: 36px; border-radius: 9px;
+  background: var(--primary-soft); color: var(--text-strong);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.pi-icon svg { width: 18px; height: 18px; }
+.pi-text strong { display: block; font-weight: 600; color: var(--text-strong); margin-bottom: 3px; font-size: 15px; }
+.pi-text span { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+
+.problem-quote {
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  padding: 32px 32px 28px;
+  position: relative; box-shadow: var(--shadow-md);
+}
+.problem-quote::before {
+  content: """; position: absolute; top: 16px; left: 22px;
+  font-family: Georgia, serif;
+  font-size: 80px; line-height: 1; color: var(--text-strong); opacity: .12;
+}
+.problem-quote .q {
+  position: relative; font-size: 17px; line-height: 1.55;
+  color: var(--text-strong); font-weight: 500;
+  margin-bottom: 18px; padding-left: 18px;
+}
+.problem-quote .who {
+  font-size: 13px; color: var(--muted); padding-left: 18px;
+  display: flex; align-items: center; gap: 10px;
+}
+.who-avatar {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--primary);
+  color: var(--card); display: flex; align-items: center; justify-content: center;
+  font-weight: 600; font-size: 12px;
+}
+[data-theme="dark"] .who-avatar { color: var(--bg); }
+
+/* ----- Capabilities grid ----- */
+.modules { background: var(--bg); }
+.module-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.module-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  padding: 28px 26px;
+  transition: box-shadow .25s ease, border-color .25s ease;
+  position: relative; overflow: hidden;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.module-card:hover {
+  border-color: var(--primary-soft);
+  box-shadow: var(--shadow-lg);
+}
+/* Subtle gradient glow that reveals on hover — anchors to a CSS variable
+   set by the cursor-tracking JS so the highlight follows the mouse. */
+.module-card::before {
+  content: ""; position: absolute; inset: 0;
+  border-radius: 16px;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(94, 92, 230, 0.12),
+    transparent 45%
+  );
+  opacity: 0; transition: opacity .35s ease;
+  pointer-events: none;
+}
+[data-theme="dark"] .module-card::before {
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(96, 165, 250, 0.18),
+    transparent 45%
+  );
+}
+.module-card:hover::before { opacity: 1; }
+.module-icon {
+  width: 44px; height: 44px; border-radius: 11px;
+  background: var(--primary-soft); color: var(--text-strong);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 18px;
+}
+.module-icon svg { width: 22px; height: 22px; }
+.module-card h3 { font-size: 17px; font-weight: 700; color: var(--text-strong); letter-spacing: -.2px; margin-bottom: 8px; }
+.module-card p { font-size: 14px; color: var(--muted); line-height: 1.55; margin-bottom: 16px; }
+.module-card ul { list-style: none; }
+.module-card ul li {
+  font-size: 13px; color: var(--text); padding: 5px 0 5px 22px;
+  position: relative;
+}
+.module-card ul li::before {
+  content: ""; position: absolute; left: 4px; top: 11px;
+  width: 12px; height: 6px; border-left: 2px solid var(--accent); border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg);
+}
+
+/* ----- How it works ----- */
+.how { background: var(--bg-2); }
+.how-steps {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  position: relative;
+}
+.how-steps::before {
+  content: ""; position: absolute; top: 48px; left: 12%; right: 12%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--border), var(--border) 8px, transparent 8px, transparent 14px);
+  z-index: 0;
+}
+.how-step {
+  position: relative; z-index: 1;
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  padding: 28px 24px; text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+.step-num {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--primary);
+  color: var(--card); font-weight: 700; font-size: 16px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 10px rgba(94, 92, 230, 0.32);
+}
+[data-theme="dark"] .step-num { color: var(--bg); }
+.how-step h3 { font-size: 16px; font-weight: 700; color: var(--text-strong); margin-bottom: 6px; }
+.how-step p { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+
+/* ----- Why us ----- */
+.why { background: var(--bg); }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.why-left h2 { text-align: left; margin-bottom: 18px; }
+.why-left .section-eyebrow { text-align: left; }
+.why-bullets { display: flex; flex-direction: column; gap: 18px; margin-top: 24px; }
+.why-bullet { display: flex; gap: 14px; align-items: flex-start; }
+.why-bullet .check {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.why-bullet .check svg { width: 14px; height: 14px; }
+.why-bullet strong { font-weight: 600; color: var(--text-strong); }
+.why-bullet span { color: var(--muted); }
+.why-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+}
+.why-card-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+}
+.stat-tile {
+  background: var(--bg-2); border-radius: 12px; padding: 18px 16px;
+  border: 1px solid var(--border-soft);
+}
+.stat-l { font-size: 11px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+.stat-v { font-size: 26px; font-weight: 700; color: var(--text-strong); margin-top: 6px; letter-spacing: -.5px; }
+.stat-s { font-size: 12px; color: var(--accent); font-weight: 600; margin-top: 2px; }
+
+/* ----- CTA (deep warm-charcoal block) ----- */
+.cta {
+  text-align: center; padding: 90px 0;
+  background: var(--bg);
+  position: relative; overflow: hidden;
+}
+.cta-inner {
+  background: linear-gradient(135deg, #5e5ce6 0%, #4845c2 100%);
+  border-radius: 24px;
+  padding: 64px 40px;
+  max-width: 880px; margin: 0 auto;
+  position: relative; overflow: hidden;
+  box-shadow: 0 24px 60px rgba(94, 92, 230, 0.32);
+}
+.cta-inner::before {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.18) 0, transparent 35%),
+    radial-gradient(circle at 82% 78%, rgba(255, 255, 255, 0.12) 0, transparent 40%);
+  pointer-events: none;
+}
+.cta-inner h2 { font-size: clamp(28px, 4vw, 40px); color: #ffffff; letter-spacing: -.6px; margin-bottom: 14px; line-height: 1.15; position: relative; }
+.cta-inner p { color: rgba(255, 255, 255, 0.85); font-size: 17px; margin-bottom: 28px; position: relative; }
+.cta-actions { position: relative; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.cta-actions .btn { background: #ffffff; color: var(--primary); font-weight: 700; border-color: transparent; }
+.cta-actions .btn:hover { background: #ffffff; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(0,0,0,.20); }
+.cta-actions .btn-ghost { background: transparent; color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.40); }
+.cta-actions .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.65); }
+
+/* ----- Footer ----- */
+.footer {
+  padding: 50px 0 36px; border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+.footer-grid { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; }
+.footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text-strong); }
+.footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.footer-links a { font-size: 13.5px; color: var(--muted); transition: color .15s; }
+.footer-links a:hover { color: var(--text-strong); }
+.footer-meta { font-size: 12.5px; color: var(--muted-2); margin-top: 16px; padding-top: 18px; border-top: 1px solid var(--border-soft); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+/* ----- Reveal-on-scroll ----- */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ----------------- Responsive ----------------- */
+@media (max-width: 880px) {
+  .nav-links { display: none; }
+  .problem-grid { grid-template-columns: 1fr; gap: 36px; }
+  .why-grid { grid-template-columns: 1fr; gap: 36px; }
+  .how-steps { grid-template-columns: 1fr; }
+  .how-steps::before { display: none; }
+  .hp-row1 { grid-template-columns: repeat(2, 1fr); }
+  section { padding: 72px 0; }
+  .hero { padding-top: calc(var(--topnav-h) + 40px); padding-bottom: 50px; }
+  .hero-preview { margin-top: 50px; transform: none; }
+  .float-tile { display: none; }
+}
+@media (max-width: 520px) {
+  .hp-row1 { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .hp-body { padding: 16px; }
+  .cta-inner { padding: 44px 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .float-tile { display: none; }
+  .hero-preview { transform: none; }
+  .hp-bar-col { animation: none; }
+  .eyebrow .dot::after { animation: none; opacity: 0; }
+  .module-card { transition: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============== TOP NAV ============== -->
+<nav class="topnav" id="topnav">
+  <div class="container">
+    <a class="brand" href="#top">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="3 17 9 11 13 15 21 7"/>
+          <polyline points="14 7 21 7 21 14"/>
+        </svg>
+      </span>
+      lumic
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="#what">Product</a>
+      <a class="nav-link" href="#how">How it works</a>
+      <a class="nav-link" href="#why">Why lumic</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <a class="btn btn-ghost" href="#contact" style="padding:8px 14px;font-size:13.5px">Get in touch</a>
+      <a class="btn btn-primary" href="#demo" style="padding:8px 16px;font-size:13.5px">See the demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="top">
+  <div class="hero-grid"></div>
+
+  <!-- Floating background KPI tiles — 12 tiles, varied types & speeds.
+       data-speed = scroll parallax (0.18 slow … 0.55 fast).
+       data-cursor = cursor parallax intensity (0.3 subtle … 0.7 lively). -->
+  <div class="float-tiles" id="floatTiles">
+    <div class="float-tile" data-speed="0.30" data-cursor="0.45" style="top:8%;  left:5%;  transform:rotate(-3deg);">
+      <div class="ft-l">Active Deals</div>
+      <div class="ft-v">47</div>
+      <div class="ft-d up">▲ 8 this week</div>
+    </div>
+    <div class="float-tile" data-speed="0.45" data-cursor="0.55" style="top:11%; right:4%; transform:rotate(2.5deg);">
+      <div class="ft-l">Hours Billed</div>
+      <div class="ft-v">1,284</div>
+      <div class="ft-d up">▲ 12.4%</div>
+    </div>
+    <div class="float-tile tile-spark" data-speed="0.20" data-cursor="0.35" style="top:24%; left:2%; transform:rotate(-2deg);">
+      <div class="ft-l">Cash on Hand</div>
+      <div class="ft-v">$284K</div>
+      <div class="ft-spark">
+        <span style="height:30%"></span><span style="height:55%"></span><span style="height:42%"></span>
+        <span style="height:78%"></span><span style="height:65%"></span><span style="height:88%"></span>
+        <span style="height:72%"></span>
+      </div>
+    </div>
+    <div class="float-tile" data-speed="0.50" data-cursor="0.60" style="top:26%; right:2%; transform:rotate(3deg);">
+      <div class="ft-l">Conversion</div>
+      <div class="ft-v">3.4%</div>
+      <div class="ft-d up">▲ 0.6pt</div>
+    </div>
+    <div class="float-tile tile-min" data-speed="0.35" data-cursor="0.30" style="top:42%; left:6%; transform:rotate(-1.5deg);">
+      <div class="ft-l">NPS</div>
+      <div class="ft-v">64</div>
+    </div>
+    <div class="float-tile" data-speed="0.25" data-cursor="0.50" style="top:44%; right:5%; transform:rotate(2deg);">
+      <div class="ft-l">Avg Response</div>
+      <div class="ft-v">4.2h</div>
+      <span class="ft-pill ok">On track</span>
+    </div>
+    <div class="float-tile" data-speed="0.55" data-cursor="0.40" style="top:60%; left:3%; transform:rotate(-2.5deg); width:200px;">
+      <div class="ft-l">Pipeline</div>
+      <div class="ft-v">$1.2M</div>
+      <div class="ft-bar"><span style="width:72%"></span></div>
+      <div class="ft-bar-meta"><span>72% of quota</span><span>Q2</span></div>
+    </div>
+    <div class="float-tile" data-speed="0.40" data-cursor="0.55" style="top:62%; right:6%; transform:rotate(2.5deg);">
+      <div class="ft-l">Open Invoices</div>
+      <div class="ft-v">$48,200</div>
+      <div class="ft-d down">▼ 23 unpaid</div>
+    </div>
+    <div class="float-tile" data-speed="0.18" data-cursor="0.35" style="top:78%; left:7%; transform:rotate(-2deg);">
+      <div class="ft-l">On-Time %</div>
+      <div class="ft-v">94%</div>
+      <div class="ft-d up">▲ 2pt</div>
+    </div>
+    <div class="float-tile tile-min" data-speed="0.50" data-cursor="0.45" style="top:80%; right:3%; transform:rotate(2deg);">
+      <div class="ft-l">Active Users</div>
+      <div class="ft-v">312</div>
+    </div>
+    <div class="float-tile" data-speed="0.32" data-cursor="0.65" style="top:92%; left:8%; transform:rotate(-3deg);">
+      <div class="ft-l">Churn</div>
+      <div class="ft-v">2.1%</div>
+      <div class="ft-d up">▼ 0.4pt</div>
+    </div>
+    <div class="float-tile" data-speed="0.45" data-cursor="0.30" style="top:94%; right:7%; transform:rotate(2.5deg); width:190px;">
+      <div class="ft-l">Backlog</div>
+      <div class="ft-v">18d</div>
+      <div class="ft-bar"><span style="width:42%"></span></div>
+      <div class="ft-bar-meta"><span>42% of SLA</span><span>healthy</span></div>
+    </div>
+  </div>
+
+  <div class="container hero-inner">
+    <span class="eyebrow"><span class="dot"></span>Automate the reports · See the business</span>
+    <h1 class="hero-title">
+      Your business runs on a dozen apps.<br>
+      <span class="grad">Lumic turns them into one view.</span>
+    </h1>
+    <p class="hero-sub">
+      Connect the tools you already use — your CRM, your billing, your time-tracker, your operations app.
+      Lumic pulls the numbers, builds the dashboards, and keeps them refreshing live.
+      The reports build themselves. You watch the business.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary btn-lg" href="#demo">
+        See the live demo
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="btn btn-lg" href="#contact">Talk to us</a>
+    </div>
+
+    <!-- Mock dashboard preview — mouse-tracked tilt (data-tilt sets max degrees) -->
+    <div class="hero-preview reveal" data-tilt="4">
+      <div class="hp-bar">
+        <div class="hp-dot"></div><div class="hp-dot"></div><div class="hp-dot"></div>
+        <div class="hp-url">app.get-lumic.com / overview</div>
+      </div>
+      <div class="hp-body">
+        <div class="hp-row1">
+          <div class="hp-kpi good">
+            <div class="hp-kpi-l">Revenue MTD</div>
+            <div class="hp-kpi-v" data-count-to="184" data-fmt="currency-k">$0K</div>
+            <div class="hp-kpi-d">▲ 12.4%</div>
+          </div>
+          <div class="hp-kpi">
+            <div class="hp-kpi-l">Active Customers</div>
+            <div class="hp-kpi-v" data-count-to="312" data-fmt="plain">0</div>
+            <div class="hp-kpi-d flat">+8 this week</div>
+          </div>
+          <div class="hp-kpi bad">
+            <div class="hp-kpi-l">Avg Days to Pay</div>
+            <div class="hp-kpi-v" data-count-to="38" data-fmt="days">0d</div>
+            <div class="hp-kpi-d bad">▲ 4d</div>
+          </div>
+          <div class="hp-kpi good">
+            <div class="hp-kpi-l">Margin</div>
+            <div class="hp-kpi-v" data-count-to="31.4" data-fmt="percent">0%</div>
+            <div class="hp-kpi-d">▲ 1.2pt</div>
+          </div>
+        </div>
+        <div class="hp-chart">
+          <div class="hp-bar-col" style="height:40%"></div>
+          <div class="hp-bar-col" style="height:55%; animation-delay:.05s"></div>
+          <div class="hp-bar-col" style="height:48%; animation-delay:.10s"></div>
+          <div class="hp-bar-col" style="height:62%; animation-delay:.15s"></div>
+          <div class="hp-bar-col" style="height:70%; animation-delay:.20s"></div>
+          <div class="hp-bar-col" style="height:58%; animation-delay:.25s"></div>
+          <div class="hp-bar-col" style="height:75%; animation-delay:.30s"></div>
+          <div class="hp-bar-col" style="height:82%; animation-delay:.35s"></div>
+          <div class="hp-bar-col" style="height:68%; animation-delay:.40s"></div>
+          <div class="hp-bar-col" style="height:90%; animation-delay:.45s"></div>
+          <div class="hp-bar-col" style="height:78%; animation-delay:.50s"></div>
+          <div class="hp-bar-col" style="height:95%; animation-delay:.55s"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROBLEM ============== -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">The problem</div>
+      <h2 class="section-title">Your data is everywhere. Your view of the business is nowhere.</h2>
+      <p class="section-sub">Maybe it lives in apps. Maybe in spreadsheets. Maybe in a custom-built tool, a database, even paper records. The numbers exist — turning them into a clear, daily view of the business is the part nobody has time for.</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-list">
+        <div class="problem-item reveal">
+          <div class="pi-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="pi-text">
+            <strong>Reports take hours to build.</strong>
+            <span>Pivot tables, exports, copy-paste, manual stitching — every Monday morning, every month-end.</span>
+          </div>
+        </div>
+        <div class="problem-item reveal">
+          <div class="pi-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div class="pi-text">
+            <strong>The data is locked away.</strong>
+            <span>It's in apps, spreadsheets, files, sometimes in someone's head. Anyone who needs a number has to ask the one person who can pull it.</span>
+          </div>
+        </div>
+        <div class="problem-item reveal">
+          <div class="pi-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="pi-text">
+            <strong>Enterprise BI doesn't fit.</strong>
+            <span>Tableau, Power BI, Snowflake — six-figure stacks built for companies with data teams. You don't have one.</span>
+          </div>
+        </div>
+        <div class="problem-item reveal">
+          <div class="pi-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="pi-text">
+            <strong>Excel is everyone's dashboard.</strong>
+            <span>Stale by Tuesday. Different numbers in every department. No one trusts the totals.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-quote reveal">
+        <p class="q">"Before Lumic, my team would email me every Monday asking for the same five numbers. Now they just open the dashboard. I got my mornings back."</p>
+        <div class="who">
+          <div class="who-avatar">CG</div>
+          <div>
+            <strong style="color:var(--text-strong);font-weight:600">Chris G.</strong> — Operations &amp; Finance
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CAPABILITIES (replaces vertical modules) ============== -->
+<section class="modules" id="what">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">What it does</div>
+      <h2 class="section-title">Connect. Visualize. Automate. Share.</h2>
+      <p class="section-sub">Lumic isn't a new tool to learn — it's the layer that ties together the tools you already use.</p>
+    </div>
+
+    <div class="module-grid">
+      <div class="module-card reveal" data-tilt="6" data-lift="4">
+        <div class="module-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3>Connect</h3>
+        <p>Read directly from the apps you already use — CRM, billing, scheduling, time-tracking, accounting. Read-only. No migration. No "data warehouse" project.</p>
+        <ul>
+          <li>Works with whatever you run today</li>
+          <li>Cloud apps, on-prem databases, spreadsheets</li>
+          <li>One adapter per source — built once</li>
+        </ul>
+      </div>
+
+      <div class="module-card reveal" data-tilt="6" data-lift="4">
+        <div class="module-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3>Visualize</h3>
+        <p>Beautiful, fast dashboards built around the questions an owner actually asks. Drill down in two clicks. Filter without writing a query.</p>
+        <ul>
+          <li>Live KPIs &amp; trend charts</li>
+          <li>Multi-level drill-downs</li>
+          <li>Light and dark, every screen size</li>
+        </ul>
+      </div>
+
+      <div class="module-card reveal" data-tilt="6" data-lift="4">
+        <div class="module-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Automate</h3>
+        <p>Reports build themselves on a schedule. Alerts fire when a number crosses a line. The work that used to eat your Mondays — gone.</p>
+        <ul>
+          <li>Scheduled email digests</li>
+          <li>Threshold-based alerts</li>
+          <li>Auto-statements &amp; bulk emails</li>
+        </ul>
+      </div>
+
+      <div class="module-card reveal" data-tilt="6" data-lift="4">
+        <div class="module-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Share</h3>
+        <p>One login for your whole team. Same beautiful view on phone, tablet, laptop. Branded for your business — your name, your colors, your domain.</p>
+        <ul>
+          <li>Role-based access</li>
+          <li>Mobile-first dashboards</li>
+          <li>Custom domain &amp; theme</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== HOW IT WORKS ============== -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">How it works</div>
+      <h2 class="section-title">Live in two weeks. No data team required.</h2>
+      <p class="section-sub">Tell us what you use. We do the rest.</p>
+    </div>
+
+    <div class="how-steps">
+      <div class="how-step reveal">
+        <div class="step-num">1</div>
+        <h3>We map your stack</h3>
+        <p>Tell us the apps, databases, and spreadsheets your business runs on. We'll figure out where every number lives — so you don't have to.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-num">2</div>
+        <h3>We tailor the dashboards</h3>
+        <p>Your KPIs, your team's view, your branding. Live at your own custom domain in two weeks.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-num">3</div>
+        <h3>You watch the business</h3>
+        <p>Live numbers refresh on their own. Anyone you give access sees the same truth — on the floor, on the road, on a phone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== WHY US ============== -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left reveal">
+        <div class="section-eyebrow">Why lumic</div>
+        <h2 class="section-title">Built by an operator, for operators.</h2>
+        <p class="section-sub" style="text-align:left">
+          Lumic started as the BI suite for a real distribution business that
+          couldn't afford a data team. Today we run two production dashboards
+          live — and every deployment we build is custom-tailored to the
+          business it serves. No two look alike.
+        </p>
+
+        <div class="why-bullets">
+          <div class="why-bullet">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Owner-first design.</strong> <span>Every screen answers a question an owner actually asks. No vanity charts.</span></div>
+          </div>
+          <div class="why-bullet">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Custom-built, every time.</strong> <span>Your KPIs, your data sources, your workflows. We don't sell a template — we build the dashboard you'd build for yourself if you had the time.</span></div>
+          </div>
+          <div class="why-bullet">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>Read-only by design.</strong> <span>Lumic never writes back to your tools. Your books, your records, your data — untouched.</span></div>
+          </div>
+          <div class="why-bullet">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div><strong>White-glove onboarding.</strong> <span>We map your accounts, your customers, your categories — so day one is already useful.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-card reveal">
+        <h3 style="font-size:14px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:18px">By the numbers</h3>
+        <div class="why-card-row">
+          <div class="stat-tile">
+            <div class="stat-l">Hours / month saved</div>
+            <div class="stat-v" data-count-to="16" data-fmt="approx">~0</div>
+            <div class="stat-s">on report-pulling alone</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-l">Production dashboards</div>
+            <div class="stat-v" data-count-to="2" data-fmt="plain">0</div>
+            <div class="stat-s">live today, fully custom</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-l">First refresh</div>
+            <div class="stat-v">&lt;60s</div>
+            <div class="stat-s">on initial login</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-l">Time to deploy</div>
+            <div class="stat-v" data-count-to="2" data-fmt="plain-wks">0 wks</div>
+            <div class="stat-s">handshake to live</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============== CTA ============== -->
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2>See your business, live, in under two weeks.</h2>
+      <p>Book a 20-minute walkthrough. We'll show you the demo on real data, then talk about what your version would look like.</p>
+      <div class="cta-actions">
+        <a class="btn btn-lg" href="mailto:hello@get-lumic.com?subject=lumic%20demo%20request">
+          Book a walkthrough
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#demo" id="demo">Open the live demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark" style="width:22px;height:22px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>
+        </span>
+        lumic
+      </div>
+      <div class="footer-links">
+        <a href="#what">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#why">Why lumic</a>
+        <a href="mailto:hello@get-lumic.com">Contact</a>
+        <a href="#demo">Demo</a>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>© 2026 lumic. All rights reserved.</span>
+      <span>Built for the businesses that run on real numbers.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- Theme toggle ----------
+const themeBtn = document.getElementById('themeToggle');
+themeBtn.addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme') || 'light';
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('lumicTheme', next);
+});
+
+// ---------- Topnav glass-on-scroll ----------
+const topnav = document.getElementById('topnav');
+const onScrollNav = () => topnav.classList.toggle('scrolled', window.scrollY > 24);
+onScrollNav();
+window.addEventListener('scroll', onScrollNav, { passive: true });
+
+// ---------- Reveal-on-scroll (with sibling cascade) ----------
+// For any group of .reveal elements that share a parent, stagger their
+// transition-delay by index so they wave into view instead of popping in
+// simultaneously. Lone .reveal elements get no delay.
+document.querySelectorAll('.reveal').forEach(el => {
+  const parent = el.parentElement;
+  if (!parent) return;
+  const siblings = Array.from(parent.children).filter(c => c.classList.contains('reveal'));
+  if (siblings.length <= 1) return;
+  const idx = siblings.indexOf(el);
+  el.style.transitionDelay = `${idx * 90}ms`;
+});
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ---------- Floating-tile parallax (scroll + cursor) ----------
+// Capture each tile's authored rotation so we can preserve it while we layer in
+// scroll-driven and cursor-driven translation. Without this, the JS would
+// overwrite the rotation and tiles would snap upright on first interaction.
+const tiles = Array.from(document.querySelectorAll('.float-tile'));
+tiles.forEach((t, i) => {
+  const m = (t.style.transform || '').match(/rotate\(([^)]+)\)/);
+  t.dataset.rot = m ? m[1] : '0deg';
+  // Stagger the fade-in slightly for a more orchestrated feel
+  setTimeout(() => t.classList.add('in'), 80 + i * 40);
+});
+
+// Combined scroll-position + cursor-position parallax. Both update the same
+// state and request the same RAF tick so we don't double-up animation frames.
+let cursorPx = 0, cursorPy = 0;
+let lastScroll = window.scrollY;
+let tileRaf = null;
+function updateTiles() {
+  tileRaf = null;
+  for (const t of tiles) {
+    const speed = parseFloat(t.dataset.speed) || 0.3;
+    const cur = parseFloat(t.dataset.cursor) || 0.4;
+    const sy = -(lastScroll * speed);
+    const cx = -cursorPx * 18 * cur;
+    const cy = -cursorPy * 14 * cur;
+    t.style.transform = `translate3d(${cx.toFixed(2)}px, ${(sy + cy).toFixed(2)}px, 0) rotate(${t.dataset.rot})`;
+  }
+}
+function scheduleTiles() { if (!tileRaf) tileRaf = requestAnimationFrame(updateTiles); }
+window.addEventListener('scroll', () => { lastScroll = window.scrollY; scheduleTiles(); }, { passive: true });
+window.addEventListener('mousemove', (e) => {
+  cursorPx = (e.clientX / window.innerWidth - 0.5) * 2;
+  cursorPy = (e.clientY / window.innerHeight - 0.5) * 2;
+  scheduleTiles();
+}, { passive: true });
+
+// ---------- 3D tilt-on-hover for [data-tilt] elements ----------
+// Mouse-tracked perspective tilt — Apple-style. Also broadcasts the cursor
+// position to CSS custom props (--mx, --my) so any radial-glow gradient on
+// the element follows the pointer.
+(function () {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+  document.querySelectorAll('[data-tilt]').forEach(el => {
+    const max = parseFloat(el.dataset.tilt) || 8;
+    const lift = parseFloat(el.dataset.lift) || 0;
+    let raf = null;
+    el.addEventListener('mousemove', (e) => {
+      const r = el.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      el.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      el.style.setProperty('--my', `${e.clientY - r.top}px`);
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        el.style.transform = `perspective(1000px) rotateX(${(-py * max).toFixed(2)}deg) rotateY(${(px * max).toFixed(2)}deg) translateY(${-lift}px)`;
+      });
+    });
+    el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+  });
+})();
+
+// ---------- Magnetic primary buttons ----------
+// Subtle pull toward cursor when the cursor enters the button's bounding box.
+// PULL = how strongly the button follows (0-0.3 is tasteful, >0.3 looks broken).
+(function () {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+  const PULL = 0.18;
+  document.querySelectorAll('.btn-primary, [data-magnetic]').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const r = btn.getBoundingClientRect();
+      const dx = e.clientX - (r.left + r.width / 2);
+      const dy = e.clientY - (r.top + r.height / 2);
+      btn.style.transform = `translate3d(${(dx * PULL).toFixed(2)}px, ${(dy * PULL).toFixed(2)}px, 0)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+  });
+})();
+
+// ---------- Animated count-up for [data-count-to] numbers ----------
+// Triggered when the element first scrolls into view; ease-out cubic for the
+// satisfying "numbers settling into place" feel.
+(function () {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const formats = {
+    'currency-k': v => '$' + Math.round(v) + 'K',
+    'currency-m': v => '$' + (v).toFixed(1) + 'M',
+    'currency':   v => '$' + Math.round(v).toLocaleString(),
+    'percent':    v => v.toFixed(1) + '%',
+    'days':       v => Math.round(v) + 'd',
+    'plain':      v => Math.round(v).toLocaleString(),
+    'approx':     v => '~' + Math.round(v),
+    'plain-wks':  v => Math.round(v) + ' wks',
+  };
+  function animate(el) {
+    const target = parseFloat(el.dataset.countTo);
+    const fmt = formats[el.dataset.fmt || 'plain'] || formats.plain;
+    if (reduce) { el.textContent = fmt(target); return; }
+    const dur = parseInt(el.dataset.dur || '1400', 10);
+    const start = performance.now();
+    function tick(now) {
+      const t = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = fmt(target * eased);
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      animate(entry.target);
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-count-to]').forEach(el => obs.observe(el));
+})();
+
+// ---------- Demo link → local demo for now; swap to deployed URL later ----------
+document.querySelectorAll('a[href="#demo"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open('http://localhost:5001', '_blank', 'noopener');
+  });
+});
+</script>
+
+</body>
+</html>
