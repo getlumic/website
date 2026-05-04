@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>lumic — your business, in your hands</title>
-<meta name="description" content="Lumic turns your business apps, spreadsheets, and tools into one beautiful, live dashboard. Automate the reports. Take command of every number.">
+<meta name="description" content="Lumic builds custom dashboards and AI agents for owner-operators. Stop spending your day in spreadsheets — get back to running your business.">
 
 <script>
 (function () {
@@ -623,6 +623,71 @@ h2.section-title {
   .module-card { transition: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ----------------- Founders ----------------- */
+.founders {
+  padding: 90px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border-soft);
+}
+.founder-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 24px; margin-top: 40px;
+}
+.founder-card {
+  display: flex; gap: 22px; align-items: flex-start;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 18px; padding: 28px;
+  box-shadow: var(--shadow-md);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.founder-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.founder-avatar {
+  width: 96px; height: 96px; border-radius: 50%; overflow: hidden;
+  background: var(--primary-soft);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  border: 3px solid var(--card);
+  box-shadow: 0 0 0 1px var(--border);
+}
+.founder-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.founder-initials {
+  font-size: 28px; font-weight: 700; color: var(--primary);
+  letter-spacing: -.5px;
+}
+.founder-info { flex: 1; min-width: 0; }
+.founder-info h3 {
+  font-size: 17px; font-weight: 700; color: var(--text-strong);
+  margin-bottom: 8px; letter-spacing: -.2px;
+}
+.founder-info p {
+  font-size: 14.5px; color: var(--muted);
+  line-height: 1.6; margin-bottom: 12px;
+}
+.founder-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 600; color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s;
+}
+.founder-link:hover { border-bottom-color: var(--primary); }
+.founder-tagline {
+  text-align: center; margin-top: 36px;
+  font-size: 16px; color: var(--text-strong);
+  font-style: italic;
+  max-width: 640px; margin-left: auto; margin-right: auto;
+}
+@media (max-width: 768px) {
+  .founders { padding: 64px 0; }
+  .founder-grid { grid-template-columns: 1fr; gap: 16px; }
+  .founder-card { padding: 22px; gap: 16px; }
+  .founder-avatar { width: 72px; height: 72px; }
+  .founder-initials { font-size: 22px; }
+}
 </style>
 <noscript><style>
   .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
@@ -734,23 +799,22 @@ h2.section-title {
   </div>
 
   <div class="container hero-inner">
-    <span class="eyebrow"><span class="dot"></span>Automate the reports · See the business</span>
+    <span class="eyebrow"><span class="dot"></span>Custom dashboards · AI agents · On retainer</span>
     <h1 class="hero-title">
-      Your business runs on a dozen apps.<br>
-      <span class="grad">Lumic turns them into one view.</span>
+      You didn't start your business<br>
+      <span class="grad">to spend your day in spreadsheets.</span>
     </h1>
     <p class="hero-sub">
-      We build a custom dashboard on top of the tools you already use —
-      your CRM, your billing, your time-tracker, your operations app —
-      and we stay on as your data team so it never goes stale.
-      Your dashboard team, on retainer.
+      Lumic builds custom dashboards and AI agents on top of the tools you already use —
+      so the office work that's pulling you off the part of your business you actually love
+      stops being your job.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary btn-lg" href="https://demo.get-lumic.com">
         See the live demo
         <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
-      <a class="btn btn-lg" href="#contact">Talk to us</a>
+      <a class="btn btn-lg" href="#contact">Book a call</a>
     </div>
 
     <!-- Mock dashboard preview — mouse-tracked tilt (data-tilt sets max degrees) -->
@@ -806,8 +870,8 @@ h2.section-title {
   <div class="container">
     <div class="section-head reveal">
       <div class="section-eyebrow">The problem</div>
-      <h2 class="section-title">Your data is everywhere. Your view of the business is nowhere.</h2>
-      <p class="section-sub">Maybe it lives in apps. Maybe in spreadsheets. Maybe in a custom-built tool, a database, even paper records. The numbers exist — turning them into a clear, daily view of the business is the part nobody has time for.</p>
+      <h2 class="section-title">The work that runs your business is burying the people running it.</h2>
+      <p class="section-sub">Your apps already have your data. Your team is already doing the work. But the spreadsheet pulls, the manual report-building, the inbox that has to be processed by hand, the same monthly numbers chased down across three systems — somewhere along the way, the running-the-business part started getting buried under the office-work part. You don't need another SaaS subscription. You don't need to hire an $80K analyst to clean up board reports. You need someone to build the system that does it for you — and stay on to keep it running.</p>
     </div>
 
     <div class="problem-grid">
@@ -826,8 +890,8 @@ h2.section-title {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
           <div class="pi-text">
-            <strong>The data is locked away.</strong>
-            <span>It's in apps, spreadsheets, files, sometimes in someone's head. Anyone who needs a number has to ask the one person who can pull it.</span>
+            <strong>Email is eating your day.</strong>
+            <span>Invoices, payroll, client status updates, document workflows — the inbox has become a full-time job for someone on your team.</span>
           </div>
         </div>
         <div class="problem-item reveal">
@@ -878,10 +942,10 @@ h2.section-title {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         </div>
         <h3>Connect</h3>
-        <p>Read directly from the apps you already use — CRM, billing, scheduling, time-tracking, accounting. Read-only. No migration. No "data warehouse" project.</p>
+        <p>Read directly from the apps and inboxes you already use — CRM, billing, scheduling, accounting, email. Read-only. No migration. No "data warehouse" project.</p>
         <ul>
           <li>Works with whatever you run today</li>
-          <li>Cloud apps, on-prem databases, spreadsheets</li>
+          <li>Cloud apps, on-prem databases, inboxes, spreadsheets</li>
           <li>One adapter per source — built once</li>
         </ul>
       </div>
@@ -904,11 +968,11 @@ h2.section-title {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
         <h3>Automate</h3>
-        <p>Reports build themselves on a schedule. Alerts fire when a number crosses a line. The work that used to eat your Mondays — gone.</p>
+        <p>AI agents that handle the repetitive work that used to eat someone's day. Invoices extracted from emails, payroll intake processed, status updates sent, document workflows running on their own. They do the work — you approve the result in 30 seconds, not 3 hours.</p>
         <ul>
-          <li>Scheduled email digests</li>
-          <li>Threshold-based alerts</li>
-          <li>Auto-statements &amp; bulk emails</li>
+          <li>Inbox-driven AI agents</li>
+          <li>Document extraction &amp; processing</li>
+          <li>One-tap approval workflows</li>
         </ul>
       </div>
 
@@ -941,12 +1005,12 @@ h2.section-title {
       <div class="how-step reveal">
         <div class="step-num">1</div>
         <h3>We map your stack</h3>
-        <p>Tell us the apps, databases, and spreadsheets your business runs on. We'll figure out where every number lives — so you don't have to.</p>
+        <p>Tell us the apps, databases, spreadsheets, and inboxes your business runs on. We figure out where every number lives — and which workflows are eating someone's day.</p>
       </div>
       <div class="how-step reveal">
         <div class="step-num">2</div>
-        <h3>We tailor the dashboards</h3>
-        <p>Your KPIs, your team's view, your branding. Live at your own custom domain in two weeks.</p>
+        <h3>We tailor the build</h3>
+        <p>Your KPIs, your team's view, your branding, your AI agents handling the right tasks. Live at your own custom domain in two weeks.</p>
       </div>
       <div class="how-step reveal">
         <div class="step-num">3</div>
@@ -963,11 +1027,11 @@ h2.section-title {
     <div class="why-grid">
       <div class="why-left reveal">
         <div class="section-eyebrow">Why lumic</div>
-        <h2 class="section-title">Built by an operator, for operators.</h2>
+        <h2 class="section-title">Built by operators, for operators.</h2>
         <p class="section-sub" style="text-align:left">
           Lumic started as the BI suite for a real distribution business that
-          couldn't afford a data team. Today we run two production dashboards
-          live — and every deployment we build is custom-tailored to the
+          couldn't afford a data team. Today we build custom dashboards and AI
+          agents for owner-operators — every deployment custom-tailored to the
           business it serves. No two look alike.
         </p>
 
@@ -978,7 +1042,7 @@ h2.section-title {
           </div>
           <div class="why-bullet">
             <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><strong>Custom-built, every time.</strong> <span>Your KPIs, your data sources, your workflows. We don't sell a template — we build the dashboard you'd build for yourself if you had the time.</span></div>
+            <div><strong>Custom-built, every time.</strong> <span>Your KPIs, your data sources, your workflows, your AI agents. We don't sell a template — we build the system you'd build for yourself if you had the time.</span></div>
           </div>
           <div class="why-bullet">
             <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
@@ -986,7 +1050,7 @@ h2.section-title {
           </div>
           <div class="why-bullet">
             <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><strong>White-glove onboarding.</strong> <span>We map your accounts, your customers, your categories — so day one is already useful.</span></div>
+            <div><strong>White-glove onboarding.</strong> <span>We map your accounts, your customers, your categories, the workflows you want automated — so day one is already useful.</span></div>
           </div>
           <div class="why-bullet">
             <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
@@ -1025,15 +1089,51 @@ h2.section-title {
 </section>
 
 
+<!-- ============== FOUNDERS ============== -->
+<section class="founders" id="founders">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Who you'll be working with</div>
+      <h2 class="section-title">Built by operators</h2>
+      <p class="section-sub">Two finance-trained founders who got tired of seeing good businesses run on duct tape. Our minds supplement each other; every build is a collaboration between both of us.</p>
+    </div>
+    <div class="founder-grid">
+      <div class="founder-card reveal">
+        <div class="founder-avatar">
+          <img src="/img/founders/christian.jpg" alt="Christian Gonzenbach" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="founder-initials" style="display:none">CG</span>
+        </div>
+        <div class="founder-info">
+          <h3>Christian Gonzenbach</h3>
+          <p>Finance and procurement background. Built lumic after years of frustration with the software available to mid-sized companies — nothing fit, everything cost too much. Brings the operator's lens to every build.</p>
+          <a class="founder-link" href="https://www.linkedin.com/in/christian-gonzenbach/" target="_blank" rel="noopener">LinkedIn →</a>
+        </div>
+      </div>
+      <div class="founder-card reveal">
+        <div class="founder-avatar">
+          <img src="/img/founders/josh.jpg" alt="Joshua Wittenauer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="founder-initials" style="display:none">JW</span>
+        </div>
+        <div class="founder-info">
+          <h3>Joshua Wittenauer</h3>
+          <p>Product analyst with a CFP credential. Brings discovery, scoping, and a relentless "actually build it" pragmatism to every client conversation.</p>
+          <a class="founder-link" href="https://www.linkedin.com/in/joshua-wittenauer-890339191/" target="_blank" rel="noopener">LinkedIn →</a>
+        </div>
+      </div>
+    </div>
+    <p class="founder-tagline reveal">You'll never be talking to a stranger when you call lumic. You'll be talking to one of us.</p>
+  </div>
+</section>
+
 <!-- ============== CTA ============== -->
 <section class="cta" id="contact">
   <div class="container">
     <div class="cta-inner reveal">
       <h2>See your business, live, in under two weeks.</h2>
-      <p>Book a 20-minute walkthrough. We'll show you the demo on real data, then talk about what your version would look like.</p>
+      <p>Book a 20-minute call. We'll show you the demo on real data and talk through what your version would look like — dashboard, AI agents, or both. If it's a fit, we come meet you in person to scope the build.</p>
       <div class="cta-actions">
-        <a class="btn btn-lg" href="mailto:hello@get-lumic.com?subject=lumic%20demo%20request">
-          Book a walkthrough
+        <a class="btn btn-lg" href="mailto:hello@get-lumic.com?subject=lumic%20intro%20call">
+          Book a call
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
         <a class="btn btn-ghost btn-lg" href="https://demo.get-lumic.com" id="demo">Open the live demo</a>
