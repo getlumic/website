@@ -380,8 +380,8 @@ h2.section-title {
 
 /* ----- Problem section ----- */
 .problem { background: var(--bg-2); }
-.problem-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
-.problem-list { display: flex; flex-direction: column; gap: 14px; }
+.problem-grid { display: block; }
+.problem-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 .problem-item {
   display: flex; align-items: flex-start; gap: 14px;
   padding: 16px 18px;
@@ -594,7 +594,7 @@ h2.section-title {
 /* ----------------- Responsive ----------------- */
 @media (max-width: 880px) {
   .nav-links { display: none; }
-  .problem-grid { grid-template-columns: 1fr; gap: 36px; }
+  .problem-list { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; gap: 36px; }
   .how-steps { grid-template-columns: 1fr; }
   .how-steps::before { display: none; }
@@ -914,15 +914,6 @@ h2.section-title {
         </div>
       </div>
 
-      <div class="problem-quote reveal">
-        <p class="q">"Before Lumic, my team would email me every Monday asking for the same five numbers. Now they just open the dashboard. I got my mornings back."</p>
-        <div class="who">
-          <div class="who-avatar">CG</div>
-          <div>
-            <strong style="color:var(--text-strong);font-weight:600">Chris G.</strong> — Operations &amp; Finance
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
