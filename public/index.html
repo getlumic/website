@@ -380,8 +380,8 @@ h2.section-title {
 
 /* ----- Problem section ----- */
 .problem { background: var(--bg-2); }
-.problem-grid { display: block; }
-.problem-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.problem-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
+.problem-list { display: flex; flex-direction: column; gap: 14px; }
 .problem-item {
   display: flex; align-items: flex-start; gap: 14px;
   padding: 16px 18px;
@@ -594,7 +594,7 @@ h2.section-title {
 /* ----------------- Responsive ----------------- */
 @media (max-width: 880px) {
   .nav-links { display: none; }
-  .problem-list { grid-template-columns: 1fr; }
+  .problem-grid { grid-template-columns: 1fr; gap: 36px; }
   .why-grid { grid-template-columns: 1fr; gap: 36px; }
   .how-steps { grid-template-columns: 1fr; }
   .how-steps::before { display: none; }
@@ -914,6 +914,15 @@ h2.section-title {
         </div>
       </div>
 
+      <div class="problem-quote reveal">
+        <p class="q">"Honestly, this is better than Phocas — and Phocas is what I had at my last shop."</p>
+        <div class="who">
+          <div class="who-avatar">R</div>
+          <div>
+            <strong style="color:var(--text-strong);font-weight:600">Ransom</strong> — VP of Sales, manufacturing
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1084,9 +1093,9 @@ h2.section-title {
 <section class="founders" id="founders">
   <div class="container">
     <div class="section-head reveal">
-      <div class="section-eyebrow">Who you'll be working with</div>
-      <h2 class="section-title">Built by operators</h2>
-      <p class="section-sub">Two finance-trained founders who got tired of seeing good businesses run on duct tape. Our minds supplement each other; every build is a collaboration between both of us.</p>
+      <div class="section-eyebrow">Who we are</div>
+      <h2 class="section-title">Hey — we're Christian and Josh.</h2>
+      <p class="section-sub">Just the two of us, and that's the point. We started lumic because we got tired of watching good businesses run on duct tape. Different strengths, one playbook — every build is a collaboration between both of us.</p>
     </div>
     <div class="founder-grid">
       <div class="founder-card reveal">
@@ -1096,7 +1105,7 @@ h2.section-title {
         </div>
         <div class="founder-info">
           <h3>Christian Gonzenbach</h3>
-          <p>Finance and procurement background. Built lumic after years of frustration with the software available to mid-sized companies — nothing fit, everything cost too much. Brings the operator's lens to every build.</p>
+          <p>Finance and procurement guy. Built the first version of lumic out of pure frustration with the software on the market for mid-sized businesses — nothing fit, everything cost too much. The "is this actually useful?" voice when we're scoping a build.</p>
           <a class="founder-link" href="https://www.linkedin.com/in/christian-gonzenbach/" target="_blank" rel="noopener">LinkedIn →</a>
         </div>
       </div>
@@ -1107,12 +1116,12 @@ h2.section-title {
         </div>
         <div class="founder-info">
           <h3>Joshua Wittenauer</h3>
-          <p>Product analyst with a CFP credential. Brings discovery, scoping, and a relentless "actually build it" pragmatism to every client conversation.</p>
+          <p>CFP and corporate-finance brain. Pushes scope discipline and the "okay, but what would we *actually* build?" question whenever ideas get fluffy. Brings velocity and pragmatism in equal doses.</p>
           <a class="founder-link" href="https://www.linkedin.com/in/joshua-wittenauer-890339191/" target="_blank" rel="noopener">LinkedIn →</a>
         </div>
       </div>
     </div>
-    <p class="founder-tagline reveal">You'll never be talking to a stranger when you call lumic. You'll be talking to one of us.</p>
+    <p class="founder-tagline reveal">When you call lumic, you're talking to one of us. No sales rep, no support tier — just whoever's in the office.</p>
   </div>
 </section>
 
