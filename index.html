@@ -1213,11 +1213,11 @@ window.addEventListener('mousemove', (e) => {
   document.querySelectorAll('[data-count-to]').forEach(el => obs.observe(el));
 })();
 
-// ---------- Demo link → local demo for now; swap to deployed URL later ----------
+// ---------- Demo link → public demo subdomain (deploy demo project to wire this up) ----------
 document.querySelectorAll('a[href="#demo"]').forEach(a => {
   a.addEventListener('click', (e) => {
     e.preventDefault();
-    window.open('http://localhost:5001', '_blank', 'noopener');
+    window.open('https://demo.get-lumic.com', '_blank', 'noopener');
   });
 });
 </script>
