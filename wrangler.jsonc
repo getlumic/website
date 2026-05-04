@@ -2,6 +2,10 @@
   "name": "website",
   "compatibility_date": "2025-01-01",
   "assets": {
-    "directory": "./"
-  }
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true,
+  "preview_urls": true
 }
