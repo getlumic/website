@@ -133,14 +133,29 @@ button { font-family: inherit; cursor: pointer; }
 .idot { position: relative; display: inline-block; }
 .idot-dot {
   position: absolute;
-  top: -.05em; left: 50%;
-  width: .22em; height: .22em;
+  top: .02em; left: 50%;
+  width: .25em; height: .25em;
   border-radius: 50%;
   background: var(--primary);
-  box-shadow: 0 0 10px rgba(94, 92, 230, 0.5);
+  box-shadow: 0 0 12px rgba(94, 92, 230, 0.55);
   transform: translateX(-50%);
+  animation: idot-pulse 3s ease-in-out infinite;
 }
-[data-theme="dark"] .idot-dot { box-shadow: 0 0 10px rgba(122, 120, 240, 0.55); }
+[data-theme="dark"] .idot-dot {
+  box-shadow: 0 0 12px rgba(122, 120, 240, 0.6);
+  animation-name: idot-pulse-dark;
+}
+@keyframes idot-pulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(94, 92, 230, 0.45); }
+  50%      { box-shadow: 0 0 22px rgba(94, 92, 230, 0.85); }
+}
+@keyframes idot-pulse-dark {
+  0%, 100% { box-shadow: 0 0 10px rgba(122, 120, 240, 0.5); }
+  50%      { box-shadow: 0 0 22px rgba(122, 120, 240, 0.9); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .idot-dot { animation: none; }
+}
 
 .nav-links { display: flex; align-items: center; gap: 6px; }
 .nav-link {

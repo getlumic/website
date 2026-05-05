@@ -129,14 +129,22 @@ body {
 .idot-dot {
   position: absolute;
   left: 50%;
-  width: .22em; height: .22em;
+  width: .25em; height: .25em;
   border-radius: 50%;
   background: var(--primary);
-  box-shadow: 0 0 16px rgba(94,92,230,.45);
+  box-shadow: 0 0 12px rgba(94,92,230,.55);
   transform: translateX(-50%);
+  animation: idot-pulse 3s ease-in-out infinite;
 }
-.wm .idot-dot { top: -.04em; }       /* large size */
-.wm-sm .idot-dot { top: -.04em; }    /* small size — same ratio */
+.wm .idot-dot { top: .02em; }       /* large size */
+.wm-sm .idot-dot { top: .02em; }    /* small size — same ratio */
+@keyframes idot-pulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(94, 92, 230, 0.45); }
+  50%      { box-shadow: 0 0 22px rgba(94, 92, 230, 0.85); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .idot-dot { animation: none; }
+}
 
 /* --------- 2. Spark glyph --------- */
 .glyph {

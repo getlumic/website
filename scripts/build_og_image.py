@@ -88,18 +88,17 @@ def main() -> None:
 
     i_left = starts[1]
     i_w = widths[1]
+    dot_r = int(cap_to_x * 0.40)
     dot_cx = int(i_left + i_w / 2)
-
-    # Dot sized as a fraction of the cap-to-x-height gap (proper i-dot proportion).
-    dot_r = int(cap_to_x * 0.34)
-    # Dot bottom edge sits just above x-height with a small breathing gap.
-    gap = int(cap_to_x * 0.12)
+    # Dot bottom edge sits right at x-height (orb visually kisses the stem).
+    gap = 0
     dot_cy = xheight_top_y - gap - dot_r
 
     # ---------- Soft ambient bloom behind the wordmark ----------
     add_glow(img, W // 2, H // 2, diameter=560, color=PRIMARY, intensity=70)
-    # Localized warm halo under the dot
-    add_glow(img, dot_cx, dot_cy, diameter=240, color=PRIMARY, intensity=130)
+    # Localized warm halo around the dot — diameter scales with dot size so it
+    # always feels attached to the orb rather than a separate bloom.
+    add_glow(img, dot_cx, dot_cy, diameter=int(dot_r * 7), color=PRIMARY, intensity=160)
 
     # Re-create the draw context since we've pasted onto img
     draw = ImageDraw.Draw(img)
