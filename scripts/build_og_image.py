@@ -77,12 +77,24 @@ def main() -> None:
         x += w + spacing
 
     # ---------- Compute i-dot location BEFORE drawing text ----------
+    # Anchor to actual font metrics: top of `l`-ascender vs top of `u`-x-height,
+    # so the dot sits proportionally above the lowercase letters regardless of
+    # font weight / optical size choices.
+    l_top = wm_font.getbbox("l")[1]      # y of `l` ascender top within text box
+    u_top = wm_font.getbbox("u")[1]      # y of `u` x-height top within text box
+    ascender_top_y = wm_y + l_top        # canvas y of `l` top
+    xheight_top_y  = wm_y + u_top        # canvas y of `u` top
+    cap_to_x = xheight_top_y - ascender_top_y   # vertical distance cap → x-height
+
     i_left = starts[1]
     i_w = widths[1]
     dot_cx = int(i_left + i_w / 2)
-    # Place the dot just above the cap-height of the wordmark.
-    dot_r = 30
-    dot_cy = wm_y + bbox[1] + 12  # 12px gap above caps
+
+    # Dot sized as a fraction of the cap-to-x-height gap (proper i-dot proportion).
+    dot_r = int(cap_to_x * 0.34)
+    # Dot bottom edge sits just above x-height with a small breathing gap.
+    gap = int(cap_to_x * 0.12)
+    dot_cy = xheight_top_y - gap - dot_r
 
     # ---------- Soft ambient bloom behind the wordmark ----------
     add_glow(img, W // 2, H // 2, diameter=560, color=PRIMARY, intensity=70)
