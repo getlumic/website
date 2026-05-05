@@ -5,8 +5,7 @@
 <title>lumic OG image source</title>
 <style>
 :root {
-  --bg:           #f6f7fb;
-  --bg-2:         #eef1f8;
+  --bg-card:      #eeedfd;     /* PRIMARY_SOFT — same pale-indigo as the business-card front */
   --text-strong:  #0f172a;
   --muted:        #64748b;
 }
@@ -15,7 +14,7 @@
 
 html, body {
   width: 1200px; height: 630px;
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  background: var(--bg-card);
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -25,6 +24,7 @@ html, body {
   width: 100%; height: 100%;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
+  gap: 26px;                    /* matches the business-card front's gap_after_wm at this scale */
   position: relative;
 }
 
@@ -37,21 +37,9 @@ html, body {
   display: block;
 }
 
-.tagline {
-  margin-top: 28px;
-  text-align: center;
-}
+.tagline { text-align: center; }
 .tagline .l1 { display: block; font-size: 44px; font-weight: 600; color: var(--text-strong); letter-spacing: -.4px; }
-.tagline .l2 { display: block; font-size: 36px; font-weight: 400; color: var(--muted); letter-spacing: -.2px; margin-top: 6px; }
-
-.url {
-  position: absolute;
-  bottom: 56px; left: 0; right: 0;
-  text-align: center;
-  font-size: 22px; font-weight: 400;
-  color: var(--muted);
-  letter-spacing: .4px;
-}
+.tagline .l2 { display: block; font-size: 36px; font-weight: 400; color: var(--muted); letter-spacing: -.2px; margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -61,7 +49,6 @@ html, body {
       <span class="l1">Custom dashboards + AI agents,</span>
       <span class="l2">on the tools your business already uses.</span>
     </div>
-    <div class="url">get-lumic.com</div>
   </div>
 </body>
 </html>
