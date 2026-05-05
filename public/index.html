@@ -124,7 +124,8 @@ button { font-family: inherit; cursor: pointer; }
   -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 [data-theme="dark"] .topnav.scrolled { background: rgba(14, 21, 37, 0.80); border-bottom-color: var(--border); }
-.topnav .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.topnav .container { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 24px; }
+.topnav .nav-actions { justify-self: end; }
 .brand {
   font-size: 30px; font-weight: 700; letter-spacing: -.025em; color: var(--text-strong);
   line-height: 1;
