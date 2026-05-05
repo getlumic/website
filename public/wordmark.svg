@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 121" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Inter', 'Helvetica Neue', sans-serif">
+  <defs>
+    <filter id="orb-glow" x="-500%" y="-500%" width="1100%" height="1100%">
+      <feGaussianBlur stdDeviation="24.00"/>
+    </filter>
+  </defs>
+  <text x="14" y="102.0" font-size="120" font-weight="700" letter-spacing="-3" fill="#0f172a">lum&#x131;c</text>
+  <circle cx="221.5" cy="18.6" r="15.0" fill="#5e5ce6" opacity="0.55" filter="url(#orb-glow)"/>
+  <circle cx="221.5" cy="18.6" r="15.0" fill="#5e5ce6"/>
+</svg>

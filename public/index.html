@@ -136,7 +136,11 @@ button { font-family: inherit; cursor: pointer; }
 .idot { position: relative; display: inline-block; }
 .idot-dot {
   position: absolute;
-  top: .02em; left: 50%;
+  /* Shift +0.0125em (= half the .brand letter-spacing) to compensate for
+     how letter-spacing shrinks the .idot inline-block's box on the right
+     side, which otherwise pulls the dot's "left:50%" anchor a hair LEFT
+     of the actual ı stem. Matches the brand-kit SVG positioning. */
+  top: .02em; left: calc(50% + 0.0125em);
   width: .25em; height: .25em;
   border-radius: 50%;
   background: var(--primary);

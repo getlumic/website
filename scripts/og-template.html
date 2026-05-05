@@ -7,9 +7,7 @@
 :root {
   --bg:           #f6f7fb;
   --bg-2:         #eef1f8;
-  --text-strong:  #0f172a;
   --muted:        #64748b;
-  --primary:      #5e5ce6;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,28 +27,17 @@ html, body {
   position: relative;
 }
 
-/* Wordmark — same exact construction as the header .brand element,
-   just larger. Sizing in em keeps the indigo orb proportional. */
-.brand {
-  font-size: 280px;
-  font-weight: 700;
-  letter-spacing: -.025em;
-  color: var(--text-strong);
-  line-height: 1;
-}
-.idot { position: relative; display: inline-block; }
-.idot-dot {
-  position: absolute;
-  top: .02em; left: 50%;
-  width: .25em; height: .25em;
-  border-radius: 50%;
-  background: var(--primary);
-  box-shadow: 0 0 0.4em rgba(94, 92, 230, 0.55);
-  transform: translateX(-50%);
+/* Wordmark — render the canonical brand-kit SVG (~/projects/playbook/
+   brand/logos/wordmark.svg, copied to /wordmark.svg) so the orb sits
+   exactly where the brand-kit math placed it. Aspect ratio 312:121. */
+.brand-svg {
+  width: 720px;
+  height: auto;
+  display: block;
 }
 
 .tagline {
-  margin-top: 24px;
+  margin-top: 32px;
   font-size: 44px; font-weight: 400;
   color: var(--muted);
   letter-spacing: -.2px;
@@ -68,7 +55,7 @@ html, body {
 </head>
 <body>
   <div class="stage">
-    <div class="brand">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</div>
+    <img class="brand-svg" src="./wordmark.svg" alt="lumic">
     <div class="tagline">Your business, in your hands.</div>
     <div class="url">get-lumic.com</div>
   </div>
