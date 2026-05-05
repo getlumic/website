@@ -7,6 +7,7 @@
 :root {
   --bg:           #f6f7fb;
   --bg-2:         #eef1f8;
+  --text-strong:  #0f172a;
   --muted:        #64748b;
 }
 
@@ -37,11 +38,11 @@ html, body {
 }
 
 .tagline {
-  margin-top: 32px;
-  font-size: 44px; font-weight: 400;
-  color: var(--muted);
-  letter-spacing: -.2px;
+  margin-top: 28px;
+  text-align: center;
 }
+.tagline .l1 { display: block; font-size: 44px; font-weight: 600; color: var(--text-strong); letter-spacing: -.4px; }
+.tagline .l2 { display: block; font-size: 36px; font-weight: 400; color: var(--muted); letter-spacing: -.2px; margin-top: 6px; }
 
 .url {
   position: absolute;
@@ -56,7 +57,10 @@ html, body {
 <body>
   <div class="stage">
     <img class="brand-svg" src="./wordmark.svg" alt="lumic">
-    <div class="tagline">Your business, in your hands.</div>
+    <div class="tagline">
+      <span class="l1">Custom dashboards + AI agents,</span>
+      <span class="l2">on the tools your business already uses.</span>
+    </div>
     <div class="url">get-lumic.com</div>
   </div>
 </body>
