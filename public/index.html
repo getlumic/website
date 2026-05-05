@@ -7,6 +7,7 @@
 <meta name="description" content="Lumic builds custom dashboards and AI agents for owner-operators. Stop spending your day in spreadsheets — get back to running your business.">
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://get-lumic.com/">
@@ -615,7 +616,9 @@ h2.section-title {
   background: var(--bg);
 }
 .footer-grid { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; }
-.footer-brand { font-size: 26px; letter-spacing: -.6px; font-weight: 700; color: var(--text-strong); line-height: 1; }
+.footer-brand-row { display: flex; align-items: center; gap: 12px; }
+.footer-monogram { width: 32px; height: 32px; border-radius: 7px; flex-shrink: 0; }
+.footer-brand { font-size: 26px; letter-spacing: -.025em; font-weight: 700; color: var(--text-strong); line-height: 1; }
 .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
 .footer-links a { font-size: 13.5px; color: var(--muted); transition: color .15s; }
 .footer-links a:hover { color: var(--text-strong); }
@@ -1171,7 +1174,10 @@ h2.section-title {
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</div>
+      <div class="footer-brand-row">
+        <img class="footer-monogram" src="/favicon.svg" alt="lumic">
+        <div class="footer-brand">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</div>
+      </div>
       <div class="footer-links">
         <a href="#what">Product</a>
         <a href="#how">How it works</a>
