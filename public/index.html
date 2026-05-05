@@ -126,9 +126,10 @@ button { font-family: inherit; cursor: pointer; }
 [data-theme="dark"] .topnav.scrolled { background: rgba(14, 21, 37, 0.80); border-bottom-color: var(--border); }
 .topnav .container { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 24px; }
 .topnav .nav-actions { justify-self: end; }
+.topnav .nav-links { transform: translateX(-48px); }
 .brand {
   font-size: 30px; font-weight: 700; letter-spacing: -.025em; color: var(--text-strong);
-  line-height: 1;
+  line-height: 1; white-space: nowrap;
 }
 /* i-dot wordmark — the "ı" is U+0131 (dotless i); .idot-dot is the
    indigo orb that sits above it. Single point of light inside the name. */
@@ -632,6 +633,11 @@ h2.section-title {
 /* ----------------- Responsive ----------------- */
 @media (max-width: 880px) {
   .nav-links { display: none; }
+  /* With the centered nav-links hidden, switch the topnav back to a
+     simple flex row so the brand keeps its natural width and the
+     actions hug the right edge. */
+  .topnav .container { display: flex; justify-content: space-between; gap: 12px; }
+  .topnav .nav-links { transform: none; }
   .problem-grid { grid-template-columns: 1fr; gap: 36px; }
   .why-grid { grid-template-columns: 1fr; gap: 36px; }
   .how-steps { grid-template-columns: 1fr; }
