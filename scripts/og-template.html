@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<title>lumic OG image source</title>
+<style>
+:root {
+  --bg:           #f6f7fb;
+  --bg-2:         #eef1f8;
+  --text-strong:  #0f172a;
+  --muted:        #64748b;
+  --primary:      #5e5ce6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1200px; height: 630px;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.stage {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  position: relative;
+}
+
+/* Wordmark — same exact construction as the header .brand element,
+   just larger. Sizing in em keeps the indigo orb proportional. */
+.brand {
+  font-size: 280px;
+  font-weight: 700;
+  letter-spacing: -.7px;
+  color: var(--text-strong);
+  line-height: 1;
+}
+.idot { position: relative; display: inline-block; }
+.idot-dot {
+  position: absolute;
+  top: .02em; left: 50%;
+  width: .25em; height: .25em;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0.4em rgba(94, 92, 230, 0.55);
+  transform: translateX(-50%);
+}
+
+.tagline {
+  margin-top: 24px;
+  font-size: 44px; font-weight: 400;
+  color: var(--muted);
+  letter-spacing: -.2px;
+}
+
+.url {
+  position: absolute;
+  bottom: 56px; left: 0; right: 0;
+  text-align: center;
+  font-size: 22px; font-weight: 400;
+  color: var(--muted);
+  letter-spacing: .4px;
+}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="brand">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</div>
+    <div class="tagline">Your business, in your hands.</div>
+    <div class="url">get-lumic.com</div>
+  </div>
+</body>
+</html>
