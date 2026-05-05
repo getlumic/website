@@ -111,17 +111,21 @@ button { font-family: inherit; cursor: pointer; }
 .topnav .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand {
   font-size: 17px; font-weight: 700; letter-spacing: -.4px; color: var(--text-strong);
-  display: flex; align-items: center; gap: 9px;
+  line-height: 1;
 }
-.brand-mark {
-  width: 26px; height: 26px; border-radius: 7px;
+/* i-dot wordmark — the "ı" is U+0131 (dotless i); .idot-dot is the
+   indigo orb that sits above it. Single point of light inside the name. */
+.idot { position: relative; display: inline-block; }
+.idot-dot {
+  position: absolute;
+  top: -.05em; left: 50%;
+  width: .22em; height: .22em;
+  border-radius: 50%;
   background: var(--primary);
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 2px 6px rgba(94, 92, 230, 0.32);
+  box-shadow: 0 0 10px rgba(94, 92, 230, 0.5);
+  transform: translateX(-50%);
 }
-.brand-mark svg { width: 14px; height: 14px; color: var(--card); }
-[data-theme="dark"] .brand-mark { background: var(--primary); }
-[data-theme="dark"] .brand-mark svg { color: var(--bg); }
+[data-theme="dark"] .idot-dot { box-shadow: 0 0 10px rgba(122, 120, 240, 0.55); }
 
 .nav-links { display: flex; align-items: center; gap: 6px; }
 .nav-link {
@@ -581,7 +585,7 @@ h2.section-title {
   background: var(--bg);
 }
 .footer-grid { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; }
-.footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text-strong); }
+.footer-brand { font-weight: 700; color: var(--text-strong); }
 .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
 .footer-links a { font-size: 13.5px; color: var(--muted); transition: color .15s; }
 .footer-links a:hover { color: var(--text-strong); }
@@ -698,15 +702,7 @@ h2.section-title {
 <!-- ============== TOP NAV ============== -->
 <nav class="topnav" id="topnav">
   <div class="container">
-    <a class="brand" href="#top">
-      <span class="brand-mark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="3 17 9 11 13 15 21 7"/>
-          <polyline points="14 7 21 7 21 14"/>
-        </svg>
-      </span>
-      lumic
-    </a>
+    <a class="brand" href="#top">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</a>
     <div class="nav-links">
       <a class="nav-link" href="#what">Product</a>
       <a class="nav-link" href="#how">How it works</a>
@@ -1145,12 +1141,7 @@ h2.section-title {
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="brand-mark" style="width:22px;height:22px">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>
-        </span>
-        lumic
-      </div>
+      <div class="footer-brand">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</div>
       <div class="footer-links">
         <a href="#what">Product</a>
         <a href="#how">How it works</a>
