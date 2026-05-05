@@ -24,7 +24,6 @@ html, body {
   width: 100%; height: 100%;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  gap: 26px;                    /* matches the business-card front's gap_after_wm at this scale */
   position: relative;
 }
 
@@ -37,7 +36,11 @@ html, body {
   display: block;
 }
 
-.tagline { text-align: center; }
+/* Pull the tagline up into the SVG's empty bottom canvas so the visible
+   gap from the wordmark baseline to the tagline matches the business-card
+   front (~18px proportional). The brand wordmark.svg has ~14 units of empty
+   canvas below baseline that scales to ~32px at this render size. */
+.tagline { text-align: center; margin-top: -36px; }
 .tagline .l1 { display: block; font-size: 44px; font-weight: 600; color: var(--text-strong); letter-spacing: -.4px; }
 .tagline .l2 { display: block; font-size: 36px; font-weight: 400; color: var(--muted); letter-spacing: -.2px; margin-top: 8px; }
 </style>
