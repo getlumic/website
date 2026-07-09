@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Gonzenbach;Christian;;;
+FN:Christian Gonzenbach
+ORG:lumic
+TITLE:Co-founder
+EMAIL;TYPE=WORK:hello@get-lumic.com
+URL:https://get-lumic.com
+NOTE:Custom dashboards + AI agents on the ERP your business already runs.
+END:VCARD
