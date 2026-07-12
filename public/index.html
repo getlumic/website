@@ -176,15 +176,6 @@ button { font-family: inherit; cursor: pointer; }
   -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, #000 35%, transparent 80%);
   pointer-events: none;
 }
-.hero-data-stream {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  z-index: 0;
-  pointer-events: none;
-  opacity: .72;
-  mask-image: linear-gradient(to bottom, #000 4%, #000 82%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, #000 4%, #000 82%, transparent 100%);
-}
 
 .hero-inner { position: relative; text-align: center; z-index: 2; }
 .eyebrow {
@@ -611,7 +602,6 @@ h2.section-title {
   .eyebrow .dot::after { animation: none; opacity: 0; }
   .module-card { transition: none; }
   html { scroll-behavior: auto; }
-  .hero-data-stream { opacity: .48; }
 }
 
 /* ----------------- Founders ----------------- */
@@ -707,7 +697,6 @@ h2.section-title {
 <!-- ============== HERO ============== -->
 <section class="hero" id="top">
   <div class="hero-grid"></div>
-  <canvas class="hero-data-stream" id="heroDataStream" aria-hidden="true"></canvas>
 
   <!-- Floating background KPI tiles — 12 tiles, varied types & speeds.
        data-speed = scroll parallax (0.18 slow … 0.55 fast).
@@ -1304,77 +1293,6 @@ window.addEventListener('mousemove', (e) => {
   cursorPy = (e.clientY / window.innerHeight - 0.5) * 2;
   scheduleTiles();
 }, { passive: true });
-
-// ---------- Live data stream (behind the existing KPI tiles) ----------
-// Six quiet lanes represent the source systems Lumic connects. Their signals
-// flow downward and converge into one operating layer near the hero preview.
-(function () {
-  const canvas = document.getElementById('heroDataStream');
-  const hero = document.querySelector('.hero');
-  if (!canvas || !hero) return;
-
-  const ctx = canvas.getContext('2d');
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const laneLabels = ['ORDERS', 'AR', 'INVENTORY', 'EMAIL', 'MARGIN', 'CASH'];
-  const lanePositions = [.07, .17, .28, .72, .83, .93];
-  let width = 0, height = 0, dpr = 1, elapsed = 0;
-
-  function resizeDataStream() {
-    const rect = hero.getBoundingClientRect();
-    dpr = Math.min(window.devicePixelRatio || 1, 2);
-    width = rect.width;
-    height = hero.scrollHeight;
-    canvas.width = Math.round(width * dpr);
-    canvas.height = Math.round(height * dpr);
-    canvas.style.width = `${width}px`;
-    canvas.style.height = `${height}px`;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  }
-
-  function stroke(x1, y1, x2, y2, alpha, lineWidth = 1) {
-    ctx.strokeStyle = `rgba(94, 92, 230, ${alpha})`;
-    ctx.lineWidth = lineWidth;
-    ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
-  }
-
-  function signal(x, y, green) {
-    ctx.fillStyle = green ? 'rgba(22, 163, 74, .42)' : 'rgba(94, 92, 230, .42)';
-    ctx.beginPath(); ctx.arc(x, y, 3.2, 0, Math.PI * 2); ctx.fill();
-  }
-
-  function drawDataStream() {
-    ctx.clearRect(0, 0, width, height);
-    const convergenceY = height * .74;
-    const centerX = width * .5;
-    const scrollShift = Math.min(window.scrollY, height) * .06;
-
-    lanePositions.forEach((position, lane) => {
-      const x = width * position + Math.sin(elapsed * .45 + lane) * 5;
-      stroke(x, 0, x, convergenceY - 70, .13, 1.1);
-      stroke(x, convergenceY - 70, centerX, convergenceY, .16, 1.1);
-
-      for (let point = 0; point < 5; point++) {
-        const travel = reduce ? point * 148 + lane * 24 : point * 148 + elapsed * (24 + lane * 1.6) + lane * 24;
-        const y = (travel - scrollShift) % Math.max(240, convergenceY - 90);
-        signal(x, y, lane === 0 || lane === 3);
-        if (point === 2 && width > 900) {
-          ctx.font = '600 9px -apple-system, BlinkMacSystemFont, sans-serif';
-          ctx.fillStyle = 'rgba(100, 116, 139, .28)';
-          ctx.fillText(laneLabels[lane], x + 9, y + 3);
-        }
-      }
-    });
-
-    ctx.fillStyle = 'rgba(94, 92, 230, .24)';
-    ctx.beginPath(); ctx.arc(centerX, convergenceY, 7, 0, Math.PI * 2); ctx.fill();
-    if (!reduce) elapsed += .016;
-    if (!reduce) requestAnimationFrame(drawDataStream);
-  }
-
-  resizeDataStream();
-  drawDataStream();
-  window.addEventListener('resize', resizeDataStream, { passive: true });
-})();
 
 // ---------- 3D tilt-on-hover for [data-tilt] elements ----------
 // Mouse-tracked perspective tilt — Apple-style. Also broadcasts the cursor
