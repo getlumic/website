@@ -9,6 +9,7 @@ Usage:
   python3 video/reel/render.py            # full render: frames + score, 30 fps
   python3 video/reel/render.py --stills   # one PNG per second into the frames dir, for review
   python3 video/reel/render.py --music    # rebuild the score only and re-mux it into the existing videos
+  python3 video/reel/render.py --vertical # Instagram Stories cut (1080x1920) -> video/reel/out/ (not published on the site)
 Needs: playwright (uses the installed Google Chrome), numpy, ffmpeg on PATH.
 """
 import shutil
@@ -56,6 +57,9 @@ def remux(wav: Path) -> None:
 
 
 def main() -> None:
+    if "--vertical" in sys.argv:
+        render_vertical()
+        return
     if "--music" in sys.argv:
         remux(build_score())
         report()
@@ -89,6 +93,35 @@ def main() -> None:
     encode(["-framerate", FPS, "-i", frames / "%05d.png"], build_score())
     ff("-i", frames / f"{int(duration * FPS) - 15:05d}.png", "-q:v", 3, OUT / "lumic-reel-poster.jpg")
     report()
+
+
+def render_vertical() -> None:
+    """Instagram Stories cut: reel-vertical.html (1080x1920) + the same score -> video/reel/out/."""
+    from playwright.sync_api import sync_playwright
+
+    src = ROOT / "video" / "reel" / "reel-vertical.html"
+    out = ROOT / "video" / "reel" / "out"
+    out.mkdir(parents=True, exist_ok=True)
+    frames = TMP / "lumic-reel-vframes"
+    shutil.rmtree(frames, ignore_errors=True)
+    frames.mkdir(parents=True)
+    with sync_playwright() as p:
+        browser = p.chromium.launch(channel="chrome")
+        page = browser.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
+        page.goto(src.as_uri() + "?render=1", wait_until="networkidle")
+        page.evaluate("window.reelReady")
+        duration = page.evaluate("window.DURATION")
+        for i in range(int(duration * FPS)):
+            page.evaluate(f"window.seek({min(i / FPS, duration - 1 / FPS)})")
+            page.screenshot(path=str(frames / f"{i:05d}.png"))
+        browser.close()
+    wav = build_score()
+    ff("-framerate", FPS, "-i", frames / "%05d.png", "-i", wav, "-map", "0:v:0", "-map", "1:a:0",
+       "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.2",
+       "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out / "lumic-reel-story.mp4")
+    ff("-i", frames / f"{int(duration * FPS) - 15:05d}.png", "-q:v", 3, out / "lumic-reel-story-poster.jpg")
+    for f in sorted(out.iterdir()):
+        print(f"{f.name}  {f.stat().st_size / 1e6:.1f} MB")
 
 
 def report() -> None:

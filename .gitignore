@@ -4,3 +4,4 @@ node_modules/
 .env
 .wrangler/
 loops/
+video/reel/out/
