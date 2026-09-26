@@ -237,7 +237,12 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .ledger .hd .st::before{display:none}
 
 /* ---------- proof ---------- */
-.pgrid{margin-top:72px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--hair)}
+.runs{margin-top:44px}
+.runs-l{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 16px}
+.runs ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.runs li{display:inline-flex;align-items:center;gap:9px;padding:10px 16px 10px 14px;border:1px solid var(--line);border-radius:999px;background:#ffffff;font-size:15.5px;color:var(--text);box-shadow:0 1px 2px rgba(15,23,42,.04);white-space:nowrap}
+.runs li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 3px rgba(94,92,230,.14)}
+.pgrid{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--hair)}
 .pf{padding:36px 32px 40px 0;border-bottom:var(--hair);display:flex;flex-direction:column}
 .pf:not(:nth-child(3n+1)){padding-left:32px;border-left:var(--hair)}
 .pf .n{font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--faint);margin-bottom:22px;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:10px}
@@ -638,8 +643,16 @@ footer{padding:56px 0 44px}
     <div class="thread d2" aria-hidden="true" style="top:calc(-1 * clamp(56px,7vw,112px) + 16px);height:calc(clamp(56px,7vw,112px) - 24px)"><i></i></div>
     <p class="kicker rv">Client work</p>
     <div class="two-head rv">
-      <h2 id="proof-h">In production at two companies.</h2>
-      <p class="section-sub lead">A $20M manufacturer and distributor runs its full reporting and automation suite on lumic, across two operating companies. Six processes that were manual now run every day. A specialty manufacturer runs lumic on QuickBooks and FileMaker.</p>
+      <h2 id="proof-h">In production, every day.</h2>
+      <p class="section-sub lead">Our flagship client, a $20M manufacturer and distributor, runs dozens of lumic workflows every day across two operating companies, and counting. A specialty manufacturer runs lumic on QuickBooks and FileMaker.</p>
+    </div>
+    <div class="runs rv">
+      <p class="runs-l">A sample of what runs on lumic today</p>
+      <ul>
+        <li>Sales &amp; margin analytics</li><li>AR aging &amp; collections</li><li>AP invoice automation</li><li>Purchasing &amp; PO write-back</li>
+        <li>Job costing</li><li>Consolidated financials</li><li>Payroll journal entries</li><li>Bank reconciliation</li>
+        <li>Sales commissions</li><li>Production rates</li><li>PTO tracking</li><li>Collections email drafts</li>
+      </ul>
     </div>
     <div class="pgrid rv">
       <article class="pf"><span class="n">01</span><h3>Live sales &amp; margin</h3>
