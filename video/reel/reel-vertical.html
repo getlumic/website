@@ -376,9 +376,9 @@ svg{overflow:visible}
       <div class="ln center dkl" id="t8a" style="top:618px;font-size:84px;letter-spacing:-.028em">Connect any AI to</div>
       <div class="ln center dkl" id="t8c" style="top:708px;font-size:84px;letter-spacing:-.028em"><em>your ERP and workflows.</em></div>
       <div class="dcard" id="dcA" style="left:365px;top:898px"><div class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9z"/><path d="M18.5 16l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg></div><div><div class="nl">AI assistant</div><div class="cs">Claude, ChatGPT, and others</div></div></div>
-      <div class="dcard" id="dcS" style="left:365px;top:1278px"><div class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v6.5c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V5.5"/><path d="M4.5 12v6.5c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V12"/></svg></div><div><div class="nl">Sage 100</div><div class="cs">Read and write</div></div></div>
+      <div class="dcard" id="dcS" style="left:365px;top:1278px"><div class="itile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v6.5c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V5.5"/><path d="M4.5 12v6.5c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8V12"/></svg></div><div><div class="nl">Your ERP</div><div class="cs">Read and write</div></div></div>
       <div class="dtag" id="dtag" style="left:0;top:1428px"><i></i>Entry prepared · unposted</div>
-      <div class="ln center dsub" id="t8b" style="top:1510px;font-size:26px;font-weight:400">Sage 100 first. More ERP connectors coming soon.</div>
+      <div class="ln center dsub" id="t8b" style="top:1510px;font-size:26px;font-weight:400">Built for the system you already run.</div>
     </div>
 
     <div id="dorb">MCP</div>
@@ -957,7 +957,7 @@ function scene8(t) {
   const d0 = tw(t, 34.85, 35.2, E.ioCubic), d1 = tw(t, 34.95, 35.3, E.ioCubic);
   l0.setAttribute('y2', f2(lerp(1024, 1119, d0))); l1.setAttribute('y2', f2(lerp(1181, 1276, d1)));
   op(l0, (d0 > 0 ? 1 : 0) * (1 - out)); op(l1, (d1 > 0 ? 1 : 0) * (1 - out));
-  // pulse AI → MCP → Sage 100
+  // pulse AI → MCP → your ERP
   const pp = tw(t, 35.2, 36.0, E.ioSine), act = t > 35.2 && t < 36.05;
   const px = p => lerp(1024, 1276, p);
   const cf = Math.min(1, P(t, 35.2, 35.3)) * (1 - P(t, 35.95, 36.05));
