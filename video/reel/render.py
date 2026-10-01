@@ -10,6 +10,8 @@ Usage:
   python3 video/reel/render.py --stills   # one PNG per second into the frames dir, for review
   python3 video/reel/render.py --music    # rebuild the score only and re-mux it into the existing videos
   python3 video/reel/render.py --vertical # Instagram Stories cut (1080x1920) -> video/reel/out/ (not published on the site)
+  python3 video/reel/render.py --v3 [--stills] [--resume] [--out DIR]   # the site film since 2026-10-01 (video/reel/v3/): picture + score locked to the
+                                          # picture's own cue times (window.CUES); default output video/reel/out/v3/ for review
 Needs: playwright (uses the installed Google Chrome), numpy, ffmpeg on PATH.
 """
 import shutil
@@ -19,21 +21,37 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "video" / "reel" / "reel.html"
-SCORE = ROOT / "video" / "reel" / "score.py"
-OUT = ROOT / "public" / "video"
+VER = "v3" if "--v3" in sys.argv else "v2" if "--v2" in sys.argv else None
+V2 = VER is not None                     # the newer films: async seek + picture-driven cues
+SRC = ROOT / "video" / "reel" / (f"{VER}/reel.html" if VER else "reel.html")
+SCORE = ROOT / "video" / "reel" / (f"{VER}/score.py" if VER else "score.py")
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]).resolve() if "--out" in sys.argv else (
+    ROOT / "video" / "reel" / "out" / VER if VER else ROOT / "public" / "video")
 FPS = 30
 W, H = 1920, 1080
 TMP = Path(tempfile.gettempdir())
+
+
+def shot(page, t, path):
+    """Seek and capture one frame; a stalled capture is retried (frames are deterministic, so a retry is exact)."""
+    for attempt in range(4):
+        try:
+            page.evaluate(f"window.seek({t})")
+            page.screenshot(path=str(path), timeout=120000)
+            return
+        except Exception as e:                   # noqa: BLE001 - Playwright raises its own TimeoutError type
+            if attempt == 3:
+                raise
+            print(f"frame at {t:.3f}s: {type(e).__name__}, retrying", flush=True)
 
 
 def ff(*args):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *map(str, args)], check=True)
 
 
-def build_score() -> Path:
+def build_score(cues: Path = None) -> Path:
     wav = TMP / "lumic-reel-score.wav"
-    subprocess.run([sys.executable, str(SCORE), str(wav)], check=True)
+    subprocess.run([sys.executable, str(SCORE), str(wav)] + ([str(cues)] if cues else []), check=True)
     return wav
 
 
@@ -69,8 +87,9 @@ def main() -> None:
 
     stills = "--stills" in sys.argv
     frames = TMP / "lumic-reel-frames"
-    shutil.rmtree(frames, ignore_errors=True)
-    frames.mkdir(parents=True)
+    if "--resume" not in sys.argv:              # --resume keeps the frames already rendered and continues
+        shutil.rmtree(frames, ignore_errors=True)
+    frames.mkdir(parents=True, exist_ok=True)
 
     with sync_playwright() as p:
         browser = p.chromium.launch(channel="chrome")
@@ -78,11 +97,17 @@ def main() -> None:
         page.goto(SRC.as_uri() + "?render=1", wait_until="networkidle")
         page.evaluate("window.reelReady")
         duration = page.evaluate("window.DURATION")
+        cues = None
+        if V2:                                   # the score follows the picture's own cue times
+            cues = TMP / "lumic-reel-cues.json"
+            cues.write_text(page.evaluate("JSON.stringify(window.CUES)"))
         times = range(int(duration) + 1) if stills else range(int(duration * FPS))
         for i in times:
             t = i if stills else i / FPS
-            page.evaluate(f"window.seek({min(t, duration - 1 / FPS)})")
-            page.screenshot(path=str(frames / f"{i:05d}.png"))
+            out = frames / f"{i:05d}.png"
+            if "--resume" in sys.argv and out.exists() and out.stat().st_size > 0:
+                continue
+            shot(page, min(t, duration - 1 / FPS), out)
         browser.close()
 
     if stills:
@@ -90,7 +115,7 @@ def main() -> None:
         return
 
     OUT.mkdir(parents=True, exist_ok=True)
-    encode(["-framerate", FPS, "-i", frames / "%05d.png"], build_score())
+    encode(["-framerate", FPS, "-i", frames / "%05d.png"], build_score(cues))
     ff("-i", frames / f"{int(duration * FPS) - 15:05d}.png", "-q:v", 3, OUT / "lumic-reel-poster.jpg")
     report()
 

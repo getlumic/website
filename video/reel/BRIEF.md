@@ -1,3 +1,5 @@
+> v1 film (2026-09-25). Since 2026-10-01 the site uses the v3 film: see `v3/BRIEF.md`.
+
 # lumic reel: 40-second motion-graphics showreel
 
 The goal: a dynamic 40-second motion-graphics film about lumic. It should look like a top motion designer's showreel: bold, precise, and beautifully timed. It must stay in the NEW site theme (Quiet Tech, `public/index.html`): high tech yet calm, premium, never cluttered. It will be embedded on get-lumic.com under the hero.

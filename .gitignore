@@ -5,3 +5,4 @@ node_modules/
 .wrangler/
 loops/
 video/reel/out/
+video/reel/v2/
