@@ -89,11 +89,11 @@ s = s[:a] + '''    <div id="x2" class="layer">
 ''' + s[b:]
 
 # end card: wordmark, three-line slogan, URL
-rep('''      <div class="ln center" id="t9a" style="top:600px;font-size:44px;letter-spacing:-.015em;color:var(--text);font-weight:400">Custom dashboards + AI agents on the ERP your business <em>already runs.</em></div>
+rep('''      <div class="ln center" id="t9a" style="top:600px;font-size:44px;letter-spacing:-.015em;color:var(--text);font-weight:400">AI, deployed into your business and <em>kept working.</em></div>
       <div class="ln center" id="t9b" style="top:696px;font-size:21px;letter-spacing:.2em;color:var(--mut);font-weight:600">GET-LUMIC.COM</div>''',
-    '''      <div class="ln center" id="t9a" style="top:1000px;font-size:50px;letter-spacing:-.015em;color:var(--text);font-weight:400">Custom dashboards + AI agents</div>
-      <div class="ln center" id="t9c" style="top:1066px;font-size:50px;letter-spacing:-.015em;color:var(--text);font-weight:400">on the ERP your business</div>
-      <div class="ln center" id="t9e" style="top:1132px;font-size:50px;letter-spacing:-.015em;color:var(--text);font-weight:400"><em>already runs.</em></div>
+    '''      <div class="ln center" id="t9a" style="top:1000px;font-size:50px;letter-spacing:-.015em;color:var(--text);font-weight:400">AI, deployed into</div>
+      <div class="ln center" id="t9c" style="top:1066px;font-size:50px;letter-spacing:-.015em;color:var(--text);font-weight:400">your business and</div>
+      <div class="ln center" id="t9e" style="top:1132px;font-size:50px;letter-spacing:-.015em;color:var(--text);font-weight:400"><em>kept working.</em></div>
       <div class="ln center" id="t9b" style="top:1262px;font-size:23px;letter-spacing:.2em;color:var(--mut);font-weight:600">GET-LUMIC.COM</div>''')
 
 rep('<svg id="rs" class="abs" width="1920" height="1080" viewBox="0 0 1920 1080">', '<svg id="rs" class="abs" width="1080" height="1920" viewBox="0 0 1080 1920">')

@@ -38,7 +38,10 @@ def main() -> None:
 
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch()
+            try:
+                browser = p.chromium.launch()
+            except Exception:  # bundled Chromium not installed: use Google Chrome
+                browser = p.chromium.launch(channel="chrome")
             context = browser.new_context(viewport={"width": 1200, "height": 630})
             page = context.new_page()
             # Serve via file:// from the public dir so /wordmark.svg resolves.

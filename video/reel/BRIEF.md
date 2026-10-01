@@ -4,10 +4,10 @@ The goal: a dynamic 40-second motion-graphics film about lumic. It should look l
 
 ## What lumic is (research summary; do not add claims)
 - lumic designs, builds, and supports custom dashboards, AI agents, and workflow automation for manufacturers and distributors, on the ERP they already run. We stay on to keep it running (monthly retainer).
-- Slogan (verbatim): **Custom dashboards + AI agents on the ERP your business already runs.**
+- Slogan (verbatim, since 2026-09-30): **AI, deployed into your business and kept working.**
 - Proof in production: a complete reporting and automation suite for a $20M manufacturer and distributor with two operating companies. Six processes that were manual now run every day (live sales & margin, AR aging + statements, purchasing & POs, AP invoice agent, production & job-cost margin, consolidated financials). Do not name the client.
 - AI agents prepare entries. They land **unposted**. A person approves and posts. Nothing posts on its own.
-- AI connector (COMING SOON): connects any AI assistant that supports MCP (Claude, ChatGPT, and others) to Sage 100, reading correctly and preparing unposted entries. Sage 100 first, more ERP connectors coming soon. This is the ONLY place "Sage 100" may appear.
+- AI connector (COMING SOON): connects any AI assistant that supports MCP (Claude, ChatGPT, and others) to your systems, reading correctly and preparing unposted entries. No system is named anywhere in the film.
 - Led by two finance-trained founders in St. Louis (a controller and a CFP®). Do not show names or photos in the reel.
 - Site: get-lumic.com
 
@@ -27,8 +27,8 @@ Use timings as a guide. Motion should flow continuously: match cuts, morphs, cam
 5. **18.0–25.0 · AI agents.** Kicker: "AI AGENTS". An envelope glides in, opens, and an invoice slides out. An indigo scan line passes over it, and the fields (Vendor 01042 · INV-20931 · $4,860.00) lift off the paper and fly into a structured entry card. A status pill reads "Entry prepared · unposted". A cursor clicks **Approve**, a check draws, and a soft ring pulse. Line: "A person approves. *Nothing posts on its own.*"
 6. **25.0–30.0 · Workflow automation.** Kicker: "WORKFLOW AUTOMATION". The camera pulls back to a node map on white: an ERP hub, with flow lines to "Statements sent", "POs created", and "Reports delivered". Pulses travel the lines on a rhythm, and each node ticks when the pulse arrives. Tabular timestamps tick.
 7. **30.0–34.0 · We keep it running.** Transition to near-black (`#0e1525`) through an iris from the orb. Hairline orbit rings turn, and four checkpoints on the ring light in turn: "New reports", "Schema changes", "Data feeds", "New users". Big type: "We build it. *We keep it running.*"
-8. **34.0–37.0 · AI connector.** Still on dark. "AI assistant" → "MCP" → "Sage 100" nodes connect with a pulse. A "Coming soon" pill appears, with the line "Connect any AI to Sage 100." and small text "More ERP connectors coming soon."
-9. **37.0–40.0 · End card.** An iris back to white. The orb flies to center and becomes the dot of a large `lumıc` wordmark. The slogan fades up beneath (serif italic on "already runs."), then "get-lumic.com" in small tracking. The orb breathes once. The final 0.5 s holds still (it becomes the poster frame and the loop point).
+8. **34.0–37.0 · AI connector.** Still on dark. "AI assistant" → "MCP" → "Your ERP" nodes connect with a pulse. A "Coming soon" pill appears, with the line "Connect any AI to your ERP and workflows." and small text "Built for the system you already run."
+9. **37.0–40.0 · End card.** An iris back to white. The orb flies to center and becomes the dot of a large `lumıc` wordmark. The slogan fades up beneath (serif italic on "kept working."), then "get-lumic.com" in small tracking. The orb breathes once. The final 0.5 s holds still (it becomes the poster frame and the loop point).
 
 ## Craft notes
 - Treat it like a showreel: varied rhythms, confident negative space, precise alignment, secondary motion (subtle parallax layers, shadow shifts, micro-overshoot on cards), motion blur hints via short trails on fast moves, and seamless transitions between scenes (no hard cuts to empty frames).

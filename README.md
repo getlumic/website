@@ -1,6 +1,6 @@
 # lumic — marketing site
 
-Source for [get-lumic.com](https://get-lumic.com) — custom dashboards + AI agents on the ERP your business already runs.
+Source for [get-lumic.com](https://get-lumic.com) — AI, deployed into your business and kept working.
 
 Static site served from `public/`, deployed on Cloudflare Workers.
 
