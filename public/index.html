@@ -101,6 +101,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .nav ul a{text-decoration:none;color:var(--muted);padding:8px 12px;border-radius:8px;transition:color .2s}
 .nav ul a:hover{color:var(--text-strong)}
 @media (max-width:960px){.nav ul{display:none}}
+@media (max-width:1100px){.nav .nav-opt{display:none}}
 
 .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:600;font-size:15px;text-decoration:none;padding:13px 22px;border-radius:999px;transition:background .2s,transform .2s,box-shadow .2s,border-color .2s;white-space:nowrap;border:1px solid transparent}
 .btn-p{background:var(--primary);color:#ffffff;box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 12px 28px -14px rgba(94,92,230,.75)}
@@ -470,13 +471,154 @@ footer{padding:56px 0 44px}
 .film-play:focus-visible .pb{box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
 @media (max-width:600px){.film-play{padding:12px}.film-play .pb{padding:5px;gap:0;box-shadow:0 0 0 6px rgba(94,92,230,.12),0 12px 26px -12px rgba(94,92,230,.75)}.film-play .pb .tx,.film-play .pb .len{display:none}.film-play .pb .ic{width:36px;height:36px;background:transparent}.film-frame{border-radius:16px}}
 
-/* ---------- demo films (real dashboards, sample data) ---------- */
-.demo-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:clamp(28px,4vw,44px) 0 18px}
-.demo-tabs button{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--muted);padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#ffffff;cursor:pointer;transition:color .2s,border-color .2s,box-shadow .2s}
-.demo-tabs button:hover{color:var(--text-strong)}
-.demo-tabs button[aria-selected="true"]{color:#ffffff;background:var(--primary);border-color:var(--primary);box-shadow:0 10px 24px -12px rgba(94,92,230,.75)}
-.demo-tabs button:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
-.demo-note{margin-top:14px;font-size:14px;color:var(--faint)}
+/* ---------- demo films: a flat circular carousel (real dashboards, sample data) ----------
+   JS places each film by its offset from the centre (scale, dim, depth). The ring loops; the side films stay paused on posters. */
+.demo{overflow-x:clip;padding-bottom:clamp(40px,5vw,72px)}
+.car{--gap:28px;--peek:clamp(12px,6vw,190px);--car-w:min(1040px,calc(100vw - 2 * (var(--peek) + var(--gap))));position:relative;margin-top:clamp(36px,5vw,60px);outline:none}
+.car-stage{position:relative;height:calc(var(--car-w) * 9 / 16);touch-action:pan-y;-webkit-user-select:none;user-select:none;cursor:grab}
+.car-stage.drag{cursor:grabbing}
+.car-slide{position:absolute;left:50%;top:0;width:var(--car-w);margin-left:calc(var(--car-w) / -2);aspect-ratio:16/9;transform-origin:50% 50%;will-change:transform,opacity}
+.car-slide:not(.is-active){cursor:pointer}
+.car-f{position:absolute;inset:0;border-radius:24px;overflow:hidden;background:#f6f7fb;border:1px solid var(--line);box-shadow:var(--sh);transition:box-shadow .6s var(--ease)}
+.car-slide.is-active .car-f{box-shadow:var(--sh-lg)}
+.car-f video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#f6f7fb;pointer-events:none}
+.car.still .car-slide.is-active video{pointer-events:auto}
+.car:focus-visible .car-slide.is-active .car-f{box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary),var(--sh-lg)}
+/* controls that sit on the centre frame */
+.car-ui{position:absolute;left:50%;top:0;width:var(--car-w);height:calc(var(--car-w) * 9 / 16);transform:translateX(-50%);pointer-events:none;z-index:20}
+.car-nav{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--text-strong);display:grid;place-items:center;cursor:pointer;pointer-events:auto;box-shadow:0 1px 2px rgba(15,23,42,.06),0 10px 24px -12px rgba(15,23,42,.35);transition:border-color .2s,color .2s,transform .25s var(--ease)}
+.car-nav svg{width:16px;height:16px}
+.car-nav.prev{left:-22px}
+.car-nav.next{right:-22px}
+.car-nav:hover{border-color:rgba(94,92,230,.45);color:var(--primary-d)}
+.car-nav.prev:hover{transform:translateX(-2px)}
+.car-nav.next:hover{transform:translateX(2px)}
+.car-nav:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
+.car-pp{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--primary);color:#ffffff;display:grid;place-items:center;box-shadow:0 0 0 10px rgba(94,92,230,.14),0 16px 34px -14px rgba(94,92,230,.75);opacity:0;transform:scale(.9);transition:opacity .3s var(--ease),transform .4s var(--ease)}
+.car-pp svg{width:22px;height:22px;margin-left:3px}
+.car-ui.paused .car-pp{opacity:1;transform:none}
+/* the four names: the active one is indigo, its bar fills as the film plays */
+.car-tabs{display:flex;gap:clamp(4px,1.2vw,14px);margin:clamp(20px,2.6vw,30px) auto 0;padding:0 var(--gut);max-width:var(--max);overflow-x:auto;scrollbar-width:none}
+.car-tabs::-webkit-scrollbar{display:none}
+.car-tabs button:first-child{margin-left:auto}
+.car-tabs button:last-child{margin-right:auto}
+.car-tabs button{flex:none;position:relative;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:-.005em;color:var(--muted);background:none;border:0;border-radius:10px;padding:10px 16px 18px;cursor:pointer;transition:color .25s}
+.car-tabs button:hover{color:var(--text-strong)}
+.car-tabs button[aria-selected="true"]{color:var(--primary-d)}
+.car-tabs .bar{position:absolute;left:16px;right:16px;bottom:8px;height:2px;border-radius:2px;background:var(--line);overflow:hidden;transition:background .25s}
+.car-tabs .bar i{position:absolute;inset:0;border-radius:inherit;background:var(--primary);transform-origin:0 50%;transform:scaleX(0)}
+.car-tabs button[aria-selected="true"] .bar{background:rgba(94,92,230,.16)}
+.car-tabs button:focus-visible{outline:none;box-shadow:0 0 0 2px var(--primary)}
+.demo-note{margin-top:10px;font-size:14px;color:var(--faint);text-align:center}
+@media (max-width:1100px){.car{--gap:20px}}
+@media (max-width:620px){
+  .car{--gap:8px;--peek:10px}
+  .car-f{border-radius:14px}
+  .car-nav{display:none}
+  .car-pp{width:52px;height:52px;margin:-26px 0 0 -26px}
+  .car-tabs{gap:0;padding:0 8px}
+  .car-tabs button{font-size:14px;padding:10px 10px 16px}
+  .car-tabs .bar{left:10px;right:10px;bottom:7px}
+}
+/* sound toggle: shown only when the active film has data-sound="1" */
+.snd{position:absolute;right:clamp(10px,1.6vw,20px);bottom:clamp(10px,1.6vw,20px);z-index:2;pointer-events:auto;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--text-strong);display:grid;place-items:center;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.06),0 10px 24px -12px rgba(15,23,42,.35);transition:background .2s,color .2s,border-color .2s,transform .25s var(--ease)}
+.snd[hidden]{display:none}
+.snd:hover{transform:translateY(-1px);border-color:rgba(94,92,230,.45)}
+.snd svg{width:20px;height:20px}
+.snd .on,.snd[aria-pressed="true"] .off{display:none}
+.snd[aria-pressed="true"] .on{display:block}
+.snd[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:#ffffff}
+.snd:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
+
+/* ---------- sources (connects to everything) ---------- */
+.sources{overflow-x:clip}
+.flow{position:relative;margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr) minmax(0,330px);align-items:center}
+.flow-lines{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
+.flow-col{position:relative;z-index:2}
+.flow-l{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:14px}
+.flow-src ul{display:grid;gap:8px}
+.fs{display:flex;align-items:center;gap:12px;padding:8px 14px 8px 8px;border:1px solid var(--line);border-radius:14px;background:#ffffff;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.fi{flex:none;width:34px;height:34px;border-radius:10px;background:var(--bg);border:1px solid var(--line2);display:grid;place-items:center;color:var(--primary-d)}
+.fi svg{width:18px;height:18px}
+.fs b,.fo b{display:block;font-size:14.5px;font-weight:600;color:var(--text-strong);line-height:1.3;letter-spacing:-.005em}
+.fs small,.fo small{display:block;font-size:12.5px;color:var(--muted);line-height:1.4;margin-top:1px}
+.flow-out ul{display:grid;gap:12px}
+.fo{display:flex;align-items:center;gap:14px;padding:16px 18px 16px 14px;border:1px solid var(--line);border-radius:16px;background:#ffffff;box-shadow:var(--sh)}
+.fo .fi{width:40px;height:40px;border-radius:12px;background:var(--wash);border-color:rgba(94,92,230,.22);color:var(--primary)}
+.fo .fi svg{width:19px;height:19px}
+.fo b{font-size:15.5px}
+.flow-hub{position:relative;z-index:1;display:flex;justify-content:center;padding:24px 0}
+.hub{position:relative;width:188px;padding:32px 20px 26px;border-radius:26px;background:#ffffff;border:1px solid rgba(94,92,230,.24);box-shadow:0 0 0 7px rgba(238,237,253,.6),var(--sh-lg);display:flex;flex-direction:column;align-items:center;gap:16px}
+.hub::after{content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none}
+.hub .brand{font-size:36px}
+.hub-st{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary-d);background:var(--wash);padding:4px 11px 4px 10px;border-radius:999px}
+.hub-st::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 3px rgba(94,92,230,.16)}
+.hub-rings{position:absolute;left:50%;top:50%;width:220%;aspect-ratio:1;transform:translate(-50%,-50%);z-index:-1;pointer-events:none}
+.hub-rings svg{width:100%;height:100%;display:block;overflow:visible}
+.hub-rings g{transform-box:view-box;transform-origin:50% 50%}
+.fln{fill:none;stroke:rgba(94,92,230,.24);stroke-width:1}
+.flc{fill:#ffffff;stroke:rgba(94,92,230,.5);stroke-width:1}
+.flp{fill:none;stroke:var(--primary-l);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:5 400;stroke-dashoffset:8;opacity:0;filter:drop-shadow(0 0 3px rgba(94,92,230,.85))}
+.flow-note{margin-top:clamp(48px,6vw,72px);padding-top:24px;border-top:var(--hair);display:flex;align-items:center;gap:14px}
+.flow-note .fi{color:var(--primary)}
+.flow-note p{font-size:15px;color:var(--muted)}
+.flow-note b{color:var(--text-strong);font-weight:600}
+@media (prefers-reduced-motion:no-preference){
+  /* staggered entrance, then light pulses. JS adds .in, then .live; .off pauses everything offscreen */
+  .js .flow .flow-l{opacity:0;transition:opacity .9s var(--ease)}
+  .js .flow .fs,.js .flow .fo{opacity:0;transform:translateX(-12px);transition:opacity .8s var(--ease),transform 1s var(--ease)}
+  .js .flow .fo{transform:translateX(12px)}
+  .js .flow .hub{opacity:0;transform:scale(.94);transition:opacity 1s var(--ease) .45s,transform 1.2s var(--ease) .45s}
+  .js .flow .fln{stroke-dasharray:100;stroke-dashoffset:100;transition:stroke-dashoffset 1.3s var(--ease) var(--dl,0ms)}
+  .js .flow .flc{opacity:0;transition:opacity .6s var(--ease) var(--dl,0ms)}
+  .js .flow.in .flow-l,.js .flow.in .hub,.js .flow.in .flc{opacity:1}
+  .js .flow.in .hub{transform:none}
+  .js .flow.in .fln{stroke-dashoffset:0}
+  .js .flow.in .fs,.js .flow.in .fo{opacity:1;transform:none}
+  .js .flow.in .fs{transition-delay:calc(var(--i,0) * 60ms)}
+  .js .flow.in .fo{transition-delay:calc(1150ms + var(--i,0) * 90ms)}
+  .flow.live .flp{animation:fp-in 9.6s linear infinite}
+  .flow.live .flp-out{animation-name:fp-out;animation-duration:4.8s}
+  .flow.live .hub::after{animation:hub-beat 4.8s var(--ease) 1.9s infinite}
+  .flow .hub-rings .r1{animation:hub-spin 120s linear infinite}
+  .flow .hub-rings .r2{animation:hub-spin 180s linear infinite reverse}
+  .flow.off .flp,.flow.off .hub::after,.flow.off .hub-rings g{animation-play-state:paused}
+  @keyframes fp-in{0%{stroke-dashoffset:8;opacity:0;animation-timing-function:cubic-bezier(.45,0,.55,1)}2%{opacity:1}19%{opacity:1}21%{stroke-dashoffset:-100;opacity:0}100%{stroke-dashoffset:-100;opacity:0}}
+  @keyframes fp-out{0%{stroke-dashoffset:8;opacity:0;animation-timing-function:cubic-bezier(.45,0,.55,1)}4%{opacity:1}34%{opacity:1}38%{stroke-dashoffset:-100;opacity:0}100%{stroke-dashoffset:-100;opacity:0}}
+  @keyframes hub-beat{0%{box-shadow:0 0 0 0 rgba(94,92,230,.32)}45%,100%{box-shadow:0 0 0 18px rgba(94,92,230,0)}}
+  @keyframes hub-spin{to{transform:rotate(360deg)}}
+}
+/* stacked: the flow runs top to bottom */
+@media (max-width:900px){
+  .flow{grid-template-columns:minmax(0,1fr)}
+  .flow-l{display:none}
+  .flow-src ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow-out ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow-hub{padding:80px 0}
+  .hub-rings{width:190%}
+  @media (prefers-reduced-motion:no-preference){
+    .js .flow .fs{transform:translateY(-10px)}
+    .js .flow .fo{transform:translateY(10px)}
+  }
+}
+@media (max-width:620px){
+  .fs{padding:8px 10px 8px 8px;gap:10px}
+  .fs small{display:none}
+  .fs b{font-size:13.5px}
+  .flow-out ul{gap:8px}
+  .fo{flex-direction:column;align-items:flex-start;gap:12px;padding:14px}
+  .fo b{font-size:14.5px}
+  .flow-hub{padding:64px 0}
+  .hub{width:168px;padding:26px 16px 22px}
+  .hub .brand{font-size:32px}
+  .flow-note{align-items:flex-start}
+}
+@media (max-width:400px){
+  .fs{padding:7px 8px 7px 6px;gap:8px}
+  .fs .fi{width:28px;height:28px;border-radius:8px}
+  .fs .fi svg{width:16px;height:16px}
+  .fs b{font-size:13px}
+}
 </style>
 </head>
 <body>
@@ -489,6 +631,7 @@ footer{padding:56px 0 44px}
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#demo">Demo</a></li>
+        <li class="nav-opt"><a href="#sources">Connects</a></li>
         <li><a href="#how">How we work</a></li>
         <li><a href="#connector">AI connector</a></li>
         <li><a href="#founders">Leadership</a></li>
@@ -711,57 +854,359 @@ footer{padding:56px 0 44px}
   </div>
 </section>
 
-<!-- ============ DEMO FILMS ============ -->
-<section id="demo" aria-labelledby="demo-h" style="padding-top:clamp(56px,7vw,112px)">
+<!-- ============ DEMO FILMS (flat circular carousel) ============ -->
+<section id="demo" class="demo" aria-labelledby="demo-h" style="padding-top:clamp(56px,7vw,112px)">
   <div class="wrap">
     <p class="kicker rv">See it running</p>
     <div class="two-head rv">
       <h2 id="demo-h">Real dashboards, shown with sample data.</h2>
       <p class="lead">These are dashboards we built and run in production. The company, the customers, and every number shown here are made up.</p>
     </div>
-    <div class="demo-tabs rv" role="tablist" aria-label="Choose a dashboard">
-      <button type="button" role="tab" aria-selected="true" data-film="receivables">Receivables</button>
-      <button type="button" role="tab" aria-selected="false" data-film="sales">Sales</button>
-      <button type="button" role="tab" aria-selected="false" data-film="purchasing">Purchasing</button>
-      <button type="button" role="tab" aria-selected="false" data-film="financial">Financial</button>
+  </div>
+  <div class="car rv" id="car" tabindex="-1" role="region" aria-roledescription="carousel" aria-label="Dashboard films">
+    <div class="car-stage" id="carStage">
+      <div class="car-slide is-active" id="car-receivables" data-film="receivables" role="tabpanel" aria-labelledby="cart-receivables">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes.">
+          <source src="/video/demos/lumic-demo-receivables.webm" type="video/webm"><source src="/video/demos/lumic-demo-receivables.mp4" type="video/mp4"></video></div>
+      </div>
+      <div class="car-slide" id="car-sales" data-film="sales" role="tabpanel" aria-labelledby="cart-sales" aria-hidden="true">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-sales-poster.jpg" aria-label="The sales dashboard: year-to-date sales, each customer month by month, and the trends page.">
+          <source src="/video/demos/lumic-demo-sales.webm" type="video/webm"><source src="/video/demos/lumic-demo-sales.mp4" type="video/mp4"></video></div>
+      </div>
+      <div class="car-slide" id="car-purchasing" data-film="purchasing" role="tabpanel" aria-labelledby="cart-purchasing" aria-hidden="true">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-purchasing-poster.jpg" aria-label="The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders.">
+          <source src="/video/demos/lumic-demo-purchasing.webm" type="video/webm"><source src="/video/demos/lumic-demo-purchasing.mp4" type="video/mp4"></video></div>
+      </div>
+      <div class="car-slide" id="car-financial" data-film="financial" role="tabpanel" aria-labelledby="cart-financial" aria-hidden="true">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-financial-poster.jpg" aria-label="The financial dashboard: the income statement for two companies, and the postings behind one account.">
+          <source src="/video/demos/lumic-demo-financial.webm" type="video/webm"><source src="/video/demos/lumic-demo-financial.mp4" type="video/mp4"></video></div>
+      </div>
     </div>
-    <div class="film-frame rv" id="demoFrame" role="tabpanel">
-      <video id="demoVideo" muted loop playsinline preload="none" poster="/video/demos/lumic-demo-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer's contacts and notes.">
-        <source src="/video/demos/lumic-demo-receivables.webm" type="video/webm">
-        <source src="/video/demos/lumic-demo-receivables.mp4" type="video/mp4">
-      </video>
+    <div class="car-ui" id="carUi">
+      <button class="car-nav prev" type="button" aria-label="Previous film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5L5.5 8l4.5 4.5"/></svg></button>
+      <button class="car-nav next" type="button" aria-label="Next film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"/></svg></button>
+      <span class="car-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>
+      <button class="snd" id="demoSound" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on" hidden>
+        <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+        <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+      </button>
     </div>
-    <p class="demo-note rv">Silent, 23 seconds each. Every figure is sample data.</p>
+    <div class="car-tabs" role="tablist" aria-label="Choose a dashboard">
+      <button type="button" role="tab" id="cart-receivables" aria-controls="car-receivables" aria-selected="true" data-film="receivables">Receivables<span class="bar" aria-hidden="true"><i></i></span></button>
+      <button type="button" role="tab" id="cart-sales" aria-controls="car-sales" aria-selected="false" tabindex="-1" data-film="sales">Sales<span class="bar" aria-hidden="true"><i></i></span></button>
+      <button type="button" role="tab" id="cart-purchasing" aria-controls="car-purchasing" aria-selected="false" tabindex="-1" data-film="purchasing">Purchasing<span class="bar" aria-hidden="true"><i></i></span></button>
+      <button type="button" role="tab" id="cart-financial" aria-controls="car-financial" aria-selected="false" tabindex="-1" data-film="financial">Financial<span class="bar" aria-hidden="true"><i></i></span></button>
+    </div>
+  </div>
+  <div class="wrap"><p class="demo-note">Silent, 23 seconds each. Every figure is sample data.</p></div>
+</section>
+
+<script>
+/* Demo carousel. p is the ring position in films (unbounded; film i sits at offset i - p, wrapped to [-2, 2)).
+   Only the centre film plays, muted, while 40% of the stage is on screen. Films advance on their own until the viewer
+   touches anything. Reduced motion: instant swaps, native controls, no autoplay. */
+(function(){
+  var car=document.getElementById('car'),stage=document.getElementById('carStage'),ui=document.getElementById('carUi');
+  if(!car||!stage||!ui) return;
+  var slides=[].slice.call(stage.querySelectorAll('.car-slide')),N=slides.length;
+  var vids=slides.map(function(s){return s.querySelector('video');});
+  var tabs=[].slice.call(car.querySelectorAll('.car-tabs [role="tab"]'));
+  var bars=tabs.map(function(t){return t.querySelector('.bar i');});
+  var snd=document.getElementById('demoSound');
+  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var S=.82,p=0,active=0,auto=!still,visible=false,userPaused=false,anim=null,drag=null,step=0,barRaf=null;
+  if(still) car.classList.add('still');
+  function mod(a,n){return ((a%n)+n)%n;}
+  function inOut(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
+  function out(t){return 1-Math.pow(1-t,3);}
+
+  function render(){
+    slides.forEach(function(s,i){
+      var d=mod(i-p+2,N)-2,a=Math.abs(d);
+      var sc=1-(1-S)*Math.min(a,1)-.06*Math.max(0,a-1);
+      var op=a<=1?1-.42*a:.58*(2-a);
+      s.style.transform='translate3d('+(d*step).toFixed(2)+'px,0,0) scale('+sc.toFixed(4)+')';
+      s.style.opacity=op.toFixed(3);
+      s.style.zIndex=String(10-Math.round(a*3));
+      s.style.visibility=op<.02?'hidden':'';
+    });
+  }
+  function measure(){
+    var w=slides[0].offsetWidth,gap=parseFloat(getComputedStyle(car).getPropertyValue('--gap'))||16;
+    step=w/2+gap+S*w/2;
+    render();
+  }
+
+  /* playback */
+  function tickBars(){
+    barRaf=null;
+    var v=vids[active],d=v.duration;
+    bars[active].style.transform='scaleX('+(d>0&&isFinite(d)?Math.min(1,v.currentTime/d):0).toFixed(4)+')';
+    if(!v.paused&&!v.ended) barRaf=requestAnimationFrame(tickBars);
+  }
+  function play(){
+    ui.classList.toggle('paused',userPaused&&!still);
+    if(still||!visible||userPaused) return;
+    var pr=vids[active].play();
+    if(pr&&pr.catch) pr.catch(function(){});
+  }
+  function sound(on){
+    vids[active].muted=!on;
+    if(!snd) return;
+    snd.setAttribute('aria-pressed',on?'true':'false');
+    snd.title=on?'Turn sound off':'Turn sound on';
+  }
+  function restart(v){ try{ v.currentTime=0; }catch(e){} }
+  /* films that left the centre go back to their poster (load() with preload none drops the frame) */
+  function rest(){ vids.forEach(function(v,k){ if(k!==active&&v.used){ v.pause(); v.used=false; v.load(); } }); }
+  vids.forEach(function(v,k){
+    v.addEventListener('playing',function(){ v.used=true; if(k===active&&!barRaf) tickBars(); });
+    v.addEventListener('timeupdate',function(){ if(k===active&&!barRaf) tickBars(); });
+    v.addEventListener('ended',function(){
+      if(k!==active) return;
+      if(auto&&visible) go(active+1,true);
+      else if(!still){ restart(v); play(); }
+    });
+  });
+
+  function setActive(i){
+    var old=vids[active];
+    old.pause(); old.muted=true;
+    active=i; userPaused=false;
+    tabs.forEach(function(t,k){ var on=k===i; t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1; });
+    slides.forEach(function(s,k){ var on=k===i; s.classList.toggle('is-active',on); if(on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden','true'); });
+    vids.forEach(function(v,k){ v.controls=still&&k===i; });
+    bars.forEach(function(b){ b.style.transform='scaleX(0)'; });
+    sound(false);
+    if(snd) snd.hidden=still||slides[i].getAttribute('data-sound')!=='1';
+    restart(vids[i]);
+    play();
+  }
+  function glide(to,dur,fn){
+    if(anim) cancelAnimationFrame(anim);
+    anim=null;
+    if(still||!dur){ p=to; settle(); return; }
+    var from=p,t0=null;
+    function tick(now){
+      if(t0===null) t0=now;
+      var t=Math.min(1,(now-t0)/dur);
+      p=from+(to-from)*fn(t); render();
+      if(t<1) anim=requestAnimationFrame(tick); else { anim=null; p=to; settle(); }
+    }
+    anim=requestAnimationFrame(tick);
+  }
+  function settle(){ p=mod(Math.round(p),N); render(); rest(); }
+  /* go to film i the shortest way round; clicking the film already in the centre restarts it */
+  function go(i,fromAuto){
+    if(!fromAuto) auto=false;
+    var t=mod(i,N),base=Math.round(p),delta=mod(t-mod(base,N),N);
+    if(delta>N/2) delta-=N;
+    var target=base+delta;
+    if(t===active){ userPaused=false; sound(false); restart(vids[t]); play(); }
+    else setActive(t);
+    glide(target,Math.abs(target-p)>1.5?760:600,inOut);
+  }
+  function togglePause(){
+    auto=false;
+    var v=vids[active];
+    if(v.paused){ userPaused=false; play(); } else { userPaused=true; v.pause(); ui.classList.add('paused'); }
+  }
+
+  tabs.forEach(function(t,k){ t.addEventListener('click',function(){ go(k); }); });
+  car.querySelector('.car-nav.prev').addEventListener('click',function(){ go(active-1); });
+  car.querySelector('.car-nav.next').addEventListener('click',function(){ go(active+1); });
+  if(snd) snd.addEventListener('click',function(){
+    auto=false;
+    var v=vids[active];
+    if(!v.muted){ sound(false); return; }
+    sound(true); userPaused=false; restart(v);
+    var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){ sound(false); });
+    ui.classList.remove('paused');
+  });
+  car.addEventListener('keydown',function(e){
+    var k=e.key;
+    if(k!=='ArrowLeft'&&k!=='ArrowRight'&&k!=='Home'&&k!=='End') return;
+    if(e.target.tagName==='VIDEO') return; /* native controls seek with the arrows */
+    e.preventDefault();
+    var i=k==='ArrowLeft'?active-1:k==='ArrowRight'?active+1:k==='Home'?0:N-1;
+    go(i);
+    if(e.target.getAttribute('role')==='tab') tabs[mod(i,N)].focus();
+  });
+
+  /* swipe and drag (touch and mouse). Vertical moves fall through to the page scroll (touch-action: pan-y). */
+  stage.addEventListener('pointerdown',function(e){
+    if(e.button!==0) return;
+    if(still&&e.target.tagName==='VIDEO'&&e.target.closest('.is-active')) return;
+    drag={x:e.clientX,y:e.clientY,p0:p,moved:false,lx:e.clientX,lt:performance.now(),vel:0,id:e.pointerId};
+  });
+  stage.addEventListener('pointermove',function(e){
+    if(!drag||e.pointerId!==drag.id) return;
+    var dx=e.clientX-drag.x;
+    if(!drag.moved){
+      if(Math.abs(dx)<6) return;
+      if(Math.abs(e.clientY-drag.y)>Math.abs(dx)){ drag=null; return; }
+      drag.moved=true; auto=false;
+      if(anim){ cancelAnimationFrame(anim); anim=null; drag.p0=p; drag.x=e.clientX; dx=0; }
+      try{ stage.setPointerCapture(e.pointerId); }catch(err){}
+      stage.classList.add('drag');
+    }
+    if(still||!step) return;
+    var now=performance.now(),dt=Math.max(1,now-drag.lt);
+    drag.vel=.8*(-(e.clientX-drag.lx)/step/dt*1000)+.2*drag.vel;
+    drag.lx=e.clientX; drag.lt=now;
+    p=drag.p0-dx/step; render();
+  });
+  function endDrag(e,cancel){
+    if(!drag||e.pointerId!==drag.id) return;
+    var d=drag; drag=null;
+    stage.classList.remove('drag');
+    if(!d.moved){
+      if(cancel) return;
+      var s=e.target.closest&&e.target.closest('.car-slide');
+      if(!s) return;
+      var i=slides.indexOf(s);
+      if(i===active) togglePause(); else go(i);
+      return;
+    }
+    var base=Math.round(d.p0),dir;
+    if(still){ dir=e.clientX<d.x?1:-1; go(active+dir); return; }
+    var target=Math.round(p+d.vel*.2);
+    if(target===base&&Math.abs(p-d.p0)>.12) target=base+(p>d.p0?1:-1);
+    target=Math.max(base-1,Math.min(base+1,target));
+    if(mod(target,N)!==active) setActive(mod(target,N));
+    glide(target,Math.min(600,Math.max(320,Math.abs(target-p)*700)),out);
+  }
+  stage.addEventListener('pointerup',function(e){ endDrag(e,false); });
+  stage.addEventListener('pointercancel',function(e){ endDrag(e,true); });
+  stage.addEventListener('dragstart',function(e){ e.preventDefault(); });
+
+  /* layout */
+  measure();
+  if(window.ResizeObserver) new ResizeObserver(measure).observe(stage); else window.addEventListener('resize',measure);
+
+  /* posters load when the section comes near; the centre film plays while 40% of the stage is visible */
+  function posters(){ vids.forEach(function(v){ var ps=v.getAttribute('data-poster'); if(ps&&!v.poster) v.poster=ps; }); }
+  if(still) vids[0].controls=true;
+  if(!('IntersectionObserver' in window)){ posters(); visible=true; play(); return; }
+  var near=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ posters(); near.disconnect(); } },{rootMargin:'800px 0px'});
+  near.observe(stage);
+  new IntersectionObserver(function(es){
+    var vis=es[es.length-1].intersectionRatio>=.4;
+    if(vis===visible) return;
+    visible=vis;
+    if(vis) play(); else vids[active].pause();
+  },{threshold:[0,.4]}).observe(stage);
+})();
+</script>
+
+<!-- ============ SOURCES (connects to everything) ============ -->
+<section id="sources" class="sources" aria-labelledby="sources-h" style="padding-top:clamp(56px,7vw,112px);padding-bottom:clamp(24px,3vw,48px)">
+  <div class="wrap">
+    <p class="kicker rv">Connects to everything</p>
+    <div class="two-head rv">
+      <h2 id="sources-h">Fed by the systems you <em class="s">already run.</em></h2>
+      <p class="lead">Your ERP. The spreadsheets your team lives in. The cloud apps you already pay for. The inbox where orders arrive. We connect to all of it, live, so every screen is current the moment you open it. No re-keying. No new system to learn.</p>
+    </div>
+    <div class="flow" id="flow">
+      <svg class="flow-lines" id="flowLines" aria-hidden="true"></svg>
+      <div class="flow-col flow-src">
+        <p class="flow-l" id="flow-src-l">Where your data lives</p>
+        <ul aria-labelledby="flow-src-l">
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3l7 3.5-7 3.5-7-3.5z"/><path d="M3 10l7 3.5 7-3.5"/><path d="M3 13.5l7 3.5 7-3.5"/></svg></span><span><b>Your ERP</b><small>On-prem or cloud</small></span></li>
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.5" width="14" height="13" rx="2"/><path d="M3 8h14M3 12.25h14M8 8v8.5"/></svg></span><span><b>Excel and CSV files</b><small>Workbooks and exports</small></span></li>
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.25 15.5H14a3.25 3.25 0 0 0 .45-6.47A4.6 4.6 0 0 0 5.6 8.3a3.6 3.6 0 0 0 .65 7.2z"/></svg></span><span><b>Cloud apps</b><small>Accounting, CRM, e-commerce</small></span></li>
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.5" width="14.5" height="11" rx="2"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></span><span><b>Email inboxes</b><small>Orders, invoices, statements</small></span></li>
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="M2.5 8.25h15M5.5 12.25h3"/></svg></span><span><b>Bank and card feeds</b><small>Every transaction</small></span></li>
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="10" cy="5" rx="6" ry="2.25"/><path d="M4 5v10c0 1.24 2.69 2.25 6 2.25s6-1.01 6-2.25V5"/><path d="M4 10c0 1.24 2.69 2.25 6 2.25s6-1.01 6-2.25"/></svg></span><span><b>Databases</b><small>Wherever they run</small></span></li>
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 2.75h6l3.75 3.75v10a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V3.5a.75.75 0 0 1 .75-.75z"/><path d="M11.5 2.75V6.5h3.75M7.5 10.5h5M7.5 13.5h3.5"/></svg></span><span><b>Shared drives and PDFs</b><small>Contracts, price lists, scans</small></span></li>
+          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2"/><path d="M6 8l2.5 2L6 12M10.5 12.5H14"/></svg></span><span><b>Legacy and custom systems</b><small>Even the old ones</small></span></li>
+        </ul>
+      </div>
+      <div class="flow-hub">
+        <div class="hub">
+          <div class="hub-rings" aria-hidden="true">
+            <svg viewBox="0 0 400 400" fill="none">
+              <g class="r1"><circle cx="200" cy="200" r="118" stroke="rgba(94,92,230,.16)" stroke-width=".8"/><circle cx="318" cy="200" r="2.4" fill="#7a78f0"/></g>
+              <g class="r2"><circle cx="200" cy="200" r="168" stroke="rgba(94,92,230,.22)" stroke-width=".8" stroke-dasharray="1 4"/><circle cx="200" cy="32" r="2" fill="#5e5ce6"/></g>
+            </svg>
+          </div>
+          <span class="brand" role="img" aria-label="lumic"><span aria-hidden="true">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</span></span>
+          <span class="hub-st">Live</span>
+        </div>
+      </div>
+      <div class="flow-col flow-out">
+        <p class="flow-l" id="flow-out-l">What you get</p>
+        <ul aria-labelledby="flow-out-l">
+          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.25" width="14.5" height="13.5" rx="2"/><path d="M6.5 13.5v-3M10 13.5V7M13.5 13.5v-5"/></svg></span><span><b>Live dashboards</b><small>Always current. No exports.</small></span></li>
+          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l1.55 4.45L15 10l-4.45 1.55L9 16l-1.55-4.45L3 10l4.45-1.55z"/><path d="M15.25 2.5v3M13.75 4h3"/></svg></span><span><b>AI agents that do the work</b><small>Ready for a person to approve</small></span></li>
+          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="13" rx="2"/><path d="M3 8h14M7 2.5v3M13 2.5v3M6.75 11.5h2M11.25 11.5h2M6.75 14h2"/></svg></span><span><b>Scheduled reports</b><small>In your inbox before the meeting</small></span></li>
+          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 13.5V9a4.5 4.5 0 0 1 9 0v4.5l1.25 1.75H4.25z"/><path d="M8.25 17.25a1.9 1.9 0 0 0 3.5 0"/></svg></span><span><b>Alerts when something changes</b><small>The moment a number moves</small></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flow-note rv">
+      <span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="12" height="8.25" rx="2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg></span>
+      <p><b>If your data lives somewhere, we can reach it.</b> Read-only by default. Anything that writes back waits for a person&rsquo;s approval.</p>
+    </div>
   </div>
 </section>
 
 <script>
+/* Sources diagram: lines from each source into the hub and out to each output, drawn from live layout
+   (offsets, so the entrance transforms never skew them). Pulses run only on screen; none under reduced motion. */
 (function(){
-  var v=document.getElementById('demoVideo'),tabs=document.querySelectorAll('.demo-tabs button');
-  if(!v||!tabs.length) return;
-  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches,seen=false;
-  var label={receivables:'The receivables dashboard: open balances, aging by customer, and a customer’s contacts and notes.',
-    sales:'The sales dashboard: year-to-date sales, each customer month by month, and the trends page.',
-    purchasing:'The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders.',
-    financial:'The financial dashboard: the income statement for two companies, and the postings behind one account.'};
-  if(still) v.controls=true;
-  function load(name){
-    var b='/video/demos/lumic-demo-'+name;
-    v.poster=b+'-poster.jpg';
-    v.setAttribute('aria-label',label[name]);
-    v.innerHTML='<source src="'+b+'.webm" type="video/webm"><source src="'+b+'.mp4" type="video/mp4">';
-    v.load();
-    if(seen&&!still) v.play().catch(function(){});
+  var flow=document.getElementById('flow'),svg=document.getElementById('flowLines');
+  if(!flow||!svg) return;
+  var NS='http://www.w3.org/2000/svg';
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var src=[].slice.call(flow.querySelectorAll('.fs')),out=[].slice.call(flow.querySelectorAll('.fo'));
+  var hub=flow.querySelector('.hub'),srcUl=flow.querySelector('.flow-src ul'),outUl=flow.querySelector('.flow-out ul');
+  src.concat(out).forEach(function(el){el.style.setProperty('--i',(el.className==='fs'?src:out).indexOf(el));});
+  function mk(tag,cls,parent){var e=document.createElementNS(NS,tag);e.setAttribute('class',cls);parent.appendChild(e);return e;}
+  var gB=mk('g','',svg),gP=mk('g','',svg),gC=mk('g','',svg);
+  var order=[0,5,2,7,3,6,1,4]; /* pulse order across the sources, so they never tick top to bottom */
+  function line(kind,i){
+    var o={b:mk('path','fln',gB),p:reduce?null:mk('path','flp'+(kind==='out'?' flp-out':''),gP),c:mk('circle','flc',gC),out:kind==='out'};
+    o.b.setAttribute('pathLength','100');
+    var dl=(kind==='in'?250+i*60:950+i*90)+'ms';
+    [o.b,o.c].forEach(function(e){e.style.setProperty('--dl',dl);});
+    o.c.setAttribute('r','2.5');
+    if(o.p){o.p.setAttribute('pathLength','100');o.p.style.animationDelay=(kind==='in'?order.indexOf(i)*1.2:1.9+i*.12)+'s';}
+    return o;
   }
-  tabs.forEach(function(t){t.addEventListener('click',function(){
-    tabs.forEach(function(x){x.setAttribute('aria-selected',x===t?'true':'false');});
-    load(t.getAttribute('data-film'));
-  });});
-  if('IntersectionObserver' in window&&!still){
-    new IntersectionObserver(function(es){es.forEach(function(e){
-      if(e.isIntersecting){seen=true;v.play().catch(function(){});}else{v.pause();}
-    });},{threshold:.4}).observe(v);
+  var Li=src.map(function(_,i){return line('in',i);}),Lo=out.map(function(_,i){return line('out',i);});
+  function box(el){var x=0,y=0,w=el.offsetWidth,h=el.offsetHeight;while(el&&el!==flow){x+=el.offsetLeft;y+=el.offsetTop;el=el.offsetParent;}return {l:x,t:y,r:x+w,b:y+h,w:w,h:h};}
+  function set(o,x1,y1,x2,y2,vert){
+    var d,k=.55;
+    if(vert){var dy=y2-y1;d='M'+x1+' '+y1+'C'+x1+' '+(y1+dy*k)+' '+x2+' '+(y2-dy*k)+' '+x2+' '+y2;}
+    else{var dx=x2-x1;d='M'+x1+' '+y1+'C'+(x1+dx*k)+' '+y1+' '+(x2-dx*k)+' '+y2+' '+x2+' '+y2;}
+    o.b.setAttribute('d',d);if(o.p)o.p.setAttribute('d',d);
+    o.c.setAttribute('cx',o.out?x2:x1);o.c.setAttribute('cy',o.out?y2:y1);
   }
+  function draw(){
+    svg.setAttribute('viewBox','0 0 '+flow.clientWidth+' '+flow.clientHeight);
+    var h=box(hub),s=box(srcUl),u=box(outUl),stacked=h.t>=s.b-1,n=src.length,m=out.length;
+    src.forEach(function(el,i){
+      var r=box(el),t=i/(n-1);
+      if(stacked) set(Li[i],s.l+s.w*(i+.5)/n,s.b,h.l+h.w*(.2+.6*t),h.t,true);
+      else set(Li[i],r.r,r.t+r.h/2,h.l,h.t+h.h*(.24+.52*t),false);
+    });
+    out.forEach(function(el,i){
+      var r=box(el),t=i/(m-1);
+      if(stacked) set(Lo[i],h.l+h.w*(.26+.48*t),h.b,u.l+u.w*(i+.5)/m,u.t,true);
+      else set(Lo[i],h.r,h.t+h.h*(.32+.36*t),r.l,r.t+r.h/2,false);
+    });
+  }
+  draw();
+  if(window.ResizeObserver) new ResizeObserver(draw).observe(flow); else window.addEventListener('resize',draw);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(draw);
+  if(reduce||!('IntersectionObserver' in window)){flow.classList.add('in');return;}
+  var started=false;
+  new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting){flow.classList.add('off');return;}
+    flow.classList.remove('off');
+    if(!started&&e.intersectionRatio>=.2){started=true;flow.classList.add('in');setTimeout(function(){flow.classList.add('live');},1900);}
+  });},{threshold:[0,.2]}).observe(flow);
 })();
 </script>
 
@@ -929,6 +1374,7 @@ footer{padding:56px 0 44px}
           <li><a href="#services">Services</a></li>
           <li><a href="#proof">Client work</a></li>
           <li><a href="#demo">Demo</a></li>
+          <li><a href="#sources">Connects</a></li>
           <li><a href="#how">How we work</a></li>
           <li><a href="#connector">Connector</a></li>
           <li><a href="#founders">Leadership</a></li>

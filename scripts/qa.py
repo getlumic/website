@@ -1,7 +1,8 @@
 """QA for get-lumic.com before and after a deploy.
 
 Checks, at widths 1440 / 1024 / 768 / 390 / 360: no horizontal page scroll, every in-page #link has a target,
-no banned public term in the visible text, every <video> source answers 200, and the demo films load and play.
+no banned public term in the visible text, every <video> source and demo film file answers 200, and each film in the
+demo carousel loads and plays when its name is clicked.
 
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
@@ -44,8 +45,9 @@ def main():
                     for m in re.finditer(pat, text, re.I):
                         fails.append(f"banned term on page: {m.group(0)!r}")
                 srcs = pg.evaluate("[...document.querySelectorAll('video source, video[poster]')].map(e => e.src || e.poster)")
-                srcs += pg.evaluate("""[...document.querySelectorAll('.demo-tabs button')].flatMap(t => ['webm','mp4','poster.jpg']
+                srcs += pg.evaluate("""[...document.querySelectorAll('#demo .car-tabs [data-film]')].flatMap(t => ['webm','mp4','poster.jpg']
                     .map(x => location.origin + '/video/demos/lumic-demo-' + t.dataset.film + (x === 'poster.jpg' ? '-poster.jpg' : '.' + x)))""")
+                srcs += pg.evaluate("[...document.querySelectorAll('video[data-poster]')].map(v => new URL(v.dataset.poster, location.href).href)")
                 for s in sorted(set(srcs)):
                     try:
                         code = urllib.request.urlopen(urllib.request.Request(s, method="HEAD", headers={"User-Agent": UA}), timeout=20).status
@@ -53,18 +55,22 @@ def main():
                         code = str(e)
                     if code != 200:
                         fails.append(f"media {s}: {code}")
-                if pg.query_selector("#demoVideo"):
-                    pg.evaluate("document.getElementById('demo').scrollIntoView()")
+                # demo carousel: the centre film plays on scroll, and each film loads and plays when its name is clicked
+                active = "(v => [v.readyState, v.paused, v.currentTime, v.currentSrc])(document.querySelector('#demo .car-slide.is-active video'))"
+                if pg.query_selector("#demo .car-slide video"):
+                    pg.evaluate("document.getElementById('car').scrollIntoView({block:'center'})")
                     pg.wait_for_timeout(2500)
-                    st = pg.evaluate("(v => [v.readyState, v.paused, v.currentTime])(document.getElementById('demoVideo'))")
+                    st = pg.evaluate(active)
                     if st[0] < 2 or st[2] <= 0:
                         fails.append(f"demo film did not play (readyState {st[0]}, paused {st[1]}, t {st[2]:.2f})")
-                    for t in ["sales", "purchasing", "financial"]:
-                        pg.click(f'.demo-tabs button[data-film="{t}"]')
+                    for t in ["sales", "purchasing", "financial", "receivables"]:
+                        pg.click(f'#demo .car-tabs [data-film="{t}"]')
                         pg.wait_for_timeout(1800)
-                        st = pg.evaluate("(v => [v.readyState, v.currentSrc])(document.getElementById('demoVideo'))")
-                        if st[0] < 2 or t not in st[1]:
-                            fails.append(f"demo tab {t}: did not load ({st})")
+                        st = pg.evaluate(active)
+                        if st[0] < 2 or st[1] or st[2] <= 0 or t not in st[3]:
+                            fails.append(f"demo film {t}: did not load and play (readyState {st[0]}, paused {st[1]}, t {st[2]:.2f}, {st[3]})")
+                else:
+                    fails.append("demo carousel videos not found (#demo .car-slide video)")
             pg.close()
         b.close()
     print("\n".join(fails) if fails else f"QA ok: {BASE} at {WIDTHS}")
