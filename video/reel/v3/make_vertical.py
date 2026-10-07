@@ -105,9 +105,9 @@ rep('<div class="ln center dkl" id="t8a" style="top:324px;font-size:76px;letter-
 rep('<div class="dcard" id="dcA" style="left:405px;top:558px">', '<div class="dcard" id="dcA" style="left:365px;top:800px">')
 rep('<div class="dcard" id="dcS" style="left:1165px;top:558px">', '<div class="dcard" id="dcS" style="left:365px;top:1158px">')
 rep('<div class="dtag" id="dtag" style="left:0;top:708px">', '<div class="dtag" id="dtag" style="left:0;top:1318px">')
-rep('<div class="ln center dsub" id="t8b" style="top:806px;font-size:24px;font-weight:400">Connect any AI to your systems. Built into every job we do.</div>',
+rep('<div class="ln center dsub" id="t8b" style="top:806px;font-size:24px;font-weight:400">Connect any AI to your systems. Built custom for every client.</div>',
     '<div class="ln center dsub" id="t8b" style="top:1416px;font-size:30px;font-weight:400">Connect any AI to your systems.</div>\n'
-    '    <div class="ln center dsub" id="t8d" style="top:1460px;font-size:30px;font-weight:400">Built into every job we do.</div>')
+    '    <div class="ln center dsub" id="t8d" style="top:1460px;font-size:30px;font-weight:400">Built custom for every client.</div>')
 
 # ---------------------------------------------------------------- end card: a centred stack
 rep('<div class="wmk" id="wmEnd" style="font-size:190px">', '<div class="wmk" id="wmEnd" style="font-size:220px">')

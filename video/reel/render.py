@@ -1,4 +1,4 @@
-"""Render video/reel/reel.html (picture) + video/reel/score.py (music) into public/video/ as MP4 + WebM + poster.
+"""Render a lumic film (picture + score) as MP4 + WebM + poster into video/reel/out/<version>/; add --out public/video to publish.
 
 The reel page must expose:
   window.DURATION      -> length in seconds (40)
@@ -24,6 +24,9 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+KNOWN = {"--v2", "--v3", "--vertical", "--stills", "--music", "--resume", "--out"}
+if {"-h", "--help"} & set(sys.argv) or any(a.startswith("-") and a not in KNOWN for a in sys.argv[1:]):
+    sys.exit(__doc__)  # never start a render on a typo or a help request (one overwrote public/video on 2026-10-07)
 VER = "v3" if "--v3" in sys.argv else "v2" if "--v2" in sys.argv else None
 V2 = VER is not None                     # the newer films: async seek + picture-driven cues
 VERT = "--vertical" in sys.argv          # the v3 vertical cut (the v1 Story cut was retired on 2026-10-07)
@@ -32,7 +35,7 @@ if VERT and VER != "v3":
 SRC = ROOT / "video" / "reel" / (("v3/reel-vertical.html" if VERT else f"{VER}/reel.html") if VER else "reel.html")
 SCORE = ROOT / "video" / "reel" / (f"{VER}/score.py" if VER else "score.py")
 OUT = Path(sys.argv[sys.argv.index("--out") + 1]).resolve() if "--out" in sys.argv else (
-    ROOT / "video" / "reel" / "out" / (f"{VER}-vertical" if VERT else VER) if VER else ROOT / "public" / "video")
+    ROOT / "video" / "reel" / "out" / ((f"{VER}-vertical" if VERT else VER) if VER else "v1"))  # publish only with --out public/video
 NAME = "lumic-reel-vertical" if VERT else "lumic-reel"
 FPS = 30
 W, H = (1080, 1920) if VERT else (1920, 1080)

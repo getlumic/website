@@ -19,7 +19,7 @@ The business as a blueprint. One light (the lumic orb) travels through it from t
 | 19.0 | Its own computer | A small computer rises in front of the workflow; the light flies into it and becomes its status light; every step is wired into it and light flows in. "Each AI agent runs on its own *dedicated computer.*" |
 | 23.0 | Kept working | A monthly ring around the computer; a comet laps it and lights each check: tests passed, a change found and fixed, upgraded to a new model. "And we keep it *working.*" |
 | 26.5 | Scale | The camera pulls back and up: the workflow is one of a city of workflows. The light spreads outward block to block along links. "In production, *every day.*" / "Dozens of workflows, and counting." |
-| 29.7 | Night | The sky passes through lavender and indigo to night; the city glows. The connector fades up: "The tool we bring into *every job.*" AI assistant → MCP → your systems. Coming soon. |
+| 29.7 | Night | The sky passes through lavender and indigo to night; the city glows. The connector fades up: "The tool we bring into *every job.*" AI assistant → MCP → your systems. Custom-built; "Built custom for every client." (was "Coming soon" until 2026-10-07) |
 | 35.0 | End card | An iris closes onto the light; it becomes the dot of the wordmark. "AI, deployed into your business and *kept working.*" get-lumic.com. The last 0.5 s holds (poster frame). |
 
 ## Rules (site briefs, 2026-09-30)
