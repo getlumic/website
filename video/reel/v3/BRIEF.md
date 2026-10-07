@@ -34,3 +34,18 @@ is AI. Sample figures and steps are labelled "Illustration". Side lines stay off
   F# minor while the work is done by hand, A major once it is automated and kept working. Normalised to -16 LUFS.
 - `python3 video/reel/render.py --v3` renders 1200 frames, scores them to `window.CUES`, and encodes MP4 + WebM +
   poster into `video/reel/out/v3/` for review. Add `--out public/video` to publish.
+
+## Vertical cut (1080x1920, for Reels, Stories and LinkedIn)
+- `reel-vertical.html` is generated from `reel.html` by `make_vertical.py`. Never edit it by hand: edit `reel.html`
+  (or `make_vertical.py`), then run `python video/reel/v3/make_vertical.py`. Every string replacement is asserted, so a
+  change to `reel.html` that breaks the mapping stops the script instead of rendering a wrong frame.
+- Same timeline, scenes, copy, cues and score. Only the composition changes: the camera is turned 90 degrees
+  (yaw + 90) so the business and the workflow run down the frame; the light and the shadows turn with it, so the
+  shading is unchanged. Focal length per camera key keeps the subject inside 1080 px. In the workflow scene the step
+  labels sit to the right of the blocks and the approval card to the left. For the computer and the monthly ring the
+  camera orbits to a diagonal (yaw about 45). Headlines are re-broken onto more lines inside a safe area (120 px top and
+  bottom, 80 px sides). The connector is a vertical chain; the end card is a centred stack. A label whose block leaves
+  the frame fades out at the edge. The top scrim stays through the scale scene and fades out with the night.
+- `python video/reel/render.py --v3 --vertical [--stills] [--resume]` writes `lumic-reel-vertical.mp4` (H.264 high,
+  yuv420p, AAC 192k, faststart) and `lumic-reel-vertical-poster.jpg` into `video/reel/out/v3-vertical/`. It is not
+  published on the site. The v1 Story cut (`video/reel/reel-vertical.html`) was retired on 2026-10-07.
