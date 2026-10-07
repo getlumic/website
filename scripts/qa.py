@@ -13,6 +13,7 @@ from pathlib import Path
 
 BASE = (sys.argv[1] if len(sys.argv) > 1 else "http://localhost:8766").rstrip("/")
 WIDTHS = [1440, 1024, 768, 390, 360]
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"  # Cloudflare 403s the default urllib agent
 # Public wording rules (playbook 03-positioning.md -> Public wording). Client and system names live in the private
 # playbook (this repo is public): one regex per line in brand/site-banned-terms.txt.
 BANNED = [r"\bFDE\b", r"forward[- ]deployed", r"Coming soon"]
@@ -47,7 +48,7 @@ def main():
                     .map(x => location.origin + '/video/demos/lumic-demo-' + t.dataset.film + (x === 'poster.jpg' ? '-poster.jpg' : '.' + x)))""")
                 for s in sorted(set(srcs)):
                     try:
-                        code = urllib.request.urlopen(urllib.request.Request(s, method="HEAD"), timeout=20).status
+                        code = urllib.request.urlopen(urllib.request.Request(s, method="HEAD", headers={"User-Agent": UA}), timeout=20).status
                     except Exception as e:
                         code = str(e)
                     if code != 200:
