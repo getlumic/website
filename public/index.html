@@ -468,7 +468,15 @@ footer{padding:56px 0 44px}
 .film-frame.playing .film-play{display:none}
 .film-play:focus-visible{outline:none}
 .film-play:focus-visible .pb{box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
-@media (max-width:600px){.film-play{padding:12px}.film-play .pb{padding:5px;gap:0;box-shadow:0 0 0 6px rgba(94,92,230,.12),0 12px 26px -12px rgba(94,92,230,.75)}.film-play .pb .tx,.film-play .pb .len{display:none}.film-play .pb .ic{width:36px;height:36px;background:transparent}.film-frame{border-radius:16px}}.film-frame{border-radius:16px}}
+@media (max-width:600px){.film-play{padding:12px}.film-play .pb{padding:5px;gap:0;box-shadow:0 0 0 6px rgba(94,92,230,.12),0 12px 26px -12px rgba(94,92,230,.75)}.film-play .pb .tx,.film-play .pb .len{display:none}.film-play .pb .ic{width:36px;height:36px;background:transparent}.film-frame{border-radius:16px}}
+
+/* ---------- demo films (real dashboards, sample data) ---------- */
+.demo-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:clamp(28px,4vw,44px) 0 18px}
+.demo-tabs button{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--muted);padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#ffffff;cursor:pointer;transition:color .2s,border-color .2s,box-shadow .2s}
+.demo-tabs button:hover{color:var(--text-strong)}
+.demo-tabs button[aria-selected="true"]{color:#ffffff;background:var(--primary);border-color:var(--primary);box-shadow:0 10px 24px -12px rgba(94,92,230,.75)}
+.demo-tabs button:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
+.demo-note{margin-top:14px;font-size:14px;color:var(--faint)}
 </style>
 </head>
 <body>
@@ -480,6 +488,7 @@ footer{padding:56px 0 44px}
     <nav aria-label="Primary">
       <ul>
         <li><a href="#services">Services</a></li>
+        <li><a href="#demo">Demo</a></li>
         <li><a href="#how">How we work</a></li>
         <li><a href="#connector">AI connector</a></li>
         <li><a href="#founders">Leadership</a></li>
@@ -702,6 +711,60 @@ footer{padding:56px 0 44px}
   </div>
 </section>
 
+<!-- ============ DEMO FILMS ============ -->
+<section id="demo" aria-labelledby="demo-h" style="padding-top:clamp(56px,7vw,112px)">
+  <div class="wrap">
+    <p class="kicker rv">See it running</p>
+    <div class="two-head rv">
+      <h2 id="demo-h">Real dashboards, shown with sample data.</h2>
+      <p class="lead">These are dashboards we built and run in production. The company, the customers, and every number shown here are made up.</p>
+    </div>
+    <div class="demo-tabs rv" role="tablist" aria-label="Choose a dashboard">
+      <button type="button" role="tab" aria-selected="true" data-film="receivables">Receivables</button>
+      <button type="button" role="tab" aria-selected="false" data-film="sales">Sales</button>
+      <button type="button" role="tab" aria-selected="false" data-film="purchasing">Purchasing</button>
+      <button type="button" role="tab" aria-selected="false" data-film="financial">Financial</button>
+    </div>
+    <div class="film-frame rv" id="demoFrame" role="tabpanel">
+      <video id="demoVideo" muted loop playsinline preload="none" poster="/video/demos/lumic-demo-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer's contacts and notes.">
+        <source src="/video/demos/lumic-demo-receivables.webm" type="video/webm">
+        <source src="/video/demos/lumic-demo-receivables.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p class="demo-note rv">Silent, 23 seconds each. Every figure is sample data.</p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var v=document.getElementById('demoVideo'),tabs=document.querySelectorAll('.demo-tabs button');
+  if(!v||!tabs.length) return;
+  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches,seen=false;
+  var label={receivables:'The receivables dashboard: open balances, aging by customer, and a customer’s contacts and notes.',
+    sales:'The sales dashboard: year-to-date sales, each customer month by month, and the trends page.',
+    purchasing:'The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders.',
+    financial:'The financial dashboard: the income statement for two companies, and the postings behind one account.'};
+  if(still) v.controls=true;
+  function load(name){
+    var b='/video/demos/lumic-demo-'+name;
+    v.poster=b+'-poster.jpg';
+    v.setAttribute('aria-label',label[name]);
+    v.innerHTML='<source src="'+b+'.webm" type="video/webm"><source src="'+b+'.mp4" type="video/mp4">';
+    v.load();
+    if(seen&&!still) v.play().catch(function(){});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.setAttribute('aria-selected',x===t?'true':'false');});
+    load(t.getAttribute('data-film'));
+  });});
+  if('IntersectionObserver' in window&&!still){
+    new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){seen=true;v.play().catch(function(){});}else{v.pause();}
+    });},{threshold:.4}).observe(v);
+  }
+})();
+</script>
+
 <!-- ============ HOW ============ -->
 <section id="how" class="how" aria-labelledby="how-h">
   <div class="wrap">
@@ -865,6 +928,7 @@ footer{padding:56px 0 44px}
         <ul class="f-links">
           <li><a href="#services">Services</a></li>
           <li><a href="#proof">Client work</a></li>
+          <li><a href="#demo">Demo</a></li>
           <li><a href="#how">How we work</a></li>
           <li><a href="#connector">Connector</a></li>
           <li><a href="#founders">Leadership</a></li>

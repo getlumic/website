@@ -1,7 +1,7 @@
 """Render a lumic demo film (silent, made to loop on the site) from video/demos/<name>/demo.html.
 
 The page exposes window.DURATION, window.seek(t) (deterministic), window.reelReady and window.POSTER (poster time).
-Screens come from the demo dashboard's synthetic data (video/demos/capture.py); no live numbers.
+Screens: the real dashboards on made-up data, captured with cua-driver; no live numbers.
 
 Usage:
   python video/demos/render.py <name>                 MP4 + WebM + poster into video/demos/out/<name>/
@@ -35,7 +35,13 @@ def ff(*a):
 
 def main():
     from playwright.sync_api import sync_playwright
-    at = [float(x) for x in args[args.index("--at") + 1:] if not x.startswith("-")] if "--at" in args else None
+    at = None
+    if "--at" in args:
+        at = []
+        for x in args[args.index("--at") + 1:]:
+            if x.startswith("--"):
+                break
+            at.append(float(x))
     frames = Path(tempfile.gettempdir()) / f"lumic-demo-{NAME}-frames"
     shutil.rmtree(frames, ignore_errors=True)
     frames.mkdir(parents=True)

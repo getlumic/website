@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- lumic demo film: Financial. The real dashboard on made-up data (Northwind Supply Co.), captured with cua-driver,
+     moved by the code camera in ../engine.js. Render: python video/demos/render.py financial -->
+<html lang="en"><head><meta charset="utf-8"><title>Financial demo film</title></head>
+<body>
+<script>
+window.FILM = {
+  name: "financial", kicker: "Financial", bar: "Northwind Supply Co. &nbsp;·&nbsp; Financial",
+  title: "Where did the <em>profit</em> go?", end: "Your numbers, <em>always current.</em>",
+  poster: 5.6,
+  screens: [{ src: "reports.png" }, { src: "statement.png", at: 7.3, dur: .9, slide: 410 }, { src: "opex.png", at: 10.9, dur: .25 },
+            { src: "gldetail.png", at: 13.95 }],
+  cam: [[0, 711, 407, 1], [4.0, 711, 407, 1], [5.4, 650, 290, 1.3], [6.8, 650, 290, 1.3], [8.0, 711, 407, 1],
+        [9.0, 840, 560, 1.12], [10.2, 840, 560, 1.12], [11.4, 760, 620, 1.15], [13.0, 760, 640, 1.15], [14.4, 711, 407, 1],
+        [15.4, 760, 330, 1.2], [17.4, 760, 330, 1.2], [18.6, 711, 407, 1], [99, 711, 407, 1]],
+  cursor: { show: [9.4, 14.3], keys: [[0, 900, 560], [9.4, 900, 560], [10.4, 380, 480], [11.3, 380, 480], [12.8, 450, 712],
+            [99, 450, 712]] },
+  clicks: [10.7, 13.55, 13.75],
+  rings: [{ x: 288, y: 609, w: 1108, h: 35, a: 8.5, b: 10.4 }, { x: 288, y: 697, w: 1093, h: 31, a: 12.2, b: 14.0 }],
+  captions: [{ a: 4.3, b: 7.3, text: "Your P&amp;L, live. Both companies, side by side." },
+             { a: 8.4, b: 12.8, text: "Every line against last year and the forecast." },
+             { a: 14.4, b: 18.7, text: "Double-click any number to see the postings behind it." }],
+};
+</script>
+<script src="../engine.js"></script>
+</body></html>
