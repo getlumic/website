@@ -1,8 +1,9 @@
 """QA for get-lumic.com before and after a deploy.
 
 Checks, at widths 1440 / 1024 / 768 / 390 / 360: no horizontal page scroll, every in-page #link has a target,
-no banned public term in the visible text, every <video> source, phone cut and demo film file answers 200, and each
-film in the demo carousel loads and plays when its name is clicked, with no second film playing or unmuted.
+no banned public term in the visible text, every <video> source and poster answers 200, no phone-only (4:5) film is
+referenced, each film in the demo carousel loads and plays when its name is clicked with no second film playing or
+unmuted, and at phone widths the carousel shows its film count row and progress segments.
 
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
@@ -45,12 +46,15 @@ def main():
                     for m in re.finditer(pat, text, re.I):
                         fails.append(f"banned term on page: {m.group(0)!r}")
                 srcs = pg.evaluate("[...document.querySelectorAll('video source, video[poster]')].map(e => e.src || e.poster)")
-                srcs += pg.evaluate("""[...document.querySelectorAll('#demo .car-tabs [data-film]')].flatMap(t => ['webm','mp4','poster.jpg']
-                    .map(x => location.origin + '/video/demos/lumic-demo-' + t.dataset.film + (x === 'poster.jpg' ? '-poster.jpg' : '.' + x)))""")
                 srcs += pg.evaluate("[...document.querySelectorAll('video[data-poster]')].map(v => new URL(v.dataset.poster, location.href).href)")
-                # the 4:5 phone cuts written by publish_keynote.py
-                srcs += pg.evaluate("""[...document.querySelectorAll('video[data-v-mp4]')].flatMap(v => [v.dataset.vMp4, v.dataset.vWebm, v.dataset.vPoster])
-                    .filter(Boolean).map(u => new URL(u, location.href).href)""")
+                # phones play the same 16:9 films: no 4:5 phone cut may be referenced
+                if pg.evaluate("document.documentElement.outerHTML.includes('-vertical')"):
+                    fails.append("page references a phone-only (-vertical) film")
+                # every carousel tab has its slide, in the same order
+                tabs = pg.evaluate("[...document.querySelectorAll('#demo .car-tabs [data-film]')].map(t => t.dataset.film)")
+                sl = pg.evaluate("[...document.querySelectorAll('#demo .car-slide')].map(s => s.dataset.film)")
+                if tabs != sl:
+                    fails.append(f"carousel tabs {tabs} do not match slides {sl}")
                 for s in sorted(set(srcs)):
                     try:
                         code = urllib.request.urlopen(urllib.request.Request(s, method="HEAD", headers={"User-Agent": UA}), timeout=20).status
@@ -66,7 +70,7 @@ def main():
                     st = pg.evaluate(active)
                     if st[0] < 2 or st[2] <= 0:
                         fails.append(f"demo film did not play (readyState {st[0]}, paused {st[1]}, t {st[2]:.2f})")
-                    for t in ["sales", "purchasing", "financial", "receivables"]:
+                    for t in tabs[1:] + tabs[:1]:
                         pg.click(f'#demo .car-tabs [data-film="{t}"]')
                         pg.wait_for_timeout(1800)
                         st = pg.evaluate(active)
@@ -77,6 +81,16 @@ def main():
                             fails.append(f"demo film {t}: {n} films playing or unmuted at once")
                 else:
                     fails.append("demo carousel videos not found (#demo .car-slide video)")
+            if w <= 390:
+                # phones: the film count row and the progress segments show without any interaction
+                mob = pg.evaluate("""(() => { const m = document.getElementById('carMob'), r = m && m.getBoundingClientRect();
+                    const segs = [...document.querySelectorAll('#demo .car-tabs [role=tab]')].filter(b => b.getBoundingClientRect().width > 8);
+                    return [!!m && getComputedStyle(m).display !== 'none' && r.height > 20, m ? m.innerText : '', segs.length,
+                            document.querySelectorAll('#demo .car-slide').length]; })()""")
+                if not mob[0] or "/" not in mob[1]:
+                    fails.append(f"{w}px: carousel film count row not shown ({mob[1]!r})")
+                if mob[2] != mob[3]:
+                    fails.append(f"{w}px: {mob[2]} progress segments shown for {mob[3]} films")
             pg.close()
         b.close()
     print("\n".join(fails) if fails else f"QA ok: {BASE} at {WIDTHS}")

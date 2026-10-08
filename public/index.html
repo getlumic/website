@@ -125,7 +125,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 }
 
 /* ---------- hero ---------- */
-.hero{position:relative;isolation:isolate;overflow:hidden;margin-top:-73px;padding:calc(73px + clamp(56px,8vw,112px)) 0 clamp(72px,9vw,128px)}
+.hero{position:relative;isolation:isolate;overflow:hidden;margin-top:-73px;padding:calc(73px + clamp(48px,6.5vw,92px)) 0 clamp(44px,4.5vw,64px)}
 /* orbit backdrop: a small indigo orb with two hairline rings, turning very slowly behind the composition */
 .orbit{position:absolute;left:88%;top:22%;width:96%;aspect-ratio:1;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
 .orbit svg{width:100%;height:100%;display:block;overflow:visible}
@@ -511,23 +511,28 @@ footer{padding:56px 0 44px}
 .car-tabs button:focus-visible{outline:none;box-shadow:0 0 0 2px var(--primary)}
 .demo-note{margin-top:10px;font-size:14px;color:var(--faint);text-align:center}
 @media (max-width:1100px){.car{--gap:20px}}
+/* phones: the same 16:9 films as desktop. The neighbours peek in at both sides, a row under the film names the film with
+   its count ("2 / 5") and arrows, and the names become a row of progress segments, one per film. */
+.car-mob{display:none}
 @media (max-width:620px){
-  .car{--gap:8px;--peek:10px}
+  .car{--gap:8px;--peek:22px}
   .car-f{border-radius:14px}
   .car-nav{display:none}
   .car-pp{width:52px;height:52px;margin:-26px 0 0 -26px}
-  .car-tabs{gap:0;padding:0 8px}
-  .car-tabs button{font-size:14px;padding:10px 10px 16px}
-  .car-tabs .bar{left:10px;right:10px;bottom:7px}
-}
-/* phones (<= 640px, the same query as the script): films with a 4:5 cut (data-v-mp4) play it; the stage turns 4:5 and the
-   film fills the width minus the 16px gutter. A film without a 4:5 cut sits 16:9 in the middle of the stage. */
-@media (max-width:640px){
-  .car.tall{--gap:8px;--peek:8px}
-  .car.tall .car-stage,.car.tall .car-ui{height:calc(var(--car-w) * 5 / 4)}
-  .car.tall .car-slide.tall{aspect-ratio:4/5}
-  .car.tall .car-slide:not(.tall){top:calc(var(--car-w) * .34375)}
-  .car.tall .car-ui.wide{top:calc(var(--car-w) * .34375);height:calc(var(--car-w) * 9 / 16)}
+  .car-mob{display:flex;align-items:center;gap:12px;margin:18px 0 0;padding:0 var(--gut)}
+  .car-mob[hidden]{display:none}
+  .car-mob button{flex:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#ffffff;color:var(--text-strong);display:grid;place-items:center;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.06),0 8px 20px -12px rgba(15,23,42,.3)}
+  .car-mob button svg{width:15px;height:15px}
+  .car-mob button:active{border-color:rgba(94,92,230,.45);color:var(--primary-d)}
+  .car-mob button:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 5px var(--primary)}
+  .car-mob .lbl{flex:1;min-width:0;text-align:center;line-height:1.25}
+  .car-mob .lbl b{display:block;font-size:16.5px;font-weight:600;letter-spacing:-.01em;color:var(--primary-d)}
+  .car-mob .lbl span{display:block;margin-top:3px;font-size:12.5px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
+  .car-tabs{gap:6px;margin-top:10px;padding:0 var(--gut);overflow:visible}
+  .car-tabs button{flex:1 1 0;min-width:0;padding:14px 0;font-size:0;line-height:0;color:transparent;border-radius:6px}
+  .car-tabs button:first-child{margin-left:0}
+  .car-tabs button:last-child{margin-right:0}
+  .car-tabs .bar{left:0;right:0;top:50%;bottom:auto;height:3px;margin-top:-1.5px}
 }
 /* sound toggle: shown only when the active film has data-sound="1" */
 .snd{position:absolute;right:clamp(10px,1.6vw,20px);bottom:clamp(10px,1.6vw,20px);z-index:2;pointer-events:auto;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--text-strong);display:grid;place-items:center;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.06),0 10px 24px -12px rgba(15,23,42,.35);transition:background .2s,color .2s,border-color .2s,transform .25s var(--ease)}
@@ -638,9 +643,9 @@ footer{padding:56px 0 44px}
     <a class="brand" href="#top" aria-label="lumic home">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</a>
     <nav aria-label="Primary">
       <ul>
-        <li><a href="#services">Services</a></li>
         <li><a href="#demo">Demo</a></li>
         <li class="nav-opt"><a href="#sources">Connects</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#how">How we work</a></li>
         <li><a href="#connector">AI connector</a></li>
         <li><a href="#founders">Leadership</a></li>
@@ -662,7 +667,7 @@ footer{padding:56px 0 44px}
       <div class="cta">
         <a class="btn btn-p" href="mailto:hello@get-lumic.com?subject=lumic%20intro%20call">Book a call
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        <a class="btn btn-g" href="#how">How we work</a>
+        <a class="btn btn-g" href="#demo">See it running <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
       </div>
     </div>
 
@@ -711,7 +716,7 @@ footer{padding:56px 0 44px}
           <div class="ui c-inv">
             <div class="hd">
               <span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.5" width="14.5" height="11" rx="2"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></span>
-              <div><div class="t">Invoice read from email</div><div class="m">AP agent</div></div>
+              <div><div class="t">Invoice read from email</div><div class="m">Accounts payable</div></div>
             </div>
             <div class="steps3"><span>Read</span><i class="ln"></i><span>Entry prepared</span><i class="ln"></i><span class="now">Approve</span></div>
             <dl><dt>Vendor</dt><dd>Vendor 01042</dd><dt>Invoice</dt><dd>INV-20931</dd><dt>Amount</dt><dd>$4,860.00</dd></dl>
@@ -724,147 +729,8 @@ footer{padding:56px 0 44px}
   </div>
 </section>
 
-<!-- ============ FILM ============ -->
-<section class="film" id="film" aria-label="lumic in 40 seconds">
-  <div class="wrap">
-    <p class="kicker rv">lumic in 40 seconds</p>
-    <div class="film-frame rv" id="filmFrame">
-      <video id="filmVideo" preload="none" playsinline poster="/video/lumic-reel-poster.jpg" aria-label="A 40-second film about lumic: we come in, learn how your work is really done, automate it with AI where it fits, and keep it working.">
-        <source src="/video/lumic-reel.webm" type="video/webm">
-        <source src="/video/lumic-reel.mp4" type="video/mp4">
-      </video>
-      <button class="film-play" id="filmPlay" type="button" aria-label="Play the 40-second film">
-        <span class="pb"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span><span class="tx">Watch</span><span class="len">0:40</span></span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<script>
-(function(){
-  var f=document.getElementById('filmFrame'),v=document.getElementById('filmVideo'),b=document.getElementById('filmPlay');
-  if(!f||!v||!b) return;
-  b.addEventListener('click',function(){ f.classList.add('playing'); v.controls=true; v.play(); });
-  v.addEventListener('ended',function(){ v.controls=false; v.load(); f.classList.remove('playing'); });
-})();
-</script>
-
-<!-- ============ PROBLEM ============ -->
-<section id="problem" aria-labelledby="problem-h" style="padding-top:clamp(40px,6vw,88px)">
-  <div class="wrap">
-    <p class="kicker rv">The problem</p>
-    <div class="two-head rv">
-      <h2 id="problem-h">Your systems hold the data. Your team still does the work by hand.</h2>
-      <p class="lead">Most growing businesses run on capable systems and manual processes. Reports are assembled from exports. Invoices are keyed from the inbox. The same figures are reconciled across three systems every month.</p>
-    </div>
-    <ul class="plist rv">
-      <li><span class="n">01</span><h3>Reporting takes hours.</h3><p>Exports, pivot tables, and copy-paste, every week and every month-end.</p></li>
-      <li><span class="n">02</span><h3>The inbox is a job.</h3><p>Invoices, payroll, status updates, and documents take a full-time role to process.</p></li>
-      <li><span class="n">03</span><h3>No one owns the fix.</h3><p>Most growing businesses have no data team, no developer, and no one to bring in AI.</p></li>
-      <li><span class="n">04</span><h3>Spreadsheets become the system.</h3><p>Each department keeps its own version. The totals disagree, and decisions wait.</p></li>
-    </ul>
-    <figure class="quote rv">
-      <blockquote><p>“Honestly, this is better than the BI tools I've used at much larger companies.”</p></blockquote>
-      <cite>Bradford, R., VP of Sales, $20M manufacturer</cite>
-    </figure>
-  </div>
-</section>
-
-<!-- ============ SERVICES ============ -->
-<section id="services" aria-labelledby="services-h">
-  <div class="wrap">
-    <div class="thread" aria-hidden="true"><i></i></div>
-    <p class="kicker rv">Services</p>
-    <div class="two-head rv">
-      <h2 id="services-h">Three ways to work with us.</h2>
-      <p class="lead">Each engagement is designed around your data and your processes. We do not sell templates.</p>
-    </div>
-    <article class="keep offer rv">
-      <div>
-        <span class="tag">01 · Deployments</span>
-        <h3>One workflow at a time.</h3>
-        <p>Every deployment starts with an on-site diagnostic. We learn how the work is really done. Then we build and automate it, with AI where it fits.</p>
-        <ul class="tl" aria-label="Our tools">
-          <li>AI agents</li><li>Workflow automation</li><li>System integrations</li><li>Dashboards</li><li>Workflow redesign</li>
-        </ul>
-      </div>
-      <ul class="ledger chk" aria-label="What every deployment covers">
-        <li class="hd"><span>Every deployment covers</span></li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Connect your systems</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Fix data access</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Connect your software to AI agents</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Automate the workflow, with AI where it helps</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Human approval, built in</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Ongoing testing</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Upgrades as tools improve</li>
-      </ul>
-    </article>
-    <article class="keep rv">
-      <div>
-        <span class="tag">02 · Managed AI agents</span>
-        <h3>We keep it working.</h3>
-        <p>Each AI agent does one role, such as AP clerk, payroll, or month-end reporting. It runs on its own dedicated computer.</p>
-        <p>We watch it, test it every month, fix it, and upgrade it as tools improve. <strong>A person on your team approves anything before it posts.</strong></p>
-      </div>
-      <ul class="ledger" aria-label="Covered for each managed agent">
-        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>
-        <li><span>Monitoring</span><span class="st">Ongoing</span></li>
-        <li><span>Testing</span><span class="st">Monthly</span></li>
-        <li><span>Fixes</span><span class="st">Included</span></li>
-        <li><span>Upgrades as tools improve</span><span class="st">Included</span></li>
-        <li><span>Human approval</span><span class="st">Built in</span></li>
-      </ul>
-    </article>
-    <a class="offer3 rv" href="#connector">
-      <span class="tag">03 · AI connector</span><span class="soon">Custom-built</span>
-      <span class="o3">Built custom for every client. It connects any AI to your systems, and a person approves every entry.</span>
-      <span class="go">See the connector &rarr;</span>
-    </a>
-  </div>
-</section>
-
-<!-- ============ PROOF ============ -->
-<section id="proof" aria-labelledby="proof-h" style="padding-top:clamp(56px,7vw,112px)">
-  <div class="wrap">
-    <div class="thread d2" aria-hidden="true" style="top:calc(-1 * clamp(56px,7vw,112px) + 16px);height:calc(clamp(56px,7vw,112px) - 24px)"><i></i></div>
-    <p class="kicker rv">Client work</p>
-    <div class="two-head rv">
-      <h2 id="proof-h">In production, every day.</h2>
-      <p class="section-sub lead">Our flagship client, a $20M manufacturer and distributor, runs dozens of lumic workflows every day across two operating companies, and counting. A second client runs lumic on entirely different accounting and operations systems.</p>
-    </div>
-    <div class="runs rv">
-      <p class="runs-l">A sample of what runs on lumic today</p>
-      <ul>
-        <li>AP invoice automation</li><li>Payroll journal entries</li><li>Bank reconciliation</li><li>Purchasing &amp; PO write-back</li>
-        <li>Collections email drafts</li><li>AR aging &amp; collections</li><li>Sales commissions</li><li>Consolidated financials</li>
-        <li>Sales &amp; margin analytics</li><li>Job costing</li><li>Production rates</li><li>PTO tracking</li>
-      </ul>
-    </div>
-    <div class="pgrid rv">
-      <article class="pf"><span class="n">01</span><h3>Daily sales &amp; margin reporting</h3>
-        <p>Sales and gross margin by customer, product, and rep — read straight from the ERP, refreshed live. Replaces the report someone exported every morning.</p>
-        <ul><li>Margin by product, customer &amp; order</li><li>Two operating companies, one view</li></ul></article>
-      <article class="pf"><span class="n">02</span><h3>Collections &amp; statements</h3>
-        <p>Live AR aging by bucket, customer contacts in one place, and a one-click statement blast — collections work that used to mean a morning in the ERP and the inbox.</p>
-        <ul><li>Live aging, no export</li><li>Automated statement send</li></ul></article>
-      <article class="pf"><span class="n">03</span><h3>PO creation &amp; write-back</h3>
-        <p>Create purchase orders straight from the dashboard and write them back into the ERP — with reorder visibility across items, so buying decisions don't start with a report.</p>
-        <ul><li>PO creation without leaving the screen</li><li>Reorder points across the catalog</li></ul></article>
-      <article class="pf"><span class="n">04</span><h3>AP invoice agent</h3>
-        <p>Vendor invoices arrive by email; an AI agent reads them, extracts the data, and preps them ERP-ready. The clerk approves the result in 30 seconds instead of keying it for an hour.</p>
-        <ul><li>Email &rarr; OCR &rarr; ERP-ready</li><li>One-tap human approval</li></ul></article>
-      <article class="pf"><span class="n">05</span><h3>Job costing from production data</h3>
-        <p>Production rates feed real per-job cost and margin — estimate-vs-actual you can see <em>during</em> the job, not at close. The number project-based businesses run on.</p>
-        <ul><li>Estimate-vs-actual per job</li><li>Overruns surfaced early</li></ul></article>
-      <article class="pf"><span class="n">06</span><h3>Month-end consolidation</h3>
-        <p>A live GL income statement and product-margin view, consolidated across two sister companies — the month-end picture without the month-end grind.</p>
-        <ul><li>Multi-company GL consolidation</li><li>Income statement that's never stale</li></ul></article>
-    </div>
-  </div>
-</section>
-
 <!-- ============ DEMO FILMS (flat circular carousel) ============ -->
-<section id="demo" class="demo" aria-labelledby="demo-h" style="padding-top:clamp(56px,7vw,112px)">
+<section id="demo" class="demo" aria-labelledby="demo-h" style="padding-top:0">
   <div class="wrap">
     <p class="kicker rv">See it running</p>
     <div class="two-head rv">
@@ -874,8 +740,9 @@ footer{padding:56px 0 44px}
   </div>
   <div class="car rv" id="car" tabindex="-1" role="region" aria-roledescription="carousel" aria-label="Dashboard films">
     <div class="car-stage" id="carStage">
+      <!-- slides:start (written by scripts/publish_keynote.py) -->
       <div class="car-slide is-active" id="car-receivables" data-sound="1" data-film="receivables" role="tabpanel" aria-labelledby="cart-receivables">
-        <div class="car-f"><video data-v-mp4="/video/demos/lumic-keynote-receivables-vertical.mp4" data-v-webm="/video/demos/lumic-keynote-receivables-vertical.webm" data-v-poster="/video/demos/lumic-keynote-receivables-vertical-poster.jpg" muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes.">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes.">
           <source src="/video/demos/lumic-keynote-receivables.webm" type="video/webm"><source src="/video/demos/lumic-keynote-receivables.mp4" type="video/mp4"></video></div>
       </div>
       <div class="car-slide" id="car-sales" data-sound="1" data-film="sales" role="tabpanel" aria-labelledby="cart-sales" aria-hidden="true">
@@ -890,6 +757,7 @@ footer{padding:56px 0 44px}
         <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-financial-poster.jpg" aria-label="The financial dashboard: the income statement for two companies, and the postings behind one account.">
           <source src="/video/demos/lumic-keynote-financial.webm" type="video/webm"><source src="/video/demos/lumic-keynote-financial.mp4" type="video/mp4"></video></div>
       </div>
+      <!-- slides:end -->
     </div>
     <div class="car-ui" id="carUi">
       <button class="car-nav prev" type="button" aria-label="Previous film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5L5.5 8l4.5 4.5"/></svg></button>
@@ -900,79 +768,71 @@ footer{padding:56px 0 44px}
         <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
       </button>
     </div>
+    <div class="car-mob" id="carMob">
+      <button class="mp" type="button" aria-label="Previous film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5L5.5 8l4.5 4.5"/></svg></button>
+      <p class="lbl" aria-live="polite"><b>Receivables</b><span class="ct">1 / 4 &middot; Swipe for more</span></p>
+      <button class="mn" type="button" aria-label="Next film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"/></svg></button>
+    </div>
     <div class="car-tabs" role="tablist" aria-label="Choose a dashboard">
+      <!-- tabs:start (written by scripts/publish_keynote.py) -->
       <button type="button" role="tab" id="cart-receivables" aria-controls="car-receivables" aria-selected="true" data-film="receivables">Receivables<span class="bar" aria-hidden="true"><i></i></span></button>
       <button type="button" role="tab" id="cart-sales" aria-controls="car-sales" aria-selected="false" tabindex="-1" data-film="sales">Sales<span class="bar" aria-hidden="true"><i></i></span></button>
       <button type="button" role="tab" id="cart-purchasing" aria-controls="car-purchasing" aria-selected="false" tabindex="-1" data-film="purchasing">Purchasing<span class="bar" aria-hidden="true"><i></i></span></button>
       <button type="button" role="tab" id="cart-financial" aria-controls="car-financial" aria-selected="false" tabindex="-1" data-film="financial">Financial<span class="bar" aria-hidden="true"><i></i></span></button>
+      <!-- tabs:end -->
     </div>
   </div>
   <div class="wrap"><p class="demo-note">Every figure is sample data. Turn sound on for the narration.</p></div>
 </section>
 
 <script>
-/* Demo carousel. p is the ring position in films (unbounded; film i sits at offset i - p, wrapped to [-2, 2)).
+/* Demo carousel. p is the ring position in films (unbounded; film i sits at offset i - p, wrapped to [-N/2, N/2)).
    Only the centre film plays, muted, while 40% of the stage is on screen. Films advance on their 'ended' event until the
    viewer touches anything. A slide with data-sound="1" has a narrated film and shows the Sound button; the viewer's
    sound choice carries across films, and only the centre film is ever unmuted. With sound on, the films play through the
    ring once and stop. Bandwidth: only the centre film loads, the next one fetches metadata, the rest stay on posters.
+   Every screen plays the same 16:9 films. Phones also get a name + count row with arrows, progress segments, and one
+   small nudge of the ring the first time it comes into view, so it reads as a set of films.
+   Any link to #car-<film> (for example the connector card) glides the ring to that film.
+   The slides and tabs are written by scripts/publish_keynote.py: a film shows only once its files are published.
    Reduced motion: instant swaps, native controls, no autoplay. */
 (function(){
   var car=document.getElementById('car'),stage=document.getElementById('carStage'),ui=document.getElementById('carUi');
   if(!car||!stage||!ui) return;
   var slides=[].slice.call(stage.querySelectorAll('.car-slide')),N=slides.length;
+  if(!N) return;
   var vids=slides.map(function(s){return s.querySelector('video');});
   var tabs=[].slice.call(car.querySelectorAll('.car-tabs [role="tab"]'));
   var bars=tabs.map(function(t){return t.querySelector('.bar i');});
+  var names=tabs.map(function(t){return (t.firstChild&&t.firstChild.nodeType===3?t.firstChild.nodeValue:t.textContent).trim();});
   var snd=document.getElementById('demoSound');
+  var mob=document.getElementById('carMob'),mobName=mob&&mob.querySelector('.lbl b'),mobCount=mob&&mob.querySelector('.lbl .ct');
   var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var hero=document.getElementById('filmVideo');
+  var narrow=window.matchMedia&&window.matchMedia('(max-width: 620px)');
+  function heroFilm(){ return document.getElementById('filmVideo'); } /* the 40-second film sits further down the page */
   var S=.82,p=0,active=0,auto=!still,visible=false,userPaused=false,anim=null,drag=null,step=0,barRaf=null;
-  var want=false,ring=0,near=false; /* want: the viewer's sound choice; ring: the film where sound-on play-through started */
+  var want=false,ring=0,near=false,touched=false,nudged=false; /* want: the viewer's sound choice; ring: the film where sound-on play-through started */
 
-  /* 16:9 or 4:5. Each film's files come from its <source> tags (16:9) and data-v-* (4:5 phone cut, when published).
-     Picked in JS (not <source media>) so a rotation can swap files mid-film, and set as the src attribute: Chrome treats
-     an explicit load() as "ignore preload=none" and would download every film. Phones take the H.264 mp4 (iPhone). */
-  var phoneMQ=window.matchMedia?window.matchMedia('(max-width: 640px)'):null;
-  function phone(){ return !!(phoneMQ&&phoneMQ.matches); }
-  var forms=vids.map(function(v){
-    var w={poster:v.getAttribute('data-poster')};
-    [].forEach.call(v.querySelectorAll('source'),function(s){ w[/mp4/.test(s.type)?'mp4':'webm']=s.getAttribute('src'); });
-    var t=v.getAttribute('data-v-mp4')?{mp4:v.getAttribute('data-v-mp4'),webm:v.getAttribute('data-v-webm'),poster:v.getAttribute('data-v-poster')||w.poster}:null;
-    return {wide:w,tall:t};
+  /* Each film's file comes from its <source> tags, set as the src attribute: Chrome treats an explicit load() as
+     "ignore preload=none" and would download every film. Safari (iPhone, Mac) takes the H.264 mp4; others the webm. */
+  var apple=/Apple/.test(navigator.vendor||'');
+  vids.forEach(function(v){
+    var f={},url='';
+    [].forEach.call(v.querySelectorAll('source'),function(s){ f[/mp4/.test(s.type)?'mp4':'webm']=s.getAttribute('src'); });
+    (apple?['mp4','webm']:['webm','mp4']).forEach(function(x){ if(!url&&f[x]&&v.canPlayType('video/'+x)) url=f[x]; });
+    if(url) v.setAttribute('src',url); /* the <source> tags stay as the no-script fallback; src wins over them */
   });
-  var picked=vids.map(function(){ return ''; });
-  function shape(){ ui.classList.toggle('wide',car.classList.contains('tall')&&!slides[active].classList.contains('tall')); }
-  function pick(){
-    var ph=phone(),anyTall=false;
-    vids.forEach(function(v,k){
-      var f=ph&&forms[k].tall?'tall':'wide',src=forms[k][f],url='';
-      if(f==='tall') anyTall=true;
-      slides[k].classList.toggle('tall',f==='tall');
-      (ph?['mp4','webm']:['webm','mp4']).forEach(function(x){ if(!url&&src[x]&&v.canPlayType('video/'+x)) url=src[x]; });
-      if(!url||picked[k]===url) return;
-      var t=picked[k]?v.currentTime||0:0,was=!v.paused;
-      picked[k]=url;
-      if(v.poster) v.poster=src.poster;
-      v.setAttribute('src',url); /* the <source> tags stay as the no-script fallback; src wins over them */
-      if(k===active&&t>0){ /* same timeline in both cuts: carry on where the film was */
-        v.addEventListener('loadedmetadata',function h(){ v.removeEventListener('loadedmetadata',h); try{ v.currentTime=t; }catch(e){} });
-        if(was) play();
-      }
-    });
-    car.classList.toggle('tall',anyTall);
-    shape();
-  }
   if(still) car.classList.add('still');
+  if(mob&&N<2) mob.hidden=true;
   function mod(a,n){return ((a%n)+n)%n;}
   function inOut(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
   function out(t){return 1-Math.pow(1-t,3);}
 
   function render(){
     slides.forEach(function(s,i){
-      var d=mod(i-p+2,N)-2,a=Math.abs(d);
+      var d=mod(i-p+N/2,N)-N/2,a=Math.abs(d);
       var sc=1-(1-S)*Math.min(a,1)-.06*Math.max(0,a-1);
-      var op=a<=1?1-.42*a:.58*(2-a);
+      var op=a<=1?1-.42*a:Math.max(0,.58*(2-a));
       s.style.transform='translate3d('+(d*step).toFixed(2)+'px,0,0) scale('+sc.toFixed(4)+')';
       s.style.opacity=op.toFixed(3);
       s.style.zIndex=String(10-Math.round(a*3));
@@ -984,12 +844,17 @@ footer{padding:56px 0 44px}
     step=w/2+gap+S*w/2;
     render();
   }
+  function label(){
+    if(!mobName) return;
+    mobName.textContent=names[active]||'';
+    mobCount.textContent=(active+1)+' / '+N+' · Swipe for more';
+  }
 
   /* playback */
   function tickBars(){
     barRaf=null;
     var v=vids[active],d=v.duration;
-    bars[active].style.transform='scaleX('+(d>0&&isFinite(d)?Math.min(1,v.currentTime/d):0).toFixed(4)+')';
+    if(bars[active]) bars[active].style.transform='scaleX('+(d>0&&isFinite(d)?Math.min(1,v.currentTime/d):0).toFixed(4)+')';
     if(!v.paused&&!v.ended) barRaf=requestAnimationFrame(tickBars);
   }
   function hasSound(i){ return slides[i].getAttribute('data-sound')==='1'; }
@@ -1004,6 +869,7 @@ footer{padding:56px 0 44px}
   }
   function sound(on){
     want=on;
+    var hero=heroFilm();
     if(on&&hero&&!hero.paused) hero.pause(); /* never two voices: the 40-second film stops */
     apply();
   }
@@ -1034,13 +900,14 @@ footer{padding:56px 0 44px}
     v.addEventListener('ended',function(){
       if(k!==active||still) return;
       var nx=mod(active+1,N);
-      if(visible&&(auto||(want&&nx!==ring))) go(nx,true);
+      if(visible&&N>1&&(auto||(want&&nx!==ring))) go(nx,true);
       else if(want){ userPaused=true; ui.classList.add('paused'); }
       else { restart(v); play(); }
     });
   });
   /* the 40-second film starting with sound mutes the carousel */
-  if(hero) hero.addEventListener('play',function(){ if(!hero.muted&&want) sound(false); });
+  function hookHero(){ var hero=heroFilm(); if(hero) hero.addEventListener('play',function(){ if(!hero.muted&&want) sound(false); }); }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hookHero); else hookHero();
 
   function setActive(i){
     var old=vids[active];
@@ -1049,9 +916,9 @@ footer{padding:56px 0 44px}
     tabs.forEach(function(t,k){ var on=k===i; t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1; });
     slides.forEach(function(s,k){ var on=k===i; s.classList.toggle('is-active',on); if(on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden','true'); });
     vids.forEach(function(v,k){ v.controls=still&&k===i; });
-    bars.forEach(function(b){ b.style.transform='scaleX(0)'; });
+    bars.forEach(function(b){ if(b) b.style.transform='scaleX(0)'; });
     apply();
-    shape();
+    label();
     preloads();
     restart(vids[i]);
     play();
@@ -1073,7 +940,7 @@ footer{padding:56px 0 44px}
   /* go to film i the shortest way round; clicking the film already in the centre restarts it */
   function go(i,fromAuto){
     var t=mod(i,N),base=Math.round(p),delta=mod(t-mod(base,N),N);
-    if(!fromAuto){ auto=false; ring=t; }
+    if(!fromAuto){ auto=false; ring=t; touched=true; }
     if(delta>N/2) delta-=N;
     var target=base+delta;
     if(t===active){ userPaused=false; apply(); restart(vids[t]); play(); }
@@ -1081,17 +948,35 @@ footer{padding:56px 0 44px}
     glide(target,Math.abs(target-p)>1.5?760:600,inOut);
   }
   function togglePause(){
-    auto=false;
+    auto=false; touched=true;
     var v=vids[active];
     if(v.paused){ userPaused=false; play(); } else { userPaused=true; v.pause(); ui.classList.add('paused'); }
+  }
+  /* phones, first view only: the ring leans toward the next film and settles back, to show there is more to see */
+  function nudge(){
+    if(nudged||still||touched||anim||drag||N<2) return;
+    nudged=true;
+    var base=p,t0=null;
+    function tick(now){
+      if(touched){ anim=null; return; }
+      if(t0===null) t0=now;
+      var t=Math.min(1,(now-t0)/1300);
+      p=base+.24*Math.sin(Math.PI*inOut(t)); render();
+      if(t<1) anim=requestAnimationFrame(tick); else { anim=null; p=base; render(); }
+    }
+    anim=requestAnimationFrame(tick);
   }
 
   tabs.forEach(function(t,k){ t.addEventListener('click',function(){ go(k); }); });
   car.querySelector('.car-nav.prev').addEventListener('click',function(){ go(active-1); });
   car.querySelector('.car-nav.next').addEventListener('click',function(){ go(active+1); });
+  if(mob){
+    mob.querySelector('.mp').addEventListener('click',function(){ go(active-1); });
+    mob.querySelector('.mn').addEventListener('click',function(){ go(active+1); });
+  }
   /* Sound on: the centre film starts again from 0 with sound. Sound off: it carries on, muted. */
   if(snd) snd.addEventListener('click',function(){
-    auto=false;
+    auto=false; touched=true;
     var v=vids[active];
     if(want){ sound(false); return; }
     sound(true); ring=active; userPaused=false; restart(v);
@@ -1107,10 +992,22 @@ footer{padding:56px 0 44px}
     go(i);
     if(e.target.getAttribute('role')==='tab') tabs[mod(i,N)].focus();
   });
+  /* links to one film (#car-<film>) scroll to the films and glide the ring there */
+  function slideOf(hash){ var s=hash&&hash.length>1&&document.getElementById(hash.slice(1)); return s?slides.indexOf(s):-1; }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#car-"]');
+    if(!a) return;
+    var i=slideOf(a.getAttribute('href'));
+    if(i<0) return;
+    e.preventDefault();
+    car.scrollIntoView({behavior:still?'auto':'smooth',block:'center'});
+    go(i);
+  });
 
   /* swipe and drag (touch and mouse). Vertical moves fall through to the page scroll (touch-action: pan-y). */
   stage.addEventListener('pointerdown',function(e){
     if(e.button!==0) return;
+    touched=true;
     if(still&&e.target.tagName==='VIDEO'&&e.target.closest('.is-active')) return;
     drag={x:e.clientX,y:e.clientY,p0:p,moved:false,lx:e.clientX,lt:performance.now(),vel:0,id:e.pointerId};
   });
@@ -1157,15 +1054,16 @@ footer{padding:56px 0 44px}
   stage.addEventListener('dragstart',function(e){ e.preventDefault(); });
 
   /* layout */
-  pick();
-  if(phoneMQ){ if(phoneMQ.addEventListener) phoneMQ.addEventListener('change',pick); else if(phoneMQ.addListener) phoneMQ.addListener(pick); }
   measure();
+  label();
   if(window.ResizeObserver) new ResizeObserver(measure).observe(stage); else window.addEventListener('resize',measure);
 
   /* posters load when the section comes near; the centre film plays while 40% of the stage is visible */
-  function posters(){ vids.forEach(function(v,k){ var ps=forms[k][slides[k].classList.contains('tall')?'tall':'wide'].poster; if(ps&&!v.poster) v.poster=ps; }); }
+  function posters(){ vids.forEach(function(v){ var ps=v.getAttribute('data-poster'); if(ps&&!v.poster) v.poster=ps; }); }
   if(still) vids[0].controls=true;
   apply();
+  var start=slideOf(location.hash);
+  if(start>0){ setActive(start); p=start; render(); }
   if(!('IntersectionObserver' in window)){ posters(); near=true; preloads(); visible=true; play(); return; }
   var nearIO=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ posters(); near=true; preloads(); nearIO.disconnect(); } },{rootMargin:'800px 0px'});
   nearIO.observe(stage);
@@ -1173,13 +1071,35 @@ footer{padding:56px 0 44px}
     var vis=es[es.length-1].intersectionRatio>=.4;
     if(vis===visible) return;
     visible=vis;
-    if(vis) play(); else vids[active].pause();
+    if(vis){ play(); if(narrow&&narrow.matches) setTimeout(nudge,1200); }
+    else vids[active].pause();
   },{threshold:[0,.4]}).observe(stage);
 })();
 </script>
 
+<!-- ============ PROBLEM ============ -->
+<section id="problem" aria-labelledby="problem-h" style="padding-top:clamp(56px,6vw,96px);padding-bottom:clamp(40px,5vw,72px)">
+  <div class="wrap">
+    <p class="kicker rv">The problem</p>
+    <div class="two-head rv">
+      <h2 id="problem-h">Your systems hold the data. Your team still does the work by hand.</h2>
+      <p class="lead">Most growing businesses run on capable systems and manual processes. Reports are assembled from exports. Invoices are keyed from the inbox. The same figures are reconciled across three systems every month.</p>
+    </div>
+    <ul class="plist rv">
+      <li><span class="n">01</span><h3>Reporting takes hours.</h3><p>Exports, pivot tables, and copy-paste, every week and every month-end.</p></li>
+      <li><span class="n">02</span><h3>The inbox is a job.</h3><p>Invoices, payroll, status updates, and documents take a full-time role to process.</p></li>
+      <li><span class="n">03</span><h3>No one owns the fix.</h3><p>Most growing businesses have no data team, no developer, and no one to bring in AI.</p></li>
+      <li><span class="n">04</span><h3>Spreadsheets become the system.</h3><p>Each department keeps its own version. The totals disagree, and decisions wait.</p></li>
+    </ul>
+    <figure class="quote rv">
+      <blockquote><p>“Honestly, this is better than the BI tools I've used at much larger companies.”</p></blockquote>
+      <cite>Bradford, R., VP of Sales, $20M manufacturer</cite>
+    </figure>
+  </div>
+</section>
+
 <!-- ============ SOURCES (connects to everything) ============ -->
-<section id="sources" class="sources" aria-labelledby="sources-h" style="padding-top:clamp(56px,7vw,112px);padding-bottom:clamp(24px,3vw,48px)">
+<section id="sources" class="sources" aria-labelledby="sources-h" style="padding-top:clamp(48px,6vw,88px);padding-bottom:clamp(24px,3vw,48px)">
   <div class="wrap">
     <p class="kicker rv">Connects to everything</p>
     <div class="two-head rv">
@@ -1289,6 +1209,124 @@ footer{padding:56px 0 44px}
 })();
 </script>
 
+<!-- ============ SERVICES ============ -->
+<section id="services" aria-labelledby="services-h">
+  <div class="wrap">
+    <div class="thread" aria-hidden="true"><i></i></div>
+    <p class="kicker rv">Services</p>
+    <div class="two-head rv">
+      <h2 id="services-h">Three ways to work with us.</h2>
+      <p class="lead">Each engagement is designed around your data and your processes. We do not sell templates.</p>
+    </div>
+    <article class="keep offer rv">
+      <div>
+        <span class="tag">01 · Deployments</span>
+        <h3>One workflow at a time.</h3>
+        <p>Every deployment starts with an on-site diagnostic. We learn how the work is really done. Then we build and automate it, with AI where it fits.</p>
+        <ul class="tl" aria-label="Our tools">
+          <li>AI agents</li><li>Workflow automation</li><li>System integrations</li><li>Dashboards</li><li>Workflow redesign</li>
+        </ul>
+      </div>
+      <ul class="ledger chk" aria-label="What every deployment covers">
+        <li class="hd"><span>Every deployment covers</span></li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Connect your systems</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Fix data access</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Connect your software to AI agents</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Automate the workflow, with AI where it helps</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Human approval, built in</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Ongoing testing</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Upgrades as tools improve</li>
+      </ul>
+    </article>
+    <article class="keep rv">
+      <div>
+        <span class="tag">02 · Managed AI agents</span>
+        <h3>We keep it working.</h3>
+        <p>Each AI agent does one role, such as AP clerk, payroll, or month-end reporting. It runs on its own dedicated computer.</p>
+        <p>We watch it, test it every month, fix it, and upgrade it as tools improve. <strong>A person on your team approves anything before it posts.</strong></p>
+      </div>
+      <ul class="ledger" aria-label="Covered for each managed agent">
+        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>
+        <li><span>Monitoring</span><span class="st">Ongoing</span></li>
+        <li><span>Testing</span><span class="st">Monthly</span></li>
+        <li><span>Fixes</span><span class="st">Included</span></li>
+        <li><span>Upgrades as tools improve</span><span class="st">Included</span></li>
+        <li><span>Human approval</span><span class="st">Built in</span></li>
+      </ul>
+    </article>
+    <a class="offer3 rv" id="offer-connector" href="#connector">
+      <span class="tag">03 · AI connector</span><span class="soon">Custom-built</span>
+      <span class="o3">Built custom for every client. It connects any AI to your systems, and a person approves every entry.</span>
+      <span class="go">See the connector &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section id="proof" aria-labelledby="proof-h" style="padding-top:clamp(56px,7vw,112px);padding-bottom:clamp(48px,6vw,88px)">
+  <div class="wrap">
+    <div class="thread d2" aria-hidden="true" style="top:calc(-1 * clamp(56px,7vw,112px) + 16px);height:calc(clamp(56px,7vw,112px) - 24px)"><i></i></div>
+    <p class="kicker rv">Client work</p>
+    <div class="two-head rv">
+      <h2 id="proof-h">In production, every day.</h2>
+      <p class="section-sub lead">Our flagship client, a $20M manufacturer and distributor, runs dozens of lumic workflows every day across two operating companies, and counting. A second client runs lumic on entirely different accounting and operations systems.</p>
+    </div>
+    <div class="runs rv">
+      <p class="runs-l">A sample of what runs on lumic today</p>
+      <ul>
+        <li>AP invoice automation</li><li>Payroll journal entries</li><li>Bank reconciliation</li><li>Purchasing &amp; PO write-back</li>
+        <li>Collections email drafts</li><li>AR aging &amp; collections</li><li>Sales commissions</li><li>Consolidated financials</li>
+        <li>Sales &amp; margin analytics</li><li>Job costing</li><li>Production rates</li><li>PTO tracking</li>
+      </ul>
+    </div>
+    <div class="pgrid rv">
+      <article class="pf"><span class="n">01</span><h3>Daily sales &amp; margin reporting</h3>
+        <p>Sales and gross margin by customer, product, and rep — read straight from the ERP, refreshed live. Replaces the report someone exported every morning.</p>
+        <ul><li>Margin by product, customer &amp; order</li><li>Two operating companies, one view</li></ul></article>
+      <article class="pf"><span class="n">02</span><h3>Collections &amp; statements</h3>
+        <p>Live AR aging by bucket, customer contacts in one place, and a one-click statement blast — collections work that used to mean a morning in the ERP and the inbox.</p>
+        <ul><li>Live aging, no export</li><li>Automated statement send</li></ul></article>
+      <article class="pf"><span class="n">03</span><h3>PO creation &amp; write-back</h3>
+        <p>Create purchase orders straight from the dashboard and write them back into the ERP — with reorder visibility across items, so buying decisions don't start with a report.</p>
+        <ul><li>PO creation without leaving the screen</li><li>Reorder points across the catalog</li></ul></article>
+      <article class="pf"><span class="n">04</span><h3>AP invoice agent</h3>
+        <p>Vendor invoices arrive by email; an AI agent reads them, extracts the data, and preps them ERP-ready. The clerk approves the result in 30 seconds instead of keying it for an hour.</p>
+        <ul><li>Email &rarr; OCR &rarr; ERP-ready</li><li>One-tap human approval</li></ul></article>
+      <article class="pf"><span class="n">05</span><h3>Job costing from production data</h3>
+        <p>Production rates feed real per-job cost and margin — estimate-vs-actual you can see <em>during</em> the job, not at close. The number project-based businesses run on.</p>
+        <ul><li>Estimate-vs-actual per job</li><li>Overruns surfaced early</li></ul></article>
+      <article class="pf"><span class="n">06</span><h3>Month-end consolidation</h3>
+        <p>A live GL income statement and product-margin view, consolidated across two sister companies — the month-end picture without the month-end grind.</p>
+        <ul><li>Multi-company GL consolidation</li><li>Income statement that's never stale</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILM ============ -->
+<section class="film" id="film" aria-label="lumic in 40 seconds" style="padding-top:clamp(32px,4.5vw,64px)">
+  <div class="wrap">
+    <p class="kicker rv">lumic in 40 seconds</p>
+    <div class="film-frame rv" id="filmFrame">
+      <video id="filmVideo" preload="none" playsinline poster="/video/lumic-reel-poster.jpg" aria-label="A 40-second film about lumic: we come in, learn how your work is really done, automate it with AI where it fits, and keep it working.">
+        <source src="/video/lumic-reel.webm" type="video/webm">
+        <source src="/video/lumic-reel.mp4" type="video/mp4">
+      </video>
+      <button class="film-play" id="filmPlay" type="button" aria-label="Play the 40-second film">
+        <span class="pb"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span><span class="tx">Watch</span><span class="len">0:40</span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var f=document.getElementById('filmFrame'),v=document.getElementById('filmVideo'),b=document.getElementById('filmPlay');
+  if(!f||!v||!b) return;
+  b.addEventListener('click',function(){ f.classList.add('playing'); v.controls=true; v.play(); });
+  v.addEventListener('ended',function(){ v.controls=false; v.load(); f.classList.remove('playing'); });
+})();
+</script>
+
 <!-- ============ HOW ============ -->
 <section id="how" class="how" aria-labelledby="how-h">
   <div class="wrap">
@@ -1320,6 +1358,7 @@ footer{padding:56px 0 44px}
           <div class="cpt"><h3>Every query logged.</h3><p>Each user has an access token. Every question and every entry is logged.</p></div>
         </div>
         <div class="conn-act">
+          <!-- connector-film:start (written by scripts/publish_keynote.py) --><!-- connector-film:end -->
           <a class="btn btn-g" href="mailto:hello@get-lumic.com?subject=lumic%20connector">Ask about a connector</a>
           <span class="note">Built for the system you run. Tell us which one.</span>
         </div>
@@ -1450,10 +1489,10 @@ footer{padding:56px 0 44px}
       </div>
       <nav aria-label="Footer">
         <ul class="f-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#proof">Client work</a></li>
           <li><a href="#demo">Demo</a></li>
           <li><a href="#sources">Connects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#proof">Client work</a></li>
           <li><a href="#how">How we work</a></li>
           <li><a href="#connector">Connector</a></li>
           <li><a href="#founders">Leadership</a></li>
@@ -1483,7 +1522,7 @@ footer{padding:56px 0 44px}
     ticking = false;
     var h = window.innerHeight;
     rv = rv.filter(function(el){
-      if (el.getBoundingClientRect().top < h * 0.9) { el.classList.add('in'); return false; }
+      if (el.getBoundingClientRect().top < h * 0.97) { el.classList.add('in'); return false; }
       return true;
     });
   }
