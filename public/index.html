@@ -471,6 +471,30 @@ footer{padding:56px 0 44px}
 .film-play:focus-visible .pb{box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
 @media (max-width:600px){.film-play{padding:12px}.film-play .pb{padding:5px;gap:0;box-shadow:0 0 0 6px rgba(94,92,230,.12),0 12px 26px -12px rgba(94,92,230,.75)}.film-play .pb .tx,.film-play .pb .len{display:none}.film-play .pb .ic{width:36px;height:36px;background:transparent}.film-frame{border-radius:16px}}
 
+/* the hero link and the lightbox for the 40-second film */
+.hero-film{display:inline-flex;align-items:center;gap:11px;margin-top:22px;padding:4px 12px 4px 4px;border:0;border-radius:999px;background:none;font-family:var(--sans);font-size:14.5px;font-weight:600;color:var(--text-strong);cursor:pointer;transition:color .2s}
+.hero-film .ic{flex:none;width:32px;height:32px;border-radius:50%;background:var(--wash);border:1px solid rgba(94,92,230,.3);color:var(--primary);display:grid;place-items:center;transition:background .25s,color .25s,box-shadow .25s}
+.hero-film .ic svg{width:11px;height:11px;margin-left:2px}
+.hero-film .len{font-weight:500;color:var(--faint);font-variant-numeric:tabular-nums}
+.hero-film:hover{color:var(--primary-d)}
+.hero-film:hover .ic{background:var(--primary);color:#ffffff;box-shadow:0 0 0 6px rgba(94,92,230,.12)}
+.lb{border:0;padding:0;margin:auto;background:transparent;overflow:visible;max-width:none;max-height:none;width:min(1120px,calc(100vw - 32px),calc((100vh - 190px) * 16 / 9))}
+.lb::backdrop{background:rgba(14,21,37,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.lb[open]{animation:lb-in .35s var(--ease)}
+@keyframes lb-in{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:none}}
+.lb-in{position:relative}
+.lb .film-frame{background:var(--dk);border-color:rgba(232,237,247,.12);box-shadow:0 40px 90px -40px rgba(0,0,0,.6)}
+.lb .film-frame video{object-fit:contain;background:var(--dk)}
+.lb-x{position:absolute;right:0;top:-54px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(232,237,247,.28);background:rgba(232,237,247,.1);color:#ffffff;display:grid;place-items:center;cursor:pointer;transition:background .2s,border-color .2s}
+.lb-x svg{width:16px;height:16px}
+.lb-x:hover{background:rgba(232,237,247,.2);border-color:rgba(232,237,247,.5)}
+.lb-x:focus-visible{outline:2px solid #ffffff;outline-offset:3px}
+.lb-cap{margin-top:16px;font-size:14.5px;line-height:1.55;color:var(--dk-muted);text-align:center;text-wrap:balance}
+.lb-cap b{color:#ffffff;font-weight:600}
+.lb-cap .len{color:var(--dk-muted);opacity:.8;font-variant-numeric:tabular-nums;white-space:nowrap}
+html.lb-open{overflow:hidden}
+@media (prefers-reduced-motion:reduce){.lb[open]{animation:none}}
+
 /* ---------- demo films: a flat circular carousel (real dashboards, sample data) ----------
    JS places each film by its offset from the centre (scale, dim, depth). The ring loops; the side films stay paused on posters. */
 .demo{overflow-x:clip;padding-bottom:clamp(40px,5vw,72px)}
@@ -543,6 +567,18 @@ footer{padding:56px 0 44px}
 .snd[aria-pressed="true"] .on{display:block}
 .snd[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:#ffffff}
 .snd:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
+
+/* ---------- a film inside a section (the AI connector film under the flow chart) ----------
+   Written by scripts/publish_keynote.py only once the film is published; same behaviour as the carousel films. */
+.cfilm{margin-top:clamp(40px,5vw,64px)}
+.cfilm-f{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#f6f7fb;border:1px solid var(--line);box-shadow:var(--sh-lg);cursor:pointer}
+.cfilm-f video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#f6f7fb}
+.cfilm-pp{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--primary);color:#ffffff;display:grid;place-items:center;box-shadow:0 0 0 10px rgba(94,92,230,.14),0 16px 34px -14px rgba(94,92,230,.75);opacity:0;transform:scale(.9);transition:opacity .3s var(--ease),transform .4s var(--ease);pointer-events:none}
+.cfilm-pp svg{width:22px;height:22px;margin-left:3px}
+.cfilm-f.paused .cfilm-pp{opacity:1;transform:none}
+.cfilm-cap{margin-top:14px;font-size:14px;color:var(--faint);text-align:center;text-wrap:balance}
+.cfilm-cap b{color:var(--text-strong);font-weight:600}
+@media (max-width:620px){.cfilm-f{border-radius:14px}.cfilm-pp{width:52px;height:52px;margin:-26px 0 0 -26px}}
 
 /* ---------- sources (connects to everything) ---------- */
 .sources{overflow-x:clip}
@@ -669,6 +705,7 @@ footer{padding:56px 0 44px}
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
         <a class="btn btn-g" href="#demo">See it running <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
       </div>
+      <button class="hero-film" type="button" id="filmOpen" aria-haspopup="dialog" aria-controls="film"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span><span class="tx">Watch lumic in 40 seconds</span><span class="len">0:40</span></button>
     </div>
 
     <figure class="comp" id="comp">
@@ -793,7 +830,7 @@ footer{padding:56px 0 44px}
    ring once and stop. Bandwidth: only the centre film loads, the next one fetches metadata, the rest stay on posters.
    Every screen plays the same 16:9 films. Phones also get a name + count row with arrows, progress segments, and one
    small nudge of the ring the first time it comes into view, so it reads as a set of films.
-   Any link to #car-<film> (for example the connector card) glides the ring to that film.
+   Any link to #car-<film> glides the ring to that film. (The AI connector film is not here: it sits under the flow chart.)
    The slides and tabs are written by scripts/publish_keynote.py: a film shows only once its files are published.
    Reduced motion: instant swaps, native controls, no autoplay. */
 (function(){
@@ -871,6 +908,7 @@ footer{padding:56px 0 44px}
     want=on;
     var hero=heroFilm();
     if(on&&hero&&!hero.paused) hero.pause(); /* never two voices: the 40-second film stops */
+    if(on) document.dispatchEvent(new CustomEvent('lumic:voice',{detail:'car'}));
     apply();
   }
   function play(){
@@ -906,6 +944,7 @@ footer{padding:56px 0 44px}
     });
   });
   /* the 40-second film starting with sound mutes the carousel */
+  document.addEventListener('lumic:voice',function(e){ if(e.detail!=='car'&&want) sound(false); }); /* another film took the sound */
   function hookHero(){ var hero=heroFilm(); if(hero) hero.addEventListener('play',function(){ if(!hero.muted&&want) sound(false); }); }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hookHero); else hookHero();
 
@@ -1143,6 +1182,7 @@ footer{padding:56px 0 44px}
         </ul>
       </div>
     </div>
+    <!-- sources-film:start (written by scripts/publish_keynote.py) --><!-- sources-film:end -->
     <div class="flow-note rv">
       <span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="12" height="8.25" rx="2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg></span>
       <p><b>If your data lives somewhere, we can reach it.</b> Read-only by default. Anything that writes back waits for a person&rsquo;s approval.</p>
@@ -1206,6 +1246,67 @@ footer{padding:56px 0 44px}
     flow.classList.remove('off');
     if(!started&&e.intersectionRatio>=.2){started=true;flow.classList.add('in');setTimeout(function(){flow.classList.add('live');},1900);}
   });},{threshold:[0,.2]}).observe(flow);
+})();
+</script>
+
+<script>
+/* Films inside a section (the AI connector film under the flow chart). Same behaviour as the carousel films: poster until
+   the section comes near, muted autoplay inline while 40% is on screen, tap the film to pause or play, the Sound button
+   starts it again from 0 with sound and plays it once to the end. One voice on the page at a time ('lumic:voice'). */
+(function(){
+  [].forEach.call(document.querySelectorAll('.cfilm-f'),function(f){
+    var v=f.querySelector('video'),snd=f.querySelector('.snd');
+    if(!v) return;
+    var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var apple=/Apple/.test(navigator.vendor||''),name=(f.parentNode&&f.parentNode.id)||'film';
+    var want=false,visible=false,userPaused=false,src={},url='';
+    [].forEach.call(v.querySelectorAll('source'),function(s){ src[/mp4/.test(s.type)?'mp4':'webm']=s.getAttribute('src'); });
+    (apple?['mp4','webm']:['webm','mp4']).forEach(function(x){ if(!url&&src[x]&&v.canPlayType('video/'+x)) url=src[x]; });
+    if(url) v.setAttribute('src',url);
+    if(still){ v.controls=true; if(snd) snd.hidden=true; }
+    function ui(){
+      f.classList.toggle('paused',userPaused&&!still);
+      if(snd){ snd.setAttribute('aria-pressed',want?'true':'false'); snd.title=want?'Turn sound off':'Turn sound on'; }
+    }
+    function play(){
+      ui();
+      if(still||!visible||userPaused) return;
+      var pr=v.play();
+      if(pr&&pr.catch) pr.catch(function(e){ if(e&&e.name==='NotAllowedError'){ userPaused=true; ui(); } });
+    }
+    function mute(){ want=false; v.muted=true; ui(); }
+    function heroFilm(){ return document.getElementById('filmVideo'); }
+    v.addEventListener('ended',function(){
+      if(still) return;
+      if(want){ userPaused=true; ui(); } else { try{ v.currentTime=0; }catch(e){} play(); }
+    });
+    document.addEventListener('lumic:voice',function(e){ if(e.detail!==name&&want) mute(); });
+    function hookHero(){ var hf=heroFilm(); if(hf) hf.addEventListener('play',function(){ if(!hf.muted&&want) mute(); }); }
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hookHero); else hookHero();
+    if(snd) snd.addEventListener('click',function(e){
+      e.stopPropagation();
+      if(want){ mute(); return; }
+      want=true; v.muted=false; userPaused=false;
+      try{ v.currentTime=0; }catch(x){}
+      var hf=heroFilm(); if(hf&&!hf.paused) hf.pause();
+      document.dispatchEvent(new CustomEvent('lumic:voice',{detail:name}));
+      ui();
+      var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){ mute(); });
+    });
+    f.addEventListener('click',function(e){
+      if(still||(e.target.closest&&e.target.closest('.snd'))) return;
+      if(v.paused){ userPaused=false; play(); } else { userPaused=true; v.pause(); ui(); }
+    });
+    if(!('IntersectionObserver' in window)){ v.poster=v.getAttribute('data-poster')||''; v.preload='auto'; visible=true; play(); return; }
+    var nearIO=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(!v.poster) v.poster=v.getAttribute('data-poster')||''; v.preload='auto'; nearIO.disconnect(); } },{rootMargin:'800px 0px'});
+    nearIO.observe(f);
+    new IntersectionObserver(function(es){
+      var vis=es[es.length-1].intersectionRatio>=.4;
+      if(vis===visible) return;
+      visible=vis;
+      if(vis) play(); else v.pause();
+    },{threshold:[0,.4]}).observe(f);
+  });
 })();
 </script>
 
@@ -1301,31 +1402,6 @@ footer{padding:56px 0 44px}
     </div>
   </div>
 </section>
-
-<!-- ============ FILM ============ -->
-<section class="film" id="film" aria-label="lumic in 40 seconds" style="padding-top:clamp(32px,4.5vw,64px)">
-  <div class="wrap">
-    <p class="kicker rv">lumic in 40 seconds</p>
-    <div class="film-frame rv" id="filmFrame">
-      <video id="filmVideo" preload="none" playsinline poster="/video/lumic-reel-poster.jpg" aria-label="A 40-second film about lumic: we come in, learn how your work is really done, automate it with AI where it fits, and keep it working.">
-        <source src="/video/lumic-reel.webm" type="video/webm">
-        <source src="/video/lumic-reel.mp4" type="video/mp4">
-      </video>
-      <button class="film-play" id="filmPlay" type="button" aria-label="Play the 40-second film">
-        <span class="pb"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span><span class="tx">Watch</span><span class="len">0:40</span></span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<script>
-(function(){
-  var f=document.getElementById('filmFrame'),v=document.getElementById('filmVideo'),b=document.getElementById('filmPlay');
-  if(!f||!v||!b) return;
-  b.addEventListener('click',function(){ f.classList.add('playing'); v.controls=true; v.play(); });
-  v.addEventListener('ended',function(){ v.controls=false; v.load(); f.classList.remove('playing'); });
-})();
-</script>
 
 <!-- ============ HOW ============ -->
 <section id="how" class="how" aria-labelledby="how-h">
@@ -1479,6 +1555,46 @@ footer{padding:56px 0 44px}
   </div>
 </section>
 </main>
+
+<!-- ============ FILM: lumic in 40 seconds, in a lightbox opened from the hero ============ -->
+<dialog class="lb" id="film" aria-labelledby="film-t">
+  <div class="lb-in">
+    <button class="lb-x" type="button" aria-label="Close the film"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
+    <div class="film-frame" id="filmFrame">
+      <video id="filmVideo" preload="none" playsinline controls poster="/video/lumic-reel-poster.jpg" aria-label="A 40-second film about lumic: we come in, learn how your work is really done, automate it with AI where it fits, and keep it working.">
+        <source src="/video/lumic-reel.webm" type="video/webm">
+        <source src="/video/lumic-reel.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p class="lb-cap"><b id="film-t">lumic in 40 seconds.</b> We come in, learn how your work is really done, automate it with AI where it fits, and keep it working. <span class="len">Watch &middot; 0:40</span></p>
+  </div>
+</dialog>
+
+<script>
+/* The 40-second film: the hero link opens it in a modal <dialog> and plays it with sound (the click is the gesture).
+   Esc, a click outside the film, and the close button close it; focus goes to the close button and back to the link.
+   The carousel and the connector film listen to this video's 'play' and mute themselves: one voice at a time. */
+(function(){
+  var d=document.getElementById('film'),v=document.getElementById('filmVideo'),o=document.getElementById('filmOpen');
+  if(!d||!v||!o) return;
+  var x=d.querySelector('.lb-x'),modal=typeof d.showModal==='function',root=document.documentElement;
+  function open(){
+    if(modal) d.showModal(); else d.setAttribute('open','');
+    root.classList.add('lb-open');
+    x.focus();
+    v.muted=false;
+    try{ v.currentTime=0; }catch(e){}
+    var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){});
+  }
+  function closed(){ v.pause(); root.classList.remove('lb-open'); o.focus(); }
+  function close(){ if(modal){ if(d.open) d.close(); } else { d.removeAttribute('open'); closed(); } }
+  d.addEventListener('close',closed);
+  o.addEventListener('click',open);
+  x.addEventListener('click',close);
+  d.addEventListener('click',function(e){ if(e.target===d) close(); }); /* the backdrop: a click outside the film lands on the dialog itself */
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!modal&&d.hasAttribute('open')) close(); });
+})();
+</script>
 
 <footer>
   <div class="wrap">

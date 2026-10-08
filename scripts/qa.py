@@ -3,7 +3,8 @@
 Checks, at widths 1440 / 1024 / 768 / 390 / 360: no horizontal page scroll, every in-page #link has a target,
 no banned public term in the visible text, every <video> source and poster answers 200, no phone-only (4:5) film is
 referenced, each film in the demo carousel loads and plays when its name is clicked with no second film playing or
-unmuted, and at phone widths the carousel shows its film count row and progress segments.
+unmuted, at phone widths the carousel shows its film count row and progress segments, the 40-second film opens
+from the hero in a lightbox with sound and closes on Esc, and the AI connector film (once published) autoplays muted.
 
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
@@ -81,6 +82,24 @@ def main():
                             fails.append(f"demo film {t}: {n} films playing or unmuted at once")
                 else:
                     fails.append("demo carousel videos not found (#demo .car-slide video)")
+                # the 40-second film opens from the hero in a lightbox, plays with sound, and Esc closes it
+                pg.evaluate("window.scrollTo(0,0)")
+                pg.click("#filmOpen")
+                pg.wait_for_timeout(2500)
+                lb = pg.evaluate("(v => [document.getElementById('film').open, !v.paused, v.muted])(document.getElementById('filmVideo'))")
+                if lb != [True, True, False]:
+                    fails.append(f"40-second film lightbox: open/playing/muted = {lb}")
+                pg.keyboard.press("Escape")
+                pg.wait_for_timeout(400)
+                if pg.evaluate("document.getElementById('film').open"):
+                    fails.append("40-second film lightbox does not close on Esc")
+                # the AI connector film (under the flow chart, once published) plays muted when scrolled to
+                if pg.query_selector("#connector-film video"):
+                    pg.evaluate("document.getElementById('connector-film').scrollIntoView({block:'center'})")
+                    pg.wait_for_timeout(2500)
+                    cf = pg.evaluate("(v => [v.readyState, v.paused, v.muted])(document.querySelector('#connector-film video'))")
+                    if cf[0] < 2 or cf[1] or not cf[2]:
+                        fails.append(f"AI connector film did not autoplay muted (readyState {cf[0]}, paused {cf[1]}, muted {cf[2]})")
             if w <= 390:
                 # phones: the film count row and the progress segments show without any interaction
                 mob = pg.evaluate("""(() => { const m = document.getElementById('carMob'), r = m && m.getBoundingClientRect();

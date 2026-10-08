@@ -1,15 +1,18 @@
 """Publish the narrated keynote demo films into the site's demo carousel.
 
-The carousel has six slots, in this order: Receivables, Sales, Purchasing, Payables, Financial, AI Connector
-(films: receivables sales purchasing payables financial connector).
+The dashboard carousel has five slots, in this order: Receivables, Sales, Purchasing, Payables, Financial
+(films: receivables sales purchasing payables financial). The AI Connector film (connector) is not in the carousel: it
+plays in the "Connects to everything" section (#sources), right under the flow chart.
 
 For each film whose render is finished in video/keynote/out/<film>/ (lumic-keynote-<film>.mp4, .webm, -poster.jpg),
-copy the three files into public/video/demos/ under the same names. Then rewrite the carousel in public/index.html
-from the files in public/video/demos/:
+copy the three files into public/video/demos/ under the same names. Then rewrite public/index.html from the files in
+public/video/demos/:
   - a film with its keynote files gets a slide and a tab, marked data-sound="1" (the slide shows the Sound button);
   - a film with only the older silent files (lumic-demo-<film>.*) keeps its silent film;
   - a film with neither gets no slide and no tab at all (never an empty or "coming soon" slot).
-When the AI Connector film is live, the connector service card and the connector section link to it (#car-connector).
+  - the AI Connector film, once its keynote files are there, goes under the flow chart (#connector-film); until then
+    that section has no film and no empty slot. When it is live, the connector service card and the connector
+    section's button link to it.
 Every screen plays the same 16:9 film; there are no phone cuts. The page state follows the files, so re-running is safe.
 
 Refuses a film (copies nothing for it) when a file is over 12 MB, was written in the last 60 seconds (render still
@@ -17,6 +20,7 @@ running), has no audio track or no duration, the lengths of its mp4 and webm dis
 
 Usage:  py -3.11 scripts/publish_keynote.py [film ...] [--dry-run] [--public DIR]
         films: receivables sales purchasing payables financial connector (default: all six)
+               connector goes under the flow chart in "Connects to everything", not in the carousel
         --public DIR  publish into another copy of public/ (for a test); default is this repo's public/
 Exit code 1 if any film was refused. Then: QA the page, and deploy with `npx wrangler deploy`.
 """
@@ -45,18 +49,35 @@ SLOTS = [
      "The payables dashboard: vendor invoices checked and waiting for a person to approve them."),
     ("financial", "Financial",
      "The financial dashboard: the income statement for two companies, and the postings behind one account."),
-    ("connector", "AI Connector",
-     "The AI connector: an AI assistant answers questions from your ERP, email and files, and drafts entries for a person to approve."),
 ]
-FILMS = [s[0] for s in SLOTS]
+CONNECTOR_DESC = ("The AI connector: an AI assistant answers questions from your ERP, email and files, "
+                  "and drafts entries for a person to approve.")
+FILMS = [s[0] for s in SLOTS] + ["connector"]
 MAX_BYTES = 12_000_000
 SETTLE_S = 60
 NOTE_SILENT = "Silent, 23 seconds each. Every figure is sample data."
 NOTE_SOUND = "Every figure is sample data. Turn sound on for the narration."
 CONNECTOR_OFF = ('href="#connector"', "See the connector &rarr;")
-CONNECTOR_ON = ('href="#car-connector"', "Watch the AI Connector film &rarr;")
-CONNECTOR_BTN = ('<a class="btn btn-p" href="#car-connector">Watch the AI Connector film <svg viewBox="0 0 16 16" '
+CONNECTOR_ON = ('href="#connector-film"', "Watch the AI Connector film &rarr;")
+CONNECTOR_BTN = ('<a class="btn btn-p" href="#connector-film">Watch the AI Connector film <svg viewBox="0 0 16 16" '
                  'fill="currentColor" aria-hidden="true"><path d="M5 3.2v9.6a.6.6 0 0 0 .9.5l7.6-4.8a.6.6 0 0 0 0-1L5.9 2.7a.6.6 0 0 0-.9.5z"/></svg></a>')
+SND_SVG = ('<svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
+           'stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>'
+           '<svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
+           'stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>')
+
+
+def connector_film():
+    n = names("connector")
+    return ('\n    <div class="cfilm rv" id="connector-film">\n'
+            '      <div class="cfilm-f">\n'
+            f'        <video muted playsinline preload="none" data-poster="/video/demos/{n["poster"]}" aria-label="{CONNECTOR_DESC}">\n'
+            f'          <source src="/video/demos/{n["webm"]}" type="video/webm"><source src="/video/demos/{n["mp4"]}" type="video/mp4"></video>\n'
+            '        <span class="cfilm-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>\n'
+            f'        <button class="snd" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on">{SND_SVG}</button>\n'
+            '      </div>\n'
+            '      <p class="cfilm-cap"><b>The AI connector.</b> Built custom for every client. Every figure is sample data. Turn sound on for the narration.</p>\n'
+            '    </div>\n')
 
 
 def names(film, kind="keynote"):
@@ -167,8 +188,8 @@ def sync_page(public, dry, pending=()):
     def have(n):  # in public/video/demos, or about to be copied there (dry run)
         return (demos / n).is_file() or n in pending
 
-    state = {}
-    for film in FILMS:
+    state = {"connector": None}
+    for film in FILMS[:-1]:
         if all(have(n) for n in names(film).values()):
             state[film] = "keynote"
         elif all(have(n) for n in names(film, "demo").values()):
@@ -203,8 +224,11 @@ def sync_page(public, dry, pending=()):
                       lambda m: f"{m.group(1)}{live[0][1]}{m.group(2)}1 / {len(live)}", html, count=1)
     if not n:
         raise SystemExit("index.html: phone film row (#carMob .lbl) not found")
-    # the connector card and the connector section link to the AI Connector film once it is live
+    # the AI Connector film sits under the flow chart; the connector card and the connector section link to it
+    if all(have(n) for n in names("connector").values()):
+        state["connector"] = "keynote"
     on = state["connector"] is not None
+    html = between(html, "sources-film", connector_film() if on else "")
     m = re.search(r'(<a class="offer3[^"]*" id="offer-connector" )href="[^"]*"(>.*?<span class="go">)[^<]*(</span>)', html, re.S)
     if not m:
         raise SystemExit("index.html: connector service card (#offer-connector) not found")
@@ -256,7 +280,8 @@ def main():
         s = state[film]
         print(f"  {label:13} " + ("keynote, narrated (Sound button shown)" if s == "keynote"
                                    else "old silent film" if s == "demo" else "not on the page (no film yet)"))
-    print("  connector card: " + ("links to the AI Connector film" if state["connector"] else "links to the connector section"))
+    print("  AI Connector: " + ("film under the flow chart (#connector-film); the connector card and button link to it"
+                                if state["connector"] else "no film yet (section unchanged); the card links to the connector section"))
     print(f"  note: {note}")
     if refused:
         print(f"{refused} film(s) refused; nothing was copied for them.")
