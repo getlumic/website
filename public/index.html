@@ -520,6 +520,15 @@ footer{padding:56px 0 44px}
   .car-tabs button{font-size:14px;padding:10px 10px 16px}
   .car-tabs .bar{left:10px;right:10px;bottom:7px}
 }
+/* phones (<= 640px, the same query as the script): films with a 4:5 cut (data-v-mp4) play it; the stage turns 4:5 and the
+   film fills the width minus the 16px gutter. A film without a 4:5 cut sits 16:9 in the middle of the stage. */
+@media (max-width:640px){
+  .car.tall{--gap:8px;--peek:8px}
+  .car.tall .car-stage,.car.tall .car-ui{height:calc(var(--car-w) * 5 / 4)}
+  .car.tall .car-slide.tall{aspect-ratio:4/5}
+  .car.tall .car-slide:not(.tall){top:calc(var(--car-w) * .34375)}
+  .car.tall .car-ui.wide{top:calc(var(--car-w) * .34375);height:calc(var(--car-w) * 9 / 16)}
+}
 /* sound toggle: shown only when the active film has data-sound="1" */
 .snd{position:absolute;right:clamp(10px,1.6vw,20px);bottom:clamp(10px,1.6vw,20px);z-index:2;pointer-events:auto;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--text-strong);display:grid;place-items:center;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.06),0 10px 24px -12px rgba(15,23,42,.35);transition:background .2s,color .2s,border-color .2s,transform .25s var(--ease)}
 .snd[hidden]{display:none}
@@ -865,21 +874,21 @@ footer{padding:56px 0 44px}
   </div>
   <div class="car rv" id="car" tabindex="-1" role="region" aria-roledescription="carousel" aria-label="Dashboard films">
     <div class="car-stage" id="carStage">
-      <div class="car-slide is-active" id="car-receivables" data-film="receivables" role="tabpanel" aria-labelledby="cart-receivables">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes.">
-          <source src="/video/demos/lumic-demo-receivables.webm" type="video/webm"><source src="/video/demos/lumic-demo-receivables.mp4" type="video/mp4"></video></div>
+      <div class="car-slide is-active" id="car-receivables" data-sound="1" data-film="receivables" role="tabpanel" aria-labelledby="cart-receivables">
+        <div class="car-f"><video data-v-mp4="/video/demos/lumic-keynote-receivables-vertical.mp4" data-v-webm="/video/demos/lumic-keynote-receivables-vertical.webm" data-v-poster="/video/demos/lumic-keynote-receivables-vertical-poster.jpg" muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes.">
+          <source src="/video/demos/lumic-keynote-receivables.webm" type="video/webm"><source src="/video/demos/lumic-keynote-receivables.mp4" type="video/mp4"></video></div>
       </div>
-      <div class="car-slide" id="car-sales" data-film="sales" role="tabpanel" aria-labelledby="cart-sales" aria-hidden="true">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-sales-poster.jpg" aria-label="The sales dashboard: year-to-date sales, each customer month by month, and the trends page.">
-          <source src="/video/demos/lumic-demo-sales.webm" type="video/webm"><source src="/video/demos/lumic-demo-sales.mp4" type="video/mp4"></video></div>
+      <div class="car-slide" id="car-sales" data-sound="1" data-film="sales" role="tabpanel" aria-labelledby="cart-sales" aria-hidden="true">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-sales-poster.jpg" aria-label="The sales dashboard: year-to-date sales, each customer month by month, and the trends page.">
+          <source src="/video/demos/lumic-keynote-sales.webm" type="video/webm"><source src="/video/demos/lumic-keynote-sales.mp4" type="video/mp4"></video></div>
       </div>
-      <div class="car-slide" id="car-purchasing" data-film="purchasing" role="tabpanel" aria-labelledby="cart-purchasing" aria-hidden="true">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-purchasing-poster.jpg" aria-label="The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders.">
-          <source src="/video/demos/lumic-demo-purchasing.webm" type="video/webm"><source src="/video/demos/lumic-demo-purchasing.mp4" type="video/mp4"></video></div>
+      <div class="car-slide" id="car-purchasing" data-sound="1" data-film="purchasing" role="tabpanel" aria-labelledby="cart-purchasing" aria-hidden="true">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-purchasing-poster.jpg" aria-label="The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders.">
+          <source src="/video/demos/lumic-keynote-purchasing.webm" type="video/webm"><source src="/video/demos/lumic-keynote-purchasing.mp4" type="video/mp4"></video></div>
       </div>
-      <div class="car-slide" id="car-financial" data-film="financial" role="tabpanel" aria-labelledby="cart-financial" aria-hidden="true">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-demo-financial-poster.jpg" aria-label="The financial dashboard: the income statement for two companies, and the postings behind one account.">
-          <source src="/video/demos/lumic-demo-financial.webm" type="video/webm"><source src="/video/demos/lumic-demo-financial.mp4" type="video/mp4"></video></div>
+      <div class="car-slide" id="car-financial" data-sound="1" data-film="financial" role="tabpanel" aria-labelledby="cart-financial" aria-hidden="true">
+        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-financial-poster.jpg" aria-label="The financial dashboard: the income statement for two companies, and the postings behind one account.">
+          <source src="/video/demos/lumic-keynote-financial.webm" type="video/webm"><source src="/video/demos/lumic-keynote-financial.mp4" type="video/mp4"></video></div>
       </div>
     </div>
     <div class="car-ui" id="carUi">
@@ -898,13 +907,16 @@ footer{padding:56px 0 44px}
       <button type="button" role="tab" id="cart-financial" aria-controls="car-financial" aria-selected="false" tabindex="-1" data-film="financial">Financial<span class="bar" aria-hidden="true"><i></i></span></button>
     </div>
   </div>
-  <div class="wrap"><p class="demo-note">Silent, 23 seconds each. Every figure is sample data.</p></div>
+  <div class="wrap"><p class="demo-note">Every figure is sample data. Turn sound on for the narration.</p></div>
 </section>
 
 <script>
 /* Demo carousel. p is the ring position in films (unbounded; film i sits at offset i - p, wrapped to [-2, 2)).
-   Only the centre film plays, muted, while 40% of the stage is on screen. Films advance on their own until the viewer
-   touches anything. Reduced motion: instant swaps, native controls, no autoplay. */
+   Only the centre film plays, muted, while 40% of the stage is on screen. Films advance on their 'ended' event until the
+   viewer touches anything. A slide with data-sound="1" has a narrated film and shows the Sound button; the viewer's
+   sound choice carries across films, and only the centre film is ever unmuted. With sound on, the films play through the
+   ring once and stop. Bandwidth: only the centre film loads, the next one fetches metadata, the rest stay on posters.
+   Reduced motion: instant swaps, native controls, no autoplay. */
 (function(){
   var car=document.getElementById('car'),stage=document.getElementById('carStage'),ui=document.getElementById('carUi');
   if(!car||!stage||!ui) return;
@@ -914,7 +926,43 @@ footer{padding:56px 0 44px}
   var bars=tabs.map(function(t){return t.querySelector('.bar i');});
   var snd=document.getElementById('demoSound');
   var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hero=document.getElementById('filmVideo');
   var S=.82,p=0,active=0,auto=!still,visible=false,userPaused=false,anim=null,drag=null,step=0,barRaf=null;
+  var want=false,ring=0,near=false; /* want: the viewer's sound choice; ring: the film where sound-on play-through started */
+
+  /* 16:9 or 4:5. Each film's files come from its <source> tags (16:9) and data-v-* (4:5 phone cut, when published).
+     Picked in JS (not <source media>) so a rotation can swap files mid-film, and set as the src attribute: Chrome treats
+     an explicit load() as "ignore preload=none" and would download every film. Phones take the H.264 mp4 (iPhone). */
+  var phoneMQ=window.matchMedia?window.matchMedia('(max-width: 640px)'):null;
+  function phone(){ return !!(phoneMQ&&phoneMQ.matches); }
+  var forms=vids.map(function(v){
+    var w={poster:v.getAttribute('data-poster')};
+    [].forEach.call(v.querySelectorAll('source'),function(s){ w[/mp4/.test(s.type)?'mp4':'webm']=s.getAttribute('src'); });
+    var t=v.getAttribute('data-v-mp4')?{mp4:v.getAttribute('data-v-mp4'),webm:v.getAttribute('data-v-webm'),poster:v.getAttribute('data-v-poster')||w.poster}:null;
+    return {wide:w,tall:t};
+  });
+  var picked=vids.map(function(){ return ''; });
+  function shape(){ ui.classList.toggle('wide',car.classList.contains('tall')&&!slides[active].classList.contains('tall')); }
+  function pick(){
+    var ph=phone(),anyTall=false;
+    vids.forEach(function(v,k){
+      var f=ph&&forms[k].tall?'tall':'wide',src=forms[k][f],url='';
+      if(f==='tall') anyTall=true;
+      slides[k].classList.toggle('tall',f==='tall');
+      (ph?['mp4','webm']:['webm','mp4']).forEach(function(x){ if(!url&&src[x]&&v.canPlayType('video/'+x)) url=src[x]; });
+      if(!url||picked[k]===url) return;
+      var t=picked[k]?v.currentTime||0:0,was=!v.paused;
+      picked[k]=url;
+      if(v.poster) v.poster=src.poster;
+      v.setAttribute('src',url); /* the <source> tags stay as the no-script fallback; src wins over them */
+      if(k===active&&t>0){ /* same timeline in both cuts: carry on where the film was */
+        v.addEventListener('loadedmetadata',function h(){ v.removeEventListener('loadedmetadata',h); try{ v.currentTime=t; }catch(e){} });
+        if(was) play();
+      }
+    });
+    car.classList.toggle('tall',anyTall);
+    shape();
+  }
   if(still) car.classList.add('still');
   function mod(a,n){return ((a%n)+n)%n;}
   function inOut(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
@@ -944,30 +992,55 @@ footer{padding:56px 0 44px}
     bars[active].style.transform='scaleX('+(d>0&&isFinite(d)?Math.min(1,v.currentTime/d):0).toFixed(4)+')';
     if(!v.paused&&!v.ended) barRaf=requestAnimationFrame(tickBars);
   }
+  function hasSound(i){ return slides[i].getAttribute('data-sound')==='1'; }
+  /* apply the sound choice to the centre film; every other film is muted (setActive) and paused (rest) */
+  function apply(){
+    var s=hasSound(active);
+    vids[active].muted=!(want&&s);
+    if(!snd) return;
+    snd.hidden=still||!s;
+    snd.setAttribute('aria-pressed',want?'true':'false');
+    snd.title=want?'Turn sound off':'Turn sound on';
+  }
+  function sound(on){
+    want=on;
+    if(on&&hero&&!hero.paused) hero.pause(); /* never two voices: the 40-second film stops */
+    apply();
+  }
   function play(){
     ui.classList.toggle('paused',userPaused&&!still);
     if(still||!visible||userPaused) return;
-    var pr=vids[active].play();
-    if(pr&&pr.catch) pr.catch(function(){});
+    var v=vids[active],pr=v.play();
+    if(pr&&pr.catch) pr.catch(function(e){
+      /* the browser refused to start the film (sound without a fresh tap, or iPhone Low Power Mode blocks autoplay):
+         show the play button; one tap on the film plays it, with sound if sound is on */
+      if(e&&e.name==='NotAllowedError'&&v===vids[active]){ userPaused=true; ui.classList.add('paused'); }
+    });
   }
-  function sound(on){
-    vids[active].muted=!on;
-    if(!snd) return;
-    snd.setAttribute('aria-pressed',on?'true':'false');
-    snd.title=on?'Turn sound off':'Turn sound on';
+  /* only the centre film loads; the next one fetches metadata so it starts fast; the others wait on their posters */
+  function preloads(){
+    if(!near) return;
+    var nx=mod(active+1,N);
+    vids.forEach(function(v,k){ var w=k===active?'auto':k===nx?'metadata':'none'; if(v.preload!==w) v.preload=w; });
   }
   function restart(v){ try{ v.currentTime=0; }catch(e){} }
-  /* films that left the centre go back to their poster (load() with preload none drops the frame) */
-  function rest(){ vids.forEach(function(v,k){ if(k!==active&&v.used){ v.pause(); v.used=false; v.load(); } }); }
+  /* films that left the centre go back to their poster: re-setting src with preload none drops the frame without a download */
+  function rest(){ vids.forEach(function(v,k){ if(k!==active&&v.used){ v.pause(); v.used=false; var u=v.getAttribute('src'); if(u) v.setAttribute('src',u); else v.load(); } }); }
   vids.forEach(function(v,k){
     v.addEventListener('playing',function(){ v.used=true; if(k===active&&!barRaf) tickBars(); });
     v.addEventListener('timeupdate',function(){ if(k===active&&!barRaf) tickBars(); });
+    /* films differ in length, so the next one starts when this one ends. Muted after a touch: the film loops.
+       Sound on: play through the ring once, then stop on the last frame (no narration on repeat). */
     v.addEventListener('ended',function(){
-      if(k!==active) return;
-      if(auto&&visible) go(active+1,true);
-      else if(!still){ restart(v); play(); }
+      if(k!==active||still) return;
+      var nx=mod(active+1,N);
+      if(visible&&(auto||(want&&nx!==ring))) go(nx,true);
+      else if(want){ userPaused=true; ui.classList.add('paused'); }
+      else { restart(v); play(); }
     });
   });
+  /* the 40-second film starting with sound mutes the carousel */
+  if(hero) hero.addEventListener('play',function(){ if(!hero.muted&&want) sound(false); });
 
   function setActive(i){
     var old=vids[active];
@@ -977,8 +1050,9 @@ footer{padding:56px 0 44px}
     slides.forEach(function(s,k){ var on=k===i; s.classList.toggle('is-active',on); if(on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden','true'); });
     vids.forEach(function(v,k){ v.controls=still&&k===i; });
     bars.forEach(function(b){ b.style.transform='scaleX(0)'; });
-    sound(false);
-    if(snd) snd.hidden=still||slides[i].getAttribute('data-sound')!=='1';
+    apply();
+    shape();
+    preloads();
     restart(vids[i]);
     play();
   }
@@ -998,11 +1072,11 @@ footer{padding:56px 0 44px}
   function settle(){ p=mod(Math.round(p),N); render(); rest(); }
   /* go to film i the shortest way round; clicking the film already in the centre restarts it */
   function go(i,fromAuto){
-    if(!fromAuto) auto=false;
     var t=mod(i,N),base=Math.round(p),delta=mod(t-mod(base,N),N);
+    if(!fromAuto){ auto=false; ring=t; }
     if(delta>N/2) delta-=N;
     var target=base+delta;
-    if(t===active){ userPaused=false; sound(false); restart(vids[t]); play(); }
+    if(t===active){ userPaused=false; apply(); restart(vids[t]); play(); }
     else setActive(t);
     glide(target,Math.abs(target-p)>1.5?760:600,inOut);
   }
@@ -1015,13 +1089,14 @@ footer{padding:56px 0 44px}
   tabs.forEach(function(t,k){ t.addEventListener('click',function(){ go(k); }); });
   car.querySelector('.car-nav.prev').addEventListener('click',function(){ go(active-1); });
   car.querySelector('.car-nav.next').addEventListener('click',function(){ go(active+1); });
+  /* Sound on: the centre film starts again from 0 with sound. Sound off: it carries on, muted. */
   if(snd) snd.addEventListener('click',function(){
     auto=false;
     var v=vids[active];
-    if(!v.muted){ sound(false); return; }
-    sound(true); userPaused=false; restart(v);
-    var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){ sound(false); });
+    if(want){ sound(false); return; }
+    sound(true); ring=active; userPaused=false; restart(v);
     ui.classList.remove('paused');
+    var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){ sound(false); });
   });
   car.addEventListener('keydown',function(e){
     var k=e.key;
@@ -1073,7 +1148,8 @@ footer{padding:56px 0 44px}
     var target=Math.round(p+d.vel*.2);
     if(target===base&&Math.abs(p-d.p0)>.12) target=base+(p>d.p0?1:-1);
     target=Math.max(base-1,Math.min(base+1,target));
-    if(mod(target,N)!==active) setActive(mod(target,N));
+    ring=mod(target,N);
+    if(ring!==active) setActive(ring);
     glide(target,Math.min(600,Math.max(320,Math.abs(target-p)*700)),out);
   }
   stage.addEventListener('pointerup',function(e){ endDrag(e,false); });
@@ -1081,15 +1157,18 @@ footer{padding:56px 0 44px}
   stage.addEventListener('dragstart',function(e){ e.preventDefault(); });
 
   /* layout */
+  pick();
+  if(phoneMQ){ if(phoneMQ.addEventListener) phoneMQ.addEventListener('change',pick); else if(phoneMQ.addListener) phoneMQ.addListener(pick); }
   measure();
   if(window.ResizeObserver) new ResizeObserver(measure).observe(stage); else window.addEventListener('resize',measure);
 
   /* posters load when the section comes near; the centre film plays while 40% of the stage is visible */
-  function posters(){ vids.forEach(function(v){ var ps=v.getAttribute('data-poster'); if(ps&&!v.poster) v.poster=ps; }); }
+  function posters(){ vids.forEach(function(v,k){ var ps=forms[k][slides[k].classList.contains('tall')?'tall':'wide'].poster; if(ps&&!v.poster) v.poster=ps; }); }
   if(still) vids[0].controls=true;
-  if(!('IntersectionObserver' in window)){ posters(); visible=true; play(); return; }
-  var near=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ posters(); near.disconnect(); } },{rootMargin:'800px 0px'});
-  near.observe(stage);
+  apply();
+  if(!('IntersectionObserver' in window)){ posters(); near=true; preloads(); visible=true; play(); return; }
+  var nearIO=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ posters(); near=true; preloads(); nearIO.disconnect(); } },{rootMargin:'800px 0px'});
+  nearIO.observe(stage);
   new IntersectionObserver(function(es){
     var vis=es[es.length-1].intersectionRatio>=.4;
     if(vis===visible) return;

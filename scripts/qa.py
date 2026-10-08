@@ -1,8 +1,8 @@
 """QA for get-lumic.com before and after a deploy.
 
 Checks, at widths 1440 / 1024 / 768 / 390 / 360: no horizontal page scroll, every in-page #link has a target,
-no banned public term in the visible text, every <video> source and demo film file answers 200, and each film in the
-demo carousel loads and plays when its name is clicked.
+no banned public term in the visible text, every <video> source, phone cut and demo film file answers 200, and each
+film in the demo carousel loads and plays when its name is clicked, with no second film playing or unmuted.
 
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
@@ -48,6 +48,9 @@ def main():
                 srcs += pg.evaluate("""[...document.querySelectorAll('#demo .car-tabs [data-film]')].flatMap(t => ['webm','mp4','poster.jpg']
                     .map(x => location.origin + '/video/demos/lumic-demo-' + t.dataset.film + (x === 'poster.jpg' ? '-poster.jpg' : '.' + x)))""")
                 srcs += pg.evaluate("[...document.querySelectorAll('video[data-poster]')].map(v => new URL(v.dataset.poster, location.href).href)")
+                # the 4:5 phone cuts written by publish_keynote.py
+                srcs += pg.evaluate("""[...document.querySelectorAll('video[data-v-mp4]')].flatMap(v => [v.dataset.vMp4, v.dataset.vWebm, v.dataset.vPoster])
+                    .filter(Boolean).map(u => new URL(u, location.href).href)""")
                 for s in sorted(set(srcs)):
                     try:
                         code = urllib.request.urlopen(urllib.request.Request(s, method="HEAD", headers={"User-Agent": UA}), timeout=20).status
@@ -69,6 +72,9 @@ def main():
                         st = pg.evaluate(active)
                         if st[0] < 2 or st[1] or st[2] <= 0 or t not in st[3]:
                             fails.append(f"demo film {t}: did not load and play (readyState {st[0]}, paused {st[1]}, t {st[2]:.2f}, {st[3]})")
+                        n = pg.evaluate("[...document.querySelectorAll('#demo .car-slide video')].filter(v => !v.paused || !v.muted).length")
+                        if n > 1:
+                            fails.append(f"demo film {t}: {n} films playing or unmuted at once")
                 else:
                     fails.append("demo carousel videos not found (#demo .car-slide video)")
             pg.close()
