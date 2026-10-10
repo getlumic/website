@@ -126,7 +126,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 
 /* ---------- hero ---------- */
 .hero{position:relative;isolation:isolate;overflow:hidden;margin-top:-73px;padding:calc(73px + clamp(48px,6.5vw,92px)) 0 clamp(44px,4.5vw,64px)}
-/* orbit backdrop: a small indigo orb with two hairline rings, turning very slowly behind the composition */
+/* orbit backdrop: a small indigo orb with two hairline rings, turning very slowly behind the hero film */
 .orbit{position:absolute;left:88%;top:22%;width:96%;aspect-ratio:1;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
 .orbit svg{width:100%;height:100%;display:block;overflow:visible}
 .orbit .ring{transform-box:view-box;transform-origin:50% 50%}
@@ -136,7 +136,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
   .orbit .r2{animation:spin 240s linear infinite reverse}
   @keyframes spin{to{transform:rotate(360deg)}}
 }
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(40px,6vw,88px);align-items:center}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);gap:clamp(40px,5vw,72px);align-items:center}
 .eyebrow{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:13px;font-weight:500;color:var(--text);letter-spacing:.01em;margin-bottom:30px}
 .eyebrow .rule{width:28px;height:1px;background:rgba(15,23,42,.25)}
 .eyebrow b{font-weight:600;color:var(--primary-d)}
@@ -145,72 +145,28 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .hero .lead{color:var(--text);opacity:.82;margin-top:28px;max-width:46ch}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
 
-/* composition */
-.comp{position:relative;margin:0;container-type:inline-size}
-.stage{position:relative;width:100%;aspect-ratio:1/.9;font-size:2.55cqw}
-.comp-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
-.cl-base{fill:none;stroke:rgba(94,92,230,.22);stroke-width:1;stroke-dasharray:2 4}
-.cl-cap{fill:#ffffff;stroke:rgba(94,92,230,.5);stroke-width:1}
-.cl-pulse{fill:var(--primary-l);filter:drop-shadow(0 0 3px rgba(94,92,230,.8))}
-.layer{position:absolute;z-index:1;will-change:transform;transition:transform .9s var(--ease)}
-.ui{background:#ffffff;border:1px solid rgba(255,255,255,.95);border-radius:1.1em;box-shadow:0 0 0 1px rgba(15,23,42,.05),var(--sh-lg);line-height:1.35;color:var(--text)}
-.ui .t{font-size:.9em;font-weight:600;color:var(--text-strong)}
-.ui .m{font-size:.78em;color:var(--muted)}
-.ui .up{color:var(--up);font-weight:600}
-.ui .hr{height:1px;background:var(--line2);margin:.9em 0}
-@media (prefers-reduced-motion:no-preference){
-  .js .ui{opacity:0;transform:translateY(14px)}
-  .js .ui.on{opacity:1;transform:none;transition:opacity 1.1s var(--ease),transform 1.3s var(--ease)}
-}
-.l-sales{left:4%;top:0;width:76%}
-.l-ar{right:0;top:41%;width:41%}
-.l-inv{left:0;bottom:0;width:55%}
-.c-sales{padding:1.35em 1.45em 1.05em}
-.c-sales .hd{display:flex;justify-content:space-between;align-items:flex-start;gap:1em}
-.c-sales .big{font-size:2.5em;font-weight:500;letter-spacing:-.04em;color:var(--text-strong);line-height:1;margin-top:.4em;font-variant-numeric:tabular-nums}
-.c-sales .delta{font-size:.78em;margin-top:.55em}
-.c-sales svg{display:block;width:100%;height:auto;margin-top:1em}
-.c-sales .ax{display:flex;justify-content:space-between;font-size:.66em;color:var(--faint);margin-top:.35em;font-variant-numeric:tabular-nums;letter-spacing:.04em}
-.seg{display:inline-flex;gap:.15em;padding:.2em;border-radius:.6em;background:var(--bg);border:1px solid var(--line2)}
-.seg span{font-size:.68em;font-weight:600;padding:.25em .6em;border-radius:.45em;color:var(--muted)}
-.seg span.on{background:#ffffff;color:var(--text-strong);box-shadow:0 1px 2px rgba(15,23,42,.08)}
-.c-ar{padding:1.1em 1.2em 1em}
-.c-ar .bars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.55em;align-items:end;height:5.6em;margin-top:1em;border-bottom:1px solid var(--line)}
-.c-ar .bars i{display:block;border-radius:.35em .35em 0 0;background:linear-gradient(180deg,var(--primary-l),rgba(94,92,230,.55))}
-.c-ar .bars i.w{background:linear-gradient(180deg,rgba(234,88,12,.8),rgba(234,88,12,.45))}
-.c-ar .bx{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.55em;font-size:.64em;color:var(--muted);text-align:center;margin-top:.45em;font-variant-numeric:tabular-nums}
-.c-ar .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:.8em;font-size:.78em}
-.c-ar .tot b{font-weight:600;color:var(--text-strong);font-variant-numeric:tabular-nums}
-.c-inv{padding:1.1em 1.2em 1.15em}
-.c-inv .hd{display:flex;align-items:center;gap:.7em}
-.c-inv .ic{width:2.2em;height:2.2em;border-radius:.65em;background:var(--wash);color:var(--primary);display:grid;place-items:center;flex:none}
-.c-inv .ic svg{width:1.1em;height:1.1em}
-.steps3{display:flex;align-items:center;gap:.4em;margin:.95em 0 .85em;font-size:.68em;color:var(--muted);white-space:nowrap}
-.steps3 span{display:inline-flex;align-items:center;gap:.35em}
-.steps3 span::before{content:"";width:.55em;height:.55em;border-radius:50%;background:var(--up)}
-.steps3 span.now::before{background:var(--primary);box-shadow:0 0 0 .22em rgba(94,92,230,.18)}
-.steps3 .ln{flex:1;height:1px;background:var(--line);min-width:.6em}
-.c-inv dl{display:grid;grid-template-columns:auto 1fr;gap:.35em 1em;font-size:.8em;padding:.7em .85em;border-radius:.7em;background:var(--bg);border:1px solid var(--line2)}
-.c-inv dt{color:var(--muted)}
-.c-inv dd{text-align:right;font-weight:600;color:var(--text-strong);font-variant-numeric:tabular-nums;white-space:nowrap}
-.c-inv .act{display:flex;align-items:center;justify-content:space-between;gap:.6em;margin-top:.9em}
-.c-inv .act .m{font-size:.74em}
-.c-inv .ok{display:inline-flex;align-items:center;gap:.4em;background:var(--primary);color:#ffffff;font-weight:600;font-size:.8em;padding:.55em 1em;border-radius:.6em}
-.c-inv .ok svg{width:1em;height:1em}
-.caption{position:absolute;right:0;bottom:-2.4em;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+/* hero film: the "Why lumic" film in a clean 16:9 card; the orbit turns slowly behind it */
+.hero-fig{position:relative;margin:0}
+.hero-fig .orbit{left:90%;top:4%;width:74%}
+.hero-fig .fp{z-index:1}
+.hero-fig .fp-cap{text-align:left}
 
-/* ---------- problem ---------- */
+/* ---------- film player (the hero film and the overview film) ----------
+   Poster first, muted autoplay while 40% of it is on screen, tap to pause, the Sound button starts it again from 0 with sound. */
+.fp{position:relative;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:var(--bg);border:var(--hair);box-shadow:var(--sh-lg);cursor:pointer}
+.fp video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:var(--bg)}
+.fp-pp{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--primary);color:#ffffff;display:grid;place-items:center;box-shadow:0 0 0 10px rgba(94,92,230,.14),0 16px 34px -14px rgba(94,92,230,.75);opacity:0;transform:scale(.9);transition:opacity .3s var(--ease),transform .4s var(--ease);pointer-events:none}
+.fp-pp svg{width:22px;height:22px;margin-left:3px}
+.fp.paused .fp-pp{opacity:1;transform:none}
+.fp-cap{margin-top:14px;font-size:14px;color:var(--faint);text-align:center;text-wrap:balance}
+.fp-cap b{color:var(--text-strong);font-weight:600}
+@media (max-width:620px){.fp-pp{width:52px;height:52px;margin:-26px 0 0 -26px}}
+@media (prefers-reduced-motion:reduce){.fp{cursor:auto}}
+
+/* ---------- section head (two columns) and the client quote ---------- */
 .two-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end}
 .two-head .lead{margin-top:0}
-.plist{margin-top:72px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:var(--hair)}
-.plist li{padding:28px 28px 8px 0;position:relative}
-.plist li+li{padding-left:28px;border-left:1px solid var(--line2)}
-.plist .n{display:block;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--primary);margin-bottom:26px;font-variant-numeric:tabular-nums}
-.plist li::before{content:"";position:absolute;top:-1px;left:0;width:36px;height:1px;background:var(--primary)}
-.plist li+li::before{left:28px}
-.plist h3{margin-bottom:8px}
-.plist p{font-size:15px;color:var(--muted)}
-.quote{margin:clamp(88px,10vw,136px) auto 0;max-width:920px;text-align:center}
+.quote{margin:clamp(56px,7vw,96px) auto 0;max-width:920px;text-align:center}
 .quote blockquote p{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(30px,3.6vw,48px);line-height:1.15;letter-spacing:-.01em;color:var(--text-strong);text-wrap:balance}
 .quote cite{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:26px;font-style:normal;font-size:14px;color:var(--muted)}
 .quote cite::before,.quote cite::after{content:"";width:32px;height:1px;background:var(--line)}
@@ -244,12 +200,6 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .ledger.chk li{justify-content:flex-start;gap:12px}
 .ledger .ck{flex:none;width:20px;height:20px;border-radius:50%;border:1px solid rgba(94,92,230,.45);display:grid;place-items:center;color:var(--primary)}
 .ledger .ck svg{width:10px;height:10px}
-.offer3{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:18px clamp(20px,3vw,28px);border:var(--hair);border-radius:18px;background:#ffffff;text-decoration:none;color:inherit;box-shadow:0 1px 2px rgba(15,23,42,.04);transition:border-color .25s var(--ease),box-shadow .25s var(--ease)}
-.offer3:hover{border-color:rgba(94,92,230,.45);box-shadow:var(--sh)}
-.offer3 .tag{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary-d)}
-.offer3 .soon{margin:0}
-.offer3 .o3{flex:1 1 320px;font-size:15.5px;color:var(--text)}
-.offer3 .go{font-size:14px;font-weight:600;color:var(--primary);white-space:nowrap}
 
 /* ---------- proof ---------- */
 .runs{margin-top:44px}
@@ -282,33 +232,6 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .step h3{font-size:21px;margin-bottom:10px}
 .step p{font-size:15.5px;color:var(--muted);max-width:34ch}
 
-/* ---------- connector (secondary) ---------- */
-.conn{border:var(--hair);border-radius:24px;background:#ffffff;padding:clamp(24px,4vw,48px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:start;box-shadow:var(--sh)}
-.soon{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary-d);background:var(--wash);padding:5px 12px;border-radius:999px;margin-bottom:20px}
-.soon::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--primary)}
-.conn h2{font-size:clamp(26px,2.8vw,34px);max-width:22ch}
-.conn .lead{font-size:16px;margin-top:14px}
-.cpts{margin-top:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line2)}
-.cpt{padding:18px 18px 18px 0;border-bottom:1px solid var(--line2)}
-.cpt:nth-child(2n){padding-left:18px;border-left:1px solid var(--line2)}
-.cpt h3{font-size:15px;margin-bottom:4px}
-.cpt p{font-size:14px;color:var(--muted);line-height:1.55}
-.conn-act{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-top:28px}
-.conn-act .note{font-size:13.5px;color:var(--muted)}
-.dkc{background:var(--dk2);border:1px solid var(--dk3);border-radius:18px;padding:22px;color:var(--dk-text);box-shadow:0 30px 60px -34px rgba(14,21,37,.6);position:relative;overflow:hidden}
-.dkc::before{content:"";position:absolute;right:-80px;top:-100px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(122,120,240,.28),rgba(122,120,240,0) 65%)}
-.dkc .tag2{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--dk-text);background:var(--dk-wash);border:1px solid rgba(122,120,240,.45);padding:3px 9px;border-radius:999px}
-.dkc .t{font-size:16px;font-weight:600;color:#ffffff;margin-top:12px}
-.dkc .fl{display:flex;align-items:center;margin:18px 0 16px}
-.dkc .nd{font-size:12px;font-weight:600;padding:6px 10px;border-radius:8px;background:var(--dk3);border:1px solid rgba(138,154,184,.3);color:var(--dk-text);white-space:nowrap}
-.dkc .nd.mid{background:var(--primary);border-color:var(--primary-l);color:#ffffff}
-.dkc .ln{flex:1;height:1px;margin:0 6px;background:repeating-linear-gradient(90deg,var(--primary-l) 0 4px,transparent 4px 8px);opacity:.8}
-.dkc .log{border-top:1px solid rgba(138,154,184,.18);padding-top:12px;display:grid;gap:8px;font-size:12.5px;color:var(--dk-muted);font-variant-numeric:tabular-nums}
-.dkc .log div{display:flex;justify-content:space-between;gap:10px}
-.dkc .log b{font-weight:500;color:var(--dk-text)}
-.dkc .log .pend{color:var(--primary-l);font-weight:600}
-.dkw{position:sticky;top:120px}
-.dk-cap{margin-top:10px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);text-align:right}
 
 /* ---------- why ---------- */
 .why-grid{margin-top:72px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,6vw,96px);align-items:start}
@@ -329,7 +252,8 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .alts td.ar svg{width:16px;height:16px;display:block;margin-top:3px}
 
 /* ---------- founders (original site layout) ---------- */
-.founders{border-top:1px solid var(--line2)}
+.founders{margin-top:clamp(72px,8vw,112px);padding-top:clamp(56px,6vw,88px);border-top:1px solid var(--line2)}
+.founders .sub-h{font-size:clamp(26px,2.8vw,36px);font-weight:500;letter-spacing:-.03em;line-height:1.1;max-width:22ch;text-wrap:balance}
 .section-head{max-width:720px}
 .founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:56px}
 .founder-card{display:flex;gap:22px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--sh);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
@@ -374,16 +298,10 @@ footer{padding:56px 0 44px}
 @media (max-width:1060px){
   .hero-grid{grid-template-columns:minmax(0,1fr)}
   .hero h1{max-width:15ch}
-  .comp{max-width:620px;width:100%;margin-top:16px}
-  .plist{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .plist li:nth-child(3){padding-left:0;border-left:0}
-  .plist li:nth-child(3)::before{left:0}
-  .plist li:nth-child(n+3){border-top:1px solid var(--line2);padding-top:28px}
+  .hero-fig{max-width:760px;width:100%}
   .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .pf:not(:nth-child(3n+1)){padding-left:0;border-left:0}
   .pf:nth-child(2n){padding-left:28px;border-left:var(--hair)}
-  .conn{grid-template-columns:minmax(0,1fr)}
-  .dkw{max-width:420px;position:static}
   .why-grid{grid-template-columns:minmax(0,1fr)}
   .alts{position:static}
   .founder-grid{grid-template-columns:1fr}
@@ -402,20 +320,9 @@ footer{padding:56px 0 44px}
   .step .n{position:absolute;left:0;top:0;margin:0}
 }
 @media (max-width:620px){
-  .plist{grid-template-columns:minmax(0,1fr)}
-  .plist li,.plist li+li{padding:26px 0 22px;border-left:0}
-  .plist li+li{border-top:1px solid var(--line2)}
-  .plist li+li::before{left:0}
-  .plist .n{margin-bottom:14px}
   .pgrid{grid-template-columns:minmax(0,1fr)}
   .pf,.pf:nth-child(2n){padding:30px 0 32px;border-left:0}
-  .cpts{grid-template-columns:minmax(0,1fr)}
-  .cpt:nth-child(2n){padding-left:0;border-left:0}
-  .stage{aspect-ratio:1/1.5;font-size:3.3cqw}
-  .l-sales{left:0;width:88%}
-  .l-ar{top:30%;width:50%}
   .eyebrow .rule{display:none}
-  .l-inv{width:72%}
   .founder-card{padding:22px;gap:16px}
   .founder-avatar{width:72px;height:72px}
   .founder-initials{font-size:22px}
@@ -424,7 +331,7 @@ footer{padding:56px 0 44px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .layer,.btn,.founder-card{transition:none}
+  .btn,.founder-card{transition:none}
 }
 
 /* contact: combined card (A structure + B email + C founders), light only */
@@ -455,29 +362,9 @@ footer{padding:56px 0 44px}
 .nx span{display:block;color:var(--muted);font-size:15px;margin-top:2px}
 @media (max-width:860px){.cc{grid-template-columns:1fr}.cc-r{border-left:0;border-top:var(--hair)}}
 
-/* ---------- film (40-second reel) ---------- */
-.film{padding:clamp(24px,4vw,56px) 0 clamp(8px,2vw,24px)}
-.film .kicker{margin-bottom:18px}
+/* ---------- the lightbox for one dashboard film (opened from "Watch each dashboard on its own") ---------- */
 .film-frame{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#f6f7fb;border:1px solid var(--line);box-shadow:var(--sh-lg)}
 .film-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#f6f7fb}
-.film-play{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-start;padding:clamp(14px,2.2vw,28px);border:0;background:transparent;cursor:pointer}
-.film-play .pb{display:inline-flex;align-items:center;gap:12px;padding:10px 20px 10px 10px;border-radius:999px;background:var(--primary);color:#ffffff;font-family:var(--sans);font-size:15px;font-weight:600;box-shadow:0 0 0 8px rgba(94,92,230,.12),0 16px 34px -14px rgba(94,92,230,.75);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
-.film-play .pb .ic{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center}
-.film-play .pb .ic svg{width:14px;height:14px;margin-left:2px}
-.film-play .pb .len{font-weight:500;opacity:.78;font-variant-numeric:tabular-nums}
-.film-play:hover .pb{transform:translateY(-2px);box-shadow:0 0 0 10px rgba(94,92,230,.14),0 20px 40px -14px rgba(94,92,230,.8)}
-.film-frame.playing .film-play{display:none}
-.film-play:focus-visible{outline:none}
-.film-play:focus-visible .pb{box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
-@media (max-width:600px){.film-play{padding:12px}.film-play .pb{padding:5px;gap:0;box-shadow:0 0 0 6px rgba(94,92,230,.12),0 12px 26px -12px rgba(94,92,230,.75)}.film-play .pb .tx,.film-play .pb .len{display:none}.film-play .pb .ic{width:36px;height:36px;background:transparent}.film-frame{border-radius:16px}}
-
-/* the hero link and the lightbox for the 40-second film */
-.hero-film{display:inline-flex;align-items:center;gap:11px;margin-top:22px;padding:4px 12px 4px 4px;border:0;border-radius:999px;background:none;font-family:var(--sans);font-size:14.5px;font-weight:600;color:var(--text-strong);cursor:pointer;transition:color .2s}
-.hero-film .ic{flex:none;width:32px;height:32px;border-radius:50%;background:var(--wash);border:1px solid rgba(94,92,230,.3);color:var(--primary);display:grid;place-items:center;transition:background .25s,color .25s,box-shadow .25s}
-.hero-film .ic svg{width:11px;height:11px;margin-left:2px}
-.hero-film .len{font-weight:500;color:var(--faint);font-variant-numeric:tabular-nums}
-.hero-film:hover{color:var(--primary-d)}
-.hero-film:hover .ic{background:var(--primary);color:#ffffff;box-shadow:0 0 0 6px rgba(94,92,230,.12)}
 .lb{border:0;padding:0;margin:auto;background:transparent;overflow:visible;max-width:none;max-height:none;width:min(1120px,calc(100vw - 32px),calc((100vh - 190px) * 16 / 9))}
 .lb::backdrop{background:rgba(14,21,37,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .lb[open]{animation:lb-in .35s var(--ease)}
@@ -495,70 +382,30 @@ footer{padding:56px 0 44px}
 html.lb-open{overflow:hidden}
 @media (prefers-reduced-motion:reduce){.lb[open]{animation:none}}
 
-/* ---------- demo films: a flat circular carousel (real dashboards, sample data) ----------
-   JS places each film by its offset from the centre (scale, dim, depth). The ring loops; the side films stay paused on posters. */
+/* ---------- demo: one overview film, then two quiet extras behind a click ---------- */
 .demo{overflow-x:clip;padding-bottom:clamp(40px,5vw,72px)}
-.car{--gap:28px;--peek:clamp(12px,6vw,190px);--car-w:min(1040px,calc(100vw - 2 * (var(--peek) + var(--gap))));position:relative;margin-top:clamp(36px,5vw,60px);outline:none}
-.car-stage{position:relative;height:calc(var(--car-w) * 9 / 16);touch-action:pan-y;-webkit-user-select:none;user-select:none;cursor:grab}
-.car-stage.drag{cursor:grabbing}
-.car-slide{position:absolute;left:50%;top:0;width:var(--car-w);margin-left:calc(var(--car-w) / -2);aspect-ratio:16/9;transform-origin:50% 50%;will-change:transform,opacity}
-.car-slide:not(.is-active){cursor:pointer}
-.car-f{position:absolute;inset:0;border-radius:24px;overflow:hidden;background:#f6f7fb;border:1px solid var(--line);box-shadow:var(--sh);transition:box-shadow .6s var(--ease)}
-.car-slide.is-active .car-f{box-shadow:var(--sh-lg)}
-.car-f video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#f6f7fb;pointer-events:none}
-.car.still .car-slide.is-active video{pointer-events:auto}
-.car:focus-visible .car-slide.is-active .car-f{box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary),var(--sh-lg)}
-/* controls that sit on the centre frame */
-.car-ui{position:absolute;left:50%;top:0;width:var(--car-w);height:calc(var(--car-w) * 9 / 16);transform:translateX(-50%);pointer-events:none;z-index:20}
-.car-nav{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--text-strong);display:grid;place-items:center;cursor:pointer;pointer-events:auto;box-shadow:0 1px 2px rgba(15,23,42,.06),0 10px 24px -12px rgba(15,23,42,.35);transition:border-color .2s,color .2s,transform .25s var(--ease)}
-.car-nav svg{width:16px;height:16px}
-.car-nav.prev{left:-22px}
-.car-nav.next{right:-22px}
-.car-nav:hover{border-color:rgba(94,92,230,.45);color:var(--primary-d)}
-.car-nav.prev:hover{transform:translateX(-2px)}
-.car-nav.next:hover{transform:translateX(2px)}
-.car-nav:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
-.car-pp{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--primary);color:#ffffff;display:grid;place-items:center;box-shadow:0 0 0 10px rgba(94,92,230,.14),0 16px 34px -14px rgba(94,92,230,.75);opacity:0;transform:scale(.9);transition:opacity .3s var(--ease),transform .4s var(--ease)}
-.car-pp svg{width:22px;height:22px;margin-left:3px}
-.car-ui.paused .car-pp{opacity:1;transform:none}
-/* the four names: the active one is indigo, its bar fills as the film plays */
-.car-tabs{display:flex;gap:clamp(4px,1.2vw,14px);margin:clamp(20px,2.6vw,30px) auto 0;padding:0 var(--gut);max-width:var(--max);overflow-x:auto;scrollbar-width:none}
-.car-tabs::-webkit-scrollbar{display:none}
-.car-tabs button:first-child{margin-left:auto}
-.car-tabs button:last-child{margin-right:auto}
-.car-tabs button{flex:none;position:relative;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:-.005em;color:var(--muted);background:none;border:0;border-radius:10px;padding:10px 16px 18px;cursor:pointer;transition:color .25s}
-.car-tabs button:hover{color:var(--text-strong)}
-.car-tabs button[aria-selected="true"]{color:var(--primary-d)}
-.car-tabs .bar{position:absolute;left:16px;right:16px;bottom:8px;height:2px;border-radius:2px;background:var(--line);overflow:hidden;transition:background .25s}
-.car-tabs .bar i{position:absolute;inset:0;border-radius:inherit;background:var(--primary);transform-origin:0 50%;transform:scaleX(0)}
-.car-tabs button[aria-selected="true"] .bar{background:rgba(94,92,230,.16)}
-.car-tabs button:focus-visible{outline:none;box-shadow:0 0 0 2px var(--primary)}
-.demo-note{margin-top:10px;font-size:14px;color:var(--faint);text-align:center}
-@media (max-width:1100px){.car{--gap:20px}}
-/* phones: the same 16:9 films as desktop. The neighbours peek in at both sides, a row under the film names the film with
-   its count ("2 / 5") and arrows, and the names become a row of progress segments, one per film. */
-.car-mob{display:none}
-@media (max-width:620px){
-  .car{--gap:8px;--peek:22px}
-  .car-f{border-radius:14px}
-  .car-nav{display:none}
-  .car-pp{width:52px;height:52px;margin:-26px 0 0 -26px}
-  .car-mob{display:flex;align-items:center;gap:12px;margin:18px 0 0;padding:0 var(--gut)}
-  .car-mob[hidden]{display:none}
-  .car-mob button{flex:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#ffffff;color:var(--text-strong);display:grid;place-items:center;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.06),0 8px 20px -12px rgba(15,23,42,.3)}
-  .car-mob button svg{width:15px;height:15px}
-  .car-mob button:active{border-color:rgba(94,92,230,.45);color:var(--primary-d)}
-  .car-mob button:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 5px var(--primary)}
-  .car-mob .lbl{flex:1;min-width:0;text-align:center;line-height:1.25}
-  .car-mob .lbl b{display:block;font-size:16.5px;font-weight:600;letter-spacing:-.01em;color:var(--primary-d)}
-  .car-mob .lbl span{display:block;margin-top:3px;font-size:12.5px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
-  .car-tabs{gap:6px;margin-top:10px;padding:0 var(--gut);overflow:visible}
-  .car-tabs button{flex:1 1 0;min-width:0;padding:14px 0;font-size:0;line-height:0;color:transparent;border-radius:6px}
-  .car-tabs button:first-child{margin-left:0}
-  .car-tabs button:last-child{margin-right:0}
-  .car-tabs .bar{left:0;right:0;top:50%;bottom:auto;height:3px;margin-top:-1.5px}
-}
-/* sound toggle: shown only when the active film has data-sound="1" */
+.demo .fp-wrap{margin:clamp(36px,5vw,56px) 0 0}
+.demo-note{margin-top:14px;font-size:14px;color:var(--faint);text-align:center}
+.extras{margin-top:clamp(28px,4vw,44px);border-top:var(--hair)}
+.more{border-bottom:var(--hair)}
+.more>summary{display:flex;align-items:center;gap:12px;padding:16px 2px;list-style:none;cursor:pointer;font-size:15.5px;font-weight:600;letter-spacing:-.005em;color:var(--text-strong);transition:color .2s}
+.more>summary::-webkit-details-marker{display:none}
+.more>summary:hover{color:var(--primary-d)}
+.more>summary .chev{margin-left:auto;flex:none;width:30px;height:30px;border-radius:50%;border:var(--hair);background:#ffffff;display:grid;place-items:center;color:var(--muted);transition:transform .3s var(--ease),border-color .2s,color .2s}
+.more>summary .chev svg{width:12px;height:12px}
+.more>summary:hover .chev{border-color:rgba(94,92,230,.45);color:var(--primary)}
+.more[open]>summary .chev{transform:rotate(180deg);color:var(--primary);border-color:rgba(94,92,230,.45)}
+.more>summary:focus-visible{outline:none;box-shadow:0 0 0 2px var(--primary);border-radius:8px}
+.more-in{padding:4px 0 28px}
+.pfilms{display:flex;flex-wrap:wrap;gap:8px}
+.pfilms a{display:inline-flex;align-items:center;gap:9px;padding:6px 15px 6px 6px;border:var(--hair);border-radius:999px;background:#ffffff;font-size:14px;font-weight:500;color:var(--text-strong);text-decoration:none;box-shadow:0 1px 2px rgba(15,23,42,.04);transition:border-color .2s,color .2s}
+.pfilms a .ic{flex:none;width:28px;height:28px;border-radius:50%;background:var(--wash);color:var(--primary);display:grid;place-items:center;transition:background .2s,color .2s}
+.pfilms a .ic svg{width:10px;height:10px;margin-left:2px}
+.pfilms a:hover{border-color:rgba(94,92,230,.45);color:var(--primary-d)}
+.pfilms a:hover .ic{background:var(--primary);color:#ffffff}
+.pfilms-note{margin-top:14px;font-size:13.5px;color:var(--faint)}
+.more-h{font-size:clamp(24px,2.6vw,32px);font-weight:500;letter-spacing:-.03em;line-height:1.1;max-width:22ch;text-wrap:balance}
+/* sound toggle on a film player */
 .snd{position:absolute;right:clamp(10px,1.6vw,20px);bottom:clamp(10px,1.6vw,20px);z-index:2;pointer-events:auto;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--text-strong);display:grid;place-items:center;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.06),0 10px 24px -12px rgba(15,23,42,.35);transition:background .2s,color .2s,border-color .2s,transform .25s var(--ease)}
 .snd[hidden]{display:none}
 .snd:hover{transform:translateY(-1px);border-color:rgba(94,92,230,.45)}
@@ -568,20 +415,11 @@ html.lb-open{overflow:hidden}
 .snd[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:#ffffff}
 .snd:focus-visible{outline:none;box-shadow:0 0 0 3px #ffffff,0 0 0 6px var(--primary)}
 
-/* ---------- a film inside a section (the AI connector film under the flow chart) ----------
-   Written by scripts/publish_keynote.py only once the film is published; same behaviour as the carousel films. */
-.cfilm{margin-top:clamp(40px,5vw,64px)}
-.cfilm-f{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#f6f7fb;border:1px solid var(--line);box-shadow:var(--sh-lg);cursor:pointer}
-.cfilm-f video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#f6f7fb}
-.cfilm-pp{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:var(--primary);color:#ffffff;display:grid;place-items:center;box-shadow:0 0 0 10px rgba(94,92,230,.14),0 16px 34px -14px rgba(94,92,230,.75);opacity:0;transform:scale(.9);transition:opacity .3s var(--ease),transform .4s var(--ease);pointer-events:none}
-.cfilm-pp svg{width:22px;height:22px;margin-left:3px}
-.cfilm-f.paused .cfilm-pp{opacity:1;transform:none}
-.cfilm-cap{margin-top:14px;font-size:14px;color:var(--faint);text-align:center;text-wrap:balance}
-.cfilm-cap b{color:var(--text-strong);font-weight:600}
-@media (max-width:620px){.cfilm-f{border-radius:14px}.cfilm-pp{width:52px;height:52px;margin:-26px 0 0 -26px}}
-
-/* ---------- sources (connects to everything) ---------- */
+/* ---------- sources: "How the data flows", behind a click under the overview film ---------- */
 .sources{overflow-x:clip}
+.sources .lead{margin-top:14px}
+.sources .flow{margin-top:clamp(32px,4vw,56px)}
+.sources .flow-note{margin-top:clamp(32px,4vw,48px)}
 .flow{position:relative;margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr) minmax(0,330px);align-items:center}
 .flow-lines{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
 .flow-col{position:relative;z-index:2}
@@ -680,10 +518,9 @@ html.lb-open{overflow:hidden}
     <nav aria-label="Primary">
       <ul>
         <li><a href="#demo">Demo</a></li>
-        <li class="nav-opt"><a href="#sources">Connects</a></li>
         <li><a href="#services">Services</a></li>
+        <li class="nav-opt"><a href="#proof">Client work</a></li>
         <li><a href="#how">How we work</a></li>
-        <li><a href="#connector">AI connector</a></li>
         <li><a href="#founders">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -705,11 +542,9 @@ html.lb-open{overflow:hidden}
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
         <a class="btn btn-g" href="#demo">See it running <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
       </div>
-      <button class="hero-film" type="button" id="filmOpen" aria-haspopup="dialog" aria-controls="film"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span><span class="tx">Watch lumic in 40 seconds</span><span class="len">0:40</span></button>
     </div>
 
-    <figure class="comp" id="comp">
-      <div class="stage" id="stage" role="img" aria-label="Illustration with sample figures: sales month to date with a monthly chart, AR aging by bucket, and an invoice read from email with the entry prepared and waiting for a person to approve it.">
+    <figure class="hero-fig">
         <div class="orbit" aria-hidden="true">
           <svg viewBox="0 0 400 400" fill="none">
             <g class="ring r1"><circle cx="200" cy="200" r="150" stroke="rgba(94,92,230,.22)" stroke-width=".8"/><circle cx="350" cy="200" r="2.6" fill="#7a78f0"/></g>
@@ -717,485 +552,98 @@ html.lb-open{overflow:hidden}
           </svg>
           <span class="orb"></span>
         </div>
-        <svg class="comp-lines" id="compLines" aria-hidden="true"></svg>
-
-        <div class="layer l-sales" data-d="7" data-n="sales" aria-hidden="true">
-          <div class="ui c-sales">
-            <div class="hd">
-              <div><div class="t">Sales · month to date</div><div class="m">Live from your systems</div></div>
-              <div class="seg"><span class="on">MTD</span><span>QTD</span><span>YTD</span></div>
-            </div>
-            <div class="big">$1.28M</div>
-            <div class="delta"><span class="up">&#9650; 8.4%</span> <span class="m">vs last year</span></div>
-            <svg viewBox="0 0 320 96" fill="none">
-              <defs><linearGradient id="qA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a78f0" stop-opacity=".26"/><stop offset="1" stop-color="#7a78f0" stop-opacity="0"/></linearGradient></defs>
-              <g stroke="#eef1f6" stroke-width="1"><path d="M0 18H320M0 48H320M0 78H320"/></g>
-              <path d="M2 82 C26 80 40 78 62 76 S100 74 124 70 S168 66 190 62 S236 60 258 54 S300 50 318 46" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 4" stroke-linecap="round"/>
-              <path d="M2 74 C22 72 34 66 54 64 S86 70 106 60 S140 48 160 50 S196 40 214 36 S250 38 268 26 S300 16 318 12 V96 H2Z" fill="url(#qA)"/>
-              <path d="M2 74 C22 72 34 66 54 64 S86 70 106 60 S140 48 160 50 S196 40 214 36 S250 38 268 26 S300 16 318 12" stroke="#5e5ce6" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="318" cy="12" r="3.6" fill="#ffffff" stroke="#5e5ce6" stroke-width="2"/>
-            </svg>
-            <div class="ax"><span>Wk 1</span><span>Wk 2</span><span>Wk 3</span><span>Wk 4</span></div>
-          </div>
-        </div>
-
-        <div class="layer l-ar" data-d="13" data-n="ar" aria-hidden="true">
-          <div class="ui c-ar">
-            <div class="t">AR aging</div>
-            <div class="m">By bucket · live</div>
-            <div class="bars"><i style="height:94%"></i><i style="height:56%"></i><i style="height:30%"></i><i class="w" style="height:15%"></i></div>
-            <div class="bx"><span>Current</span><span>30</span><span>60</span><span>90+</span></div>
-            <div class="tot"><span class="m" style="font-size:1em">Total open</span><b>$612,400</b></div>
-          </div>
-        </div>
-
-        <div class="layer l-inv" data-d="18" data-n="inv" aria-hidden="true">
-          <div class="ui c-inv">
-            <div class="hd">
-              <span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.5" width="14.5" height="11" rx="2"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></span>
-              <div><div class="t">Invoice read from email</div><div class="m">Accounts payable</div></div>
-            </div>
-            <div class="steps3"><span>Read</span><i class="ln"></i><span>Entry prepared</span><i class="ln"></i><span class="now">Approve</span></div>
-            <dl><dt>Vendor</dt><dd>Vendor 01042</dd><dt>Invoice</dt><dd>INV-20931</dd><dt>Amount</dt><dd>$4,860.00</dd></dl>
-            <div class="act"><span class="m">Lands unposted</span><span class="ok"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg>Approve</span></div>
-          </div>
-        </div>
-        <figcaption class="caption">Illustration</figcaption>
+      <div class="fp" id="why-film" data-voice="why">
+        <video muted playsinline preload="none" poster="/video/demos/lumic-keynote-why-poster.jpg" aria-label="Why lumic: AI looks simple from the outside, but it takes connections, rules, checks, and upkeep underneath. Hand lumic the job, and we build it and keep it working.">
+          <source src="/video/demos/lumic-keynote-why.webm" type="video/webm"><source src="/video/demos/lumic-keynote-why.mp4" type="video/mp4"></video>
+        <span class="fp-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>
+        <button class="snd" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on"><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg></button>
       </div>
+      <figcaption class="fp-cap"><b>Why lumic.</b> Turn sound on for the narration.</figcaption>
     </figure>
   </div>
 </section>
 
-<!-- ============ DEMO FILMS (flat circular carousel) ============ -->
-<section id="demo" class="demo" aria-labelledby="demo-h" style="padding-top:0">
+<!-- ============ DEMO: the overview film ============ -->
+<section id="demo" class="demo" aria-labelledby="demo-h" style="padding-top:clamp(40px,5vw,72px)">
   <div class="wrap">
     <p class="kicker rv">See it running</p>
     <div class="two-head rv">
-      <h2 id="demo-h">Real dashboards, shown with sample data.</h2>
-      <p class="lead">These are dashboards we built and run in production. The company, the customers, and every number shown here are made up.</p>
+      <h2 id="demo-h">Everything we build, <em class="s">working together.</em></h2>
+      <p class="lead">Your systems hold the data, yet your team still does the work by hand. These are dashboards and AI agents we built and run in production, all on one live set of data. The company, the customers, and every number shown here are made up.</p>
     </div>
-  </div>
-  <div class="car rv" id="car" tabindex="-1" role="region" aria-roledescription="carousel" aria-label="Dashboard films">
-    <div class="car-stage" id="carStage">
-      <!-- slides:start (written by scripts/publish_keynote.py) -->
-      <div class="car-slide is-active" id="car-receivables" data-sound="1" data-film="receivables" role="tabpanel" aria-labelledby="cart-receivables">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-receivables-poster.jpg" aria-label="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes.">
-          <source src="/video/demos/lumic-keynote-receivables.webm" type="video/webm"><source src="/video/demos/lumic-keynote-receivables.mp4" type="video/mp4"></video></div>
-      </div>
-      <div class="car-slide" id="car-sales" data-sound="1" data-film="sales" role="tabpanel" aria-labelledby="cart-sales" aria-hidden="true">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-sales-poster.jpg" aria-label="The sales dashboard: year-to-date sales, each customer month by month, and the trends page.">
-          <source src="/video/demos/lumic-keynote-sales.webm" type="video/webm"><source src="/video/demos/lumic-keynote-sales.mp4" type="video/mp4"></video></div>
-      </div>
-      <div class="car-slide" id="car-purchasing" data-sound="1" data-film="purchasing" role="tabpanel" aria-labelledby="cart-purchasing" aria-hidden="true">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-purchasing-poster.jpg" aria-label="The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders.">
-          <source src="/video/demos/lumic-keynote-purchasing.webm" type="video/webm"><source src="/video/demos/lumic-keynote-purchasing.mp4" type="video/mp4"></video></div>
-      </div>
-      <div class="car-slide" id="car-financial" data-sound="1" data-film="financial" role="tabpanel" aria-labelledby="cart-financial" aria-hidden="true">
-        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-financial-poster.jpg" aria-label="The financial dashboard: the income statement for two companies, and the postings behind one account.">
-          <source src="/video/demos/lumic-keynote-financial.webm" type="video/webm"><source src="/video/demos/lumic-keynote-financial.mp4" type="video/mp4"></video></div>
-      </div>
-      <!-- slides:end -->
-    </div>
-    <div class="car-ui" id="carUi">
-      <button class="car-nav prev" type="button" aria-label="Previous film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5L5.5 8l4.5 4.5"/></svg></button>
-      <button class="car-nav next" type="button" aria-label="Next film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"/></svg></button>
-      <span class="car-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>
-      <button class="snd" id="demoSound" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on" hidden>
-        <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
-        <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
-      </button>
-    </div>
-    <div class="car-mob" id="carMob">
-      <button class="mp" type="button" aria-label="Previous film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5L5.5 8l4.5 4.5"/></svg></button>
-      <p class="lbl" aria-live="polite"><b>Receivables</b><span class="ct">1 / 4 &middot; Swipe for more</span></p>
-      <button class="mn" type="button" aria-label="Next film" aria-controls="carStage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"/></svg></button>
-    </div>
-    <div class="car-tabs" role="tablist" aria-label="Choose a dashboard">
-      <!-- tabs:start (written by scripts/publish_keynote.py) -->
-      <button type="button" role="tab" id="cart-receivables" aria-controls="car-receivables" aria-selected="true" data-film="receivables">Receivables<span class="bar" aria-hidden="true"><i></i></span></button>
-      <button type="button" role="tab" id="cart-sales" aria-controls="car-sales" aria-selected="false" tabindex="-1" data-film="sales">Sales<span class="bar" aria-hidden="true"><i></i></span></button>
-      <button type="button" role="tab" id="cart-purchasing" aria-controls="car-purchasing" aria-selected="false" tabindex="-1" data-film="purchasing">Purchasing<span class="bar" aria-hidden="true"><i></i></span></button>
-      <button type="button" role="tab" id="cart-financial" aria-controls="car-financial" aria-selected="false" tabindex="-1" data-film="financial">Financial<span class="bar" aria-hidden="true"><i></i></span></button>
-      <!-- tabs:end -->
-    </div>
-  </div>
-  <div class="wrap"><p class="demo-note">Every figure is sample data. Turn sound on for the narration.</p></div>
-</section>
-
-<script>
-/* Demo carousel. p is the ring position in films (unbounded; film i sits at offset i - p, wrapped to [-N/2, N/2)).
-   Only the centre film plays, muted, while 40% of the stage is on screen. Films advance on their 'ended' event until the
-   viewer touches anything. A slide with data-sound="1" has a narrated film and shows the Sound button; the viewer's
-   sound choice carries across films, and only the centre film is ever unmuted. With sound on, the films play through the
-   ring once and stop. Bandwidth: only the centre film loads, the next one fetches metadata, the rest stay on posters.
-   Every screen plays the same 16:9 films. Phones also get a name + count row with arrows, progress segments, and one
-   small nudge of the ring the first time it comes into view, so it reads as a set of films.
-   Any link to #car-<film> glides the ring to that film. (The AI connector film is not here: it sits under the flow chart.)
-   The slides and tabs are written by scripts/publish_keynote.py: a film shows only once its files are published.
-   Reduced motion: instant swaps, native controls, no autoplay. */
-(function(){
-  var car=document.getElementById('car'),stage=document.getElementById('carStage'),ui=document.getElementById('carUi');
-  if(!car||!stage||!ui) return;
-  var slides=[].slice.call(stage.querySelectorAll('.car-slide')),N=slides.length;
-  if(!N) return;
-  var vids=slides.map(function(s){return s.querySelector('video');});
-  var tabs=[].slice.call(car.querySelectorAll('.car-tabs [role="tab"]'));
-  var bars=tabs.map(function(t){return t.querySelector('.bar i');});
-  var names=tabs.map(function(t){return (t.firstChild&&t.firstChild.nodeType===3?t.firstChild.nodeValue:t.textContent).trim();});
-  var snd=document.getElementById('demoSound');
-  var mob=document.getElementById('carMob'),mobName=mob&&mob.querySelector('.lbl b'),mobCount=mob&&mob.querySelector('.lbl .ct');
-  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var narrow=window.matchMedia&&window.matchMedia('(max-width: 620px)');
-  function heroFilm(){ return document.getElementById('filmVideo'); } /* the 40-second film sits further down the page */
-  var S=.82,p=0,active=0,auto=!still,visible=false,userPaused=false,anim=null,drag=null,step=0,barRaf=null;
-  var want=false,ring=0,near=false,touched=false,nudged=false; /* want: the viewer's sound choice; ring: the film where sound-on play-through started */
-
-  /* Each film's file comes from its <source> tags, set as the src attribute: Chrome treats an explicit load() as
-     "ignore preload=none" and would download every film. Safari (iPhone, Mac) takes the H.264 mp4; others the webm. */
-  var apple=/Apple/.test(navigator.vendor||'');
-  vids.forEach(function(v){
-    var f={},url='';
-    [].forEach.call(v.querySelectorAll('source'),function(s){ f[/mp4/.test(s.type)?'mp4':'webm']=s.getAttribute('src'); });
-    (apple?['mp4','webm']:['webm','mp4']).forEach(function(x){ if(!url&&f[x]&&v.canPlayType('video/'+x)) url=f[x]; });
-    if(url) v.setAttribute('src',url); /* the <source> tags stay as the no-script fallback; src wins over them */
-  });
-  if(still) car.classList.add('still');
-  if(mob&&N<2) mob.hidden=true;
-  function mod(a,n){return ((a%n)+n)%n;}
-  function inOut(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
-  function out(t){return 1-Math.pow(1-t,3);}
-
-  function render(){
-    slides.forEach(function(s,i){
-      var d=mod(i-p+N/2,N)-N/2,a=Math.abs(d);
-      var sc=1-(1-S)*Math.min(a,1)-.06*Math.max(0,a-1);
-      var op=a<=1?1-.42*a:Math.max(0,.58*(2-a));
-      s.style.transform='translate3d('+(d*step).toFixed(2)+'px,0,0) scale('+sc.toFixed(4)+')';
-      s.style.opacity=op.toFixed(3);
-      s.style.zIndex=String(10-Math.round(a*3));
-      s.style.visibility=op<.02?'hidden':'';
-    });
-  }
-  function measure(){
-    var w=slides[0].offsetWidth,gap=parseFloat(getComputedStyle(car).getPropertyValue('--gap'))||16;
-    step=w/2+gap+S*w/2;
-    render();
-  }
-  function label(){
-    if(!mobName) return;
-    mobName.textContent=names[active]||'';
-    mobCount.textContent=(active+1)+' / '+N+' · Swipe for more';
-  }
-
-  /* playback */
-  function tickBars(){
-    barRaf=null;
-    var v=vids[active],d=v.duration;
-    if(bars[active]) bars[active].style.transform='scaleX('+(d>0&&isFinite(d)?Math.min(1,v.currentTime/d):0).toFixed(4)+')';
-    if(!v.paused&&!v.ended) barRaf=requestAnimationFrame(tickBars);
-  }
-  function hasSound(i){ return slides[i].getAttribute('data-sound')==='1'; }
-  /* apply the sound choice to the centre film; every other film is muted (setActive) and paused (rest) */
-  function apply(){
-    var s=hasSound(active);
-    vids[active].muted=!(want&&s);
-    if(!snd) return;
-    snd.hidden=still||!s;
-    snd.setAttribute('aria-pressed',want?'true':'false');
-    snd.title=want?'Turn sound off':'Turn sound on';
-  }
-  function sound(on){
-    want=on;
-    var hero=heroFilm();
-    if(on&&hero&&!hero.paused) hero.pause(); /* never two voices: the 40-second film stops */
-    if(on) document.dispatchEvent(new CustomEvent('lumic:voice',{detail:'car'}));
-    apply();
-  }
-  function play(){
-    ui.classList.toggle('paused',userPaused&&!still);
-    if(still||!visible||userPaused) return;
-    var v=vids[active],pr=v.play();
-    if(pr&&pr.catch) pr.catch(function(e){
-      /* the browser refused to start the film (sound without a fresh tap, or iPhone Low Power Mode blocks autoplay):
-         show the play button; one tap on the film plays it, with sound if sound is on */
-      if(e&&e.name==='NotAllowedError'&&v===vids[active]){ userPaused=true; ui.classList.add('paused'); }
-    });
-  }
-  /* only the centre film loads; the next one fetches metadata so it starts fast; the others wait on their posters */
-  function preloads(){
-    if(!near) return;
-    var nx=mod(active+1,N);
-    vids.forEach(function(v,k){ var w=k===active?'auto':k===nx?'metadata':'none'; if(v.preload!==w) v.preload=w; });
-  }
-  function restart(v){ try{ v.currentTime=0; }catch(e){} }
-  /* films that left the centre go back to their poster: re-setting src with preload none drops the frame without a download */
-  function rest(){ vids.forEach(function(v,k){ if(k!==active&&v.used){ v.pause(); v.used=false; var u=v.getAttribute('src'); if(u) v.setAttribute('src',u); else v.load(); } }); }
-  vids.forEach(function(v,k){
-    v.addEventListener('playing',function(){ v.used=true; if(k===active&&!barRaf) tickBars(); });
-    v.addEventListener('timeupdate',function(){ if(k===active&&!barRaf) tickBars(); });
-    /* films differ in length, so the next one starts when this one ends. Muted after a touch: the film loops.
-       Sound on: play through the ring once, then stop on the last frame (no narration on repeat). */
-    v.addEventListener('ended',function(){
-      if(k!==active||still) return;
-      var nx=mod(active+1,N);
-      if(visible&&N>1&&(auto||(want&&nx!==ring))) go(nx,true);
-      else if(want){ userPaused=true; ui.classList.add('paused'); }
-      else { restart(v); play(); }
-    });
-  });
-  /* the 40-second film starting with sound mutes the carousel */
-  document.addEventListener('lumic:voice',function(e){ if(e.detail!=='car'&&want) sound(false); }); /* another film took the sound */
-  function hookHero(){ var hero=heroFilm(); if(hero) hero.addEventListener('play',function(){ if(!hero.muted&&want) sound(false); }); }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hookHero); else hookHero();
-
-  function setActive(i){
-    var old=vids[active];
-    old.pause(); old.muted=true;
-    active=i; userPaused=false;
-    tabs.forEach(function(t,k){ var on=k===i; t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1; });
-    slides.forEach(function(s,k){ var on=k===i; s.classList.toggle('is-active',on); if(on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden','true'); });
-    vids.forEach(function(v,k){ v.controls=still&&k===i; });
-    bars.forEach(function(b){ if(b) b.style.transform='scaleX(0)'; });
-    apply();
-    label();
-    preloads();
-    restart(vids[i]);
-    play();
-  }
-  function glide(to,dur,fn){
-    if(anim) cancelAnimationFrame(anim);
-    anim=null;
-    if(still||!dur){ p=to; settle(); return; }
-    var from=p,t0=null;
-    function tick(now){
-      if(t0===null) t0=now;
-      var t=Math.min(1,(now-t0)/dur);
-      p=from+(to-from)*fn(t); render();
-      if(t<1) anim=requestAnimationFrame(tick); else { anim=null; p=to; settle(); }
-    }
-    anim=requestAnimationFrame(tick);
-  }
-  function settle(){ p=mod(Math.round(p),N); render(); rest(); }
-  /* go to film i the shortest way round; clicking the film already in the centre restarts it */
-  function go(i,fromAuto){
-    var t=mod(i,N),base=Math.round(p),delta=mod(t-mod(base,N),N);
-    if(!fromAuto){ auto=false; ring=t; touched=true; }
-    if(delta>N/2) delta-=N;
-    var target=base+delta;
-    if(t===active){ userPaused=false; apply(); restart(vids[t]); play(); }
-    else setActive(t);
-    glide(target,Math.abs(target-p)>1.5?760:600,inOut);
-  }
-  function togglePause(){
-    auto=false; touched=true;
-    var v=vids[active];
-    if(v.paused){ userPaused=false; play(); } else { userPaused=true; v.pause(); ui.classList.add('paused'); }
-  }
-  /* phones, first view only: the ring leans toward the next film and settles back, to show there is more to see */
-  function nudge(){
-    if(nudged||still||touched||anim||drag||N<2) return;
-    nudged=true;
-    var base=p,t0=null;
-    function tick(now){
-      if(touched){ anim=null; return; }
-      if(t0===null) t0=now;
-      var t=Math.min(1,(now-t0)/1300);
-      p=base+.24*Math.sin(Math.PI*inOut(t)); render();
-      if(t<1) anim=requestAnimationFrame(tick); else { anim=null; p=base; render(); }
-    }
-    anim=requestAnimationFrame(tick);
-  }
-
-  tabs.forEach(function(t,k){ t.addEventListener('click',function(){ go(k); }); });
-  car.querySelector('.car-nav.prev').addEventListener('click',function(){ go(active-1); });
-  car.querySelector('.car-nav.next').addEventListener('click',function(){ go(active+1); });
-  if(mob){
-    mob.querySelector('.mp').addEventListener('click',function(){ go(active-1); });
-    mob.querySelector('.mn').addEventListener('click',function(){ go(active+1); });
-  }
-  /* Sound on: the centre film starts again from 0 with sound. Sound off: it carries on, muted. */
-  if(snd) snd.addEventListener('click',function(){
-    auto=false; touched=true;
-    var v=vids[active];
-    if(want){ sound(false); return; }
-    sound(true); ring=active; userPaused=false; restart(v);
-    ui.classList.remove('paused');
-    var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){ sound(false); });
-  });
-  car.addEventListener('keydown',function(e){
-    var k=e.key;
-    if(k!=='ArrowLeft'&&k!=='ArrowRight'&&k!=='Home'&&k!=='End') return;
-    if(e.target.tagName==='VIDEO') return; /* native controls seek with the arrows */
-    e.preventDefault();
-    var i=k==='ArrowLeft'?active-1:k==='ArrowRight'?active+1:k==='Home'?0:N-1;
-    go(i);
-    if(e.target.getAttribute('role')==='tab') tabs[mod(i,N)].focus();
-  });
-  /* links to one film (#car-<film>) scroll to the films and glide the ring there */
-  function slideOf(hash){ var s=hash&&hash.length>1&&document.getElementById(hash.slice(1)); return s?slides.indexOf(s):-1; }
-  document.addEventListener('click',function(e){
-    var a=e.target.closest&&e.target.closest('a[href^="#car-"]');
-    if(!a) return;
-    var i=slideOf(a.getAttribute('href'));
-    if(i<0) return;
-    e.preventDefault();
-    car.scrollIntoView({behavior:still?'auto':'smooth',block:'center'});
-    go(i);
-  });
-
-  /* swipe and drag (touch and mouse). Vertical moves fall through to the page scroll (touch-action: pan-y). */
-  stage.addEventListener('pointerdown',function(e){
-    if(e.button!==0) return;
-    touched=true;
-    if(still&&e.target.tagName==='VIDEO'&&e.target.closest('.is-active')) return;
-    drag={x:e.clientX,y:e.clientY,p0:p,moved:false,lx:e.clientX,lt:performance.now(),vel:0,id:e.pointerId};
-  });
-  stage.addEventListener('pointermove',function(e){
-    if(!drag||e.pointerId!==drag.id) return;
-    var dx=e.clientX-drag.x;
-    if(!drag.moved){
-      if(Math.abs(dx)<6) return;
-      if(Math.abs(e.clientY-drag.y)>Math.abs(dx)){ drag=null; return; }
-      drag.moved=true; auto=false;
-      if(anim){ cancelAnimationFrame(anim); anim=null; drag.p0=p; drag.x=e.clientX; dx=0; }
-      try{ stage.setPointerCapture(e.pointerId); }catch(err){}
-      stage.classList.add('drag');
-    }
-    if(still||!step) return;
-    var now=performance.now(),dt=Math.max(1,now-drag.lt);
-    drag.vel=.8*(-(e.clientX-drag.lx)/step/dt*1000)+.2*drag.vel;
-    drag.lx=e.clientX; drag.lt=now;
-    p=drag.p0-dx/step; render();
-  });
-  function endDrag(e,cancel){
-    if(!drag||e.pointerId!==drag.id) return;
-    var d=drag; drag=null;
-    stage.classList.remove('drag');
-    if(!d.moved){
-      if(cancel) return;
-      var s=e.target.closest&&e.target.closest('.car-slide');
-      if(!s) return;
-      var i=slides.indexOf(s);
-      if(i===active) togglePause(); else go(i);
-      return;
-    }
-    var base=Math.round(d.p0),dir;
-    if(still){ dir=e.clientX<d.x?1:-1; go(active+dir); return; }
-    var target=Math.round(p+d.vel*.2);
-    if(target===base&&Math.abs(p-d.p0)>.12) target=base+(p>d.p0?1:-1);
-    target=Math.max(base-1,Math.min(base+1,target));
-    ring=mod(target,N);
-    if(ring!==active) setActive(ring);
-    glide(target,Math.min(600,Math.max(320,Math.abs(target-p)*700)),out);
-  }
-  stage.addEventListener('pointerup',function(e){ endDrag(e,false); });
-  stage.addEventListener('pointercancel',function(e){ endDrag(e,true); });
-  stage.addEventListener('dragstart',function(e){ e.preventDefault(); });
-
-  /* layout */
-  measure();
-  label();
-  if(window.ResizeObserver) new ResizeObserver(measure).observe(stage); else window.addEventListener('resize',measure);
-
-  /* posters load when the section comes near; the centre film plays while 40% of the stage is visible */
-  function posters(){ vids.forEach(function(v){ var ps=v.getAttribute('data-poster'); if(ps&&!v.poster) v.poster=ps; }); }
-  if(still) vids[0].controls=true;
-  apply();
-  var start=slideOf(location.hash);
-  if(start>0){ setActive(start); p=start; render(); }
-  if(!('IntersectionObserver' in window)){ posters(); near=true; preloads(); visible=true; play(); return; }
-  var nearIO=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ posters(); near=true; preloads(); nearIO.disconnect(); } },{rootMargin:'800px 0px'});
-  nearIO.observe(stage);
-  new IntersectionObserver(function(es){
-    var vis=es[es.length-1].intersectionRatio>=.4;
-    if(vis===visible) return;
-    visible=vis;
-    if(vis){ play(); if(narrow&&narrow.matches) setTimeout(nudge,1200); }
-    else vids[active].pause();
-  },{threshold:[0,.4]}).observe(stage);
-})();
-</script>
-
-<!-- ============ PROBLEM ============ -->
-<section id="problem" aria-labelledby="problem-h" style="padding-top:clamp(56px,6vw,96px);padding-bottom:clamp(40px,5vw,72px)">
-  <div class="wrap">
-    <p class="kicker rv">The problem</p>
-    <div class="two-head rv">
-      <h2 id="problem-h">Your systems hold the data. Your team still does the work by hand.</h2>
-      <p class="lead">Most growing businesses run on capable systems and manual processes. Reports are assembled from exports. Invoices are keyed from the inbox. The same figures are reconciled across three systems every month.</p>
-    </div>
-    <ul class="plist rv">
-      <li><span class="n">01</span><h3>Reporting takes hours.</h3><p>Exports, pivot tables, and copy-paste, every week and every month-end.</p></li>
-      <li><span class="n">02</span><h3>The inbox is a job.</h3><p>Invoices, payroll, status updates, and documents take a full-time role to process.</p></li>
-      <li><span class="n">03</span><h3>No one owns the fix.</h3><p>Most growing businesses have no data team, no developer, and no one to bring in AI.</p></li>
-      <li><span class="n">04</span><h3>Spreadsheets become the system.</h3><p>Each department keeps its own version. The totals disagree, and decisions wait.</p></li>
-    </ul>
-    <figure class="quote rv">
-      <blockquote><p>“Honestly, this is better than the BI tools I've used at much larger companies.”</p></blockquote>
-      <cite>Bradford, R., VP of Sales, $20M manufacturer</cite>
-    </figure>
-  </div>
-</section>
-
-<!-- ============ SOURCES (connects to everything) ============ -->
-<section id="sources" class="sources" aria-labelledby="sources-h" style="padding-top:clamp(48px,6vw,88px);padding-bottom:clamp(24px,3vw,48px)">
-  <div class="wrap">
-    <p class="kicker rv">Connects to everything</p>
-    <div class="two-head rv">
-      <h2 id="sources-h">Fed by the systems you <em class="s">already run.</em></h2>
-      <p class="lead">Your ERP. The spreadsheets your team lives in. The cloud apps you already pay for. The inbox where orders arrive. We connect to all of it, live, so every screen is current the moment you open it. No re-keying. No new system to learn.</p>
-    </div>
-    <div class="flow" id="flow">
-      <svg class="flow-lines" id="flowLines" aria-hidden="true"></svg>
-      <div class="flow-col flow-src">
-        <p class="flow-l" id="flow-src-l">Where your data lives</p>
-        <ul aria-labelledby="flow-src-l">
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3l7 3.5-7 3.5-7-3.5z"/><path d="M3 10l7 3.5 7-3.5"/><path d="M3 13.5l7 3.5 7-3.5"/></svg></span><span><b>Your ERP</b><small>On-prem or cloud</small></span></li>
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.5" width="14" height="13" rx="2"/><path d="M3 8h14M3 12.25h14M8 8v8.5"/></svg></span><span><b>Excel and CSV files</b><small>Workbooks and exports</small></span></li>
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.25 15.5H14a3.25 3.25 0 0 0 .45-6.47A4.6 4.6 0 0 0 5.6 8.3a3.6 3.6 0 0 0 .65 7.2z"/></svg></span><span><b>Cloud apps</b><small>Accounting, CRM, e-commerce</small></span></li>
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.5" width="14.5" height="11" rx="2"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></span><span><b>Email inboxes</b><small>Orders, invoices, statements</small></span></li>
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="M2.5 8.25h15M5.5 12.25h3"/></svg></span><span><b>Bank and card feeds</b><small>Every transaction</small></span></li>
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="10" cy="5" rx="6" ry="2.25"/><path d="M4 5v10c0 1.24 2.69 2.25 6 2.25s6-1.01 6-2.25V5"/><path d="M4 10c0 1.24 2.69 2.25 6 2.25s6-1.01 6-2.25"/></svg></span><span><b>Databases</b><small>Wherever they run</small></span></li>
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 2.75h6l3.75 3.75v10a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V3.5a.75.75 0 0 1 .75-.75z"/><path d="M11.5 2.75V6.5h3.75M7.5 10.5h5M7.5 13.5h3.5"/></svg></span><span><b>Shared drives and PDFs</b><small>Contracts, price lists, scans</small></span></li>
-          <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2"/><path d="M6 8l2.5 2L6 12M10.5 12.5H14"/></svg></span><span><b>Legacy and custom systems</b><small>Even the old ones</small></span></li>
-        </ul>
-      </div>
-      <div class="flow-hub">
-        <div class="hub">
-          <div class="hub-rings" aria-hidden="true">
-            <svg viewBox="0 0 400 400" fill="none">
-              <g class="r1"><circle cx="200" cy="200" r="118" stroke="rgba(94,92,230,.16)" stroke-width=".8"/><circle cx="318" cy="200" r="2.4" fill="#7a78f0"/></g>
-              <g class="r2"><circle cx="200" cy="200" r="168" stroke="rgba(94,92,230,.22)" stroke-width=".8" stroke-dasharray="1 4"/><circle cx="200" cy="32" r="2" fill="#5e5ce6"/></g>
-            </svg>
-          </div>
-          <span class="brand" role="img" aria-label="lumic"><span aria-hidden="true">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</span></span>
-          <span class="hub-st">Live</span>
-        </div>
-      </div>
-      <div class="flow-col flow-out">
-        <p class="flow-l" id="flow-out-l">What you get</p>
-        <ul aria-labelledby="flow-out-l">
-          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.25" width="14.5" height="13.5" rx="2"/><path d="M6.5 13.5v-3M10 13.5V7M13.5 13.5v-5"/></svg></span><span><b>Live dashboards</b><small>Always current. No exports.</small></span></li>
-          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l1.55 4.45L15 10l-4.45 1.55L9 16l-1.55-4.45L3 10l4.45-1.55z"/><path d="M15.25 2.5v3M13.75 4h3"/></svg></span><span><b>AI agents that do the work</b><small>Ready for a person to approve</small></span></li>
-          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="13" rx="2"/><path d="M3 8h14M7 2.5v3M13 2.5v3M6.75 11.5h2M11.25 11.5h2M6.75 14h2"/></svg></span><span><b>Scheduled reports</b><small>In your inbox before the meeting</small></span></li>
-          <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 13.5V9a4.5 4.5 0 0 1 9 0v4.5l1.25 1.75H4.25z"/><path d="M8.25 17.25a1.9 1.9 0 0 0 3.5 0"/></svg></span><span><b>Alerts when something changes</b><small>The moment a number moves</small></span></li>
-        </ul>
-      </div>
-    </div>
-    <!-- sources-film:start (written by scripts/publish_keynote.py) -->
-    <div class="cfilm rv" id="connector-film">
-      <div class="cfilm-f">
-        <video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-connector-poster.jpg" aria-label="The AI connector: an AI assistant answers questions from your ERP, email and files, and drafts entries for a person to approve.">
-          <source src="/video/demos/lumic-keynote-connector.webm" type="video/webm"><source src="/video/demos/lumic-keynote-connector.mp4" type="video/mp4"></video>
-        <span class="cfilm-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>
+    <figure class="fp-wrap rv">
+      <div class="fp" id="overview-film" data-voice="overview">
+        <video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-overview-poster.jpg" aria-label="The lumic overview: your systems connected into one live data layer, then receivables, sales, purchasing, payables, financial, and the AI connector, all working from the same data.">
+          <source src="/video/demos/lumic-keynote-overview.webm" type="video/webm"><source src="/video/demos/lumic-keynote-overview.mp4" type="video/mp4"></video>
+        <span class="fp-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>
         <button class="snd" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on"><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg></button>
       </div>
-      <p class="cfilm-cap"><b>The AI connector.</b> Built custom for every client. Every figure is sample data. Turn sound on for the narration.</p>
-    </div>
-<!-- sources-film:end -->
-    <div class="flow-note rv">
-      <span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="12" height="8.25" rx="2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg></span>
-      <p><b>If your data lives somewhere, we can reach it.</b> Read-only by default. Anything that writes back waits for a person&rsquo;s approval.</p>
+      <figcaption class="demo-note">Every figure is sample data. Turn sound on for the narration.</figcaption>
+    </figure>
+    <div class="extras rv">
+      <details class="more" id="films">
+        <summary>Watch each dashboard on its own<span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></span></summary>
+        <div class="more-in">
+          <ul class="pfilms" aria-label="Dashboard films">
+            <!-- films:start (written by scripts/publish_keynote.py) -->
+            <li><a href="/video/demos/lumic-keynote-receivables.mp4" data-film="receivables" data-desc="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Receivables</a></li>
+            <li><a href="/video/demos/lumic-keynote-sales.mp4" data-film="sales" data-desc="The sales dashboard: year-to-date sales, each customer month by month, and the trends page." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Sales</a></li>
+            <li><a href="/video/demos/lumic-keynote-purchasing.mp4" data-film="purchasing" data-desc="The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Purchasing</a></li>
+            <li><a href="/video/demos/lumic-keynote-financial.mp4" data-film="financial" data-desc="The financial dashboard: the income statement for two companies, and the postings behind one account." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Financial</a></li>
+            <li><a href="/video/demos/lumic-keynote-connector.mp4" data-film="connector" data-desc="The AI connector: an AI assistant answers questions from your ERP, email and files, and drafts entries for a person to approve." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>AI connector</a></li>
+            <!-- films:end -->
+          </ul>
+          <p class="pfilms-note">Each film opens on its own, with narration. Every figure is sample data.</p>
+        </div>
+      </details>
+      <details class="more" id="sources">
+        <summary>How the data flows<span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></span></summary>
+        <div class="more-in sources">
+          <h3 class="more-h">Fed by the systems you <em class="s">already run.</em></h3>
+          <p class="lead">Your ERP. The spreadsheets your team lives in. The cloud apps you already pay for. The inbox where orders arrive. We connect to all of it, live, so every screen is current the moment you open it. No re-keying. No new system to learn.</p>
+        <div class="flow" id="flow">
+          <svg class="flow-lines" id="flowLines" aria-hidden="true"></svg>
+          <div class="flow-col flow-src">
+            <p class="flow-l" id="flow-src-l">Where your data lives</p>
+            <ul aria-labelledby="flow-src-l">
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3l7 3.5-7 3.5-7-3.5z"/><path d="M3 10l7 3.5 7-3.5"/><path d="M3 13.5l7 3.5 7-3.5"/></svg></span><span><b>Your ERP</b><small>On-prem or cloud</small></span></li>
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.5" width="14" height="13" rx="2"/><path d="M3 8h14M3 12.25h14M8 8v8.5"/></svg></span><span><b>Excel and CSV files</b><small>Workbooks and exports</small></span></li>
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.25 15.5H14a3.25 3.25 0 0 0 .45-6.47A4.6 4.6 0 0 0 5.6 8.3a3.6 3.6 0 0 0 .65 7.2z"/></svg></span><span><b>Cloud apps</b><small>Accounting, CRM, e-commerce</small></span></li>
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="4.5" width="14.5" height="11" rx="2"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></span><span><b>Email inboxes</b><small>Orders, invoices, statements</small></span></li>
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="M2.5 8.25h15M5.5 12.25h3"/></svg></span><span><b>Bank and card feeds</b><small>Every transaction</small></span></li>
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="10" cy="5" rx="6" ry="2.25"/><path d="M4 5v10c0 1.24 2.69 2.25 6 2.25s6-1.01 6-2.25V5"/><path d="M4 10c0 1.24 2.69 2.25 6 2.25s6-1.01 6-2.25"/></svg></span><span><b>Databases</b><small>Wherever they run</small></span></li>
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 2.75h6l3.75 3.75v10a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V3.5a.75.75 0 0 1 .75-.75z"/><path d="M11.5 2.75V6.5h3.75M7.5 10.5h5M7.5 13.5h3.5"/></svg></span><span><b>Shared drives and PDFs</b><small>Contracts, price lists, scans</small></span></li>
+              <li class="fs"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.75" width="14.5" height="12.5" rx="2"/><path d="M6 8l2.5 2L6 12M10.5 12.5H14"/></svg></span><span><b>Legacy and custom systems</b><small>Even the old ones</small></span></li>
+            </ul>
+          </div>
+          <div class="flow-hub">
+            <div class="hub">
+              <div class="hub-rings" aria-hidden="true">
+                <svg viewBox="0 0 400 400" fill="none">
+                  <g class="r1"><circle cx="200" cy="200" r="118" stroke="rgba(94,92,230,.16)" stroke-width=".8"/><circle cx="318" cy="200" r="2.4" fill="#7a78f0"/></g>
+                  <g class="r2"><circle cx="200" cy="200" r="168" stroke="rgba(94,92,230,.22)" stroke-width=".8" stroke-dasharray="1 4"/><circle cx="200" cy="32" r="2" fill="#5e5ce6"/></g>
+                </svg>
+              </div>
+              <span class="brand" role="img" aria-label="lumic"><span aria-hidden="true">lum<span class="idot">&#305;<span class="idot-dot"></span></span>c</span></span>
+              <span class="hub-st">Live</span>
+            </div>
+          </div>
+          <div class="flow-col flow-out">
+            <p class="flow-l" id="flow-out-l">What you get</p>
+            <ul aria-labelledby="flow-out-l">
+              <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="3.25" width="14.5" height="13.5" rx="2"/><path d="M6.5 13.5v-3M10 13.5V7M13.5 13.5v-5"/></svg></span><span><b>Live dashboards</b><small>Always current. No exports.</small></span></li>
+              <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l1.55 4.45L15 10l-4.45 1.55L9 16l-1.55-4.45L3 10l4.45-1.55z"/><path d="M15.25 2.5v3M13.75 4h3"/></svg></span><span><b>AI agents that do the work</b><small>Ready for a person to approve</small></span></li>
+              <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="13" rx="2"/><path d="M3 8h14M7 2.5v3M13 2.5v3M6.75 11.5h2M11.25 11.5h2M6.75 14h2"/></svg></span><span><b>Scheduled reports</b><small>In your inbox before the meeting</small></span></li>
+              <li class="fo"><span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 13.5V9a4.5 4.5 0 0 1 9 0v4.5l1.25 1.75H4.25z"/><path d="M8.25 17.25a1.9 1.9 0 0 0 3.5 0"/></svg></span><span><b>Alerts when something changes</b><small>The moment a number moves</small></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flow-note">
+          <span class="fi" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="12" height="8.25" rx="2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg></span>
+          <p><b>If your data lives somewhere, we can reach it.</b> Read-only by default. Anything that writes back waits for a person&rsquo;s approval.</p>
+        </div>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -1260,16 +708,19 @@ html.lb-open{overflow:hidden}
 </script>
 
 <script>
-/* Films inside a section (the AI connector film under the flow chart). Same behaviour as the carousel films: poster until
-   the section comes near, muted autoplay inline while 40% is on screen, tap the film to pause or play, the Sound button
-   starts it again from 0 with sound and plays it once to the end. One voice on the page at a time ('lumic:voice'). */
+/* Film players: the "Why lumic" film in the hero and the overview film in #demo. Poster until the film comes near, muted
+   autoplay inline while 40% of it is on screen, tap the film to pause or play. The Sound button starts the film again
+   from 0 with sound and plays it once to the end; muted, it loops. One voice on the page at a time ('lumic:voice').
+   Reduced motion: no autoplay, the poster and native controls. */
 (function(){
-  [].forEach.call(document.querySelectorAll('.cfilm-f'),function(f){
+  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var apple=/Apple/.test(navigator.vendor||'');
+  [].forEach.call(document.querySelectorAll('.fp'),function(f){
     var v=f.querySelector('video'),snd=f.querySelector('.snd');
     if(!v) return;
-    var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var apple=/Apple/.test(navigator.vendor||''),name=(f.parentNode&&f.parentNode.id)||'film';
+    var name=f.getAttribute('data-voice')||f.id||'film';
     var want=false,visible=false,userPaused=false,src={},url='';
+    /* the file is set as the src attribute (Chrome ignores preload=none on an explicit load()); Safari takes the mp4 */
     [].forEach.call(v.querySelectorAll('source'),function(s){ src[/mp4/.test(s.type)?'mp4':'webm']=s.getAttribute('src'); });
     (apple?['mp4','webm']:['webm','mp4']).forEach(function(x){ if(!url&&src[x]&&v.canPlayType('video/'+x)) url=src[x]; });
     if(url) v.setAttribute('src',url);
@@ -1282,23 +733,21 @@ html.lb-open{overflow:hidden}
       ui();
       if(still||!visible||userPaused) return;
       var pr=v.play();
+      /* the browser refused (sound without a fresh tap, or iPhone Low Power Mode): show the play button; a tap plays it */
       if(pr&&pr.catch) pr.catch(function(e){ if(e&&e.name==='NotAllowedError'){ userPaused=true; ui(); } });
     }
     function mute(){ want=false; v.muted=true; ui(); }
-    function heroFilm(){ return document.getElementById('filmVideo'); }
+    function poster(){ var ps=v.getAttribute('data-poster'); if(ps&&!v.getAttribute('poster')) v.poster=ps; }
     v.addEventListener('ended',function(){
       if(still) return;
       if(want){ userPaused=true; ui(); } else { try{ v.currentTime=0; }catch(e){} play(); }
     });
-    document.addEventListener('lumic:voice',function(e){ if(e.detail!==name&&want) mute(); });
-    function hookHero(){ var hf=heroFilm(); if(hf) hf.addEventListener('play',function(){ if(!hf.muted&&want) mute(); }); }
-    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hookHero); else hookHero();
+    document.addEventListener('lumic:voice',function(e){ if(e.detail!==name&&want) mute(); }); /* another film took the sound */
     if(snd) snd.addEventListener('click',function(e){
       e.stopPropagation();
       if(want){ mute(); return; }
       want=true; v.muted=false; userPaused=false;
       try{ v.currentTime=0; }catch(x){}
-      var hf=heroFilm(); if(hf&&!hf.paused) hf.pause();
       document.dispatchEvent(new CustomEvent('lumic:voice',{detail:name}));
       ui();
       var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){ mute(); });
@@ -1307,8 +756,9 @@ html.lb-open{overflow:hidden}
       if(still||(e.target.closest&&e.target.closest('.snd'))) return;
       if(v.paused){ userPaused=false; play(); } else { userPaused=true; v.pause(); ui(); }
     });
-    if(!('IntersectionObserver' in window)){ v.poster=v.getAttribute('data-poster')||''; v.preload='auto'; visible=true; play(); return; }
-    var nearIO=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(!v.poster) v.poster=v.getAttribute('data-poster')||''; v.preload='auto'; nearIO.disconnect(); } },{rootMargin:'800px 0px'});
+    var load=still?'metadata':'auto';
+    if(!('IntersectionObserver' in window)){ poster(); v.preload=load; visible=true; play(); return; }
+    var nearIO=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ poster(); v.preload=load; nearIO.disconnect(); } },{rootMargin:'800px 0px'});
     nearIO.observe(f);
     new IntersectionObserver(function(es){
       var vis=es[es.length-1].intersectionRatio>=.4;
@@ -1326,14 +776,14 @@ html.lb-open{overflow:hidden}
     <div class="thread" aria-hidden="true"><i></i></div>
     <p class="kicker rv">Services</p>
     <div class="two-head rv">
-      <h2 id="services-h">Three ways to work with us.</h2>
+      <h2 id="services-h">Two ways to work with us.</h2>
       <p class="lead">Each engagement is designed around your data and your processes. We do not sell templates.</p>
     </div>
     <article class="keep offer rv">
       <div>
         <span class="tag">01 · Deployments</span>
         <h3>One workflow at a time.</h3>
-        <p>Every deployment starts with an on-site diagnostic. We learn how the work is really done. Then we build and automate it, with AI where it fits.</p>
+        <p>Every deployment starts with an on-site diagnostic. We learn how the work is really done. Then we build and automate it, with AI where it fits. In every job, we connect any AI to your systems, and a person approves every entry.</p>
         <ul class="tl" aria-label="Our tools">
           <li>AI agents</li><li>Workflow automation</li><li>System integrations</li><li>Dashboards</li><li>Workflow redesign</li>
         </ul>
@@ -1365,11 +815,6 @@ html.lb-open{overflow:hidden}
         <li><span>Human approval</span><span class="st">Built in</span></li>
       </ul>
     </article>
-    <a class="offer3 rv" id="offer-connector" href="#connector-film">
-      <span class="tag">03 · AI connector</span><span class="soon">Custom-built</span>
-      <span class="o3">Built custom for every client. It connects any AI to your systems, and a person approves every entry.</span>
-      <span class="go">Watch the AI Connector film &rarr;</span>
-    </a>
   </div>
 </section>
 
@@ -1410,6 +855,10 @@ html.lb-open{overflow:hidden}
         <p>A live GL income statement and product-margin view, consolidated across two sister companies — the month-end picture without the month-end grind.</p>
         <ul><li>Multi-company GL consolidation</li><li>Income statement that's never stale</li></ul></article>
     </div>
+    <figure class="quote rv">
+      <blockquote><p>“Honestly, this is better than the BI tools I've used at much larger companies.”</p></blockquote>
+      <cite>Bradford, R., VP of Sales, $20M manufacturer</cite>
+    </figure>
   </div>
 </section>
 
@@ -1428,45 +877,7 @@ html.lb-open{overflow:hidden}
   </div>
 </section>
 
-<!-- ============ CONNECTOR (secondary) ============ -->
-<section id="connector" aria-labelledby="conn-h" style="padding-top:clamp(48px,6vw,88px)">
-  <div class="wrap">
-    <div class="thread" aria-hidden="true" style="top:calc(-1 * clamp(48px,6vw,88px) + 16px);height:calc(clamp(48px,6vw,88px) + 12px)"><i></i></div>
-    <div class="conn rv">
-      <div>
-        <span class="soon">Built for every client</span>
-        <h2 id="conn-h">Connect any AI to <em class="s">your systems and workflows.</em></h2>
-        <p class="lead">We build a custom connector for every client, and we bring it into every job. It links your business systems to any AI assistant that supports MCP, including Claude and ChatGPT. It reads your data correctly and prepares entries in your system. A person on your team posts them.</p>
-        <div class="cpts">
-          <div class="cpt"><h3>Read and write.</h3><p>The AI reads your data and prepares entries such as invoices and journal entries.</p></div>
-          <div class="cpt"><h3>Nothing posts on its own.</h3><p>Every entry lands unposted. A person reviews it and posts it.</p></div>
-          <div class="cpt"><h3>Knows your system.</h3><p>Built by a controller who works in an ERP every day. We map your tables, joins, and traps before it goes live.</p></div>
-          <div class="cpt"><h3>Every query logged.</h3><p>Each user has an access token. Every question and every entry is logged.</p></div>
-        </div>
-        <div class="conn-act">
-          <!-- connector-film:start (written by scripts/publish_keynote.py) --><a class="btn btn-p" href="#connector-film">Watch the AI Connector film <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 3.2v9.6a.6.6 0 0 0 .9.5l7.6-4.8a.6.6 0 0 0 0-1L5.9 2.7a.6.6 0 0 0-.9.5z"/></svg></a><!-- connector-film:end -->
-          <a class="btn btn-g" href="mailto:hello@get-lumic.com?subject=lumic%20connector">Ask about a connector</a>
-          <span class="note">Built for the system you run. Tell us which one.</span>
-        </div>
-      </div>
-      <div class="dkw">
-        <div class="dkc" role="img" aria-label="Illustration: an AI assistant connects through MCP to your systems. Entries are prepared unposted and every query is logged.">
-          <span class="tag2">Custom-built</span>
-          <div class="t">lumic connector</div>
-          <div class="fl" aria-hidden="true"><span class="nd">AI assistant</span><span class="ln"></span><span class="nd mid">MCP</span><span class="ln"></span><span class="nd">Your systems</span></div>
-          <div class="log" aria-hidden="true">
-            <div><b>Query · open AR by customer</b><span>Logged</span></div>
-            <div><b>Query · margin by item</b><span>Logged</span></div>
-            <div><b>AP invoice · entry prepared</b><span class="pend">Unposted</span></div>
-          </div>
-        </div>
-        <p class="dk-cap">Illustration</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY ============ -->
+<!-- ============ WHY + LEADERSHIP ============ -->
 <section id="why" aria-labelledby="why-h">
   <div class="wrap">
     <div class="thread d2" aria-hidden="true"><i></i></div>
@@ -1495,42 +906,38 @@ html.lb-open{overflow:hidden}
         </table>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ FOUNDERS (original layout) ============ -->
-<section class="founders" id="founders" aria-labelledby="founders-h">
-  <div class="wrap">
-    <div class="section-head rv">
-      <p class="kicker">Leadership</p>
-      <h2 id="founders-h">Senior-led, on every engagement.</h2>
-      <p class="lead">lumic is led by a controller and a CFP®, both based in St. Louis. A founder leads every engagement, from scoping to support.</p>
-    </div>
-    <div class="founder-grid">
-      <div class="founder-card rv">
-        <div class="founder-avatar">
-          <img src="/img/founders/christian.jpg" alt="Christian Gonzenbach" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <span class="founder-initials" style="display:none">CG</span>
+    <div class="founders" id="founders">
+      <div class="section-head rv">
+        <p class="kicker">Leadership</p>
+        <h3 class="sub-h" id="founders-h">Senior-led, on every engagement.</h3>
+        <p class="lead">lumic is led by a controller and a CFP®, both based in St. Louis. A founder leads every engagement, from scoping to support.</p>
+      </div>
+      <div class="founder-grid">
+        <div class="founder-card rv">
+          <div class="founder-avatar">
+            <img src="/img/founders/christian.jpg" alt="Christian Gonzenbach" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="founder-initials" style="display:none">CG</span>
+          </div>
+          <div class="founder-info">
+            <h3>Christian Gonzenbach</h3>
+            <p>Co-founder. Controller and procurement lead at a mid-size manufacturer and distributor. Designed lumic's flagship reporting and automation suite, and brings a controller's view of the numbers to every engagement.</p>
+            <a class="founder-link" href="https://www.linkedin.com/in/christian-gonzenbach/" target="_blank" rel="noopener">LinkedIn →</a>
+          </div>
         </div>
-        <div class="founder-info">
-          <h3>Christian Gonzenbach</h3>
-          <p>Co-founder. Controller and procurement lead at a mid-size manufacturer and distributor. Designed lumic's flagship reporting and automation suite, and brings a controller's view of the numbers to every engagement.</p>
-          <a class="founder-link" href="https://www.linkedin.com/in/christian-gonzenbach/" target="_blank" rel="noopener">LinkedIn →</a>
+        <div class="founder-card rv">
+          <div class="founder-avatar">
+            <img src="/img/founders/josh.jpg" alt="Joshua Wittenauer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <span class="founder-initials" style="display:none">JW</span>
+          </div>
+          <div class="founder-info">
+            <h3>Joshua Wittenauer, CFP&reg;</h3>
+            <p>Co-founder. Product analyst at a national financial services firm. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's automation and AI-agent work.</p>
+            <a class="founder-link" href="https://www.linkedin.com/in/joshua-wittenauer-890339191/" target="_blank" rel="noopener">LinkedIn →</a>
+          </div>
         </div>
       </div>
-      <div class="founder-card rv">
-        <div class="founder-avatar">
-          <img src="/img/founders/josh.jpg" alt="Joshua Wittenauer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <span class="founder-initials" style="display:none">JW</span>
-        </div>
-        <div class="founder-info">
-          <h3>Joshua Wittenauer, CFP&reg;</h3>
-          <p>Co-founder. Product analyst at a national financial services firm. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's automation and AI-agent work.</p>
-          <a class="founder-link" href="https://www.linkedin.com/in/joshua-wittenauer-890339191/" target="_blank" rel="noopener">LinkedIn →</a>
-        </div>
-      </div>
+      <p class="founder-tagline rv">When you call lumic, you speak with a founder.</p>
     </div>
-    <p class="founder-tagline rv">When you call lumic, you speak with a founder.</p>
   </div>
 </section>
 
@@ -1566,43 +973,52 @@ html.lb-open{overflow:hidden}
 </section>
 </main>
 
-<!-- ============ FILM: lumic in 40 seconds, in a lightbox opened from the hero ============ -->
+<!-- ============ FILM LIGHTBOX: one dashboard film, opened from "Watch each dashboard on its own" ============ -->
 <dialog class="lb" id="film" aria-labelledby="film-t">
   <div class="lb-in">
     <button class="lb-x" type="button" aria-label="Close the film"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
-    <div class="film-frame" id="filmFrame">
-      <video id="filmVideo" preload="none" playsinline controls poster="/video/lumic-reel-poster.jpg" aria-label="A 40-second film about lumic: we come in, learn how your work is really done, automate it with AI where it fits, and keep it working.">
-        <source src="/video/lumic-reel.webm" type="video/webm">
-        <source src="/video/lumic-reel.mp4" type="video/mp4">
-      </video>
+    <div class="film-frame">
+      <video id="filmVideo" preload="none" playsinline controls></video>
     </div>
-    <p class="lb-cap"><b id="film-t">lumic in 40 seconds.</b> We come in, learn how your work is really done, automate it with AI where it fits, and keep it working. <span class="len">Watch &middot; 0:40</span></p>
+    <p class="lb-cap"><b id="film-t">Dashboard film.</b> Every figure is sample data.</p>
   </div>
 </dialog>
 
 <script>
-/* The 40-second film: the hero link opens it in a modal <dialog> and plays it with sound (the click is the gesture).
-   Esc, a click outside the film, and the close button close it; focus goes to the close button and back to the link.
-   The carousel and the connector film listen to this video's 'play' and mute themselves: one voice at a time. */
+/* Dashboard films: a link under the overview film opens its film in a modal <dialog> and plays it with sound (the click is
+   the gesture); the other films go quiet ('lumic:voice'). Esc, a click outside the film, and the close button close it;
+   focus goes to the close button and back to the link. Without JS, or with a modifier key, the link opens the mp4 itself. */
 (function(){
-  var d=document.getElementById('film'),v=document.getElementById('filmVideo'),o=document.getElementById('filmOpen');
-  if(!d||!v||!o) return;
-  var x=d.querySelector('.lb-x'),modal=typeof d.showModal==='function',root=document.documentElement;
-  function open(){
+  var d=document.getElementById('film'),v=document.getElementById('filmVideo'),t=document.getElementById('film-t');
+  if(!d||!v) return;
+  var x=d.querySelector('.lb-x'),modal=typeof d.showModal==='function',root=document.documentElement,from=null;
+  var apple=/Apple/.test(navigator.vendor||'');
+  function open(a){
+    var mp4=a.getAttribute('href'),webm=mp4.replace(/\.mp4$/,'.webm');
+    from=a;
+    t.textContent=a.textContent.trim()+'.';
+    v.setAttribute('aria-label',a.getAttribute('data-desc')||t.textContent);
+    v.poster=mp4.replace(/\.mp4$/,'-poster.jpg');
+    v.src=(!apple&&v.canPlayType('video/webm'))?webm:mp4;
     if(modal) d.showModal(); else d.setAttribute('open','');
     root.classList.add('lb-open');
     x.focus();
+    document.dispatchEvent(new CustomEvent('lumic:voice',{detail:'lightbox'}));
     v.muted=false;
-    try{ v.currentTime=0; }catch(e){}
     var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){});
   }
-  function closed(){ v.pause(); root.classList.remove('lb-open'); o.focus(); }
+  function closed(){ v.pause(); v.removeAttribute('src'); v.load(); root.classList.remove('lb-open'); if(from) from.focus(); }
   function close(){ if(modal){ if(d.open) d.close(); } else { d.removeAttribute('open'); closed(); } }
   d.addEventListener('close',closed);
-  o.addEventListener('click',open);
   x.addEventListener('click',close);
   d.addEventListener('click',function(e){ if(e.target===d) close(); }); /* the backdrop: a click outside the film lands on the dialog itself */
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!modal&&d.hasAttribute('open')) close(); });
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('.pfilms a');
+    if(!a||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey) return;
+    e.preventDefault();
+    open(a);
+  });
 })();
 </script>
 
@@ -1616,11 +1032,10 @@ html.lb-open{overflow:hidden}
       <nav aria-label="Footer">
         <ul class="f-links">
           <li><a href="#demo">Demo</a></li>
-          <li><a href="#sources">Connects</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#proof">Client work</a></li>
           <li><a href="#how">How we work</a></li>
-          <li><a href="#connector">Connector</a></li>
+          <li><a href="#why">Why lumic</a></li>
           <li><a href="#founders">Leadership</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="https://www.linkedin.com/company/get-lumic" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -1637,9 +1052,6 @@ html.lb-open{overflow:hidden}
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduce) doc.classList.add('js');
 
-  /* Hero cards: gentle staggered entrance */
-  var cards = [].slice.call(document.querySelectorAll('#stage .ui'));
-  if (!reduce) cards.forEach(function(c, i){ setTimeout(function(){ c.classList.add('on'); }, 250 + i * 260); });
 
   /* Scroll reveals (also reveal anything already passed, so jumps never leave blanks) */
   var rv = [].slice.call(document.querySelectorAll('.rv'));
@@ -1658,58 +1070,15 @@ html.lb-open{overflow:hidden}
     window.addEventListener('resize', check);
   }
 
-  /* Pointer parallax on the hero composition (fine pointers only) */
-  var hero = document.querySelector('.hero');
-  var layers = [].slice.call(document.querySelectorAll('#stage .layer'));
-  var fine = window.matchMedia('(pointer: fine)').matches;
-  if (hero && !reduce && fine) {
-    var tx = 0, ty = 0, raf = null;
-    function apply(){ raf = null; layers.forEach(function(el){ var d = parseFloat(el.getAttribute('data-d')) || 0; el.style.transform = 'translate3d(' + (tx*d).toFixed(2) + 'px,' + (ty*d).toFixed(2) + 'px,0)'; }); }
-    hero.addEventListener('pointermove', function(e){ var r = hero.getBoundingClientRect(); tx = -((e.clientX - r.left)/r.width - .5); ty = -((e.clientY - r.top)/r.height - .5); if (!raf) raf = requestAnimationFrame(apply); });
-    hero.addEventListener('pointerleave', function(){ tx = 0; ty = 0; if (!raf) raf = requestAnimationFrame(apply); });
-  }
 
-  /* Faint flow lines between the hero cards, drawn from live positions. One slow pulse at a time. */
-  var stage = document.getElementById('stage'), svg = document.getElementById('compLines');
-  if (!stage || !svg) return;
-  var NS = 'http://www.w3.org/2000/svg';
-  function box(n){ var el = stage.querySelector('[data-n="' + n + '"] .ui'); return el.getBoundingClientRect(); }
-  function draw(){
-    var s = stage.getBoundingClientRect();
-    svg.setAttribute('viewBox', '0 0 ' + s.width + ' ' + s.height);
-    while (svg.firstChild) svg.removeChild(svg.firstChild);
-    var sa = box('sales'), ar = box('ar'), iv = box('inv');
-    /* invoice -> AR (right edge to bottom), AR -> sales (top to bottom edge) */
-    var p1 = [iv.right - s.left, iv.top - s.top + iv.height * .42, ar.left - s.left + ar.width * .5, ar.bottom - s.top];
-    var p2 = [ar.left - s.left + ar.width * .62, ar.top - s.top, sa.right - s.left - sa.width * .08, sa.bottom - s.top];
-    var d1 = 'M' + p1[0] + ' ' + p1[1] + ' C' + (p1[0] + (p1[2]-p1[0]) * .8) + ' ' + p1[1] + ' ' + p1[2] + ' ' + (p1[3] + (p1[1]-p1[3]) * .6) + ' ' + p1[2] + ' ' + p1[3];
-    var d2 = 'M' + p2[0] + ' ' + p2[1] + ' C' + p2[0] + ' ' + (p2[1] - 24) + ' ' + p2[2] + ' ' + (p2[3] + 24) + ' ' + p2[2] + ' ' + p2[3];
-    [d1, d2].forEach(function(d, i){
-      var p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', 'cl-base'); p.setAttribute('id', 'ql' + i); svg.appendChild(p);
-    });
-    [[p1[0],p1[1]],[p1[2],p1[3]],[p2[0],p2[1]],[p2[2],p2[3]]].forEach(function(pt){
-      var c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', pt[0]); c.setAttribute('cy', pt[1]); c.setAttribute('r', 2.5); c.setAttribute('class', 'cl-cap'); svg.appendChild(c);
-    });
-    if (reduce) return;
-    /* one pulse travels line 0, rests, then line 1: a 12s cycle, 2.4s of motion per line */
-    [0, 1].forEach(function(i){
-      var c = document.createElementNS(NS, 'circle'); c.setAttribute('r', 2.6); c.setAttribute('class', 'cl-pulse'); c.setAttribute('opacity', '0');
-      var cyc = 12, dur = 2.6, f = dur / cyc, begin = (1.6 + i * 3.2) + 's';
-      var am = document.createElementNS(NS, 'animateMotion');
-      am.setAttribute('dur', cyc + 's'); am.setAttribute('repeatCount', 'indefinite'); am.setAttribute('begin', begin);
-      am.setAttribute('keyPoints', '0;1;1'); am.setAttribute('keyTimes', '0;' + f.toFixed(3) + ';1'); am.setAttribute('calcMode', 'spline'); am.setAttribute('keySplines', '.45 0 .55 1;0 0 1 1');
-      var mp = document.createElementNS(NS, 'mpath'); mp.setAttribute('href', '#ql' + i); am.appendChild(mp);
-      var op = document.createElementNS(NS, 'animate');
-      op.setAttribute('attributeName', 'opacity'); op.setAttribute('dur', cyc + 's'); op.setAttribute('begin', begin); op.setAttribute('repeatCount', 'indefinite');
-      op.setAttribute('values', '0;.9;.9;0;0'); op.setAttribute('keyTimes', '0;' + (f*.2).toFixed(3) + ';' + (f*.8).toFixed(3) + ';' + f.toFixed(3) + ';1');
-      c.appendChild(am); c.appendChild(op); svg.appendChild(c);
-    });
+  /* A link to something inside a closed <details> (for example #sources) opens it first */
+  function openTarget(){
+    var id = location.hash.slice(1), el = id && document.getElementById(decodeURIComponent(id));
+    var d = el && el.closest && el.closest('details');
+    if (d && !d.open) { d.open = true; el.scrollIntoView(); }
   }
-  /* draw after the entrance settles, and again on resize */
-  draw();
-  setTimeout(draw, 1800);
-  if (window.ResizeObserver) new ResizeObserver(function(){ draw(); }).observe(stage); else window.addEventListener('resize', draw);
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
+  openTarget();
+  window.addEventListener('hashchange', openTarget);
 })();
 </script>
 </body>

@@ -1,28 +1,27 @@
-"""Publish the narrated keynote demo films into the site's demo carousel.
+"""Publish the narrated keynote films into the site.
 
-The dashboard carousel has five slots, in this order: Receivables, Sales, Purchasing, Payables, Financial
-(films: receivables sales purchasing payables financial). The AI Connector film (connector) is not in the carousel: it
-plays in the "Connects to everything" section (#sources), right under the flow chart.
+The landing page has two film players and one link list (public/index.html):
+  - the hero plays "Why lumic" (film: why), from public/video/demos/lumic-keynote-why.{webm,mp4} + -poster.jpg;
+  - #demo plays the lumic overview (film: overview), from lumic-keynote-overview.*;
+  - under the overview, "Watch each dashboard on its own" lists one link per dashboard film, in this order:
+    Receivables, Sales, Purchasing, Payables, Financial, AI connector (films: receivables sales purchasing payables
+    financial connector). Each link opens that film's mp4 (in a lightbox when JS runs).
+The two players point at fixed file names, so publishing a new render of why or overview only copies its files.
 
 For each film whose render is finished in video/keynote/out/<film>/ (lumic-keynote-<film>.mp4, .webm, -poster.jpg),
-copy the three files into public/video/demos/ under the same names. Then rewrite public/index.html from the files in
-public/video/demos/:
-  - a film with its keynote files gets a slide and a tab, marked data-sound="1" (the slide shows the Sound button);
-  - a film with only the older silent files (lumic-demo-<film>.*) keeps its silent film;
-  - a film with neither gets no slide and no tab at all (never an empty or "coming soon" slot).
-  - the AI Connector film, once its keynote files are there, goes under the flow chart (#connector-film); until then
-    that section has no film and no empty slot. When it is live, the connector service card and the connector
-    section's button link to it.
-Every screen plays the same 16:9 film; there are no phone cuts. The page state follows the files, so re-running is safe.
+copy the three files into public/video/demos/ under the same names. Then rewrite the dashboard link list (between the
+films:start / films:end markers) from the files in public/video/demos/: a dashboard film with all three keynote files
+gets a link; one without gets no link (never an empty or "coming soon" entry). Re-running is safe.
 
 Refuses a film (copies nothing for it) when a file is over 12 MB, was written in the last 60 seconds (render still
 running), has no audio track or no duration, the lengths of its mp4 and webm disagree, or the mp4 is not fast-start.
+Reports a player whose film files are missing from public/video/demos/ (the page would show a broken player).
 
 Usage:  py -3.11 scripts/publish_keynote.py [film ...] [--dry-run] [--public DIR]
-        films: receivables sales purchasing payables financial connector (default: all six)
-               connector goes under the flow chart in "Connects to everything", not in the carousel
+        films: why overview receivables sales purchasing payables financial connector (default: all)
         --public DIR  publish into another copy of public/ (for a test); default is this repo's public/
-Exit code 1 if any film was refused. Then: QA the page, and deploy with `npx wrangler deploy`.
+Exit code 1 if any film was refused or a player's files are missing. Then: QA the page, and deploy with
+`npx wrangler deploy`.
 """
 import argparse
 import hashlib
@@ -37,7 +36,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "video" / "keynote" / "out"
-# slot order on the page: (film, tab label, description for screen readers; HTML-escaped)
+# the two players on the page: (film, where it plays)
+PLAYERS = [("why", "hero (#why-film)"), ("overview", "#demo (#overview-film)")]
+# the dashboard films, in link order: (film, link label, description for screen readers; HTML-escaped)
 SLOTS = [
     ("receivables", "Receivables",
      "The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes."),
@@ -49,35 +50,15 @@ SLOTS = [
      "The payables dashboard: vendor invoices checked and waiting for a person to approve them."),
     ("financial", "Financial",
      "The financial dashboard: the income statement for two companies, and the postings behind one account."),
+    ("connector", "AI connector",
+     "The AI connector: an AI assistant answers questions from your ERP, email and files, and drafts entries for a "
+     "person to approve."),
 ]
-CONNECTOR_DESC = ("The AI connector: an AI assistant answers questions from your ERP, email and files, "
-                  "and drafts entries for a person to approve.")
-FILMS = [s[0] for s in SLOTS] + ["connector"]
+FILMS = [f for f, _ in PLAYERS] + [s[0] for s in SLOTS]
 MAX_BYTES = 12_000_000
 SETTLE_S = 60
-NOTE_SILENT = "Silent, 23 seconds each. Every figure is sample data."
-NOTE_SOUND = "Every figure is sample data. Turn sound on for the narration."
-CONNECTOR_OFF = ('href="#connector"', "See the connector &rarr;")
-CONNECTOR_ON = ('href="#connector-film"', "Watch the AI Connector film &rarr;")
-CONNECTOR_BTN = ('<a class="btn btn-p" href="#connector-film">Watch the AI Connector film <svg viewBox="0 0 16 16" '
-                 'fill="currentColor" aria-hidden="true"><path d="M5 3.2v9.6a.6.6 0 0 0 .9.5l7.6-4.8a.6.6 0 0 0 0-1L5.9 2.7a.6.6 0 0 0-.9.5z"/></svg></a>')
-SND_SVG = ('<svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
-           'stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>'
-           '<svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
-           'stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>')
-
-
-def connector_film():
-    n = names("connector")
-    return ('\n    <div class="cfilm rv" id="connector-film">\n'
-            '      <div class="cfilm-f">\n'
-            f'        <video muted playsinline preload="none" data-poster="/video/demos/{n["poster"]}" aria-label="{CONNECTOR_DESC}">\n'
-            f'          <source src="/video/demos/{n["webm"]}" type="video/webm"><source src="/video/demos/{n["mp4"]}" type="video/mp4"></video>\n'
-            '        <span class="cfilm-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>\n'
-            f'        <button class="snd" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on">{SND_SVG}</button>\n'
-            '      </div>\n'
-            '      <p class="cfilm-cap"><b>The AI connector.</b> Built custom for every client. Every figure is sample data. Turn sound on for the narration.</p>\n'
-            '    </div>\n')
+PLAY_ICON = ('<span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 '
+             '1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>')
 
 
 def names(film, kind="keynote"):
@@ -180,7 +161,7 @@ def between(html, tag, inner):
 
 
 def sync_page(public, dry, pending=()):
-    """Rewrite the carousel slides and tabs from the films present in public/video/demos/."""
+    """Rewrite the dashboard film links from the films present in public/video/demos/; report the two players."""
     page = public / "index.html"
     html = page.read_text(encoding="utf-8")
     demos = public / "video" / "demos"
@@ -188,65 +169,24 @@ def sync_page(public, dry, pending=()):
     def have(n):  # in public/video/demos, or about to be copied there (dry run)
         return (demos / n).is_file() or n in pending
 
-    state = {"connector": None}
-    for film in FILMS[:-1]:
-        if all(have(n) for n in names(film).values()):
-            state[film] = "keynote"
-        elif all(have(n) for n in names(film, "demo").values()):
-            state[film] = "demo"
-        else:
-            state[film] = None
-    live = [s for s in SLOTS if state[s[0]]]
-    if not live:
-        raise SystemExit("no film files in public/video/demos; refusing to write an empty carousel")
-    slides, tabs = ["\n"], ["\n"]
-    for i, (film, label, desc) in enumerate(live):
-        n = names(film, state[film])
-        first = i == 0
-        act = " is-active" if first else ""
-        sound = ' data-sound="1"' if state[film] == "keynote" else ""
-        hide = "" if first else ' aria-hidden="true"'
-        sel, tix = ("true", "") if first else ("false", ' tabindex="-1"')
-        slides.append(
-            f'      <div class="car-slide{act}" id="car-{film}"{sound} data-film="{film}" role="tabpanel" '
-            f'aria-labelledby="cart-{film}"{hide}>\n'
-            f'        <div class="car-f"><video muted playsinline preload="none" data-poster="/video/demos/{n["poster"]}" aria-label="{desc}">\n'
-            f'          <source src="/video/demos/{n["webm"]}" type="video/webm"><source src="/video/demos/{n["mp4"]}" type="video/mp4"></video></div>\n'
-            f'      </div>\n')
-        tabs.append(
-            f'      <button type="button" role="tab" id="cart-{film}" aria-controls="car-{film}" '
-            f'aria-selected="{sel}"{tix} data-film="{film}">'
-            f'{label}<span class="bar" aria-hidden="true"><i></i></span></button>\n')
-    html = between(html, "slides", "".join(slides))
-    html = between(html, "tabs", "".join(tabs))
-    # phone row: the name and count of the first film (the script keeps it current after that)
-    html, n = re.subn(r'(<p class="lbl"[^>]*><b>)[^<]*(</b><span class="ct">)\d+ / \d+',
-                      lambda m: f"{m.group(1)}{live[0][1]}{m.group(2)}1 / {len(live)}", html, count=1)
-    if not n:
-        raise SystemExit("index.html: phone film row (#carMob .lbl) not found")
-    # the AI Connector film sits under the flow chart; the connector card and the connector section link to it
-    if all(have(n) for n in names("connector").values()):
-        state["connector"] = "keynote"
-    on = state["connector"] is not None
-    html = between(html, "sources-film", connector_film() if on else "")
-    m = re.search(r'(<a class="offer3[^"]*" id="offer-connector" )href="[^"]*"(>.*?<span class="go">)[^<]*(</span>)', html, re.S)
-    if not m:
-        raise SystemExit("index.html: connector service card (#offer-connector) not found")
-    href, go = CONNECTOR_ON if on else CONNECTOR_OFF
-    html = html[:m.start()] + m.group(1) + href + m.group(2) + go + m.group(3) + html[m.end():]
-    html = between(html, "connector-film", CONNECTOR_BTN if on else "")
-    note = NOTE_SOUND if any(v == "keynote" for v in state.values()) else NOTE_SILENT
-    html, n = re.subn(r'(<p class="demo-note">).*?(</p>)', lambda m: m.group(1) + note + m.group(2), html, count=1)
-    if not n:
-        raise SystemExit("index.html: demo-note paragraph not found")
+    state = {f: all(have(n) for n in names(f).values()) for f in FILMS}
+    for film, _ in PLAYERS:
+        if f"/video/demos/{names(film)['mp4']}" not in html:
+            raise SystemExit(f"index.html: the {film} player (/video/demos/{names(film)['mp4']}) not found; "
+                             "page layout changed, update this script")
+    links = ["\n"] + [
+        f'            <li><a href="/video/demos/{names(film)["mp4"]}" data-film="{film}" data-desc="{desc}" '
+        f'target="_blank" rel="noopener">{PLAY_ICON}{label}</a></li>\n'
+        for film, label, desc in SLOTS if state[film]]
+    html = between(html, "films", "".join(links))
     changed = html != page.read_text(encoding="utf-8")
     if changed and not dry:
         page.write_text(html, encoding="utf-8", newline="\n")
-    return state, note, changed
+    return state, changed
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Publish keynote demo films into public/video/demos and the carousel.")
+    ap = argparse.ArgumentParser(description="Publish keynote films into public/video/demos and the page's film links.")
     ap.add_argument("films", nargs="*", metavar="film", help="any of: " + " ".join(FILMS))
     ap.add_argument("--dry-run", action="store_true", help="check and report, change nothing")
     ap.add_argument("--public", default=str(ROOT / "public"), help="the public/ folder to publish into")
@@ -274,19 +214,19 @@ def main():
         done = [f"{p.name} ({p.stat().st_size / 1e6:.1f} MB) {copy(p, demos / p.name, a.dry_run)}" for p in src.values()]
         pending |= {p.name for p in src.values()}
         print(f"  {film:12}" + (f" {info:.1f} s" if info else "") + ": " + "; ".join(done))
-    state, note, changed = sync_page(public, a.dry_run, pending)
+    state, changed = sync_page(public, a.dry_run, pending)
     print(f"index.html {'updated' if changed else 'unchanged'}" + (" (dry run, not written)" if a.dry_run and changed else ""))
+    missing = 0
+    for film, where in PLAYERS:
+        ok = state[film]
+        missing += not ok
+        print(f"  {film:13} {where}: " + ("files present" if ok else "FILES MISSING in public/video/demos (broken player)"))
     for film, label, _ in SLOTS:
-        s = state[film]
-        print(f"  {label:13} " + ("keynote, narrated (Sound button shown)" if s == "keynote"
-                                   else "old silent film" if s == "demo" else "not on the page (no film yet)"))
-    print("  AI Connector: " + ("film under the flow chart (#connector-film); the connector card and button link to it"
-                                if state["connector"] else "no film yet (section unchanged); the card links to the connector section"))
-    print(f"  note: {note}")
+        print(f"  {label:13} " + ("linked under the overview film" if state[film] else "no link (no film yet)"))
     if refused:
         print(f"{refused} film(s) refused; nothing was copied for them.")
     print("next: serve public/ and run scripts/qa.py, then `npx wrangler deploy`")
-    sys.exit(1 if refused else 0)
+    sys.exit(1 if refused or missing else 0)
 
 
 if __name__ == "__main__":
