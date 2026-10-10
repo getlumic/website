@@ -54,7 +54,7 @@ def main():
                 # phones play the same 16:9 films: no 4:5 phone cut may be referenced
                 if pg.evaluate("document.documentElement.outerHTML.includes('-vertical')"):
                     fails.append("page references a phone-only (-vertical) film")
-                # the dashboard film links (behind "Watch each dashboard on its own") open real files
+                # the dashboard film links (behind "Watch each tool on its own") open real files
                 films = pg.evaluate("[...document.querySelectorAll('#films .pfilms a')].map(a => a.href)")
                 if not films:
                     fails.append("no dashboard film links (#films .pfilms a)")
@@ -104,11 +104,11 @@ def main():
                     fails.append("hero film kept its sound after the overview film took it (one voice at a time)")
                 if loud() > 1:
                     fails.append(f"{loud()} films playing with sound at once")
-                # "Watch each dashboard on its own": opens, and a film plays with sound in the lightbox; Esc closes it
+                # "Watch each tool on its own": opens, and a film plays with sound in the lightbox; Esc closes it
                 pg.click("#films > summary")
                 pg.wait_for_timeout(300)
                 if not pg.evaluate("document.getElementById('films').open"):
-                    fails.append("'Watch each dashboard on its own' does not open")
+                    fails.append("'Watch each tool on its own' does not open")
                 pg.click("#films .pfilms a >> nth=0")
                 pg.wait_for_timeout(2500)
                 lb = pg.evaluate("(v => [document.getElementById('film').open, !v.paused, v.muted, v.readyState])(document.getElementById('filmVideo'))")

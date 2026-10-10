@@ -3,8 +3,8 @@
 The landing page has two film players and one link list (public/index.html):
   - the hero plays "Why lumic" (film: why), from public/video/demos/lumic-keynote-why.{webm,mp4} + -poster.jpg;
   - #demo plays the lumic overview (film: overview), from lumic-keynote-overview.*;
-  - under the overview, "Watch each dashboard on its own" lists one link per dashboard film, in this order:
-    Receivables, Sales, Purchasing, Payables, Financial, AI connector (films: receivables sales purchasing payables
+  - under the overview, "Watch each tool on its own" lists one link per dashboard film, in this order:
+    Receivables, Sales, Purchasing, Payables, Financial, Ask your data (AI) (films: receivables sales purchasing payables
     financial connector). Each link opens that film's mp4 (in a lightbox when JS runs).
 The two players point at fixed file names, so publishing a new render of why or overview only copies its files.
 
@@ -50,8 +50,8 @@ SLOTS = [
      "The payables dashboard: vendor invoices checked and waiting for a person to approve them."),
     ("financial", "Financial",
      "The financial dashboard: the income statement for two companies, and the postings behind one account."),
-    ("connector", "AI connector",
-     "The AI connector: an AI assistant answers questions from your ERP, email and files, and drafts entries for a "
+    ("connector", "Ask your data (AI)",
+     "Ask your data: an AI assistant answers questions from your ERP, email and files, and drafts entries for a "
      "person to approve."),
 ]
 FILMS = [f for f, _ in PLAYERS] + [s[0] for s in SLOTS]

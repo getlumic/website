@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>lumic — AI, deployed into your business and kept working</title>
-<meta name="description" content="lumic goes into growing businesses, learns how the work is really done, then builds and automates it, with AI where it fits, and keeps it working.">
+<meta name="description" content="AI process automation for growing businesses: invoices entered, orders drafted, reports built. A person approves every step, and we keep it working.">
 <link rel="canonical" href="https://get-lumic.com/">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -14,14 +14,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://get-lumic.com/">
 <meta property="og:title" content="lumic — AI, deployed into your business and kept working">
-<meta property="og:description" content="lumic goes into growing businesses, learns how the work is really done, then builds and automates it, with AI where it fits, and keeps it working.">
+<meta property="og:description" content="AI process automation for growing businesses: invoices entered, orders drafted, reports built. A person approves every step, and we keep it working.">
 <meta property="og:image" content="https://get-lumic.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="lumic — AI, deployed into your business and kept working">
-<meta name="twitter:description" content="lumic goes into growing businesses, learns how the work is really done, then builds and automates it, with AI where it fits, and keeps it working.">
+<meta name="twitter:description" content="AI process automation for growing businesses: invoices entered, orders drafted, reports built. A person approves every step, and we keep it working.">
 <meta name="twitter:image" content="https://get-lumic.com/og-image.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"lumic","url":"https://get-lumic.com/","logo":"https://get-lumic.com/apple-touch-icon.png","email":"hello@get-lumic.com","slogan":"AI, deployed into your business and kept working.","sameAs":["https://www.linkedin.com/company/get-lumic"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
   --sh:0 1px 2px rgba(15,23,42,.04),0 10px 30px -18px rgba(15,23,42,.14);
   --sh-lg:0 1px 2px rgba(15,23,42,.04),0 2px 6px rgba(15,23,42,.03),0 36px 70px -34px rgba(15,23,42,.28);
   --hair:1px solid var(--line);
-  --max:1180px; --gut:clamp(16px,4vw,40px); --pad:clamp(96px,11vw,160px);
+  --max:1180px; --gut:clamp(16px,4vw,40px); --pad:clamp(80px,9vw,128px);
   --ease:cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -53,7 +53,7 @@ img{max-width:100%;display:block}
 ul,ol{list-style:none}
 :focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:6px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut);position:relative}
-.skip{position:absolute;left:-999px;top:10px;background:var(--text-strong);color:#ffffff;padding:8px 14px;border-radius:8px;z-index:100}
+.skip{position:absolute;left:-999px;top:10px;background:var(--text-strong);color:#ffffff;padding:10px 14px;border-radius:8px;z-index:100}
 .skip:focus{left:10px}
 h1,h2,h3{color:var(--text-strong);font-weight:500;letter-spacing:-.03em}
 h2{font-size:clamp(32px,4vw,50px);line-height:1.06;max-width:19ch;text-wrap:balance}
@@ -61,7 +61,6 @@ h3{font-size:18px;line-height:1.3;letter-spacing:-.012em;font-weight:600}
 .lead{font-size:clamp(17px,1.4vw,18.5px);color:var(--muted);max-width:56ch;margin-top:20px}
 em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.005em;color:var(--primary-d)}
 section{padding:var(--pad) 0;position:relative}
-.num{font-variant-numeric:tabular-nums}
 
 /* ---------- wordmark (live-site construction, verbatim) ---------- */
 .brand {
@@ -110,12 +109,12 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .btn-g:hover{border-color:rgba(94,92,230,.45)}
 .btn svg{width:15px;height:15px;transition:transform .25s var(--ease)}
 .btn:hover svg{transform:translateX(2px)}
-.nav .btn{padding:9px 18px;font-size:14px}
+.nav .btn{padding:9px 18px;font-size:14px;min-height:44px}
+.nav-in>.brand,.f-top .brand{padding:7px 0}
 
 /* ---------- kicker + thread ---------- */
 .kicker{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary-d);margin-bottom:24px}
 .kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--wash);border:1px solid rgba(94,92,230,.55);flex:none;box-shadow:0 0 0 4px rgba(238,237,253,.6)}
-.kicker .ix{color:var(--faint);font-weight:500;letter-spacing:.08em}
 .thread{position:absolute;left:calc(var(--gut) + 3.5px);top:calc(-1 * var(--pad) + 24px);height:calc(var(--pad) - 32px);width:1px;background:linear-gradient(180deg,rgba(94,92,230,0),rgba(94,92,230,.22) 45%,rgba(94,92,230,.3));pointer-events:none}
 .thread i{position:absolute;left:-2px;top:0;width:5px;height:5px;border-radius:50%;background:var(--primary-l);box-shadow:0 0 8px 1px rgba(94,92,230,.45);opacity:0}
 @media (prefers-reduced-motion:no-preference){
@@ -142,7 +141,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .eyebrow b{font-weight:600;color:var(--primary-d)}
 .hero h1{font-size:clamp(42px,5.1vw,74px);line-height:1.02;letter-spacing:-.045em;font-weight:500;max-width:13ch;text-wrap:balance}
 .hero h1 em.s{font-size:1.06em;letter-spacing:-.02em;line-height:.9}
-.hero .lead{color:var(--text);opacity:.82;margin-top:28px;max-width:46ch}
+.hero .lead{color:var(--text);opacity:.82;margin-top:28px;max-width:46ch;text-wrap:pretty}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
 
 /* hero film: the "Why lumic" film in a clean 16:9 card; the orbit turns slowly behind it */
@@ -172,13 +171,6 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .quote cite::before,.quote cite::after{content:"";width:32px;height:1px;background:var(--line)}
 
 /* ---------- services ---------- */
-.svc{margin-top:72px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--hair);border-bottom:var(--hair)}
-.svc article{padding:40px 36px 44px 0}
-.svc article+article{padding-left:36px;border-left:var(--hair)}
-.glyph{width:44px;height:44px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;color:var(--primary);margin-bottom:34px;background:#ffffff;box-shadow:0 1px 2px rgba(15,23,42,.04)}
-.glyph svg{width:20px;height:20px}
-.svc h3{font-size:21px;margin-bottom:12px}
-.svc p{font-size:15.5px;color:var(--muted)}
 .keep{margin-top:28px;border-radius:24px;background:linear-gradient(120deg,var(--wash),rgba(238,237,253,.35) 55%,#ffffff);border:1px solid rgba(94,92,230,.18);padding:clamp(28px,4.5vw,56px);display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
 .keep .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary-d);margin-bottom:16px}
 .keep h3{font-size:clamp(28px,3.1vw,40px);font-weight:500;letter-spacing:-.035em;line-height:1.08;margin-bottom:18px}
@@ -217,6 +209,11 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .pf ul{margin-top:20px;display:grid;gap:8px}
 .pf li{font-size:14px;color:var(--text);display:flex;gap:10px;align-items:baseline}
 .pf li::before{content:"";flex:none;width:5px;height:5px;border-radius:50%;background:var(--primary);transform:translateY(-2px)}
+/* the last three cards sit behind a click, in the same row style as the #demo extras */
+.extras.pmore{margin-top:0;border-top:0}
+.pmore .pgrid{margin-top:0}
+.pmore .more[open]{border-bottom:0}
+.pmore .more>summary{padding:20px 2px}
 
 /* ---------- how ---------- */
 .how{background:linear-gradient(180deg,#ffffff,var(--bg) 22%,var(--bg) 78%,#ffffff)}
@@ -269,18 +266,11 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .founder-tagline{text-align:center;margin:44px auto 0;font-family:var(--serif);font-style:italic;font-size:clamp(21px,2vw,26px);line-height:1.3;color:var(--text-strong);max-width:700px;text-wrap:balance}
 
 /* ---------- contact ---------- */
-.contact-box{border-top:var(--hair);border-bottom:var(--hair);padding:clamp(56px,8vw,104px) 0;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(28px,5vw,72px);align-items:end;background:radial-gradient(45% 80% at 0% 0%,rgba(238,237,253,.9),rgba(255,255,255,0) 70%)}
-.contact .end{width:11px;height:11px;border-radius:50%;background:var(--primary);margin:0 0 30px -1.5px;box-shadow:0 0 0 7px rgba(94,92,230,.1),0 0 22px 4px rgba(94,92,230,.35)}
 .contact h2{max-width:18ch}
-.contact .lead{margin-top:22px;max-width:54ch}
-.contact .side{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding-bottom:6px}
-.contact .side .cta{margin-top:0}
-.mail{font-size:14.5px;color:var(--muted);font-variant-numeric:tabular-nums}
-@media (max-width:860px){.contact-box{grid-template-columns:minmax(0,1fr);align-items:start}}
 /* ---------- footer ---------- */
 footer{padding:56px 0 44px}
 .f-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}
-.f-top p{margin-top:14px;color:var(--muted);font-size:14.5px;max-width:40ch}
+.f-top p{margin-top:7px;color:var(--muted);font-size:14.5px;max-width:40ch}
 .f-links{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px}
 .f-links a{text-decoration:none;color:var(--text)}
 .f-links a:hover{color:var(--primary)}
@@ -299,35 +289,35 @@ footer{padding:56px 0 44px}
   .hero-grid{grid-template-columns:minmax(0,1fr)}
   .hero h1{max-width:15ch}
   .hero-fig{max-width:760px;width:100%}
-  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .pf:not(:nth-child(3n+1)){padding-left:0;border-left:0}
-  .pf:nth-child(2n){padding-left:28px;border-left:var(--hair)}
   .why-grid{grid-template-columns:minmax(0,1fr)}
   .alts{position:static}
   .founder-grid{grid-template-columns:1fr}
 }
 @media (max-width:860px){
   .two-head{grid-template-columns:minmax(0,1fr);gap:18px}
-  .svc{grid-template-columns:minmax(0,1fr);border-bottom:0}
-  .svc article{padding:32px 0;border-bottom:var(--hair)}
-  .svc article+article{padding-left:0;border-left:0}
-  .glyph{margin-bottom:22px}
   .keep{grid-template-columns:minmax(0,1fr)}
   .steps{grid-template-columns:minmax(0,1fr);gap:40px}
+  .pgrid{grid-template-columns:minmax(0,1fr)}
+  .pf,.pf:not(:nth-child(3n+1)){padding:30px 0 32px;border-left:0}
   .track{left:20px;right:auto;top:20px;bottom:20px;width:1px;height:auto;background:rgba(94,92,230,.28)}
   .track i{display:none}
   .step{padding-left:72px}
   .step .n{position:absolute;left:0;top:0;margin:0}
 }
 @media (max-width:620px){
-  .pgrid{grid-template-columns:minmax(0,1fr)}
-  .pf,.pf:nth-child(2n){padding:30px 0 32px;border-left:0}
   .eyebrow .rule{display:none}
   .founder-card{padding:22px;gap:16px}
   .founder-avatar{width:72px;height:72px}
   .founder-initials{font-size:22px}
   .cta .btn{flex:1 1 auto;justify-content:center}
   .alts td.o{width:44%}
+  .runs ul{gap:8px}
+  .runs li{font-size:14px;padding:7px 12px 7px 11px;gap:8px}
+  /* tap targets of at least 44px on phones, without moving the layout */
+  .founder-link{padding:11px 0;margin:-11px 0}
+  .f-links{gap:0 22px}
+  .f-links a{display:inline-flex;align-items:center;min-height:44px}
+  .f-bot a{display:inline-block;padding:14px 4px;margin:-14px -4px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -362,7 +352,7 @@ footer{padding:56px 0 44px}
 .nx span{display:block;color:var(--muted);font-size:15px;margin-top:2px}
 @media (max-width:860px){.cc{grid-template-columns:1fr}.cc-r{border-left:0;border-top:var(--hair)}}
 
-/* ---------- the lightbox for one dashboard film (opened from "Watch each dashboard on its own") ---------- */
+/* ---------- the lightbox for one dashboard film (opened from "Watch each tool on its own") ---------- */
 .film-frame{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#f6f7fb;border:1px solid var(--line);box-shadow:var(--sh-lg)}
 .film-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#f6f7fb}
 .lb{border:0;padding:0;margin:auto;background:transparent;overflow:visible;max-width:none;max-height:none;width:min(1120px,calc(100vw - 32px),calc((100vh - 190px) * 16 / 9))}
@@ -372,13 +362,12 @@ footer{padding:56px 0 44px}
 .lb-in{position:relative}
 .lb .film-frame{background:var(--dk);border-color:rgba(232,237,247,.12);box-shadow:0 40px 90px -40px rgba(0,0,0,.6)}
 .lb .film-frame video{object-fit:contain;background:var(--dk)}
-.lb-x{position:absolute;right:0;top:-54px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(232,237,247,.28);background:rgba(232,237,247,.1);color:#ffffff;display:grid;place-items:center;cursor:pointer;transition:background .2s,border-color .2s}
+.lb-x{position:absolute;right:0;top:-56px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(232,237,247,.28);background:rgba(232,237,247,.1);color:#ffffff;display:grid;place-items:center;cursor:pointer;transition:background .2s,border-color .2s}
 .lb-x svg{width:16px;height:16px}
 .lb-x:hover{background:rgba(232,237,247,.2);border-color:rgba(232,237,247,.5)}
 .lb-x:focus-visible{outline:2px solid #ffffff;outline-offset:3px}
 .lb-cap{margin-top:16px;font-size:14.5px;line-height:1.55;color:var(--dk-muted);text-align:center;text-wrap:balance}
 .lb-cap b{color:#ffffff;font-weight:600}
-.lb-cap .len{color:var(--dk-muted);opacity:.8;font-variant-numeric:tabular-nums;white-space:nowrap}
 html.lb-open{overflow:hidden}
 @media (prefers-reduced-motion:reduce){.lb[open]{animation:none}}
 
@@ -398,7 +387,7 @@ html.lb-open{overflow:hidden}
 .more>summary:focus-visible{outline:none;box-shadow:0 0 0 2px var(--primary);border-radius:8px}
 .more-in{padding:4px 0 28px}
 .pfilms{display:flex;flex-wrap:wrap;gap:8px}
-.pfilms a{display:inline-flex;align-items:center;gap:9px;padding:6px 15px 6px 6px;border:var(--hair);border-radius:999px;background:#ffffff;font-size:14px;font-weight:500;color:var(--text-strong);text-decoration:none;box-shadow:0 1px 2px rgba(15,23,42,.04);transition:border-color .2s,color .2s}
+.pfilms a{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:7px 15px 7px 7px;border:var(--hair);border-radius:999px;background:#ffffff;font-size:14px;font-weight:500;color:var(--text-strong);text-decoration:none;box-shadow:0 1px 2px rgba(15,23,42,.04);transition:border-color .2s,color .2s}
 .pfilms a .ic{flex:none;width:28px;height:28px;border-radius:50%;background:var(--wash);color:var(--primary);display:grid;place-items:center;transition:background .2s,color .2s}
 .pfilms a .ic svg{width:10px;height:10px;margin-left:2px}
 .pfilms a:hover{border-color:rgba(94,92,230,.45);color:var(--primary-d)}
@@ -536,7 +525,7 @@ html.lb-open{overflow:hidden}
     <div>
       <p class="eyebrow"><span>For owners &amp; operators</span><span class="rule" aria-hidden="true"></span><b>Build · Automate · Support</b></p>
       <h1>AI, deployed into your business and <em class="s">kept working.</em></h1>
-      <p class="lead">We come in, learn how your work is really done, automate it with AI and software, and keep it working. We work with growing businesses in any industry, on the systems they already run.</p>
+      <p class="lead">We learn how your work is really done, then automate it with AI: invoices read and entered, orders drafted, reports ready before you ask. A&nbsp;person approves every step that matters. Any industry, on the systems you already run.</p>
       <div class="cta">
         <a class="btn btn-p" href="mailto:hello@get-lumic.com?subject=lumic%20intro%20call">Book a call
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
@@ -569,11 +558,11 @@ html.lb-open{overflow:hidden}
     <p class="kicker rv">See it running</p>
     <div class="two-head rv">
       <h2 id="demo-h">Automate the work. <em class="s">See the business.</em></h2>
-      <p class="lead">Your systems hold the data, yet your team still does the work by hand. Here, AI agents do the work and dashboards show it: tools we built and run in production, all on one live set of data. The company, the customers, and every number shown here are made up.</p>
+      <p class="lead">Your systems hold the data, yet your team still does the work by hand. Here, AI agents do the work and dashboards show it: tools we built and run in production, all on one live set of data.</p>
     </div>
     <figure class="fp-wrap rv">
       <div class="fp" id="overview-film" data-voice="overview">
-        <video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-overview-poster.jpg" aria-label="The lumic overview: your systems connected into one live data layer, then receivables, sales, purchasing, payables, financial, and the AI connector, all working from the same data.">
+        <video muted playsinline preload="none" data-poster="/video/demos/lumic-keynote-overview-poster.jpg" aria-label="The lumic overview: your systems connected into one live data layer, then receivables, sales, purchasing, payables, financial, and an AI assistant that answers questions, all working from the same data.">
           <source src="/video/demos/lumic-keynote-overview.webm" type="video/webm"><source src="/video/demos/lumic-keynote-overview.mp4" type="video/mp4"></video>
         <span class="fp-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>
         <button class="snd" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on"><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg></button>
@@ -582,18 +571,18 @@ html.lb-open{overflow:hidden}
     </figure>
     <div class="extras rv">
       <details class="more" id="films">
-        <summary>Watch each dashboard on its own<span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></span></summary>
+        <summary>Watch each tool on its own<span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></span></summary>
         <div class="more-in">
-          <ul class="pfilms" aria-label="Dashboard films">
+          <ul class="pfilms" aria-label="Tool films">
             <!-- films:start (written by scripts/publish_keynote.py) -->
             <li><a href="/video/demos/lumic-keynote-receivables.mp4" data-film="receivables" data-desc="The receivables dashboard: open balances, aging by customer, and a customer&rsquo;s contacts and notes." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Receivables</a></li>
             <li><a href="/video/demos/lumic-keynote-sales.mp4" data-film="sales" data-desc="The sales dashboard: year-to-date sales, each customer month by month, and the trends page." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Sales</a></li>
             <li><a href="/video/demos/lumic-keynote-purchasing.mp4" data-film="purchasing" data-desc="The purchasing dashboard: POs to send, vendors to chase, and raw materials behind open orders." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Purchasing</a></li>
             <li><a href="/video/demos/lumic-keynote-financial.mp4" data-film="financial" data-desc="The financial dashboard: the income statement for two companies, and the postings behind one account." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Financial</a></li>
-            <li><a href="/video/demos/lumic-keynote-connector.mp4" data-film="connector" data-desc="The AI connector: an AI assistant answers questions from your ERP, email and files, and drafts entries for a person to approve." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>AI connector</a></li>
+            <li><a href="/video/demos/lumic-keynote-connector.mp4" data-film="connector" data-desc="Ask your data: an AI assistant answers questions from your ERP, email and files, and drafts entries for a person to approve." target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>Ask your data (AI)</a></li>
             <!-- films:end -->
           </ul>
-          <p class="pfilms-note">Each film opens on its own, with narration. Every figure is sample data.</p>
+          <p class="pfilms-note">Each film opens on its own, with narration.</p>
         </div>
       </details>
       <details class="more" id="sources">
@@ -756,7 +745,11 @@ html.lb-open{overflow:hidden}
       if(still||(e.target.closest&&e.target.closest('.snd'))) return;
       if(v.paused){ userPaused=false; play(); } else { userPaused=true; v.pause(); ui(); }
     });
-    var load=still?'metadata':'auto';
+    /* phones and Data Saver: poster first, only the metadata ahead of play, so a cellular visit never pulls a whole film it
+       may not watch; with Data Saver on, the film waits for a tap */
+    var conn=navigator.connection||{},lite=conn.saveData||(window.matchMedia&&window.matchMedia('(max-width: 620px)').matches);
+    if(conn.saveData&&!still){ userPaused=true; ui(); }
+    var load=(still||lite)?'metadata':'auto';
     if(!('IntersectionObserver' in window)){ poster(); v.preload=load; visible=true; play(); return; }
     var nearIO=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ poster(); v.preload=load; nearIO.disconnect(); } },{rootMargin:'800px 0px'});
     nearIO.observe(f);
@@ -783,19 +776,17 @@ html.lb-open{overflow:hidden}
       <div>
         <span class="tag">01 · Deployments</span>
         <h3>One workflow at a time.</h3>
-        <p>Every deployment starts with an on-site diagnostic. We learn how the work is really done. Then we build and automate it, with AI where it fits. In every job, we connect any AI to your systems, and a person approves every entry.</p>
+        <p>Every deployment starts on site, where we learn how the work is really done. Then we build and automate it, with AI where it fits. In every job we connect AI to your systems, and a person approves every entry.</p>
         <ul class="tl" aria-label="Our tools">
           <li>AI agents</li><li>Workflow automation</li><li>System integrations</li><li>Dashboards</li><li>Workflow redesign</li>
         </ul>
       </div>
       <ul class="ledger chk" aria-label="What every deployment covers">
         <li class="hd"><span>Every deployment covers</span></li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Connect your systems</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Fix data access</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Connect your software to AI agents</li>
         <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Automate the workflow, with AI where it helps</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Connect your systems and data to AI agents</li>
         <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Human approval, built in</li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Ongoing testing</li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Testing and fixes, ongoing</li>
         <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>Upgrades as tools improve</li>
       </ul>
     </article>
@@ -830,30 +821,37 @@ html.lb-open{overflow:hidden}
     <div class="runs rv">
       <p class="runs-l">A sample of what runs on lumic today</p>
       <ul>
-        <li>AP invoice automation</li><li>Payroll journal entries</li><li>Bank reconciliation</li><li>Purchasing &amp; PO write-back</li>
-        <li>Collections email drafts</li><li>AR aging &amp; collections</li><li>Sales commissions</li><li>Consolidated financials</li>
+        <li>AP invoice automation</li><li>Purchasing &amp; PO write-back</li><li>Collections email drafts</li><li>Bank reconciliation</li>
+        <li>Payroll journal entries</li><li>AR aging &amp; collections</li><li>Sales commissions</li><li>Consolidated financials</li>
         <li>Sales &amp; margin analytics</li><li>Job costing</li><li>Production rates</li><li>PTO tracking</li>
       </ul>
     </div>
     <div class="pgrid rv">
-      <article class="pf"><span class="n">01</span><h3>Daily sales &amp; margin reporting</h3>
-        <p>Sales and gross margin by customer, product, and rep — read straight from the ERP, refreshed live. Replaces the report someone exported every morning.</p>
-        <ul><li>Margin by product, customer &amp; order</li><li>Two operating companies, one view</li></ul></article>
-      <article class="pf"><span class="n">02</span><h3>Collections &amp; statements</h3>
-        <p>Live AR aging by bucket, customer contacts in one place, and a one-click statement blast — collections work that used to mean a morning in the ERP and the inbox.</p>
-        <ul><li>Live aging, no export</li><li>Automated statement send</li></ul></article>
-      <article class="pf"><span class="n">03</span><h3>PO creation &amp; write-back</h3>
-        <p>Create purchase orders straight from the dashboard and write them back into the ERP — with reorder visibility across items, so buying decisions don't start with a report.</p>
-        <ul><li>PO creation without leaving the screen</li><li>Reorder points across the catalog</li></ul></article>
-      <article class="pf"><span class="n">04</span><h3>AP invoice agent</h3>
-        <p>Vendor invoices arrive by email; an AI agent reads them, extracts the data, and preps them ERP-ready. The clerk approves the result in 30 seconds instead of keying it for an hour.</p>
+      <article class="pf"><span class="n">01</span><h3>AP invoice agent</h3>
+        <p>Vendor invoices arrive by email. An AI agent reads them, pulls out the data, and preps each one ERP-ready. The clerk approves it in 30 seconds instead of keying it for an hour.</p>
         <ul><li>Email &rarr; OCR &rarr; ERP-ready</li><li>One-tap human approval</li></ul></article>
-      <article class="pf"><span class="n">05</span><h3>Job costing from production data</h3>
-        <p>Production rates feed real per-job cost and margin — estimate-vs-actual you can see <em>during</em> the job, not at close. The number project-based businesses run on.</p>
-        <ul><li>Estimate-vs-actual per job</li><li>Overruns surfaced early</li></ul></article>
-      <article class="pf"><span class="n">06</span><h3>Month-end consolidation</h3>
-        <p>A live GL income statement and product-margin view, consolidated across two sister companies — the month-end picture without the month-end grind.</p>
-        <ul><li>Multi-company GL consolidation</li><li>Income statement that's never stale</li></ul></article>
+      <article class="pf"><span class="n">02</span><h3>PO creation &amp; write-back</h3>
+        <p>Create purchase orders from the dashboard and write them back into the ERP, with reorder points across every item, so buying decisions don't start with a report.</p>
+        <ul><li>PO creation without leaving the screen</li><li>Reorder points across the catalog</li></ul></article>
+      <article class="pf"><span class="n">03</span><h3>Collections &amp; statements</h3>
+        <p>Live AR aging by bucket, customer contacts in one place, and a one-click statement send. Collections work that used to take a morning in the ERP and the inbox.</p>
+        <ul><li>Live aging, no export</li><li>Automated statement send</li></ul></article>
+    </div>
+    <div class="extras pmore rv">
+      <details class="more">
+        <summary>Three more running in production<span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></span></summary>
+        <div class="pgrid">
+          <article class="pf"><span class="n">04</span><h3>Daily sales &amp; margin reporting</h3>
+            <p>Sales and gross margin by customer, product, and rep, read straight from the ERP and refreshed live. Replaces the report someone exported every morning.</p>
+            <ul><li>Margin by product, customer &amp; order</li><li>Two operating companies, one view</li></ul></article>
+          <article class="pf"><span class="n">05</span><h3>Job costing from production data</h3>
+            <p>Production rates feed real per-job cost and margin: estimate against actual <em>during</em> the job, not at close. The number project-based businesses run on.</p>
+            <ul><li>Estimate vs. actual per job</li><li>Overruns surfaced early</li></ul></article>
+          <article class="pf"><span class="n">06</span><h3>Month-end consolidation</h3>
+            <p>A live GL income statement and product-margin view, consolidated across two sister companies. The month-end picture without the month-end grind.</p>
+            <ul><li>Multi-company GL consolidation</li><li>An income statement that's never stale</li></ul></article>
+        </div>
+      </details>
     </div>
     <figure class="quote rv">
       <blockquote><p>“Honestly, this is better than the BI tools I've used at much larger companies.”</p></blockquote>
@@ -886,11 +884,9 @@ html.lb-open{overflow:hidden}
     <p class="lead rv">We work inside your business, with your team, not from a distance.</p>
     <div class="why-grid">
       <ul class="wl rv">
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>Owner-first design.</h3><p>Every screen answers a question an owner actually asks.</p></div></li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>Custom-built, every time.</h3><p>Your KPIs, your data, your workflows. We build the system you would build yourself if you had the time.</p></div></li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>Nothing posts without you.</h3><p>Dashboards only read. When an agent prepares an entry, it lands unposted, and a person on your team posts it.</p></div></li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>Structured onboarding.</h3><p>We map your accounts, customers, and categories before launch, so the system is useful on day one.</p></div></li>
-        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>Long-term support.</h3><p>We support every system we deliver, for as long as you run it.</p></div></li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>Nothing posts without you.</h3><p>An agent prepares the entry. A person on your team checks it and posts it. Dashboards only read.</p></div></li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>Custom-built, every time.</h3><p>Your workflows, your data, your numbers. We build what you would build yourself if you had the time.</p></div></li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>A team that stays on.</h3><p>We watch, test, fix, and upgrade what we build, for as long as you run it.</p></div></li>
       </ul>
       <div class="alts rv">
         <p class="st2">We build it, and <em class="s">we keep it working.</em></p>
@@ -973,7 +969,7 @@ html.lb-open{overflow:hidden}
 </section>
 </main>
 
-<!-- ============ FILM LIGHTBOX: one dashboard film, opened from "Watch each dashboard on its own" ============ -->
+<!-- ============ FILM LIGHTBOX: one dashboard film, opened from "Watch each tool on its own" ============ -->
 <dialog class="lb" id="film" aria-labelledby="film-t">
   <div class="lb-in">
     <button class="lb-x" type="button" aria-label="Close the film"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
