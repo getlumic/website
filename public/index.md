@@ -1,21 +1,21 @@
 ---
-title: "lumic | Forward Deployed Engineers for the back office, St. Louis"
-description: "Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put one AI agent on one back-office job, on a computer in your office, and it makes the entry in your ERP itself. 64 of 67 bills through our first agent in week one."
+title: "lumic | Forward Deployed Engineers for business, St. Louis"
+description: "Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters."
 canonical: https://get-lumic.com/
 last_updated: 2026-10-11
 ---
 
-# lumic | Forward Deployed Engineers for the back office, St. Louis
+# lumic | Forward Deployed Engineers for business, St. Louis
 
-> Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put one AI agent on one back-office job, on a computer in your office, and it makes the entry in your ERP itself. 64 of 67 bills through our first agent in week one.
+> Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 
-St. Louis businesses on an ERP FDEs for the back office
+Based in St. Louis FDEs for business
 
 # AI, deployed into your business and kept working.
 
-We are Forward Deployed Engineers with finance backgrounds, based in St. Louis, for small and mid-sized manufacturers, distributors and service firms on an ERP. We put an AI agent on a dedicated computer in your office and give it one job, such as entering vendor bills. It makes the entry in your ERP itself; nobody retypes it. Our first agent was live about six weeks after our on-site day, and in week one 64 of 67 bills went through it. St. Louis first; we travel for the right fit.
+We’re Forward Deployed Engineers with finance backgrounds: we put AI to work inside the systems and routines you already run, from vendor bills to month-end, keep it working, and a person on your team approves what matters. St. Louis first; we travel for the right fit.
 
 [Book a call](mailto:hello@get-lumic.com?subject=lumic%20intro%20call) See it running
 
@@ -43,7 +43,7 @@ Each film opens on its own, with narration.
 
 ### It works in the systems you already run.
 
-The agent works where your team works: your ERP, your inbox, the spreadsheets and shared drives they use every day. It reads and enters the same records a person would. No new system to learn, and no new software seats.
+The agent works where your team works, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It reads and enters the same records a person would. No new system to learn, and no new software seats.
 
 Where the agent works
 
@@ -63,29 +63,29 @@ What you get
 - Live dashboards — What the agents did, always current
 - Alerts when it needs a person — The moment an exception comes up
 
-If your team does it on a screen, an agent can usually learn it. Read-only by default. Anything that writes back waits for a person’s approval.
+If your team does it on a screen, an agent can usually learn it. It reads what it needs, and every entry it makes waits for a person’s approval.
 
 Services
 
 ## An agent on the job, and a team behind it.
 
-We are FDEs, Forward Deployed Engineers: we come to your office and build the agent there. We do not sell software to configure yourself, and we stay to run what we build.
+We are FDEs, Forward Deployed Engineers: we come to you, learn how the work is really done, and build AI into it. We do not sell software to configure yourself, and we stay to run what we build.
 
 01 · Deploy an agent
 
 ### One job at a time.
 
-We start on site and watch the job done by hand: the screens, the checks, the exceptions. Then we build an agent for that one job, connect it to your ERP, inbox and files, and put it on a dedicated computer in your office. Your team tests it on real work before it goes live.
+We start beside your team and watch the job done by hand: the screens, the checks, the exceptions. Then we build an agent for that one job and connect it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on a dedicated computer in your office or in the cloud, whichever fits. Your team tests it on real work before it goes live.
 
 - AI agents
-- ERP connections
+- System connections
 - Approval queues
 - Dashboards
 - Workflow redesign
 - Every deployment covers
-- One job, mapped on site
-- An agent on a dedicated computer in your office
-- Connected to your ERP, inbox and files
+- One job, mapped with your team
+- A dedicated computer for it, in your office or the cloud
+- Connected to the systems it needs
 - An approval step before anything posts
 - A log of every action it takes
 
@@ -175,7 +175,7 @@ An agent prepares the month-end entries, and the controller approves them. Then 
 
 How we work
 
-## We start on site. Live in weeks, not quarters.
+## We start where the work happens. Live in weeks, not quarters.
 
 ### On-site diagnostic.
 
@@ -197,7 +197,7 @@ We’re FDEs with finance backgrounds. We don’t just deploy agents, we know wh
 
 ### It makes the entry itself.
 
-The agent enters the work in your ERP, the same records a clerk would key. A person approves it, and nobody retypes it.
+The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
 ### Live and measured.
 
@@ -207,9 +207,9 @@ Our first managed agent went live about six weeks after our on-site day. In its 
 
 Most FDE teams are engineers who learn finance on the job. We lived it first: we have done these back-office jobs by hand, then built the agents that do them.
 
-### It runs in your office.
+### It runs where it fits.
 
-Each agent works on a dedicated computer on your network, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+Each agent works on a dedicated computer, in your office or in the cloud, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
 
 ### It touches only its job.
 
@@ -270,11 +270,11 @@ An on-site visit. We meet your team where the work happens and confirm the plan.
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. We are engineers with finance backgrounds who come to your office, learn how the work is really done, build an AI agent for one back-office job, and keep it working.
+FDE stands for Forward Deployed Engineer. We are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 ### Where does the agent run?
 
-On a dedicated computer in your office, on your network, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+Wherever fits your business: on a dedicated computer in your office or in the cloud, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
 
 ### What can the agent touch?
 
@@ -282,7 +282,7 @@ Only what its job needs. We give each agent access to the screens and records it
 
 ### Who approves what the agent does?
 
-A person on your team. The agent prepares each entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
+A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
 
 ### How long does it take to go live?
 

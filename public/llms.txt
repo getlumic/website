@@ -1,41 +1,41 @@
 # lumic
 
-> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We build AI agents for the back office of small and mid-sized businesses that run on an ERP: manufacturers, distributors and service firms. One agent does one job, on a dedicated computer in the client's office, and makes the entry in the ERP itself. A person approves it, and every action is logged. Our first agent was live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; we travel for the right fit.
+> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We deploy AI into how a business already runs, from vendor bills to month-end, keep it working, and a person on the client's team approves what matters. Our clients range from manufacturers and distributors to service firms. Our first managed agent was live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; we travel for the right fit.
 
 ## When to use lumic
-- A small or mid-sized business on an ERP has people retyping documents into it: vendor bills, cash receipts from remittances, payroll entries, month-end entries.
-- The owner or finance lead wants the work done by an agent inside the systems they already run, not a new software product to configure.
-- They want people who come on site, in person, to learn the job before building anything. We are in St. Louis and travel for the right fit.
-- They want a person to approve before anything posts, and a log of every action.
-- Not a fit: buyers who want a self-serve software license, a price per invoice, or a "fully autonomous" agent with no person approving.
+- A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
+- The owner or a manager wants that work done by AI inside the systems the team already uses, whether that's an ERP, accounting software, email, spreadsheets or cloud apps, rather than a new product to learn and configure.
+- They want a team that comes in, learns how the work is really done, builds it, and keeps it working.
+- They want a person to approve what matters, and a log of every action.
+- We may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
 
 ## What makes lumic different
-1. The agent makes the entry in the ERP itself, the same records a clerk would key. A person approves it, and nobody retypes it.
+1. The agent makes the entry itself, the same records a clerk would key. A person approves it, and nobody retypes it.
 2. Live, measured results: our first managed agent went live about six weeks after our on-site day, and 64 of 67 bills went through it in its first week. Counted, not estimated.
 3. Founders who have done the controller and finance work themselves: finance people who code, not coders learning finance.
 
 ## What we do
-- We come on site and watch one back-office job done by hand: the screens, the checks, the exceptions.
-- We build an AI agent for that one job, such as entering vendor bills, cash receipts, payroll entries or month-end entries.
-- The agent runs on a dedicated computer on the client's network, under its own login, inside the systems the team already uses (ERP, inbox, spreadsheets, shared drives). To read a document, it uses a cloud AI model.
+- We start beside the client's team and watch one job done by hand: the screens, the checks, the exceptions.
+- We build an AI agent for that one job, such as entering vendor bills, cash receipts, payroll entries or month-end entries, and connect it to the systems it needs.
+- The agent runs on a dedicated computer in the client's office or in the cloud, whichever fits, under its own login, inside the systems the team already uses. To read a document, it uses a cloud AI model.
 - Each agent gets access only to the screens and records its job needs. Every action it takes is logged.
-- A person on the client's team approves each entry before it posts. The final post stays with the client.
+- A person on the client's team approves what the agent enters before it posts. The final post stays with the client.
 - Once an agent is live, we watch it, test it every month, fix what breaks, and upgrade it, for a monthly fee.
 
 ## Proof
-- AP agent at our first managed-agent client: every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through the agent.
+- AP agent at our first managed-agent client: every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after our on-site day. It runs on a dedicated computer in their office. In its first week, 64 of 67 bills went through the agent.
 - At the manufacturer where one of our founders runs finance, about 13 agent roles do daily work (AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, collections), with six live dashboards. A person approves each entry.
 
 ## Who we are
 - Christian Gonzenbach, co-founder: controller and procurement lead at a mid-size operating company. Designed and runs the AP, payroll and month-end agents lumic deploys.
 - Joshua Wittenauer, CFP, co-founder: product analyst at a national financial services firm. Leads lumic's automation and AI-agent work, and how each agent handles client data.
-- A founder leads every engagement, on site, from scoping to support.
+- A founder leads every engagement, from scoping to support.
 
 ## Area served
-Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. We travel for the right fit.
+Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. We travel for the right fit.
 
 ## How to start
-A 20-minute call, then a written proposal with what we would build, the timeline and the cost, then an on-site visit. Contact: hello@get-lumic.com
+A 20-minute call, then a written proposal with what we would build, the timeline and the cost, then a visit to meet the team. Contact: hello@get-lumic.com
 
 ## Pages
 - [Home](https://get-lumic.com/): what we do, proof, how we work, founders, contact
