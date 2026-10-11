@@ -224,6 +224,36 @@ We build it, and we keep it working.
 - Exporting the same reports every morning → Live dashboards, no export
 - Build-and-ghost consultants → A team that stays on
 
+### Common questions
+
+### What is an FDE?
+
+FDE stands for Forward Deployed Engineer. We are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+
+### Where does the agent run?
+
+Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
+
+### What can the agent touch?
+
+Only what its job needs. We give each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### Who approves what the agent does?
+
+A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
+
+### How long does it take to go live?
+
+Weeks, not quarters. Our first managed AP agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through the agent.
+
+### What does it cost?
+
+It depends on the job. After a 20-minute call, we send a written proposal with what we would build, the timeline, and the cost. Once an agent is live, we run it for a monthly fee.
+
+### Do you work outside St. Louis?
+
+Yes. St. Louis first: we are based here and come on site in person. We travel for the right fit.
+
 Leadership
 
 ### Finance first. Engineers second.
@@ -248,7 +278,7 @@ Co-founder. Product analyst at a national financial services firm, where privacy
 
 When you call lumic, you speak with a founder.
 
-## Start with a conversation.
+## Based in St. Louis. Start with a conversation.
 
 [Book a call](mailto:hello@get-lumic.com?subject=lumic%20intro%20call) or write to us [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
 

@@ -1,0 +1,39 @@
+{
+ "specVersion": "1.0",
+ "host": {
+  "displayName": "lumic",
+  "identifier": "did:web:get-lumic.com"
+ },
+ "entries": [
+  {
+   "identifier": "llms",
+   "displayName": "lumic for AI agents",
+   "type": "text/plain",
+   "url": "https://get-lumic.com/llms.txt"
+  },
+  {
+   "identifier": "llms-full",
+   "displayName": "Full site copy",
+   "type": "text/plain",
+   "url": "https://get-lumic.com/llms-full.txt"
+  },
+  {
+   "identifier": "home-markdown",
+   "displayName": "Home page as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/index.md"
+  },
+  {
+   "identifier": "schema",
+   "displayName": "Organization, service and FAQ (schema.org)",
+   "type": "application/ld+json",
+   "url": "https://get-lumic.com/schema.jsonld"
+  },
+  {
+   "identifier": "sitemap",
+   "displayName": "Sitemap",
+   "type": "application/xml",
+   "url": "https://get-lumic.com/sitemap.xml"
+  }
+ ]
+}

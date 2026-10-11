@@ -134,6 +134,25 @@ def main():
     io.open(PUB / "llms-full.txt", "w", encoding="utf-8", newline="\n").write(full)
     print("index.md", len(page), "chars; llms-full.txt", len(full), "chars")
 
+    # the page's JSON-LD as its own file, and the two discovery files that point at real files only
+    io.open(PUB / "schema.jsonld", "w", encoding="utf-8", newline="\n").write(json.dumps(ld, ensure_ascii=False, indent=1) + "\n")
+    io.open(PUB / "schemamap.xml", "w", encoding="utf-8", newline="\n").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'  <url contentType="structuredData/schema.org"><loc>{SITE}/schema.jsonld</loc></url>\n</urlset>\n')
+    catalog = {"specVersion": "1.0",
+               "host": {"displayName": "lumic", "identifier": "did:web:get-lumic.com"},
+               "entries": [
+                   {"identifier": "llms", "displayName": "lumic for AI agents", "type": "text/plain", "url": f"{SITE}/llms.txt"},
+                   {"identifier": "llms-full", "displayName": "Full site copy", "type": "text/plain", "url": f"{SITE}/llms-full.txt"},
+                   {"identifier": "home-markdown", "displayName": "Home page as markdown", "type": "text/markdown", "url": f"{SITE}/index.md"},
+                   {"identifier": "schema", "displayName": "Organization, service and FAQ (schema.org)", "type": "application/ld+json", "url": f"{SITE}/schema.jsonld"},
+                   {"identifier": "sitemap", "displayName": "Sitemap", "type": "application/xml", "url": f"{SITE}/sitemap.xml"},
+               ]}
+    (PUB / ".well-known").mkdir(exist_ok=True)
+    io.open(PUB / ".well-known" / "ai-catalog.json", "w", encoding="utf-8", newline="\n").write(json.dumps(catalog, indent=1) + "\n")
+    for e in catalog["entries"]:  # list only files that exist
+        assert (PUB / e["url"].replace(SITE + "/", "")).exists(), e["url"]
+
 
 if __name__ == "__main__":
     main()
