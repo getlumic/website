@@ -139,17 +139,21 @@ def main():
     io.open(PUB / "schemamap.xml", "w", encoding="utf-8", newline="\n").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f'  <url contentType="structuredData/schema.org"><loc>{SITE}/schema.jsonld</loc></url>\n</urlset>\n')
-    catalog = {"specVersion": "1.0",
-               "host": {"displayName": "lumic", "identifier": "did:web:get-lumic.com"},
-               "entries": [
-                   {"identifier": "llms", "displayName": "lumic for AI agents", "type": "text/plain", "url": f"{SITE}/llms.txt"},
-                   {"identifier": "llms-full", "displayName": "Full site copy", "type": "text/plain", "url": f"{SITE}/llms-full.txt"},
-                   {"identifier": "home-markdown", "displayName": "Home page as markdown", "type": "text/markdown", "url": f"{SITE}/index.md"},
-                   {"identifier": "schema", "displayName": "Organization, service and FAQ (schema.org)", "type": "application/ld+json", "url": f"{SITE}/schema.jsonld"},
-                   {"identifier": "sitemap", "displayName": "Sitemap", "type": "application/xml", "url": f"{SITE}/sitemap.xml"},
-               ]}
+    # ARD catalog (agenticresourcediscovery.org): urn:air:<domain>:<namespace>:<name> identifiers, one url each.
+    # Only documents we really publish; no API or MCP server is claimed.
+    q = ["what does lumic do", "who are lumic's founders", "does lumic work outside St. Louis"]
+    U = "urn:air:get-lumic.com:docs:"
+    catalog = {"entries": [
+        {"identifier": U + "llms", "displayName": "lumic for AI agents", "type": "text/plain", "url": f"{SITE}/llms.txt", "representativeQueries": q},
+        {"identifier": U + "llms-full", "displayName": "Full site copy", "type": "text/plain", "url": f"{SITE}/llms-full.txt", "representativeQueries": q},
+        {"identifier": U + "home-markdown", "displayName": "Home page as markdown", "type": "text/markdown", "url": f"{SITE}/index.md", "representativeQueries": q},
+        {"identifier": U + "schema", "displayName": "Organization, service and FAQ (schema.org)", "type": "application/ld+json", "url": f"{SITE}/schema.jsonld",
+         "representativeQueries": ["what areas does lumic serve", "how much does lumic cost"]},
+        {"identifier": U + "sitemap", "displayName": "Sitemap", "type": "application/xml", "url": f"{SITE}/sitemap.xml", "representativeQueries": ["list the pages on get-lumic.com"]},
+    ]}
     (PUB / ".well-known").mkdir(exist_ok=True)
-    io.open(PUB / ".well-known" / "ai-catalog.json", "w", encoding="utf-8", newline="\n").write(json.dumps(catalog, indent=1) + "\n")
+    for name in ("ard.json", "ai-catalog.json"):  # canonical path, plus the legacy one
+        io.open(PUB / ".well-known" / name, "w", encoding="utf-8", newline="\n").write(json.dumps(catalog, indent=1) + "\n")
     for e in catalog["entries"]:  # list only files that exist
         assert (PUB / e["url"].replace(SITE + "/", "")).exists(), e["url"]
 

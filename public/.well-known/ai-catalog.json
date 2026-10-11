@@ -1,39 +1,56 @@
 {
- "specVersion": "1.0",
- "host": {
-  "displayName": "lumic",
-  "identifier": "did:web:get-lumic.com"
- },
  "entries": [
   {
-   "identifier": "llms",
+   "identifier": "urn:air:get-lumic.com:docs:llms",
    "displayName": "lumic for AI agents",
    "type": "text/plain",
-   "url": "https://get-lumic.com/llms.txt"
+   "url": "https://get-lumic.com/llms.txt",
+   "representativeQueries": [
+    "what does lumic do",
+    "who are lumic's founders",
+    "does lumic work outside St. Louis"
+   ]
   },
   {
-   "identifier": "llms-full",
+   "identifier": "urn:air:get-lumic.com:docs:llms-full",
    "displayName": "Full site copy",
    "type": "text/plain",
-   "url": "https://get-lumic.com/llms-full.txt"
+   "url": "https://get-lumic.com/llms-full.txt",
+   "representativeQueries": [
+    "what does lumic do",
+    "who are lumic's founders",
+    "does lumic work outside St. Louis"
+   ]
   },
   {
-   "identifier": "home-markdown",
+   "identifier": "urn:air:get-lumic.com:docs:home-markdown",
    "displayName": "Home page as markdown",
    "type": "text/markdown",
-   "url": "https://get-lumic.com/index.md"
+   "url": "https://get-lumic.com/index.md",
+   "representativeQueries": [
+    "what does lumic do",
+    "who are lumic's founders",
+    "does lumic work outside St. Louis"
+   ]
   },
   {
-   "identifier": "schema",
+   "identifier": "urn:air:get-lumic.com:docs:schema",
    "displayName": "Organization, service and FAQ (schema.org)",
    "type": "application/ld+json",
-   "url": "https://get-lumic.com/schema.jsonld"
+   "url": "https://get-lumic.com/schema.jsonld",
+   "representativeQueries": [
+    "what areas does lumic serve",
+    "how much does lumic cost"
+   ]
   },
   {
-   "identifier": "sitemap",
+   "identifier": "urn:air:get-lumic.com:docs:sitemap",
    "displayName": "Sitemap",
    "type": "application/xml",
-   "url": "https://get-lumic.com/sitemap.xml"
+   "url": "https://get-lumic.com/sitemap.xml",
+   "representativeQueries": [
+    "list the pages on get-lumic.com"
+   ]
   }
  ]
 }
