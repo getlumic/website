@@ -17,7 +17,7 @@ Based in St. Louis FDEs for business
 
 We’re Forward Deployed Engineers with finance backgrounds: we put AI to work inside the systems and routines you already run, from vendor bills to month-end, keep it working, and a person on your team approves what matters. St. Louis first; we travel for the right fit.
 
-[Book a call](mailto:hello@get-lumic.com?subject=lumic%20intro%20call) See it running
+[Book a call](https://cal.com/lumic/20-minute-call) See it running
 
 Why lumic. Turn sound on for the narration.
 
@@ -280,7 +280,7 @@ When you call lumic, you speak with a founder.
 
 ## Based in St. Louis. Start with a conversation.
 
-[Book a call](mailto:hello@get-lumic.com?subject=lumic%20intro%20call) or write to us [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+[Book a call](https://cal.com/lumic/20-minute-call) or write to us [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
 
 Every engagement is led by Christian or Josh.
 
