@@ -99,6 +99,11 @@ export default {
       return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
     }
     const get = req.method === "GET" || req.method === "HEAD";
+    // Search engine ownership files: served at their exact .html path (the assets would redirect "x.html" to "x").
+    if (get && /^\/google[0-9a-f]+\.html$/.test(url.pathname)) {
+      const f = await env.ASSETS.fetch(new Request(new URL(url.pathname.replace(/\.html$/, ""), url), req));
+      if (f.ok) return finish(f, { "Content-Type": "text/html; charset=utf-8" });
+    }
     if (get && url.pathname.startsWith("/video/")) return serveVideo(req, env);
 
     const md = get && wantsMarkdown(req, url);
