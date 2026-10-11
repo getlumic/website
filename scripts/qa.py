@@ -21,7 +21,7 @@ WIDTHS = [1440, 1024, 768, 390, 360]
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"  # Cloudflare 403s the default urllib agent
 # Public wording rules (playbook 03-positioning.md -> Public wording). Client and system names live in the private
 # playbook (this repo is public): one regex per line in brand/site-banned-terms.txt.
-BANNED = [r"\bFDE\b", r"forward[- ]deployed", r"Coming soon"]
+BANNED = [r"Coming soon"]  # FDE is allowed since 2026-10-11 (positioning: FDEs for the back office)
 _private = Path.home() / "projects" / "playbook" / "brand" / "site-banned-terms.txt"
 if _private.exists():
     BANNED += [l.strip() for l in _private.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]
