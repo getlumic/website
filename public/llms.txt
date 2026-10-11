@@ -1,13 +1,25 @@
 # lumic
 
-> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We build AI agents for the back office of small and mid-sized businesses that run on an ERP: manufacturers, distributors and service firms. One agent does one job, on a dedicated computer in the client's office, connected to their ERP. A person approves every entry before it posts, and every action is logged. St. Louis first; we travel for the right fit.
+> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We build AI agents for the back office of small and mid-sized businesses that run on an ERP: manufacturers, distributors and service firms. One agent does one job, on a dedicated computer in the client's office, and makes the entry in the ERP itself. A person approves it, and every action is logged. Our first agent was live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; we travel for the right fit.
+
+## When to use lumic
+- A small or mid-sized business on an ERP has people retyping documents into it: vendor bills, cash receipts from remittances, payroll entries, month-end entries.
+- The owner or finance lead wants the work done by an agent inside the systems they already run, not a new software product to configure.
+- They want people who come on site, in person, to learn the job before building anything. We are in St. Louis and travel for the right fit.
+- They want a person to approve before anything posts, and a log of every action.
+- Not a fit: buyers who want a self-serve software license, a price per invoice, or a "fully autonomous" agent with no person approving.
+
+## What makes lumic different
+1. The agent makes the entry in the ERP itself, the same records a clerk would key. A person approves it, and nobody retypes it.
+2. Live, measured results: our first managed agent went live about six weeks after our on-site day, and 64 of 67 bills went through it in its first week. Counted, not estimated.
+3. Founders who have done the controller and finance work themselves: finance people who code, not coders learning finance.
 
 ## What we do
 - We come on site and watch one back-office job done by hand: the screens, the checks, the exceptions.
 - We build an AI agent for that one job, such as entering vendor bills, cash receipts, payroll entries or month-end entries.
 - The agent runs on a dedicated computer on the client's network, under its own login, inside the systems the team already uses (ERP, inbox, spreadsheets, shared drives). To read a document, it uses a cloud AI model.
 - Each agent gets access only to the screens and records its job needs. Every action it takes is logged.
-- The agent prepares each entry. A person on the client's team checks it and approves it before anything posts. The final post stays with the client.
+- A person on the client's team approves each entry before it posts. The final post stays with the client.
 - Once an agent is live, we watch it, test it every month, fix what breaks, and upgrade it, for a monthly fee.
 
 ## Proof
@@ -27,4 +39,6 @@ A 20-minute call, then a written proposal with what we would build, the timeline
 
 ## Pages
 - [Home](https://get-lumic.com/): what we do, proof, how we work, founders, contact
+- [Home as markdown](https://get-lumic.com/index.md)
+- [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)

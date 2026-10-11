@@ -1,0 +1,343 @@
+# lumic
+
+> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We build AI agents for the back office of small and mid-sized businesses that run on an ERP: manufacturers, distributors and service firms. One agent does one job, on a dedicated computer in the client's office, and makes the entry in the ERP itself. A person approves it, and every action is logged. Our first agent was live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; we travel for the right fit.
+
+## When to use lumic
+- A small or mid-sized business on an ERP has people retyping documents into it: vendor bills, cash receipts from remittances, payroll entries, month-end entries.
+- The owner or finance lead wants the work done by an agent inside the systems they already run, not a new software product to configure.
+- They want people who come on site, in person, to learn the job before building anything. We are in St. Louis and travel for the right fit.
+- They want a person to approve before anything posts, and a log of every action.
+- Not a fit: buyers who want a self-serve software license, a price per invoice, or a "fully autonomous" agent with no person approving.
+
+## What makes lumic different
+1. The agent makes the entry in the ERP itself, the same records a clerk would key. A person approves it, and nobody retypes it.
+2. Live, measured results: our first managed agent went live about six weeks after our on-site day, and 64 of 67 bills went through it in its first week. Counted, not estimated.
+3. Founders who have done the controller and finance work themselves: finance people who code, not coders learning finance.
+
+## What we do
+- We come on site and watch one back-office job done by hand: the screens, the checks, the exceptions.
+- We build an AI agent for that one job, such as entering vendor bills, cash receipts, payroll entries or month-end entries.
+- The agent runs on a dedicated computer on the client's network, under its own login, inside the systems the team already uses (ERP, inbox, spreadsheets, shared drives). To read a document, it uses a cloud AI model.
+- Each agent gets access only to the screens and records its job needs. Every action it takes is logged.
+- A person on the client's team approves each entry before it posts. The final post stays with the client.
+- Once an agent is live, we watch it, test it every month, fix what breaks, and upgrade it, for a monthly fee.
+
+## Proof
+- AP agent at our first managed-agent client: every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through the agent.
+- At the manufacturer where one of our founders runs finance, about 13 agent roles do daily work (AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, collections), with six live dashboards. A person approves each entry.
+
+## Who we are
+- Christian Gonzenbach, co-founder: controller and procurement lead at a mid-size operating company. Designed and runs the AP, payroll and month-end agents lumic deploys.
+- Joshua Wittenauer, CFP, co-founder: product analyst at a national financial services firm. Leads lumic's automation and AI-agent work, and how each agent handles client data.
+- A founder leads every engagement, on site, from scoping to support.
+
+## Area served
+Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. We travel for the right fit.
+
+## How to start
+A 20-minute call, then a written proposal with what we would build, the timeline and the cost, then an on-site visit. Contact: hello@get-lumic.com
+
+## Pages
+- [Home](https://get-lumic.com/): what we do, proof, how we work, founders, contact
+- [Home as markdown](https://get-lumic.com/index.md)
+- [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
+- [Privacy](https://get-lumic.com/privacy/)
+
+---
+
+# Full site copy
+
+# lumic | Forward Deployed Engineers for the back office, St. Louis
+
+> Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put one AI agent on one back-office job, on a computer in your office, and it makes the entry in your ERP itself. 64 of 67 bills through our first agent in week one.
+
+Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
+
+St. Louis businesses on an ERP FDEs for the back office
+
+# AI, deployed into your business and kept working.
+
+We are Forward Deployed Engineers with finance backgrounds, based in St. Louis, for small and mid-sized manufacturers, distributors and service firms on an ERP. We put an AI agent on a dedicated computer in your office and give it one job, such as entering vendor bills. It makes the entry in your ERP itself; nobody retypes it. Our first agent was live about six weeks after our on-site day, and in week one 64 of 67 bills went through it. St. Louis first; we travel for the right fit.
+
+[Book a call](mailto:hello@get-lumic.com?subject=lumic%20intro%20call) See it running
+
+Why lumic. Turn sound on for the narration.
+
+See it running
+
+## One agent, one job. Done every day.
+
+Here an agent reads a vendor bill, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in the ERP ready to post. Then the dashboards show what the agents did, on the same live data.
+
+Every figure is sample data. Turn sound on for the narration.
+
+### Watch each tool on its own
+
+- [Receivables](https://get-lumic.com/video/demos/lumic-keynote-receivables.mp4)
+- [Sales](https://get-lumic.com/video/demos/lumic-keynote-sales.mp4)
+- [Purchasing](https://get-lumic.com/video/demos/lumic-keynote-purchasing.mp4)
+- [Financial](https://get-lumic.com/video/demos/lumic-keynote-financial.mp4)
+- [Ask your data (AI)](https://get-lumic.com/video/demos/lumic-keynote-connector.mp4)
+
+Each film opens on its own, with narration.
+
+### How the data flows
+
+### It works in the systems you already run.
+
+The agent works where your team works: your ERP, your inbox, the spreadsheets and shared drives they use every day. It reads and enters the same records a person would. No new system to learn, and no new software seats.
+
+Where the agent works
+
+- Your ERP — On-prem or cloud
+- Excel and CSV files — Workbooks and exports
+- Cloud apps — Accounting, CRM, e-commerce
+- Email inboxes — Orders, invoices, statements
+- Bank and card feeds — Every transaction
+- Databases — Wherever they run
+- Shared drives and PDFs — Contracts, price lists, scans
+- Legacy and custom systems — Even the old ones
+
+What you get
+
+- AI agents that do the work — Ready for a person to approve
+- A log of every action — What it did, and who approved it
+- Live dashboards — What the agents did, always current
+- Alerts when it needs a person — The moment an exception comes up
+
+If your team does it on a screen, an agent can usually learn it. Read-only by default. Anything that writes back waits for a person’s approval.
+
+Services
+
+## An agent on the job, and a team behind it.
+
+We are FDEs, Forward Deployed Engineers: we come to your office and build the agent there. We do not sell software to configure yourself, and we stay to run what we build.
+
+01 · Deploy an agent
+
+### One job at a time.
+
+We start on site and watch the job done by hand: the screens, the checks, the exceptions. Then we build an agent for that one job, connect it to your ERP, inbox and files, and put it on a dedicated computer in your office. Your team tests it on real work before it goes live.
+
+- AI agents
+- ERP connections
+- Approval queues
+- Dashboards
+- Workflow redesign
+- Every deployment covers
+- One job, mapped on site
+- An agent on a dedicated computer in your office
+- Connected to your ERP, inbox and files
+- An approval step before anything posts
+- A log of every action it takes
+
+02 · Managed AI agents
+
+### We keep it working.
+
+Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, we run it for a monthly fee.
+
+We watch it, test it every month, fix what breaks, and upgrade it as AI improves. A person on your team approves anything before it posts.
+
+- Each managed agent Covered
+- Monitoring Ongoing
+- Testing Monthly
+- Fixes Included
+- Upgrades as tools improve Included
+- Human approval Built in
+
+Client work
+
+## In production, every day.
+
+Two companies run lumic agents every day, live and measured, on entirely different systems. One is our first managed-agent client. At the other, one of us runs finance, so we use what we build.
+
+A sample of what runs on lumic today
+
+- AP invoice automation
+- Purchasing & PO write-back
+- Collections email drafts
+- Bank reconciliation
+- Payroll journal entries
+- AR aging & collections
+- Sales commissions
+- Consolidated financials
+- Sales & margin analytics
+- Job costing
+- Production rates
+- PTO tracking
+
+### AP invoice agent
+
+Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after our on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+
+- 64 of 67 bills through the agent in week one
+- Kept running for a monthly fee
+
+### A company run on agents
+
+At the manufacturer where one of us runs finance, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+
+- About 13 agent roles
+- Six live dashboards
+
+### Collections agent
+
+From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
+
+- Drafts from live aging
+- A person sends every one
+
+### Three more running in production
+
+### Daily sales & margin reporting
+
+Sales and gross margin by customer, product, and rep, read straight from the ERP, including every entry the agents made. The dashboard shows what the agents posted, live. It replaces the report someone exported every morning.
+
+- Margin by product, customer & order
+- Two operating companies, one view
+
+### Job costing from production data
+
+Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. It reads the same live data the agents work in, so costs they enter show up the same day.
+
+- Estimate vs. actual per job
+- Overruns surfaced early
+
+### Month-end consolidation
+
+An agent prepares the month-end entries, and the controller approves them. Then a live income statement and product-margin view, consolidated across two sister companies, shows the result.
+
+- Multi-company GL consolidation
+- An income statement that's never stale
+
+“Honestly, this is better than the BI tools I've used at much larger companies.”
+
+> Bradford, R., VP of Sales, flagship client
+
+How we work
+
+## We start on site. Live in weeks, not quarters.
+
+### On-site diagnostic.
+
+We work beside your team where the work happens. We map your systems, your data, and the manual steps that take the most time.
+
+### Build the agent.
+
+We build an agent for one job, connect it to your systems, and set up the approval step. Your team tests it on real work before it goes live.
+
+### Managed and kept working.
+
+We watch it, test it, fix it, and upgrade it, for a monthly fee. You run the business.
+
+Why lumic
+
+## Forward Deployed Engineers who’ve closed the books.
+
+We’re FDEs with finance backgrounds. We don’t just deploy agents, we know which back-office jobs are worth automating because we’ve done them.
+
+### It makes the entry itself.
+
+The agent enters the work in your ERP, the same records a clerk would key. A person approves it, and nobody retypes it.
+
+### Live and measured.
+
+Our first managed agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+
+### Finance people who code.
+
+Most FDE teams are engineers who learn finance on the job. We lived it first: we have done these back-office jobs by hand, then built the agents that do them.
+
+### It runs in your office.
+
+Each agent works on a dedicated computer on your network, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+
+### It touches only its job.
+
+We give each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+We build it, and we keep it working.
+
+- Instead of → With lumic
+- Typing every bill into two systems → An agent enters it; you approve
+- Cash receipts keyed from remittances → An agent enters them; you approve
+- Month-end entries built by hand → Prepared by an agent, approved by you
+- Exporting the same reports every morning → Live dashboards, no export
+- Build-and-ghost consultants → A team that stays on
+
+Leadership
+
+### Finance first. Engineers second.
+
+lumic is led by a controller and a CFP®, both based in St. Louis, with deep finance backgrounds and senior roles early in our careers. We both still work in finance, and that is the point: one of us runs the books at a company that uses these agents every day. A founder leads every engagement, on site, from scoping to support.
+
+CG
+
+### Christian Gonzenbach
+
+Co-founder. Controller and procurement lead at a mid-size operating company. Designed and runs the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
+
+[LinkedIn →](https://www.linkedin.com/in/christian-gonzenbach/)
+
+JW
+
+### Joshua Wittenauer, CFP®
+
+Co-founder. Product analyst at a national financial services firm, where privacy and data rules come first. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's automation and AI-agent work, and how each agent handles your data.
+
+[LinkedIn →](https://www.linkedin.com/in/joshua-wittenauer-890339191/)
+
+When you call lumic, you speak with a founder.
+
+## Start with a conversation.
+
+[Book a call](mailto:hello@get-lumic.com?subject=lumic%20intro%20call) or write to us [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by Christian or Josh.
+
+What happens next
+
+A 20‑minute call. You walk us through the work your team does by hand.
+
+A written proposal. What we would build, the timeline, and the cost.
+
+An on-site visit. We meet your team where the work happens and confirm the plan. St. Louis first; we travel for the right fit.
+
+## Questions
+
+### What is an FDE?
+
+FDE stands for Forward Deployed Engineer. We are engineers with finance backgrounds who come to your office, learn how the work is really done, build an AI agent for one back-office job, and keep it working.
+
+### Where does the agent run?
+
+On a dedicated computer in your office, on your network, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+
+### What can the agent touch?
+
+Only what its job needs. We give each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### Who approves what the agent does?
+
+A person on your team. The agent prepares each entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
+
+### How long does it take to go live?
+
+Weeks, not quarters. Our first managed AP agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through the agent.
+
+### What does it cost?
+
+It depends on the job. After a 20-minute call, we send a written proposal with what we would build, the timeline, and the cost. Once an agent is live, we run it for a monthly fee.
+
+### Do you work outside St. Louis?
+
+Yes. St. Louis first: we are based here and come on site in person. We travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
