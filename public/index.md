@@ -75,7 +75,7 @@ We are FDEs, Forward Deployed Engineers: we come to you, learn how the work is r
 
 ### One job at a time.
 
-We start beside your team and watch the job done by hand: the screens, the checks, the exceptions. Then we build an agent for that one job and connect it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on a dedicated computer in your office or in the cloud, whichever fits. Your team tests it on real work before it goes live.
+We start beside your team and watch the job done by hand: the screens, the checks, the exceptions. Then we build an agent for that one job and connect it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
 
 - AI agents
 - System connections
@@ -84,7 +84,7 @@ We start beside your team and watch the job done by hand: the screens, the check
 - Workflow redesign
 - Every deployment covers
 - One job, mapped with your team
-- A dedicated computer for it, in your office or the cloud
+- A dedicated computer for it, wherever fits
 - Connected to the systems it needs
 - An approval step before anything posts
 - A log of every action it takes
@@ -169,10 +169,6 @@ An agent prepares the month-end entries, and the controller approves them. Then 
 - Multi-company GL consolidation
 - An income statement that's never stale
 
-“Honestly, this is better than the BI tools I've used at much larger companies.”
-
-> Bradford, R., VP of Sales, flagship client
-
 How we work
 
 ## We start where the work happens. Live in weeks, not quarters.
@@ -209,7 +205,7 @@ Most FDE teams are engineers who learn finance on the job. We lived it first: we
 
 ### It runs where it fits.
 
-Each agent works on a dedicated computer, in your office or in the cloud, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+Each agent works on its own dedicated computer, wherever fits your business, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
 
 ### It touches only its job.
 
@@ -274,7 +270,7 @@ FDE stands for Forward Deployed Engineer. We are engineers with finance backgrou
 
 ### Where does the agent run?
 
-Wherever fits your business: on a dedicated computer in your office or in the cloud, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
+Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
 
 ### What can the agent touch?
 

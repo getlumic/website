@@ -17,7 +17,7 @@
 ## What we do
 - We start beside the client's team and watch one job done by hand: the screens, the checks, the exceptions.
 - We build an AI agent for that one job, such as entering vendor bills, cash receipts, payroll entries or month-end entries, and connect it to the systems it needs.
-- The agent runs on a dedicated computer in the client's office or in the cloud, whichever fits, under its own login, inside the systems the team already uses. To read a document, it uses a cloud AI model.
+- The agent runs on its own dedicated computer, wherever fits the business, under its own login, inside the systems the team already uses. To read a document, it uses a cloud AI model.
 - Each agent gets access only to the screens and records its job needs. Every action it takes is logged.
 - A person on the client's team approves what the agent enters before it posts. The final post stays with the client.
 - Once an agent is live, we watch it, test it every month, fix what breaks, and upgrade it, for a monthly fee.
