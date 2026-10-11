@@ -143,7 +143,7 @@ def main():
     # Only documents we really publish; no API or MCP server is claimed.
     q = ["what does lumic do", "who are lumic's founders", "does lumic work outside St. Louis"]
     U = "urn:air:get-lumic.com:docs:"
-    catalog = {"entries": [
+    catalog = {"specVersion": "0.91", "entries": [
         {"identifier": U + "llms", "displayName": "lumic for AI agents", "type": "text/plain", "url": f"{SITE}/llms.txt", "representativeQueries": q},
         {"identifier": U + "llms-full", "displayName": "Full site copy", "type": "text/plain", "url": f"{SITE}/llms-full.txt", "representativeQueries": q},
         {"identifier": U + "home-markdown", "displayName": "Home page as markdown", "type": "text/markdown", "url": f"{SITE}/index.md", "representativeQueries": q},
