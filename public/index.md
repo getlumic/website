@@ -1,3 +1,10 @@
+---
+title: "lumic | Forward Deployed Engineers for the back office, St. Louis"
+description: "Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put one AI agent on one back-office job, on a computer in your office, and it makes the entry in your ERP itself. 64 of 67 bills through our first agent in week one."
+canonical: https://get-lumic.com/
+last_updated: 2026-10-11
+---
+
 # lumic | Forward Deployed Engineers for the back office, St. Louis
 
 > Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put one AI agent on one back-office job, on a computer in your office, and it makes the entry in your ERP itself. 64 of 67 bills through our first agent in week one.

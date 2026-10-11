@@ -123,7 +123,10 @@ def main():
     faq_md = "\n\n".join(f"### {q['name']}\n\n{q['acceptedAnswer']['text']}" for q in faq["mainEntity"])
     foot = re.search(r'<p class="f-bot">(.*?)</p>', html, re.S).group(1)
     foot = re.sub(r"<[^>]+>", "", foot).replace("·", "|").strip()
-    page = (f"# {title}\n\n> {desc}\n\nSource: {SITE}/ | Contact: hello@get-lumic.com\n\n{body}\n\n## Questions\n\n{faq_md}\n\n"
+    import datetime
+    front = (f"---\ntitle: \"{title}\"\ndescription: \"{desc}\"\ncanonical: {SITE}/\n"
+             f"last_updated: {datetime.date.today().isoformat()}\n---\n\n")
+    page = (front + f"# {title}\n\n> {desc}\n\nSource: {SITE}/ | Contact: hello@get-lumic.com\n\n{body}\n\n## Questions\n\n{faq_md}\n\n"
             f"---\n\n{foot}\n")
     io.open(PUB / "index.md", "w", encoding="utf-8", newline="\n").write(page)
     llms = io.open(PUB / "llms.txt", encoding="utf-8").read().strip()
