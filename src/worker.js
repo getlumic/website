@@ -8,6 +8,8 @@
 //   /privacy) become 301s.
 // - Headers: HSTS everywhere, a Link header on pages (llms.txt and the markdown copy), a day of browser cache on films
 //   and images (their file names are reused when a film is replaced, so not longer than that).
+import { EmailMessage } from "cloudflare:email";
+
 const APEX = "get-lumic.com";
 // md-pages:start
 const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/forward-deployed-engineers/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
@@ -102,13 +104,13 @@ async function serveVideo(req, env) {
 
 
 // Checklist email capture: POST /api/checklist (one email field plus a hidden honeypot). A valid email is stored in the
-// LEADS KV namespace as {email, ts, page, ua}; a filled honeypot gets a normal-looking success and nothing is stored.
+// LEADS KV namespace as {email, ts, page, ua} and hello@ gets an alert (notify below); a filled honeypot gets a normal-looking success and nothing is stored.
 // JSON callers get {ok, pdf, page}; a plain form post (no JS) gets a 303 to the checklist page.
 const CHECKLIST_PAGE = "/resources/month-end-red-flags/";
 const CHECKLIST_PDF = "/resources/month-end-red-flags.pdf";
 const EMAIL_RE = /^[^\s@<>()[\]\,;:"]{1,64}@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
 
-async function checklist(req, env, url) {
+async function checklist(req, env, url, ctx) {
   if (req.method !== "POST") return new Response("Method not allowed", { status: 405, headers: { Allow: "POST", "Strict-Transport-Security": HSTS } });
   const json = /application\/json/i.test(req.headers.get("Content-Type") || "");
   let f = {};
@@ -130,17 +132,48 @@ async function checklist(req, env, url) {
   const page = String(f.page || "").slice(0, 200);
   const ua = (req.headers.get("User-Agent") || "").slice(0, 300);
   if (env.LEADS) await env.LEADS.put(`lead:${ts}:${email}`, JSON.stringify({ email, ts, page, ua }));
+  if (env.ALERT) ctx.waitUntil(notify(env, { email, ts, page }).catch((e) => console.error("signup alert failed:", e && e.message)));
   return ok();
 }
 
+// Sign-up alert: one plain-text email to hello@ per stored lead, through Cloudflare Email Routing on the
+// notify.get-lumic.com subdomain (the apex MX stays on Microsoft 365). The ALERT binding can only send to
+// hello@get-lumic.com, a verified destination. A failure is logged and never reaches the visitor.
+const ALERT_FROM = "alerts@notify.get-lumic.com";
+const ALERT_TO = "hello@get-lumic.com";
+
+async function notify(env, { email, ts, page }) {
+  const clean = (s) => String(s).replace(/[\r\n]+/g, " ");
+  const id = `<${crypto.randomUUID()}@notify.get-lumic.com>`;
+  const raw = [
+    `From: get-lumic.com <${ALERT_FROM}>`,
+    `To: ${ALERT_TO}`,
+    `Reply-To: ${clean(email)}`,
+    `Subject: New website sign-up: ${clean(email)}`,
+    `Message-ID: ${id}`,
+    `Date: ${new Date(ts).toUTCString()}`,
+    "MIME-Version: 1.0",
+    "Content-Type: text/plain; charset=utf-8",
+    "",
+    "A visitor signed up for the month-end checklist on get-lumic.com.",
+    "",
+    `Email: ${clean(email)}`,
+    `Page:  ${clean(page || "(not given)")}`,
+    `Time:  ${ts}`,
+    "",
+    "Stored in the LEADS KV namespace.",
+  ].join("\r\n");
+  await env.ALERT.send(new EmailMessage(ALERT_FROM, ALERT_TO, raw));
+}
+
 export default {
-  async fetch(req, env) {
+  async fetch(req, env, ctx) {
     const url = new URL(req.url);
     if (url.hostname === "www." + APEX) {
       url.hostname = APEX;
       return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
     }
-    if (url.pathname === "/api/checklist") return checklist(req, env, url);
+    if (url.pathname === "/api/checklist") return checklist(req, env, url, ctx);
     const get = req.method === "GET" || req.method === "HEAD";
     if (get && REDIRECTS[url.pathname]) {
       return new Response(null, { status: 301, headers: { Location: new URL(REDIRECTS[url.pathname] + url.search, url).toString(), "Strict-Transport-Security": HSTS } });

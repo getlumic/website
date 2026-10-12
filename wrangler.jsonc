@@ -11,5 +11,7 @@
   },
   "workers_dev": true,
   "preview_urls": true,
-  "kv_namespaces": [{ "binding": "LEADS", "id": "0e0df04f952a45d18b75a71556af25fa" }]
+  "kv_namespaces": [{ "binding": "LEADS", "id": "0e0df04f952a45d18b75a71556af25fa" }],
+  // Sign-up alerts to hello@ via Email Routing on notify.get-lumic.com (apex MX stays Microsoft 365).
+  "send_email": [{ "name": "ALERT", "destination_address": "hello@get-lumic.com" }]
 }
