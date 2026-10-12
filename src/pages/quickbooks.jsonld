@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/systems/quickbooks/#service",
+  "name": "AI agents for QuickBooks",
+  "serviceType": "Accounting automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/systems/quickbooks/",
+  "description": "lumic works with QuickBooks Online and QuickBooks Desktop. An agent prepares bills, receipts and entries, and a person approves before anything posts."
+ }
+]

@@ -67,11 +67,17 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 
 ## Pages
 - [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
+- [Services](https://get-lumic.com/services/): the services hub: one agent per back-office job, the two offers, links to each job page ([markdown](https://get-lumic.com/services/index.md))
 - [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
-- [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
-- [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
+- [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
+- [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): nine live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
+- [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
+- [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
 - [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
+- [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page ([markdown](https://get-lumic.com/systems/index.md))
+- [QuickBooks](https://get-lumic.com/systems/quickbooks/): capability page: lumic works with QuickBooks Online and Desktop; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/quickbooks/index.md))
+- [NetSuite](https://get-lumic.com/systems/netsuite/): capability page: lumic works with NetSuite; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/netsuite/index.md))
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)
 
@@ -185,7 +191,7 @@ The team watches it, tests it every month, fixes what breaks, and upgrades it as
 - Upgrades as tools improve Included
 - Human approval Built in
 
-[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
+[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
 
 Portfolio
 
@@ -249,6 +255,8 @@ If your team runs it, lumic can work with it.
 - Shopify
 
 Client names stay private.
+
+[How lumic works with your systems](https://get-lumic.com/systems/)
 
 How lumic works
 
@@ -362,6 +370,138 @@ A person on your team. The agent makes the entry, and a person checks it and app
 Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 All questions: https://get-lumic.com/faq/
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Back-office automation services: AI agents | lumic"
+description: "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts."
+canonical: https://get-lumic.com/services/
+last_updated: 2026-10-11
+---
+
+# Back-office automation services: AI agents | lumic
+
+> lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts.
+
+Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
+
+Services One agent, one job
+
+# AI agents for the back-office jobs your team does by hand.
+
+lumic builds an AI agent for one back-office job at a time: vendor bills, cash receipts and collections, purchase orders, and the reports your team rebuilds every week. The agent does the work inside the systems you already run. A person approves before anything posts.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
+
+The jobs
+
+## Pick the job that takes the most hours.
+
+Each agent does one job end to end. lumic’s FDEs start beside the person who does it today, then build the agent around how the work is really done.
+
+### AP automation
+
+The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
+
+- Vendor bills and PO matching
+- A person approves each entry
+
+[AP automation →](https://get-lumic.com/services/ap-automation/)
+
+### Cash receipts and collections
+
+Remittances and ACH detail, read and keyed into the ERP. Collections emails and statements drafted from live aging, ready when the day starts.
+
+- Cash receipts keyed for approval
+- A person sends every collections email
+
+[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Dashboards and reporting
+
+Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. No more morning export.
+
+- Live, on your own data
+- Dashboards only read
+
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+
+### Purchasing and PO write-back
+
+The agent drafts purchase orders and writes them back to the ERP.
+
+- Agent · ERP
+- Approval-gated
+
+### Payroll preparation
+
+The agent prepares the payroll entries, and the controller approves them.
+
+- Agent · payroll + accounting software
+- The controller approves every run
+
+### Month-end close entries
+
+An agent prepares the month-end entries, and the controller approves them before anything posts.
+
+- Agent · ERP
+- Approved before posting, every month
+
+[See the full portfolio](https://get-lumic.com/portfolio/)
+
+How lumic engages
+
+## An agent on the job, and a team behind it.
+
+Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
+
+01 · Deploy an agent
+
+### Built on site, one job at a time.
+
+The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs. Your team tests it on real work before it goes live.
+
+- Every deployment covers
+- One job, done end to end
+- A live connection to your systems
+- A person approves every entry
+- A log of every step it takes
+- Live in weeks, not quarters
+
+02 · Managed AI agents
+
+### lumic keeps it working.
+
+Each agent does one role, such as AP clerk, payroll, or month-end reporting, on its own dedicated computer. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+
+- Each managed agent Covered
+- Monitoring Ongoing
+- Testing Monthly
+- Fixes Included
+- Upgrades as tools improve Included
+- Human approval Built in
+
+The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
 
 ---
 
@@ -509,82 +649,100 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "AI automation in St. Louis: on-site FDEs | lumic"
-description: "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
-canonical: https://get-lumic.com/st-louis/
+title: "Cash receipts and collections automation | lumic"
+description: "An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one."
+canonical: https://get-lumic.com/services/cash-receipts-and-collections/
 last_updated: 2026-10-11
 ---
 
-# AI automation in St. Louis: on-site FDEs | lumic
+# Cash receipts and collections automation | lumic
 
-> lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.
+> An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one.
 
-Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact: hello@get-lumic.com
 
-Based in St. Louis On site, by appointment
+Services Cash receipts and collections
 
-# Forward Deployed Engineers in St. Louis. On site, where the work happens.
+# Cash receipts entered and collections drafted, ready when the day starts.
 
-lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
+An agent reads remittances and ACH detail and keys them into the ERP. Another drafts the collections email and the statement for each past-due customer, from live aging. A person approves each receipt and sends every email. lumic builds it on site and keeps it working.
 
-[Book a call](https://cal.com/lumic/20-minute-call) Area served
+[Book a call](https://cal.com/lumic/20-minute-call) See how it works
 
-Area served
+The job, step by step
 
-## Greater St. Louis, Missouri and Illinois.
+## From remittance to statement. A person signs off.
 
-lumic comes to you, by appointment. Senior people lead every engagement, on site, from scoping to support.
+### It reads the remittance.
 
-Missouri
+The agent reads remittances and ACH detail, the same documents a clerk would key from.
 
-- St. Louis City
-- St. Louis County
-- St. Charles County
-- Jefferson County
-- Franklin County
+### It keys the receipt.
 
-Illinois
+It prepares the cash receipt in the ERP. A person approves each entry before it posts.
 
-- Madison County
-- St. Clair County
+### It drafts collections.
 
-How lumic works
+From live aging, it drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
 
-## lumic starts where the work happens. Live in weeks, not quarters.
+In production
 
-### On-site diagnostic.
+## Running every day.
 
-lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+These agents and the aging view behind them run every day inside an operating company. Clients are kept private.
 
-### Build the agent.
+### Cash receipts
 
-The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
+Remittances and ACH detail, read and keyed into the ERP.
 
-### Managed and kept working.
+- Agent · ERP + bank
+- A person approves each entry
 
-lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+### Collections agent
 
-[How lumic works, in full](https://get-lumic.com/how-lumic-works/)
+From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
-Questions
+- Agent · ERP + inbox
+- Drafts from live aging
+- A person sends every one
 
-## Local, and live in production.
+### Receivables & aging
 
-### Do you work outside St. Louis?
+Live aging by customer, the same view that feeds the collections agent.
 
-Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
+- Dashboard · ERP
+- Live
 
-### What is an FDE?
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
-FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+Clients are kept private; every figure is from production.
 
-### Live and measured.
+[See the full portfolio](https://get-lumic.com/portfolio/)
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+Approval and access
 
-See the work, then meet the team.
+## Nothing posts without you.
 
-Watch the AP agent read, match and enter a vendor bill on the [AP automation](https://get-lumic.com/services/ap-automation/) page, or see every agent and dashboard in the [portfolio](https://get-lumic.com/portfolio/).
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### It runs where it fits.
+
+Each agent works on its own dedicated computer, wherever fits your business, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+
+lumic builds it, and keeps it working.
+
+- Instead of → With lumic
+- Keying every remittance by hand → An agent keys it; you approve
+- A morning spent on collections emails → Drafts ready when the day starts
+- Build-and-ghost consultants → A team that stays on
+
+Other jobs lumic automates: [Services](https://get-lumic.com/services/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -608,157 +766,142 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "How lumic works: FDEs, approvals and data security | lumic"
-description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you."
-canonical: https://get-lumic.com/how-lumic-works/
+title: "Live ERP dashboards and reporting | lumic"
+description: "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them."
+canonical: https://get-lumic.com/services/dashboards-and-reporting/
 last_updated: 2026-10-11
 ---
 
-# How lumic works: FDEs, approvals and data security | lumic
+# Live ERP dashboards and reporting | lumic
 
-> lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.
+> Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them.
 
-Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/dashboards-and-reporting/ | Contact: hello@get-lumic.com
 
-How lumic works FDEs for business
+Services Dashboards and reporting
 
-# How lumic works: Forward Deployed Engineers, one job at a time.
+# Live dashboards on your own data. No more morning export.
 
-FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working. lumic does not sell software to configure yourself; the team stays to run what it builds.
+Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Every screen answers a question an owner asks. Dashboards only read: nothing posts from them.
 
-[Book a call](https://cal.com/lumic/20-minute-call) Leadership
+[Book a call](https://cal.com/lumic/20-minute-call) See the dashboards
 
-Three steps
+In production
 
-## lumic starts where the work happens. Live in weeks, not quarters.
+## Nine live dashboards, running every day.
 
-### On-site diagnostic.
+These dashboards run every day inside an operating company, on the same live data the agents work from. Clients are kept private.
 
-lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+### Sales & margin
 
-### Build the agent.
+Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
 
-The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
+- Dashboard · ERP
+- Replaces a daily export
+- Multi-company, one view
 
-### Managed and kept working.
+### Receivables & aging
 
-lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+Live aging by customer, the same view that feeds the collections agent.
 
-Services
+- Dashboard · ERP
+- Live
 
-## An agent on the job, and a team behind it.
+[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
 
-lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
+### Consolidated financials
 
-01 · Deploy an agent
+A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.
 
-### One job at a time.
+- Dashboard · ERP
+- Multi-company GL consolidation
+- An income statement that's never stale
 
-The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
+### Job costing & production rates
 
-- AI agents
-- System connections
-- Approval queues
-- Dashboards
-- Workflow redesign
-- Every deployment covers
-- One job, mapped with your team
-- A dedicated computer for it, wherever fits
-- Connected to the systems it needs
-- An approval step before anything posts
-- A log of every action it takes
+Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
 
-02 · Managed AI agents
+- Dashboard · production data + ERP
+- Estimate vs. actual per job
+- Overruns surfaced early
 
-### lumic keeps it working.
+### Purchasing
 
-Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
+Open POs, receipts and vendor price changes.
 
-The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+- Dashboard · ERP
+- Live
 
-- Each managed agent Covered
-- Monitoring Ongoing
-- Testing Monthly
-- Fixes Included
-- Upgrades as tools improve Included
-- Human approval Built in
+### AP workbench
 
-[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
+Every open bill, its PO match and its approval state.
 
-Approval, access and data
+- Dashboard · accounting software
+- Live
 
-## Nothing posts without you.
+[AP automation →](https://get-lumic.com/services/ap-automation/)
 
-### Nothing posts without you.
+### Commissions
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+Rep commissions from live sales.
 
-### It touches only its job.
+- Dashboard · ERP
+- Live
 
-lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+### PTO tracking
 
-### It runs where it fits.
+Balances and requests.
 
-Each agent works on its own dedicated computer, wherever fits your business, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+- Dashboard · HR data
+- Live
 
-### It makes the entry itself.
+### Ask your data (AI)
 
-The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
+Plain-English questions over the same live data. It drafts entries for a person to approve.
+
+- AI assistant · the same live data
+- A person approves each entry
+
+Clients are kept private; every figure is from production.
+
+See them running
+
+## Watch each dashboard on its own.
+
+Short films of the dashboards lumic builds, with narration. Every figure is sample data.
+
+- [Receivables](https://get-lumic.com/video/demos/lumic-keynote-receivables.mp4)
+- [Sales](https://get-lumic.com/video/demos/lumic-keynote-sales.mp4)
+- [Purchasing](https://get-lumic.com/video/demos/lumic-keynote-purchasing.mp4)
+- [Financial](https://get-lumic.com/video/demos/lumic-keynote-financial.mp4)
+- [Ask your data (AI)](https://get-lumic.com/video/demos/lumic-keynote-connector.mp4)
+
+Each film opens on its own. Every figure is sample data.
+
+Read only
+
+## Dashboards only read. Agents do the work.
+
+### Live, on your own data.
+
+Every screen reads straight from your ERP, so it is current the moment you open it. No re-keying. No new system to learn.
+
+### Nothing posts from a dashboard.
+
+Dashboards only read. When work needs doing, an agent prepares the entry, and a person on your team checks it and approves it.
+
+### Kept working.
+
+lumic watches, tests, fixes and upgrades what it builds, for as long as you run it.
 
 lumic builds it, and keeps it working.
 
 - Instead of → With lumic
-- Typing every bill into two systems → An agent enters it; you approve
-- Cash receipts keyed from remittances → An agent enters them; you approve
-- Month-end entries built by hand → Prepared by an agent, approved by you
-- Exporting the same reports every morning → Live dashboards, no export
+- Exporting the same reports every morning → Numbers live, no export
+- Stale spreadsheets nobody trusts → One live set of data
 - Build-and-ghost consultants → A team that stays on
 
-Why lumic
-
-## Forward Deployed Engineers who’ve closed the books.
-
-lumic’s FDEs have finance backgrounds. They don’t just deploy agents; they know which back-office jobs are worth automating because they’ve done them.
-
-Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
-
-### Finance people who code.
-
-Most FDE teams are engineers who learn finance on the job. lumic’s team lived it first: it has done these back-office jobs by hand, then built the agents that do them.
-
-### Live and measured.
-
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
-
-### Is lumic the right fit?
-
-lumic fits a business with people doing repetitive work by hand, that wants it done inside the systems the team already uses, with a person approving what matters. lumic may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
-
-Leadership
-
-### Finance first. Engineers second.
-
-lumic’s leadership includes a controller and a CFP®, based in St. Louis. Its leaders still work in finance, and that is the point: they run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
-
-CG
-
-### Christian Gonzenbach
-
-Co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
-
-[LinkedIn →](https://www.linkedin.com/in/christian-gonzenbach/)
-
-JW
-
-### Joshua Wittenauer, CFP®
-
-Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Leads lumic’s AI-agent work and how each agent handles your data.
-
-[LinkedIn →](https://www.linkedin.com/in/joshua-wittenauer-890339191/)
-
-When you call lumic, you speak with the people who build and run your agents.
-
-See what runs today in the [portfolio](https://get-lumic.com/portfolio/), read [common questions](https://get-lumic.com/faq/), or meet the team on site in [St. Louis](https://get-lumic.com/st-louis/).
+Other jobs lumic automates: [Services](https://get-lumic.com/services/). Every agent and dashboard in production: [Portfolio](https://get-lumic.com/portfolio/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -964,6 +1107,279 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
+title: "How lumic works: FDEs, approvals and data security | lumic"
+description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you."
+canonical: https://get-lumic.com/how-lumic-works/
+last_updated: 2026-10-11
+---
+
+# How lumic works: FDEs, approvals and data security | lumic
+
+> lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.
+
+Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com
+
+How lumic works FDEs for business
+
+# How lumic works: Forward Deployed Engineers, one job at a time.
+
+FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working. lumic does not sell software to configure yourself; the team stays to run what it builds.
+
+[Book a call](https://cal.com/lumic/20-minute-call) Leadership
+
+Three steps
+
+## lumic starts where the work happens. Live in weeks, not quarters.
+
+### On-site diagnostic.
+
+lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+
+### Build the agent.
+
+The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
+
+### Managed and kept working.
+
+lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+
+Services
+
+## An agent on the job, and a team behind it.
+
+lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
+
+01 · Deploy an agent
+
+### One job at a time.
+
+The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
+
+- AI agents
+- System connections
+- Approval queues
+- Dashboards
+- Workflow redesign
+- Every deployment covers
+- One job, mapped with your team
+- A dedicated computer for it, wherever fits
+- Connected to the systems it needs
+- An approval step before anything posts
+- A log of every action it takes
+
+02 · Managed AI agents
+
+### lumic keeps it working.
+
+Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
+
+The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+
+- Each managed agent Covered
+- Monitoring Ongoing
+- Testing Monthly
+- Fixes Included
+- Upgrades as tools improve Included
+- Human approval Built in
+
+[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
+
+Approval, access and data
+
+## Nothing posts without you.
+
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### It runs where it fits.
+
+Each agent works on its own dedicated computer, wherever fits your business, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+
+### It makes the entry itself.
+
+The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
+
+lumic builds it, and keeps it working.
+
+- Instead of → With lumic
+- Typing every bill into two systems → An agent enters it; you approve
+- Cash receipts keyed from remittances → An agent enters them; you approve
+- Month-end entries built by hand → Prepared by an agent, approved by you
+- Exporting the same reports every morning → Live dashboards, no export
+- Build-and-ghost consultants → A team that stays on
+
+Why lumic
+
+## Forward Deployed Engineers who’ve closed the books.
+
+lumic’s FDEs have finance backgrounds. They don’t just deploy agents; they know which back-office jobs are worth automating because they’ve done them.
+
+Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
+
+### Finance people who code.
+
+Most FDE teams are engineers who learn finance on the job. lumic’s team lived it first: it has done these back-office jobs by hand, then built the agents that do them.
+
+### Live and measured.
+
+A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+
+### Is lumic the right fit?
+
+lumic fits a business with people doing repetitive work by hand, that wants it done inside the systems the team already uses, with a person approving what matters. lumic may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
+
+Leadership
+
+### Finance first. Engineers second.
+
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. Its leaders still work in finance, and that is the point: they run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+
+CG
+
+### Christian Gonzenbach
+
+Co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
+
+[LinkedIn →](https://www.linkedin.com/in/christian-gonzenbach/)
+
+JW
+
+### Joshua Wittenauer, CFP®
+
+Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Leads lumic’s AI-agent work and how each agent handles your data.
+
+[LinkedIn →](https://www.linkedin.com/in/joshua-wittenauer-890339191/)
+
+When you call lumic, you speak with the people who build and run your agents.
+
+See what runs today in the [portfolio](https://get-lumic.com/portfolio/), read [common questions](https://get-lumic.com/faq/), or meet the team on site in [St. Louis](https://get-lumic.com/st-louis/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "AI automation in St. Louis: on-site FDEs | lumic"
+description: "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
+canonical: https://get-lumic.com/st-louis/
+last_updated: 2026-10-11
+---
+
+# AI automation in St. Louis: on-site FDEs | lumic
+
+> lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.
+
+Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
+
+Based in St. Louis On site, by appointment
+
+# Forward Deployed Engineers in St. Louis. On site, where the work happens.
+
+lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
+
+[Book a call](https://cal.com/lumic/20-minute-call) Area served
+
+Area served
+
+## Greater St. Louis, Missouri and Illinois.
+
+lumic comes to you, by appointment. Senior people lead every engagement, on site, from scoping to support.
+
+Missouri
+
+- St. Louis City
+- St. Louis County
+- St. Charles County
+- Jefferson County
+- Franklin County
+
+Illinois
+
+- Madison County
+- St. Clair County
+
+How lumic works
+
+## lumic starts where the work happens. Live in weeks, not quarters.
+
+### On-site diagnostic.
+
+lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+
+### Build the agent.
+
+The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
+
+### Managed and kept working.
+
+lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+
+[How lumic works, in full](https://get-lumic.com/how-lumic-works/)
+
+Questions
+
+## Local, and live in production.
+
+### Do you work outside St. Louis?
+
+Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
+
+### What is an FDE?
+
+FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+
+### Live and measured.
+
+A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+
+See the work, then meet the team.
+
+Watch the AP agent read, match and enter a vendor bill on the [AP automation](https://get-lumic.com/services/ap-automation/) page, or see every agent and dashboard in the [portfolio](https://get-lumic.com/portfolio/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
 title: "FAQ: FDEs, AI agents and approvals | lumic"
 description: "What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job."
 canonical: https://get-lumic.com/faq/
@@ -1031,6 +1447,315 @@ If your team runs it, lumic can work with it, whether that's an ERP, accounting 
 lumic fits a business with people doing repetitive work by hand, that wants it done inside the systems the team already uses, with a person approving what matters. lumic may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
 
 The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). One agent, step by step: [AP automation](https://get-lumic.com/services/ap-automation/). Every agent and dashboard: [Portfolio](https://get-lumic.com/portfolio/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Systems lumic works with: ERP and accounting | lumic"
+description: "lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts."
+canonical: https://get-lumic.com/systems/
+last_updated: 2026-10-11
+---
+
+# Systems lumic works with: ERP and accounting | lumic
+
+> lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts.
+
+Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com
+
+Systems Works with what you run
+
+# If your team runs it, lumic can work with it.
+
+lumic’s agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already uses. There is no new system to learn and nothing to migrate. A person approves before anything posts.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the systems
+
+Systems
+
+## Systems lumic works with.
+
+Systems lumic works with
+
+- QuickBooks Online
+- QuickBooks Desktop
+- NetSuite
+- Sage Intacct
+- Sage 100
+- Microsoft Dynamics 365 Business Central
+- Xero
+- Acumatica
+- Bill.com
+- Ramp
+- Expensify
+- ADP
+- Paychex
+- Gusto
+- Salesforce
+- HubSpot
+- Microsoft 365 / Outlook
+- Excel
+- Power BI
+- SQL Server
+- Google Workspace
+- FileMaker
+- Shopify
+- …and hundreds more.
+
+Client names stay private.
+
+### QuickBooks
+
+Agents that work in QuickBooks Online and QuickBooks Desktop: bills, receipts and entries prepared for a person to approve.
+
+- Online and Desktop
+- A person approves each entry
+
+[QuickBooks →](https://get-lumic.com/systems/quickbooks/)
+
+### NetSuite
+
+Agents that work in NetSuite: vendor bills, cash receipts and close entries prepared for a person to approve.
+
+- Cloud ERP
+- A person approves each entry
+
+[NetSuite →](https://get-lumic.com/systems/netsuite/)
+
+Where the agent works
+
+## Inside your systems, under its own login.
+
+### It runs where it fits.
+
+Each agent works on its own dedicated computer, wherever fits your business, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+No migration. No new system.
+
+- Instead of → With lumic
+- Replacing the system your team knows → An agent that works inside it
+- Re-keying between two systems → An agent enters it; you approve
+- Build-and-ghost consultants → A team that stays on
+
+The jobs the agents do: [Services](https://get-lumic.com/services/). How each one is built: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "QuickBooks automation with AI agents | lumic"
+description: "lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts."
+canonical: https://get-lumic.com/systems/quickbooks/
+last_updated: 2026-10-11
+---
+
+# QuickBooks automation with AI agents | lumic
+
+> lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts.
+
+Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com
+
+Systems QuickBooks
+
+# AI agents that work in QuickBooks Online and QuickBooks Desktop.
+
+lumic works with QuickBooks Online and QuickBooks Desktop. An agent prepares bills, receipts and entries in QuickBooks, the same records a clerk would key, and a person approves before anything posts. lumic builds it on site and keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
+
+Online and Desktop
+
+## Both editions, one way of working.
+
+Many automation tools reach only QuickBooks Online. lumic’s agents work wherever your books live.
+
+### QuickBooks Online
+
+The agent works with your QuickBooks Online company through its own login, and prepares each entry for a person to approve.
+
+- Cloud edition
+- A person approves each entry
+
+### QuickBooks Desktop
+
+The agent works on its own dedicated computer, under its own login, inside the QuickBooks Desktop company file your team already uses.
+
+- Desktop edition
+- Its own computer and login
+
+### Alongside QuickBooks
+
+Bills arrive by email, purchase orders may live in another system, and reports end up in spreadsheets. The agent works across the tools around your books, not just inside them.
+
+- Email, spreadsheets, other systems
+- One job, end to end
+
+The jobs
+
+## What an agent does in QuickBooks.
+
+### Vendor bills.
+
+The agent reads each vendor bill from email, matches it to the purchase order, and prepares the bill in QuickBooks for a person to approve. [AP automation](https://get-lumic.com/services/ap-automation/)
+
+### Cash receipts and collections.
+
+Remittances read and keyed as receipts for approval, and collections emails drafted from live aging for a person to send. [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Live reports.
+
+Sales, margin and receivables read live from QuickBooks, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
+
+Nothing posts without you.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### The final post stays with you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
+
+Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "NetSuite automation with AI agents | lumic"
+description: "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts."
+canonical: https://get-lumic.com/systems/netsuite/
+last_updated: 2026-10-11
+---
+
+# NetSuite automation with AI agents | lumic
+
+> lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts.
+
+Source: https://get-lumic.com/systems/netsuite/ | Contact: hello@get-lumic.com
+
+Systems NetSuite
+
+# AI agents that work in NetSuite.
+
+lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, the same records your team keys today, and a person approves before anything posts. lumic builds it on site and keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
+
+How it works
+
+## Built around your NetSuite, not a template.
+
+Every NetSuite account is set up differently: its own subsidiaries, approval routing, custom fields and saved searches. lumic’s FDEs start beside the person who does the job today and build the agent around how your account really works.
+
+### Its own role and login
+
+The agent works in NetSuite under its own login, with access to the records its job needs and nothing more.
+
+- Access scoped to the job
+- Every action logged
+
+### Your approval routing
+
+The agent prepares each entry, and a person on your team approves it before anything posts. The final post stays in your hands.
+
+- A person approves each entry
+- The final post stays with you
+
+### Across the tools around it
+
+Bills arrive by email, remittances come from the bank, and someone keeps a spreadsheet on the side. The agent works across all of it, not just inside NetSuite.
+
+- Email, bank detail, spreadsheets
+- One job, end to end
+
+The jobs
+
+## What an agent does in NetSuite.
+
+### Vendor bills.
+
+The agent reads each vendor bill from email, matches it to the purchase order, and prepares the bill in NetSuite for a person to approve. [AP automation](https://get-lumic.com/services/ap-automation/)
+
+### Cash receipts and collections.
+
+Remittances and ACH detail read and keyed as receipts for approval, and collections emails drafted from live aging for a person to send. [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Live reports.
+
+Sales, margin and receivables read live, so nobody rebuilds the same report every week. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
+
+lumic builds it, and keeps it working.
+
+- Instead of → With lumic
+- Keying every bill by hand → An agent prepares it; you approve
+- A long reimplementation project → One job at a time, live in weeks
+- Build-and-ghost consultants → A team that stays on
+
+Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
 
 ## Based in St. Louis. Start with a conversation.
 

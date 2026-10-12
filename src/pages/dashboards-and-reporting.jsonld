@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/services/dashboards-and-reporting/#service",
+  "name": "Live ERP dashboards and reporting",
+  "serviceType": "Business reporting",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/services/dashboards-and-reporting/",
+  "description": "Sales and margin, receivables and aging, consolidated financials, job costing, purchasing, AP, commissions and PTO dashboards, read live from the ERP. Dashboards only read."
+ }
+]

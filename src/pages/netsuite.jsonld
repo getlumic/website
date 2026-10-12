@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/systems/netsuite/#service",
+  "name": "AI agents for NetSuite",
+  "serviceType": "ERP automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/systems/netsuite/",
+  "description": "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries, and a person approves before anything posts."
+ }
+]

@@ -104,7 +104,7 @@ The team watches it, tests it every month, fixes what breaks, and upgrades it as
 - Upgrades as tools improve Included
 - Human approval Built in
 
-[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
+[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
 
 Portfolio
 
@@ -168,6 +168,8 @@ If your team runs it, lumic can work with it.
 - Shopify
 
 Client names stay private.
+
+[How lumic works with your systems](https://get-lumic.com/systems/)
 
 How lumic works
 

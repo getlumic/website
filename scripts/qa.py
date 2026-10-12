@@ -52,6 +52,13 @@ LIST_ITEMS = ["QuickBooks Online", "QuickBooks Desktop", "NetSuite", "Sage Intac
 PRODUCT_PATTERNS = sorted({re.escape(x) for x in PRODUCTS} | {
     r"\bQuickBooks\b", r"\bSage\b", r"\bDynamics 365\b", r"\bBusiness Central\b", r"\bMicrosoft 365\b", r"\bOutlook\b"})
 PRODUCT_PATTERNS = [p if p.startswith(r"\b") else rf"\b{p}\b" for p in PRODUCT_PATTERNS]
+# Systems pages (pages.json "system": <family>): that family's names only, in the page text, title, meta and JSON-LD.
+# Every other product name still fails there. Client and employer names stay banned everywhere.
+FAMILIES = {"quickbooks": [r"/systems/quickbooks/", r"\bQuickBooks Online\b", r"\bQuickBooks Desktop\b", r"\bQuickBooks\b"],
+            "netsuite": [r"/systems/netsuite/", r"\bNetSuite\b"]}  # the page's own URL slug counts as its family
+# No proof, figure or client description on a /systems/ page (a product must never be tied to a client or a number)
+PROOF = [r"64 of 67", r"six weeks", r"\b13 agent roles\b", r"nine (?:live )?dashboards", r"specialty manufacturer",
+         r"multi-company manufacturer", r"30 a day"]
 # Copy that predates the list and stays as written (the flow chart's source tile; Josh's bio, kept verbatim)
 OUTSIDE_OK = ["Excel and CSV files", "with Power BI and SQL by trade"]
 
@@ -102,7 +109,7 @@ def meta_text(html):
     return "\n".join(m for p in pats for m in re.findall(p, html, re.S))
 
 
-def content_checks(where, text, html, home=False):
+def content_checks(where, text, html, home=False, allow=()):
     """Voice, size reveals, banned terms, product names (inner pages: none at all) on visible text, meta and JSON-LD."""
     fails = []
     blocks = ld_blocks(html)
@@ -120,6 +127,9 @@ def content_checks(where, text, html, home=False):
             for m in re.finditer(pat, tt, re.I):
                 fails.append(f"{where} {label}: size reveal or gap phrase {m.group(0)!r}")
         if not home:  # home's visible text gets the banned and product checks above, with its systems-list exception
+
+            for pat in allow:  # a systems page's own product family
+                t = re.sub(pat, " ", t)
             for pat in BANNED:
                 for m in re.finditer(pat, t, re.I):
                     fails.append(f"{where} {label}: banned term {m.group(0)!r}")
@@ -128,7 +138,7 @@ def content_checks(where, text, html, home=False):
                 tp = tp.replace(x, " ")
             for pat in PRODUCT_PATTERNS:
                 for m in re.finditer(pat, tp):
-                    fails.append(f"{where} {label}: product name {m.group(0)!r} (product names only in the home systems list)")
+                    fails.append(f"{where} {label}: product name {m.group(0)!r} (product names only in a systems list, or a systems page's own family)")
     return fails
 
 
@@ -185,9 +195,26 @@ def check_pages(b):
                 fails += [f"{where}: link without target: {h}" for h in sorted(set(bad))]
                 if pg.evaluate("document.querySelectorAll('h1').length") != 1:
                     fails.append(f"{where}: not exactly one <h1>")
-                if pg.evaluate("document.querySelectorAll('[data-systems-list]').length"):
-                    fails.append(f"{where}: a [data-systems-list] outside home (product names stay on home in phase 1)")
-                fails += content_checks(where, pg.evaluate(OPEN_DETAILS_TEXT), html)
+                nlist = pg.evaluate("document.querySelectorAll('[data-systems-list]').length")
+                ptext = pg.evaluate(OPEN_DETAILS_TEXT)
+                if p.get("systems_hub"):
+                    if nlist != 1:
+                        fails.append(f"{where}: systems hub needs exactly one [data-systems-list], found {nlist}")
+                    items = pg.evaluate("[...document.querySelectorAll('[data-systems-list] li')].map(li => li.textContent.trim())")
+                    fails += [f"{where}: systems list item {x!r} is not a listed product" for x in items if x not in PRODUCTS + LIST_ITEMS]
+                    for x in items:  # listed names are fine inside the list; strip them before the page-wide checks
+                        ptext = ptext.replace(x, " ")
+                elif nlist:
+                    fails.append(f"{where}: a [data-systems-list] outside home and the systems hub")
+                if p["path"].startswith("/systems/"):
+                    body = re.sub(r"<script.*?</script>", " ", html, flags=re.S)
+                    for pat in PROOF:
+                        for m in re.finditer(pat, ptext + " " + body, re.I):
+                            fails.append(f"{where}: proof or client detail {m.group(0)!r} on a systems page")
+                    if re.search(r'href="/portfolio/#', html):
+                        fails.append(f"{where}: links to a portfolio card (systems pages link the portfolio page only)")
+                allow = [x for f in FAMILIES.values() for x in f] if p.get("systems_hub") else FAMILIES.get(p.get("system"), ())
+                fails += content_checks(where, ptext, html, allow=allow)
                 # internal links answer 200 (fragments dropped), media answers 200
                 links = pg.evaluate("[...document.querySelectorAll('a[href^=\"/\"]')].map(a => a.href.split('#')[0])")
                 media = pg.evaluate("[...document.querySelectorAll('video source, video[poster], img[src]')].map(e => e.src || e.poster)")

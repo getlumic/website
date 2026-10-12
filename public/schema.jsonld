@@ -184,6 +184,110 @@
    ]
   },
   {
+   "@type": "CollectionPage",
+   "@id": "https://get-lumic.com/services/#webpage",
+   "url": "https://get-lumic.com/services/",
+   "name": "Back-office automation services: AI agents | lumic",
+   "description": "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/services/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/services/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Services",
+     "item": "https://get-lumic.com/services/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/services/#service",
+   "name": "Managed AI agents for back-office work",
+   "serviceType": "Back-office automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/services/",
+   "description": "lumic builds an AI agent for one back-office job at a time and keeps it working for a monthly fee. A person approves before anything posts."
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://get-lumic.com/services/#jobs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "AP automation",
+     "url": "https://get-lumic.com/services/ap-automation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Cash receipts and collections",
+     "url": "https://get-lumic.com/services/cash-receipts-and-collections/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Dashboards and reporting",
+     "url": "https://get-lumic.com/services/dashboards-and-reporting/"
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/ap-automation/#webpage",
    "url": "https://get-lumic.com/services/ap-automation/",
@@ -213,6 +317,12 @@
     {
      "@type": "ListItem",
      "position": 2,
+     "name": "Services",
+     "item": "https://get-lumic.com/services/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
      "name": "AP automation",
      "item": "https://get-lumic.com/services/ap-automation/"
     }
@@ -277,10 +387,10 @@
   },
   {
    "@type": "WebPage",
-   "@id": "https://get-lumic.com/st-louis/#webpage",
-   "url": "https://get-lumic.com/st-louis/",
-   "name": "AI automation in St. Louis: on-site FDEs | lumic",
-   "description": "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.",
+   "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#webpage",
+   "url": "https://get-lumic.com/services/cash-receipts-and-collections/",
+   "name": "Cash receipts and collections automation | lumic",
+   "description": "An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -289,12 +399,12 @@
     "@id": "https://get-lumic.com/#org"
    },
    "breadcrumb": {
-    "@id": "https://get-lumic.com/st-louis/#breadcrumb"
+    "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://get-lumic.com/st-louis/#breadcrumb",
+   "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -305,17 +415,68 @@
     {
      "@type": "ListItem",
      "position": 2,
-     "name": "St. Louis",
-     "item": "https://get-lumic.com/st-louis/"
+     "name": "Services",
+     "item": "https://get-lumic.com/services/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Cash receipts and collections",
+     "item": "https://get-lumic.com/services/cash-receipts-and-collections/"
     }
    ]
   },
   {
-   "@type": "AboutPage",
-   "@id": "https://get-lumic.com/how-lumic-works/#webpage",
-   "url": "https://get-lumic.com/how-lumic-works/",
-   "name": "How lumic works: FDEs, approvals and data security | lumic",
-   "description": "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.",
+   "@type": "Service",
+   "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#service",
+   "name": "Cash receipts and collections automation",
+   "serviceType": "Accounts receivable automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/services/cash-receipts-and-collections/",
+   "description": "An agent reads remittances and ACH detail and keys them into the ERP for a person to approve, and drafts collections emails and statements from live aging for a person to send."
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/services/dashboards-and-reporting/#webpage",
+   "url": "https://get-lumic.com/services/dashboards-and-reporting/",
+   "name": "Live ERP dashboards and reporting | lumic",
+   "description": "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -324,12 +485,12 @@
     "@id": "https://get-lumic.com/#org"
    },
    "breadcrumb": {
-    "@id": "https://get-lumic.com/how-lumic-works/#breadcrumb"
+    "@id": "https://get-lumic.com/services/dashboards-and-reporting/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://get-lumic.com/how-lumic-works/#breadcrumb",
+   "@id": "https://get-lumic.com/services/dashboards-and-reporting/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -340,35 +501,61 @@
     {
      "@type": "ListItem",
      "position": 2,
-     "name": "How lumic works",
-     "item": "https://get-lumic.com/how-lumic-works/"
+     "name": "Services",
+     "item": "https://get-lumic.com/services/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Dashboards and reporting",
+     "item": "https://get-lumic.com/services/dashboards-and-reporting/"
     }
    ]
   },
   {
-   "@type": "Person",
-   "@id": "https://get-lumic.com/how-lumic-works/#christian-gonzenbach",
-   "name": "Christian Gonzenbach",
-   "jobTitle": "Co-founder",
-   "description": "Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.",
-   "image": "https://get-lumic.com/img/founders/christian.jpg",
-   "worksFor": {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/services/dashboards-and-reporting/#service",
+   "name": "Live ERP dashboards and reporting",
+   "serviceType": "Business reporting",
+   "provider": {
     "@id": "https://get-lumic.com/#org"
    },
-   "sameAs": "https://www.linkedin.com/in/christian-gonzenbach/"
-  },
-  {
-   "@type": "Person",
-   "@id": "https://get-lumic.com/how-lumic-works/#joshua-wittenauer",
-   "name": "Joshua Wittenauer",
-   "jobTitle": "Co-founder",
-   "honorificSuffix": "CFP®",
-   "description": "CFP®, corporate-finance trained. Leads lumic's AI-agent work and how each agent handles client data.",
-   "image": "https://get-lumic.com/img/founders/josh.jpg",
-   "worksFor": {
-    "@id": "https://get-lumic.com/#org"
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
    },
-   "sameAs": "https://www.linkedin.com/in/joshua-wittenauer-890339191/"
+   "url": "https://get-lumic.com/services/dashboards-and-reporting/",
+   "description": "Sales and margin, receivables and aging, consolidated financials, job costing, purchasing, AP, commissions and PTO dashboards, read live from the ERP. Dashboards only read."
   },
   {
    "@type": "CollectionPage",
@@ -620,6 +807,101 @@
    ]
   },
   {
+   "@type": "AboutPage",
+   "@id": "https://get-lumic.com/how-lumic-works/#webpage",
+   "url": "https://get-lumic.com/how-lumic-works/",
+   "name": "How lumic works: FDEs, approvals and data security | lumic",
+   "description": "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/how-lumic-works/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/how-lumic-works/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "How lumic works",
+     "item": "https://get-lumic.com/how-lumic-works/"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://get-lumic.com/how-lumic-works/#christian-gonzenbach",
+   "name": "Christian Gonzenbach",
+   "jobTitle": "Co-founder",
+   "description": "Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.",
+   "image": "https://get-lumic.com/img/founders/christian.jpg",
+   "worksFor": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "sameAs": "https://www.linkedin.com/in/christian-gonzenbach/"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://get-lumic.com/how-lumic-works/#joshua-wittenauer",
+   "name": "Joshua Wittenauer",
+   "jobTitle": "Co-founder",
+   "honorificSuffix": "CFP®",
+   "description": "CFP®, corporate-finance trained. Leads lumic's AI-agent work and how each agent handles client data.",
+   "image": "https://get-lumic.com/img/founders/josh.jpg",
+   "worksFor": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "sameAs": "https://www.linkedin.com/in/joshua-wittenauer-890339191/"
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/st-louis/#webpage",
+   "url": "https://get-lumic.com/st-louis/",
+   "name": "AI automation in St. Louis: on-site FDEs | lumic",
+   "description": "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/st-louis/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/st-louis/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "St. Louis",
+     "item": "https://get-lumic.com/st-louis/"
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/faq/#webpage",
    "url": "https://get-lumic.com/faq/",
@@ -747,6 +1029,213 @@
      }
     }
    ]
+  },
+  {
+   "@type": "CollectionPage",
+   "@id": "https://get-lumic.com/systems/#webpage",
+   "url": "https://get-lumic.com/systems/",
+   "name": "Systems lumic works with: ERP and accounting | lumic",
+   "description": "lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/systems/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/systems/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Systems",
+     "item": "https://get-lumic.com/systems/"
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/systems/quickbooks/#webpage",
+   "url": "https://get-lumic.com/systems/quickbooks/",
+   "name": "QuickBooks automation with AI agents | lumic",
+   "description": "lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/systems/quickbooks/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/systems/quickbooks/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Systems",
+     "item": "https://get-lumic.com/systems/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "QuickBooks",
+     "item": "https://get-lumic.com/systems/quickbooks/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/systems/quickbooks/#service",
+   "name": "AI agents for QuickBooks",
+   "serviceType": "Accounting automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/systems/quickbooks/",
+   "description": "lumic works with QuickBooks Online and QuickBooks Desktop. An agent prepares bills, receipts and entries, and a person approves before anything posts."
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/systems/netsuite/#webpage",
+   "url": "https://get-lumic.com/systems/netsuite/",
+   "name": "NetSuite automation with AI agents | lumic",
+   "description": "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/systems/netsuite/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/systems/netsuite/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Systems",
+     "item": "https://get-lumic.com/systems/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "NetSuite",
+     "item": "https://get-lumic.com/systems/netsuite/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/systems/netsuite/#service",
+   "name": "AI agents for NetSuite",
+   "serviceType": "ERP automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/systems/netsuite/",
+   "description": "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries, and a person approves before anything posts."
   }
  ]
 }

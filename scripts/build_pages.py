@@ -139,7 +139,9 @@ def faq_ld(items, at):
 
 
 def crumbs(p):
-    return (f'<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li>'
+    par = p.get("parent")  # optional middle level, e.g. {"label": "Services", "href": "/services/"}
+    mid = f'<li><a href="{par["href"]}">{esc(par["label"])}</a></li>' if par else ""
+    return (f'<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li>{mid}'
             f'<li aria-current="page">{esc(p["crumb"])}</li></ol></nav>')
 
 
@@ -150,8 +152,9 @@ def page_ld(p):
          "inLanguage": "en", "about": {"@id": SITE + "/#org"}, "publisher": {"@id": SITE + "/#org"},
          "breadcrumb": {"@id": url + "#breadcrumb"}},
         {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
-            {"@type": "ListItem", "position": 2, "name": p["crumb"], "item": url}]},
+            {"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(
+                [("Home", SITE + "/")] + ([(p["parent"]["label"], SITE + p["parent"]["href"])] if p.get("parent") else [])
+                + [(p["crumb"], url)])]},
     ]
     extra = SRC / f'{p["id"]}.jsonld'
     if extra.exists():
@@ -179,11 +182,18 @@ def page_ld(p):
     return {"@context": "https://schema.org", "@graph": fill(graph)}
 
 
+def films_list():
+    """The tool films list from the home page (between its films markers), reused as is."""
+    h = io.open(PUB / "index.html", encoding="utf-8").read()
+    m = re.search(r"<!-- films:start.*?-->\n(.*?)\n\s*<!-- films:end -->", h, re.S)
+    return m.group(1) if m else ""
+
+
 def build_page(p):
     url = SITE + p["path"]
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
-                 "{{film_overview}}": FILM_OVERVIEW, "{{faq_items}}": faq_items(CFG["faq"], "        ")}.items():
+                 "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        ")}.items():
         body = body.replace(k, v)
     assert "{{" not in body, f'{p["id"]}: unfilled token {re.search(r"{{.*?}}", body).group(0)}'
     t, d = esc(p["title"]), esc(p["description"])

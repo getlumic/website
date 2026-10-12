@@ -35,6 +35,15 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:services-markdown",
+   "displayName": "Services as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/services/index.md",
+   "representativeQueries": [
+    "Back-office automation services: AI agents"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:ap-automation-markdown",
    "displayName": "AP automation as markdown",
    "type": "text/markdown",
@@ -44,21 +53,21 @@
    ]
   },
   {
-   "identifier": "urn:air:get-lumic.com:docs:st-louis-markdown",
-   "displayName": "St. Louis as markdown",
+   "identifier": "urn:air:get-lumic.com:docs:cash-receipts-and-collections-markdown",
+   "displayName": "Cash receipts and collections as markdown",
    "type": "text/markdown",
-   "url": "https://get-lumic.com/st-louis/index.md",
+   "url": "https://get-lumic.com/services/cash-receipts-and-collections/index.md",
    "representativeQueries": [
-    "AI automation in St. Louis: on-site FDEs"
+    "Cash receipts and collections automation"
    ]
   },
   {
-   "identifier": "urn:air:get-lumic.com:docs:how-lumic-works-markdown",
-   "displayName": "How lumic works as markdown",
+   "identifier": "urn:air:get-lumic.com:docs:dashboards-and-reporting-markdown",
+   "displayName": "Dashboards and reporting as markdown",
    "type": "text/markdown",
-   "url": "https://get-lumic.com/how-lumic-works/index.md",
+   "url": "https://get-lumic.com/services/dashboards-and-reporting/index.md",
    "representativeQueries": [
-    "How lumic works: FDEs, approvals and data security"
+    "Live ERP dashboards and reporting"
    ]
   },
   {
@@ -71,12 +80,57 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:how-lumic-works-markdown",
+   "displayName": "How lumic works as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/how-lumic-works/index.md",
+   "representativeQueries": [
+    "How lumic works: FDEs, approvals and data security"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:st-louis-markdown",
+   "displayName": "St. Louis as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/st-louis/index.md",
+   "representativeQueries": [
+    "AI automation in St. Louis: on-site FDEs"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:faq-markdown",
    "displayName": "FAQ as markdown",
    "type": "text/markdown",
    "url": "https://get-lumic.com/faq/index.md",
    "representativeQueries": [
     "FAQ: FDEs, AI agents and approvals"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:systems-markdown",
+   "displayName": "Systems as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/systems/index.md",
+   "representativeQueries": [
+    "Systems lumic works with: ERP and accounting"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:quickbooks-markdown",
+   "displayName": "QuickBooks as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/systems/quickbooks/index.md",
+   "representativeQueries": [
+    "QuickBooks automation with AI agents"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:netsuite-markdown",
+   "displayName": "NetSuite as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/systems/netsuite/index.md",
+   "representativeQueries": [
+    "NetSuite automation with AI agents"
    ]
   },
   {

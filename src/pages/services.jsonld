@@ -1,0 +1,42 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/services/#service",
+  "name": "Managed AI agents for back-office work",
+  "serviceType": "Back-office automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/services/",
+  "description": "lumic builds an AI agent for one back-office job at a time and keeps it working for a monthly fee. A person approves before anything posts."
+ },
+ {
+  "@type": "ItemList",
+  "@id": "https://get-lumic.com/services/#jobs",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "AP automation",
+    "url": "https://get-lumic.com/services/ap-automation/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Cash receipts and collections",
+    "url": "https://get-lumic.com/services/cash-receipts-and-collections/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Dashboards and reporting",
+    "url": "https://get-lumic.com/services/dashboards-and-reporting/"
+   }
+  ]
+ }
+]

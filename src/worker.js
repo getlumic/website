@@ -10,7 +10,7 @@
 //   and images (their file names are reused when a film is replaced, so not longer than that).
 const APEX = "get-lumic.com";
 // md-pages:start
-const MD_PAGES = new Set(["/", "/services/ap-automation/", "/st-louis/", "/how-lumic-works/", "/portfolio/", "/faq/"]);
+const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/st-louis/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/"]);
 // md-pages:end
 const REDIRECTS = { "/about": "/how-lumic-works/", "/about/": "/how-lumic-works/" };
 function mdFor(path) {

@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#service",
+  "name": "Cash receipts and collections automation",
+  "serviceType": "Accounts receivable automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/services/cash-receipts-and-collections/",
+  "description": "An agent reads remittances and ACH detail and keys them into the ERP for a person to approve, and drafts collections emails and statements from live aging for a person to send."
+ }
+]
