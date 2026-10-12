@@ -1,0 +1,7 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/forward-deployed-engineers/#service", "name": "Forward-deployed engineers in St. Louis",
+  "serviceType": "Forward deployed engineering", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/forward-deployed-engineers/",
+  "description": "lumic's forward-deployed engineers are based in St. Louis and have finance backgrounds. They work on site, build AI agents inside the client's own systems, and stay to run them after launch. A person approves every entry before it posts."}
+]

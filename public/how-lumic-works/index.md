@@ -149,7 +149,7 @@ Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Le
 
 When you call lumic, you speak with the people who build and run your agents.
 
-See what runs today in the [portfolio](https://get-lumic.com/portfolio/), read [common questions](https://get-lumic.com/faq/), or meet the team on site in [St. Louis](https://get-lumic.com/st-louis/).
+See what runs today in the [portfolio](https://get-lumic.com/portfolio/), read [common questions](https://get-lumic.com/faq/), or meet the team on site in [St. Louis](https://get-lumic.com/st-louis/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). An FDE or a consultant: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/).
 
 ## Based in St. Louis. Start with a conversation.
 

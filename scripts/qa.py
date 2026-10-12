@@ -16,6 +16,11 @@ meta and JSON-LD). /st-louis/ carries no street address. The sitemap lists every
 matching canonical. Off localhost: /about/ and /about answer 301 -> /how-lumic-works/. Home's FAQPage covers exactly
 the questions it shows.
 
+Phase 5: the approved pricing lines appear word for word on /pricing/, home and /services/ with the "Book a call to talk
+real pricing" button; each page with an "h1" in pages.json shows it; a page's FAQPage covers exactly the questions it
+shows; /guardrails/ adds no new security claim; no JSON-LD carries a fixed price (minPrice only); the four new pages sit
+in the footer and /st-louis/ links both of its children; /privacy/ is third person and names what the checklist stores.
+
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
 """
@@ -79,6 +84,20 @@ HOME_OK = ["What happens next"]  # the home contact block's heading (live copy, 
 # A service-area business: no street address anywhere on /st-louis/, including the schema
 ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
            r"\b\d{1,5}\s+(?:[NSEW]\.?\s+)?[A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*\s+(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way|Court|Ct|Place|Pl|Parkway|Pkwy|Suite|Ste)\b"]
+# Phase 5 (2026-10-12). Pricing lines are approved word for word (scripts/build_pages.py PRICE_*); each must appear on these
+# paths exactly as written, and the CTA must read as approved and go to the booking page.
+CAL = "https://cal.com/lumic/20-minute-call"
+PRICING_CTA = "Book a call to talk real pricing"
+PRICING_BLOCK_LINES = ["On-site work $1,500/day, credited toward phase one.",
+                       "Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.",
+                       "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."]
+PRICING_LINES = {"/": PRICING_BLOCK_LINES, "/services/": PRICING_BLOCK_LINES,
+                 "/pricing/": ["Free consultation.", "Managed agents from $1,000/month.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES}
+# /guardrails/ collects only practices the site already states: no new security or control claims
+GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIPAA", r"\bGDPR\b", r"penetration", r"\bpaus",
+                         r"revok", r"zero[- ]trust", r"compliant"]
+# A schema price is a starting price only (minPrice or "starting" wording); never a fixed "price" field
+FIXED_PRICE_KEYS = ("price",)
 OPEN_DETAILS_TEXT = """(() => { const c = [...document.querySelectorAll('details:not([open])')]; c.forEach(d => { d.open = true; });
     const t = document.body.innerText; c.forEach(d => { d.open = false; }); return t; })()"""
 
@@ -146,8 +165,97 @@ def content_checks(where, text, html, home=False, allow=()):
     return fails
 
 
-def check_pages(b):
+def ld_items(x):
+    """Every (key, value) pair in a JSON-LD tree."""
+    if isinstance(x, dict):
+        for k, v in x.items():
+            yield k, v
+            yield from ld_items(v)
+    elif isinstance(x, list):
+        for v in x:
+            yield from ld_items(v)
+
+
+def norm(s):
+    return re.sub(r"[ \t]+", " ", (s or "").replace(" ", " ").replace("‑", "-")).strip()
+
+
+def check_phase5(b):
+    """Pricing copy word for word with its CTA, each page's H1, FAQPage = the questions shown, guardrails claim nothing new,
+    no fixed schema price, the new pages in the footer and linked both ways with /st-louis/, privacy in third person."""
     fails = []
+    pg = b.new_page(viewport={"width": 1440, "height": 900})
+
+    def load(path):
+        pg.goto(BASE + path, wait_until="load")
+        return norm(pg.evaluate(OPEN_DETAILS_TEXT)), fetch(BASE + path)[1]
+
+    for path, lines in PRICING_LINES.items():
+        text, _ = load(path)
+        fails += [f"{path}: pricing line missing or reworded: {l!r}" for l in lines if l not in text]
+        ctas = pg.evaluate(f"[...document.querySelectorAll('a')].filter(a => a.textContent.trim() === {json.dumps(PRICING_CTA)}).map(a => a.href)")
+        if not ctas:
+            fails.append(f"{path}: no {PRICING_CTA!r} button")
+        fails += [f"{path}: {PRICING_CTA!r} goes to {h}, want {CAL}" for h in ctas if h != CAL]
+        if path != "/pricing/" and not pg.evaluate("!!document.querySelector('#pricing a[href=\"/pricing/\"]')"):
+            fails.append(f"{path}: the pricing block does not link /pricing/")
+    seen_ld = []
+    for p in CFG["pages"]:
+        if not (p.get("h1") or p.get("faq") or p["id"] in ("faq", "guardrails", "st-louis")):
+            continue
+        text, html = load(p["path"])
+        if p.get("h1"):
+            h1 = norm(pg.evaluate("document.querySelector('h1').textContent"))
+            if h1 != p["h1"]:
+                fails.append(f"{p['path']}: H1 {h1!r}, want {p['h1']!r}")
+        faqld = [q["name"] for blk in ld_blocks(html) if isinstance(blk, dict) for g in blk.get("@graph", []) if g.get("@type") == "FAQPage"
+                 for q in g["mainEntity"]]
+        shown = [norm(x) for x in pg.evaluate("[...document.querySelectorAll('#faq .wl h3')].map(h => h.textContent)")]
+        if (p.get("faq") or p["id"] == "faq") and (not faqld or faqld != shown):
+            fails.append(f"{p['path']}: FAQPage JSON-LD {faqld} does not match the questions shown {shown}")
+        if p["id"] == "guardrails":
+            lds = "\n".join(s for blk in ld_blocks(html) if not isinstance(blk, str) for s in ld_strings(blk))
+            for pat in GUARDRAILS_NEW_CLAIMS:
+                for m in re.finditer(pat, text + "\n" + lds + "\n" + meta_text(html), re.I):
+                    fails.append(f"/guardrails/: {m.group(0)!r} is not a practice the site already states")
+        if p["id"] == "st-louis":
+            for href in ("/st-louis/ai-consulting/", "/forward-deployed-engineers/"):
+                if f'href="{href}"' not in html:
+                    fails.append(f"/st-louis/: no link to {href}")
+        if p["id"] == "st-louis-ai-consulting":
+            for href in ["/st-louis/", "/how-lumic-works/", "/guardrails/", "/pricing/"] + [
+                    x["path"] for x in CFG["pages"] if x.get("parent", {}).get("href") == "/services/"]:
+                if f'href="{href}"' not in html:
+                    fails.append(f"{p['path']}: no link to {href}")
+    # no fixed price anywhere in the schema (home, every page, schema.jsonld): starting prices use minPrice
+    for path in ["/"] + [p["path"] for p in CFG["pages"]]:
+        html = fetch(BASE + path)[1]
+        seen_ld += [(path, blk) for blk in ld_blocks(html) if isinstance(blk, dict)]
+    try:
+        seen_ld.append(("/schema.jsonld", json.loads(fetch(BASE + "/schema.jsonld")[1])))
+    except Exception as e:
+        fails.append(f"/schema.jsonld: {e}")
+    for path, blk in seen_ld:
+        fails += [f"{path}: JSON-LD has a fixed {k!r} {v!r} (use minPrice, a starting price)" for k, v in ld_items(blk) if k in FIXED_PRICE_KEYS]
+    # the new pages are in the footer of every page (home checked here; inner pages share the same footer)
+    home = fetch(BASE + "/")[1]
+    foot = re.search(r"<footer>.*?</footer>", home, re.S)
+    for href in ("/st-louis/ai-consulting/", "/forward-deployed-engineers/", "/guardrails/", "/pricing/"):
+        if not foot or f'href="{href}"' not in foot.group(0):
+            fails.append(f"footer: no link to {href}")
+    # /privacy/ (hand-written, outside pages.json): third person, and it names what the checklist form stores
+    text, html = load("/privacy/")
+    for m in re.finditer(WE, text, re.I):
+        fails.append(f"/privacy/: first-person word {m.group(0)!r}")
+    for x in ("checklist form", "email address", "the page it was submitted from", "browser type"):
+        if x not in text:
+            fails.append(f"/privacy/: does not say the checklist form stores {x!r}")
+    pg.close()
+    return fails
+
+
+def check_pages(b):
+    fails = check_phase5(b)
     local = re.match(r"https?://(127\.0\.0\.1|localhost)", BASE) is not None
     # home: JSON-LD parses, voice and size rules, and its FAQPage covers exactly the questions it shows
     st, home = fetch(BASE + "/")

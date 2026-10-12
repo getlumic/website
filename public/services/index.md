@@ -111,7 +111,25 @@ Each agent does one role, such as AP clerk, payroll, or month-end reporting, on 
 - Upgrades as tools improve Included
 - Human approval Built in
 
-The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
 
 ## Based in St. Louis. Start with a conversation.
 

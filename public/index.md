@@ -104,6 +104,24 @@ The team watches it, tests it every month, fixes what breaks, and upgrades it as
 - Upgrades as tools improve Included
 - Human approval Built in
 
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
 [See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
 
 Portfolio

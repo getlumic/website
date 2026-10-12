@@ -43,7 +43,7 @@ Weeks, not quarters. A recent managed AP agent went live about six weeks after t
 
 ### What does it cost?
 
-It depends on the job. After a 20-minute call, lumic sends a written proposal with what the team would build, the timeline, and the cost. Once an agent is live, lumic runs it for a monthly fee.
+It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ### Do you work outside St. Louis?
 

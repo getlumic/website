@@ -1,0 +1,14 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/pricing/#service", "name": "Managed AI agents for back-office work",
+  "serviceType": "Back-office automation", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "url": "https://get-lumic.com/pricing/",
+  "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+  "hasOfferCatalog": {"@type": "OfferCatalog", "name": "lumic pricing: starting points, not quotes", "itemListElement": [
+   {"@type": "Offer", "name": "Consultation", "description": "Free consultation."},
+   {"@type": "Offer", "name": "On-site work", "description": "On-site work $1,500/day, credited toward phase one."},
+   {"@type": "Offer", "name": "Managed agents", "description": "Managed agents from $1,000/month, a starting price: one workflow, one system, a person approves every entry, a monthly summary. The build is a separate, one-time cost, scoped after the free consultation.",
+    "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": 1000, "priceCurrency": "USD", "unitText": "month"}},
+   {"@type": "Offer", "name": "Full build-and-run", "description": "Full build-and-run from $2,500–6,000/month, a starting price, not a quote. The build is a separate, one-time cost, scoped after the free consultation.",
+    "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": 2500, "maxPrice": 6000, "priceCurrency": "USD", "unitText": "month"}}
+  ]}}
+]

@@ -107,6 +107,24 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:guardrails-markdown",
+   "displayName": "Guardrails as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/guardrails/index.md",
+   "representativeQueries": [
+    "Guardrails: approval, logging and access"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:pricing-markdown",
+   "displayName": "Pricing as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/pricing/index.md",
+   "representativeQueries": [
+    "Pricing: AI agents for the back office"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:manufacturing-markdown",
    "displayName": "Manufacturing as markdown",
    "type": "text/markdown",
@@ -140,6 +158,24 @@
    "url": "https://get-lumic.com/st-louis/index.md",
    "representativeQueries": [
     "AI automation in St. Louis: on-site FDEs"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:st-louis-ai-consulting-markdown",
+   "displayName": "AI consulting as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/st-louis/ai-consulting/index.md",
+   "representativeQueries": [
+    "AI Consulting & Automation in St. Louis"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:forward-deployed-engineers-markdown",
+   "displayName": "Forward-deployed engineers as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/forward-deployed-engineers/index.md",
+   "representativeQueries": [
+    "Forward-deployed engineers in St. Louis"
    ]
   },
   {

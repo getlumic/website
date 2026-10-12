@@ -1052,6 +1052,156 @@
   },
   {
    "@type": "WebPage",
+   "@id": "https://get-lumic.com/guardrails/#webpage",
+   "url": "https://get-lumic.com/guardrails/",
+   "name": "Guardrails: approval, logging and access | lumic",
+   "description": "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/guardrails/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/guardrails/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guardrails",
+     "item": "https://get-lumic.com/guardrails/"
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/pricing/#webpage",
+   "url": "https://get-lumic.com/pricing/",
+   "name": "Pricing: AI agents for the back office | lumic",
+   "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/pricing/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/pricing/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Pricing",
+     "item": "https://get-lumic.com/pricing/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/pricing/#service",
+   "name": "Managed AI agents for back-office work",
+   "serviceType": "Back-office automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "url": "https://get-lumic.com/pricing/",
+   "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "lumic pricing: starting points, not quotes",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "name": "Consultation",
+      "description": "Free consultation."
+     },
+     {
+      "@type": "Offer",
+      "name": "On-site work",
+      "description": "On-site work $1,500/day, credited toward phase one."
+     },
+     {
+      "@type": "Offer",
+      "name": "Managed agents",
+      "description": "Managed agents from $1,000/month, a starting price: one workflow, one system, a person approves every entry, a monthly summary. The build is a separate, one-time cost, scoped after the free consultation.",
+      "priceSpecification": {
+       "@type": "UnitPriceSpecification",
+       "minPrice": 1000,
+       "priceCurrency": "USD",
+       "unitText": "month"
+      }
+     },
+     {
+      "@type": "Offer",
+      "name": "Full build-and-run",
+      "description": "Full build-and-run from $2,500–6,000/month, a starting price, not a quote. The build is a separate, one-time cost, scoped after the free consultation.",
+      "priceSpecification": {
+       "@type": "UnitPriceSpecification",
+       "minPrice": 2500,
+       "maxPrice": 6000,
+       "priceCurrency": "USD",
+       "unitText": "month"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/manufacturing/#webpage",
    "url": "https://get-lumic.com/industries/manufacturing/",
    "name": "Back-office AI automation for manufacturers | lumic",
@@ -1327,6 +1477,272 @@
   },
   {
    "@type": "WebPage",
+   "@id": "https://get-lumic.com/st-louis/ai-consulting/#webpage",
+   "url": "https://get-lumic.com/st-louis/ai-consulting/",
+   "name": "AI Consulting & Automation in St. Louis | lumic",
+   "description": "lumic's FDEs are based in St. Louis. They come on site, build an AI agent for one back-office job at a time, and keep it working. A person approves each entry.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/st-louis/ai-consulting/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/st-louis/ai-consulting/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "St. Louis",
+     "item": "https://get-lumic.com/st-louis/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI consulting",
+     "item": "https://get-lumic.com/st-louis/ai-consulting/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/st-louis/ai-consulting/#service",
+   "name": "AI consulting and automation in St. Louis",
+   "serviceType": "AI consulting and automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/st-louis/ai-consulting/",
+   "description": "lumic's Forward Deployed Engineers are based in St. Louis. They come on site, find the back-office work done by hand, build an AI agent for one job at a time inside the systems the business already runs, and keep it working. A person approves every entry before it posts."
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/st-louis/ai-consulting/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does lumic offer AI consulting in St. Louis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site diagnostic of the back-office jobs your team does by hand."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does lumic automate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Back-office jobs, one agent per job: vendor bills and PO matching, cash receipts and collections, the payroll journal entry, month-end close entries, and live dashboards and reporting."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is lumic different from an AI consultant?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who approves what the agent does?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does AI consulting and automation cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which areas does lumic serve?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/forward-deployed-engineers/#webpage",
+   "url": "https://get-lumic.com/forward-deployed-engineers/",
+   "name": "Forward-deployed engineers in St. Louis | lumic",
+   "description": "A forward-deployed engineer works on site, builds inside your own systems and stays to run it after launch. A consultant advises and leaves. Based in St. Louis.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/forward-deployed-engineers/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/forward-deployed-engineers/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Forward-deployed engineers",
+     "item": "https://get-lumic.com/forward-deployed-engineers/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/forward-deployed-engineers/#service",
+   "name": "Forward-deployed engineers in St. Louis",
+   "serviceType": "Forward deployed engineering",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/forward-deployed-engineers/",
+   "description": "lumic's forward-deployed engineers are based in St. Louis and have finance backgrounds. They work on site, build AI agents inside the client's own systems, and stay to run them after launch. A person approves every entry before it posts."
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/forward-deployed-engineers/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a forward-deployed engineer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An engineer who works on site with a business, builds inside its own systems, and stays to run what was built. lumic's FDEs have finance backgrounds and build AI into one back-office job at a time."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is an FDE different from a consultant?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A consultant advises and leaves. An FDE builds the work inside your own systems and stays to run it after launch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where are lumic's FDEs based?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do lumic's FDEs build?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI agents for back-office jobs: vendor bills, cash receipts and collections, payroll journal entries, month-end close entries, and live dashboards. A person on your team approves every entry before it posts."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does an engagement start?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "With a free consultation: a 20-minute call. Then a written proposal with what lumic would build, the timeline and the cost, and an on-site visit."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
    "@id": "https://get-lumic.com/faq/#webpage",
    "url": "https://get-lumic.com/faq/",
    "name": "FAQ: FDEs, AI agents and approvals | lumic",
@@ -1409,7 +1825,7 @@
      "name": "What does it cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "It depends on the job. After a 20-minute call, lumic sends a written proposal with what the team would build, the timeline, and the cost. Once an agent is live, lumic runs it for a monthly fee."
+      "text": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes."
      }
     },
     {

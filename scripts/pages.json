@@ -20,6 +20,11 @@
       "href": "/how-lumic-works/"
     },
     {
+      "label": "Pricing",
+      "href": "/pricing/",
+      "opt": true
+    },
+    {
       "label": "St. Louis",
       "href": "/st-louis/"
     },
@@ -91,8 +96,24 @@
       "href": "/how-lumic-works/#leadership"
     },
     {
+      "label": "Guardrails",
+      "href": "/guardrails/"
+    },
+    {
+      "label": "Pricing",
+      "href": "/pricing/"
+    },
+    {
       "label": "St. Louis",
       "href": "/st-louis/"
+    },
+    {
+      "label": "AI consulting, St. Louis",
+      "href": "/st-louis/ai-consulting/"
+    },
+    {
+      "label": "Forward-deployed engineers",
+      "href": "/forward-deployed-engineers/"
     },
     {
       "label": "FAQ",
@@ -211,6 +232,28 @@
       "films": []
     },
     {
+      "id": "guardrails",
+      "path": "/guardrails/",
+      "crumb": "Guardrails",
+      "purpose": "the practices on every agent, as already stated across the site: a person approves every entry, everything logged, access limited to the job",
+      "title": "Guardrails: approval, logging and access | lumic",
+      "description": "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "Guardrails: nothing posts without you."
+    },
+    {
+      "id": "pricing",
+      "path": "/pricing/",
+      "crumb": "Pricing",
+      "purpose": "starting prices: free consultation, on-site day rate, managed agents and full build-and-run per month; starting points, not quotes",
+      "title": "Pricing: AI agents for the back office | lumic",
+      "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "Pricing, in plain numbers."
+    },
+    {
       "id": "manufacturing",
       "path": "/industries/manufacturing/",
       "crumb": "Manufacturing",
@@ -249,6 +292,83 @@
       "description": "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.",
       "type": "WebPage",
       "films": []
+    },
+    {
+      "id": "st-louis-ai-consulting",
+      "path": "/st-louis/ai-consulting/",
+      "crumb": "AI consulting",
+      "parent": {
+        "label": "St. Louis",
+        "href": "/st-louis/"
+      },
+      "purpose": "AI consulting and automation in St. Louis: on-site FDEs, the five back-office jobs, how an engagement runs, starting prices",
+      "title": "AI Consulting & Automation in St. Louis | lumic",
+      "description": "lumic's FDEs are based in St. Louis. They come on site, build an AI agent for one back-office job at a time, and keep it working. A person approves each entry.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "AI Consulting & Automation in St. Louis",
+      "faq": [
+        {
+          "q": "Does lumic offer AI consulting in St. Louis?",
+          "a": "Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site diagnostic of the back-office jobs your team does by hand."
+        },
+        {
+          "q": "What does lumic automate?",
+          "a": "Back-office jobs, one agent per job: vendor bills and PO matching, cash receipts and collections, the payroll journal entry, month-end close entries, and live dashboards and reporting."
+        },
+        {
+          "q": "How is lumic different from an AI consultant?",
+          "a": "A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
+        },
+        {
+          "q": "Who approves what the agent does?",
+          "a": "A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands."
+        },
+        {
+          "q": "What does AI consulting and automation cost?",
+          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500&ndash;6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+        },
+        {
+          "q": "Which areas does lumic serve?",
+          "a": "Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.",
+          "html": "Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit. The area in full: <a href=\"/st-louis/\">St. Louis</a>."
+        }
+      ]
+    },
+    {
+      "id": "forward-deployed-engineers",
+      "path": "/forward-deployed-engineers/",
+      "crumb": "Forward-deployed engineers",
+      "purpose": "what a forward-deployed engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant",
+      "title": "Forward-deployed engineers in St. Louis | lumic",
+      "description": "A forward-deployed engineer works on site, builds inside your own systems and stays to run it after launch. A consultant advises and leaves. Based in St. Louis.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "Forward-deployed engineers in St. Louis",
+      "faq": [
+        {
+          "q": "What is a forward-deployed engineer?",
+          "a": "An engineer who works on site with a business, builds inside its own systems, and stays to run what was built. lumic's FDEs have finance backgrounds and build AI into one back-office job at a time."
+        },
+        {
+          "q": "How is an FDE different from a consultant?",
+          "a": "A consultant advises and leaves. An FDE builds the work inside your own systems and stays to run it after launch."
+        },
+        {
+          "q": "Where are lumic's FDEs based?",
+          "a": "In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit."
+        },
+        {
+          "q": "What do lumic's FDEs build?",
+          "a": "AI agents for back-office jobs: vendor bills, cash receipts and collections, payroll journal entries, month-end close entries, and live dashboards. A person on your team approves every entry before it posts.",
+          "html": "AI agents for back-office jobs: vendor bills, cash receipts and collections, payroll journal entries, month-end close entries, and live dashboards. A person on your team approves every entry before it posts. The jobs in full: <a href=\"/services/\">Services</a>."
+        },
+        {
+          "q": "How does an engagement start?",
+          "a": "With a free consultation: a 20-minute call. Then a written proposal with what lumic would build, the timeline and the cost, and an on-site visit."
+        }
+      ]
     },
     {
       "id": "faq",
@@ -368,7 +488,8 @@
     },
     {
       "q": "What does it cost?",
-      "a": "It depends on the job. After a 20-minute call, lumic sends a written proposal with what the team would build, the timeline, and the cost. Once an agent is live, lumic runs it for a monthly fee."
+      "a": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
+      "html": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500&ndash;6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
     },
     {
       "q": "Do you work outside St. Louis?",

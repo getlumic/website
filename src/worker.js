@@ -10,7 +10,7 @@
 //   and images (their file names are reused when a film is replaced, so not longer than that).
 const APEX = "get-lumic.com";
 // md-pages:start
-const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
+const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/forward-deployed-engineers/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
 // md-pages:end
 const REDIRECTS = { "/about": "/how-lumic-works/", "/about/": "/how-lumic-works/" };
 function mdFor(path) {

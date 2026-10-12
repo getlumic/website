@@ -1,0 +1,7 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/st-louis/ai-consulting/#service", "name": "AI consulting and automation in St. Louis",
+  "serviceType": "AI consulting and automation", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/st-louis/ai-consulting/",
+  "description": "lumic's Forward Deployed Engineers are based in St. Louis. They come on site, find the back-office work done by hand, build an AI agent for one job at a time inside the systems the business already runs, and keep it working. A person approves every entry before it posts."}
+]

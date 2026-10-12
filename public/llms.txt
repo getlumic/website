@@ -62,6 +62,15 @@ lumic's leadership includes a controller and a CFP®, based in St. Louis. Its le
 ## Area served
 Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
 
+## Pricing
+- Free consultation.
+- On-site work $1,500/day, credited toward phase one.
+- Managed agents from $1,000/month (one workflow, one system, a person approves every entry, a monthly summary).
+- Full build-and-run from $2,500–6,000/month.
+- Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+- Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+- Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
+
 ## How to start
 A 20-minute call, then a written proposal with what lumic would build, the timeline and the cost, then a visit to meet the team. Contact: hello@get-lumic.com
 
@@ -75,10 +84,14 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): nine live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
 - [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
+- [Guardrails](https://get-lumic.com/guardrails/): the practices on every agent, as already stated across the site: a person approves every entry, everything logged, access limited to the job ([markdown](https://get-lumic.com/guardrails/index.md))
+- [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed agents and full build-and-run per month; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
 - [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))
 - [Distribution](https://get-lumic.com/industries/distribution/): AI agents for a distributor's back office: cash receipts, collections, margin by customer, multi-company; anonymized live proof ([markdown](https://get-lumic.com/industries/distribution/index.md))
 - [Service firms](https://get-lumic.com/industries/service-firms/): AI agents for a service firm's back office: bills, receipts, collections, payroll, month-end; general process only ([markdown](https://get-lumic.com/industries/service-firms/index.md))
 - [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
+- [AI consulting](https://get-lumic.com/st-louis/ai-consulting/): AI consulting and automation in St. Louis: on-site FDEs, the five back-office jobs, how an engagement runs, starting prices ([markdown](https://get-lumic.com/st-louis/ai-consulting/index.md))
+- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/): what a forward-deployed engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant ([markdown](https://get-lumic.com/forward-deployed-engineers/index.md))
 - [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
 - [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page ([markdown](https://get-lumic.com/systems/index.md))
 - [QuickBooks](https://get-lumic.com/systems/quickbooks/): capability page: lumic works with QuickBooks Online and Desktop; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/quickbooks/index.md))

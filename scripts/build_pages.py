@@ -2,10 +2,11 @@
 
 For each page in pages.json: stamps the shared head (title, meta, canonical, Open Graph, JSON-LD), header, breadcrumb,
 contact block and footer around src/pages/<id>.html and writes public/<path>/index.html. Extra JSON-LD nodes for a
-page come from src/pages/<id>.jsonld (a JSON list; the string "@AREA" becomes the area served).
+page come from src/pages/<id>.jsonld (a JSON list; the string "@AREA" becomes the area served). A page's own questions
+come from its pages.json "faq" list: {{page_faq}} shows them and the same list writes the page's FAQPage.
 
 Also, in place:
-- public/index.html: the header, footer and FAQ (list and FAQPage JSON-LD) between their markers. The rest of the home
+- public/index.html: the header, footer, FAQ (list and FAQPage JSON-LD) and the pricing block between their markers. The rest of the home
   page stays hand-edited.
 - public/sitemap.xml: home, every page, privacy; lastmod is each source file's last commit date (today if uncommitted).
 - src/worker.js: the list of paths that have a markdown copy (between the md-pages markers).
@@ -30,6 +31,33 @@ AR = ('<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="
 ARROW = ('<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
          'stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>')
 BOOK = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a call\n          {ARROW}</a>'
+# Pricing (Christian 2026-10-12, via the Phase 5 brief): the lines are approved word for word; do not reword them.
+BOOK_PRICING = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a call to talk real pricing\n          {ARROW}</a>'
+PRICE_ONSITE = "On-site work $1,500/day, credited toward phase one."
+PRICE_BUILD = ("Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, "
+               "scoped after the free consultation.")
+PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
+# The short pricing block on home and the Services hub (the same card and ledger as the offers above it); links /pricing/.
+PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
+      <div>
+        <span class="tag">Pricing</span>
+        <h3>Free consultation.</h3>
+        <p>{PRICE_ONSITE}</p>
+        <p>{PRICE_BUILD}</p>
+        <p>{PRICE_FINAL}</p>
+        <div class="cta">
+          {BOOK_PRICING}
+          <a class="btn btn-g" href="/pricing/">See pricing {ARROW}</a>
+        </div>
+      </div>
+      <ul class="ledger" aria-label="Pricing at a glance">
+        <li class="hd"><span>At a glance</span></li>
+        <li><span>Consultation</span><span class="st">Free</span></li>
+        <li><span>On-site work</span><span class="st">$1,500/day</span></li>
+        <li><span>The build</span><span class="st">One-time, scoped</span></li>
+        <li><span>Running and support</span><span class="st">Monthly</span></li>
+      </ul>
+    </article>"""
 BRAND = 'lum<span class="idot">&#305;<span class="idot-dot"></span></span>c'
 SND = ('<button class="snd" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on"><svg class="off" viewBox="0 0 24 24" '
        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/>'
@@ -161,6 +189,8 @@ def page_ld(p):
         graph += json.loads(io.open(extra, encoding="utf-8").read())
     if p["id"] == "faq":
         graph.append(faq_ld(CFG["faq"], url + "#faq"))
+    if p.get("faq"):  # a page's own questions (pages.json "faq"), shown by {{page_faq}} and marked up from the same list
+        graph.append(faq_ld(p["faq"], url + "#faq"))
     if p["id"] == "portfolio":  # one Service per card, read from the cards themselves (no Review or rating markup)
         src = io.open(SRC / "portfolio.html", encoding="utf-8").read()
         cards = re.findall(r'<article class="pf"[^>]*>.*?<h3>(.*?)</h3>\s*<p>(.*?)</p>', src, re.S)
@@ -193,7 +223,10 @@ def build_page(p):
     url = SITE + p["path"]
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
-                 "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        ")}.items():
+                 "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{price_onsite}}": PRICE_ONSITE,
+                 "{{price_build}}": PRICE_BUILD, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
+                 "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
+                 "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
         body = body.replace(k, v)
     assert "{{" not in body, f'{p["id"]}: unfilled token {re.search(r"{{.*?}}", body).group(0)}'
     t, d = esc(p["title"]), esc(p["description"])
@@ -269,6 +302,7 @@ def build_home():
     h = stamp(h, "footer", footer(home=True))
     home_faq = [x for x in CFG["faq"] if x.get("home")]
     h = stamp(h, "faq", faq_items(home_faq))
+    h = stamp(h, "pricing", "    " + PRICING_BLOCK)
     m = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', h, re.S)
     ld = json.loads(m.group(2))
     ld["@graph"] = [faq_ld(home_faq, SITE + "/#faq") if g.get("@type") == "FAQPage" else g for g in ld["@graph"]]
