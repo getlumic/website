@@ -110,6 +110,8 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
+Managed agents from $1,000/month.
+
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.

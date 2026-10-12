@@ -34,6 +34,7 @@ BOOK = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a
 # Pricing (Christian 2026-10-12, via the Phase 5 brief): the lines are approved word for word; do not reword them.
 BOOK_PRICING = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a call to talk real pricing\n          {ARROW}</a>'
 PRICE_ONSITE = "On-site work $1,500/day, credited toward phase one."
+PRICE_AGENTS = "Managed agents from $1,000/month."
 PRICE_BUILD = ("Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, "
                "scoped after the free consultation.")
 PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
@@ -43,6 +44,7 @@ PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
         <span class="tag">Pricing</span>
         <h3>Free consultation.</h3>
         <p>{PRICE_ONSITE}</p>
+        <p>{PRICE_AGENTS}</p>
         <p>{PRICE_BUILD}</p>
         <p>{PRICE_FINAL}</p>
         <div class="cta">

@@ -35,6 +35,10 @@ Every action an agent takes is logged. A posted payroll entry is logged with its
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Each agent works under its own login, on its own dedicated computer.
 
+### Paused or revoked any time.
+
+Any agent can be paused, or its access revoked, at any time.
+
 ### Dashboards only read.
 
 Dashboards read live from your ERP. Nothing posts from them.

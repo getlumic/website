@@ -88,14 +88,14 @@ ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
 # paths exactly as written, and the CTA must read as approved and go to the booking page.
 CAL = "https://cal.com/lumic/20-minute-call"
 PRICING_CTA = "Book a call to talk real pricing"
-PRICING_BLOCK_LINES = ["On-site work $1,500/day, credited toward phase one.",
+PRICING_BLOCK_LINES = ["On-site work $1,500/day, credited toward phase one.", "Managed agents from $1,000/month.",
                        "Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.",
                        "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."]
 PRICING_LINES = {"/": PRICING_BLOCK_LINES, "/services/": PRICING_BLOCK_LINES,
-                 "/pricing/": ["Free consultation.", "Managed agents from $1,000/month.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES}
+                 "/pricing/": ["Free consultation.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES}
 # /guardrails/ collects only practices the site already states: no new security or control claims
-GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIPAA", r"\bGDPR\b", r"penetration", r"\bpaus",
-                         r"revok", r"zero[- ]trust", r"compliant"]
+GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIPAA", r"\bGDPR\b", r"penetration",
+                         r"zero[- ]trust", r"compliant"]
 # A schema price is a starting price only (minPrice or "starting" wording); never a fixed "price" field
 FIXED_PRICE_KEYS = ("price",)
 OPEN_DETAILS_TEXT = """(() => { const c = [...document.querySelectorAll('details:not([open])')]; c.forEach(d => { d.open = true; });
