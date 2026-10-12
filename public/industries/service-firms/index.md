@@ -2,7 +2,7 @@
 title: "Back-office automation for service firms | lumic"
 description: "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
-last_updated: 2026-10-11
+last_updated: 2026-10-12
 ---
 
 # Back-office automation for service firms | lumic
@@ -78,6 +78,14 @@ Revenue, margin and receivables read live from your books, so nobody rebuilds th
 [Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 Approval and access
 

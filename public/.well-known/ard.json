@@ -197,6 +197,15 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:month-end-red-flags-markdown",
+   "displayName": "Month-end red flags as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/resources/month-end-red-flags/index.md",
+   "representativeQueries": [
+    "Month-End Red Flags Service Firms Usually Miss"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:schema",
    "displayName": "Organization, services, pages and FAQ (schema.org)",
    "type": "application/ld+json",

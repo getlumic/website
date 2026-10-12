@@ -85,5 +85,6 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [NetSuite](https://get-lumic.com/systems/netsuite/): capability page: lumic works with NetSuite; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/netsuite/index.md))
 - [Sage 100](https://get-lumic.com/systems/sage-100/): capability page: lumic works with Sage 100; the jobs an agent does there; live dashboards; approval ([markdown](https://get-lumic.com/systems/sage-100/index.md))
 - [Sage Intacct](https://get-lumic.com/systems/sage-intacct/): capability page: lumic works with Sage Intacct; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/sage-intacct/index.md))
+- [Month-end red flags](https://get-lumic.com/resources/month-end-red-flags/): the free checklist: ten month-end red flags service firms usually miss; PDF download ([markdown](https://get-lumic.com/resources/month-end-red-flags/index.md))
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)

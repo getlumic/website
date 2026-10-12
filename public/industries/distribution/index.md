@@ -2,7 +2,7 @@
 title: "Back-office AI automation for distributors | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-10-11
+last_updated: 2026-10-12
 ---
 
 # Back-office AI automation for distributors | lumic
@@ -76,6 +76,14 @@ Plain-English questions over the same live data. It drafts entries for a person 
 - A person approves each entry
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 Approval and access
 

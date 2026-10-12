@@ -10,7 +10,7 @@
 //   and images (their file names are reused when a film is replaced, so not longer than that).
 const APEX = "get-lumic.com";
 // md-pages:start
-const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-intacct/"]);
+const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
 // md-pages:end
 const REDIRECTS = { "/about": "/how-lumic-works/", "/about/": "/how-lumic-works/" };
 function mdFor(path) {
@@ -100,6 +100,39 @@ async function serveVideo(req, env) {
   return new Response(body, { status: 206, headers: h });
 }
 
+
+// Checklist email capture: POST /api/checklist (one email field plus a hidden honeypot). A valid email is stored in the
+// LEADS KV namespace as {email, ts, page, ua}; a filled honeypot gets a normal-looking success and nothing is stored.
+// JSON callers get {ok, pdf, page}; a plain form post (no JS) gets a 303 to the checklist page.
+const CHECKLIST_PAGE = "/resources/month-end-red-flags/";
+const CHECKLIST_PDF = "/resources/month-end-red-flags.pdf";
+const EMAIL_RE = /^[^\s@<>()[\]\,;:"]{1,64}@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
+
+async function checklist(req, env, url) {
+  if (req.method !== "POST") return new Response("Method not allowed", { status: 405, headers: { Allow: "POST", "Strict-Transport-Security": HSTS } });
+  const json = /application\/json/i.test(req.headers.get("Content-Type") || "");
+  let f = {};
+  try {
+    if (json) f = await req.json();
+    else f = Object.fromEntries(await req.formData());
+  } catch (e) { f = {}; }
+  const ok = () => json
+    ? new Response(JSON.stringify({ ok: true, pdf: CHECKLIST_PDF, page: CHECKLIST_PAGE }), { status: 200, headers: { "Content-Type": "application/json", "Cache-Control": "no-store", "Strict-Transport-Security": HSTS } })
+    : new Response(null, { status: 303, headers: { Location: new URL(CHECKLIST_PAGE, url).toString(), "Strict-Transport-Security": HSTS } });
+  if (String(f.website || "").trim()) return ok();                  // honeypot filled: a bot. Pretend success, store nothing.
+  const email = String(f.email || "").trim().toLowerCase();
+  if (email.length > 254 || !EMAIL_RE.test(email)) {
+    return json
+      ? new Response(JSON.stringify({ ok: false, error: "Enter a valid email address." }), { status: 400, headers: { "Content-Type": "application/json", "Strict-Transport-Security": HSTS } })
+      : new Response("Enter a valid email address.", { status: 400, headers: { "Content-Type": "text/plain; charset=utf-8", "Strict-Transport-Security": HSTS } });
+  }
+  const ts = new Date().toISOString();
+  const page = String(f.page || "").slice(0, 200);
+  const ua = (req.headers.get("User-Agent") || "").slice(0, 300);
+  if (env.LEADS) await env.LEADS.put(`lead:${ts}:${email}`, JSON.stringify({ email, ts, page, ua }));
+  return ok();
+}
+
 export default {
   async fetch(req, env) {
     const url = new URL(req.url);
@@ -107,6 +140,7 @@ export default {
       url.hostname = APEX;
       return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
     }
+    if (url.pathname === "/api/checklist") return checklist(req, env, url);
     const get = req.method === "GET" || req.method === "HEAD";
     if (get && REDIRECTS[url.pathname]) {
       return new Response(null, { status: 301, headers: { Location: new URL(REDIRECTS[url.pathname] + url.search, url).toString(), "Strict-Transport-Security": HSTS } });

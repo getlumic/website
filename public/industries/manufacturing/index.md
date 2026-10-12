@@ -2,7 +2,7 @@
 title: "Back-office AI automation for manufacturers | lumic"
 description: "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-10-11
+last_updated: 2026-10-12
 ---
 
 # Back-office AI automation for manufacturers | lumic
@@ -76,6 +76,14 @@ Sales and gross margin by customer, product and rep, read live, with the costs t
 - No more morning export
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 Approval and access
 

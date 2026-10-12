@@ -330,6 +330,16 @@
       "description": "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts.",
       "type": "WebPage",
       "films": []
+    },
+    {
+      "id": "month-end-red-flags",
+      "path": "/resources/month-end-red-flags/",
+      "crumb": "Month-end red flags",
+      "purpose": "the free checklist: ten month-end red flags service firms usually miss; PDF download",
+      "title": "Month-End Red Flags Service Firms Usually Miss | lumic",
+      "description": "Ten month-end mistakes in AP, billing, payroll and the close, on one page: a free checklist from lumic, with a PDF download.",
+      "type": "WebPage",
+      "films": []
     }
   ],
   "faq": [

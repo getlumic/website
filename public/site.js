@@ -97,3 +97,26 @@
   openTarget();
   window.addEventListener('hashchange', openTarget);
 })();
+
+/* Checklist form: one email field. Posts to /api/checklist; on success the PDF link replaces the small print. */
+(function(){
+  var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  document.querySelectorAll('form.ck-form').forEach(function(f){
+    var msg = f.parentNode.querySelector('[data-ck-msg]');
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      var email = f.email.value.trim();
+      if (!EMAIL.test(email)) { msg.textContent = 'Enter a valid email address.'; f.email.focus(); return; }
+      var btn = f.querySelector('button'); btn.disabled = true;
+      fetch('/api/checklist', {method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({email: email, website: f.website.value, page: f.page.value})})
+        .then(function(r){ return r.json().then(function(j){ return {ok: r.ok, j: j}; }); })
+        .then(function(x){
+          if (!x.ok || !x.j.ok) { msg.textContent = 'Enter a valid email address.'; btn.disabled = false; return; }
+          msg.innerHTML = 'Your checklist is ready: <a href="' + x.j.pdf + '" download>Download the PDF.</a>';
+          var a = document.createElement('a'); a.href = x.j.pdf; a.download = ''; document.body.appendChild(a); a.click(); a.remove();
+        })
+        .catch(function(){ btn.disabled = false; f.submit(); });
+    });
+  });
+})();

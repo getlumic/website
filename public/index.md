@@ -2,7 +2,7 @@
 title: "lumic | Forward Deployed Engineers for business, St. Louis"
 description: "lumic's Forward Deployed Engineers (FDEs) have finance backgrounds and are based in St. Louis. They put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters."
 canonical: https://get-lumic.com/
-last_updated: 2026-10-11
+last_updated: 2026-10-12
 ---
 
 # lumic | Forward Deployed Engineers for business, St. Louis
@@ -253,6 +253,14 @@ Leadership
 lumic’s leadership includes a controller and a CFP®, based in St. Louis. Its leaders still work in finance, and that is the point: they run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
 
 [Meet the leadership](https://get-lumic.com/how-lumic-works/#leadership)
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 ## Based in St. Louis. Start with a conversation.
 
