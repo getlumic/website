@@ -56,7 +56,8 @@ PRODUCT_PATTERNS = [p if p.startswith(r"\b") else rf"\b{p}\b" for p in PRODUCT_P
 # Every other product name still fails there. Client and employer names stay banned everywhere.
 FAMILIES = {"quickbooks": [r"/systems/quickbooks/", r"\bQuickBooks Online\b", r"\bQuickBooks Desktop\b", r"\bQuickBooks\b"],
             "netsuite": [r"/systems/netsuite/", r"\bNetSuite\b"],
-            "sage-100": [r"/systems/sage-100/", r"\bSage 100\b"]}  # own URL slug counts; a bare "Sage" still fails
+            "sage-100": [r"/systems/sage-100/", r"\bSage 100\b"],
+            "sage-intacct": [r"/systems/sage-intacct/", r"\bSage Intacct\b"]}  # own URL slug counts; a bare "Sage" still fails
 # Pages that carry the general process only (Christian 2026-10-11, 9:33 PM CT): no client proof at all
 NO_PROOF_PATHS = ("/systems/", "/industries/", "/services/payroll/", "/services/month-end-close/")
 # No proof, figure or client description on a /systems/ page (a product must never be tied to a client or a number)

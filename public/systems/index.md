@@ -79,6 +79,15 @@ Agents and live dashboards that work with Sage 100: bills, receipts and entries 
 
 [Sage 100 →](https://get-lumic.com/systems/sage-100/)
 
+### Sage Intacct
+
+Agents that work in Sage Intacct: bills, cash receipts and close entries prepared for a person to approve.
+
+- Cloud accounting
+- A person approves each entry
+
+[Sage Intacct →](https://get-lumic.com/systems/sage-intacct/)
+
 Where the agent works
 
 ## Inside your systems, under its own login.

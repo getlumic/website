@@ -100,7 +100,7 @@ lumic builds it, and keeps it working.
 - Job cost known only at close → Estimate vs. actual, during the job
 - Build-and-ghost consultants → A team that stays on
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). Distributors: [AI automation for distributors](https://get-lumic.com/industries/distribution/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+Every job lumic automates: [Services](https://get-lumic.com/services/). Distributors: [AI automation for distributors](https://get-lumic.com/industries/distribution/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
 ## Based in St. Louis. Start with a conversation.
 

@@ -100,7 +100,7 @@ lumic builds it, and keeps it working.
 - Exporting the same reports every morning → Numbers live, no export
 - Build-and-ghost consultants → A team that stays on
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers: [AI automation for manufacturers](https://get-lumic.com/industries/manufacturing/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers: [AI automation for manufacturers](https://get-lumic.com/industries/manufacturing/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
 ## Based in St. Louis. Start with a conversation.
 

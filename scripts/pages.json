@@ -75,6 +75,10 @@
       "href": "/industries/distribution/"
     },
     {
+      "label": "Service firms",
+      "href": "/industries/service-firms/"
+    },
+    {
       "label": "Portfolio",
       "href": "/portfolio/"
     },
@@ -227,6 +231,16 @@
       "films": []
     },
     {
+      "id": "service-firms",
+      "path": "/industries/service-firms/",
+      "crumb": "Service firms",
+      "purpose": "AI agents for a service firm's back office: bills, receipts, collections, payroll, month-end; general process only",
+      "title": "Back-office automation for service firms | lumic",
+      "description": "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.",
+      "type": "WebPage",
+      "films": []
+    },
+    {
       "id": "st-louis",
       "path": "/st-louis/",
       "crumb": "St. Louis",
@@ -299,6 +313,21 @@
       "purpose": "capability page: lumic works with Sage 100; the jobs an agent does there; live dashboards; approval",
       "title": "Sage 100 automation and dashboards | lumic",
       "description": "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry.",
+      "type": "WebPage",
+      "films": []
+    },
+    {
+      "id": "sage-intacct",
+      "path": "/systems/sage-intacct/",
+      "crumb": "Sage Intacct",
+      "parent": {
+        "label": "Systems",
+        "href": "/systems/"
+      },
+      "system": "sage-intacct",
+      "purpose": "capability page: lumic works with Sage Intacct; the jobs an agent does there; approval",
+      "title": "Sage Intacct automation with AI agents | lumic",
+      "description": "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts.",
       "type": "WebPage",
       "films": []
     }

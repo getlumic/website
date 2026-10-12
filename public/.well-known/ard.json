@@ -125,6 +125,15 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:service-firms-markdown",
+   "displayName": "Service firms as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/industries/service-firms/index.md",
+   "representativeQueries": [
+    "Back-office automation for service firms"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:st-louis-markdown",
    "displayName": "St. Louis as markdown",
    "type": "text/markdown",
@@ -176,6 +185,15 @@
    "url": "https://get-lumic.com/systems/sage-100/index.md",
    "representativeQueries": [
     "Sage 100 automation and dashboards"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:sage-intacct-markdown",
+   "displayName": "Sage Intacct as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/systems/sage-intacct/index.md",
+   "representativeQueries": [
+    "Sage Intacct automation with AI agents"
    ]
   },
   {

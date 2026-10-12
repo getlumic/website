@@ -77,12 +77,14 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
 - [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))
 - [Distribution](https://get-lumic.com/industries/distribution/): AI agents for a distributor's back office: cash receipts, collections, margin by customer, multi-company; anonymized live proof ([markdown](https://get-lumic.com/industries/distribution/index.md))
+- [Service firms](https://get-lumic.com/industries/service-firms/): AI agents for a service firm's back office: bills, receipts, collections, payroll, month-end; general process only ([markdown](https://get-lumic.com/industries/service-firms/index.md))
 - [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
 - [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
 - [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page ([markdown](https://get-lumic.com/systems/index.md))
 - [QuickBooks](https://get-lumic.com/systems/quickbooks/): capability page: lumic works with QuickBooks Online and Desktop; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/quickbooks/index.md))
 - [NetSuite](https://get-lumic.com/systems/netsuite/): capability page: lumic works with NetSuite; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/netsuite/index.md))
 - [Sage 100](https://get-lumic.com/systems/sage-100/): capability page: lumic works with Sage 100; the jobs an agent does there; live dashboards; approval ([markdown](https://get-lumic.com/systems/sage-100/index.md))
+- [Sage Intacct](https://get-lumic.com/systems/sage-intacct/): capability page: lumic works with Sage Intacct; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/sage-intacct/index.md))
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)
 
@@ -496,7 +498,7 @@ Each agent does one role, such as AP clerk, payroll, or month-end reporting, on 
 - Upgrades as tools improve Included
 - Human approval Built in
 
-The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/).
+The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1607,7 +1609,7 @@ lumic builds it, and keeps it working.
 - Job cost known only at close → Estimate vs. actual, during the job
 - Build-and-ghost consultants → A team that stays on
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). Distributors: [AI automation for distributors](https://get-lumic.com/industries/distribution/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+Every job lumic automates: [Services](https://get-lumic.com/services/). Distributors: [AI automation for distributors](https://get-lumic.com/industries/distribution/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1732,7 +1734,134 @@ lumic builds it, and keeps it working.
 - Exporting the same reports every morning → Numbers live, no export
 - Build-and-ghost consultants → A team that stays on
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers: [AI automation for manufacturers](https://get-lumic.com/industries/manufacturing/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers: [AI automation for manufacturers](https://get-lumic.com/industries/manufacturing/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Back-office automation for service firms | lumic"
+description: "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
+canonical: https://get-lumic.com/industries/service-firms/
+last_updated: 2026-10-11
+---
+
+# Back-office automation for service firms | lumic
+
+> AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.
+
+Source: https://get-lumic.com/industries/service-firms/ | Contact: hello@get-lumic.com
+
+Industries Service firms
+
+# AI agents for a service firm’s back office.
+
+Vendor bills entered, cash receipts keyed, collections drafted, payroll and month-end entries prepared. lumic builds an AI agent for each back-office job a service firm does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
+
+The jobs
+
+## The back-office jobs a service firm does by hand.
+
+lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.
+
+### Vendor bills
+
+The agent reads each vendor bill from email and prepares the entry in your accounting software. A person approves it, and nobody retypes it.
+
+- Agent · accounting software
+- A person approves each entry
+
+[AP automation →](https://get-lumic.com/services/ap-automation/)
+
+### Cash receipts
+
+The agent reads remittances and ACH detail and keys them as receipts for a person to approve.
+
+- Agent · accounting + bank
+- A person approves each entry
+
+[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Collections
+
+From live aging, the agent drafts the collections email and the statement for each past-due client. A person reviews each one and sends it.
+
+- Agent · accounting + inbox
+- A person sends every one
+
+### Payroll entries
+
+The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
+
+- Agent · payroll reports + accounting
+- Posted only on the controller’s click
+
+[Payroll →](https://get-lumic.com/services/payroll/)
+
+### Month-end close
+
+The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
+
+- Agent · accounting
+- The controller posts each entry
+
+[Month-end close →](https://get-lumic.com/services/month-end-close/)
+
+### Live reporting
+
+Revenue, margin and receivables read live from your books, so nobody rebuilds the same report every week.
+
+- Dashboard · accounting
+- No more morning export
+
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+
+[See examples in production: Portfolio](https://get-lumic.com/portfolio/)
+
+Approval and access
+
+## Nothing posts without you.
+
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### It runs where it fits.
+
+Each agent works on its own dedicated computer, wherever fits your business, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+
+lumic builds it, and keeps it working.
+
+- Instead of → With lumic
+- Keying every remittance by hand → An agent keys it; you approve
+- Rebuilding the same report every week → Numbers live, no export
+- Build-and-ghost consultants → A team that stays on
+
+Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -2024,6 +2153,15 @@ Agents and live dashboards that work with Sage 100: bills, receipts and entries 
 - A person approves each entry
 
 [Sage 100 →](https://get-lumic.com/systems/sage-100/)
+
+### Sage Intacct
+
+Agents that work in Sage Intacct: bills, cash receipts and close entries prepared for a person to approve.
+
+- Cloud accounting
+- A person approves each entry
+
+[Sage Intacct →](https://get-lumic.com/systems/sage-intacct/)
 
 Where the agent works
 
@@ -2325,6 +2463,103 @@ Remittances read and keyed as receipts for approval, and collections emails draf
 ### Live reports.
 
 Sales, margin and receivables read live from Sage 100, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
+
+Nothing posts without you.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### The final post stays with you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
+
+Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Sage Intacct automation with AI agents | lumic"
+description: "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts."
+canonical: https://get-lumic.com/systems/sage-intacct/
+last_updated: 2026-10-11
+---
+
+# Sage Intacct automation with AI agents | lumic
+
+> lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts.
+
+Source: https://get-lumic.com/systems/sage-intacct/ | Contact: hello@get-lumic.com
+
+Systems Sage Intacct
+
+# AI agents that work in Sage Intacct.
+
+lumic works with Sage Intacct. An agent prepares bills, receipts and entries in Sage Intacct, the same records a clerk would key, and a person approves before anything posts. Dashboards read the same data live. lumic builds it on site and keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
+
+How it works
+
+## Built around your Sage Intacct, not a template.
+
+Every Sage Intacct account is set up its own way, with its own entities, dimensions, approval steps and month-end habits. lumic’s FDEs start beside the person who does the job today and build the agent around how your system really works.
+
+### Its own login
+
+The agent works in Sage Intacct under its own login, with access to the records its job needs and nothing more.
+
+- Access scoped to the job
+- Every action logged
+
+### The final post stays with you
+
+The agent prepares each entry, and a person on your team approves it before anything posts. The final post stays in your hands.
+
+- A person approves each entry
+- Nothing posts without you
+
+### Live dashboards on the same data
+
+Sales, margin, receivables and purchasing read live from Sage Intacct, so nobody exports the same report every morning.
+
+- Dashboards only read
+- Current the moment you open it
+
+The jobs
+
+## What an agent does with Sage Intacct.
+
+### Vendor bills.
+
+The agent reads each vendor bill from email, matches it to the purchase order, and prepares the bill in Sage Intacct for a person to approve. [AP automation](https://get-lumic.com/services/ap-automation/)
+
+### Cash receipts and collections.
+
+Remittances read and keyed as receipts for approval, and collections emails drafted from live aging for a person to send. [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Live reports.
+
+Sales, margin and receivables read live from Sage Intacct, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 Nothing posts without you.
 
