@@ -107,7 +107,7 @@ Each agent does one role, such as AP clerk, payroll, or month-end reporting, on 
 - Upgrades as tools improve Included
 - Human approval Built in
 
-The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/).
+The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/).
 
 ## Based in St. Louis. Start with a conversation.
 

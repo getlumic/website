@@ -59,6 +59,14 @@
       "href": "/systems/"
     },
     {
+      "label": "Manufacturing",
+      "href": "/industries/manufacturing/"
+    },
+    {
+      "label": "Distribution",
+      "href": "/industries/distribution/"
+    },
+    {
       "label": "Portfolio",
       "href": "/portfolio/"
     },
@@ -163,6 +171,26 @@
       "films": []
     },
     {
+      "id": "manufacturing",
+      "path": "/industries/manufacturing/",
+      "crumb": "Manufacturing",
+      "purpose": "AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof",
+      "title": "Back-office AI automation for manufacturers | lumic",
+      "description": "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry.",
+      "type": "WebPage",
+      "films": []
+    },
+    {
+      "id": "distribution",
+      "path": "/industries/distribution/",
+      "crumb": "Distribution",
+      "purpose": "AI agents for a distributor's back office: cash receipts, collections, margin by customer, multi-company; anonymized live proof",
+      "title": "Back-office AI automation for distributors | lumic",
+      "description": "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.",
+      "type": "WebPage",
+      "films": []
+    },
+    {
       "id": "st-louis",
       "path": "/st-louis/",
       "crumb": "St. Louis",
@@ -220,6 +248,21 @@
       "purpose": "capability page: lumic works with NetSuite; the jobs an agent does there; approval",
       "title": "NetSuite automation with AI agents | lumic",
       "description": "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts.",
+      "type": "WebPage",
+      "films": []
+    },
+    {
+      "id": "sage-100",
+      "path": "/systems/sage-100/",
+      "crumb": "Sage 100",
+      "parent": {
+        "label": "Systems",
+        "href": "/systems/"
+      },
+      "system": "sage-100",
+      "purpose": "capability page: lumic works with Sage 100; the jobs an agent does there; live dashboards; approval",
+      "title": "Sage 100 automation and dashboards | lumic",
+      "description": "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry.",
       "type": "WebPage",
       "films": []
     }

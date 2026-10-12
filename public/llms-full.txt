@@ -73,11 +73,14 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): nine live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
 - [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
+- [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))
+- [Distribution](https://get-lumic.com/industries/distribution/): AI agents for a distributor's back office: cash receipts, collections, margin by customer, multi-company; anonymized live proof ([markdown](https://get-lumic.com/industries/distribution/index.md))
 - [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
 - [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
 - [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page ([markdown](https://get-lumic.com/systems/index.md))
 - [QuickBooks](https://get-lumic.com/systems/quickbooks/): capability page: lumic works with QuickBooks Online and Desktop; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/quickbooks/index.md))
 - [NetSuite](https://get-lumic.com/systems/netsuite/): capability page: lumic works with NetSuite; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/netsuite/index.md))
+- [Sage 100](https://get-lumic.com/systems/sage-100/): capability page: lumic works with Sage 100; the jobs an agent does there; live dashboards; approval ([markdown](https://get-lumic.com/systems/sage-100/index.md))
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)
 
@@ -487,7 +490,7 @@ Each agent does one role, such as AP clerk, payroll, or month-end reporting, on 
 - Upgrades as tools improve Included
 - Human approval Built in
 
-The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/).
+The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1281,6 +1284,257 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
+title: "Back-office AI automation for manufacturers | lumic"
+description: "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry."
+canonical: https://get-lumic.com/industries/manufacturing/
+last_updated: 2026-10-11
+---
+
+# Back-office AI automation for manufacturers | lumic
+
+> AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry.
+
+Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com
+
+Industries Manufacturing
+
+# AI agents for the manufacturing back office.
+
+Not the shop floor: the office behind it. lumic builds AI agents for a manufacturer’s back-office jobs, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the proof
+
+In production
+
+## Live and measured.
+
+A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+
+### AP invoice agent
+
+Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+
+- A specialty manufacturer · accounting software + a custom operations database
+- 64 of 67 bills through the agent in week one
+- Kept running for a monthly fee
+
+[AP automation →](https://get-lumic.com/services/ap-automation/)
+
+### Job costing & production rates
+
+Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
+
+- Dashboard · production data + ERP
+- Estimate vs. actual per job
+- Overruns surfaced early
+
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+
+### Purchasing
+
+Open POs, receipts and vendor price changes.
+
+- Dashboard · ERP
+- Live
+
+### Purchasing & PO write-back
+
+The agent drafts purchase orders and writes them back to the ERP.
+
+- Agent · ERP
+- Approval-gated
+
+### Month-end close entries
+
+An agent prepares the month-end entries, and the controller approves them before anything posts.
+
+- Agent · ERP
+- Approved before posting, every month
+
+### A finance team run on agents
+
+At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+
+- About 13 agent roles
+- Nine live dashboards
+
+Clients are kept private; every figure is from production.
+
+[See the full portfolio](https://get-lumic.com/portfolio/)
+
+Approval and access
+
+## Nothing posts without you.
+
+### It makes the entry itself.
+
+The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
+
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+lumic builds it, and keeps it working.
+
+- Instead of → With lumic
+- Typing every bill into two systems → An agent enters it; you approve
+- Job cost known only at close → Estimate vs. actual, during the job
+- Build-and-ghost consultants → A team that stays on
+
+Every job lumic automates: [Services](https://get-lumic.com/services/). Distributors: [AI automation for distributors](https://get-lumic.com/industries/distribution/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Back-office AI automation for distributors | lumic"
+description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
+canonical: https://get-lumic.com/industries/distribution/
+last_updated: 2026-10-11
+---
+
+# Back-office AI automation for distributors | lumic
+
+> Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.
+
+Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumic.com
+
+Industries Distribution
+
+# AI agents for the distribution back office.
+
+Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. lumic builds an AI agent for each back-office job a distributor does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the proof
+
+In production
+
+## A finance team run on agents.
+
+At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+
+### Sales & margin
+
+Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
+
+- Dashboard · ERP
+- Replaces a daily export
+- Multi-company, one view
+
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+
+### Cash receipts
+
+Remittances and ACH detail, read and keyed into the ERP.
+
+- Agent · ERP + bank
+- A person approves each entry
+
+[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Collections agent
+
+From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
+
+- Agent · ERP + inbox
+- Drafts from live aging
+- A person sends every one
+
+### Receivables & aging
+
+Live aging by customer, the same view that feeds the collections agent.
+
+- Dashboard · ERP
+- Live
+
+### Purchasing & PO write-back
+
+The agent drafts purchase orders and writes them back to the ERP.
+
+- Agent · ERP
+- Approval-gated
+
+### Consolidated financials
+
+A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.
+
+- Dashboard · ERP
+- Multi-company GL consolidation
+- An income statement that's never stale
+
+Clients are kept private; every figure is from production.
+
+[See the full portfolio](https://get-lumic.com/portfolio/)
+
+Approval and access
+
+## Nothing posts without you.
+
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### It runs where it fits.
+
+Each agent works on its own dedicated computer, wherever fits your business, under its own login, inside the systems you already run. To read a document, it uses a cloud AI model.
+
+lumic builds it, and keeps it working.
+
+- Instead of → With lumic
+- Keying every remittance by hand → An agent keys it; you approve
+- Exporting the same reports every morning → Numbers live, no export
+- Build-and-ghost consultants → A team that stays on
+
+Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers: [AI automation for manufacturers](https://get-lumic.com/industries/manufacturing/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
 title: "AI automation in St. Louis: on-site FDEs | lumic"
 description: "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
@@ -1541,6 +1795,15 @@ Agents that work in NetSuite: vendor bills, cash receipts and close entries prep
 
 [NetSuite →](https://get-lumic.com/systems/netsuite/)
 
+### Sage 100
+
+Agents and live dashboards that work with Sage 100: bills, receipts and entries prepared for a person to approve.
+
+- Agents and dashboards
+- A person approves each entry
+
+[Sage 100 →](https://get-lumic.com/systems/sage-100/)
+
 Where the agent works
 
 ## Inside your systems, under its own login.
@@ -1754,6 +2017,103 @@ lumic builds it, and keeps it working.
 - Keying every bill by hand → An agent prepares it; you approve
 - A long reimplementation project → One job at a time, live in weeks
 - Build-and-ghost consultants → A team that stays on
+
+Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Sage 100 automation and dashboards | lumic"
+description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
+canonical: https://get-lumic.com/systems/sage-100/
+last_updated: 2026-10-11
+---
+
+# Sage 100 automation and dashboards | lumic
+
+> lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry.
+
+Source: https://get-lumic.com/systems/sage-100/ | Contact: hello@get-lumic.com
+
+Systems Sage 100
+
+# AI agents and live dashboards that work with Sage 100.
+
+lumic works with Sage 100. An agent prepares bills, receipts and entries in Sage 100, the same records a clerk would key, and a person approves before anything posts. Dashboards read the same data live. lumic builds it on site and keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
+
+How it works
+
+## Built around your Sage 100, not a template.
+
+Every Sage 100 company is set up its own way, with its own modules, fields and month-end habits. lumic’s FDEs start beside the person who does the job today and build the agent around how your system really works.
+
+### Its own computer and login
+
+The agent works on its own dedicated computer, under its own login, inside the Sage 100 your team already uses.
+
+- Access scoped to the job
+- Every action logged
+
+### The final post stays with you
+
+The agent prepares each entry, and a person on your team approves it before anything posts. The final post stays in your hands.
+
+- A person approves each entry
+- Nothing posts without you
+
+### Live dashboards on the same data
+
+Sales, margin, receivables and purchasing read live from Sage 100, so nobody exports the same report every morning.
+
+- Dashboards only read
+- Current the moment you open it
+
+The jobs
+
+## What an agent does with Sage 100.
+
+### Vendor bills.
+
+The agent reads each vendor bill from email, matches it to the purchase order, and prepares the bill in Sage 100 for a person to approve. [AP automation](https://get-lumic.com/services/ap-automation/)
+
+### Cash receipts and collections.
+
+Remittances read and keyed as receipts for approval, and collections emails drafted from live aging for a person to send. [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Live reports.
+
+Sales, margin and receivables read live from Sage 100, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
+
+Nothing posts without you.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+### The final post stays with you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
 
 Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
 

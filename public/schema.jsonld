@@ -868,6 +868,166 @@
   },
   {
    "@type": "WebPage",
+   "@id": "https://get-lumic.com/industries/manufacturing/#webpage",
+   "url": "https://get-lumic.com/industries/manufacturing/",
+   "name": "Back-office AI automation for manufacturers | lumic",
+   "description": "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/industries/manufacturing/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/industries/manufacturing/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Manufacturing",
+     "item": "https://get-lumic.com/industries/manufacturing/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/industries/manufacturing/#service",
+   "name": "Back-office AI automation for manufacturers",
+   "serviceType": "Back-office automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Manufacturers"
+   },
+   "url": "https://get-lumic.com/industries/manufacturing/",
+   "description": "AI agents for a manufacturer's back office: vendor bills matched to purchase orders, job costing during the job, purchasing and month-end entries. A person approves each entry."
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/industries/distribution/#webpage",
+   "url": "https://get-lumic.com/industries/distribution/",
+   "name": "Back-office AI automation for distributors | lumic",
+   "description": "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/industries/distribution/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/industries/distribution/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Distribution",
+     "item": "https://get-lumic.com/industries/distribution/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/industries/distribution/#service",
+   "name": "Back-office AI automation for distributors",
+   "serviceType": "Back-office automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Distributors"
+   },
+   "url": "https://get-lumic.com/industries/distribution/",
+   "description": "AI agents for a distributor's back office: cash receipts, collections drafted from live aging, and margin by customer, product and rep across companies. A person approves each entry."
+  },
+  {
+   "@type": "WebPage",
    "@id": "https://get-lumic.com/st-louis/#webpage",
    "url": "https://get-lumic.com/st-louis/",
    "name": "AI automation in St. Louis: on-site FDEs | lumic",
@@ -1236,6 +1396,92 @@
    },
    "url": "https://get-lumic.com/systems/netsuite/",
    "description": "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries, and a person approves before anything posts."
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/systems/sage-100/#webpage",
+   "url": "https://get-lumic.com/systems/sage-100/",
+   "name": "Sage 100 automation and dashboards | lumic",
+   "description": "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/systems/sage-100/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/systems/sage-100/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Systems",
+     "item": "https://get-lumic.com/systems/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Sage 100",
+     "item": "https://get-lumic.com/systems/sage-100/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/systems/sage-100/#service",
+   "name": "AI agents and dashboards for Sage 100",
+   "serviceType": "ERP automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/systems/sage-100/",
+   "description": "lumic works with Sage 100. An agent prepares bills, receipts and entries, dashboards read the same data live, and a person approves before anything posts."
   }
  ]
 }

@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/industries/manufacturing/#service",
+  "name": "Back-office AI automation for manufacturers",
+  "serviceType": "Back-office automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Manufacturers"
+  },
+  "url": "https://get-lumic.com/industries/manufacturing/",
+  "description": "AI agents for a manufacturer's back office: vendor bills matched to purchase orders, job costing during the job, purchasing and month-end entries. A person approves each entry."
+ }
+]

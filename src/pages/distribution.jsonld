@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/industries/distribution/#service",
+  "name": "Back-office AI automation for distributors",
+  "serviceType": "Back-office automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Distributors"
+  },
+  "url": "https://get-lumic.com/industries/distribution/",
+  "description": "AI agents for a distributor's back office: cash receipts, collections drafted from live aging, and margin by customer, product and rep across companies. A person approves each entry."
+ }
+]

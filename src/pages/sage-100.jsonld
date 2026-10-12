@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/systems/sage-100/#service",
+  "name": "AI agents and dashboards for Sage 100",
+  "serviceType": "ERP automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/systems/sage-100/",
+  "description": "lumic works with Sage 100. An agent prepares bills, receipts and entries, dashboards read the same data live, and a person approves before anything posts."
+ }
+]

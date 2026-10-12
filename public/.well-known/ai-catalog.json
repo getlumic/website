@@ -89,6 +89,24 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:manufacturing-markdown",
+   "displayName": "Manufacturing as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/industries/manufacturing/index.md",
+   "representativeQueries": [
+    "Back-office AI automation for manufacturers"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:distribution-markdown",
+   "displayName": "Distribution as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/industries/distribution/index.md",
+   "representativeQueries": [
+    "Back-office AI automation for distributors"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:st-louis-markdown",
    "displayName": "St. Louis as markdown",
    "type": "text/markdown",
@@ -131,6 +149,15 @@
    "url": "https://get-lumic.com/systems/netsuite/index.md",
    "representativeQueries": [
     "NetSuite automation with AI agents"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:sage-100-markdown",
+   "displayName": "Sage 100 as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/systems/sage-100/index.md",
+   "representativeQueries": [
+    "Sage 100 automation and dashboards"
    ]
   },
   {

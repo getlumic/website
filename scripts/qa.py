@@ -55,7 +55,8 @@ PRODUCT_PATTERNS = [p if p.startswith(r"\b") else rf"\b{p}\b" for p in PRODUCT_P
 # Systems pages (pages.json "system": <family>): that family's names only, in the page text, title, meta and JSON-LD.
 # Every other product name still fails there. Client and employer names stay banned everywhere.
 FAMILIES = {"quickbooks": [r"/systems/quickbooks/", r"\bQuickBooks Online\b", r"\bQuickBooks Desktop\b", r"\bQuickBooks\b"],
-            "netsuite": [r"/systems/netsuite/", r"\bNetSuite\b"]}  # the page's own URL slug counts as its family
+            "netsuite": [r"/systems/netsuite/", r"\bNetSuite\b"],
+            "sage-100": [r"/systems/sage-100/", r"\bSage 100\b"]}  # own URL slug counts; a bare "Sage" still fails
 # No proof, figure or client description on a /systems/ page (a product must never be tied to a client or a number)
 PROOF = [r"64 of 67", r"six weeks", r"\b13 agent roles\b", r"nine (?:live )?dashboards", r"specialty manufacturer",
          r"multi-company manufacturer", r"30 a day"]

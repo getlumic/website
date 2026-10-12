@@ -70,6 +70,15 @@ Agents that work in NetSuite: vendor bills, cash receipts and close entries prep
 
 [NetSuite →](https://get-lumic.com/systems/netsuite/)
 
+### Sage 100
+
+Agents and live dashboards that work with Sage 100: bills, receipts and entries prepared for a person to approve.
+
+- Agents and dashboards
+- A person approves each entry
+
+[Sage 100 →](https://get-lumic.com/systems/sage-100/)
+
 Where the agent works
 
 ## Inside your systems, under its own login.
