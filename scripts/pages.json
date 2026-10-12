@@ -51,6 +51,14 @@
       "href": "/services/cash-receipts-and-collections/"
     },
     {
+      "label": "Payroll",
+      "href": "/services/payroll/"
+    },
+    {
+      "label": "Month-end close",
+      "href": "/services/month-end-close/"
+    },
+    {
       "label": "Dashboards",
       "href": "/services/dashboards-and-reporting/"
     },
@@ -133,6 +141,34 @@
       "purpose": "cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends",
       "title": "Cash receipts and collections automation | lumic",
       "description": "An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one.",
+      "type": "WebPage",
+      "films": []
+    },
+    {
+      "id": "payroll",
+      "path": "/services/payroll/",
+      "crumb": "Payroll",
+      "parent": {
+        "label": "Services",
+        "href": "/services/"
+      },
+      "purpose": "the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click",
+      "title": "Payroll journal entry automation | lumic",
+      "description": "An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click.",
+      "type": "WebPage",
+      "films": []
+    },
+    {
+      "id": "month-end-close",
+      "path": "/services/month-end-close/",
+      "crumb": "Month-end close",
+      "parent": {
+        "label": "Services",
+        "href": "/services/"
+      },
+      "purpose": "the month-end agent: reads the period, prepares recurring entries, runs tie-outs; every entry unposted until the controller posts",
+      "title": "Month-end close automation | lumic",
+      "description": "An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it.",
       "type": "WebPage",
       "films": []
     },

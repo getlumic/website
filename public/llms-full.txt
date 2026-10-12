@@ -70,6 +70,8 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [Services](https://get-lumic.com/services/): the services hub: one agent per back-office job, the two offers, links to each job page ([markdown](https://get-lumic.com/services/index.md))
 - [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
+- [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))
+- [Month-end close](https://get-lumic.com/services/month-end-close/): the month-end agent: reads the period, prepares recurring entries, runs tie-outs; every entry unposted until the controller posts ([markdown](https://get-lumic.com/services/month-end-close/index.md))
 - [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): nine live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
 - [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
@@ -449,12 +451,16 @@ The agent prepares the payroll entries, and the controller approves them.
 - Agent · payroll + accounting software
 - The controller approves every run
 
+[Payroll →](https://get-lumic.com/services/payroll/)
+
 ### Month-end close entries
 
 An agent prepares the month-end entries, and the controller approves them before anything posts.
 
 - Agent · ERP
 - Approved before posting, every month
+
+[Month-end close →](https://get-lumic.com/services/month-end-close/)
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -746,6 +752,222 @@ lumic builds it, and keeps it working.
 - Build-and-ghost consultants → A team that stays on
 
 Other jobs lumic automates: [Services](https://get-lumic.com/services/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Payroll journal entry automation | lumic"
+description: "An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click."
+canonical: https://get-lumic.com/services/payroll/
+last_updated: 2026-10-11
+---
+
+# Payroll journal entry automation | lumic
+
+> An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click.
+
+Source: https://get-lumic.com/services/payroll/ | Contact: hello@get-lumic.com
+
+Services Payroll
+
+# The payroll journal entry, built for you. Posted only on your click.
+
+After each payroll run, an agent builds the journal entry from the reports your payroll provider sends, with the month-end accrual and its reversal when a pay period crosses the month. It checks every line, and the controller reviews it and posts it. lumic builds it on site and keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) How it works
+
+How it works
+
+## From the payroll reports to a posted entry. The controller signs off.
+
+### It reads the reports.
+
+The controller drops the reports the payroll provider sends after each run into one place. The agent recognises each file by what it contains, not by its name.
+
+### It builds the entry.
+
+It builds the payroll journal entry with posting rules drawn from your own posted history, and the accrual and reversal when a pay period crosses the month.
+
+### The controller posts it.
+
+The controller reviews the entry and posts it with one click. Nothing is written to the books before that click.
+
+The checks
+
+## Every line checked before anyone posts.
+
+The agent proves the entry before the controller sees it, and it runs every check again at the moment of posting.
+
+### Balanced to the penny
+
+Every entry has to balance, or it can’t be saved. The entry total must tie to the payroll provider’s total, and per-person lines are proved against the payroll register where there is one.
+
+- Debits equal credits
+- Ties to the provider’s total
+
+### New lines stop the run
+
+A line the agent has never seen is not guessed. The controller picks the account from a shortlist, and the agent remembers that choice for every later payroll.
+
+- No guessing
+- Learns each decision once
+
+### A short review screen
+
+The controller sees the totals reconcile, debits equal credits, and which lines need a decision, each with its evidence. The agent then runs a full check against the accounting system without posting anything.
+
+- Evidence for every decision
+- A dry run before the post
+
+### Guards inside the write
+
+When the controller clicks post, every guard runs again: balanced, active accounts only, a duplicate check, and a check that it writes to the right company. It stops at the first failure.
+
+- Only on the controller’s click
+- Stops at the first failure
+
+### Never posted twice
+
+Each posted entry is logged with its transaction number, and the source files are fingerprinted. A posted payroll can’t be rebuilt or posted twice.
+
+- Every post logged
+- Duplicate-proof
+
+### Month-end ready
+
+When a pay period reaches back into the previous month, the agent builds the accrual and its reversal, so the month closes on the right numbers.
+
+- Accrual and reversal
+- [Month-end close](https://get-lumic.com/services/month-end-close/)
+
+Other jobs lumic automates: [Services](https://get-lumic.com/services/). Examples in production: [Portfolio](https://get-lumic.com/portfolio/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+
+---
+
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Month-end close automation | lumic"
+description: "An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it."
+canonical: https://get-lumic.com/services/month-end-close/
+last_updated: 2026-10-11
+---
+
+# Month-end close automation | lumic
+
+> An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
+
+Source: https://get-lumic.com/services/month-end-close/ | Contact: hello@get-lumic.com
+
+Services Month-end close
+
+# Month-end entries prepared and tied out. The controller posts them.
+
+An agent reads the month’s activity from your ERP, prepares the recurring entries a controller builds by hand every month, and runs the tie-outs. Every entry lands unposted, and the controller reviews and posts each one. lumic builds it on site and keeps it working.
+
+[Book a call](https://cal.com/lumic/20-minute-call) How it works
+
+How it works
+
+## Read, prepare, tie out. A person posts.
+
+### It reads the period.
+
+The agent reads the month’s activity straight from the ERP. Reading is all it does at this stage.
+
+### It prepares and ties out.
+
+It prepares the recurring entries and runs the tie-outs before anything is approved.
+
+### The controller posts.
+
+Every entry lands unposted. The controller reviews each one and posts it. Posting stays a human action, every month.
+
+What it prepares
+
+## The entries a controller builds by hand every month.
+
+Each entry is balanced, checked against existing entries so nothing is entered twice, and reversible until a person posts it.
+
+### Payroll entries
+
+Payroll journal entries, with the month-end accrual and its reversal when a pay period crosses the month.
+
+- Accrual and reversal
+- [Payroll](https://get-lumic.com/services/payroll/)
+
+### Bank reconciliation
+
+Bank-reconciliation adjustments, prepared from the reconciliation the agent runs.
+
+- Bank to book
+- Unposted until approved
+
+### Inventory clearing
+
+The inventory clearing entries, prepared for the controller to review.
+
+- Prepared every month
+- Unposted until approved
+
+### Monthly adjustments
+
+The monthly adjusting entries, built the same way every month.
+
+- Balanced before staging
+- Never entered twice
+
+### Tie-outs first
+
+Bank reconciliation, an intercompany tie-out where a business runs more than one company, and an income-statement tie-out, all before anything is approved.
+
+- Run before approval
+- Intercompany where it applies
+
+### A live result
+
+A live income statement, consolidated where there is more than one company, shows the result as soon as the entries post. A monthly management report reads the books live, and the controller finalizes it after month-end.
+
+- Live income statement
+- [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
+
+Other jobs lumic automates: [Services](https://get-lumic.com/services/). Examples in production: [Portfolio](https://get-lumic.com/portfolio/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1302,65 +1524,65 @@ Industries Manufacturing
 
 Not the shop floor: the office behind it. lumic builds AI agents for a manufacturer’s back-office jobs, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.
 
-[Book a call](https://cal.com/lumic/20-minute-call) See the proof
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-In production
+The jobs
 
-## Live and measured.
+## The back-office jobs a manufacturer does by hand.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the plant office already runs. A person approves each entry.
 
-### AP invoice agent
+### Vendor bills against purchase orders
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
-- A specialty manufacturer · accounting software + a custom operations database
-- 64 of 67 bills through the agent in week one
-- Kept running for a monthly fee
+- Agent · accounting software
+- A person approves each entry
 
 [AP automation →](https://get-lumic.com/services/ap-automation/)
 
-### Job costing & production rates
+### Job costing during the job
 
-Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
+Production data and costs read live, so estimate against actual shows up during the job, not at close.
 
 - Dashboard · production data + ERP
-- Estimate vs. actual per job
 - Overruns surfaced early
 
 [Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
-### Purchasing
+### Purchasing and PO write-back
 
-Open POs, receipts and vendor price changes.
-
-- Dashboard · ERP
-- Live
-
-### Purchasing & PO write-back
-
-The agent drafts purchase orders and writes them back to the ERP.
+The agent drafts purchase orders and writes them back to the ERP, and a dashboard tracks open POs, receipts and vendor price changes.
 
 - Agent · ERP
 - Approval-gated
 
-### Month-end close entries
+### Payroll entries
 
-An agent prepares the month-end entries, and the controller approves them before anything posts.
+The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
+
+- Agent · payroll reports + accounting
+- Posted only on the controller’s click
+
+[Payroll →](https://get-lumic.com/services/payroll/)
+
+### Month-end close
+
+The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
 - Agent · ERP
-- Approved before posting, every month
+- The controller posts each entry
 
-### A finance team run on agents
+[Month-end close →](https://get-lumic.com/services/month-end-close/)
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+### Live margin and cost
 
-- About 13 agent roles
-- Nine live dashboards
+Sales and gross margin by customer, product and rep, read live, with the costs the agents enter showing up the same day.
 
-Clients are kept private; every figure is from production.
+- Dashboard · ERP
+- No more morning export
 
-[See the full portfolio](https://get-lumic.com/portfolio/)
+[See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
 Approval and access
 
@@ -1427,66 +1649,65 @@ Industries Distribution
 
 Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. lumic builds an AI agent for each back-office job a distributor does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
 
-[Book a call](https://cal.com/lumic/20-minute-call) See the proof
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-In production
+The jobs
 
-## A finance team run on agents.
+## The back-office jobs a distributor does by hand.
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
-
-### Sales & margin
-
-Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
-
-- Dashboard · ERP
-- Replaces a daily export
-- Multi-company, one view
-
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.
 
 ### Cash receipts
 
-Remittances and ACH detail, read and keyed into the ERP.
+The agent reads remittances and ACH detail and keys them into the ERP for a person to approve.
 
 - Agent · ERP + bank
 - A person approves each entry
 
 [Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
 
-### Collections agent
+### Collections
 
-From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
+From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
 
 - Agent · ERP + inbox
-- Drafts from live aging
 - A person sends every one
 
-### Receivables & aging
+### Margin by customer, product and rep
 
-Live aging by customer, the same view that feeds the collections agent.
+Sales and gross margin read live from the ERP, across every company the business runs, in one view.
 
 - Dashboard · ERP
-- Live
+- Replaces a daily export
 
-### Purchasing & PO write-back
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
-The agent drafts purchase orders and writes them back to the ERP.
+### Vendor bills and POs
 
-- Agent · ERP
+The agent reads each vendor bill, matches it to the purchase order, and flags a price difference before anyone pays. It also drafts purchase orders for approval.
+
+- Agent · accounting software
 - Approval-gated
 
-### Consolidated financials
+[AP automation →](https://get-lumic.com/services/ap-automation/)
 
-A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.
+### Month-end close
 
-- Dashboard · ERP
-- Multi-company GL consolidation
-- An income statement that's never stale
+The agent prepares the recurring month-end entries and runs the tie-outs, including intercompany where a business runs more than one company.
 
-Clients are kept private; every figure is from production.
+- Agent · ERP
+- The controller posts each entry
 
-[See the full portfolio](https://get-lumic.com/portfolio/)
+[Month-end close →](https://get-lumic.com/services/month-end-close/)
+
+### Ask your data
+
+Plain-English questions over the same live data. It drafts entries for a person to approve.
+
+- AI assistant · the same live data
+- A person approves each entry
+
+[See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
 Approval and access
 

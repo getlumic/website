@@ -36,6 +36,18 @@
     "position": 3,
     "name": "Dashboards and reporting",
     "url": "https://get-lumic.com/services/dashboards-and-reporting/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Payroll",
+    "url": "https://get-lumic.com/services/payroll/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 5,
+    "name": "Month-end close",
+    "url": "https://get-lumic.com/services/month-end-close/"
    }
   ]
  }

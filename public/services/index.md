@@ -66,12 +66,16 @@ The agent prepares the payroll entries, and the controller approves them.
 - Agent · payroll + accounting software
 - The controller approves every run
 
+[Payroll →](https://get-lumic.com/services/payroll/)
+
 ### Month-end close entries
 
 An agent prepares the month-end entries, and the controller approves them before anything posts.
 
 - Agent · ERP
 - Approved before posting, every month
+
+[Month-end close →](https://get-lumic.com/services/month-end-close/)
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 

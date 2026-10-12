@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/services/payroll/#service",
+  "name": "Payroll journal entry automation",
+  "serviceType": "Payroll accounting automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/services/payroll/",
+  "description": "An agent builds the payroll journal entry from the payroll provider's reports, with month-end accruals and reversals, checks that it balances and ties to the provider's total, and posts only on the controller's click."
+ }
+]

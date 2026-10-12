@@ -1,0 +1,18 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/services/month-end-close/#service",
+  "name": "Month-end close automation",
+  "serviceType": "Financial close automation",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Small and mid-sized businesses"
+  },
+  "url": "https://get-lumic.com/services/month-end-close/",
+  "description": "An agent reads the month's activity from the ERP, prepares the recurring month-end entries, and runs the tie-outs. Every entry lands unposted, and the controller reviews and posts each one."
+ }
+]

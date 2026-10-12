@@ -62,6 +62,24 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:payroll-markdown",
+   "displayName": "Payroll as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/services/payroll/index.md",
+   "representativeQueries": [
+    "Payroll journal entry automation"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:month-end-close-markdown",
+   "displayName": "Month-end close as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/services/month-end-close/index.md",
+   "representativeQueries": [
+    "Month-end close automation"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:dashboards-and-reporting-markdown",
    "displayName": "Dashboards and reporting as markdown",
    "type": "text/markdown",

@@ -17,65 +17,65 @@ Industries Manufacturing
 
 Not the shop floor: the office behind it. lumic builds AI agents for a manufacturer’s back-office jobs, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.
 
-[Book a call](https://cal.com/lumic/20-minute-call) See the proof
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-In production
+The jobs
 
-## Live and measured.
+## The back-office jobs a manufacturer does by hand.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the plant office already runs. A person approves each entry.
 
-### AP invoice agent
+### Vendor bills against purchase orders
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
-- A specialty manufacturer · accounting software + a custom operations database
-- 64 of 67 bills through the agent in week one
-- Kept running for a monthly fee
+- Agent · accounting software
+- A person approves each entry
 
 [AP automation →](https://get-lumic.com/services/ap-automation/)
 
-### Job costing & production rates
+### Job costing during the job
 
-Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
+Production data and costs read live, so estimate against actual shows up during the job, not at close.
 
 - Dashboard · production data + ERP
-- Estimate vs. actual per job
 - Overruns surfaced early
 
 [Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
-### Purchasing
+### Purchasing and PO write-back
 
-Open POs, receipts and vendor price changes.
-
-- Dashboard · ERP
-- Live
-
-### Purchasing & PO write-back
-
-The agent drafts purchase orders and writes them back to the ERP.
+The agent drafts purchase orders and writes them back to the ERP, and a dashboard tracks open POs, receipts and vendor price changes.
 
 - Agent · ERP
 - Approval-gated
 
-### Month-end close entries
+### Payroll entries
 
-An agent prepares the month-end entries, and the controller approves them before anything posts.
+The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
+
+- Agent · payroll reports + accounting
+- Posted only on the controller’s click
+
+[Payroll →](https://get-lumic.com/services/payroll/)
+
+### Month-end close
+
+The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
 - Agent · ERP
-- Approved before posting, every month
+- The controller posts each entry
 
-### A finance team run on agents
+[Month-end close →](https://get-lumic.com/services/month-end-close/)
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+### Live margin and cost
 
-- About 13 agent roles
-- Nine live dashboards
+Sales and gross margin by customer, product and rep, read live, with the costs the agents enter showing up the same day.
 
-Clients are kept private; every figure is from production.
+- Dashboard · ERP
+- No more morning export
 
-[See the full portfolio](https://get-lumic.com/portfolio/)
+[See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
 Approval and access
 

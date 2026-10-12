@@ -17,66 +17,65 @@ Industries Distribution
 
 Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. lumic builds an AI agent for each back-office job a distributor does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
 
-[Book a call](https://cal.com/lumic/20-minute-call) See the proof
+[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-In production
+The jobs
 
-## A finance team run on agents.
+## The back-office jobs a distributor does by hand.
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
-
-### Sales & margin
-
-Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
-
-- Dashboard · ERP
-- Replaces a daily export
-- Multi-company, one view
-
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.
 
 ### Cash receipts
 
-Remittances and ACH detail, read and keyed into the ERP.
+The agent reads remittances and ACH detail and keys them into the ERP for a person to approve.
 
 - Agent · ERP + bank
 - A person approves each entry
 
 [Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
 
-### Collections agent
+### Collections
 
-From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
+From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
 
 - Agent · ERP + inbox
-- Drafts from live aging
 - A person sends every one
 
-### Receivables & aging
+### Margin by customer, product and rep
 
-Live aging by customer, the same view that feeds the collections agent.
+Sales and gross margin read live from the ERP, across every company the business runs, in one view.
 
 - Dashboard · ERP
-- Live
+- Replaces a daily export
 
-### Purchasing & PO write-back
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
-The agent drafts purchase orders and writes them back to the ERP.
+### Vendor bills and POs
 
-- Agent · ERP
+The agent reads each vendor bill, matches it to the purchase order, and flags a price difference before anyone pays. It also drafts purchase orders for approval.
+
+- Agent · accounting software
 - Approval-gated
 
-### Consolidated financials
+[AP automation →](https://get-lumic.com/services/ap-automation/)
 
-A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.
+### Month-end close
 
-- Dashboard · ERP
-- Multi-company GL consolidation
-- An income statement that's never stale
+The agent prepares the recurring month-end entries and runs the tie-outs, including intercompany where a business runs more than one company.
 
-Clients are kept private; every figure is from production.
+- Agent · ERP
+- The controller posts each entry
 
-[See the full portfolio](https://get-lumic.com/portfolio/)
+[Month-end close →](https://get-lumic.com/services/month-end-close/)
+
+### Ask your data
+
+Plain-English questions over the same live data. It drafts entries for a person to approve.
+
+- AI assistant · the same live data
+- A person approves each entry
+
+[See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
 Approval and access
 

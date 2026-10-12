@@ -57,6 +57,8 @@ PRODUCT_PATTERNS = [p if p.startswith(r"\b") else rf"\b{p}\b" for p in PRODUCT_P
 FAMILIES = {"quickbooks": [r"/systems/quickbooks/", r"\bQuickBooks Online\b", r"\bQuickBooks Desktop\b", r"\bQuickBooks\b"],
             "netsuite": [r"/systems/netsuite/", r"\bNetSuite\b"],
             "sage-100": [r"/systems/sage-100/", r"\bSage 100\b"]}  # own URL slug counts; a bare "Sage" still fails
+# Pages that carry the general process only (Christian 2026-10-11, 9:33 PM CT): no client proof at all
+NO_PROOF_PATHS = ("/systems/", "/industries/", "/services/payroll/", "/services/month-end-close/")
 # No proof, figure or client description on a /systems/ page (a product must never be tied to a client or a number)
 PROOF = [r"64 of 67", r"six weeks", r"\b13 agent roles\b", r"nine (?:live )?dashboards", r"specialty manufacturer",
          r"multi-company manufacturer", r"30 a day"]
@@ -207,13 +209,13 @@ def check_pages(b):
                         ptext = ptext.replace(x, " ")
                 elif nlist:
                     fails.append(f"{where}: a [data-systems-list] outside home and the systems hub")
-                if p["path"].startswith("/systems/"):
+                if p["path"].startswith(NO_PROOF_PATHS):
                     body = re.sub(r"<script.*?</script>", " ", html, flags=re.S)
                     for pat in PROOF:
                         for m in re.finditer(pat, ptext + " " + body, re.I):
-                            fails.append(f"{where}: proof or client detail {m.group(0)!r} on a systems page")
+                            fails.append(f"{where}: proof or client detail {m.group(0)!r} on a general-process page")
                     if re.search(r'href="/portfolio/#', html):
-                        fails.append(f"{where}: links to a portfolio card (systems pages link the portfolio page only)")
+                        fails.append(f"{where}: links to a portfolio card (general-process pages link the portfolio page only)")
                 allow = [x for f in FAMILIES.values() for x in f] if p.get("systems_hub") else FAMILIES.get(p.get("system"), ())
                 fails += content_checks(where, ptext, html, allow=allow)
                 # internal links answer 200 (fragments dropped), media answers 200
