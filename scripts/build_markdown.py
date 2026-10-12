@@ -118,6 +118,12 @@ def main():
             lines.append("")
         prev = l
     body = re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
+    # The page shows a short systems list; the markdown carries the full one from llms.txt ("Systems lumic works with: a, b, ...").
+    full = re.search(r"^Systems lumic works with: (.+?)\.?$", io.open(PUB / "llms.txt", encoding="utf-8").read(), re.M)
+    if full:
+        names = "\n".join(f"- {n.strip()}" for n in full.group(1).split(", "))
+        body, n = re.subn(r"(Systems lumic works with\n\n(?:.+\n\n)?)(?:- .+\n?)+", lambda m: m.group(1) + names + "\n", body)
+        assert n == 1, "systems list not found in the page markdown"
     ld = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', html, re.S).group(1))
     faq = next(g for g in ld["@graph"] if g["@type"] == "FAQPage")
     faq_md = "\n\n".join(f"### {q['name']}\n\n{q['acceptedAnswer']['text']}" for q in faq["mainEntity"])

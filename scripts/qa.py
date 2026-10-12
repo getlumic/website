@@ -34,6 +34,11 @@ PRODUCTS = ["QuickBooks Online", "QuickBooks Desktop", "NetSuite", "Sage Intacct
             "Microsoft Dynamics 365 Business Central", "Xero", "Acumatica", "Bill.com", "Ramp", "Expensify", "ADP",
             "Paychex", "Gusto", "Salesforce", "HubSpot", "Microsoft 365 / Outlook", "Excel", "Power BI", "SQL Server",
             "Google Workspace", "FileMaker", "Shopify"]
+# What the list may show on the page: 15 of them plus the closing pill. All 23 stay in PRODUCT_PATTERNS, so a dropped
+# name (Ramp, Gusto, Shopify ...) still fails anywhere on the page; Power BI survives only in Josh's bio (OUTSIDE_OK).
+LIST_ITEMS = ["QuickBooks Online", "QuickBooks Desktop", "NetSuite", "Sage Intacct", "Sage 100",
+              "Microsoft Dynamics 365 Business Central", "Xero", "Acumatica", "Bill.com", "ADP", "Paychex", "Salesforce",
+              "HubSpot", "Microsoft 365 / Outlook", "Excel", "…and hundreds more."]
 PRODUCT_PATTERNS = sorted({re.escape(x) for x in PRODUCTS} | {
     r"\bQuickBooks\b", r"\bSage\b", r"\bDynamics 365\b", r"\bBusiness Central\b", r"\bMicrosoft 365\b", r"\bOutlook\b"})
 PRODUCT_PATTERNS = [p if p.startswith(r"\b") else rf"\b{p}\b" for p in PRODUCT_PATTERNS]
@@ -80,7 +85,7 @@ def main():
                 })()""")
                 if n_sys > 1:
                     fails.append(f"{n_sys} [data-systems-list] elements (the product-name exception is for one section only)")
-                fails += [f"systems list item not on the allowlist: {x!r}" for x in items if x not in PRODUCTS]
+                fails += [f"systems list item not on the allowlist: {x!r}" for x in items if x not in LIST_ITEMS]
                 for x in OUTSIDE_OK:
                     text = text.replace(x, " ")
                 for where, t in (("on page", text), ("in the systems list label/note", other)):

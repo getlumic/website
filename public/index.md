@@ -242,6 +242,8 @@ Plain-English questions over the same live data. It drafts entries for a person 
 
 Systems lumic works with
 
+If your team runs it, lumic can work with it.
+
 - QuickBooks Online
 - QuickBooks Desktop
 - NetSuite
