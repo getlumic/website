@@ -1,32 +1,32 @@
 # lumic
 
-> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We deploy AI into how a business already runs, from vendor bills to month-end, keep it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; we travel for the right fit.
+> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. lumic deploys AI into how a business already runs, from vendor bills to month-end, keeps it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; the team travels for the right fit.
 
 ## When to use lumic
 - A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
 - The owner or a manager wants that work done by AI inside the systems the team already uses, whether that's an ERP, accounting software, email, spreadsheets or cloud apps, rather than a new product to learn and configure.
 - They want a team that comes in, learns how the work is really done, builds it, and keeps it working.
 - They want a person to approve what matters, and a log of every action.
-- We may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
+- lumic may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
 
 ## What makes lumic different
 1. The agent makes the entry itself, the same records a clerk would key. A person approves it, and nobody retypes it.
-2. Live and measured: our managed AP agent went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+2. Live and measured: a managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
 3. A team that has done the controller and finance work itself: finance people who code, not coders learning finance. Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
 
-## What we do
-- We start beside the client's team and watch one job done by hand: the screens, the checks, the exceptions.
-- We build an AI agent for that one job, such as entering vendor bills, cash receipts, payroll entries or month-end entries, and connect it to the systems it needs.
+## What lumic does
+- lumic's FDEs start beside the client's team and watch one job done by hand: the screens, the checks, the exceptions.
+- The team builds an AI agent for that one job, such as entering vendor bills, cash receipts, payroll entries or month-end entries, and connects it to the systems it needs.
 - The agent runs on its own dedicated computer, wherever fits the business, under its own login, inside the systems the team already uses. To read a document, it uses a cloud AI model.
 - Each agent gets access only to the screens and records its job needs. Every action it takes is logged.
 - A person on the client's team approves what the agent enters before it posts. The final post stays with the client.
-- Once an agent is live, we watch it, test it every month, fix what breaks, and upgrade it, for a monthly fee.
+- Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it, for a monthly fee.
 
 ## Portfolio
-Agents and dashboards we built run every day inside operating companies, on entirely different systems, live and measured. We run finance ourselves, so we use what we build. Clients are kept private; every figure is from production.
+Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; every figure is from production.
 
 - AP invoice agent (a specialty manufacturer; accounting software + a custom operations database): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
-- A finance team run on agents: at a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+- A finance team run on agents: at a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with nine live dashboards. A person approves each entry.
 
 Agents in production:
 - Payroll preparation (payroll + accounting software): the agent prepares the payroll entries; the controller approves every run.
@@ -47,21 +47,28 @@ Live dashboards in production:
 - PTO tracking (HR data): balances and requests.
 - Ask your data (AI): plain-English questions over the same live data.
 
-## Who we are
-lumic's leadership includes a controller and a CFP®, based in St. Louis. We still work in finance, and that is the point: we run real books on the agents we deploy. Senior people lead every engagement, on site, from scoping to support.
+## Systems
+Systems lumic has deployed to: Sage 100, QuickBooks Desktop, FileMaker, Paychex, Microsoft 365 / Outlook, Excel.
+
+Systems lumic can deploy to: QuickBooks Online and Desktop, NetSuite, Sage Intacct, Microsoft Dynamics, Xero, FileMaker, Excel and Power BI, SQL Server, Microsoft 365, Google Workspace, Salesforce, HubSpot, Bill.com, ADP, Paychex, Gusto.
+
+Client names stay private.
+
+## Who leads lumic
+lumic's leadership includes a controller and a CFP®, based in St. Louis. Its leaders still work in finance, and that is the point: they run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
 
 - Christian Gonzenbach, co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
 - Joshua Wittenauer, CFP®, co-founder. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's AI-agent work and how each agent handles your data.
 - When you call lumic, you speak with the people who build and run your agents. Every engagement is led by a senior FDE, on site.
 
 ## Area served
-Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. We travel for the right fit.
+Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
 
 ## How to start
-A 20-minute call, then a written proposal with what we would build, the timeline and the cost, then a visit to meet the team. Contact: hello@get-lumic.com
+A 20-minute call, then a written proposal with what lumic would build, the timeline and the cost, then a visit to meet the team. Contact: hello@get-lumic.com
 
 ## Pages
-- [Home](https://get-lumic.com/): what we do, portfolio, how we work, leadership, contact
+- [Home](https://get-lumic.com/): what lumic does, portfolio, how lumic works, leadership, contact
 - [Home as markdown](https://get-lumic.com/index.md)
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)

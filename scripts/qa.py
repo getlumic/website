@@ -27,6 +27,8 @@ if _private.exists():
     BANNED += [l.strip() for l in _private.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]
 else:
     print(f"note: {_private} not found; checking generic terms only")
+# System names allowed only inside the one [data-systems-list] section (exact lines from site-banned-terms.txt)
+SYSTEM_TERMS = {r"\bSage\b", "QuickBooks", "FileMaker"}
 
 
 def main():
@@ -45,10 +47,27 @@ def main():
                 bad = pg.evaluate("""[...document.querySelectorAll('a[href^="#"]')].map(a => a.getAttribute('href'))
                     .filter(h => h.length > 1 && !document.getElementById(h.slice(1)))""")
                 fails += [f"link without target: {h}" for h in sorted(set(bad))]
-                text = pg.evaluate("document.body.innerText")
+                # One exception (Christian 2026-10-11): the element marked data-systems-list may name systems (Sage,
+                # QuickBooks, FileMaker). Every other banned term, client and employer names included, is still
+                # checked inside it, and the rest of the page is checked against the full list.
+                text, systems, n_sys = pg.evaluate("""(() => {
+                    const els = [...document.querySelectorAll('[data-systems-list]')];
+                    const inner = els.map(e => e.innerText).join('\\n');
+                    const keep = els.map(e => e.style.display);
+                    els.forEach(e => { e.style.display = 'none'; });
+                    const rest = document.body.innerText;
+                    els.forEach((e, i) => { e.style.display = keep[i]; });
+                    return [rest, inner, els.length];
+                })()""")
+                if n_sys > 1:
+                    fails.append(f"{n_sys} [data-systems-list] elements (the system-name exception is for one section only)")
                 for pat in BANNED:
                     for m in re.finditer(pat, text, re.I):
                         fails.append(f"banned term on page: {m.group(0)!r}")
+                    if pat in SYSTEM_TERMS:
+                        continue
+                    for m in re.finditer(pat, systems, re.I):
+                        fails.append(f"banned term in the systems list: {m.group(0)!r}")
                 srcs = pg.evaluate("[...document.querySelectorAll('video source, video[poster]')].map(e => e.src || e.poster)")
                 srcs += pg.evaluate("[...document.querySelectorAll('video[data-poster]')].map(v => new URL(v.dataset.poster, location.href).href)")
                 # phones play the same 16:9 films: no 4:5 phone cut may be referenced

@@ -1,13 +1,13 @@
 ---
 title: "lumic | Forward Deployed Engineers for business, St. Louis"
-description: "Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters."
+description: "lumic's Forward Deployed Engineers (FDEs) have finance backgrounds and are based in St. Louis. They put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters."
 canonical: https://get-lumic.com/
 last_updated: 2026-10-11
 ---
 
 # lumic | Forward Deployed Engineers for business, St. Louis
 
-> Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters.
+> lumic's Forward Deployed Engineers (FDEs) have finance backgrounds and are based in St. Louis. They put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 
@@ -15,7 +15,7 @@ Based in St. Louis FDEs for business
 
 # AI, deployed into your business and kept working.
 
-We’re Forward Deployed Engineers with finance backgrounds: we put AI to work inside the systems and routines you already run, from vendor bills to month-end, keep it working, and a person on your team approves what matters. St. Louis first; we travel for the right fit.
+lumic’s Forward Deployed Engineers have finance backgrounds. They put AI to work inside the systems and routines you already run, from vendor bills to month-end, keep it working, and a person on your team approves what matters. St. Louis first; the team travels for the right fit.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See it running
 
@@ -69,13 +69,13 @@ Services
 
 ## An agent on the job, and a team behind it.
 
-We are FDEs, Forward Deployed Engineers: we come to you, learn how the work is really done, and build AI into it. We do not sell software to configure yourself, and we stay to run what we build.
+lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
 
 01 · Deploy an agent
 
 ### One job at a time.
 
-We start beside your team and watch the job done by hand: the screens, the checks, the exceptions. Then we build an agent for that one job and connect it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
+The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
 
 - AI agents
 - System connections
@@ -91,11 +91,11 @@ We start beside your team and watch the job done by hand: the screens, the check
 
 02 · Managed AI agents
 
-### We keep it working.
+### lumic keeps it working.
 
-Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, we run it for a monthly fee.
+Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
 
-We watch it, test it every month, fix what breaks, and upgrade it as AI improves. A person on your team approves anything before it posts.
+The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
 
 - Each managed agent Covered
 - Monitoring Ongoing
@@ -108,11 +108,11 @@ Portfolio
 
 ## In production, every day.
 
-Agents and dashboards we built run every day inside operating companies, on entirely different systems, live and measured. We run finance ourselves, so we use what we build.
+Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic’s leaders run finance themselves, so they use what they build.
 
 ### AP invoice agent
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after our on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
 - A specialty manufacturer · accounting software + a custom operations database
 - 64 of 67 bills through the agent in week one
@@ -123,7 +123,7 @@ Every vendor bill was typed in twice, into two systems, about 30 a day. The agen
 At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
 - About 13 agent roles
-- Six live dashboards
+- Nine live dashboards
 
 ### Collections agent
 
@@ -240,27 +240,57 @@ Plain-English questions over the same live data. It drafts entries for a person 
 - AI assistant · the same live data
 - A person approves each entry
 
-How we work
+Systems lumic has deployed to
 
-## We start where the work happens. Live in weeks, not quarters.
+- Sage 100
+- QuickBooks Desktop
+- FileMaker
+- Paychex
+- Microsoft 365 / Outlook
+- Excel
+
+Systems lumic can deploy to
+
+- QuickBooks Online and Desktop
+- NetSuite
+- Sage Intacct
+- Microsoft Dynamics
+- Xero
+- FileMaker
+- Excel and Power BI
+- SQL Server
+- Microsoft 365
+- Google Workspace
+- Salesforce
+- HubSpot
+- Bill.com
+- ADP
+- Paychex
+- Gusto
+
+Client names stay private.
+
+How lumic works
+
+## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### On-site diagnostic.
 
-We work beside your team where the work happens. We map your systems, your data, and the manual steps that take the most time.
+lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
 
 ### Build the agent.
 
-We build an agent for one job, connect it to your systems, and set up the approval step. Your team tests it on real work before it goes live.
+The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
 
 ### Managed and kept working.
 
-We watch it, test it, fix it, and upgrade it, for a monthly fee. You run the business.
+lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
 Why lumic
 
 ## Forward Deployed Engineers who’ve closed the books.
 
-We’re FDEs with finance backgrounds. We don’t just deploy agents, we know which back-office jobs are worth automating because we’ve done them.
+lumic’s FDEs have finance backgrounds. They don’t just deploy agents; they know which back-office jobs are worth automating because they’ve done them.
 
 Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
 
@@ -270,11 +300,11 @@ The agent enters the work in your systems, the same records a clerk would key. A
 
 ### Live and measured.
 
-Our managed AP agent went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
 
 ### Finance people who code.
 
-Most FDE teams are engineers who learn finance on the job. We lived it first: we have done these back-office jobs by hand, then built the agents that do them.
+Most FDE teams are engineers who learn finance on the job. lumic’s team lived it first: it has done these back-office jobs by hand, then built the agents that do them.
 
 ### It runs where it fits.
 
@@ -282,13 +312,13 @@ Each agent works on its own dedicated computer, wherever fits your business, und
 
 ### It touches only its job.
 
-We give each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
 ### Nothing posts without you.
 
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
 
-We build it, and we keep it working.
+lumic builds it, and keeps it working.
 
 - Instead of → With lumic
 - Typing every bill into two systems → An agent enters it; you approve
@@ -301,7 +331,7 @@ We build it, and we keep it working.
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. We are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 ### Where does the agent run?
 
@@ -309,7 +339,7 @@ Wherever fits your business, on its own dedicated computer, under its own login,
 
 ### What can the agent touch?
 
-Only what its job needs. We give each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+Only what its job needs. lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
 ### Who approves what the agent does?
 
@@ -321,17 +351,17 @@ Weeks, not quarters. A recent managed AP agent went live about six weeks after t
 
 ### What does it cost?
 
-It depends on the job. After a 20-minute call, we send a written proposal with what we would build, the timeline, and the cost. Once an agent is live, we run it for a monthly fee.
+It depends on the job. After a 20-minute call, lumic sends a written proposal with what the team would build, the timeline, and the cost. Once an agent is live, lumic runs it for a monthly fee.
 
 ### Do you work outside St. Louis?
 
-Yes. St. Louis first: we are based here and come on site in person. We travel for the right fit.
+Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
 
 Leadership
 
 ### Finance first. Engineers second.
 
-lumic’s leadership includes a controller and a CFP®, based in St. Louis. We still work in finance, and that is the point: we run real books on the agents we deploy. Senior people lead every engagement, on site, from scoping to support.
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. Its leaders still work in finance, and that is the point: they run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
 
 CG
 
@@ -353,23 +383,23 @@ When you call lumic, you speak with the people who build and run your agents.
 
 ## Based in St. Louis. Start with a conversation.
 
-[Book a call](https://cal.com/lumic/20-minute-call) or write to us [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
 
 Every engagement is led by a senior FDE, on site.
 
 What happens next
 
-A 20‑minute call. You walk us through the work your team does by hand.
+A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What we would build, the timeline, and the cost.
+A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. We meet your team where the work happens and confirm the plan. St. Louis first; we travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
 
 ## Questions
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. We are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 ### Where does the agent run?
 
@@ -377,7 +407,7 @@ Wherever fits your business, on its own dedicated computer, under its own login,
 
 ### What can the agent touch?
 
-Only what its job needs. We give each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+Only what its job needs. lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
 ### Who approves what the agent does?
 
@@ -389,11 +419,11 @@ Weeks, not quarters. A recent managed AP agent went live about six weeks after t
 
 ### What does it cost?
 
-It depends on the job. After a 20-minute call, we send a written proposal with what we would build, the timeline, and the cost. Once an agent is live, we run it for a monthly fee.
+It depends on the job. After a 20-minute call, lumic sends a written proposal with what the team would build, the timeline, and the cost. Once an agent is live, lumic runs it for a monthly fee.
 
 ### Do you work outside St. Louis?
 
-Yes. St. Louis first: we are based here and come on site in person. We travel for the right fit.
+Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
 
 ---
 
