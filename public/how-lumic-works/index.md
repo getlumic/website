@@ -167,4 +167,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy

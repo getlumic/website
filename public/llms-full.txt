@@ -1,6 +1,6 @@
 # lumic
 
-> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. lumic deploys AI into how a business already runs, from vendor bills to month-end, keeps it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; the team travels for the right fit.
+> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. lumic deploys AI into how a business already runs, from vendor bills to month-end, keeps it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; the team travels for the right fit. Founded May 2026, St. Louis.
 
 ## When to use lumic
 - A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
@@ -424,7 +424,7 @@ All questions: https://get-lumic.com/faq/
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -580,7 +580,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -746,7 +746,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -891,7 +891,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1027,7 +1027,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1163,7 +1163,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1350,7 +1350,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1532,7 +1532,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1706,7 +1706,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1786,7 +1786,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1883,7 +1883,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2036,7 +2036,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2189,7 +2189,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2344,7 +2344,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2443,7 +2443,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2584,7 +2584,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2698,7 +2698,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2788,7 +2788,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2924,7 +2924,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3049,7 +3049,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3171,7 +3171,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3296,7 +3296,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3421,7 +3421,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3509,4 +3509,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy

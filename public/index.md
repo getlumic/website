@@ -316,4 +316,4 @@ All questions: https://get-lumic.com/faq/
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy

@@ -149,7 +149,7 @@ def footer(home=False):
             f'        <a class="brand" href="{"#top" if home else "/"}" aria-label="lumic home">{BRAND}</a>\n'
             f'        <p>AI, deployed into your business and kept working.</p>\n      </div>\n'
             f'      <nav aria-label="Footer">\n        <ul class="f-links">\n' + "\n".join(items) + '\n        </ul>\n      </nav>\n    </div>\n'
-            f'    <p class="f-bot">© 2026 lumic · <a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a> · <a href="/privacy/">Privacy</a></p>\n'
+            f'    <p class="f-bot">© 2026 lumic · Founded May 2026 · <a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a> · <a href="/privacy/">Privacy</a></p>\n'
             f'  </div>\n</footer>')
 
 

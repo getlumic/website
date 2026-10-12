@@ -13,6 +13,7 @@
    "image": "https://get-lumic.com/og-image.png",
    "email": "hello@get-lumic.com",
    "slogan": "AI, deployed into your business and kept working.",
+   "foundingDate": "2026-05",
    "description": "lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. lumic deploys AI into how a business already runs, from vendor bills to month-end, keeps it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one.",
    "address": {
     "@type": "PostalAddress",

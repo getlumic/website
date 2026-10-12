@@ -1,5 +1,5 @@
 [
- {"@type": ["Organization", "ProfessionalService"], "@id": "https://get-lumic.com/#org", "name": "lumic", "url": "https://get-lumic.com/",
+ {"@type": ["Organization", "ProfessionalService"], "@id": "https://get-lumic.com/#org", "name": "lumic", "url": "https://get-lumic.com/", "foundingDate": "2026-05",
   "email": "hello@get-lumic.com", "image": "https://get-lumic.com/og-image.png", "logo": "https://get-lumic.com/apple-touch-icon.png",
   "description": "lumic's Forward Deployed Engineers (FDEs) have finance backgrounds and are based in St. Louis. They work on site beside the client's team, by appointment, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.",
   "address": {"@type": "PostalAddress", "addressLocality": "St. Louis", "addressRegion": "MO", "addressCountry": "US"},
