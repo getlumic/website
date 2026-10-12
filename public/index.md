@@ -240,33 +240,31 @@ Plain-English questions over the same live data. It drafts entries for a person 
 - AI assistant · the same live data
 - A person approves each entry
 
-Systems lumic has deployed to
+Systems lumic works with
 
-- Sage 100
+- QuickBooks Online
 - QuickBooks Desktop
-- FileMaker
-- Paychex
-- Microsoft 365 / Outlook
-- Excel
-
-Systems lumic can deploy to
-
-- QuickBooks Online and Desktop
 - NetSuite
 - Sage Intacct
-- Microsoft Dynamics
+- Sage 100
+- Microsoft Dynamics 365 Business Central
 - Xero
-- FileMaker
-- Excel and Power BI
-- SQL Server
-- Microsoft 365
-- Google Workspace
-- Salesforce
-- HubSpot
+- Acumatica
 - Bill.com
+- Ramp
+- Expensify
 - ADP
 - Paychex
 - Gusto
+- Salesforce
+- HubSpot
+- Microsoft 365 / Outlook
+- Excel
+- Power BI
+- SQL Server
+- Google Workspace
+- FileMaker
+- Shopify
 
 Client names stay private.
 

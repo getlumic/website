@@ -48,9 +48,7 @@ Live dashboards in production:
 - Ask your data (AI): plain-English questions over the same live data.
 
 ## Systems
-Systems lumic has deployed to: Sage 100, QuickBooks Desktop, FileMaker, Paychex, Microsoft 365 / Outlook, Excel.
-
-Systems lumic can deploy to: QuickBooks Online and Desktop, NetSuite, Sage Intacct, Microsoft Dynamics, Xero, FileMaker, Excel and Power BI, SQL Server, Microsoft 365, Google Workspace, Salesforce, HubSpot, Bill.com, ADP, Paychex, Gusto.
+Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage Intacct, Sage 100, Microsoft Dynamics 365 Business Central, Xero, Acumatica, Bill.com, Ramp, Expensify, ADP, Paychex, Gusto, Salesforce, HubSpot, Microsoft 365 / Outlook, Excel, Power BI, SQL Server, Google Workspace, FileMaker, Shopify.
 
 Client names stay private.
 
