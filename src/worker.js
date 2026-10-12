@@ -1,13 +1,22 @@
 // get-lumic.com: the static site, plus a thin layer for agents, films and headers.
-// - Markdown for AI agents: "/" with Accept: text/markdown, or "/?mode=agent", returns /index.md. A markdown request for a
-//   missing page gets a short markdown 404.
+// - Markdown for AI agents: a page with Accept: text/markdown, or "?mode=agent", returns its markdown copy (<path>index.md,
+//   for the paths in MD_PAGES, which scripts/build_pages.py writes). A markdown request for a missing page gets a short
+//   markdown 404.
 // - Films: a byte-range request on /video/* gets 206 Partial Content (static assets return the whole file, and iPhone
 //   Safari will not play a video that way).
-// - Redirects: www.get-lumic.com -> get-lumic.com, and the assets' own 307s (/index.html, /privacy) become 301s.
+// - Redirects: www.get-lumic.com -> get-lumic.com, /about(/) -> /how-lumic-works/, and the assets' own 307s (/index.html,
+//   /privacy) become 301s.
 // - Headers: HSTS everywhere, a Link header on pages (llms.txt and the markdown copy), a day of browser cache on films
 //   and images (their file names are reused when a film is replaced, so not longer than that).
 const APEX = "get-lumic.com";
-const MD_PAGES = { "/": "/index.md", "/index.html": "/index.md" };
+// md-pages:start
+const MD_PAGES = new Set(["/", "/services/ap-automation/", "/st-louis/", "/how-lumic-works/", "/portfolio/", "/faq/"]);
+// md-pages:end
+const REDIRECTS = { "/about": "/how-lumic-works/", "/about/": "/how-lumic-works/" };
+function mdFor(path) {
+  if (path === "/index.html") return "/index.md";
+  return MD_PAGES.has(path) ? path + "index.md" : null;
+}
 const NOT_FOUND_MD = `# Page not found
 
 This page is not on get-lumic.com.
@@ -17,7 +26,7 @@ This page is not on get-lumic.com.
 - Contact: hello@get-lumic.com
 `;
 const HSTS = "max-age=31536000";
-const LINK = '</llms.txt>; rel="describedby"; type="text/plain", </index.md>; rel="alternate"; type="text/markdown"';
+const link = (md) => '</llms.txt>; rel="describedby"; type="text/plain"' + (md ? `, <${md}>; rel="alternate"; type="text/markdown"` : "");
 const MEDIA_CACHE = "public, max-age=86400";
 
 function wantsMarkdown(req, url) {
@@ -99,6 +108,9 @@ export default {
       return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
     }
     const get = req.method === "GET" || req.method === "HEAD";
+    if (get && REDIRECTS[url.pathname]) {
+      return new Response(null, { status: 301, headers: { Location: new URL(REDIRECTS[url.pathname] + url.search, url).toString(), "Strict-Transport-Security": HSTS } });
+    }
     // Search engine ownership files: served at their exact .html path (the assets would redirect "x.html" to "x").
     if (get && /^\/google[0-9a-f]+\.html$/.test(url.pathname)) {
       const f = await env.ASSETS.fetch(new Request(new URL(url.pathname.replace(/\.html$/, ""), url), req));
@@ -107,9 +119,10 @@ export default {
     if (get && url.pathname.startsWith("/video/")) return serveVideo(req, env);
 
     const md = get && wantsMarkdown(req, url);
-    if (md && MD_PAGES[url.pathname]) {
-      const res = await env.ASSETS.fetch(new Request(new URL(MD_PAGES[url.pathname], url), req));
-      return finish(res, { "Content-Type": "text/markdown; charset=utf-8", "Vary": "Accept", "Link": LINK });
+    const mdPath = mdFor(url.pathname);
+    if (md && mdPath) {
+      const res = await env.ASSETS.fetch(new Request(new URL(mdPath, url), req));
+      if (res.ok) return finish(res, { "Content-Type": "text/markdown; charset=utf-8", "Vary": "Accept", "Link": link(mdPath) });
     }
     const res = await env.ASSETS.fetch(req);
     if (res.status === 307 || res.status === 302) {          // the assets' trailing-slash and /index.html redirects
@@ -120,8 +133,8 @@ export default {
       return new Response(NOT_FOUND_MD, { status: 404, headers: { "Content-Type": "text/markdown; charset=utf-8", "Vary": "Accept", "Strict-Transport-Security": HSTS } });
     }
     const extra = {};
-    if (MD_PAGES[url.pathname] || res.status === 404) extra.Vary = "Accept";
-    if (/^text\/html/i.test(res.headers.get("Content-Type") || "")) extra.Link = LINK;
+    if (mdPath || res.status === 404) extra.Vary = "Accept";
+    if (/^text\/html/i.test(res.headers.get("Content-Type") || "")) extra.Link = link(mdPath);
     if (url.pathname.startsWith("/img/")) extra["Cache-Control"] = MEDIA_CACHE;
     return finish(res, extra);
   },

@@ -1,0 +1,12 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/services/ap-automation/#service", "name": "AI agent for accounts payable",
+  "serviceType": "Accounts payable automation", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/services/ap-automation/",
+  "description": "The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in the client's accounting software, ready to post. lumic keeps it running for a monthly fee. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one."},
+ {"@type": "VideoObject", "@id": "https://get-lumic.com/services/ap-automation/#overview-film", "name": "lumic overview: an AI agent enters a vendor bill",
+  "description": "AI reads a vendor bill, matches it to its purchase orders and flags a price difference for approval. It drafts a purchase order, sends a statement, and answers a question with a drafted follow-up. Then live sales, cash and margin, all from one set of data. Every figure is sample data.",
+  "thumbnailUrl": "https://get-lumic.com/video/demos/lumic-keynote-overview-poster.jpg",
+  "contentUrl": "https://get-lumic.com/video/demos/lumic-keynote-overview.mp4",
+  "uploadDate": "2026-10-10", "publisher": {"@id": "https://get-lumic.com/#org"}}
+]

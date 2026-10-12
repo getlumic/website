@@ -66,7 +66,11 @@ Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County
 A 20-minute call, then a written proposal with what lumic would build, the timeline and the cost, then a visit to meet the team. Contact: hello@get-lumic.com
 
 ## Pages
-- [Home](https://get-lumic.com/): what lumic does, portfolio, how lumic works, leadership, contact
-- [Home as markdown](https://get-lumic.com/index.md)
+- [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
+- [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
+- [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
+- [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
+- [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
+- [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)

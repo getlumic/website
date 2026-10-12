@@ -35,8 +35,53 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:ap-automation-markdown",
+   "displayName": "AP automation as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/services/ap-automation/index.md",
+   "representativeQueries": [
+    "AI agent for accounts payable: bill entry and PO matching"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:st-louis-markdown",
+   "displayName": "St. Louis as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/st-louis/index.md",
+   "representativeQueries": [
+    "AI automation in St. Louis: on-site FDEs"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:how-lumic-works-markdown",
+   "displayName": "How lumic works as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/how-lumic-works/index.md",
+   "representativeQueries": [
+    "How lumic works: FDEs, approvals and data security"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:portfolio-markdown",
+   "displayName": "Portfolio as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/portfolio/index.md",
+   "representativeQueries": [
+    "Portfolio: AI agents and dashboards in production"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:faq-markdown",
+   "displayName": "FAQ as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/faq/index.md",
+   "representativeQueries": [
+    "FAQ: FDEs, AI agents and approvals"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:schema",
-   "displayName": "Organization, service and FAQ (schema.org)",
+   "displayName": "Organization, services, pages and FAQ (schema.org)",
    "type": "application/ld+json",
    "url": "https://get-lumic.com/schema.jsonld",
    "representativeQueries": [

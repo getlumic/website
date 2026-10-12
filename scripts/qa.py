@@ -8,11 +8,21 @@ muted when scrolled to, takes the sound from the hero film, and never two films 
 on its own" opens and a film plays with sound in a lightbox that closes on Esc; "How the data flows" opens and the
 flow chart lays out with its lines.
 
+Every page in scripts/pages.json, at the same widths: no horizontal scroll, its declared film players fit (and autoplay
+muted, take the sound, carry the sample-data note), in-page links have targets, internal links and media answer 200,
+one <h1>, canonical and og:url match, a BreadcrumbList. On every page (home included): JSON-LD parses, no we/our/us,
+no size-reveal or gap phrases; on inner pages also no banned term and no product name at all (visible text, title,
+meta and JSON-LD). /st-louis/ carries no street address. The sitemap lists every page and each answers 200 with a
+matching canonical. Off localhost: /about/ and /about answer 301 -> /how-lumic-works/. Home's FAQPage covers exactly
+the questions it shows.
+
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
 """
+import json
 import re
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -44,6 +54,196 @@ PRODUCT_PATTERNS = sorted({re.escape(x) for x in PRODUCTS} | {
 PRODUCT_PATTERNS = [p if p.startswith(r"\b") else rf"\b{p}\b" for p in PRODUCT_PATTERNS]
 # Copy that predates the list and stays as written (the flow chart's source tile; Josh's bio, kept verbatim)
 OUTSIDE_OK = ["Excel and CSV files", "with Power BI and SQL by trade"]
+
+# ---------- every page (scripts/pages.json), plus content rules that apply to home too ----------
+CFG = json.loads((Path(__file__).resolve().parent / "pages.json").read_text(encoding="utf-8"))
+SITE = "https://get-lumic.com"
+# Voice: third person, lowercase "lumic". Case-insensitive whole words; the "US" country code in JSON-LD is dropped first.
+WE = r"\b(?:we|our|us|ours|we['’]re|we['’]ve|we['’]ll)\b"
+# Size reveals and gap admissions (public wording rules)
+SIZE_REVEAL = [r"\bfirst client\b", r"\bso far\b", r"\bone of us\b", r"\bboth of us\b", r"\bChristian or Josh\b",
+               r"\bspeak with a founder\b", r"\bteam of (?:\d+|two|three|four|five|six|seven|eight|nine|ten)\b",
+               r"\bfounder[- ]led\b", r"\bcoming soon\b", r"\bnext\b"]
+HOME_OK = ["What happens next"]  # the home contact block's heading (live copy, unchanged); inner pages say "How to start"
+# A service-area business: no street address anywhere on /st-louis/, including the schema
+ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
+           r"\b\d{1,5}\s+(?:[NSEW]\.?\s+)?[A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*\s+(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way|Court|Ct|Place|Pl|Parkway|Pkwy|Suite|Ste)\b"]
+OPEN_DETAILS_TEXT = """(() => { const c = [...document.querySelectorAll('details:not([open])')]; c.forEach(d => { d.open = true; });
+    const t = document.body.innerText; c.forEach(d => { d.open = false; }); return t; })()"""
+
+
+def fetch(url, method="GET"):
+    r = urllib.request.urlopen(urllib.request.Request(url, method=method, headers={"User-Agent": UA}), timeout=20)
+    return r.status, (r.read().decode("utf-8", "replace") if method == "GET" else "")
+
+
+def ld_blocks(html):
+    """Every JSON-LD block on a page, parsed (a parse error is returned as a string)."""
+    out = []
+    for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
+        try:
+            out.append(json.loads(raw))
+        except Exception as e:
+            out.append(f"JSON-LD does not parse: {e}")
+    return out
+
+
+def ld_strings(x):
+    if isinstance(x, dict):
+        return [s for v in x.values() for s in ld_strings(v)]
+    if isinstance(x, list):
+        return [s for v in x for s in ld_strings(v)]
+    return [x] if isinstance(x, str) and x != "US" else []
+
+
+def meta_text(html):
+    pats = [r"<title>(.*?)</title>", r'<meta name="description" content="(.*?)"', r'<meta property="og:[a-z_]+" content="(.*?)"',
+            r'<meta name="twitter:[a-z]+" content="(.*?)"']
+    return "\n".join(m for p in pats for m in re.findall(p, html, re.S))
+
+
+def content_checks(where, text, html, home=False):
+    """Voice, size reveals, banned terms, product names (inner pages: none at all) on visible text, meta and JSON-LD."""
+    fails = []
+    blocks = ld_blocks(html)
+    fails += [f"{where}: {b}" for b in blocks if isinstance(b, str)]
+    lds = "\n".join(s for b in blocks if not isinstance(b, str) for s in ld_strings(b))
+    meta = meta_text(html)
+    for label, t in (("text", text), ("meta", meta), ("JSON-LD", lds)):
+        for m in re.finditer(WE, t, re.I):
+            fails.append(f"{where} {label}: first-person word {m.group(0)!r} (third person, 'lumic')")
+        tt = t
+        if home:
+            for x in HOME_OK:
+                tt = re.sub(re.escape(x), " ", tt, flags=re.I)  # innerText can be upper-cased by CSS
+        for pat in SIZE_REVEAL:
+            for m in re.finditer(pat, tt, re.I):
+                fails.append(f"{where} {label}: size reveal or gap phrase {m.group(0)!r}")
+        if not home:  # home's visible text gets the banned and product checks above, with its systems-list exception
+            for pat in BANNED:
+                for m in re.finditer(pat, t, re.I):
+                    fails.append(f"{where} {label}: banned term {m.group(0)!r}")
+            tp = t
+            for x in OUTSIDE_OK:
+                tp = tp.replace(x, " ")
+            for pat in PRODUCT_PATTERNS:
+                for m in re.finditer(pat, tp):
+                    fails.append(f"{where} {label}: product name {m.group(0)!r} (product names only in the home systems list)")
+    return fails
+
+
+def check_pages(b):
+    fails = []
+    local = re.match(r"https?://(127\.0\.0\.1|localhost)", BASE) is not None
+    # home: JSON-LD parses, voice and size rules, and its FAQPage covers exactly the questions it shows
+    st, home = fetch(BASE + "/")
+    pg = b.new_page(viewport={"width": 1440, "height": 900})
+    pg.goto(BASE + "/", wait_until="load")
+    text = pg.evaluate(OPEN_DETAILS_TEXT)
+    fails += content_checks("home", text, home, home=True)
+    shown = pg.evaluate("[...document.querySelectorAll('#faq .wl h3')].map(h => h.textContent.trim())")
+    pg.close()
+    faqld = [q["name"] for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", []) if g.get("@type") == "FAQPage"
+             for q in g["mainEntity"]]
+    if faqld != shown:
+        fails.append(f"home: FAQPage JSON-LD {faqld} does not match the questions shown {shown}")
+    for p in CFG["pages"]:
+        url, where = BASE + p["path"], p["path"]
+        try:
+            st, html = fetch(url)
+        except Exception as e:
+            fails.append(f"{where}: {e}")
+            continue
+        canon = re.search(r'<link rel="canonical" href="(.*?)"', html)
+        if not canon or canon.group(1) != SITE + p["path"]:
+            fails.append(f"{where}: canonical {canon and canon.group(1)!r}, want {SITE + p['path']!r}")
+        if f'<meta property="og:url" content="{SITE + p["path"]}">' not in html:
+            fails.append(f"{where}: og:url does not match the canonical")
+        if f"<title>{p['title']}</title>" not in html.replace("&#x27;", "'").replace("&amp;", "&"):
+            fails.append(f"{where}: title does not match pages.json")
+        types = [g.get("@type") for blk in ld_blocks(html) if isinstance(blk, dict) for g in blk.get("@graph", [])]
+        if "BreadcrumbList" not in types:
+            fails.append(f"{where}: no BreadcrumbList JSON-LD")
+        if p["id"] == "st-louis":
+            for pat in ADDRESS:
+                for m in re.finditer(pat, html):
+                    fails.append(f"{where}: street address detail {m.group(0)!r} (service-area business: no street address)")
+        for w in WIDTHS:
+            pg = b.new_page(viewport={"width": w, "height": 900})
+            pg.goto(url, wait_until="load")
+            pg.wait_for_timeout(1200)
+            sw = pg.evaluate("[document.documentElement.scrollWidth, document.documentElement.clientWidth]")
+            if sw[0] > sw[1]:
+                fails.append(f"{where} {w}px: horizontal scroll ({sw[0]} > {sw[1]})")
+            fit = pg.evaluate("[...document.querySelectorAll('.fp')].map(f => { const r = f.getBoundingClientRect(); return [f.id, Math.round(r.left), Math.round(r.right), document.documentElement.clientWidth]; })")
+            fails += [f"{where} {w}px: film {i} does not fit ({l}..{r} of {cw})" for i, l, r, cw in fit if l < 0 or r > cw]
+            if sorted(x[0] for x in fit) != sorted(p["films"]):
+                fails.append(f"{where} {w}px: film players {[x[0] for x in fit]}, pages.json declares {p['films']}")
+            if w == 1440:
+                bad = pg.evaluate("""[...document.querySelectorAll('a[href^="#"]')].map(a => a.getAttribute('href'))
+                    .filter(h => h.length > 1 && !document.getElementById(h.slice(1)))""")
+                fails += [f"{where}: link without target: {h}" for h in sorted(set(bad))]
+                if pg.evaluate("document.querySelectorAll('h1').length") != 1:
+                    fails.append(f"{where}: not exactly one <h1>")
+                if pg.evaluate("document.querySelectorAll('[data-systems-list]').length"):
+                    fails.append(f"{where}: a [data-systems-list] outside home (product names stay on home in phase 1)")
+                fails += content_checks(where, pg.evaluate(OPEN_DETAILS_TEXT), html)
+                # internal links answer 200 (fragments dropped), media answers 200
+                links = pg.evaluate("[...document.querySelectorAll('a[href^=\"/\"]')].map(a => a.href.split('#')[0])")
+                media = pg.evaluate("[...document.querySelectorAll('video source, video[poster], img[src]')].map(e => e.src || e.poster)")
+                for s in sorted(set(links + media)):
+                    try:
+                        code = urllib.request.urlopen(urllib.request.Request(s, method="HEAD", headers={"User-Agent": UA}), timeout=20).status
+                    except Exception as e:
+                        code = str(e)
+                    if code != 200:
+                        fails.append(f"{where}: {s}: {code}")
+                # a declared film autoplays muted on screen; its Sound button gives it the one voice on the page
+                for fid in p["films"]:
+                    pg.evaluate(f"document.getElementById('{fid}').scrollIntoView({{block:'center'}})")
+                    pg.wait_for_timeout(2500)
+                    stt = pg.evaluate(f"(v => [v.readyState, v.paused, v.muted, v.currentTime])(document.querySelector('#{fid} video'))")
+                    if stt[0] < 2 or stt[1] or not stt[2] or stt[3] <= 0:
+                        fails.append(f"{where}: film {fid} did not autoplay muted ({stt})")
+                    pg.click(f"#{fid} .snd")
+                    pg.wait_for_timeout(400)
+                    stt = pg.evaluate(f"(v => [v.paused, v.muted])(document.querySelector('#{fid} video'))")
+                    if stt != [False, False]:
+                        fails.append(f"{where}: film {fid} Sound button: paused/muted = {stt}")
+                    note = pg.evaluate(f"(f => f && f.innerText)(document.getElementById('{fid}').closest('figure').querySelector('figcaption'))")
+                    if not note or "Every figure is sample data." not in note:
+                        fails.append(f"{where}: film {fid} has no 'Every figure is sample data.' note under it")
+            pg.close()
+    # sitemap: every URL answers 200 here and its page names itself as canonical
+    try:
+        sm = fetch(BASE + "/sitemap.xml")[1]
+        locs = re.findall(r"<loc>(.*?)</loc>", sm)
+        want = {SITE + "/"} | {SITE + p["path"] for p in CFG["pages"]}
+        fails += [f"sitemap.xml: missing {u}" for u in sorted(want - set(locs))]
+        for loc in locs:
+            st, h = fetch(BASE + loc.replace(SITE, ""))
+            c = re.search(r'<link rel="canonical" href="(.*?)"', h)
+            if not c or c.group(1) != loc:
+                fails.append(f"sitemap.xml: {loc} canonical is {c and c.group(1)!r}")
+    except Exception as e:
+        fails.append(f"sitemap.xml: {e}")
+    # /about/ is a 301 to /how-lumic-works/ (the Worker does it; python's http.server cannot, so only off localhost)
+    if local:
+        print("note: /about/ 301 not tested on a local server (the Worker serves it); run qa.py against the preview")
+    else:
+        class NoRedirect(urllib.request.HTTPRedirectHandler):
+            def redirect_request(self, *a, **k):
+                return None
+        op = urllib.request.build_opener(NoRedirect)
+        for path in ("/about/", "/about"):
+            try:
+                r = op.open(urllib.request.Request(BASE + path, headers={"User-Agent": UA}), timeout=20)
+                code, loc = r.status, r.headers.get("Location")
+            except urllib.error.HTTPError as e:
+                code, loc = e.code, e.headers.get("Location")
+            if code != 301 or not (loc or "").endswith("/how-lumic-works/"):
+                fails.append(f"{path}: {code} -> {loc} (want 301 -> /how-lumic-works/)")
+    return fails
 
 
 def main():
@@ -189,6 +389,7 @@ def main():
             if len(fit) != 2:
                 fails.append(f"{w}px: expected 2 film players (.fp), found {len(fit)}")
             pg.close()
+        fails += check_pages(b)
         b.close()
     print("\n".join(fails) if fails else f"QA ok: {BASE} at {WIDTHS}")
     sys.exit(1 if fails else 0)

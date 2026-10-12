@@ -104,6 +104,8 @@ The team watches it, tests it every month, fixes what breaks, and upgrades it as
 - Upgrades as tools improve Included
 - Human approval Built in
 
+[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
+
 Portfolio
 
 ## In production, every day.
@@ -117,6 +119,8 @@ Every vendor bill was typed in twice, into two systems, about 30 a day. The agen
 - A specialty manufacturer · accounting software + a custom operations database
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
+
+[AP automation →](https://get-lumic.com/services/ap-automation/)
 
 ### A finance team run on agents
 
@@ -133,112 +137,7 @@ From live aging, the agent drafts the collections email and the statement for ea
 - Drafts from live aging
 - A person sends every one
 
-### Portfolio: what runs on lumic today.
-
-Agents and live dashboards in production at operating companies. Clients are kept private; every figure is from production.
-
-### Payroll preparation
-
-The agent prepares the payroll entries, and the controller approves them.
-
-- Agent · payroll + accounting software
-- The controller approves every run
-
-### Month-end close entries
-
-An agent prepares the month-end entries, and the controller approves them before anything posts.
-
-- Agent · ERP
-- Approved before posting, every month
-
-### Cash receipts
-
-Remittances and ACH detail, read and keyed into the ERP.
-
-- Agent · ERP + bank
-- A person approves each entry
-
-### Sales & margin
-
-Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
-
-- Dashboard · ERP
-- Replaces a daily export
-- Multi-company, one view
-
-### Receivables & aging
-
-Live aging by customer, the same view that feeds the collections agent.
-
-- Dashboard · ERP
-- Live
-
-### Consolidated financials
-
-A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.
-
-- Dashboard · ERP
-- Multi-company GL consolidation
-- An income statement that's never stale
-
-### Eight more running in production
-
-### Purchasing & PO write-back
-
-The agent drafts purchase orders and writes them back to the ERP.
-
-- Agent · ERP
-- Approval-gated
-
-### Bank reconciliation
-
-The agent matches the bank to the book.
-
-- Agent · ERP + bank feed
-- Approval-gated
-
-### AP workbench
-
-Every open bill, its PO match and its approval state.
-
-- Dashboard · accounting software
-- Live
-
-### Job costing & production rates
-
-Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
-
-- Dashboard · production data + ERP
-- Estimate vs. actual per job
-- Overruns surfaced early
-
-### Purchasing
-
-Open POs, receipts and vendor price changes.
-
-- Dashboard · ERP
-- Live
-
-### Commissions
-
-Rep commissions from live sales.
-
-- Dashboard · ERP
-- Live
-
-### PTO tracking
-
-Balances and requests.
-
-- Dashboard · HR data
-- Live
-
-### Ask your data (AI)
-
-Plain-English questions over the same live data. It drafts entries for a person to approve.
-
-- AI assistant · the same live data
-- A person approves each entry
+[See the full portfolio](https://get-lumic.com/portfolio/)
 
 Systems lumic works with
 
@@ -285,6 +184,8 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 ### Managed and kept working.
 
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+
+[How lumic works, in full](https://get-lumic.com/how-lumic-works/)
 
 Why lumic
 
@@ -333,14 +234,6 @@ lumic builds it, and keeps it working.
 
 FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
-### Where does the agent run?
-
-Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
-
-### What can the agent touch?
-
-Only what its job needs. lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
-
 ### Who approves what the agent does?
 
 A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
@@ -349,13 +242,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
-### What does it cost?
-
-It depends on the job. After a 20-minute call, lumic sends a written proposal with what the team would build, the timeline, and the cost. Once an agent is live, lumic runs it for a monthly fee.
-
-### Do you work outside St. Louis?
-
-Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
+[All questions](https://get-lumic.com/faq/)
 
 Leadership
 
@@ -363,23 +250,7 @@ Leadership
 
 lumic’s leadership includes a controller and a CFP®, based in St. Louis. Its leaders still work in finance, and that is the point: they run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
 
-CG
-
-### Christian Gonzenbach
-
-Co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
-
-[LinkedIn →](https://www.linkedin.com/in/christian-gonzenbach/)
-
-JW
-
-### Joshua Wittenauer, CFP®
-
-Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Leads lumic’s AI-agent work and how each agent handles your data.
-
-[LinkedIn →](https://www.linkedin.com/in/joshua-wittenauer-890339191/)
-
-When you call lumic, you speak with the people who build and run your agents.
+[Meet the leadership](https://get-lumic.com/how-lumic-works/#leadership)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -401,14 +272,6 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
-### Where does the agent run?
-
-Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
-
-### What can the agent touch?
-
-Only what its job needs. lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
-
 ### Who approves what the agent does?
 
 A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
@@ -417,13 +280,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
-### What does it cost?
-
-It depends on the job. After a 20-minute call, lumic sends a written proposal with what the team would build, the timeline, and the cost. Once an agent is live, lumic runs it for a monthly fee.
-
-### Do you work outside St. Louis?
-
-Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
+All questions: https://get-lumic.com/faq/
 
 ---
 

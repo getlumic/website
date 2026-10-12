@@ -1,0 +1,10 @@
+[
+ {"@type": "Person", "@id": "https://get-lumic.com/how-lumic-works/#christian-gonzenbach", "name": "Christian Gonzenbach", "jobTitle": "Co-founder",
+  "description": "Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.",
+  "image": "https://get-lumic.com/img/founders/christian.jpg", "worksFor": {"@id": "https://get-lumic.com/#org"},
+  "sameAs": "https://www.linkedin.com/in/christian-gonzenbach/"},
+ {"@type": "Person", "@id": "https://get-lumic.com/how-lumic-works/#joshua-wittenauer", "name": "Joshua Wittenauer", "jobTitle": "Co-founder",
+  "honorificSuffix": "CFP®", "description": "CFP®, corporate-finance trained. Leads lumic's AI-agent work and how each agent handles client data.",
+  "image": "https://get-lumic.com/img/founders/josh.jpg", "worksFor": {"@id": "https://get-lumic.com/#org"},
+  "sameAs": "https://www.linkedin.com/in/joshua-wittenauer-890339191/"}
+]
