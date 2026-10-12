@@ -137,7 +137,7 @@ def nav(current, home=False):
     return (f'<header class="nav">\n  <div class="wrap nav-in">\n'
             f'    <a class="brand" href="{"#top" if home else "/"}" aria-label="lumic home">{BRAND}</a>\n'
             f'    <nav aria-label="Primary">\n      <ul>\n' + "\n".join(items) + '\n      </ul>\n    </nav>\n'
-            f'    <a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a call</a>\n  </div>\n</header>')
+            f'    <a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a call {ARROW}</a>\n  </div>\n</header>')
 
 
 def footer(home=False):
