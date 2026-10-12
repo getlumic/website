@@ -104,37 +104,23 @@ We watch it, test it every month, fix what breaks, and upgrade it as AI improves
 - Upgrades as tools improve Included
 - Human approval Built in
 
-Client work
+Portfolio
 
 ## In production, every day.
 
-Two companies run lumic agents every day, live and measured, on entirely different systems. One is our first managed-agent client. At the other, one of us runs finance, so we use what we build.
-
-A sample of what runs on lumic today
-
-- AP invoice automation
-- Purchasing & PO write-back
-- Collections email drafts
-- Bank reconciliation
-- Payroll journal entries
-- AR aging & collections
-- Sales commissions
-- Consolidated financials
-- Sales & margin analytics
-- Job costing
-- Production rates
-- PTO tracking
+Agents and dashboards we built run every day inside operating companies, on entirely different systems, live and measured. We run finance ourselves, so we use what we build.
 
 ### AP invoice agent
 
 Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after our on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
+- A specialty manufacturer · accounting software + a custom operations database
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
 
-### A company run on agents
+### A finance team run on agents
 
-At the manufacturer where one of us runs finance, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
 - About 13 agent roles
 - Six live dashboards
@@ -143,31 +129,116 @@ At the manufacturer where one of us runs finance, about 13 agent roles do daily 
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
+- Agent · ERP + inbox
 - Drafts from live aging
 - A person sends every one
 
-### Three more running in production
+### Portfolio: what runs on lumic today.
 
-### Daily sales & margin reporting
+Agents and live dashboards in production at operating companies. Clients are kept private; every figure is from production.
 
-Sales and gross margin by customer, product, and rep, read straight from the ERP, including every entry the agents made. The dashboard shows what the agents posted, live. It replaces the report someone exported every morning.
+### Payroll preparation
 
-- Margin by product, customer & order
-- Two operating companies, one view
+The agent prepares the payroll entries, and the controller approves them.
 
-### Job costing from production data
+- Agent · payroll + accounting software
+- The controller approves every run
 
-Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. It reads the same live data the agents work in, so costs they enter show up the same day.
+### Month-end close entries
 
+An agent prepares the month-end entries, and the controller approves them before anything posts.
+
+- Agent · ERP
+- Approved before posting, every month
+
+### Cash receipts
+
+Remittances and ACH detail, read and keyed into the ERP.
+
+- Agent · ERP + bank
+- A person approves each entry
+
+### Sales & margin
+
+Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
+
+- Dashboard · ERP
+- Replaces a daily export
+- Multi-company, one view
+
+### Receivables & aging
+
+Live aging by customer, the same view that feeds the collections agent.
+
+- Dashboard · ERP
+- Live
+
+### Consolidated financials
+
+A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.
+
+- Dashboard · ERP
+- Multi-company GL consolidation
+- An income statement that's never stale
+
+### Eight more running in production
+
+### Purchasing & PO write-back
+
+The agent drafts purchase orders and writes them back to the ERP.
+
+- Agent · ERP
+- Approval-gated
+
+### Bank reconciliation
+
+The agent matches the bank to the book.
+
+- Agent · ERP + bank feed
+- Approval-gated
+
+### AP workbench
+
+Every open bill, its PO match and its approval state.
+
+- Dashboard · accounting software
+- Live
+
+### Job costing & production rates
+
+Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
+
+- Dashboard · production data + ERP
 - Estimate vs. actual per job
 - Overruns surfaced early
 
-### Month-end consolidation
+### Purchasing
 
-An agent prepares the month-end entries, and the controller approves them. Then a live income statement and product-margin view, consolidated across two sister companies, shows the result.
+Open POs, receipts and vendor price changes.
 
-- Multi-company GL consolidation
-- An income statement that's never stale
+- Dashboard · ERP
+- Live
+
+### Commissions
+
+Rep commissions from live sales.
+
+- Dashboard · ERP
+- Live
+
+### PTO tracking
+
+Balances and requests.
+
+- Dashboard · HR data
+- Live
+
+### Ask your data (AI)
+
+Plain-English questions over the same live data. It drafts entries for a person to approve.
+
+- AI assistant · the same live data
+- A person approves each entry
 
 How we work
 
@@ -191,13 +262,15 @@ Why lumic
 
 We’re FDEs with finance backgrounds. We don’t just deploy agents, we know which back-office jobs are worth automating because we’ve done them.
 
+Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
+
 ### It makes the entry itself.
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
 ### Live and measured.
 
-Our first managed agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+Our managed AP agent went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
 
 ### Finance people who code.
 
@@ -244,7 +317,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. Our first managed AP agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 ### What does it cost?
 
@@ -258,13 +331,13 @@ Leadership
 
 ### Finance first. Engineers second.
 
-lumic is led by a controller and a CFP®, both based in St. Louis, with deep finance backgrounds and senior roles early in our careers. We both still work in finance, and that is the point: one of us runs the books at a company that uses these agents every day. A founder leads every engagement, on site, from scoping to support.
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. We still work in finance, and that is the point: we run real books on the agents we deploy. Senior people lead every engagement, on site, from scoping to support.
 
 CG
 
 ### Christian Gonzenbach
 
-Co-founder. Controller and procurement lead at a mid-size operating company. Designed and runs the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
+Co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
 
 [LinkedIn →](https://www.linkedin.com/in/christian-gonzenbach/)
 
@@ -272,17 +345,17 @@ JW
 
 ### Joshua Wittenauer, CFP®
 
-Co-founder. Product analyst at a national financial services firm, where privacy and data rules come first. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's automation and AI-agent work, and how each agent handles your data.
+Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Leads lumic’s AI-agent work and how each agent handles your data.
 
 [LinkedIn →](https://www.linkedin.com/in/joshua-wittenauer-890339191/)
 
-When you call lumic, you speak with a founder.
+When you call lumic, you speak with the people who build and run your agents.
 
 ## Based in St. Louis. Start with a conversation.
 
 [Book a call](https://cal.com/lumic/20-minute-call) or write to us [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
 
-Every engagement is led by Christian or Josh.
+Every engagement is led by a senior FDE, on site.
 
 What happens next
 
@@ -312,7 +385,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. Our first managed AP agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 ### What does it cost?
 

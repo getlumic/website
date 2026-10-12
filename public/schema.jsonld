@@ -13,7 +13,7 @@
    "image": "https://get-lumic.com/og-image.png",
    "email": "hello@get-lumic.com",
    "slogan": "AI, deployed into your business and kept working.",
-   "description": "Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We deploy AI into how a business already runs, from vendor bills to month-end, keep it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; our proof so far comes from two manufacturers. Our first managed agent was live about six weeks after the on-site day, and 64 of 67 bills went through it in week one.",
+   "description": "Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. We deploy AI into how a business already runs, from vendor bills to month-end, keep it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one.",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "St. Louis",
@@ -171,7 +171,7 @@
      "name": "How long does it take to go live?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Weeks, not quarters. Our first managed AP agent went live about six weeks after our on-site day. In its first week, 64 of 67 bills went through the agent."
+      "text": "Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent."
      }
     },
     {

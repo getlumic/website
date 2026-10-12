@@ -1,6 +1,6 @@
 # lumic
 
-> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We deploy AI into how a business already runs, from vendor bills to month-end, keep it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; our proof so far comes from two manufacturers. Our first managed agent was live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; we travel for the right fit.
+> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. We deploy AI into how a business already runs, from vendor bills to month-end, keep it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; we travel for the right fit.
 
 ## When to use lumic
 - A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
@@ -11,8 +11,8 @@
 
 ## What makes lumic different
 1. The agent makes the entry itself, the same records a clerk would key. A person approves it, and nobody retypes it.
-2. Live, measured results: our first managed agent went live about six weeks after our on-site day, and 64 of 67 bills went through it in its first week. Counted, not estimated.
-3. Founders who have done the controller and finance work themselves: finance people who code, not coders learning finance.
+2. Live and measured: our managed AP agent went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+3. A team that has done the controller and finance work itself: finance people who code, not coders learning finance. Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
 
 ## What we do
 - We start beside the client's team and watch one job done by hand: the screens, the checks, the exceptions.
@@ -22,14 +22,37 @@
 - A person on the client's team approves what the agent enters before it posts. The final post stays with the client.
 - Once an agent is live, we watch it, test it every month, fix what breaks, and upgrade it, for a monthly fee.
 
-## Proof
-- AP agent at our first managed-agent client: every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after our on-site day. It runs on a dedicated computer in their office. In its first week, 64 of 67 bills went through the agent.
-- At the manufacturer where one of our founders runs finance, about 13 agent roles do daily work (AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, collections), with six live dashboards. A person approves each entry.
+## Portfolio
+Agents and dashboards we built run every day inside operating companies, on entirely different systems, live and measured. We run finance ourselves, so we use what we build. Clients are kept private; every figure is from production.
+
+- AP invoice agent (a specialty manufacturer; accounting software + a custom operations database): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
+- A finance team run on agents: at a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+
+Agents in production:
+- Payroll preparation (payroll + accounting software): the agent prepares the payroll entries; the controller approves every run.
+- Month-end close entries (ERP): approved before posting, every month.
+- Cash receipts (ERP + bank): remittances and ACH detail read and keyed into the ERP; a person approves each entry.
+- Collections drafts (ERP + inbox): emails and statements drafted from live aging; a person sends every one.
+- Purchasing and PO write-back (ERP): approval-gated.
+- Bank reconciliation (ERP + bank feed): bank to book, approval-gated.
+
+Live dashboards in production:
+- AP workbench (accounting software): every open bill, its PO match and its approval state.
+- Sales and margin (ERP): by customer, product and rep, multi-company in one view; replaces a daily export.
+- Receivables and aging (ERP): live aging that feeds the collections agent.
+- Consolidated financials (ERP): multi-company income statement and product margin, consolidated across sister companies; never stale.
+- Job costing and production rates (production data + ERP): estimate vs. actual per job, during the job.
+- Purchasing (ERP): open POs, receipts and vendor price changes.
+- Commissions (ERP): rep commissions from live sales.
+- PTO tracking (HR data): balances and requests.
+- Ask your data (AI): plain-English questions over the same live data.
 
 ## Who we are
-- Christian Gonzenbach, co-founder: controller and procurement lead at a mid-size operating company. Designed and runs the AP, payroll and month-end agents lumic deploys.
-- Joshua Wittenauer, CFP, co-founder: product analyst at a national financial services firm. Leads lumic's automation and AI-agent work, and how each agent handles client data.
-- A founder leads every engagement, from scoping to support.
+lumic's leadership includes a controller and a CFP®, based in St. Louis. We still work in finance, and that is the point: we run real books on the agents we deploy. Senior people lead every engagement, on site, from scoping to support.
+
+- Christian Gonzenbach, co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
+- Joshua Wittenauer, CFP®, co-founder. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's AI-agent work and how each agent handles your data.
+- When you call lumic, you speak with the people who build and run your agents. Every engagement is led by a senior FDE, on site.
 
 ## Area served
 Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. We travel for the right fit.
@@ -38,7 +61,7 @@ Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County
 A 20-minute call, then a written proposal with what we would build, the timeline and the cost, then a visit to meet the team. Contact: hello@get-lumic.com
 
 ## Pages
-- [Home](https://get-lumic.com/): what we do, proof, how we work, founders, contact
+- [Home](https://get-lumic.com/): what we do, portfolio, how we work, leadership, contact
 - [Home as markdown](https://get-lumic.com/index.md)
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)

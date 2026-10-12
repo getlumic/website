@@ -141,7 +141,7 @@ def main():
         f'  <url contentType="structuredData/schema.org"><loc>{SITE}/schema.jsonld</loc></url>\n</urlset>\n')
     # ARD catalog (agenticresourcediscovery.org): urn:air:<domain>:<namespace>:<name> identifiers, one url each.
     # Only documents we really publish; no API or MCP server is claimed.
-    q = ["what does lumic do", "who are lumic's founders", "does lumic work outside St. Louis"]
+    q = ["what does lumic do", "who leads lumic", "does lumic work outside St. Louis"]
     U = "urn:air:get-lumic.com:docs:"
     catalog = {"specVersion": "0.91", "entries": [
         {"identifier": U + "llms", "displayName": "lumic for AI agents", "type": "text/plain", "url": f"{SITE}/llms.txt", "representativeQueries": q},
