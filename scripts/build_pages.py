@@ -6,7 +6,7 @@ page come from src/pages/<id>.jsonld (a JSON list; the string "@AREA" becomes th
 come from its pages.json "faq" list: {{page_faq}} shows them and the same list writes the page's FAQPage.
 
 Also, in place:
-- public/index.html: the header, footer, FAQ (list and FAQPage JSON-LD) and the pricing block between their markers. The rest of the home
+- public/index.html: the header, footer, FAQ (list and FAQPage JSON-LD) and the pricing section between their markers. The rest of the home
   page stays hand-edited.
 - public/sitemap.xml: home, every page, privacy; lastmod is each source file's last commit date (today if uncommitted).
 - src/worker.js: the list of paths that have a markdown copy (between the md-pages markers).
@@ -60,6 +60,37 @@ PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
         <li><span>Running and support</span><span class="st">Monthly</span></li>
       </ul>
     </article>"""
+# The pricing block as its own section (home, and the service / industry / system pages before the checklist).
+PRICING_SECTION = f"""<!-- ============ PRICING ============ -->
+<section id="plans" aria-label="Pricing">
+  <div class="wrap">
+    <div class="thread" aria-hidden="true"><i></i></div>
+    {PRICING_BLOCK}
+  </div>
+</section>"""
+
+
+def checklist(path):
+    """The free-checklist form section (the same markup on home, the industry pages and month-end close)."""
+    return f"""<!-- ============ CHECKLIST ============ -->
+<section id="checklist" aria-labelledby="checklist-h">
+  <div class="wrap">
+    <div class="runs rv" data-checklist>
+      <p class="runs-l">Free checklist</p>
+      <h2 id="checklist-h">Month-End Red Flags Service Firms Usually Miss</h2>
+      <p class="lead">Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.</p>
+      <form class="ck-form cta" method="post" action="/api/checklist" novalidate style="margin-top:20px;flex-wrap:wrap">
+        <input type="hidden" name="page" value="{path}">
+        <input type="email" name="email" required autocomplete="email" inputmode="email" aria-label="Email address" placeholder="you@company.com" style="font:inherit;font-size:16px;padding:12px 16px;border:1px solid rgba(14,21,37,.16);border-radius:999px;min-width:0;flex:1 1 240px;max-width:360px;background:#fff;color:inherit">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <button class="btn btn-p" type="submit">Get the checklist</button>
+      </form>
+      <p class="pfilms-note" data-ck-msg role="status" aria-live="polite">One email field. No spam, no trackers.</p>
+    </div>
+  </div>
+</section>"""
+
+
 BRAND = 'lum<span class="idot">&#305;<span class="idot-dot"></span></span>c'
 SND = ('<button class="snd" type="button" aria-label="Sound" aria-pressed="false" title="Turn sound on"><svg class="off" viewBox="0 0 24 24" '
        'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/>'
@@ -225,7 +256,7 @@ def build_page(p):
     url = SITE + p["path"]
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
-                 "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{price_onsite}}": PRICE_ONSITE,
+                 "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{pricing_section}}": PRICING_SECTION, "{{checklist}}": checklist(p["path"]), "{{price_onsite}}": PRICE_ONSITE,
                  "{{price_build}}": PRICE_BUILD, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
                  "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
                  "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
@@ -304,7 +335,7 @@ def build_home():
     h = stamp(h, "footer", footer(home=True))
     home_faq = [x for x in CFG["faq"] if x.get("home")]
     h = stamp(h, "faq", faq_items(home_faq))
-    h = stamp(h, "pricing", "    " + PRICING_BLOCK)
+    h = stamp(h, "pricing", PRICING_SECTION)
     m = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', h, re.S)
     ld = json.loads(m.group(2))
     ld["@graph"] = [faq_ld(home_faq, SITE + "/#faq") if g.get("@type") == "FAQPage" else g for g in ld["@graph"]]

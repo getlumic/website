@@ -54,7 +54,7 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
-[How lumic works, in full](https://get-lumic.com/how-lumic-works/) [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/) [Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/)
+[How lumic works, in full](https://get-lumic.com/how-lumic-works/) [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/) [Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/) [Every job lumic automates: Services](https://get-lumic.com/services/) [See pricing](https://get-lumic.com/pricing/) [Guardrails](https://get-lumic.com/guardrails/)
 
 Questions
 

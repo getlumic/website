@@ -65,67 +65,6 @@ What you get
 
 If your team does it on a screen, an agent can usually learn it. It reads what it needs, and every entry it makes waits for a person’s approval.
 
-Services
-
-## An agent on the job, and a team behind it.
-
-lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
-
-01 · Deploy an agent
-
-### One job at a time.
-
-The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
-
-- AI agents
-- System connections
-- Approval queues
-- Dashboards
-- Workflow redesign
-- Every deployment covers
-- One job, mapped with your team
-- A dedicated computer for it, wherever fits
-- Connected to the systems it needs
-- An approval step before anything posts
-- A log of every action it takes
-
-02 · Managed AI agents
-
-### lumic keeps it working.
-
-Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
-
-The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
-
-- Each managed agent Covered
-- Monitoring Ongoing
-- Testing Monthly
-- Fixes Included
-- Upgrades as tools improve Included
-- Human approval Built in
-
-Pricing
-
-### Free consultation.
-
-On-site work $1,500/day, credited toward phase one.
-
-Managed agents from $1,000/month.
-
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
-
-Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
-
-[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
-
-- At a glance
-- Consultation Free
-- On-site work $1,500/day
-- The build One-time, scoped
-- Running and support Monthly
-
-[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
-
 Portfolio
 
 ## In production, every day.
@@ -191,6 +130,47 @@ Client names stay private.
 
 [How lumic works with your systems](https://get-lumic.com/systems/)
 
+Services
+
+## An agent on the job, and a team behind it.
+
+lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
+
+01 · Deploy an agent
+
+### One job at a time.
+
+The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
+
+- AI agents
+- System connections
+- Approval queues
+- Dashboards
+- Workflow redesign
+- Every deployment covers
+- One job, mapped with your team
+- A dedicated computer for it, wherever fits
+- Connected to the systems it needs
+- An approval step before anything posts
+- A log of every action it takes
+
+02 · Managed AI agents
+
+### lumic keeps it working.
+
+Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
+
+The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+
+- Each managed agent Covered
+- Monitoring Ongoing
+- Testing Monthly
+- Fixes Included
+- Upgrades as tools improve Included
+- Human approval Built in
+
+[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
+
 How lumic works
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
@@ -208,6 +188,26 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
 [How lumic works, in full](https://get-lumic.com/how-lumic-works/)
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
 
 Why lumic
 
@@ -249,6 +249,8 @@ lumic builds it, and keeps it working.
 - Month-end entries built by hand → Prepared by an agent, approved by you
 - Exporting the same reports every morning → Live dashboards, no export
 - Build-and-ghost consultants → A team that stays on
+
+[Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/) [Guardrails](https://get-lumic.com/guardrails/) [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
 
 ### Common questions
 

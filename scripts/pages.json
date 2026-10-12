@@ -6,23 +6,12 @@
       "href": "/services/"
     },
     {
-      "label": "Portfolio",
-      "href": "/portfolio/",
-      "opt": true
-    },
-    {
-      "label": "Systems",
-      "href": "/systems/",
-      "opt": true
-    },
-    {
       "label": "How lumic works",
       "href": "/how-lumic-works/"
     },
     {
       "label": "Pricing",
-      "href": "/pricing/",
-      "opt": true
+      "href": "/pricing/"
     },
     {
       "label": "St. Louis",
@@ -32,13 +21,9 @@
       "label": "FAQ",
       "href": "/faq/",
       "opt": true
-    },
-    {
-      "label": "Contact",
-      "href": "#contact"
     }
   ],
-  "footer": [
+"footer": [
     {
       "label": "Demo",
       "href": "/#demo"

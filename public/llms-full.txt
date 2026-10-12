@@ -173,67 +173,6 @@ What you get
 
 If your team does it on a screen, an agent can usually learn it. It reads what it needs, and every entry it makes waits for a person’s approval.
 
-Services
-
-## An agent on the job, and a team behind it.
-
-lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
-
-01 · Deploy an agent
-
-### One job at a time.
-
-The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
-
-- AI agents
-- System connections
-- Approval queues
-- Dashboards
-- Workflow redesign
-- Every deployment covers
-- One job, mapped with your team
-- A dedicated computer for it, wherever fits
-- Connected to the systems it needs
-- An approval step before anything posts
-- A log of every action it takes
-
-02 · Managed AI agents
-
-### lumic keeps it working.
-
-Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
-
-The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
-
-- Each managed agent Covered
-- Monitoring Ongoing
-- Testing Monthly
-- Fixes Included
-- Upgrades as tools improve Included
-- Human approval Built in
-
-Pricing
-
-### Free consultation.
-
-On-site work $1,500/day, credited toward phase one.
-
-Managed agents from $1,000/month.
-
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
-
-Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
-
-[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
-
-- At a glance
-- Consultation Free
-- On-site work $1,500/day
-- The build One-time, scoped
-- Running and support Monthly
-
-[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
-
 Portfolio
 
 ## In production, every day.
@@ -299,6 +238,47 @@ Client names stay private.
 
 [How lumic works with your systems](https://get-lumic.com/systems/)
 
+Services
+
+## An agent on the job, and a team behind it.
+
+lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
+
+01 · Deploy an agent
+
+### One job at a time.
+
+The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
+
+- AI agents
+- System connections
+- Approval queues
+- Dashboards
+- Workflow redesign
+- Every deployment covers
+- One job, mapped with your team
+- A dedicated computer for it, wherever fits
+- Connected to the systems it needs
+- An approval step before anything posts
+- A log of every action it takes
+
+02 · Managed AI agents
+
+### lumic keeps it working.
+
+Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
+
+The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+
+- Each managed agent Covered
+- Monitoring Ongoing
+- Testing Monthly
+- Fixes Included
+- Upgrades as tools improve Included
+- Human approval Built in
+
+[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
+
 How lumic works
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
@@ -316,6 +296,26 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
 [How lumic works, in full](https://get-lumic.com/how-lumic-works/)
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
 
 Why lumic
 
@@ -357,6 +357,8 @@ lumic builds it, and keeps it working.
 - Month-end entries built by hand → Prepared by an agent, approved by you
 - Exporting the same reports every morning → Live dashboards, no export
 - Build-and-ghost consultants → A team that stays on
+
+[Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/) [Guardrails](https://get-lumic.com/guardrails/) [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
 
 ### Common questions
 
@@ -700,6 +702,34 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 More on the method in [How lumic works](https://get-lumic.com/how-lumic-works/), every answer in [Common questions](https://get-lumic.com/faq/), and on-site work in [St. Louis](https://get-lumic.com/st-louis/).
 
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
+
 ## Based in St. Louis. Start with a conversation.
 
 [Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
@@ -817,6 +847,34 @@ lumic builds it, and keeps it working.
 
 Other jobs lumic automates: [Services](https://get-lumic.com/services/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
+
 ## Based in St. Louis. Start with a conversation.
 
 [Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
@@ -925,6 +983,34 @@ When a pay period reaches back into the previous month, the agent builds the acc
 
 Other jobs lumic automates: [Services](https://get-lumic.com/services/). Examples in production: [Portfolio](https://get-lumic.com/portfolio/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
+
 ## Based in St. Louis. Start with a conversation.
 
 [Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
@@ -1032,6 +1118,26 @@ A live income statement, consolidated where there is more than one company, show
 - [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 Other jobs lumic automates: [Services](https://get-lumic.com/services/). Examples in production: [Portfolio](https://get-lumic.com/portfolio/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
 
 Free checklist
 
@@ -1199,6 +1305,34 @@ lumic builds it, and keeps it working.
 - Build-and-ghost consultants → A team that stays on
 
 Other jobs lumic automates: [Services](https://get-lumic.com/services/). Every agent and dashboard in production: [Portfolio](https://get-lumic.com/portfolio/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1833,14 +1967,6 @@ Sales and gross margin by customer, product and rep, read live, with the costs t
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
-
 Approval and access
 
 ## Nothing posts without you.
@@ -1865,6 +1991,34 @@ lumic builds it, and keeps it working.
 - Build-and-ghost consultants → A team that stays on
 
 Every job lumic automates: [Services](https://get-lumic.com/services/). Distributors: [AI automation for distributors](https://get-lumic.com/industries/distribution/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1966,14 +2120,6 @@ Plain-English questions over the same live data. It drafts entries for a person 
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
-
 Approval and access
 
 ## Nothing posts without you.
@@ -1998,6 +2144,34 @@ lumic builds it, and keeps it working.
 - Build-and-ghost consultants → A team that stays on
 
 Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers: [AI automation for manufacturers](https://get-lumic.com/industries/manufacturing/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -2101,14 +2275,6 @@ Revenue, margin and receivables read live from your books, so nobody rebuilds th
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
-
 Approval and access
 
 ## Nothing posts without you.
@@ -2133,6 +2299,34 @@ lumic builds it, and keeps it working.
 - Build-and-ghost consultants → A team that stays on
 
 Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -2211,7 +2405,7 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
-[How lumic works, in full](https://get-lumic.com/how-lumic-works/) [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/) [Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/)
+[How lumic works, in full](https://get-lumic.com/how-lumic-works/) [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/) [Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/) [Every job lumic automates: Services](https://get-lumic.com/services/) [See pricing](https://get-lumic.com/pricing/) [Guardrails](https://get-lumic.com/guardrails/)
 
 Questions
 
@@ -2811,6 +3005,34 @@ The agent prepares each entry. A person on your team checks it and approves it, 
 
 Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
 
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
+
 ## Based in St. Louis. Start with a conversation.
 
 [Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
@@ -2904,6 +3126,34 @@ lumic builds it, and keeps it working.
 - Build-and-ghost consultants → A team that stays on
 
 Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -3002,6 +3252,34 @@ The agent prepares each entry. A person on your team checks it and approves it, 
 
 Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
 
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
+
 ## Based in St. Louis. Start with a conversation.
 
 [Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
@@ -3098,6 +3376,34 @@ lumic gives each agent access to the screens and records its job needs, and noth
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
 
 Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
 
 ## Based in St. Louis. Start with a conversation.
 

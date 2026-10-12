@@ -85,6 +85,26 @@ A live income statement, consolidated where there is more than one company, show
 
 Other jobs lumic automates: [Services](https://get-lumic.com/services/). Examples in production: [Portfolio](https://get-lumic.com/portfolio/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
 Free checklist
 
 ## Month-End Red Flags Service Firms Usually Miss
