@@ -2,7 +2,7 @@
 title: "Systems lumic works with: ERP and accounting | lumic"
 description: "lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts."
 canonical: https://get-lumic.com/systems/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # Systems lumic works with: ERP and accounting | lumic

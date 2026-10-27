@@ -1,13 +1,13 @@
 ---
-title: "Forward-deployed engineers in St. Louis | lumic"
-description: "A forward-deployed engineer works on site, builds inside your own systems and stays to run it after launch. A consultant advises and leaves. Based in St. Louis."
+title: "St. Louis FDE team for business AI | lumic"
+description: "lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch."
 canonical: https://get-lumic.com/forward-deployed-engineers/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
-# Forward-deployed engineers in St. Louis | lumic
+# St. Louis FDE team for business AI | lumic
 
-> A forward-deployed engineer works on site, builds inside your own systems and stays to run it after launch. A consultant advises and leaves. Based in St. Louis.
+> lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch.
 
 Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-lumic.com
 

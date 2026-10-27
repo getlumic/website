@@ -2,7 +2,7 @@
 title: "Guardrails: approval, logging and access | lumic"
 description: "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent."
 canonical: https://get-lumic.com/guardrails/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # Guardrails: approval, logging and access | lumic

@@ -1,21 +1,21 @@
 ---
-title: "AI Consulting & Automation in St. Louis | lumic"
-description: "lumic's FDEs are based in St. Louis. They come on site, build an AI agent for one back-office job at a time, and keep it working. A person approves each entry."
+title: "St. Louis AI consulting and automation | lumic"
+description: "lumic is St. Louis AI consulting that sends FDEs on site to build one back-office agent at a time. A person approves every entry before it posts."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
-# AI Consulting & Automation in St. Louis | lumic
+# St. Louis AI consulting and automation | lumic
 
-> lumic's FDEs are based in St. Louis. They come on site, build an AI agent for one back-office job at a time, and keep it working. A person approves each entry.
+> lumic is St. Louis AI consulting that sends FDEs on site to build one back-office agent at a time. A person approves every entry before it posts.
 
 Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com
 
 Based in St. Louis AI consulting and automation
 
-# AI Consulting & Automation in St. Louis
+# St. Louis AI consulting and automation
 
-lumic is an AI consulting and automation firm based in St. Louis. Its Forward Deployed Engineers have finance backgrounds. They come on site, find the back-office work your team does by hand, build an AI agent for one job at a time inside the systems you already run, and keep it working. A person on your team approves every entry before it posts.
+lumic is an AI consulting and automation firm based in St. Louis. Its Forward Deployed Engineers have finance backgrounds. They come on site, find the back-office work your team does by hand, build an AI agent for one job at a time inside the systems you already run, and keep it working. A person on your team approves every entry before it posts. For St. Louis AI or STL AI work on the back office, lumic sends Forward Deployed Engineers, not a slide deck.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Questions
 

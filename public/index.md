@@ -1,13 +1,13 @@
 ---
 title: "lumic | Forward Deployed Engineers for business, St. Louis"
-description: "lumic's Forward Deployed Engineers (FDEs) have finance backgrounds and are based in St. Louis. They put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters."
+description: "lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — in the systems you already run, with a person approving what matters."
 canonical: https://get-lumic.com/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # lumic | Forward Deployed Engineers for business, St. Louis
 
-> lumic's Forward Deployed Engineers (FDEs) have finance backgrounds and are based in St. Louis. They put AI to work inside the systems and routines your business already runs, from vendor bills to month-end, keep it working, and a person on your team approves what matters.
+> lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — in the systems you already run, with a person approving what matters.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 
@@ -15,7 +15,7 @@ Based in St. Louis FDEs for business
 
 # AI, deployed into your business and kept working.
 
-lumic’s Forward Deployed Engineers have finance backgrounds. They put AI to work inside the systems and routines you already run, from vendor bills to month-end, keep it working, and a person on your team approves what matters. St. Louis first; the team travels for the right fit.
+lumic’s Forward Deployed Engineers have finance backgrounds. They put AI to work inside the systems and routines you already run, from vendor bills to month-end, keep it working, and a person on your team approves what matters. lumic is St. Louis AI help for the back office: Forward Deployed Engineers on site, one job at a time. St. Louis first; the team travels for the right fit.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See it running
 

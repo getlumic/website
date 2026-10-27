@@ -2,7 +2,7 @@
 title: "Payroll journal entry automation | lumic"
 description: "An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click."
 canonical: https://get-lumic.com/services/payroll/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # Payroll journal entry automation | lumic

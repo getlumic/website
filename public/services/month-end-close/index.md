@@ -2,7 +2,7 @@
 title: "Month-end close automation | lumic"
 description: "An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it."
 canonical: https://get-lumic.com/services/month-end-close/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # Month-end close automation | lumic

@@ -4,7 +4,7 @@
 //   markdown 404.
 // - Films: a byte-range request on /video/* gets 206 Partial Content (static assets return the whole file, and iPhone
 //   Safari will not play a video that way).
-// - Redirects: www.get-lumic.com -> get-lumic.com, /about(/) -> /how-lumic-works/, and the assets' own 307s (/index.html,
+// - Redirects: http:// and www.get-lumic.com -> https://get-lumic.com (same path and query), /about(/) -> /how-lumic-works/, and the assets' own 307s (/index.html,
 //   /privacy) become 301s.
 // - Headers: HSTS everywhere, a Link header on pages (llms.txt and the markdown copy), a day of browser cache on films
 //   and images (their file names are reused when a film is replaced, so not longer than that).
@@ -169,8 +169,9 @@ async function notify(env, { email, ts, page }) {
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
-    if (url.hostname === "www." + APEX) {
+    if (url.hostname === "www." + APEX || (url.hostname === APEX && url.protocol === "http:")) {
       url.hostname = APEX;
+      url.protocol = "https:";
       return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
     }
     if (url.pathname === "/api/checklist") return checklist(req, env, url, ctx);

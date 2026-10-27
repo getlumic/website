@@ -1445,8 +1445,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/st-louis/#webpage",
    "url": "https://get-lumic.com/st-louis/",
-   "name": "AI automation in St. Louis: on-site FDEs | lumic",
-   "description": "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.",
+   "name": "St. Louis AI automation: on-site FDEs | lumic",
+   "description": "lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1480,8 +1480,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/st-louis/ai-consulting/#webpage",
    "url": "https://get-lumic.com/st-louis/ai-consulting/",
-   "name": "AI Consulting & Automation in St. Louis | lumic",
-   "description": "lumic's FDEs are based in St. Louis. They come on site, build an AI agent for one back-office job at a time, and keep it working. A person approves each entry.",
+   "name": "St. Louis AI consulting and automation | lumic",
+   "description": "lumic is St. Louis AI consulting that sends FDEs on site to build one back-office agent at a time. A person approves every entry before it posts.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1620,8 +1620,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/forward-deployed-engineers/#webpage",
    "url": "https://get-lumic.com/forward-deployed-engineers/",
-   "name": "Forward-deployed engineers in St. Louis | lumic",
-   "description": "A forward-deployed engineer works on site, builds inside your own systems and stays to run it after launch. A consultant advises and leaves. Based in St. Louis.",
+   "name": "St. Louis FDE team for business AI | lumic",
+   "description": "lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"

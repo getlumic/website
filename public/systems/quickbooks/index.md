@@ -2,7 +2,7 @@
 title: "QuickBooks automation with AI agents | lumic"
 description: "lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/quickbooks/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # QuickBooks automation with AI agents | lumic

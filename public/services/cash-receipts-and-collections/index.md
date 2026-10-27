@@ -2,7 +2,7 @@
 title: "Cash receipts and collections automation | lumic"
 description: "An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # Cash receipts and collections automation | lumic

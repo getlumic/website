@@ -2,7 +2,7 @@
 title: "Sage 100 automation and dashboards | lumic"
 description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
 canonical: https://get-lumic.com/systems/sage-100/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # Sage 100 automation and dashboards | lumic

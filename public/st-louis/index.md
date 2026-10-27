@@ -1,13 +1,13 @@
 ---
-title: "AI automation in St. Louis: on-site FDEs | lumic"
-description: "lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
+title: "St. Louis AI automation: on-site FDEs | lumic"
+description: "lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
-# AI automation in St. Louis: on-site FDEs | lumic
+# St. Louis AI automation: on-site FDEs | lumic
 
-> lumic's FDEs are based in St. Louis and work on site beside your team, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.
+> lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.
 
 Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 

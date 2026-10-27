@@ -2,7 +2,7 @@
 title: "Back-office automation services: AI agents | lumic"
 description: "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts."
 canonical: https://get-lumic.com/services/
-last_updated: 2026-10-12
+last_updated: 2026-10-27
 ---
 
 # Back-office automation services: AI agents | lumic
