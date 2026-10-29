@@ -2,7 +2,7 @@
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
 description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day."
 canonical: https://get-lumic.com/services/ap-automation/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic

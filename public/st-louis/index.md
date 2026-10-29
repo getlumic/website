@@ -2,7 +2,7 @@
 title: "St. Louis AI automation: on-site FDEs | lumic"
 description: "lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # St. Louis AI automation: on-site FDEs | lumic

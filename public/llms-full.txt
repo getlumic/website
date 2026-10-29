@@ -110,7 +110,7 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 title: "lumic | Forward Deployed Engineers for business, St. Louis"
 description: "lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — in the systems you already run, with a person approving what matters."
 canonical: https://get-lumic.com/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # lumic | Forward Deployed Engineers for business, St. Louis
@@ -433,7 +433,7 @@ All questions: https://get-lumic.com/faq/
 title: "Back-office automation services: AI agents | lumic"
 description: "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts."
 canonical: https://get-lumic.com/services/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Back-office automation services: AI agents | lumic
@@ -589,7 +589,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
 description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day."
 canonical: https://get-lumic.com/services/ap-automation/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
@@ -755,7 +755,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Cash receipts and collections automation | lumic"
 description: "An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Cash receipts and collections automation | lumic
@@ -900,7 +900,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Payroll journal entry automation | lumic"
 description: "An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click."
 canonical: https://get-lumic.com/services/payroll/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Payroll journal entry automation | lumic
@@ -1036,7 +1036,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Month-end close automation | lumic"
 description: "An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it."
 canonical: https://get-lumic.com/services/month-end-close/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Month-end close automation | lumic
@@ -1172,7 +1172,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Live ERP dashboards and reporting | lumic"
 description: "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them."
 canonical: https://get-lumic.com/services/dashboards-and-reporting/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Live ERP dashboards and reporting | lumic
@@ -1359,7 +1359,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Portfolio: AI agents and dashboards in production | lumic"
 description: "Agents and live dashboards lumic built, running every day inside operating companies. Clients are kept private; every figure is from production."
 canonical: https://get-lumic.com/portfolio/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Portfolio: AI agents and dashboards in production | lumic
@@ -1541,7 +1541,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "How lumic works: FDEs, approvals and data security | lumic"
 description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you."
 canonical: https://get-lumic.com/how-lumic-works/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
@@ -1715,7 +1715,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Guardrails: approval, logging and access | lumic"
 description: "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent."
 canonical: https://get-lumic.com/guardrails/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Guardrails: approval, logging and access | lumic
@@ -1795,7 +1795,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Pricing: AI agents for the back office | lumic"
 description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Pricing: AI agents for the back office | lumic
@@ -1892,7 +1892,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Back-office AI automation for manufacturers | lumic"
 description: "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Back-office AI automation for manufacturers | lumic
@@ -2045,7 +2045,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Back-office AI automation for distributors | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Back-office AI automation for distributors | lumic
@@ -2198,7 +2198,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Back-office automation for service firms | lumic"
 description: "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Back-office automation for service firms | lumic
@@ -2353,7 +2353,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "St. Louis AI automation: on-site FDEs | lumic"
 description: "lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # St. Louis AI automation: on-site FDEs | lumic
@@ -2452,7 +2452,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "St. Louis AI consulting and automation | lumic"
 description: "lumic is St. Louis AI consulting that sends FDEs on site to build one back-office agent at a time. A person approves every entry before it posts."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # St. Louis AI consulting and automation | lumic
@@ -2593,7 +2593,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "St. Louis FDE team for business AI | lumic"
 description: "lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch."
 canonical: https://get-lumic.com/forward-deployed-engineers/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # St. Louis FDE team for business AI | lumic
@@ -2707,7 +2707,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "FAQ: FDEs, AI agents and approvals | lumic"
 description: "What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job."
 canonical: https://get-lumic.com/faq/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # FAQ: FDEs, AI agents and approvals | lumic
@@ -2797,7 +2797,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Systems lumic works with: ERP and accounting | lumic"
 description: "lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts."
 canonical: https://get-lumic.com/systems/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Systems lumic works with: ERP and accounting | lumic
@@ -2933,7 +2933,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "QuickBooks automation with AI agents | lumic"
 description: "lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/quickbooks/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # QuickBooks automation with AI agents | lumic
@@ -3058,7 +3058,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "NetSuite automation with AI agents | lumic"
 description: "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/netsuite/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # NetSuite automation with AI agents | lumic
@@ -3180,7 +3180,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Sage 100 automation and dashboards | lumic"
 description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
 canonical: https://get-lumic.com/systems/sage-100/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Sage 100 automation and dashboards | lumic
@@ -3305,7 +3305,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Sage Intacct automation with AI agents | lumic"
 description: "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/sage-intacct/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Sage Intacct automation with AI agents | lumic
@@ -3430,7 +3430,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 title: "Month-End Red Flags Service Firms Usually Miss | lumic"
 description: "Ten month-end mistakes in AP, billing, payroll and the close, on one page: a free checklist from lumic, with a PDF download."
 canonical: https://get-lumic.com/resources/month-end-red-flags/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Month-End Red Flags Service Firms Usually Miss | lumic

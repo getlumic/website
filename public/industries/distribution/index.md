@@ -2,7 +2,7 @@
 title: "Back-office AI automation for distributors | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Back-office AI automation for distributors | lumic

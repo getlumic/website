@@ -2,7 +2,7 @@
 title: "Sage Intacct automation with AI agents | lumic"
 description: "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/sage-intacct/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Sage Intacct automation with AI agents | lumic

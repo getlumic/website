@@ -2,7 +2,7 @@
 title: "St. Louis FDE team for business AI | lumic"
 description: "lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch."
 canonical: https://get-lumic.com/forward-deployed-engineers/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # St. Louis FDE team for business AI | lumic

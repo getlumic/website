@@ -2,7 +2,7 @@
 title: "Back-office AI automation for manufacturers | lumic"
 description: "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Back-office AI automation for manufacturers | lumic

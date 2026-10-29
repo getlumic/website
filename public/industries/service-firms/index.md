@@ -2,7 +2,7 @@
 title: "Back-office automation for service firms | lumic"
 description: "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 ---
 
 # Back-office automation for service firms | lumic
