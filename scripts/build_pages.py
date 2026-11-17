@@ -23,6 +23,10 @@ PUB, SRC = ROOT / "public", ROOT / "src" / "pages"
 SITE = "https://get-lumic.com"
 CFG = json.loads(io.open(ROOT / "scripts" / "pages.json", encoding="utf-8").read())
 CAL = "https://cal.com/lumic/20-minute-call"
+# Google Fonts: loaded without blocking render (a preload that turns into the stylesheet once it arrives; noscript fallback).
+FONTS = "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap"
+FONTS_LINKS = (f'<link rel="preload" as="style" href="{FONTS}" onload="this.onload=null;this.rel=\'stylesheet\'">\n'
+               f'<noscript><link rel="stylesheet" href="{FONTS}"></noscript>')
 
 CK = ('<span class="ck" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" '
       'stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>')
@@ -98,7 +102,18 @@ SND = ('<button class="snd" type="button" aria-label="Sound" aria-pressed="false
        'stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6.5 9H3.5v6h3l4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg></button>')
 PLAY = ('<span class="fp-pp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/>'
         '</svg></span>')
-# The overview film from the home page (#demo), reused (same files), with its sample-data note under the player.
+# The overview film from the home page (#demo), reused (same files), with its sample-data note under the player. Its
+# poster and its two sources (with their ?v= content versions) are read from the home page's player, which
+# scripts/publish_keynote.py keeps current, so a new film render reaches the inner pages on the next build.
+def overview_media():
+    h = io.open(PUB / "index.html", encoding="utf-8").read()
+    m = re.search(r'<div class="fp" id="overview-film"[^>]*>\s*<video [^>]*?data-poster="([^"]+)"[^>]*>\s*'
+                  r'<source src="([^"]+)" type="video/webm"><source src="([^"]+)" type="video/mp4">', h)
+    assert m, "index.html: the overview player (#overview-film) not found"
+    return m.groups()
+
+
+OV_POSTER, OV_WEBM, OV_MP4 = overview_media()
 OVERVIEW_ALT = ("The lumic overview: AI reads a vendor bill, matches it to its purchase orders and flags a price difference for approval. "
                 "It drafts a purchase order, sends a statement, and answers a question with a drafted follow-up. Then live sales, cash and margin, "
                 "all from one set of data.")
@@ -111,8 +126,8 @@ FILM_OVERVIEW = f"""<figure class="hero-fig">
           <span class="orb"></span>
         </div>
       <div class="fp" id="overview-film" data-voice="overview">
-        <video muted playsinline preload="none" poster="/video/demos/lumic-keynote-overview-poster.jpg" aria-label="{OVERVIEW_ALT}">
-          <source src="/video/demos/lumic-keynote-overview.webm" type="video/webm"><source src="/video/demos/lumic-keynote-overview.mp4" type="video/mp4"></video>
+        <video muted playsinline preload="none" poster="{OV_POSTER}" aria-label="{OVERVIEW_ALT}">
+          <source src="{OV_WEBM}" type="video/webm"><source src="{OV_MP4}" type="video/mp4"></video>
         {PLAY}
         {SND}
       </div>
@@ -295,7 +310,7 @@ def build_page(p):
 <script type="application/ld+json">{ld}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+{FONTS_LINKS}
 <link rel="stylesheet" href="/site.css">
 </head>
 <body>

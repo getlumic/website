@@ -23,6 +23,7 @@ class MD(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.out, self.buf, self.skip, self.stack, self.cells, self.href, self.inmain = [], "", 0, [], None, None, False
+        self.kick = None  # stack depth of an open h1 kicker (<span class="h1-k">), written as its own line above the heading
 
     def flush(self, prefix=""):
         t = re.sub(r"\s+", " ", self.buf).strip()
@@ -53,7 +54,10 @@ class MD(HTMLParser):
             self.href = (SITE + href) if href.startswith("/") else (None if href.startswith("#") else href)
             if self.href:
                 self.buf += " ["
-        if tag in ("span", "small"):
+        if tag == "span" and "h1-k" in a.get("class", "").split():
+            self.flush()
+            self.kick = len(self.stack)
+        elif tag in ("span", "small"):
             self.buf += " — " if tag == "small" else " "
 
     def handle_endtag(self, tag):
@@ -92,6 +96,9 @@ class MD(HTMLParser):
         elif tag in ("blockquote", "cite"):
             self.flush("> ")
         elif tag in BLOCK:
+            self.flush()
+        elif tag == "span" and self.kick is not None and len(self.stack) == self.kick - 1:
+            self.kick = None
             self.flush()
         elif tag == "span":
             self.buf += " "

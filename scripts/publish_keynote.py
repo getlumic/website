@@ -6,7 +6,11 @@ The landing page has two film players and one link list (public/index.html):
   - under the overview, "Watch each tool on its own" lists one link per dashboard film, in this order:
     Receivables, Sales, Purchasing, Payables, Financial, Ask your data (AI) (films: receivables sales purchasing payables
     financial connector). Each link opens that film's mp4 (in a lightbox when JS runs).
-The two players point at fixed file names, so publishing a new render of why or overview only copies its files.
+The two players point at fixed file names with a version: each film source carries ?v=<first 8 hex of its sha256>, and
+the poster is a 1280x720 WebP named by its own hash (lumic-keynote-<film>-poster.<8 hex>.webp, made from -poster.jpg;
+the JPEG stays for old links). The Worker serves those versioned URLs with a year of immutable cache, so this script
+re-stamps them in index.html (sources, poster / data-poster, and the hero poster preload) on every run. Inner pages
+copy the overview player from index.html: run scripts/build_pages.py and build_markdown.py after a publish.
 
 For each film whose render is finished in video/keynote/out/<film>/ (lumic-keynote-<film>.mp4, .webm, -poster.jpg),
 copy the three files into public/video/demos/ under the same names. Then rewrite the dashboard link list (between the
@@ -25,6 +29,7 @@ Exit code 1 if any film was refused or a player's files are missing. Then: QA th
 """
 import argparse
 import hashlib
+import io
 import os
 import re
 import shutil
@@ -152,6 +157,41 @@ def copy(src, dst, dry):
     return "copied"
 
 
+def sha8(p):
+    h = hashlib.sha256()
+    with open(p, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()[:8]
+
+
+def poster_webp(jpg, dry):
+    """The player poster as a 1280x720 WebP (quality 78) named by its content hash, next to the JPEG. Returns its name."""
+    from PIL import Image  # Pillow: in py -3.11 on the partner machines
+    buf = io.BytesIO()
+    Image.open(jpg).convert("RGB").resize((1280, 720), Image.LANCZOS).save(buf, "WEBP", quality=78, method=6)
+    data = buf.getvalue()
+    out = jpg.with_name(jpg.name[:-len(".jpg")] + f".{hashlib.sha256(data).hexdigest()[:8]}.webp")
+    if not dry and not out.is_file():
+        out.write_bytes(data)
+    return out.name
+
+
+def stamp_versions(html, demos, dry):
+    """Point each player at its current versioned files: ?v=<hash> on both sources and the hashed WebP poster."""
+    for film, _ in PLAYERS:
+        n = names(film)
+        if not all((demos / x).is_file() for x in n.values()):
+            continue
+        for ext in ("webm", "mp4"):
+            html = re.sub(r'(src="/video/demos/%s)(\?v=[0-9a-f]+)?"' % re.escape(n[ext]),
+                          lambda m: f'{m.group(1)}?v={sha8(demos / n[ext])}"', html)
+        webp = poster_webp(demos / n["poster"], dry)
+        html = re.sub(r'(poster="|data-poster="|rel="preload" as="image" href=")/video/demos/lumic-keynote-%s-poster(\.[0-9a-f]{8})?\.(jpg|webp)"'
+                      % re.escape(film), lambda m: f'{m.group(1)}/video/demos/{webp}"', html)
+    return html
+
+
 def between(html, tag, inner):
     """Replace what sits between <!-- tag:start ... --> and <!-- tag:end -->."""
     m = re.search(r"(<!-- %s:start[^>]*-->)(.*?)([ \t]*<!-- %s:end -->)" % (tag, tag), html, re.S)
@@ -179,6 +219,7 @@ def sync_page(public, dry, pending=()):
         f'target="_blank" rel="noopener">{PLAY_ICON}{label}</a></li>\n'
         for film, label, desc in SLOTS if state[film]]
     html = between(html, "films", "".join(links))
+    html = stamp_versions(html, demos, dry)
     changed = html != page.read_text(encoding="utf-8")
     if changed and not dry:
         page.write_text(html, encoding="utf-8", newline="\n")
@@ -225,7 +266,8 @@ def main():
         print(f"  {label:13} " + ("linked under the overview film" if state[film] else "no link (no film yet)"))
     if refused:
         print(f"{refused} film(s) refused; nothing was copied for them.")
-    print("next: serve public/ and run scripts/qa.py, then `npx wrangler deploy`")
+    print("next: py -3.11 scripts/build_pages.py && py -3.11 scripts/build_markdown.py (inner pages copy the overview player), "
+          "serve public/ and run scripts/qa.py, then `npx wrangler deploy`")
     sys.exit(1 if refused or missing else 0)
 
 

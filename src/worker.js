@@ -7,7 +7,9 @@
 // - Redirects: http:// and www.get-lumic.com -> https://get-lumic.com (same path and query), /about(/) -> /how-lumic-works/, and the assets' own 307s (/index.html,
 //   /privacy) become 301s.
 // - Headers: HSTS everywhere, a Link header on pages (llms.txt and the markdown copy), a day of browser cache on films
-//   and images (their file names are reused when a film is replaced, so not longer than that).
+//   and images (their file names are reused when a film is replaced, so not longer than that). A versioned media URL gets
+//   a year, immutable: a file name with a content hash in it (name.<8+ hex>.webp) or a ?v=<hash> query (the page's film
+//   sources, which scripts/publish_keynote.py re-stamps when a film is replaced).
 import { EmailMessage } from "cloudflare:email";
 
 const APEX = "get-lumic.com";
@@ -30,6 +32,12 @@ This page is not on get-lumic.com.
 const HSTS = "max-age=31536000";
 const link = (md) => '</llms.txt>; rel="describedby"; type="text/plain"' + (md ? `, <${md}>; rel="alternate"; type="text/markdown"` : "");
 const MEDIA_CACHE = "public, max-age=86400";
+const IMMUTABLE = "public, max-age=31536000, immutable";
+const HASHED = /\.[0-9a-f]{8,}\.[a-z0-9]+$/i;
+// Media cache: a year for a versioned URL (content-hash file name, or a ?v= query), else a day.
+function mediaCache(url) {
+  return HASHED.test(url.pathname) || url.searchParams.has("v") ? IMMUTABLE : MEDIA_CACHE;
+}
 
 function wantsMarkdown(req, url) {
   return url.searchParams.get("mode") === "agent" || /\btext\/markdown\b/i.test(req.headers.get("Accept") || "");
@@ -76,7 +84,7 @@ async function serveVideo(req, env) {
   if (!res.ok) return finish(res);
   const h = new Headers(res.headers);
   h.set("Accept-Ranges", "bytes");
-  h.set("Cache-Control", MEDIA_CACHE);
+  h.set("Cache-Control", mediaCache(new URL(req.url)));
   h.set("Strict-Transport-Security", HSTS);
   const m = range && RANGE.exec(range.trim());
   if (!m || (m[1] === "" && m[2] === "")) {
@@ -203,7 +211,7 @@ export default {
     const extra = {};
     if (mdPath || res.status === 404) extra.Vary = "Accept";
     if (/^text\/html/i.test(res.headers.get("Content-Type") || "")) extra.Link = link(mdPath);
-    if (url.pathname.startsWith("/img/")) extra["Cache-Control"] = MEDIA_CACHE;
+    if (url.pathname.startsWith("/img/") && res.ok) extra["Cache-Control"] = mediaCache(url);   // never a long cache on an error
     return finish(res, extra);
   },
 };

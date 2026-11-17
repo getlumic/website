@@ -1,17 +1,19 @@
 ---
 title: "lumic | Forward Deployed Engineers for business, St. Louis"
-description: "lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — in the systems you already run, with a person approving what matters."
+description: "lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — with a person approving what matters."
 canonical: https://get-lumic.com/
-last_updated: 2026-10-29
+last_updated: 2026-11-17
 ---
 
 # lumic | Forward Deployed Engineers for business, St. Louis
 
-> lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — in the systems you already run, with a person approving what matters.
+> lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — with a person approving what matters.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 
 Based in St. Louis FDEs for business
+
+Forward Deployed Engineers
 
 # AI, deployed into your business and kept working.
 

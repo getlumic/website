@@ -2,10 +2,7 @@
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": [
-    "Organization",
-    "ProfessionalService"
-   ],
+   "@type": "Organization",
    "@id": "https://get-lumic.com/#org",
    "name": "lumic",
    "url": "https://get-lumic.com/",
@@ -1171,12 +1168,23 @@
      {
       "@type": "Offer",
       "name": "Consultation",
-      "description": "Free consultation."
+      "description": "Free consultation.",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "price": 0,
+       "priceCurrency": "USD"
+      }
      },
      {
       "@type": "Offer",
       "name": "On-site work",
-      "description": "On-site work $1,500/day, credited toward phase one."
+      "description": "On-site work $1,500/day, credited toward phase one.",
+      "priceSpecification": {
+       "@type": "UnitPriceSpecification",
+       "price": 1500,
+       "priceCurrency": "USD",
+       "unitText": "day"
+      }
      },
      {
       "@type": "Offer",

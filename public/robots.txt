@@ -39,4 +39,3 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://get-lumic.com/sitemap.xml
-Schemamap: https://get-lumic.com/schemamap.xml

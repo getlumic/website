@@ -1,7 +1,7 @@
 :root{
   --primary:#5e5ce6; --primary-d:#4845c2; --primary-l:#7a78f0; --wash:#eeedfd;
   --bg:#f6f7fb; --bg2:#eef1f8; --card:#ffffff;
-  --text-strong:#0f172a; --text:#1e293b; --muted:#64748b; --faint:#94a3b8; --line:#e2e8f0; --line2:#eef1f6;
+  --text-strong:#0f172a; --text:#1e293b; --muted:#64748b; --faint:#64748b; --line:#e2e8f0; --line2:#eef1f6;
   --dk:#0e1525; --dk2:#131b32; --dk3:#18213a; --dk-wash:#1f1d3a; --dk-text:#e8edf7; --dk-muted:#8a9ab8;
   --up:#16a34a; --down:#dc2626; --warn:#ea580c;
   --paper:#ffffff;
@@ -119,6 +119,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .eyebrow b{font-weight:600;color:var(--primary-d)}
 .hero h1{font-size:clamp(42px,5.1vw,74px);line-height:1.02;letter-spacing:-.045em;font-weight:500;max-width:13ch;text-wrap:balance}
 .hero h1 em.s{font-size:1.06em;letter-spacing:-.02em;line-height:.9}
+.hero h1 .h1-k{line-height:1.4;margin-bottom:22px} /* the small "Forward Deployed Engineers" line inside the h1, styled as the .kicker */
 .hero .lead{color:var(--text);opacity:.82;margin-top:28px;max-width:46ch;text-wrap:pretty}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
 
