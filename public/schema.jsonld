@@ -1171,7 +1171,8 @@
       "description": "Free consultation.",
       "priceSpecification": {
        "@type": "PriceSpecification",
-       "price": 0,
+       "minPrice": 0,
+       "maxPrice": 0,
        "priceCurrency": "USD"
       }
      },
@@ -1181,7 +1182,7 @@
       "description": "On-site work $1,500/day, credited toward phase one.",
       "priceSpecification": {
        "@type": "UnitPriceSpecification",
-       "price": 1500,
+       "minPrice": 1500,
        "priceCurrency": "USD",
        "unitText": "day"
       }
