@@ -296,14 +296,7 @@
       "title": "Cash application and collections automation | lumic",
       "description": "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.",
       "type": "WebPage",
-      "films": [],
-      "faq": [
-        {
-          "q": "Which systems do the cash agents work with?",
-          "a": "The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses.",
-          "html": "The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. The list: <a href=\"/systems/\">Systems lumic works with</a>."
-        }
-      ]
+      "films": []
     },
     {
       "id": "payroll",
@@ -434,13 +427,7 @@
       "description": "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry.",
       "type": "WebPage",
       "films": [],
-      "h1": "Custom AI for manufacturers, from the floor to the books.",
-      "faq": [
-        {
-          "q": "Which back-office jobs can AI do for a manufacturer?",
-          "a": "Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries."
-        }
-      ]
+      "h1": "Custom AI for manufacturers, from the floor to the books."
     },
     {
       "id": "distribution",
@@ -462,13 +449,7 @@
       "description": "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.",
       "type": "WebPage",
       "films": [],
-      "h1": "Custom AI for service firms, from the inbox to the books.",
-      "faq": [
-        {
-          "q": "Which back-office jobs can AI do for a service firm?",
-          "a": "The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries."
-        }
-      ]
+      "h1": "Custom AI for service firms, from the inbox to the books."
     },
     {
       "id": "st-louis",

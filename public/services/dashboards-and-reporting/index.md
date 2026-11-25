@@ -137,7 +137,7 @@ lumic builds it, and keeps it working.
 - Stale spreadsheets nobody trusts → One live set of data
 - Build-and-ghost consultants → A team that stays on
 
-## Before you book, two answers.
+## Dashboards, in plain answers.
 
 ### Can a dashboard change the data?
 

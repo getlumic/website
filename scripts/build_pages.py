@@ -54,16 +54,15 @@ PRICE_BUILD = "Monthly pricing covers running and supporting your agents. " + PR
 PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
 # What the monthly fee covers: one list, the same on /managed-ai/ and /pricing/ ({{fee_covers}}), and one sentence for the
 # Managed AI price card and llms.txt ({{fee_covers_line}}).
-FEE_COVERS_LINE = "Includes monitoring, monthly tests, fixes, upgrades, night releases and the support desk."
-FEE_COVERS = """<ul class="ledger" aria-label="Covered for each managed agent">
-        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>
-        <li><span>Monitoring</span><span class="st">Ongoing</span></li>
-        <li><span>Testing</span><span class="st">Monthly</span></li>
-        <li><span>Fixes</span><span class="st">Included</span></li>
-        <li><span>Upgrades as tools improve</span><span class="st">Included</span></li>
-        <li><span>A summary of its work</span><span class="st">Monthly</span></li>
-        <li><span>Human approval</span><span class="st">Built in</span></li>
-      </ul>"""
+FEE_ROWS = [("Monitoring", "Ongoing", "monitoring"), ("Testing", "Monthly", "monthly tests"), ("Fixes", "Included", "fixes"),
+            ("Upgrades as tools improve", "Included", "upgrades as tools improve"),
+            ("Releases", "At night", "releases at night"),  # releases ship at night when there is a change (not "nightly")
+            ("Support desk", "Included", "the support desk"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
+            ("Human approval", "Built in", "human approval")]
+FEE_COVERS_LINE = "Includes " + ", ".join(x[2] for x in FEE_ROWS[:-1]) + " and " + FEE_ROWS[-1][2] + "."
+FEE_COVERS = ('<ul class="ledger" aria-label="Covered for each managed agent">\n'
+              '        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>\n'
+              + "\n".join(f'        <li><span>{a}</span><span class="st">{b}</span></li>' for a, b, _ in FEE_ROWS) + "\n      </ul>")
 # The short pricing block on home and the Services hub (the same card and ledger as the offers above it); links /pricing/.
 PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
       <div>
@@ -270,7 +269,7 @@ LABELS = {"/services/": "Services", "/ai-implementation/": "AI implementation", 
           "/how-lumic-works/": "How lumic works", "/guardrails/": "Guardrails", "/portfolio/": "Portfolio",
           "/systems/": "Systems lumic works with", "/faq/": "Common questions", "/st-louis/": "St.\u00a0Louis",
           "/st-louis/ai-consulting/": "AI consulting in St.\u00a0Louis", "/st-louis/metro-east/": "Metro East",
-          "/forward-deployed-engineers/": "Forward-deployed engineers",
+          "/forward-deployed-engineers/": "Forward Deployed Engineers",
           "/forward-deployed-engineers/small-business/": "FDEs for small and mid-size businesses",
           "/services/ap-automation/": "AP automation", "/services/cash-receipts-and-collections/": "Cash receipts and collections",
           "/services/payroll/": "Payroll", "/services/month-end-close/": "Month-end close",

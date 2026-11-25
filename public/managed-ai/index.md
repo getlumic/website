@@ -32,6 +32,8 @@ Every month, a summary of what the agent did. A person on your team approves any
 - Testing Monthly
 - Fixes Included
 - Upgrades as tools improve Included
+- Releases At night
+- Support desk Included
 - A summary of its work Monthly
 - Human approval Built in
 

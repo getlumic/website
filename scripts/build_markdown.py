@@ -159,6 +159,10 @@ def main():
            f"## lumic at a glance\n{glance}\n\n")
     llms, n = re.subn(r"\A(# lumic\n\n> [^\n]+\n\n).*?(?=^## (?!lumic at a glance))", lambda m: m.group(1) + top, llms, flags=re.S | re.M)
     assert n == 1, "llms.txt: the top (title, summary, first section) not found"
+    # the monthly-fee line comes from the same row list as the ledger on /managed-ai/ and /pricing/ (build_pages.FEE_ROWS)
+    import build_pages
+    llms, n = re.subn(r"^- The monthly fee: .*$", lambda m: "- The monthly fee: " + build_pages.FEE_COVERS_LINE, llms, flags=re.M)
+    assert n == 1, "llms.txt: no '- The monthly fee:' line"
     io.open(llms_path, "w", encoding="utf-8", newline="\n").write(llms)
     llms = llms.strip()
 

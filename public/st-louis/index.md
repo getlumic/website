@@ -70,7 +70,7 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
 
-## Local questions, and the work to see.
+## St. Louis, in plain answers.
 
 ### Does lumic work outside St. Louis?
 
@@ -87,7 +87,7 @@ Watch the AP agent read, match and enter a vendor bill on the [AP automation](ht
 ## Related
 
 - [AI consulting in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 - [Services](https://get-lumic.com/services/)
 - [Pricing](https://get-lumic.com/pricing/)
 

@@ -89,12 +89,6 @@ lumic builds it, and keeps it working.
 - A morning spent on collections emails → Drafts ready when the day starts
 - Build-and-ghost consultants → A team that stays on
 
-## Before you book, one more answer.
-
-### Which systems do the cash agents work with?
-
-The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. The list: [Systems lumic works with](https://get-lumic.com/systems/).
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.

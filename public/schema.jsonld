@@ -1117,20 +1117,6 @@
    "description": "An agent reads remittances and ACH detail and keys them into the ERP for a person to approve, and drafts collections emails and statements from live aging for a person to send."
   },
   {
-   "@type": "FAQPage",
-   "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#faq",
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Which systems do the cash agents work with?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses."
-     }
-    }
-   ]
-  },
-  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/payroll/#webpage",
    "url": "https://get-lumic.com/services/payroll/",
@@ -2068,20 +2054,6 @@
    "description": "Custom AI for a manufacturer, from the floor to the books: production schedules, freight bills, vendor bills matched to purchase orders, job costing during the job, purchasing and month-end entries. A person approves each entry."
   },
   {
-   "@type": "FAQPage",
-   "@id": "https://get-lumic.com/industries/manufacturing/#faq",
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Which back-office jobs can AI do for a manufacturer?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries."
-     }
-    }
-   ]
-  },
-  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/distribution/#webpage",
    "url": "https://get-lumic.com/industries/distribution/",
@@ -2242,20 +2214,6 @@
    },
    "url": "https://get-lumic.com/industries/service-firms/",
    "description": "Custom AI for a service firm, from the inbox to the books: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
-  },
-  {
-   "@type": "FAQPage",
-   "@id": "https://get-lumic.com/industries/service-firms/#faq",
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Which back-office jobs can AI do for a service firm?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries."
-     }
-    }
-   ]
   },
   {
    "@type": "WebPage",
@@ -2624,7 +2582,7 @@
     "name": "Small and mid-sized businesses"
    },
    "url": "https://get-lumic.com/forward-deployed-engineers/",
-   "description": "lumic's forward-deployed engineers are based in St. Louis and have finance backgrounds. They work on site, build AI agents inside the client's own systems, and stay to run them after launch. A person approves every entry before it posts."
+   "description": "lumic's Forward Deployed Engineers are based in St. Louis and have finance backgrounds. They work on site, build AI agents inside the client's own systems, and stay to run them after launch. A person approves every entry before it posts."
   },
   {
    "@type": "FAQPage",

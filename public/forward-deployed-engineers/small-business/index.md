@@ -165,7 +165,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 
 ## Related
 
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 - [How lumic works](https://get-lumic.com/how-lumic-works/)
 - [Guardrails](https://get-lumic.com/guardrails/)
 - [Pricing](https://get-lumic.com/pricing/)

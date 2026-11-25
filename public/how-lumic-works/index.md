@@ -155,7 +155,7 @@ Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Le
 - [Portfolio](https://get-lumic.com/portfolio/)
 - [Guardrails](https://get-lumic.com/guardrails/)
 - [Pricing](https://get-lumic.com/pricing/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 
 ## Based in St. Louis. Start with a conversation.
 

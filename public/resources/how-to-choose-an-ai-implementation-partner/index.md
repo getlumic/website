@@ -21,7 +21,7 @@ The checklist
 
 ### On site, or remote?
 
-Ask where the work will be mapped. A partner who sits beside the person doing the job sees the screens, the checks and the exceptions that never make it into a process document. Remote work can fit once a job is mapped, but a partner who has never watched the job done by hand is guessing at the hard parts. Remote fits better when the job is already written down step by step and the systems all run in the cloud.
+Ask where the work will be mapped. A partner who sits beside the person doing the job sees the screens, the checks and the exceptions that never make it into a process document. Remote fits better when the job is already written down step by step and the systems all run in the cloud.
 
 ### Built inside your systems, or a license to set up?
 
@@ -61,7 +61,7 @@ lumic, a St. Louis firm, is one such partner: its Forward Deployed Engineers wor
 
 - [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/)
 - [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 - [Guardrails](https://get-lumic.com/guardrails/)
 
 ## Based in St. Louis. Start with a conversation.

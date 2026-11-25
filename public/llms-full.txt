@@ -18,12 +18,12 @@ Profiles: https://www.linkedin.com/company/get-lumic | https://clutch.co/profile
 - Pricing: Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.
 - How to start: A 20-minute call, an on-site day, then a written proposal. hello@get-lumic.com
 
-## How an engagement runs, and what it costs
-- Free consultation. A 20-minute call.
-- On-site work $1,500/day, credited toward phase one. AI consulting, on site: https://get-lumic.com/ai-consulting/
-- The build is a separate, one-time cost, priced in the written proposal after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
-- Managed AI from $250 to $5,000 a month, depending on scope. Managed AI: https://get-lumic.com/managed-ai/
-- Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+## How an engagement runs
+- A 20-minute call.
+- An on-site day beside the team. AI consulting, on site: https://get-lumic.com/ai-consulting/
+- The build, priced in the written proposal after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
+- Managed AI on a monthly retainer. Managed AI: https://get-lumic.com/managed-ai/
+- The prices are in "lumic at a glance" above and at https://get-lumic.com/pricing/
 
 ## How lumic keeps it working
 - Releases at night, checked by morning: changes ship after hours; before the day starts, every app is restarted and checked, and one that fails its check rolls back to the last good version by itself.
@@ -101,11 +101,8 @@ lumic's leadership includes a controller and a CFP®, based in St. Louis. They h
 ## Area served
 Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
 
-## Pricing
-- Free consultation.
-- On-site work $1,500/day, credited toward phase one.
-- Managed AI from $250 to $5,000 a month, depending on scope. Includes monitoring, monthly tests, fixes, upgrades, night releases and the support desk.
-- Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
+## Pricing details
+- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, a monthly summary of its work and human approval.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
 
@@ -658,6 +655,8 @@ Every month, a summary of what the agent did. A person on your team approves any
 - Testing Monthly
 - Fixes Included
 - Upgrades as tools improve Included
+- Releases At night
+- Support desk Included
 - A summary of its work Monthly
 - Human approval Built in
 
@@ -1286,7 +1285,7 @@ It is the same job either way. lumic runs it on a dedicated computer and keeps i
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
-## Before you book.
+## AP automation, in plain answers.
 
 ### How long does it take to go live?
 
@@ -1436,12 +1435,6 @@ lumic builds it, and keeps it working.
 - Keying every remittance by hand → An agent keys it; you approve
 - A morning spent on collections emails → Drafts ready when the day starts
 - Build-and-ghost consultants → A team that stays on
-
-## Before you book, one more answer.
-
-### Which systems do the cash agents work with?
-
-The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. The list: [Systems lumic works with](https://get-lumic.com/systems/).
 
 ### Free consultation.
 
@@ -1884,7 +1877,7 @@ lumic builds it, and keeps it working.
 - Stale spreadsheets nobody trusts → One live set of data
 - Build-and-ghost consultants → A team that stays on
 
-## Before you book, two answers.
+## Dashboards, in plain answers.
 
 ### Can a dashboard change the data?
 
@@ -2411,7 +2404,7 @@ Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Le
 - [Portfolio](https://get-lumic.com/portfolio/)
 - [Guardrails](https://get-lumic.com/guardrails/)
 - [Pricing](https://get-lumic.com/pricing/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -2567,11 +2560,10 @@ On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Includes monitoring, monthly tests, fixes, upgrades, night releases and the support desk.
+Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, a monthly summary of its work and human approval.
 
 - lumic runs and supports the agents
 - A person approves every entry
-- A monthly summary
 
 [Managed AI](https://get-lumic.com/managed-ai/)
 
@@ -2599,6 +2591,8 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Testing Monthly
 - Fixes Included
 - Upgrades as tools improve Included
+- Releases At night
+- Support desk Included
 - A summary of its work Monthly
 - Human approval Built in
 
@@ -2731,12 +2725,6 @@ lumic builds it, and keeps it working.
 - Typing every bill into two systems → An agent enters it; you approve
 - Job cost known only at close → Estimate vs. actual, during the job
 - Build-and-ghost consultants → A team that stays on
-
-## Manufacturing, in plain answers.
-
-### Which back-office jobs can AI do for a manufacturer?
-
-Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries.
 
 ### Free consultation.
 
@@ -3036,12 +3024,6 @@ lumic builds it, and keeps it working.
 - Rebuilding the same report every week → Numbers live, no export
 - Build-and-ghost consultants → A team that stays on
 
-## Service firms, in plain answers.
-
-### Which back-office jobs can AI do for a service firm?
-
-The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries.
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
@@ -3166,7 +3148,7 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
 
-## Local questions, and the work to see.
+## St. Louis, in plain answers.
 
 ### Does lumic work outside St. Louis?
 
@@ -3183,7 +3165,7 @@ Watch the AP agent read, match and enter a vendor bill on the [AP automation](ht
 ## Related
 
 - [AI consulting in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 - [Services](https://get-lumic.com/services/)
 - [Pricing](https://get-lumic.com/pricing/)
 
@@ -3468,7 +3450,7 @@ lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You ru
 
 On-site work $1,500/day, credited toward phase one.
 
-## Before you book, on the Illinois side.
+## The Metro East, in plain answers.
 
 ### Which Metro East towns does lumic serve?
 
@@ -3483,7 +3465,7 @@ Yes. The on-site day, its rate and the written proposal after it are the same on
 - [Pricing](https://get-lumic.com/pricing/)
 - [How lumic works](https://get-lumic.com/how-lumic-works/)
 - [Guardrails](https://get-lumic.com/guardrails/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -3792,7 +3774,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 
 ## Related
 
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 - [How lumic works](https://get-lumic.com/how-lumic-works/)
 - [Guardrails](https://get-lumic.com/guardrails/)
 - [Pricing](https://get-lumic.com/pricing/)
@@ -4967,7 +4949,7 @@ The checklist
 
 ### On site, or remote?
 
-Ask where the work will be mapped. A partner who sits beside the person doing the job sees the screens, the checks and the exceptions that never make it into a process document. Remote work can fit once a job is mapped, but a partner who has never watched the job done by hand is guessing at the hard parts. Remote fits better when the job is already written down step by step and the systems all run in the cloud.
+Ask where the work will be mapped. A partner who sits beside the person doing the job sees the screens, the checks and the exceptions that never make it into a process document. Remote fits better when the job is already written down step by step and the systems all run in the cloud.
 
 ### Built inside your systems, or a license to set up?
 
@@ -5007,7 +4989,7 @@ lumic, a St. Louis firm, is one such partner: its Forward Deployed Engineers wor
 
 - [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/)
 - [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 - [Guardrails](https://get-lumic.com/guardrails/)
 
 ## Based in St. Louis. Start with a conversation.

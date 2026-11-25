@@ -98,7 +98,7 @@ It is the same job either way. lumic runs it on a dedicated computer and keeps i
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
-## Before you book.
+## AP automation, in plain answers.
 
 ### How long does it take to go live?
 

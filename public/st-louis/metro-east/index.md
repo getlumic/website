@@ -113,7 +113,7 @@ lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You ru
 
 On-site work $1,500/day, credited toward phase one.
 
-## Before you book, on the Illinois side.
+## The Metro East, in plain answers.
 
 ### Which Metro East towns does lumic serve?
 
@@ -128,7 +128,7 @@ Yes. The on-site day, its rate and the written proposal after it are the same on
 - [Pricing](https://get-lumic.com/pricing/)
 - [How lumic works](https://get-lumic.com/how-lumic-works/)
 - [Guardrails](https://get-lumic.com/guardrails/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 
 ## Based in St. Louis. Start with a conversation.
 
