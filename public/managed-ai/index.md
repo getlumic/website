@@ -34,7 +34,7 @@ Every month, a summary of what the agent did. A person on your team approves any
 - Upgrades as tools improve Included
 - Releases At night
 - Support desk Included
-- AI usage Included
+- AI usage for the agreed scope Included
 - A summary of its work Monthly
 - Human approval Built in
 

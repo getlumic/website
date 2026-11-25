@@ -18,8 +18,8 @@
    "email": "hello@get-lumic.com",
    "telephone": "+1-618-979-6837",
    "slogan": "AI, deployed into your business and kept working.",
-   "description": "lumic is a custom AI implementation firm based in St. Louis, Missouri, that works with businesses nationwide. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters.",
-   "disambiguatingDescription": "lumic (get-lumic.com) is an AI implementation firm based in St. Louis that works with businesses across the United States. It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.",
+   "description": "lumic is a custom AI implementation firm based in St. Louis, Missouri, that can work with businesses anywhere in the United States. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters.",
+   "disambiguatingDescription": "lumic (get-lumic.com) is an AI implementation firm based in St. Louis that can work with businesses anywhere in the United States. It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "St. Louis",
@@ -2041,7 +2041,7 @@
     },
     {
      "@type": "Question",
-     "name": "What decides where a job lands between $250 and $5,000 a month?",
+     "name": "What decides where a job lands in the monthly range?",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "The kind of work and how much of it the agents take over. A read-only dashboard sits at the low end. An agent that reads documents and enters work in your systems costs more, and several agents covering a whole role sit at the high end. The written proposal states the monthly fee before any build starts."
@@ -2052,7 +2052,7 @@
      "name": "Does the monthly fee include the cost of the AI models?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. The fee covers the AI usage the agents need, along with upkeep, fixes and changes as your systems change."
+      "text": "Yes, for the scope in the written proposal. The proposal states what the monthly fee covers, including the AI usage the agents need for that work."
      }
     },
     {
@@ -2060,7 +2060,7 @@
      "name": "What happens to an agent if the retainer stops?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Your business keeps what was built: the software, its data and its license to use it. On request, lumic hands over the current credentials, configuration and operating documentation. lumic’s monitoring, fixes and upgrades stop at the end of the notice period."
+      "text": "Your business keeps what was built: the software, its data and its license to use it. Any part lumic hosts for you stops with the retainer; the written proposal says which parts those are, if any. On request, lumic hands over the current credentials, configuration and operating documentation. lumic’s monitoring, fixes and upgrades stop at the end of the notice period."
      }
     }
    ]
@@ -2365,7 +2365,7 @@
      "name": "Does lumic work outside St. Louis?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit."
+      "text": "Yes. lumic is based in St. Louis and can work with businesses anywhere in the United States. On-site days are in person: across Greater St. Louis as standard, and elsewhere by travel. The rest of the work runs remotely."
      }
     },
     {
@@ -2718,7 +2718,7 @@
      "name": "Where are lumic’s FDEs based?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and work with businesses elsewhere in the United States remotely or by travel."
+      "text": "In St. Louis. They can work with businesses anywhere in the United States: on site across Greater St. Louis, Missouri and Illinois, and by travel and remotely elsewhere."
      }
     },
     {
@@ -2953,7 +2953,7 @@
      "name": "Do you work outside St. Louis?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit."
+      "text": "Yes. lumic is based in St. Louis and can work with businesses anywhere in the United States. On-site days are in person: across Greater St. Louis as standard, and elsewhere by travel. The rest of the work runs remotely."
      }
     },
     {

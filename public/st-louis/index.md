@@ -74,7 +74,7 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 ### Does lumic work outside St. Louis?
 
-Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit.
+Yes. lumic is based in St. Louis and can work with businesses anywhere in the United States. On-site days are in person: across Greater St. Louis as standard, and elsewhere by travel. The rest of the work runs remotely.
 
 ### What is an FDE?
 

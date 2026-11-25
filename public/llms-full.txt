@@ -1,6 +1,6 @@
 # lumic
 
-> lumic is a custom AI implementation firm based in St. Louis, Missouri, that works with businesses nationwide. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
+> lumic is a custom AI implementation firm based in St. Louis, Missouri, that can work with businesses anywhere in the United States. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
 Updated: 2026-11-25
 
@@ -10,7 +10,7 @@ Profiles: https://www.linkedin.com/company/get-lumic | https://clutch.co/profile
 
 ## lumic at a glance
 - What it is: A custom AI implementation firm. Its Forward Deployed Engineers (FDEs) build AI into the processes and systems a business already runs, then keep it working on a monthly retainer.
-- Where: Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.
+- Where: Based in St. Louis, Missouri. On site across Greater St. Louis, including the Metro East in Illinois; anywhere else in the United States by travel and remotely.
 - Who it is for: Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms.
 - What it builds: AI agents, automations and live dashboards for the order desk, email, vendor bills, cash receipts, payroll entries, month-end and reporting.
 - How it is controlled: A person approves what matters before anything posts, and every action is logged.
@@ -102,7 +102,7 @@ lumic's leadership includes a controller and a CFP®, based in St. Louis. They h
 On site in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
 
 ## Pricing details
-- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, the AI usage the agents need, a monthly summary of its work and human approval.
+- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, the AI usage the agents need for the agreed scope, a monthly summary of its work and human approval.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
 
@@ -656,7 +656,7 @@ Every month, a summary of what the agent did. A person on your team approves any
 - Upgrades as tools improve Included
 - Releases At night
 - Support desk Included
-- AI usage Included
+- AI usage for the agreed scope Included
 - A summary of its work Monthly
 - Human approval Built in
 
@@ -2270,7 +2270,7 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 Where
 
-Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.
+Based in St. Louis, Missouri. On site across Greater St. Louis, including the Metro East in Illinois; anywhere else in the United States by travel and remotely.
 
 Who it is for
 
@@ -2593,7 +2593,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Upgrades as tools improve Included
 - Releases At night
 - Support desk Included
-- AI usage Included
+- AI usage for the agreed scope Included
 - A summary of its work Monthly
 - Human approval Built in
 
@@ -2603,17 +2603,17 @@ Final pricing depends on your workflow and systems. These figures are starting p
 
 No. The retainer runs month to month. Either side can end it with 30 days’ written notice.
 
-### What decides where a job lands between $250 and $5,000 a month?
+### What decides where a job lands in the monthly range?
 
 The kind of work and how much of it the agents take over. A read-only dashboard sits at the low end. An agent that reads documents and enters work in your systems costs more, and several agents covering a whole role sit at the high end. The written proposal states the monthly fee before any build starts.
 
 ### Does the monthly fee include the cost of the AI models?
 
-Yes. The fee covers the AI usage the agents need, along with upkeep, fixes and changes as your systems change.
+Yes, for the scope in the written proposal. The proposal states what the monthly fee covers, including the AI usage the agents need for that work.
 
 ### What happens to an agent if the retainer stops?
 
-Your business keeps what was built: the software, its data and its license to use it. On request, lumic hands over the current credentials, configuration and operating documentation. lumic’s monitoring, fixes and upgrades stop at the end of the notice period.
+Your business keeps what was built: the software, its data and its license to use it. Any part lumic hosts for you stops with the retainer; the written proposal says which parts those are, if any. On request, lumic hands over the current credentials, configuration and operating documentation. lumic’s monitoring, fixes and upgrades stop at the end of the notice period.
 
 ## Related
 
@@ -3171,7 +3171,7 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 ### Does lumic work outside St. Louis?
 
-Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit.
+Yes. lumic is based in St. Louis and can work with businesses anywhere in the United States. On-site days are in person: across Greater St. Louis as standard, and elsewhere by travel. The rest of the work runs remotely.
 
 ### What is an FDE?
 
@@ -3522,7 +3522,7 @@ Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-l
 
 # Forward Deployed Engineers (FDEs) in St. Louis
 
-A Forward Deployed Engineer (FDE) works on site, builds inside your own systems, and stays to run what was built after launch. A consultant advises and leaves. lumic’s FDEs are based in St. Louis and work with businesses anywhere in the United States: on site locally, and remotely or by travel elsewhere. They have finance backgrounds and build AI into one back-office job at a time.
+A Forward Deployed Engineer (FDE) works on site, builds inside your own systems, and stays to run what was built after launch. A consultant advises and leaves. lumic’s FDEs are based in St. Louis and can work with businesses anywhere in the United States: on site across Greater St. Louis, and by travel and remotely elsewhere. They have finance backgrounds and build AI into one back-office job at a time.
 
 [Book a call](https://cal.com/lumic/20-minute-call) FDE or consultant
 
@@ -3588,7 +3588,7 @@ A consultant advises and leaves. An FDE builds the work inside your own systems 
 
 ### Where are lumic’s FDEs based?
 
-In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and work with businesses elsewhere in the United States remotely or by travel.
+In St. Louis. They can work with businesses anywhere in the United States: on site across Greater St. Louis, Missouri and Illinois, and by travel and remotely elsewhere.
 
 ### What do lumic’s FDEs build?
 
@@ -3866,7 +3866,7 @@ It depends on the job. The consultation is free, and on-site work is $1,500/day,
 
 ### Do you work outside St. Louis?
 
-Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit.
+Yes. lumic is based in St. Louis and can work with businesses anywhere in the United States. On-site days are in person: across Greater St. Louis as standard, and elsewhere by travel. The rest of the work runs remotely.
 
 ### Does lumic sell software?
 
@@ -5002,7 +5002,7 @@ The proposal should name the one job to automate, the systems it will touch, who
 
 A partner close by can spend a day beside the team, come back when a job changes, and meet the people who approve the work. That matters most for owner-run firms, where the know-how sits with a few people rather than in a manual. A partner further away can do the same work remotely once the job is mapped, and travel for the days that need a person in the room.
 
-lumic, based in St. Louis, is one such partner: its Forward Deployed Engineers work on site across Greater St. Louis and remotely or by travel elsewhere in the United States, build inside the systems a business already runs, and keep the work running on a monthly retainer. Compare its [AI implementation](https://get-lumic.com/ai-implementation/) and [managed AI](https://get-lumic.com/managed-ai/) pages, and its [pricing](https://get-lumic.com/pricing/), against the checklist above.
+lumic, based in St. Louis, is one such partner: its Forward Deployed Engineers can work with businesses anywhere in the United States: on site across Greater St. Louis, and by travel and remotely elsewhere. They build inside the systems a business already runs, and keep the work running on a monthly retainer. Compare its [AI implementation](https://get-lumic.com/ai-implementation/) and [managed AI](https://get-lumic.com/managed-ai/) pages, and its [pricing](https://get-lumic.com/pricing/), against the checklist above.
 
 ## Related
 

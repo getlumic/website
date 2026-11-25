@@ -21,7 +21,7 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 Where
 
-Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.
+Based in St. Louis, Missouri. On site across Greater St. Louis, including the Metro East in Illinois; anywhere else in the United States by travel and remotely.
 
 Who it is for
 

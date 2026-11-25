@@ -423,16 +423,16 @@
           "a": "No. The retainer runs month to month. Either side can end it with 30 days' written notice."
         },
         {
-          "q": "What decides where a job lands between $250 and $5,000 a month?",
+          "q": "What decides where a job lands in the monthly range?",
           "a": "The kind of work and how much of it the agents take over. A read-only dashboard sits at the low end. An agent that reads documents and enters work in your systems costs more, and several agents covering a whole role sit at the high end. The written proposal states the monthly fee before any build starts."
         },
         {
           "q": "Does the monthly fee include the cost of the AI models?",
-          "a": "Yes. The fee covers the AI usage the agents need, along with upkeep, fixes and changes as your systems change."
+          "a": "Yes, for the scope in the written proposal. The proposal states what the monthly fee covers, including the AI usage the agents need for that work."
         },
         {
           "q": "What happens to an agent if the retainer stops?",
-          "a": "Your business keeps what was built: the software, its data and its license to use it. On request, lumic hands over the current credentials, configuration and operating documentation. lumic's monitoring, fixes and upgrades stop at the end of the notice period."
+          "a": "Your business keeps what was built: the software, its data and its license to use it. Any part lumic hosts for you stops with the retainer; the written proposal says which parts those are, if any. On request, lumic hands over the current credentials, configuration and operating documentation. lumic's monitoring, fixes and upgrades stop at the end of the notice period."
         }
       ]
     },
@@ -482,7 +482,7 @@
       "faq": [
         {
           "q": "Does lumic work outside St. Louis?",
-          "a": "Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit."
+          "a": "Yes. lumic is based in St. Louis and can work with businesses anywhere in the United States. On-site days are in person: across Greater St. Louis as standard, and elsewhere by travel. The rest of the work runs remotely."
         },
         {
           "q": "What is an FDE?",
@@ -579,7 +579,7 @@
         },
         {
           "q": "Where are lumic's FDEs based?",
-          "a": "In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and work with businesses elsewhere in the United States remotely or by travel."
+          "a": "In St. Louis. They can work with businesses anywhere in the United States: on site across Greater St. Louis, Missouri and Illinois, and by travel and remotely elsewhere."
         },
         {
           "q": "What do lumic's FDEs build?",
@@ -788,7 +788,7 @@
     },
     {
       "q": "Where",
-      "a": "Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.",
+      "a": "Based in St. Louis, Missouri. On site across Greater St. Louis, including the Metro East in Illinois; anywhere else in the United States by travel and remotely.",
       "page": true
     },
     {
@@ -853,7 +853,7 @@
     },
     {
       "q": "Do you work outside St. Louis?",
-      "a": "Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit."
+      "a": "Yes. lumic is based in St. Louis and can work with businesses anywhere in the United States. On-site days are in person: across Greater St. Louis as standard, and elsewhere by travel. The rest of the work runs remotely."
     },
     {
       "q": "Does lumic sell software?",

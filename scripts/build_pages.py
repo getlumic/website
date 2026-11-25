@@ -57,7 +57,7 @@ PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures
 FEE_ROWS = [("Monitoring", "Ongoing", "monitoring"), ("Testing", "Monthly", "monthly tests"), ("Fixes", "Included", "fixes"),
             ("Upgrades as tools improve", "Included", "upgrades as tools improve"),
             ("Releases", "At night", "releases at night"),  # releases ship at night when there is a change (not "nightly")
-            ("Support desk", "Included", "the support desk"), ("AI usage", "Included", "the AI usage the agents need"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
+            ("Support desk", "Included", "the support desk"), ("AI usage for the agreed scope", "Included", "the AI usage the agents need for the agreed scope"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
             ("Human approval", "Built in", "human approval")]
 FEE_COVERS_LINE = "Includes " + ", ".join(x[2] for x in FEE_ROWS[:-1]) + " and " + FEE_ROWS[-1][2] + "."
 FEE_COVERS_SHORT = "Includes monitoring, monthly tests, fixes and upgrades."  # the /pricing/ card; the ledger below it is hidden on phones, so the sentence must stand alone
@@ -308,7 +308,7 @@ def page_lastmod(p):
     return lastmod(SRC / f'{p["id"]}.html', ROOT / "scripts" / "pages.json")
 
 
-# lumic is based in St. Louis and works with businesses anywhere in the United States (the owner, 2026-11-25): a Service
+# lumic is based in St. Louis and can work with businesses anywhere in the United States (the owner, 2026-11-25): a Service
 # node's "@AREA" is the country first, then the local areas; the local pages (/st-louis/...) keep the local list only.
 AREA_US = [{"@type": "Country", "name": "United States"}] + AREA
 

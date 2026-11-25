@@ -13,7 +13,7 @@ Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-l
 
 # Forward Deployed Engineers (FDEs) in St. Louis
 
-A Forward Deployed Engineer (FDE) works on site, builds inside your own systems, and stays to run what was built after launch. A consultant advises and leaves. lumic’s FDEs are based in St. Louis and work with businesses anywhere in the United States: on site locally, and remotely or by travel elsewhere. They have finance backgrounds and build AI into one back-office job at a time.
+A Forward Deployed Engineer (FDE) works on site, builds inside your own systems, and stays to run what was built after launch. A consultant advises and leaves. lumic’s FDEs are based in St. Louis and can work with businesses anywhere in the United States: on site across Greater St. Louis, and by travel and remotely elsewhere. They have finance backgrounds and build AI into one back-office job at a time.
 
 [Book a call](https://cal.com/lumic/20-minute-call) FDE or consultant
 
@@ -79,7 +79,7 @@ A consultant advises and leaves. An FDE builds the work inside your own systems 
 
 ### Where are lumic’s FDEs based?
 
-In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and work with businesses elsewhere in the United States remotely or by travel.
+In St. Louis. They can work with businesses anywhere in the United States: on site across Greater St. Louis, Missouri and Illinois, and by travel and remotely elsewhere.
 
 ### What do lumic’s FDEs build?
 

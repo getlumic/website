@@ -1,6 +1,6 @@
 # lumic
 
-> lumic is a custom AI implementation firm based in St. Louis, Missouri, that works with businesses nationwide. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
+> lumic is a custom AI implementation firm based in St. Louis, Missouri, that can work with businesses anywhere in the United States. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
 Updated: 2026-11-25
 
@@ -10,7 +10,7 @@ Profiles: https://www.linkedin.com/company/get-lumic | https://clutch.co/profile
 
 ## lumic at a glance
 - What it is: A custom AI implementation firm. Its Forward Deployed Engineers (FDEs) build AI into the processes and systems a business already runs, then keep it working on a monthly retainer.
-- Where: Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.
+- Where: Based in St. Louis, Missouri. On site across Greater St. Louis, including the Metro East in Illinois; anywhere else in the United States by travel and remotely.
 - Who it is for: Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms.
 - What it builds: AI agents, automations and live dashboards for the order desk, email, vendor bills, cash receipts, payroll entries, month-end and reporting.
 - How it is controlled: A person approves what matters before anything posts, and every action is logged.
@@ -102,7 +102,7 @@ lumic's leadership includes a controller and a CFP®, based in St. Louis. They h
 On site in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
 
 ## Pricing details
-- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, the AI usage the agents need, a monthly summary of its work and human approval.
+- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, the AI usage the agents need for the agreed scope, a monthly summary of its work and human approval.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
 

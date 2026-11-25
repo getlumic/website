@@ -96,7 +96,9 @@ SIZE_REVEAL = [r"\bfirst client\b", r"\bso far\b", r"\bone of us\b", r"\bboth of
                r"\bfirst week\b", r"\bweek one\b", r"\bin its first\b", r"\bfirst (?:client|managed|deployment)s?\b",
                r"\b(?:one|two|three) clients?\b",
                r"\bsince (?:January|February|March|April|May|June|July|August|September|October|November|December|late|early|mid|20\d\d)\b",
-               r"\bso far\b", r"(?<!up )\bto date\b", r"\bFounded\b", r"\bfoundingDate\b", r"\ba recent\b"]
+               r"\bso far\b", r"(?<!up )\bto date\b", r"\bFounded\b", r"\bfoundingDate\b", r"\ba recent\b",
+               # reach is stated as ability ("can work with businesses anywhere in the United States"), never as current clients
+               r"across the United States", r"\bnationwide\b"]
 HOME_OK = ["What happens next"]  # the home contact block's heading (live copy, unchanged); inner pages say "How to start"
 # A service-area business: no street address anywhere on /st-louis/, including the schema
 ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
@@ -138,12 +140,14 @@ OPEN_DETAILS_TEXT = """(() => { const c = [...document.querySelectorAll('details
 
 
 # GEO round (2026-11-25): the entity schema on home, and llms.txt's generated top
-ORG_DISAMBIG = ("lumic (get-lumic.com) is an AI implementation firm based in St. Louis that works with businesses across the "
-                "United States. It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.")
-# Based in St. Louis, works with businesses anywhere in the United States (the owner, 2026-11-25)
-GLANCE_WHERE = ("Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. "
-                "Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.")
-LLMS_LEAD = "lumic is a custom AI implementation firm based in St. Louis, Missouri, that works with businesses nationwide."
+ORG_DISAMBIG = ("lumic (get-lumic.com) is an AI implementation firm based in St. Louis that can work with businesses anywhere in "
+                "the United States. It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.")
+# Based in St. Louis, can work with businesses anywhere in the United States (the owner, 2026-11-25); never stated as
+# current clients ("across the United States", "nationwide" fail on any page or llms file)
+GLANCE_WHERE = ("Based in St. Louis, Missouri. On site across Greater St. Louis, including the Metro East in Illinois; anywhere "
+                "else in the United States by travel and remotely.")
+LLMS_LEAD = "lumic is a custom AI implementation firm based in St. Louis, Missouri, that can work with businesses anywhere in the United States."
+CLIENT_REACH = [r"across the United States", r"\bnationwide\b"]
 ORG_SAMEAS = ["https://www.linkedin.com/company/get-lumic", "https://clutch.co/profile/lumic"]
 # The Manifest profile is left out until its text is corrected (it states a size, a founding year and a different category)
 ORG_SAMEAS_NOT = ["themanifest.com"]
@@ -334,6 +338,7 @@ def check_geo(b):
         if not re.search(r"^Updated: \d{4}-\d\d-\d\d$", t, re.M):
             fails.append(f"/{name}: no 'Updated: <date>' line")
         fails += [f"/{name}: missing {l!r}" for l in LLMS_LINES + GLANCE_PRICE_LINES + ["- Where: " + GLANCE_WHERE, "> " + LLMS_LEAD] if l not in t]
+        fails += [f"/{name}: reach stated as current clients: {m.group(0)!r}" for pat in CLIENT_REACH for m in re.finditer(pat, t, re.I)]
         if re.search(r"what kept working means", t, re.I):
             fails.append(f"/{name}: leftover 'what kept working means'")
     sm = fetch(BASE + "/sitemap.xml")[1]
@@ -481,7 +486,7 @@ def check_pages(b):
         if {"@type": "Country", "name": "United States"} not in (o.get("areaServed") or []):
             fails.append("home: Organization areaServed does not include the United States")
         if not o.get("description", "").startswith(LLMS_LEAD):
-            fails.append("home: Organization description does not open with the nationwide line")
+            fails.append("home: Organization description does not open with the based-in-St.-Louis, anywhere-in-the-US line")
         fails += [f"home: Organization carries {k} (no street address, no fixed price range)" for k in ("priceRange",) if k in o]
     if not any(g.get("@id") == SITE + "/#webpage" and re.fullmatch(r"\d{4}-\d\d-\d\d", g.get("dateModified", ""))
                for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", [])):
