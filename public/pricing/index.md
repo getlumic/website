@@ -27,9 +27,9 @@ Free. A 20‑minute call.
 
 - You walk the team through the work your people do by hand
 
-### On-site work
+### The on-site day
 
-Billed by the day and credited toward phase one.
+On-site work $1,500/day, credited toward phase one.
 
 - lumic’s FDEs at your place of business
 - Maps the job, the systems and the data

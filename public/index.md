@@ -235,9 +235,9 @@ lumic’s leadership includes a controller and a CFP®, based in St. Louis. Seni
 
 [Meet the leadership](https://get-lumic.com/how-lumic-works/#leadership)
 
-## Month-End Red Flags Service Firms Usually Miss
+## Month-end red flags most back offices miss
 
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. It was written for service firms, and the same checks fit any back office. Enter an email and the checklist downloads right away.
 
 One email field. No spam, no trackers.
 
