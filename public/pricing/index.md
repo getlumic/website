@@ -71,27 +71,8 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Upgrades as tools improve Included
 - Releases At night
 - Support desk Included
-- AI usage for the agreed scope Included
 - A summary of its work Monthly
 - Human approval Built in
-
-## Pricing, in plain answers.
-
-### Is there a minimum term on the monthly retainer?
-
-No. The retainer runs month to month. Either side can end it with 30 days’ written notice.
-
-### What decides where a job lands in the monthly range?
-
-The kind of work and how much of it the agents take over. A read-only dashboard sits at the low end. An agent that reads documents and enters work in your systems costs more, and several agents covering a whole role sit at the high end. The written proposal states the monthly fee before any build starts.
-
-### Does the monthly fee include the cost of the AI models?
-
-Yes, for the scope in the written proposal. The proposal states what the monthly fee covers, including the AI usage the agents need for that work.
-
-### What happens to an agent if the retainer stops?
-
-Your business keeps what was built: the software, its data and its license to use it. Any part lumic hosts for you stops with the retainer; the written proposal says which parts those are, if any. On request, lumic hands over the current credentials, configuration and operating documentation. lumic’s monitoring, fixes and upgrades stop at the end of the notice period.
 
 ## Related
 

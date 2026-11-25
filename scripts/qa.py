@@ -341,6 +341,21 @@ def check_geo(b):
         fails += [f"/{name}: reach stated as current clients: {m.group(0)!r}" for pat in CLIENT_REACH for m in re.finditer(pat, t, re.I)]
         if re.search(r"what kept working means", t, re.I):
             fails.append(f"/{name}: leftover 'what kept working means'")
+    # one Organization: every node with @id #org that says more than its @id equals home's node
+    def org_nodes(x):
+        if isinstance(x, dict):
+            if str(x.get("@id", "")).endswith("#org") and len(x) > 1:
+                yield x
+            for v in x.values():
+                yield from org_nodes(v)
+        elif isinstance(x, list):
+            for v in x:
+                yield from org_nodes(v)
+    home_org = next((o for blk in ld_blocks(fetch(BASE + "/")[1]) if isinstance(blk, dict) for o in org_nodes(blk)), None)
+    for p in CFG["pages"]:
+        for blk in ld_blocks(fetch(BASE + p["path"])[1]):
+            if isinstance(blk, dict) and any(o != home_org for o in org_nodes(blk)):
+                fails.append(f"{p['path']}: an Organization node (#org) that differs from home's")
     sm = fetch(BASE + "/sitemap.xml")[1]
     lastmods = dict(re.findall(r"<loc>(.*?)</loc>\s*<lastmod>(.*?)</lastmod>", sm))
     pg = b.new_page(viewport={"width": 1440, "height": 900})

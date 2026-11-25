@@ -102,7 +102,7 @@ lumic's leadership includes a controller and a CFP®, based in St. Louis. They h
 On site in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
 
 ## Pricing details
-- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, the AI usage the agents need for the agreed scope, a monthly summary of its work and human approval.
+- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, a monthly summary of its work and human approval.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
 

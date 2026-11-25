@@ -57,7 +57,7 @@ PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures
 FEE_ROWS = [("Monitoring", "Ongoing", "monitoring"), ("Testing", "Monthly", "monthly tests"), ("Fixes", "Included", "fixes"),
             ("Upgrades as tools improve", "Included", "upgrades as tools improve"),
             ("Releases", "At night", "releases at night"),  # releases ship at night when there is a change (not "nightly")
-            ("Support desk", "Included", "the support desk"), ("AI usage for the agreed scope", "Included", "the AI usage the agents need for the agreed scope"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
+            ("Support desk", "Included", "the support desk"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
             ("Human approval", "Built in", "human approval")]
 FEE_COVERS_LINE = "Includes " + ", ".join(x[2] for x in FEE_ROWS[:-1]) + " and " + FEE_ROWS[-1][2] + "."
 FEE_COVERS_SHORT = "Includes monitoring, monthly tests, fixes and upgrades."  # the /pricing/ card; the ledger below it is hidden on phones, so the sentence must stand alone
@@ -329,7 +329,7 @@ def page_ld(p):
     if extra.exists():
         graph += json.loads(io.open(extra, encoding="utf-8").read())
         for g in graph:  # an Article carries the same build-stamped date as its page (never hand-typed)
-            if g.get("@type") == "Article":
+            if isinstance(g, dict) and g.get("@type") == "Article":
                 g["dateModified"] = modified
     if p["id"] == "faq":
         graph.append(faq_ld(CFG["faq"], url + "#faq"))
