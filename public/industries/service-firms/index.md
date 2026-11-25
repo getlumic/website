@@ -1,19 +1,19 @@
 ---
-title: "Back-office automation for service firms | lumic"
-description: "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
+title: "Custom AI for service firms: inbox, billing, close | lumic"
+description: "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
 last_updated: 2026-11-24
 ---
 
-# Back-office automation for service firms | lumic
+# Custom AI for service firms: inbox, billing, close | lumic
 
-> AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.
+> Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.
 
 Source: https://get-lumic.com/industries/service-firms/ | Contact: hello@get-lumic.com
 
 Industries Service firms
 
-# AI agents for a service firm’s back office.
+# Custom AI for service firms, from the inbox to the books.
 
 Vendor bills entered, cash receipts keyed, collections drafted, payroll and month-end entries prepared. lumic builds an AI agent for each back-office job a service firm does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
 

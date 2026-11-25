@@ -1,11 +1,11 @@
 ---
-title: "Back-office AI automation for distributors | lumic"
+title: "Custom AI for distributors: orders, purchasing, cash | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
 last_updated: 2026-11-24
 ---
 
-# Back-office AI automation for distributors | lumic
+# Custom AI for distributors: orders, purchasing, cash | lumic
 
 > Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.
 
@@ -13,7 +13,7 @@ Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumi
 
 Industries Distribution
 
-# AI agents for the distribution back office.
+# Custom AI for distributors, from the order desk to the books.
 
 Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. lumic builds an AI agent for each back-office job a distributor does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
 

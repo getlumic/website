@@ -1,13 +1,13 @@
 ---
-title: "Managed AI agents on a monthly retainer | lumic"
-description: "Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month."
+title: "Managed AI on retainer: monitored and supported | lumic"
+description: "Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month."
 canonical: https://get-lumic.com/managed-ai/
 last_updated: 2026-11-24
 ---
 
-# Managed AI agents on a monthly retainer | lumic
+# Managed AI on retainer: monitored and supported | lumic
 
-> Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month.
+> Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month.
 
 Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
 
@@ -40,6 +40,26 @@ Every month, a summary of what the agent did. A person on your team approves any
 - Upgrades as tools improve Included
 - A summary of its work Monthly
 - Human approval Built in
+
+Upkeep, in practice
+
+## What kept working means.
+
+### Releases at night, checked by morning.
+
+Changes ship after hours, when nobody is working in the system. Before the day starts, every app is restarted and checked. One that fails its check rolls back to the last good version by itself.
+
+### A watchdog on every app.
+
+It checks each app around the clock and restarts what stops. If the watchdog itself goes quiet, an outside alarm goes off.
+
+### Feedback and Updates, inside the dashboard.
+
+Every lumic dashboard has Send feedback and an Updates page with plain-word release notes.
+
+### A support desk with ticket numbers.
+
+Every request gets a number and an owner. A ticket closes when the fix is live in your system.
 
 Why AI needs upkeep
 

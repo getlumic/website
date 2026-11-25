@@ -1,13 +1,13 @@
 ---
 title: "AI automation for Metro East businesses, on site | lumic"
-description: "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI agents a person approves before anything posts."
+description: "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI, one process at a time a person approves before anything posts."
 canonical: https://get-lumic.com/st-louis/metro-east/
 last_updated: 2026-11-24
 ---
 
 # AI automation for Metro East businesses, on site | lumic
 
-> lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI agents a person approves before anything posts.
+> lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI, one process at a time a person approves before anything posts.
 
 Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.com
 
@@ -34,7 +34,7 @@ Illinois
 
 What lumic automates
 
-## Five back-office jobs, one agent each.
+## Any process, one agent at a time.
 
 Each agent does one back-office job end to end, inside the systems you already run.
 

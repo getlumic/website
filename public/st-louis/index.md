@@ -13,7 +13,7 @@ Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 
 Based in St. Louis On site, by appointment
 
-# Forward Deployed Engineers in St. Louis. On site, where the work happens.
+# Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 
 lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
 

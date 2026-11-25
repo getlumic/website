@@ -1,13 +1,13 @@
 ---
-title: "Systems lumic works with: ERP and accounting | lumic"
-description: "lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts."
+title: "Systems lumic works with: any software you run | lumic"
+description: "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't."
 canonical: https://get-lumic.com/systems/
 last_updated: 2026-11-24
 ---
 
-# Systems lumic works with: ERP and accounting | lumic
+# Systems lumic works with: any software you run | lumic
 
-> lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts.
+> ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't.
 
 Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com
 
@@ -87,6 +87,12 @@ Agents that work in Sage Intacct: bills, cash receipts and close entries prepare
 - A person approves each entry
 
 [Sage Intacct →](https://get-lumic.com/systems/sage-intacct/)
+
+Any software
+
+## With an API, or without one.
+
+Most business software has an API, and lumic’s agents use it. Older desktop software, portals and in-house databases often don’t. There, the agent works through the same screens your team uses, on its own computer and login, and checks every step.
 
 Where the agent works
 

@@ -1,19 +1,19 @@
 ---
-title: "Back-office AI automation for manufacturers | lumic"
-description: "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry."
+title: "Custom AI for manufacturers: shop floor to books | lumic"
+description: "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
 last_updated: 2026-11-24
 ---
 
-# Back-office AI automation for manufacturers | lumic
+# Custom AI for manufacturers: shop floor to books | lumic
 
-> AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry.
+> Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry.
 
 Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com
 
 Industries Manufacturing
 
-# AI agents for the manufacturing back office.
+# Custom AI for manufacturers, from the floor to the books.
 
 Not the shop floor: the office behind it. lumic builds AI agents for a manufacturer’s back-office jobs, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.
 

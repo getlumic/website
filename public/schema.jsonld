@@ -78,6 +78,10 @@
     "Managed AI services",
     "Forward deployed engineering",
     "Live dashboards",
+    "Computer use",
+    "Document processing",
+    "Uptime monitoring",
+    "Release management",
     "AI agents",
     "Business process automation",
     "Accounts payable automation",
@@ -274,7 +278,7 @@
    "@id": "https://get-lumic.com/ai-implementation/#webpage",
    "url": "https://get-lumic.com/ai-implementation/",
    "name": "Custom AI implementation for small and mid-size businesses",
-   "description": "lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working.",
+   "description": "lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -394,8 +398,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/managed-ai/#webpage",
    "url": "https://get-lumic.com/managed-ai/",
-   "name": "Managed AI agents on a monthly retainer | lumic",
-   "description": "Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month.",
+   "name": "Managed AI on retainer: monitored and supported | lumic",
+   "description": "Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -637,7 +641,7 @@
    "@id": "https://get-lumic.com/services/#webpage",
    "url": "https://get-lumic.com/services/",
    "name": "Custom AI solutions: agents, automations, dashboards | lumic",
-   "description": "Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working.",
+   "description": "Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1617,7 +1621,7 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/guardrails/#webpage",
    "url": "https://get-lumic.com/guardrails/",
-   "name": "Guardrails: approval, logging and access | lumic",
+   "name": "Guardrails: approval, audit log, access and upkeep | lumic",
    "description": "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent.",
    "inLanguage": "en",
    "about": {
@@ -1652,7 +1656,7 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/pricing/#webpage",
    "url": "https://get-lumic.com/pricing/",
-   "name": "Pricing: custom AI agents and managed AI | lumic",
+   "name": "Pricing: custom AI implementation and managed AI | lumic",
    "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.",
    "inLanguage": "en",
    "about": {
@@ -1779,8 +1783,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/manufacturing/#webpage",
    "url": "https://get-lumic.com/industries/manufacturing/",
-   "name": "Back-office AI automation for manufacturers | lumic",
-   "description": "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry.",
+   "name": "Custom AI for manufacturers: shop floor to books | lumic",
+   "description": "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1853,13 +1857,13 @@
     "name": "Manufacturers"
    },
    "url": "https://get-lumic.com/industries/manufacturing/",
-   "description": "AI agents for a manufacturer's back office: vendor bills matched to purchase orders, job costing during the job, purchasing and month-end entries. A person approves each entry."
+   "description": "Custom AI for a manufacturer, from the floor to the books: production schedules, freight bills, vendor bills matched to purchase orders, job costing during the job, purchasing and month-end entries. A person approves each entry."
   },
   {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/distribution/#webpage",
    "url": "https://get-lumic.com/industries/distribution/",
-   "name": "Back-office AI automation for distributors | lumic",
+   "name": "Custom AI for distributors: orders, purchasing, cash | lumic",
    "description": "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.",
    "inLanguage": "en",
    "about": {
@@ -1933,14 +1937,14 @@
     "name": "Distributors"
    },
    "url": "https://get-lumic.com/industries/distribution/",
-   "description": "AI agents for a distributor's back office: cash receipts, collections drafted from live aging, and margin by customer, product and rep across companies. A person approves each entry."
+   "description": "Custom AI for a distributor, from the order desk to the books: cash receipts, collections drafted from live aging, and margin by customer, product and rep across companies. A person approves each entry."
   },
   {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/service-firms/#webpage",
    "url": "https://get-lumic.com/industries/service-firms/",
-   "name": "Back-office automation for service firms | lumic",
-   "description": "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.",
+   "name": "Custom AI for service firms: inbox, billing, close | lumic",
+   "description": "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2013,7 +2017,7 @@
     "name": "Service firms"
    },
    "url": "https://get-lumic.com/industries/service-firms/",
-   "description": "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
+   "description": "Custom AI for a service firm, from the inbox to the books: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
   },
   {
    "@type": "WebPage",
@@ -2055,7 +2059,7 @@
    "@id": "https://get-lumic.com/st-louis/ai-consulting/#webpage",
    "url": "https://get-lumic.com/st-louis/ai-consulting/",
    "name": "St. Louis AI consulting and automation | lumic",
-   "description": "lumic is St. Louis AI consulting that sends FDEs on site to build one custom AI agent at a time. A person approves every entry before it posts.",
+   "description": "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2195,7 +2199,7 @@
    "@id": "https://get-lumic.com/st-louis/metro-east/#webpage",
    "url": "https://get-lumic.com/st-louis/metro-east/",
    "name": "AI automation for Metro East businesses, on site | lumic",
-   "description": "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI agents a person approves before anything posts.",
+   "description": "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI, one process at a time a person approves before anything posts.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2387,7 +2391,7 @@
    "@id": "https://get-lumic.com/forward-deployed-engineers/small-business/#webpage",
    "url": "https://get-lumic.com/forward-deployed-engineers/small-business/",
    "name": "Forward Deployed Engineers for small and mid-size businesses | lumic",
-   "description": "lumic's FDEs work on site, build one custom AI agent at a time inside the systems a business already runs, and stay to keep it working.",
+   "description": "lumic's FDEs work on site, build custom AI, one process at a time inside the systems a business already runs, and stay to keep it working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2631,8 +2635,8 @@
    "@type": "CollectionPage",
    "@id": "https://get-lumic.com/systems/#webpage",
    "url": "https://get-lumic.com/systems/",
-   "name": "Systems lumic works with: ERP and accounting | lumic",
-   "description": "lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts.",
+   "name": "Systems lumic works with: any software you run | lumic",
+   "description": "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"

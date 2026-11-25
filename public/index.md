@@ -1,13 +1,13 @@
 ---
 title: "lumic | Custom AI implementation, St. Louis FDEs"
-description: "lumic builds custom AI into any process and any system your business runs, then keeps it working on a monthly retainer. Forward Deployed Engineers, St. Louis."
+description: "lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs."
 canonical: https://get-lumic.com/
 last_updated: 2026-11-24
 ---
 
 # lumic | Custom AI implementation, St. Louis FDEs
 
-> lumic builds custom AI into any process and any system your business runs, then keeps it working on a monthly retainer. Forward Deployed Engineers, St. Louis.
+> lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 

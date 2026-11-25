@@ -1,13 +1,13 @@
 ---
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
-description: "Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working."
+description: "Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working."
 canonical: https://get-lumic.com/services/
 last_updated: 2026-11-24
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic
 
-> Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working.
+> Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working.
 
 Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
 
@@ -137,6 +137,14 @@ An agent prepares the month-end entries, and the controller approves them before
 [Month-end close →](https://get-lumic.com/services/month-end-close/)
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
+
+Any process
+
+## Beyond the books.
+
+Custom AI is not only for accounting. lumic builds agents for production, purchasing, the order desk and freight, and joins systems that were never built to talk. If a person does it by hand every day, it is a candidate.
+
+[AI implementation, any process and any system](https://get-lumic.com/ai-implementation/)
 
 How lumic engages
 

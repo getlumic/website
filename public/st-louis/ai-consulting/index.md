@@ -1,13 +1,13 @@
 ---
 title: "St. Louis AI consulting and automation | lumic"
-description: "lumic is St. Louis AI consulting that sends FDEs on site to build one custom AI agent at a time. A person approves every entry before it posts."
+description: "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
 last_updated: 2026-11-24
 ---
 
 # St. Louis AI consulting and automation | lumic
 
-> lumic is St. Louis AI consulting that sends FDEs on site to build one custom AI agent at a time. A person approves every entry before it posts.
+> lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts.
 
 Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com
 

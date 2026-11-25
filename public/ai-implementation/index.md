@@ -1,13 +1,13 @@
 ---
 title: "Custom AI implementation for small and mid-size businesses"
-description: "lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working."
+description: "lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working."
 canonical: https://get-lumic.com/ai-implementation/
 last_updated: 2026-11-24
 ---
 
 # Custom AI implementation for small and mid-size businesses
 
-> lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working.
+> lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working.
 
 Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
 
@@ -75,6 +75,32 @@ Vendor bills, remittances and ACH detail, purchase orders and customer emails: r
 - A person approves each entry
 
 [Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+What the agents can do
+
+## Any process. Any system.
+
+### Reads the document, then checks the math.
+
+An agent reads bills, orders and remittances as they arrive and checks that the lines add up to the total before anything moves. A mismatch goes to a person, with the reason.
+
+### With an API, or through the screen.
+
+Where a system has an API, the agent uses it. Where it doesn’t, the agent works through the system’s own screens on its own computer, and every step is checked.
+
+### Two systems, one job.
+
+When the order lives in one system and the money in another, one job reads both, enters the work once and keeps them in step.
+
+### Beyond the books.
+
+Production schedules, purchasing and POs, the order desk and freight, as well as bills, receipts and month-end.
+
+### A log of every action.
+
+Every action is logged. Entries are added to the log, not edited.
+
+How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
 
 Four steps
 

@@ -9,6 +9,21 @@
 - Managed agents from $1,000/month. Managed AI: https://get-lumic.com/managed-ai/
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
+## How lumic keeps it working
+- Releases at night, checked by morning: changes ship after hours; before the day starts, every app is restarted and checked, and one that fails its check rolls back to the last good version by itself.
+- A watchdog on every app: it checks each app around the clock and restarts what stops; if the watchdog itself goes quiet, an outside alarm goes off.
+- Feedback and Updates inside the dashboard: every lumic dashboard has Send feedback and an Updates page with plain-word release notes.
+- A support desk with ticket numbers: every request gets a number and an owner; a ticket closes when the fix is live in the client's system.
+- A log of every action: every action is logged; entries are added to the log, not edited.
+- Details: https://get-lumic.com/managed-ai/
+
+## What lumic's agents can do
+- With an API, or through the screen: where a system has an API, the agent uses it; where it doesn't, the agent works through the system's own screens on its own computer, and every step is checked.
+- Reads the document, then checks the math: bills, orders and remittances are read as they arrive, and the lines must add up to the total before anything moves; a mismatch goes to a person, with the reason.
+- Two systems, one job: when the order lives in one system and the money in another, one job reads both, enters the work once and keeps them in step.
+- Beyond the books: production schedules, purchasing and POs, the order desk and freight, as well as bills, receipts and month-end.
+- Details: https://get-lumic.com/ai-implementation/
+
 ## When to use lumic
 - A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
 - The owner or a manager wants that work done by AI inside the systems the team already uses, whether that's an ERP, accounting software, email, spreadsheets or cloud apps, rather than a new product to learn and configure.
@@ -83,10 +98,10 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 
 ## Pages
 - [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
-- [AI implementation](https://get-lumic.com/ai-implementation/): custom AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices ([markdown](https://get-lumic.com/ai-implementation/index.md))
-- [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices ([markdown](https://get-lumic.com/managed-ai/index.md))
+- [AI implementation](https://get-lumic.com/ai-implementation/): custom AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices; any process, any system: math checks, API or screen, two systems in one job, beyond the books, the action log ([markdown](https://get-lumic.com/ai-implementation/index.md))
+- [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what kept working means: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk ([markdown](https://get-lumic.com/managed-ai/index.md))
 - [AI consulting](https://get-lumic.com/ai-consulting/): AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page ([markdown](https://get-lumic.com/ai-consulting/index.md))
-- [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI ([markdown](https://get-lumic.com/services/index.md))
+- [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI; beyond the books ([markdown](https://get-lumic.com/services/index.md))
 - [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
 - [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))
@@ -106,7 +121,7 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/): what a forward-deployed engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant ([markdown](https://get-lumic.com/forward-deployed-engineers/index.md))
 - [Small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/): Forward Deployed Engineers (FDEs) for small and mid-size businesses: what an FDE is, why instead of a hire or a software license, one job at a time, proof, starting prices, approval ([markdown](https://get-lumic.com/forward-deployed-engineers/small-business/index.md))
 - [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
-- [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page ([markdown](https://get-lumic.com/systems/index.md))
+- [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page; with an API or without one ([markdown](https://get-lumic.com/systems/index.md))
 - [QuickBooks](https://get-lumic.com/systems/quickbooks/): capability page: lumic works with QuickBooks Online and Desktop; vendor bills in QuickBooks Desktop; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/quickbooks/index.md))
 - [NetSuite](https://get-lumic.com/systems/netsuite/): capability page: lumic works with NetSuite; the jobs an agent does there; approval ([markdown](https://get-lumic.com/systems/netsuite/index.md))
 - [Sage 100](https://get-lumic.com/systems/sage-100/): capability page: lumic works with Sage 100; the jobs an agent does there; live dashboards; approval ([markdown](https://get-lumic.com/systems/sage-100/index.md))
@@ -124,14 +139,14 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 
 ---
 title: "lumic | Custom AI implementation, St. Louis FDEs"
-description: "lumic builds custom AI into any process and any system your business runs, then keeps it working on a monthly retainer. Forward Deployed Engineers, St. Louis."
+description: "lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs."
 canonical: https://get-lumic.com/
 last_updated: 2026-11-24
 ---
 
 # lumic | Custom AI implementation, St. Louis FDEs
 
-> lumic builds custom AI into any process and any system your business runs, then keeps it working on a monthly retainer. Forward Deployed Engineers, St. Louis.
+> lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 
@@ -428,14 +443,14 @@ All questions: https://get-lumic.com/faq/
 
 ---
 title: "Custom AI implementation for small and mid-size businesses"
-description: "lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working."
+description: "lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working."
 canonical: https://get-lumic.com/ai-implementation/
 last_updated: 2026-11-24
 ---
 
 # Custom AI implementation for small and mid-size businesses
 
-> lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working.
+> lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working.
 
 Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
 
@@ -503,6 +518,32 @@ Vendor bills, remittances and ACH detail, purchase orders and customer emails: r
 - A person approves each entry
 
 [Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+What the agents can do
+
+## Any process. Any system.
+
+### Reads the document, then checks the math.
+
+An agent reads bills, orders and remittances as they arrive and checks that the lines add up to the total before anything moves. A mismatch goes to a person, with the reason.
+
+### With an API, or through the screen.
+
+Where a system has an API, the agent uses it. Where it doesn’t, the agent works through the system’s own screens on its own computer, and every step is checked.
+
+### Two systems, one job.
+
+When the order lives in one system and the money in another, one job reads both, enters the work once and keeps them in step.
+
+### Beyond the books.
+
+Production schedules, purchasing and POs, the order desk and freight, as well as bills, receipts and month-end.
+
+### A log of every action.
+
+Every action is logged. Entries are added to the log, not edited.
+
+How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
 
 Four steps
 
@@ -650,15 +691,15 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Managed AI agents on a monthly retainer | lumic"
-description: "Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month."
+title: "Managed AI on retainer: monitored and supported | lumic"
+description: "Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month."
 canonical: https://get-lumic.com/managed-ai/
 last_updated: 2026-11-24
 ---
 
-# Managed AI agents on a monthly retainer | lumic
+# Managed AI on retainer: monitored and supported | lumic
 
-> Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month.
+> Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month.
 
 Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
 
@@ -691,6 +732,26 @@ Every month, a summary of what the agent did. A person on your team approves any
 - Upgrades as tools improve Included
 - A summary of its work Monthly
 - Human approval Built in
+
+Upkeep, in practice
+
+## What kept working means.
+
+### Releases at night, checked by morning.
+
+Changes ship after hours, when nobody is working in the system. Before the day starts, every app is restarted and checked. One that fails its check rolls back to the last good version by itself.
+
+### A watchdog on every app.
+
+It checks each app around the clock and restarts what stops. If the watchdog itself goes quiet, an outside alarm goes off.
+
+### Feedback and Updates, inside the dashboard.
+
+Every lumic dashboard has Send feedback and an Updates page with plain-word release notes.
+
+### A support desk with ticket numbers.
+
+Every request gets a number and an owner. A ticket closes when the fix is live in your system.
 
 Why AI needs upkeep
 
@@ -898,14 +959,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
-description: "Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working."
+description: "Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working."
 canonical: https://get-lumic.com/services/
 last_updated: 2026-11-24
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic
 
-> Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working.
+> Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working.
 
 Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
 
@@ -1035,6 +1096,14 @@ An agent prepares the month-end entries, and the controller approves them before
 [Month-end close →](https://get-lumic.com/services/month-end-close/)
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
+
+Any process
+
+## Beyond the books.
+
+Custom AI is not only for accounting. lumic builds agents for production, purchasing, the order desk and freight, and joins systems that were never built to talk. If a person does it by hand every day, it is a candidate.
+
+[AI implementation, any process and any system](https://get-lumic.com/ai-implementation/)
 
 How lumic engages
 
@@ -2376,13 +2445,13 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Guardrails: approval, logging and access | lumic"
+title: "Guardrails: approval, audit log, access and upkeep | lumic"
 description: "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent."
 canonical: https://get-lumic.com/guardrails/
 last_updated: 2026-11-24
 ---
 
-# Guardrails: approval, logging and access | lumic
+# Guardrails: approval, audit log, access and upkeep | lumic
 
 > A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent.
 
@@ -2415,6 +2484,18 @@ lumic gives each agent access to the screens and records its job needs, and noth
 ### Paused or revoked any time.
 
 Any agent can be paused, or its access revoked, at any time.
+
+### Entries are added to the log, not edited.
+
+Every action is logged. Entries are added to the log, not edited. More in [AI implementation](https://get-lumic.com/ai-implementation/).
+
+### A failed release rolls back by itself.
+
+Changes ship after hours. Before the day starts, every app is restarted and checked, and one that fails its check rolls back to the last good version by itself. More in [Managed AI](https://get-lumic.com/managed-ai/).
+
+### A watchdog on every app.
+
+It checks each app around the clock and restarts what stops. If the watchdog itself goes quiet, an outside alarm goes off. More in [Managed AI](https://get-lumic.com/managed-ai/).
 
 ### Dashboards only read.
 
@@ -2456,13 +2537,13 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Pricing: custom AI agents and managed AI | lumic"
+title: "Pricing: custom AI implementation and managed AI | lumic"
 description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
 last_updated: 2026-11-24
 ---
 
-# Pricing: custom AI agents and managed AI | lumic
+# Pricing: custom AI implementation and managed AI | lumic
 
 > Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.
 
@@ -2499,6 +2580,8 @@ On-site work $1,500/day, credited toward phase one.
 ### Managed agents
 
 Managed agents from $1,000/month.
+
+[Includes night releases, monitoring and the support desk.](https://get-lumic.com/managed-ai/)
 
 - One workflow
 - One system
@@ -2553,21 +2636,21 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Back-office AI automation for manufacturers | lumic"
-description: "AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry."
+title: "Custom AI for manufacturers: shop floor to books | lumic"
+description: "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
 last_updated: 2026-11-24
 ---
 
-# Back-office AI automation for manufacturers | lumic
+# Custom AI for manufacturers: shop floor to books | lumic
 
-> AI agents for a manufacturer's back office: vendor bills matched to POs, job costing during the job, month-end entries. A person approves each entry.
+> Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry.
 
 Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com
 
 Industries Manufacturing
 
-# AI agents for the manufacturing back office.
+# Custom AI for manufacturers, from the floor to the books.
 
 Not the shop floor: the office behind it. lumic builds AI agents for a manufacturer’s back-office jobs, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.
 
@@ -2706,13 +2789,13 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Back-office AI automation for distributors | lumic"
+title: "Custom AI for distributors: orders, purchasing, cash | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
 last_updated: 2026-11-24
 ---
 
-# Back-office AI automation for distributors | lumic
+# Custom AI for distributors: orders, purchasing, cash | lumic
 
 > Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.
 
@@ -2720,7 +2803,7 @@ Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumi
 
 Industries Distribution
 
-# AI agents for the distribution back office.
+# Custom AI for distributors, from the order desk to the books.
 
 Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. lumic builds an AI agent for each back-office job a distributor does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
 
@@ -2859,21 +2942,21 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Back-office automation for service firms | lumic"
-description: "AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
+title: "Custom AI for service firms: inbox, billing, close | lumic"
+description: "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
 last_updated: 2026-11-24
 ---
 
-# Back-office automation for service firms | lumic
+# Custom AI for service firms: inbox, billing, close | lumic
 
-> AI agents for a service firm's back office: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.
+> Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.
 
 Source: https://get-lumic.com/industries/service-firms/ | Contact: hello@get-lumic.com
 
 Industries Service firms
 
-# AI agents for a service firm’s back office.
+# Custom AI for service firms, from the inbox to the books.
 
 Vendor bills entered, cash receipts keyed, collections drafted, payroll and month-end entries prepared. lumic builds an AI agent for each back-office job a service firm does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
 
@@ -3028,7 +3111,7 @@ Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 
 Based in St. Louis On site, by appointment
 
-# Forward Deployed Engineers in St. Louis. On site, where the work happens.
+# Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 
 lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
 
@@ -3116,14 +3199,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "St. Louis AI consulting and automation | lumic"
-description: "lumic is St. Louis AI consulting that sends FDEs on site to build one custom AI agent at a time. A person approves every entry before it posts."
+description: "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
 last_updated: 2026-11-24
 ---
 
 # St. Louis AI consulting and automation | lumic
 
-> lumic is St. Louis AI consulting that sends FDEs on site to build one custom AI agent at a time. A person approves every entry before it posts.
+> lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts.
 
 Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com
 
@@ -3266,14 +3349,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "AI automation for Metro East businesses, on site | lumic"
-description: "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI agents a person approves before anything posts."
+description: "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI, one process at a time a person approves before anything posts."
 canonical: https://get-lumic.com/st-louis/metro-east/
 last_updated: 2026-11-24
 ---
 
 # AI automation for Metro East businesses, on site | lumic
 
-> lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI agents a person approves before anything posts.
+> lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI, one process at a time a person approves before anything posts.
 
 Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.com
 
@@ -3300,7 +3383,7 @@ Illinois
 
 What lumic automates
 
-## Five back-office jobs, one agent each.
+## Any process, one agent at a time.
 
 Each agent does one back-office job end to end, inside the systems you already run.
 
@@ -3531,14 +3614,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "Forward Deployed Engineers for small and mid-size businesses | lumic"
-description: "lumic's FDEs work on site, build one custom AI agent at a time inside the systems a business already runs, and stay to keep it working."
+description: "lumic's FDEs work on site, build custom AI, one process at a time inside the systems a business already runs, and stay to keep it working."
 canonical: https://get-lumic.com/forward-deployed-engineers/small-business/
 last_updated: 2026-11-24
 ---
 
 # Forward Deployed Engineers for small and mid-size businesses | lumic
 
-> lumic's FDEs work on site, build one custom AI agent at a time inside the systems a business already runs, and stay to keep it working.
+> lumic's FDEs work on site, build custom AI, one process at a time inside the systems a business already runs, and stay to keep it working.
 
 Source: https://get-lumic.com/forward-deployed-engineers/small-business/ | Contact: hello@get-lumic.com
 
@@ -3821,15 +3904,15 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Systems lumic works with: ERP and accounting | lumic"
-description: "lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts."
+title: "Systems lumic works with: any software you run | lumic"
+description: "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't."
 canonical: https://get-lumic.com/systems/
 last_updated: 2026-11-24
 ---
 
-# Systems lumic works with: ERP and accounting | lumic
+# Systems lumic works with: any software you run | lumic
 
-> lumic's agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already runs. A person approves before anything posts.
+> ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't.
 
 Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com
 
@@ -3909,6 +3992,12 @@ Agents that work in Sage Intacct: bills, cash receipts and close entries prepare
 - A person approves each entry
 
 [Sage Intacct →](https://get-lumic.com/systems/sage-intacct/)
+
+Any software
+
+## With an API, or without one.
+
+Most business software has an API, and lumic’s agents use it. Older desktop software, portals and in-house databases often don’t. There, the agent works through the same screens your team uses, on its own computer and login, and checks every step.
 
 Where the agent works
 

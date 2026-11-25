@@ -1,11 +1,11 @@
 ---
-title: "Guardrails: approval, logging and access | lumic"
+title: "Guardrails: approval, audit log, access and upkeep | lumic"
 description: "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent."
 canonical: https://get-lumic.com/guardrails/
 last_updated: 2026-11-24
 ---
 
-# Guardrails: approval, logging and access | lumic
+# Guardrails: approval, audit log, access and upkeep | lumic
 
 > A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent.
 
@@ -38,6 +38,18 @@ lumic gives each agent access to the screens and records its job needs, and noth
 ### Paused or revoked any time.
 
 Any agent can be paused, or its access revoked, at any time.
+
+### Entries are added to the log, not edited.
+
+Every action is logged. Entries are added to the log, not edited. More in [AI implementation](https://get-lumic.com/ai-implementation/).
+
+### A failed release rolls back by itself.
+
+Changes ship after hours. Before the day starts, every app is restarted and checked, and one that fails its check rolls back to the last good version by itself. More in [Managed AI](https://get-lumic.com/managed-ai/).
+
+### A watchdog on every app.
+
+It checks each app around the clock and restarts what stops. If the watchdog itself goes quiet, an outside alarm goes off. More in [Managed AI](https://get-lumic.com/managed-ai/).
 
 ### Dashboards only read.
 
