@@ -4,7 +4,7 @@
 //   markdown 404.
 // - Films: a byte-range request on /video/* gets 206 Partial Content (static assets return the whole file, and iPhone
 //   Safari will not play a video that way).
-// - Redirects: http:// and www.get-lumic.com -> https://get-lumic.com (same path and query), /about(/) -> /how-lumic-works/, and the assets' own 307s (/index.html,
+// - Redirects: http:// and www.get-lumic.com -> https://get-lumic.com (same path and query), /about(/) -> /how-lumic-works/, the REDIRECTS map (old or short paths), and the assets' own 307s (/index.html,
 //   /privacy) become 301s.
 // - Headers: HSTS everywhere, a Link header on pages (llms.txt and the markdown copy), a day of browser cache on films
 //   and images (their file names are reused when a film is replaced, so not longer than that). A versioned media URL gets
@@ -14,9 +14,18 @@ import { EmailMessage } from "cloudflare:email";
 
 const APEX = "get-lumic.com";
 // md-pages:start
-const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/st-louis/metro-east/", "/forward-deployed-engineers/", "/forward-deployed-engineers/small-business/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-100/ap-automation/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
+const MD_PAGES = new Set(["/", "/ai-implementation/", "/managed-ai/", "/ai-consulting/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/st-louis/metro-east/", "/forward-deployed-engineers/", "/forward-deployed-engineers/small-business/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-100/ap-automation/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
 // md-pages:end
-const REDIRECTS = { "/about": "/how-lumic-works/", "/about/": "/how-lumic-works/" };
+// Old or short paths -> their page (301), with and without the trailing slash. qa.py checks each one off localhost.
+const REDIRECTS = {
+  "/about": "/how-lumic-works/", "/about/": "/how-lumic-works/",
+  "/retainer": "/managed-ai/", "/retainer/": "/managed-ai/",
+  "/managed-agents": "/managed-ai/", "/managed-agents/": "/managed-ai/",
+  "/managed-ai-agents": "/managed-ai/", "/managed-ai-agents/": "/managed-ai/",
+  "/implementation": "/ai-implementation/", "/implementation/": "/ai-implementation/",
+  "/consulting": "/ai-consulting/", "/consulting/": "/ai-consulting/",
+  "/fde": "/forward-deployed-engineers/", "/fde/": "/forward-deployed-engineers/",
+};
 function mdFor(path) {
   if (path === "/index.html") return "/index.md";
   return MD_PAGES.has(path) ? path + "index.md" : null;

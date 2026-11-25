@@ -35,12 +35,39 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:ai-implementation-markdown",
+   "displayName": "AI implementation as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/ai-implementation/index.md",
+   "representativeQueries": [
+    "AI implementation for small and mid-size businesses"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:managed-ai-markdown",
+   "displayName": "Managed AI as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/managed-ai/index.md",
+   "representativeQueries": [
+    "Managed AI agents on a monthly retainer"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:ai-consulting-markdown",
+   "displayName": "AI consulting as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/ai-consulting/index.md",
+   "representativeQueries": [
+    "AI consulting for small businesses, on site"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:services-markdown",
    "displayName": "Services as markdown",
    "type": "text/markdown",
    "url": "https://get-lumic.com/services/index.md",
    "representativeQueries": [
-    "Back-office automation services: AI agents"
+    "AI agents, automations and dashboards"
    ]
   },
   {

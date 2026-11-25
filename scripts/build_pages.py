@@ -6,7 +6,7 @@ page come from src/pages/<id>.jsonld (a JSON list; the string "@AREA" becomes th
 come from its pages.json "faq" list: {{page_faq}} shows them and the same list writes the page's FAQPage.
 
 Also, in place:
-- public/index.html: the header, footer, FAQ (list and FAQPage JSON-LD) and the pricing section between their markers. The rest of the home
+- public/index.html: the header, footer, FAQ (list and FAQPage JSON-LD), the pricing section and the four steps between their markers. The rest of the home
   page stays hand-edited.
 - public/sitemap.xml: home, every page, privacy; lastmod is each source file's last commit date (today if uncommitted).
 - src/worker.js: the list of paths that have a markdown copy (between the md-pages markers).
@@ -64,6 +64,18 @@ PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
         <li><span>Running and support</span><span class="st">Monthly</span></li>
       </ul>
     </article>"""
+PRICE_FULL = "Full build-and-run from $2,500&ndash;6,000/month."  # as live on /pricing/ (shown text: an en dash)
+# The four steps (revamp 2026-11-24): the same wording on home (between its steps markers) and /how-lumic-works/
+# ({{four_steps}}). Each step links its own page and carries its approved pricing line word for word. Reuses .steps
+# (.s4: four columns on wide screens).
+_STEP_LINK = 'style="margin-top:14px"'
+FOUR_STEPS = f"""<ol class="steps s4 rv">
+      <li class="track" aria-hidden="true"><i></i></li>
+      <li class="step"><span class="n" aria-hidden="true">01</span><h3>Free consultation.</h3><p>A 20&#8209;minute call. You walk the team through the work your people do by hand.</p><a class="founder-link" {_STEP_LINK} href="{CAL}" target="_blank" rel="noopener">Book a call →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">02</span><h3>On-site day.</h3><p>lumic&rsquo;s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.</p><p style="margin-top:10px"><strong>{PRICE_ONSITE}</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-consulting/">AI consulting →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.</p><p style="margin-top:10px"><strong>{PRICE_FULL}</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">04</span><h3>Managed AI.</h3><p>lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.</p><p style="margin-top:10px"><strong>{PRICE_AGENTS}</strong></p><a class="founder-link" {_STEP_LINK} href="/managed-ai/">Managed AI →</a></li>
+    </ol>"""
 # The pricing block as its own section (home, and the service / industry / system pages before the checklist).
 PRICING_SECTION = f"""<!-- ============ PRICING ============ -->
 <section id="plans" aria-label="Pricing">
@@ -192,7 +204,7 @@ CONTACT = f"""<!-- ============ CONTACT ============ -->
           <ol class="nx">
             <li><span class="n">1</span><div><b>A 20&#8209;minute call.</b><span>You walk the team through the work your people do by hand.</span></div></li>
             <li><span class="n">2</span><div><b>A written proposal.</b><span>What lumic would build, the timeline, and the cost.</span></div></li>
-            <li><span class="n">3</span><div><b>An on-site visit.</b><span>lumic&rsquo;s FDEs meet your team where the work happens and confirm the plan. St.&nbsp;Louis first; they travel for the right fit.</span></div></li>
+            <li><span class="n">3</span><div><b>An on-site visit.</b><span>lumic&rsquo;s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St.&nbsp;Louis and travel for the right fit.</span></div></li>
           </ol>
         </div>
       </div>
@@ -277,7 +289,7 @@ def build_page(p):
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
                  "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{pricing_section}}": PRICING_SECTION, "{{checklist}}": checklist(p["path"]), "{{price_onsite}}": PRICE_ONSITE,
-                 "{{price_build}}": PRICE_BUILD, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
+                 "{{price_build}}": PRICE_BUILD, "{{price_full}}": PRICE_FULL, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
                  "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
                  "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
         body = body.replace(k, v)
@@ -356,6 +368,7 @@ def build_home():
     home_faq = [x for x in CFG["faq"] if x.get("home")]
     h = stamp(h, "faq", faq_items(home_faq))
     h = stamp(h, "pricing", PRICING_SECTION)
+    h = stamp(h, "steps", "    " + FOUR_STEPS)
     m = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', h, re.S)
     ld = json.loads(m.group(2))
     ld["@graph"] = [faq_ld(home_faq, SITE + "/#faq") if g.get("@type") == "FAQPage" else g for g in ld["@graph"]]

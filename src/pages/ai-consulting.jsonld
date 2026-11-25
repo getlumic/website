@@ -1,0 +1,9 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/ai-consulting/#service", "name": "AI consulting, on site",
+  "serviceType": "AI consulting", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/ai-consulting/",
+  "description": "lumic's Forward Deployed Engineers spend a day on site, map where AI fits the business, and write a proposal: what to build, the timeline, and the cost. Then the same team builds it and keeps it working.",
+  "offers": {"@type": "Offer", "name": "On-site day", "description": "On-site work $1,500/day, credited toward phase one.",
+   "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": 1500, "priceCurrency": "USD", "unitText": "DAY"}}}
+]

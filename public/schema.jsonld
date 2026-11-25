@@ -5,6 +5,10 @@
    "@type": "Organization",
    "@id": "https://get-lumic.com/#org",
    "name": "lumic",
+   "alternateName": [
+    "lumic AI",
+    "lumic St. Louis"
+   ],
    "url": "https://get-lumic.com/",
    "logo": "https://get-lumic.com/apple-touch-icon.png",
    "image": "https://get-lumic.com/og-image.png",
@@ -12,7 +16,7 @@
    "telephone": "+1-618-979-6837",
    "slogan": "AI, deployed into your business and kept working.",
    "foundingDate": "2026-05",
-   "description": "lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis. lumic deploys AI into how a business already runs, from vendor bills to month-end, keeps it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one.",
+   "description": "lumic is a St. Louis AI implementation firm: Forward Deployed Engineers who build AI into how a business already runs, then keep it working on a monthly retainer. The back office stays the deepest proof, not the boundary.",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "St. Louis",
@@ -64,36 +68,11 @@
     }
    ],
    "knowsAbout": [
+    "AI implementation",
     "Forward deployed engineering",
     "AI agents",
-    "Business process automation",
-    "Accounts payable automation",
-    "Cash receipts",
-    "Month-end close",
-    "System integration",
-    "QuickBooks Online",
-    "QuickBooks Desktop",
-    "NetSuite",
-    "Sage Intacct",
-    "Sage 100",
-    "Microsoft Dynamics 365 Business Central",
-    "Xero",
-    "Acumatica",
-    "Bill.com",
-    "Ramp",
-    "Expensify",
-    "ADP",
-    "Paychex",
-    "Gusto",
-    "Salesforce",
-    "HubSpot",
-    "Microsoft 365 / Outlook",
-    "Excel",
-    "Power BI",
-    "SQL Server",
-    "Google Workspace",
-    "FileMaker",
-    "Shopify"
+    "Workflow automation",
+    "Managed AI services"
    ],
    "sameAs": [
     "https://www.linkedin.com/company/get-lumic",
@@ -108,7 +87,80 @@
      "areaServed": "US",
      "availableLanguage": "English"
     }
-   ]
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "lumic offers: starting points, not quotes",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "name": "Free consultation",
+      "description": "Free consultation.",
+      "priceSpecification": {
+       "@type": "PriceSpecification",
+       "minPrice": 0,
+       "priceCurrency": "USD"
+      },
+      "itemOffered": {
+       "@type": "Service",
+       "@id": "https://get-lumic.com/ai-consulting/#service",
+       "name": "AI consulting, on site",
+       "url": "https://get-lumic.com/ai-consulting/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "name": "On-site day",
+      "description": "On-site work $1,500/day, credited toward phase one.",
+      "priceSpecification": {
+       "@type": "UnitPriceSpecification",
+       "minPrice": 1500,
+       "priceCurrency": "USD",
+       "unitText": "DAY"
+      },
+      "itemOffered": {
+       "@type": "Service",
+       "@id": "https://get-lumic.com/ai-consulting/#service",
+       "name": "AI consulting, on site",
+       "url": "https://get-lumic.com/ai-consulting/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "name": "Managed agents",
+      "description": "Managed agents from $1,000/month.",
+      "priceSpecification": {
+       "@type": "UnitPriceSpecification",
+       "minPrice": 1000,
+       "priceCurrency": "USD",
+       "unitText": "MONTH"
+      },
+      "itemOffered": {
+       "@type": "Service",
+       "@id": "https://get-lumic.com/managed-ai/#service",
+       "name": "Managed AI agents",
+       "url": "https://get-lumic.com/managed-ai/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "name": "Full build-and-run",
+      "description": "Full build-and-run from $2,500–6,000/month.",
+      "priceSpecification": {
+       "@type": "UnitPriceSpecification",
+       "minPrice": 2500,
+       "priceCurrency": "USD",
+       "unitText": "MONTH"
+      },
+      "itemOffered": {
+       "@type": "Service",
+       "@id": "https://get-lumic.com/ai-implementation/#service",
+       "name": "AI implementation",
+       "url": "https://get-lumic.com/ai-implementation/"
+      }
+     }
+    ]
+   }
   },
   {
    "@type": "Service",
@@ -185,11 +237,374 @@
    ]
   },
   {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/ai-implementation/#webpage",
+   "url": "https://get-lumic.com/ai-implementation/",
+   "name": "AI implementation for small and mid-size businesses | lumic",
+   "description": "lumic's FDEs find where AI fits, build agents, automations and dashboards inside your systems, and keep them working. A person approves what matters.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/ai-implementation/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/ai-implementation/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "AI implementation",
+     "item": "https://get-lumic.com/ai-implementation/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/ai-implementation/#service",
+   "name": "AI implementation",
+   "serviceType": "AI implementation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/ai-implementation/",
+   "description": "lumic's Forward Deployed Engineers find where AI fits a business, build agents, workflow automations, system connections and live dashboards inside the systems it already runs, and keep them working. A person on the client's team approves what matters.",
+   "offers": {
+    "@type": "Offer",
+    "name": "Full build-and-run",
+    "description": "Full build-and-run from $2,500–6,000/month.",
+    "priceSpecification": {
+     "@type": "UnitPriceSpecification",
+     "minPrice": 2500,
+     "priceCurrency": "USD",
+     "unitText": "MONTH"
+    }
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/ai-implementation/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does AI implementation mean for a small business?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Putting AI to work inside the systems the business already runs, not buying a new tool to learn. lumic's FDEs find the work done by hand, build an agent, an automation or a live dashboard for it, and keep it working. A person on your team approves what matters."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does an AI implementation take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/managed-ai/#webpage",
+   "url": "https://get-lumic.com/managed-ai/",
+   "name": "Managed AI agents on a monthly retainer | lumic",
+   "description": "Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/managed-ai/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/managed-ai/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Managed AI",
+     "item": "https://get-lumic.com/managed-ai/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/managed-ai/#service",
+   "name": "Managed AI agents",
+   "serviceType": "Managed AI services",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/managed-ai/",
+   "description": "Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves, with a monthly summary. A person on the client's team approves anything before it posts. Any agent can be paused, or its access revoked, at any time.",
+   "offers": {
+    "@type": "Offer",
+    "name": "Managed agents",
+    "description": "Managed agents from $1,000/month.",
+    "priceSpecification": {
+     "@type": "UnitPriceSpecification",
+     "minPrice": 1000,
+     "priceCurrency": "USD",
+     "unitText": "MONTH"
+    }
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/managed-ai/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a managed AI agent?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An AI agent that lumic built for one job and runs for a monthly fee. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can an agent be paused?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Any agent can be paused, or its access revoked, at any time."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the retainer cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/ai-consulting/#webpage",
+   "url": "https://get-lumic.com/ai-consulting/",
+   "name": "AI consulting for small businesses, on site | lumic",
+   "description": "lumic's FDEs spend a day on site, map where AI fits your business and write a fixed proposal. On-site work $1,500/day, credited toward phase one.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/ai-consulting/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/ai-consulting/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "AI consulting",
+     "item": "https://get-lumic.com/ai-consulting/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/ai-consulting/#service",
+   "name": "AI consulting, on site",
+   "serviceType": "AI consulting",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/ai-consulting/",
+   "description": "lumic's Forward Deployed Engineers spend a day on site, map where AI fits the business, and write a proposal: what to build, the timeline, and the cost. Then the same team builds it and keeps it working.",
+   "offers": {
+    "@type": "Offer",
+    "name": "On-site day",
+    "description": "On-site work $1,500/day, credited toward phase one.",
+    "priceSpecification": {
+     "@type": "UnitPriceSpecification",
+     "minPrice": 1500,
+     "priceCurrency": "USD",
+     "unitText": "DAY"
+    }
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/ai-consulting/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How is lumic different from an AI consultant?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the on-site day cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On-site work $1,500/day, credited toward phase one. The consultation before it is free."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What comes out of the on-site day?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A written proposal: what lumic would build, the timeline, and the cost."
+     }
+    }
+   ]
+  },
+  {
    "@type": "CollectionPage",
    "@id": "https://get-lumic.com/services/#webpage",
    "url": "https://get-lumic.com/services/",
-   "name": "Back-office automation services: AI agents | lumic",
-   "description": "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts.",
+   "name": "AI agents, automations and dashboards | lumic",
+   "description": "AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -222,8 +637,8 @@
   {
    "@type": "Service",
    "@id": "https://get-lumic.com/services/#service",
-   "name": "Managed AI agents for back-office work",
-   "serviceType": "Back-office automation",
+   "name": "AI agents, automations and dashboards",
+   "serviceType": "AI implementation",
    "provider": {
     "@id": "https://get-lumic.com/#org"
    },
@@ -262,7 +677,7 @@
     "name": "Small and mid-sized businesses"
    },
    "url": "https://get-lumic.com/services/",
-   "description": "lumic builds an AI agent for one back-office job at a time and keeps it working for a monthly fee. A person approves before anything posts."
+   "description": "lumic builds AI agents, automations and live dashboards, one job at a time, inside the systems a business already runs, and keeps them working for a monthly fee. A person approves before anything posts."
   },
   {
    "@type": "ItemList",

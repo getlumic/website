@@ -13,7 +13,7 @@ muted, take the sound, carry the sample-data note), in-page links have targets, 
 one <h1>, canonical and og:url match, a BreadcrumbList. On every page (home included): JSON-LD parses, no we/our/us,
 no size-reveal or gap phrases; on inner pages also no banned term and no product name at all (visible text, title,
 meta and JSON-LD). /st-louis/ carries no street address. The sitemap lists every page and each answers 200 with a
-matching canonical. Off localhost: /about/ and /about answer 301 -> /how-lumic-works/. Home's FAQPage covers exactly
+matching canonical. Off localhost: every src/worker.js REDIRECTS path (/about/ and /about -> /how-lumic-works/ among them) answers 301 to its page. Home's FAQPage covers exactly
 the questions it shows.
 
 Phase 5: the approved pricing lines appear word for word on /pricing/, home and /services/ with the "Book a call to talk
@@ -92,7 +92,14 @@ PRICING_BLOCK_LINES = ["On-site work $1,500/day, credited toward phase one.", "M
                        "Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.",
                        "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."]
 PRICING_LINES = {"/": PRICING_BLOCK_LINES, "/services/": PRICING_BLOCK_LINES,
-                 "/pricing/": ["Free consultation.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES}
+                 "/pricing/": ["Free consultation.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES,
+                 # revamp 2026-11-24: the four offer steps (home, /how-lumic-works/) and the Managed AI page carry their lines too
+                 "/how-lumic-works/": ["Free consultation.", "On-site work $1,500/day, credited toward phase one.",
+                                       "Full build-and-run from $2,500–6,000/month.", "Managed agents from $1,000/month."],
+                 "/managed-ai/": ["Managed agents from $1,000/month.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES[2:]}
+PRICING_LINES["/"] = PRICING_LINES["/"] + ["Free consultation.", "Full build-and-run from $2,500–6,000/month."]
+# pages that carry the full pricing block (CTA + a link to /pricing/); the others only show their lines
+PRICING_BLOCK_PATHS = ("/", "/services/", "/pricing/", "/managed-ai/")
 # /guardrails/ collects only practices the site already states: no new security or control claims
 GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIPAA", r"\bGDPR\b", r"penetration",
                          r"zero[- ]trust", r"compliant"]
@@ -193,6 +200,8 @@ def check_phase5(b):
     for path, lines in PRICING_LINES.items():
         text, _ = load(path)
         fails += [f"{path}: pricing line missing or reworded: {l!r}" for l in lines if l not in text]
+        if path not in PRICING_BLOCK_PATHS:
+            continue
         ctas = pg.evaluate(f"[...document.querySelectorAll('a')].filter(a => a.textContent.trim() === {json.dumps(PRICING_CTA)}).map(a => a.href)")
         if not ctas:
             fails.append(f"{path}: no {PRICING_CTA!r} button")
@@ -240,7 +249,8 @@ def check_phase5(b):
     # the new pages are in the footer of every page (home checked here; inner pages share the same footer)
     home = fetch(BASE + "/")[1]
     foot = re.search(r"<footer>.*?</footer>", home, re.S)
-    for href in ("/st-louis/ai-consulting/", "/forward-deployed-engineers/", "/guardrails/", "/pricing/"):
+    for href in ("/st-louis/ai-consulting/", "/forward-deployed-engineers/", "/guardrails/", "/pricing/",
+                 "/ai-implementation/", "/managed-ai/", "/ai-consulting/", "/st-louis/metro-east/"):
         if not foot or f'href="{href}"' not in foot.group(0):
             fails.append(f"footer: no link to {href}")
     # /privacy/ (hand-written, outside pages.json): third person, and it names what the checklist form stores
@@ -368,20 +378,25 @@ def check_pages(b):
         fails.append(f"sitemap.xml: {e}")
     # /about/ is a 301 to /how-lumic-works/ (the Worker does it; python's http.server cannot, so only off localhost)
     if local:
-        print("note: /about/ 301 not tested on a local server (the Worker serves it); run qa.py against the preview")
+        print("note: the REDIRECTS 301s are not tested on a local server (the Worker serves it); run qa.py against the preview")
     else:
         class NoRedirect(urllib.request.HTTPRedirectHandler):
             def redirect_request(self, *a, **k):
                 return None
         op = urllib.request.build_opener(NoRedirect)
-        for path in ("/about/", "/about"):
+        # every entry in src/worker.js REDIRECTS (/about(/) included), with and without the trailing slash
+        wjs = (Path(__file__).resolve().parent.parent / "src" / "worker.js").read_text(encoding="utf-8")
+        redirects = dict(re.findall(r'"(/[a-z0-9/-]*)": "(/[a-z0-9/-]*/)"', re.search(r"const REDIRECTS = \{(.*?)\};", wjs, re.S).group(1)))
+        if redirects.get("/about/") != "/how-lumic-works/" or redirects.get("/about") != "/how-lumic-works/":
+            fails.append("src/worker.js: /about(/) no longer redirects to /how-lumic-works/")
+        for path, want in sorted(redirects.items()):
             try:
                 r = op.open(urllib.request.Request(BASE + path, headers={"User-Agent": UA}), timeout=20)
                 code, loc = r.status, r.headers.get("Location")
             except urllib.error.HTTPError as e:
                 code, loc = e.code, e.headers.get("Location")
-            if code != 301 or not (loc or "").endswith("/how-lumic-works/"):
-                fails.append(f"{path}: {code} -> {loc} (want 301 -> /how-lumic-works/)")
+            if code != 301 or not (loc or "").endswith(want):
+                fails.append(f"{path}: {code} -> {loc} (want 301 -> {want})")
     return fails
 
 

@@ -1,0 +1,9 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/managed-ai/#service", "name": "Managed AI agents",
+  "serviceType": "Managed AI services", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/managed-ai/",
+  "description": "Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves, with a monthly summary. A person on the client's team approves anything before it posts. Any agent can be paused, or its access revoked, at any time.",
+  "offers": {"@type": "Offer", "name": "Managed agents", "description": "Managed agents from $1,000/month.",
+   "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": 1000, "priceCurrency": "USD", "unitText": "MONTH"}}}
+]

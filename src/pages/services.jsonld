@@ -2,8 +2,8 @@
  {
   "@type": "Service",
   "@id": "https://get-lumic.com/services/#service",
-  "name": "Managed AI agents for back-office work",
-  "serviceType": "Back-office automation",
+  "name": "AI agents, automations and dashboards",
+  "serviceType": "AI implementation",
   "provider": {
    "@id": "https://get-lumic.com/#org"
   },
@@ -13,7 +13,7 @@
    "name": "Small and mid-sized businesses"
   },
   "url": "https://get-lumic.com/services/",
-  "description": "lumic builds an AI agent for one back-office job at a time and keeps it working for a monthly fee. A person approves before anything posts."
+  "description": "lumic builds AI agents, automations and live dashboards, one job at a time, inside the systems a business already runs, and keeps them working for a monthly fee. A person approves before anything posts."
  },
  {
   "@type": "ItemList",

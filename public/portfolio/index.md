@@ -171,7 +171,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 

@@ -1,6 +1,13 @@
 # lumic
 
-> lumic is a team of Forward Deployed Engineers (FDEs) with finance backgrounds, based in St. Louis, Missouri. lumic deploys AI into how a business already runs, from vendor bills to month-end, keeps it working, and a person on the client's team approves what matters. It fits any business with repetitive back-office work, for example manufacturers, distributors and service firms; proven in production at operating manufacturers and distributors. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. St. Louis first; the team travels for the right fit. Founded May 2026, St. Louis. St. Louis AI and St. Louis FDE work for manufacturers, distributors, and service firms; STL AI buyers get on-site FDEs for the back office.
+> lumic is an AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) come on site, learn how a business really works, build AI into the systems it already runs (agents, workflow automation, system connections and live dashboards), and keep it working on a monthly retainer. A person on the client's team approves what matters. Proven in production: an AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. Serves Greater St. Louis on both sides of the river and travels for the right fit.
+
+## Offers
+- Free consultation. A 20-minute call.
+- On-site work $1,500/day, credited toward phase one. AI consulting, on site: https://get-lumic.com/ai-consulting/
+- Full build-and-run from $2,500–6,000/month. AI implementation: https://get-lumic.com/ai-implementation/
+- Managed agents from $1,000/month. Managed AI: https://get-lumic.com/managed-ai/
+- Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 ## When to use lumic
 - A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
@@ -76,14 +83,17 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 
 ## Pages
 - [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
-- [Services](https://get-lumic.com/services/): the services hub: one agent per back-office job, the two offers, links to each job page ([markdown](https://get-lumic.com/services/index.md))
+- [AI implementation](https://get-lumic.com/ai-implementation/): AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices ([markdown](https://get-lumic.com/ai-implementation/index.md))
+- [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices ([markdown](https://get-lumic.com/managed-ai/index.md))
+- [AI consulting](https://get-lumic.com/ai-consulting/): AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page ([markdown](https://get-lumic.com/ai-consulting/index.md))
+- [Services](https://get-lumic.com/services/): what lumic builds: AI agents, automations and live dashboards, one job at a time; the job cards, the two offers, links to AI implementation and Managed AI ([markdown](https://get-lumic.com/services/index.md))
 - [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
 - [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))
 - [Month-end close](https://get-lumic.com/services/month-end-close/): the month-end agent: reads the period, prepares recurring entries, runs tie-outs; every entry unposted until the controller posts ([markdown](https://get-lumic.com/services/month-end-close/index.md))
 - [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): nine live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
-- [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the three steps, the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
+- [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
 - [Guardrails](https://get-lumic.com/guardrails/): the practices on every agent, as already stated across the site: a person approves every entry, everything logged, access limited to the job, and any agent can be paused or revoked at any time ([markdown](https://get-lumic.com/guardrails/index.md))
 - [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed agents and full build-and-run per month; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
 - [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))
@@ -110,25 +120,25 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 # Full site copy
 
 ---
-title: "lumic | Forward Deployed Engineers for business, St. Louis"
-description: "lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — with a person approving what matters."
+title: "lumic | AI implementation on retainer, St. Louis FDEs"
+description: "lumic's Forward Deployed Engineers build AI into the systems your business already runs, then keep it working every month on retainer. Based in St. Louis."
 canonical: https://get-lumic.com/
 last_updated: 2026-11-24
 ---
 
-# lumic | Forward Deployed Engineers for business, St. Louis
+# lumic | AI implementation on retainer, St. Louis FDEs
 
-> lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — with a person approving what matters.
+> lumic's Forward Deployed Engineers build AI into the systems your business already runs, then keep it working every month on retainer. Based in St. Louis.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 
 Based in St. Louis FDEs for business
 
-Forward Deployed Engineers
+Forward Deployed Engineers · St. Louis
 
-# AI, deployed into your business and kept working.
+# Your AI implementation team, on retainer.
 
-lumic’s Forward Deployed Engineers have finance backgrounds. They put AI to work inside the systems and routines you already run, from vendor bills to month-end, keep it working, and a person on your team approves what matters. lumic is St. Louis AI help for the back office: Forward Deployed Engineers on site, one job at a time. St. Louis first; the team travels for the right fit.
+lumic’s Forward Deployed Engineers come on site, learn how the work is really done, and build AI into the systems you already run: agents, automations and live dashboards. Then lumic keeps it working, every month, and a person on your team approves what matters.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See it running
 
@@ -243,64 +253,43 @@ Client names stay private.
 
 [How lumic works with your systems](https://get-lumic.com/systems/)
 
-Services
+How lumic engages
 
-## An agent on the job, and a team behind it.
+## Four steps, from a free call to managed AI.
 
-lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds.
+lumic’s FDEs, Forward Deployed Engineers, come to you, learn how the work is really done, and build AI into it. lumic does not sell software to configure yourself; the team stays to run what it builds. Live in weeks, not quarters.
 
-01 · Deploy an agent
+### Free consultation.
 
-### One job at a time.
+A 20‑minute call. You walk the team through the work your people do by hand.
 
-The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It runs on its own dedicated computer, wherever fits your business. Your team tests it on real work before it goes live.
+- [Book a call →](https://cal.com/lumic/20-minute-call)
 
-- AI agents
-- System connections
-- Approval queues
-- Dashboards
-- Workflow redesign
-- Every deployment covers
-- One job, mapped with your team
-- A dedicated computer for it, wherever fits
-- Connected to the systems it needs
-- An approval step before anything posts
-- A log of every action it takes
+### On-site day.
 
-02 · Managed AI agents
+lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
 
-### lumic keeps it working.
+On-site work $1,500/day, credited toward phase one.
 
-Each agent does one role, such as AP clerk, payroll, or month-end entries. Once it is live, lumic runs it for a monthly fee.
+- [AI consulting →](https://get-lumic.com/ai-consulting/)
 
-The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+### Build.
 
-- Each managed agent Covered
-- Monitoring Ongoing
-- Testing Monthly
-- Fixes Included
-- Upgrades as tools improve Included
-- Human approval Built in
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-[See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/) [Every job lumic automates: Services](https://get-lumic.com/services/)
+Full build-and-run from $2,500–6,000/month.
 
-How lumic works
+- [AI implementation →](https://get-lumic.com/ai-implementation/)
 
-## lumic starts where the work happens. Live in weeks, not quarters.
+### Managed AI.
 
-### On-site diagnostic.
+lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+Managed agents from $1,000/month.
 
-### Build the agent.
+- [Managed AI →](https://get-lumic.com/managed-ai/)
 
-The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
-
-### Managed and kept working.
-
-lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
-
-[How lumic works, in full](https://get-lumic.com/how-lumic-works/)
+[How lumic works, in full](https://get-lumic.com/how-lumic-works/) [What lumic builds: Services](https://get-lumic.com/services/) [See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
 
 Pricing
 
@@ -409,7 +398,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ## Questions
 
@@ -435,23 +424,471 @@ All questions: https://get-lumic.com/faq/
 ---
 
 ---
-title: "Back-office automation services: AI agents | lumic"
-description: "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts."
+title: "AI implementation for small and mid-size businesses | lumic"
+description: "lumic's FDEs find where AI fits, build agents, automations and dashboards inside your systems, and keep them working. A person approves what matters."
+canonical: https://get-lumic.com/ai-implementation/
+last_updated: 2026-11-24
+---
+
+# AI implementation for small and mid-size businesses | lumic
+
+> lumic's FDEs find where AI fits, build agents, automations and dashboards inside your systems, and keep them working. A person approves what matters.
+
+Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
+
+AI implementation Small and mid-size businesses
+
+# AI implementation that ends in working software.
+
+lumic’s Forward Deployed Engineers find where AI fits your business, build agents, automations and live dashboards inside the systems you already run, and keep them working. A person on your team approves what matters.
+
+[Book a call](https://cal.com/lumic/20-minute-call) What lumic implements
+
+What lumic implements
+
+## Working software, with AI where it fits.
+
+Each build starts from a job your team does by hand today. lumic’s FDEs pick the right tool for it, with AI where it fits, and build it around how the work is really done.
+
+### AI agents
+
+An agent does one job end to end, such as entering vendor bills or preparing month-end entries, the same records a clerk would key. A person approves each entry.
+
+- One agent per job
+- A person approves each entry
+
+[The jobs lumic automates →](https://get-lumic.com/services/)
+
+### Workflow automation
+
+The steps between people and systems, done for them: reading a document, matching it, routing it for approval, and filing the result.
+
+- Approval queues
+- A log of every step it takes
+
+### System connections
+
+A live connection to the systems the work touches, so the same record is never typed twice.
+
+- Reads and enters the same records a person would
+- No new software seats
+
+[How lumic works with your systems →](https://get-lumic.com/systems/)
+
+### Live dashboards
+
+Sales and margin, receivables, purchasing and financials, read live from your own data. No more morning export.
+
+- Live, on your own data
+- Dashboards only read
+
+[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+
+### Workflow redesign
+
+Before anything is built, the team maps the job as it is done today: the screens, the checks, the exceptions. Then it removes the steps that should not be there.
+
+- One job, mapped with your team
+- Built around how the work is really done
+
+Four steps
+
+## From a free call to managed AI.
+
+### Free consultation.
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+- [Book a call →](https://cal.com/lumic/20-minute-call)
+
+### On-site day.
+
+lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+
+On-site work $1,500/day, credited toward phase one.
+
+- [AI consulting →](https://get-lumic.com/ai-consulting/)
+
+### Build.
+
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+
+Full build-and-run from $2,500–6,000/month.
+
+- [AI implementation →](https://get-lumic.com/ai-implementation/)
+
+### Managed AI.
+
+lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
+
+Managed agents from $1,000/month.
+
+- [Managed AI →](https://get-lumic.com/managed-ai/)
+
+Your systems
+
+## It works in the systems you already run.
+
+The work happens where your team works, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. Each agent runs on its own dedicated computer, wherever fits your business, under its own login. No new system to learn.
+
+[How lumic works with your systems](https://get-lumic.com/systems/)
+
+Proof
+
+## Live and measured.
+
+A managed AP agent from lumic went live about six weeks after the on-site day. Counted, not estimated.
+
+### AP invoice agent
+
+The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
+
+- 64 of 67 bills through the agent in week one
+- Kept running for a monthly fee
+
+### A finance team run on agents
+
+About 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+
+- About 13 agent roles
+- A person approves each entry
+
+Clients are kept private; every figure is from production.
+
+[See the full portfolio](https://get-lumic.com/portfolio/)
+
+Approval and access
+
+## Nothing posts without you.
+
+### Nothing posts without you.
+
+The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+
+### It touches only its job.
+
+lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
+
+The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/). Before the build: [AI consulting](https://get-lumic.com/ai-consulting/). What an FDE is: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/).
+
+Pricing
+
+### Free consultation.
+
+On-site work $1,500/day, credited toward phase one.
+
+Managed agents from $1,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Consultation Free
+- On-site work $1,500/day
+- The build One-time, scoped
+- Running and support Monthly
+
+Questions
+
+## AI implementation, in plain answers.
+
+### What does AI implementation mean for a small business?
+
+Putting AI to work inside the systems the business already runs, not buying a new tool to learn. lumic's FDEs find the work done by hand, build an agent, an automation or a live dashboard for it, and keep it working. A person on your team approves what matters.
+
+### How long does an AI implementation take?
+
+Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one.
+
+### What does it cost?
+
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+
+---
+
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "Managed AI agents on a monthly retainer | lumic"
+description: "Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month."
+canonical: https://get-lumic.com/managed-ai/
+last_updated: 2026-11-24
+---
+
+# Managed AI agents on a monthly retainer | lumic
+
+> Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month.
+
+Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
+
+Managed AI On a monthly retainer
+
+# Managed AI: lumic keeps it working.
+
+Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts. You run the business.
+
+[Book a call](https://cal.com/lumic/20-minute-call) What the retainer covers
+
+What the retainer covers
+
+## A team that stays on, every month.
+
+Each agent does one role, such as AP clerk, payroll, or month-end entries, on its own dedicated computer. Once it is live, lumic runs it for a monthly fee.
+
+Each managed agent
+
+### Watched, tested, fixed and upgraded.
+
+The team watches each agent, tests it every month, fixes what breaks, and upgrades it as AI improves. When your team is ready, the same team builds the agent for another job.
+
+Every month, a summary of what the agent did. A person on your team approves anything before it posts.
+
+- Each managed agent Covered
+- Monitoring Ongoing
+- Testing Monthly
+- Fixes Included
+- Upgrades as tools improve Included
+- A summary of its work Monthly
+- Human approval Built in
+
+Why AI needs upkeep
+
+## AI looks simple from the outside. It takes upkeep underneath.
+
+An agent depends on connections, rules and checks. The work around it changes: a vendor sends a new bill layout, a system updates its screens, a new kind of exception comes up. AI models improve too. Left alone, an agent drifts; kept up, it gets better.
+
+- Instead of → With lumic
+- Build-and-ghost consultants → A team that stays on
+- A tool that breaks when a system changes → Tested every month, fixed when it breaks
+- The AI model it shipped with → Upgraded as AI improves
+
+In your control
+
+## Paused or revoked any time.
+
+### Paused or revoked any time.
+
+Any agent can be paused, or its access revoked, at any time.
+
+### A person approves every entry.
+
+The agent prepares each entry. A person on your team checks it and approves it before anything posts, and the final post stays in your hands.
+
+### Everything is logged.
+
+Every action an agent takes is logged.
+
+The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). How an agent gets built: [AI implementation](https://get-lumic.com/ai-implementation/). Where it starts: [AI consulting](https://get-lumic.com/ai-consulting/).
+
+Pricing
+
+### The monthly retainer.
+
+Managed agents from $1,000/month.
+
+Full build-and-run from $2,500–6,000/month.
+
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+
+Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+
+[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
+
+- At a glance
+- Managed agents Monthly
+- Full build-and-run Monthly
+- The build One-time, scoped
+
+Questions
+
+## Managed AI, in plain answers.
+
+### What is a managed AI agent?
+
+An AI agent that lumic built for one job and runs for a monthly fee. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+
+### Can an agent be paused?
+
+Yes. Any agent can be paused, or its access revoked, at any time.
+
+### What does the retainer cost?
+
+Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+
+---
+
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "AI consulting for small businesses, on site | lumic"
+description: "lumic's FDEs spend a day on site, map where AI fits your business and write a fixed proposal. On-site work $1,500/day, credited toward phase one."
+canonical: https://get-lumic.com/ai-consulting/
+last_updated: 2026-11-24
+---
+
+# AI consulting for small businesses, on site | lumic
+
+> lumic's FDEs spend a day on site, map where AI fits your business and write a fixed proposal. On-site work $1,500/day, credited toward phase one.
+
+Source: https://get-lumic.com/ai-consulting/ | Contact: hello@get-lumic.com
+
+AI consulting On site
+
+# AI consulting that ends in a working agent.
+
+lumic’s Forward Deployed Engineers spend a day on site, map where AI fits your business, and write a proposal: what to build, the timeline, and the cost. Then the same team builds it and keeps it working. On-site work $1,500/day, credited toward phase one.
+
+[Book a call](https://cal.com/lumic/20-minute-call) The on-site day
+
+A consultant or an FDE
+
+## Advice is the start, not the deliverable.
+
+A consultant advises and leaves. lumic’s FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
+
+- Instead of → With lumic
+- A slide deck of ideas → A written proposal for one build
+- A roadmap someone else builds → The same team builds it
+- Build-and-ghost consultants → A team that stays on
+
+[Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/)
+
+The on-site day
+
+## A day beside your team. A written proposal.
+
+### On site.
+
+lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+
+### Where AI fits.
+
+The team sorts the jobs by hours and risk, and picks where an agent, an automation or a live dashboard would do the most.
+
+### A written proposal.
+
+What lumic would build, the timeline, and the cost. On-site work $1,500/day, credited toward phase one.
+
+What the day answers
+
+## The questions an owner actually has.
+
+### Which job is worth automating?
+
+The job that takes the most hours by hand, and where a mistake costs the most.
+
+### Does it work with the systems the team already runs?
+
+Whether that’s an ERP, accounting software, email, spreadsheets or cloud apps: what the agent would read, and what it would enter.
+
+### Who approves what the agent does?
+
+Where the approval step goes, and who on your team checks each entry before anything posts.
+
+### What does it cost, and how long does it take?
+
+The build, the timeline, and the monthly fee to keep it working, in writing.
+
+On site in St. Louis
+
+## Based in St. Louis. On site in person.
+
+lumic’s FDEs come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit.
+
+[AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/) [After the proposal: AI implementation](https://get-lumic.com/ai-implementation/)
+
+Questions
+
+## AI consulting, in plain answers.
+
+### How is lumic different from an AI consultant?
+
+A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
+
+### What does the on-site day cost?
+
+On-site work $1,500/day, credited toward phase one. The consultation before it is free. Details: [Pricing](https://get-lumic.com/pricing/).
+
+### What comes out of the on-site day?
+
+A written proposal: what lumic would build, the timeline, and the cost.
+
+## Based in St. Louis. Start with a conversation.
+
+[Book a call](https://cal.com/lumic/20-minute-call) or write to lumic [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
+Every engagement is led by a senior FDE, on site.
+
+How to start
+
+A 20‑minute call. You walk the team through the work your people do by hand.
+
+A written proposal. What lumic would build, the timeline, and the cost.
+
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+
+---
+
+© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+
+
+---
+
+---
+title: "AI agents, automations and dashboards | lumic"
+description: "AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working."
 canonical: https://get-lumic.com/services/
 last_updated: 2026-11-24
 ---
 
-# Back-office automation services: AI agents | lumic
+# AI agents, automations and dashboards | lumic
 
-> lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts.
+> AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working.
 
 Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
 
-Services One agent, one job
+Services Agents, automations and dashboards
 
-# AI agents for the back-office jobs your team does by hand.
+# What lumic builds, one job at a time.
 
-lumic builds an AI agent for one back-office job at a time: vendor bills, cash receipts and collections, purchase orders, and the reports your team rebuilds every week. The agent does the work inside the systems you already run. A person approves before anything posts.
+lumic builds AI agents, automations and live dashboards, one job at a time: vendor bills, cash receipts and collections, purchase orders, payroll entries, month-end, and the reports your team rebuilds every week. The work happens inside the systems you already run, and lumic keeps it working. A person approves before anything posts. How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/).
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
@@ -527,6 +964,8 @@ Every engagement is run by FDEs with finance training, backed by a bench of agen
 
 The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs. Your team tests it on real work before it goes live.
 
+[AI implementation](https://get-lumic.com/ai-implementation/)
+
 - Every deployment covers
 - One job, done end to end
 - A live connection to your systems
@@ -539,6 +978,8 @@ The team starts beside yours and watches the job done by hand: the screens, the 
 ### lumic keeps it working.
 
 Each agent does one role, such as AP clerk, payroll, or month-end reporting, on its own dedicated computer. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+
+[Managed AI](https://get-lumic.com/managed-ai/)
 
 - Each managed agent Covered
 - Monitoring Ongoing
@@ -567,7 +1008,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, scoped
 - Running and support Monthly
 
-The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
+The build: [AI implementation](https://get-lumic.com/ai-implementation/). The monthly retainer: [Managed AI](https://get-lumic.com/managed-ai/). The on-site day: [AI consulting](https://get-lumic.com/ai-consulting/). The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -581,7 +1022,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -747,7 +1188,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -892,7 +1333,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -1028,7 +1469,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -1164,7 +1605,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -1351,7 +1792,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -1533,7 +1974,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -1563,21 +2004,41 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 [Book a call](https://cal.com/lumic/20-minute-call) Leadership
 
-Three steps
+Four steps
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
-### On-site diagnostic.
+### Free consultation.
 
-lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+A 20‑minute call. You walk the team through the work your people do by hand.
 
-### Build the agent.
+- [Book a call →](https://cal.com/lumic/20-minute-call)
 
-The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
+### On-site day.
 
-### Managed and kept working.
+lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
 
-lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+On-site work $1,500/day, credited toward phase one.
+
+- [AI consulting →](https://get-lumic.com/ai-consulting/)
+
+### Build.
+
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+
+Full build-and-run from $2,500–6,000/month.
+
+- [AI implementation →](https://get-lumic.com/ai-implementation/)
+
+### Managed AI.
+
+lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
+
+Managed agents from $1,000/month.
+
+- [Managed AI →](https://get-lumic.com/managed-ai/)
+
+Each step in full: the on-site day, [AI consulting](https://get-lumic.com/ai-consulting/). The build, [AI implementation](https://get-lumic.com/ai-implementation/). The monthly retainer, [Managed AI](https://get-lumic.com/managed-ai/).
 
 Services
 
@@ -1707,7 +2168,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -1787,7 +2248,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -1884,7 +2345,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -2037,7 +2498,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -2190,7 +2651,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -2345,7 +2806,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -2446,7 +2907,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -2587,7 +3048,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -2730,7 +3191,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -2852,7 +3313,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3053,7 +3514,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3143,7 +3604,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3279,7 +3740,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3430,7 +3891,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3552,7 +4013,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3677,7 +4138,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3795,7 +4256,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -3920,7 +4381,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 
@@ -4008,7 +4469,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 

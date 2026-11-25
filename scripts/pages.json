@@ -6,6 +6,10 @@
       "href": "/services/"
     },
     {
+      "label": "Managed AI",
+      "href": "/managed-ai/"
+    },
+    {
       "label": "How lumic works",
       "href": "/how-lumic-works/"
     },
@@ -16,11 +20,6 @@
     {
       "label": "St. Louis",
       "href": "/st-louis/"
-    },
-    {
-      "label": "FAQ",
-      "href": "/faq/",
-      "opt": true
     }
   ],
   "footer": [
@@ -31,6 +30,18 @@
     {
       "label": "Services",
       "href": "/services/"
+    },
+    {
+      "label": "AI implementation",
+      "href": "/ai-implementation/"
+    },
+    {
+      "label": "Managed AI",
+      "href": "/managed-ai/"
+    },
+    {
+      "label": "AI consulting",
+      "href": "/ai-consulting/"
     },
     {
       "label": "AP automation",
@@ -97,8 +108,16 @@
       "href": "/st-louis/ai-consulting/"
     },
     {
+      "label": "Metro East",
+      "href": "/st-louis/metro-east/"
+    },
+    {
       "label": "Forward-deployed engineers",
       "href": "/forward-deployed-engineers/"
+    },
+    {
+      "label": "FDEs for small business",
+      "href": "/forward-deployed-engineers/small-business/"
     },
     {
       "label": "FAQ",
@@ -115,14 +134,93 @@
   ],
   "pages": [
     {
+      "id": "ai-implementation",
+      "path": "/ai-implementation/",
+      "crumb": "AI implementation",
+      "purpose": "AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices",
+      "title": "AI implementation for small and mid-size businesses | lumic",
+      "description": "lumic's FDEs find where AI fits, build agents, automations and dashboards inside your systems, and keep them working. A person approves what matters.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "AI implementation that ends in working software.",
+      "faq": [
+        {
+          "q": "What does AI implementation mean for a small business?",
+          "a": "Putting AI to work inside the systems the business already runs, not buying a new tool to learn. lumic's FDEs find the work done by hand, build an agent, an automation or a live dashboard for it, and keep it working. A person on your team approves what matters."
+        },
+        {
+          "q": "How long does an AI implementation take?",
+          "a": "Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500&ndash;6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+        }
+      ]
+    },
+    {
+      "id": "managed-ai",
+      "path": "/managed-ai/",
+      "crumb": "Managed AI",
+      "purpose": "managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices",
+      "title": "Managed AI agents on a monthly retainer | lumic",
+      "description": "Once an agent is live, lumic watches it, tests it every month, fixes what breaks and upgrades it as AI improves. Managed agents from $1,000/month.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "Managed AI: lumic keeps it working.",
+      "faq": [
+        {
+          "q": "What is a managed AI agent?",
+          "a": "An AI agent that lumic built for one job and runs for a monthly fee. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts."
+        },
+        {
+          "q": "Can an agent be paused?",
+          "a": "Yes. Any agent can be paused, or its access revoked, at any time."
+        },
+        {
+          "q": "What does the retainer cost?",
+          "a": "Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
+          "html": "Managed agents from $1,000/month. Full build-and-run from $2,500&ndash;6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+        }
+      ]
+    },
+    {
+      "id": "ai-consulting",
+      "path": "/ai-consulting/",
+      "crumb": "AI consulting",
+      "purpose": "AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page",
+      "title": "AI consulting for small businesses, on site | lumic",
+      "description": "lumic's FDEs spend a day on site, map where AI fits your business and write a fixed proposal. On-site work $1,500/day, credited toward phase one.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "AI consulting that ends in a working agent.",
+      "faq": [
+        {
+          "q": "How is lumic different from an AI consultant?",
+          "a": "A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
+        },
+        {
+          "q": "What does the on-site day cost?",
+          "a": "On-site work $1,500/day, credited toward phase one. The consultation before it is free.",
+          "html": "On-site work $1,500/day, credited toward phase one. The consultation before it is free. Details: <a href=\"/pricing/\">Pricing</a>."
+        },
+        {
+          "q": "What comes out of the on-site day?",
+          "a": "A written proposal: what lumic would build, the timeline, and the cost."
+        }
+      ]
+    },
+    {
       "id": "services",
       "path": "/services/",
       "crumb": "Services",
-      "purpose": "the services hub: one agent per back-office job, the two offers, links to each job page",
-      "title": "Back-office automation services: AI agents | lumic",
-      "description": "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts.",
+      "purpose": "what lumic builds: AI agents, automations and live dashboards, one job at a time; the job cards, the two offers, links to AI implementation and Managed AI",
+      "title": "AI agents, automations and dashboards | lumic",
+      "description": "AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working.",
       "type": "CollectionPage",
-      "films": []
+      "films": [],
+      "h1": "What lumic builds, one job at a time."
     },
     {
       "id": "ap-automation",
@@ -210,7 +308,7 @@
       "id": "how-lumic-works",
       "path": "/how-lumic-works/",
       "crumb": "How lumic works",
-      "purpose": "the method: FDEs, the three steps, the two offers, approvals and access, leadership",
+      "purpose": "the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership",
       "title": "How lumic works: FDEs, approvals and data security | lumic",
       "description": "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.",
       "type": "AboutPage",

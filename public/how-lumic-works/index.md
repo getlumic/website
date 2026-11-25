@@ -19,21 +19,41 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 [Book a call](https://cal.com/lumic/20-minute-call) Leadership
 
-Three steps
+Four steps
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
-### On-site diagnostic.
+### Free consultation.
 
-lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+A 20‑minute call. You walk the team through the work your people do by hand.
 
-### Build the agent.
+- [Book a call →](https://cal.com/lumic/20-minute-call)
 
-The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
+### On-site day.
 
-### Managed and kept working.
+lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
 
-lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+On-site work $1,500/day, credited toward phase one.
+
+- [AI consulting →](https://get-lumic.com/ai-consulting/)
+
+### Build.
+
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+
+Full build-and-run from $2,500–6,000/month.
+
+- [AI implementation →](https://get-lumic.com/ai-implementation/)
+
+### Managed AI.
+
+lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
+
+Managed agents from $1,000/month.
+
+- [Managed AI →](https://get-lumic.com/managed-ai/)
+
+Each step in full: the on-site day, [AI consulting](https://get-lumic.com/ai-consulting/). The build, [AI implementation](https://get-lumic.com/ai-implementation/). The monthly retainer, [Managed AI](https://get-lumic.com/managed-ai/).
 
 Services
 
@@ -163,7 +183,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 

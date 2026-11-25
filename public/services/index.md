@@ -1,21 +1,21 @@
 ---
-title: "Back-office automation services: AI agents | lumic"
-description: "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts."
+title: "AI agents, automations and dashboards | lumic"
+description: "AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working."
 canonical: https://get-lumic.com/services/
 last_updated: 2026-11-24
 ---
 
-# Back-office automation services: AI agents | lumic
+# AI agents, automations and dashboards | lumic
 
-> lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts.
+> AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working.
 
 Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
 
-Services One agent, one job
+Services Agents, automations and dashboards
 
-# AI agents for the back-office jobs your team does by hand.
+# What lumic builds, one job at a time.
 
-lumic builds an AI agent for one back-office job at a time: vendor bills, cash receipts and collections, purchase orders, and the reports your team rebuilds every week. The agent does the work inside the systems you already run. A person approves before anything posts.
+lumic builds AI agents, automations and live dashboards, one job at a time: vendor bills, cash receipts and collections, purchase orders, payroll entries, month-end, and the reports your team rebuilds every week. The work happens inside the systems you already run, and lumic keeps it working. A person approves before anything posts. How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/).
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
@@ -91,6 +91,8 @@ Every engagement is run by FDEs with finance training, backed by a bench of agen
 
 The team starts beside yours and watches the job done by hand: the screens, the checks, the exceptions. Then it builds an agent for that one job and connects it to the systems it needs. Your team tests it on real work before it goes live.
 
+[AI implementation](https://get-lumic.com/ai-implementation/)
+
 - Every deployment covers
 - One job, done end to end
 - A live connection to your systems
@@ -103,6 +105,8 @@ The team starts beside yours and watches the job done by hand: the screens, the 
 ### lumic keeps it working.
 
 Each agent does one role, such as AP clerk, payroll, or month-end reporting, on its own dedicated computer. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts.
+
+[Managed AI](https://get-lumic.com/managed-ai/)
 
 - Each managed agent Covered
 - Monitoring Ongoing
@@ -131,7 +135,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, scoped
 - Running and support Monthly
 
-The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
+The build: [AI implementation](https://get-lumic.com/ai-implementation/). The monthly retainer: [Managed AI](https://get-lumic.com/managed-ai/). The on-site day: [AI consulting](https://get-lumic.com/ai-consulting/). The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -145,7 +149,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 A written proposal. What lumic would build, the timeline, and the cost.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. St. Louis first; they travel for the right fit.
+An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
 
 ---
 

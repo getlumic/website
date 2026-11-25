@@ -1,0 +1,9 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/ai-implementation/#service", "name": "AI implementation",
+  "serviceType": "AI implementation", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/ai-implementation/",
+  "description": "lumic's Forward Deployed Engineers find where AI fits a business, build agents, workflow automations, system connections and live dashboards inside the systems it already runs, and keep them working. A person on the client's team approves what matters.",
+  "offers": {"@type": "Offer", "name": "Full build-and-run", "description": "Full build-and-run from $2,500–6,000/month.",
+   "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": 2500, "priceCurrency": "USD", "unitText": "MONTH"}}}
+]
