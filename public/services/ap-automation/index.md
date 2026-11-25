@@ -128,7 +128,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 
 ## Related
 
-- [AP hours-saved calculator](https://get-lumic.com/resources/ap-hours-saved-calculator/)
+- [AP hours calculator](https://get-lumic.com/resources/ap-hours-saved-calculator/)
 - [How lumic works](https://get-lumic.com/how-lumic-works/)
 - [Pricing](https://get-lumic.com/pricing/)
 - [Guardrails](https://get-lumic.com/guardrails/)

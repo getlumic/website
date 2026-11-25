@@ -4,7 +4,7 @@
     <div>
       {{crumbs}}
       <h1>How many hours does <em class="s">invoice processing take?</em></h1>
-      <p class="lead">This AP automation ROI calculator works out the hours and the cost of handling vendor bills by hand, from five numbers you enter. It runs in your browser: nothing you type leaves this page, and no email is asked for.</p>
+      <p class="lead">This calculator works out the hours and the cost of handling vendor bills by hand, from five numbers you enter: the cost side of any AP automation ROI calculation. It runs in your browser: nothing you type leaves this page, and no email is asked for.</p>
       <div class="cta">
         <a class="btn btn-p" href="#calculator">Open the calculator <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
         <a class="btn btn-g" href="#formulas">See the formulas</a>
@@ -18,7 +18,7 @@
   <div class="wrap">
     <div class="two-head rv">
       <h2 id="calc-h">Enter the work <em class="s">as it is today.</em></h2>
-      <p class="lead">An invoice processing cost calculator in five numbers. The figures update as you type.</p>
+      <p class="lead">An invoice processing cost calculator in five numbers.<span data-js-only hidden> The figures update as you type.</span></p>
     </div>
     <div class="keep calc" data-calc>
       <form class="calc-form" novalidate aria-label="Invoice processing numbers" onsubmit="return false">
@@ -50,11 +50,12 @@
             <span class="calc-h" id="calc-x-h">Example. Edit to match the work.</span>
           </div>
         </fieldset>
+        <p class="calc-peek" data-peek aria-hidden="true" hidden>36.7 hours &middot; $1,650 a month</p>
         <noscript><p class="calc-note">The live calculator needs JavaScript. The figures shown use the example numbers; the formulas below work by hand with your own.</p></noscript>
       </form>
 
       <div class="calc-out">
-        <div aria-live="polite" data-out="a">
+        <div data-out="a">
           <ul class="ledger calc-led" aria-label="Today's figures">
             <li class="hd"><span>Today</span></li>
             <li><span>Hours per month</span><span class="st" data-o="hours">36.7</span></li>
@@ -64,6 +65,7 @@
             <li><span>Cost per bill</span><span class="st" data-o="bill">$8.25</span></li>
           </ul>
           <p class="calc-msg" data-o="msg"></p>
+          <p class="sr-only" aria-live="polite" aria-atomic="true" data-o="say"></p>
         </div>
         <p class="calc-note">These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.</p>
       </div>
@@ -71,7 +73,7 @@
 
     <div class="calc-work rv">
       <h3>With the numbers entered</h3>
-      <p data-o="work"><span class="tn">200 &times; 8 = 1,600</span> minutes on straight-through bills, plus <span class="tn">200 &times; 20% &times; 15 = 600</span> minutes on exceptions, makes <span class="tn">2,200</span> minutes, or <span class="tn">2,200 &divide; 60 = 36.7</span> hours a month. At <span class="tn">$45</span> an hour that is <span class="tn">$1,650</span> a month, <span class="tn">$1,650 &times; 12 = $19,800</span> a year, and <span class="tn">$1,650 &divide; 200 = $8.25</span> a bill.</p>
+      <p data-o="work"><span class="tn">200 &times; 8 = 1,600</span> minutes on straight-through bills, plus <span class="tn">200 &times; 20% &times; 15 = 600</span> minutes on exceptions, makes <span class="tn">1,600 + 600 = 2,200</span> minutes, or <span class="tn">2,200 &divide; 60 &asymp; 36.7</span> hours a month. At <span class="tn">$45</span> an hour that is <span class="tn">2,200 &times; $45 &divide; 60 = $1,650</span> a month, <span class="tn">$1,650 &times; 12 = $19,800</span> a year, and <span class="tn">$1,650 &divide; 200 = $8.25</span> a bill.</p>
     </div>
 
     <div class="extras rv">
@@ -86,22 +88,22 @@
                 <div class="calc-f">
                   <label for="calc-m2">Minutes per straight-through bill</label>
                   <input id="calc-m2" name="minutes2" type="text" inputmode="decimal" autocomplete="off" value="8" data-k="m2" data-min="0" data-max="240" data-follow="m" aria-describedby="calc-m2-h">
-                  <span class="calc-h" id="calc-m2-h">Starts at the number above. Edit to compare.</span>
+                  <span class="calc-h" id="calc-m2-h">Starts at today&rsquo;s number.</span>
                 </div>
                 <div class="calc-f">
                   <label for="calc-e2">Exception rate, in percent</label>
                   <input id="calc-e2" name="exceptions2" type="text" inputmode="decimal" autocomplete="off" value="20" data-k="e2" data-min="0" data-max="100" data-follow="e" aria-describedby="calc-e2-h">
-                  <span class="calc-h" id="calc-e2-h">Starts at the number above. Edit to compare.</span>
+                  <span class="calc-h" id="calc-e2-h">Starts at today&rsquo;s number.</span>
                 </div>
                 <div class="calc-f">
                   <label for="calc-x2">Extra minutes per exception</label>
                   <input id="calc-x2" name="extra2" type="text" inputmode="decimal" autocomplete="off" value="15" data-k="x2" data-min="0" data-max="480" data-follow="x" aria-describedby="calc-x2-h">
-                  <span class="calc-h" id="calc-x2-h">Starts at the number above. Edit to compare.</span>
+                  <span class="calc-h" id="calc-x2-h">Starts at today&rsquo;s number.</span>
                 </div>
               </fieldset>
             </form>
             <div class="calc-out">
-              <div aria-live="polite" data-out="b">
+              <div data-out="b">
                 <ul class="ledger calc-led" aria-label="Figures if it took less time">
                   <li class="hd"><span>If it took less time</span></li>
                   <li><span>Hours per month</span><span class="st" data-o="hours2">36.7</span></li>
@@ -110,12 +112,12 @@
                   <li><span>Cost per year</span><span class="st" data-o="year2">$19,800</span></li>
                   <li><span>Cost per bill</span><span class="st" data-o="bill2">$8.25</span></li>
                 </ul>
-                <ul class="ledger calc-led" aria-label="Difference">
+                <ul class="ledger calc-led calc-diff" aria-label="Difference">
                   <li class="hd"><span>Difference, from the numbers entered above.</span></li>
-                  <li><span>Hours per month</span><span class="st" data-o="dhours">0.0</span></li>
-                  <li><span>Hours per year</span><span class="st" data-o="dhoursy">0.0</span></li>
-                  <li><span>Cost per month</span><span class="st" data-o="dmonth">$0</span></li>
-                  <li><span>Cost per year</span><span class="st" data-o="dyear">$0</span></li>
+                  <li><span data-o="dhours">No difference in hours a month</span></li>
+                  <li><span data-o="dhoursy">No difference in hours a year</span></li>
+                  <li><span data-o="dmonth">No difference in cost a month</span></li>
+                  <li><span data-o="dyear">No difference in cost a year</span></li>
                 </ul>
                 <p class="calc-msg" data-o="msg2"></p>
               </div>
@@ -141,8 +143,9 @@
         <li class="q"><div><h3>Hours per month = (B &times; M + B &times; E &times; X) &divide; 60</h3><p>B is bills per month, M is minutes per straight-through bill, E is the exception rate as a share (20% is 0.20), and X is the extra minutes per exception.</p></div></li>
         <li class="q"><div><h3>Cost per month = hours per month &times; H</h3><p>H is the loaded hourly cost: pay plus taxes and benefits, for the people who do the work.</p></div></li>
         <li class="q"><div><h3>Year = month &times; 12</h3><p>The same for hours and for cost.</p></div></li>
-        <li class="q"><div><h3>Cost per bill = cost per month &divide; B</h3><p>Worked with the example numbers: (200 &times; 8 + 200 &times; 0.20 &times; 15) &divide; 60 = 2,200 &divide; 60 = 36.7 hours a month (440.0 a year); 2,200 &divide; 60 hours at $45 is $1,650 a month, $19,800 a year and $8.25 a bill.</p></div></li>
+        <li class="q"><div><h3>Cost per bill = cost per month &divide; B</h3><p>The cost of one bill, straight-through and exceptions together.</p></div></li>
       </ul>
+      <p class="calc-ex rv"><strong>Worked with the example numbers.</strong> (200 &times; 8 + 200 &times; 0.20 &times; 15) &divide; 60 = 2,200 &divide; 60 &asymp; 36.7 hours a month. 2,200 &times; $45 &divide; 60 = $1,650 a month; $1,650 &times; 12 = $19,800 a year; $1,650 &divide; 200 = $8.25 a bill.</p>
     </div>
   </div>
 </section>
@@ -161,66 +164,105 @@
 </section>
 
 <script>
-/* AP hours-saved calculator: runs in the browser only (no network call, nothing stored). Hours = (B*M + B*E*X)/60. */
+/* AP hours calculator: runs in the browser only (no network call, nothing stored). Hours = (B*M + B*E*X)/60.
+   The worked line is built from the figures it prints, so a reader who redoes it gets the same answer:
+   "=" where the step is exact, "≈" where it is rounded (hours to 0.1, money to the cent). */
 (function(){
   var root=document.querySelector('[data-calc]'); if(!root) return;
   var page=document.getElementById('calculator');
   var ins={}; [].forEach.call(page.querySelectorAll('input[data-k]'),function(i){ ins[i.getAttribute('data-k')]=i; });
-  var dirty={};
+  var dirty={}, cmp=document.getElementById('compare');
+  [].forEach.call(document.querySelectorAll('[data-js-only],[data-peek]'),function(e){ e.hidden=false; });
   var nf1=new Intl.NumberFormat('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});
   var nf0=new Intl.NumberFormat('en-US',{maximumFractionDigits:0});
-  var nfp=new Intl.NumberFormat('en-US',{maximumFractionDigits:2});
+  var nf6=new Intl.NumberFormat('en-US',{maximumFractionDigits:6});
   var usd0=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0,minimumFractionDigits:0});
   var usd2=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2,maximumFractionDigits:2});
-  var DASH='—', MINUS='−';
+  var DASH='—', X='×', DIV='÷', EQ=' = ', AP=' ≈ ';
   function out(k){ return page.querySelector('[data-o="'+k+'"]'); }
   function set(k,v){ var e=out(k); if(e&&e.textContent!==v) e.textContent=v; }
-  function signed(n,f){ var r=f.format(Math.abs(n)); return (n<0&&f.format(Math.abs(n))!==f.format(0))?MINUS+r:r; }
+  function r6(n){ return Math.round(n*1e6)/1e6; }
+  function same(a,b){ return Math.abs(a-b)<1e-7; }
+  /* money from whole cents: exact cents in the worked line; in the ledgers whole dollars from $100 up */
+  function money(c){ return c%100===0?usd0.format(c/100):usd2.format(c/100); }
+  function led(c){ return Math.abs(c)>=10000?usd0.format(Math.round(c/100)):usd2.format(c/100); }
   function label(i){ return document.querySelector('label[for="'+i.id+'"]').textContent; }
-  /* one field: a number inside its range, or an error that names the fix */
+  /* plain digits or correctly grouped thousands; decimals (up to two places) except on Bills; $ only on the
+     hourly cost, % only on the rates */
+  var NUM=/^(?:\d{1,3}(?:,\d{3})+|\d+)?(?:\.(\d+))?$/;
   function read(k){
-    var i=ins[k], raw=i.value.replace(/[\s,$%]/g,''), lo=+i.getAttribute('data-min'), hi=+i.getAttribute('data-max'), err='';
-    var n=raw===''?NaN:Number(raw);
-    if(raw==='') err='Enter a number.';
-    else if(!isFinite(n)) err='Use digits only, for example '+i.defaultValue+'.';
-    else if(n<lo||n>hi) err='Enter a number from '+nf0.format(lo)+' to '+nf0.format(hi)+'.';
+    var i=ins[k], v=i.value.trim(), lo=+i.getAttribute('data-min'), hi=+i.getAttribute('data-max'), err='', n=NaN;
+    if(k==='h') v=v.replace(/^\$\s*/,'');
+    if(k==='e'||k==='e2') v=v.replace(/\s*%$/,'');
+    var m=NUM.exec(v);
+    if(i.value.trim()==='') err='Enter a number.';
+    else if(!m||v===''||v==='.') err='Use digits only, for example '+i.defaultValue+'.';
+    else if(k==='b'&&m[1]!==undefined) err='Enter a whole number of bills.';
+    else if(m[1]&&m[1].length>2) err='Use at most two decimal places.';
+    else { n=Number(v.replace(/,/g,'')); if(n<lo||n>hi) err='Enter a number from '+nf0.format(lo)+' to '+nf0.format(hi)+'.'; }
     var h=document.getElementById(i.id+'-h');
     if(!h.hasAttribute('data-hint')) h.setAttribute('data-hint',h.textContent);
-    h.textContent=err||h.getAttribute('data-hint');
+    h.textContent=err||(dirty[k]?'Edited.':h.getAttribute('data-hint'));
     h.classList.toggle('bad',!!err);
     if(err) i.setAttribute('aria-invalid','true'); else i.removeAttribute('aria-invalid');
     return err?{err:label(i)+': '+err}:{n:n};
   }
-  function calc(b,m,h,e,x){ var min=b*m+b*(e/100)*x, hrs=min/60, mo=hrs*h; return {min:min,hrs:hrs,mo:mo,yr:mo*12,bill:mo/b}; }
+  /* every figure, from the rounded steps the page prints */
+  function calc(b,m,h,e,x){
+    var s=r6(b*m), xm=r6(b*e*x/100), t=r6(s+xm), hrs=t/60, raw=t*h/60, c=Math.round(raw*100);
+    return {s:s,xm:xm,t:t,hrs:hrs,raw:raw,c:c,yc:c*12,bc:Math.round(c/b),braw:c/b};
+  }
   function bad(list){ return list.filter(function(r){ return r.err; }).map(function(r){ return r.err; }); }
+  function hours(n){ return nf1.format(n); }
+  function mins(n){ return n===1?' minute':' minutes'; }
+  /* the difference in words, so a sign can never mislead */
+  function dh(d,per){ var t=nf1.format(Math.abs(d)); return t==='0.0'?'No difference in hours '+per:t+(d>0?' fewer':' more')+' hours '+per; }
+  function dc(c,per){ return c===0?'No difference in cost '+per:led(Math.abs(c))+(c>0?' less ':' more ')+per; }
+  var say='', timer=0;
+  function announce(t){ say=t; clearTimeout(timer); timer=setTimeout(function(){ set('say',say); },600); }
   function run(){
     /* the comparison starts at today's numbers and follows them until it is edited */
     ['m2','e2','x2'].forEach(function(k){ if(!dirty[k]) ins[k].value=ins[ins[k].getAttribute('data-follow')].value; });
     var r={}; ['b','m','h','e','x','m2','e2','x2'].forEach(function(k){ r[k]=read(k); });
-    var errA=bad([r.b,r.m,r.h,r.e,r.x]), a=null;
+    var errA=bad([r.b,r.m,r.h,r.e,r.x]), a=null, spoken='';
+    var peek=document.querySelector('[data-peek]');
     if(errA.length){
       ['hours','hoursy','month','year','bill'].forEach(function(k){ set(k,DASH); });
-      set('msg','No figures yet. '+errA[0]);
+      set('msg','No figures yet. Fix the number marked in red.');
       set('work','The worked figures show here once every number above is filled in.');
+      if(peek) peek.textContent='No figures yet. Fix the red field.';
+      spoken='No figures yet. '+errA[0];
     } else {
-      var B=r.b.n,M=r.m.n,H=r.h.n,E=r.e.n,X=r.x.n; a=calc(B,M,H,E,X);
-      set('hours',nf1.format(a.hrs)); set('hoursy',nf1.format(a.hrs*12)); set('month',usd0.format(a.mo)); set('year',usd0.format(a.yr)); set('bill',usd2.format(a.bill));
+      var B=r.b.n,M=r.m.n,H=r.h.n,E=r.e.n,Xn=r.x.n; a=calc(B,M,H,E,Xn);
+      set('hours',hours(a.hrs)); set('hoursy',hours(a.hrs*12)); set('month',led(a.c)); set('year',led(a.yc)); set('bill',usd2.format(a.bc/100));
       set('msg','');
-      set('work',nf0.format(B)+' × '+nfp.format(M)+' = '+nf0.format(B*M)+' minutes on straight-through bills, plus '+nf0.format(B)+' × '+nfp.format(E)+'% × '+nfp.format(X)+' = '+nf0.format(B*E/100*X)+' minutes on exceptions, makes '+nf0.format(a.min)+' minutes, or '+nf0.format(a.min)+' ÷ 60 = '+nf1.format(a.hrs)+' hours a month. At '+usd2.format(H).replace('.00','')+' an hour that is '+usd0.format(a.mo)+' a month, '+usd0.format(a.mo)+' × 12 = '+usd0.format(a.yr)+' a year, and '+usd0.format(a.mo)+' ÷ '+nf0.format(B)+' = '+usd2.format(a.bill)+' a bill.');
+      var hEq=same(a.hrs*10,Math.round(a.hrs*10))?EQ:AP, cEq=same(a.raw*100,a.c)?EQ:AP, bEq=same(a.braw,a.bc)?EQ:AP;
+      set('work',nf0.format(B)+' '+X+' '+nf6.format(M)+EQ+nf6.format(a.s)+mins(a.s)+' on straight-through bills, plus '+
+        nf0.format(B)+' '+X+' '+nf6.format(E)+'% '+X+' '+nf6.format(Xn)+EQ+nf6.format(a.xm)+mins(a.xm)+' on exceptions, makes '+
+        nf6.format(a.s)+' + '+nf6.format(a.xm)+EQ+nf6.format(a.t)+mins(a.t)+', or '+nf6.format(a.t)+' '+DIV+' 60'+hEq+hours(a.hrs)+(hours(a.hrs)==='1.0'?' hour':' hours')+' a month. At '+
+        money(Math.round(H*100))+' an hour that is '+nf6.format(a.t)+' '+X+' '+money(Math.round(H*100))+' '+DIV+' 60'+cEq+money(a.c)+' a month, '+
+        money(a.c)+' '+X+' 12'+EQ+money(a.yc)+' a year, and '+money(a.c)+' '+DIV+' '+nf0.format(B)+bEq+usd2.format(a.bc/100)+' a bill.');
+      if(peek) peek.textContent=hours(a.hrs)+' hours · '+led(a.c)+' a month';
+      spoken=hours(a.hrs)+' hours and '+led(a.c)+' a month.';
     }
     var errB=bad([r.m2,r.e2,r.x2]);
     if(errA.length||errB.length){
       ['hours2','hoursy2','month2','year2','bill2','dhours','dhoursy','dmonth','dyear'].forEach(function(k){ set(k,DASH); });
-      set('msg2','No figures yet. '+(errB[0]||'Fill in every number above first.'));
+      set('msg2',errB.length?'No figures yet. Fix the number marked in red.':'No figures yet. Fill in every number above first.');
+      if(cmp&&cmp.open&&errB.length&&!errA.length) spoken+=' If it took less time: no figures yet. '+errB[0];
     } else {
       var c=calc(r.b.n,r.m2.n,r.h.n,r.e2.n,r.x2.n);
-      set('hours2',nf1.format(c.hrs)); set('hoursy2',nf1.format(c.hrs*12)); set('month2',usd0.format(c.mo)); set('year2',usd0.format(c.yr)); set('bill2',usd2.format(c.bill));
-      set('dhours',signed(a.hrs-c.hrs,nf1)); set('dhoursy',signed((a.hrs-c.hrs)*12,nf1));
-      set('dmonth',signed(a.mo-c.mo,usd0)); set('dyear',signed(a.yr-c.yr,usd0));
+      set('hours2',hours(c.hrs)); set('hoursy2',hours(c.hrs*12)); set('month2',led(c.c)); set('year2',led(c.yc)); set('bill2',usd2.format(c.bc/100));
+      var d=a.hrs-c.hrs;
+      set('dhours',dh(d,'a month')); set('dhoursy',dh(d*12,'a year'));
+      set('dmonth',dc(a.c-c.c,'a month')); set('dyear',dc(a.yc-c.yc,'a year'));
       set('msg2','');
+      if(cmp&&cmp.open) spoken+=' If it took less time: '+out('dhours').textContent+', '+out('dmonth').textContent+'.';
     }
+    return spoken;
   }
-  Object.keys(ins).forEach(function(k){ ins[k].addEventListener('input',function(){ if(ins[k].hasAttribute('data-follow')) dirty[k]=true; run(); }); });
+  Object.keys(ins).forEach(function(k){ ins[k].addEventListener('input',function(){ if(ins[k].hasAttribute('data-follow')) dirty[k]=true; announce(run()); }); });
+  if(cmp) cmp.addEventListener('toggle',function(){ if(cmp.open) announce(run()); });
   run();
 })();
 </script>

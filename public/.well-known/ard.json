@@ -333,7 +333,7 @@
   },
   {
    "identifier": "urn:air:get-lumic.com:docs:ap-hours-saved-calculator-markdown",
-   "displayName": "AP hours-saved calculator as markdown",
+   "displayName": "AP hours calculator as markdown",
    "type": "text/markdown",
    "url": "https://get-lumic.com/resources/ap-hours-saved-calculator/index.md",
    "representativeQueries": [

@@ -313,13 +313,20 @@ def check_calculator(b):
         fails += [f"{CALC_PATH}: wording {m.group(0)!r}" for m in re.finditer(pat, text, re.I)]
     got = pg.evaluate("Object.fromEntries([...document.querySelectorAll('[data-o]')].map(e => [e.dataset.o, e.textContent.trim()]))")
     fails += [f"{CALC_PATH}: default {k} = {got.get(k)!r}, want {v!r}" for k, v in CALC_DEFAULTS.items() if got.get(k) != v]
-    for bad in ("", "0", "-5", "abc"):
+    for bad in ("", "0", "-5", "abc", "1,2,3", "0x10", "1e3", "20%", "12.5"):
         pg.fill("#calc-b", bad)
         o = pg.evaluate("[...document.querySelectorAll('[data-o]')].map(e => e.textContent).join(' | ')")
         if "NaN" in o or "Infinity" in o or pg.text_content('[data-o="hours"]').strip() != "—":
             fails.append(f"{CALC_PATH}: bills {bad!r} shows {o[:120]!r} (want a dash, no NaN)")
-    if pg.evaluate("document.documentElement.outerHTML").count('aria-live="polite"') < 1:
-        fails.append(f"{CALC_PATH}: no aria-live result")
+    pg.fill("#calc-b", "200")
+    pg.evaluate("document.getElementById('compare').open = true")
+    for m2, want in (("4", "13.3 fewer hours a month"), ("12", "13.3 more hours a month"), ("8", "No difference in hours a month")):
+        pg.fill("#calc-m2", m2)
+        got = pg.text_content('[data-o="dhours"]').strip()
+        if got != want:
+            fails.append(f"{CALC_PATH}: comparison minutes {m2}: difference {got!r}, want {want!r}")
+    if pg.evaluate("document.querySelectorAll('[aria-live]').length") != 1 or not pg.evaluate("!!document.querySelector('.sr-only[aria-live=\"polite\"][aria-atomic=\"true\"]')"):
+        fails.append(f"{CALC_PATH}: want exactly one aria-live region, the visually hidden summary sentence")
     if pg.evaluate("[...document.querySelectorAll('.calc input')].some(i => !document.querySelector('label[for=\"' + i.id + '\"]') || parseFloat(getComputedStyle(i).fontSize) < 16)"):
         fails.append(f"{CALC_PATH}: an input without a visible label, or under 16px")
     pg.close()

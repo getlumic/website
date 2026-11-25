@@ -708,10 +708,10 @@
     {
       "id": "ap-hours-saved-calculator",
       "path": "/resources/ap-hours-saved-calculator/",
-      "crumb": "AP hours-saved calculator",
+      "crumb": "AP hours calculator",
       "purpose": "a free calculator that runs in the browser: the hours and cost of invoice processing by hand, from the visitor's own numbers (bills per month, minutes per bill, loaded hourly cost, exception rate, extra minutes per exception), with the formulas shown and an optional second scenario; nothing is sent",
       "title": "AP automation hours-saved calculator | lumic",
-      "description": "A free AP automation ROI calculator: enter bills per month, minutes per bill, hourly cost and exception rate to see the hours and cost of invoice processing.",
+      "description": "Work out the hours and cost of processing vendor bills by hand: the cost side of an AP automation ROI calculator. Free, no email.",
       "type": "WebPage",
       "films": [],
       "h1": "How many hours does invoice processing take?"

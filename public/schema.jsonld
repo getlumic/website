@@ -3379,7 +3379,7 @@
    "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#webpage",
    "url": "https://get-lumic.com/resources/ap-hours-saved-calculator/",
    "name": "AP automation hours-saved calculator | lumic",
-   "description": "A free AP automation ROI calculator: enter bills per month, minutes per bill, hourly cost and exception rate to see the hours and cost of invoice processing.",
+   "description": "Work out the hours and cost of processing vendor bills by hand: the cost side of an AP automation ROI calculator. Free, no email.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -3404,7 +3404,7 @@
     {
      "@type": "ListItem",
      "position": 2,
-     "name": "AP hours-saved calculator",
+     "name": "AP hours calculator",
      "item": "https://get-lumic.com/resources/ap-hours-saved-calculator/"
     }
    ]

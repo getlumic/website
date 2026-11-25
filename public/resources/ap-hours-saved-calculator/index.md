@@ -1,19 +1,19 @@
 ---
 title: "AP automation hours-saved calculator | lumic"
-description: "A free AP automation ROI calculator: enter bills per month, minutes per bill, hourly cost and exception rate to see the hours and cost of invoice processing."
+description: "Work out the hours and cost of processing vendor bills by hand: the cost side of an AP automation ROI calculator. Free, no email."
 canonical: https://get-lumic.com/resources/ap-hours-saved-calculator/
 last_updated: 2026-11-25
 ---
 
 # AP automation hours-saved calculator | lumic
 
-> A free AP automation ROI calculator: enter bills per month, minutes per bill, hourly cost and exception rate to see the hours and cost of invoice processing.
+> Work out the hours and cost of processing vendor bills by hand: the cost side of an AP automation ROI calculator. Free, no email.
 
 Source: https://get-lumic.com/resources/ap-hours-saved-calculator/ | Contact: hello@get-lumic.com
 
 # How many hours does invoice processing take?
 
-This AP automation ROI calculator works out the hours and the cost of handling vendor bills by hand, from five numbers you enter. It runs in your browser: nothing you type leaves this page, and no email is asked for.
+This calculator works out the hours and the cost of handling vendor bills by hand, from five numbers you enter: the cost side of any AP automation ROI calculation. It runs in your browser: nothing you type leaves this page, and no email is asked for.
 
 Open the calculator See the formulas
 
@@ -44,7 +44,7 @@ These figures come only from the numbers entered. They are not a lumic result, a
 
 ### With the numbers entered
 
-200 × 8 = 1,600 minutes on straight-through bills, plus 200 × 20% × 15 = 600 minutes on exceptions, makes 2,200 minutes, or 2,200 ÷ 60 = 36.7 hours a month. At $45 an hour that is $1,650 a month, $1,650 × 12 = $19,800 a year, and $1,650 ÷ 200 = $8.25 a bill.
+200 × 8 = 1,600 minutes on straight-through bills, plus 200 × 20% × 15 = 600 minutes on exceptions, makes 1,600 + 600 = 2,200 minutes, or 2,200 ÷ 60 ≈ 36.7 hours a month. At $45 an hour that is 2,200 × $45 ÷ 60 = $1,650 a month, $1,650 × 12 = $19,800 a year, and $1,650 ÷ 200 = $8.25 a bill.
 
 ### If it took less time
 
@@ -52,11 +52,11 @@ Enter your own minutes per bill, exception rate and extra minutes for the same b
 
 If it took less time
 
-Minutes per straight-through bill Starts at the number above. Edit to compare.
+Minutes per straight-through bill Starts at today’s number.
 
-Exception rate, in percent Starts at the number above. Edit to compare.
+Exception rate, in percent Starts at today’s number.
 
-Extra minutes per exception Starts at the number above. Edit to compare.
+Extra minutes per exception Starts at today’s number.
 
 - If it took less time
 - Hours per month 36.7
@@ -65,10 +65,10 @@ Extra minutes per exception Starts at the number above. Edit to compare.
 - Cost per year $19,800
 - Cost per bill $8.25
 - Difference, from the numbers entered above.
-- Hours per month 0.0
-- Hours per year 0.0
-- Cost per month $0
-- Cost per year $0
+- No difference in hours a month
+- No difference in hours a year
+- No difference in cost a month
+- No difference in cost a year
 
 These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.
 
@@ -90,7 +90,9 @@ The same for hours and for cost.
 
 ### Cost per bill = cost per month ÷ B
 
-Worked with the example numbers: (200 × 8 + 200 × 0.20 × 15) ÷ 60 = 2,200 ÷ 60 = 36.7 hours a month (440.0 a year); 2,200 ÷ 60 hours at $45 is $1,650 a month, $19,800 a year and $8.25 a bill.
+The cost of one bill, straight-through and exceptions together.
+
+Worked with the example numbers. (200 × 8 + 200 × 0.20 × 15) ÷ 60 = 2,200 ÷ 60 ≈ 36.7 hours a month. 2,200 × $45 ÷ 60 = $1,650 a month; $1,650 × 12 = $19,800 a year; $1,650 ÷ 200 = $8.25 a bill.
 
 ## What drives invoice processing time.
 
