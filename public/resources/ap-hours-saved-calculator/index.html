@@ -114,7 +114,7 @@
           <ul class="ledger calc-led" aria-label="Today's figures">
             <li class="hd"><span>Today</span></li>
             <li><span>Hours per month</span><span class="st" data-o="hours">36.7</span></li>
-            <li><span>Hours per year</span><span class="st" data-o="hoursy">440.4</span></li>
+            <li><span>Hours per year</span><span class="st" data-o="hoursy">440.0</span></li>
             <li><span>Cost per month</span><span class="st" data-o="month">$1,650</span></li>
             <li><span>Cost per year</span><span class="st" data-o="year">$19,800</span></li>
             <li><span>Cost per bill</span><span class="st" data-o="bill">$8.25</span></li>
@@ -122,6 +122,7 @@
           <p class="calc-msg" data-o="msg"></p>
           <p class="sr-only" aria-live="polite" aria-atomic="true" data-o="say"></p>
         </div>
+        <p class="calc-note">Hours are rounded to one decimal; yearly figures use the unrounded numbers.</p>
         <p class="calc-note">These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.</p>
       </div>
     </div>
@@ -162,7 +163,7 @@
                 <ul class="ledger calc-led" aria-label="Figures if it took less time">
                   <li class="hd"><span>If it took less time</span></li>
                   <li><span>Hours per month</span><span class="st" data-o="hours2">36.7</span></li>
-                  <li><span>Hours per year</span><span class="st" data-o="hoursy2">440.4</span></li>
+                  <li><span>Hours per year</span><span class="st" data-o="hoursy2">440.0</span></li>
                   <li><span>Cost per month</span><span class="st" data-o="month2">$1,650</span></li>
                   <li><span>Cost per year</span><span class="st" data-o="year2">$19,800</span></li>
                   <li><span>Cost per bill</span><span class="st" data-o="bill2">$8.25</span></li>
@@ -176,6 +177,7 @@
                 </ul>
                 <p class="calc-msg" data-o="msg2"></p>
               </div>
+              <p class="calc-note">Hours are rounded to one decimal; yearly figures use the unrounded numbers.</p>
               <p class="calc-note">These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.</p>
             </div>
           </div>
@@ -221,8 +223,8 @@
 <script>
 /* AP hours calculator: runs in the browser only (no network call, nothing stored). Hours = (B*M + B*E*X)/60.
    The worked line is built from the figures it prints, so a reader who redoes it gets the same answer:
-   "=" where the step is exact, "≈" where it is rounded (hours to 0.1, money to the cent). Every year is the
-   month as shown times 12, and a month with cents puts its year in cents too. */
+   "=" where the step is exact, "≈" where it is rounded (hours to 0.1, money to the cent). Yearly hours use the
+   unrounded total; a month with cents puts its year in cents too. */
 (function(){
   var root=document.querySelector('[data-calc]'); if(!root) return;
   var page=document.getElementById('calculator');
@@ -284,10 +286,10 @@
   function mins(n){ return n===1?' minute':' minutes'; }
   function panel(sfx,a){
     var cc=cents(a.c);
-    set('hours'+sfx,hours(a.h1)); set('hoursy'+sfx,hours(a.h1*12));
+    set('hours'+sfx,hours(a.hrs)); set('hoursy'+sfx,hours(a.hrs*12));
     set('month'+sfx,usd(a.c,cc)); set('year'+sfx,usd(a.yc,cc)); set('bill'+sfx,usd2.format(a.bc/100));
   }
-  /* the difference in words, so a sign can never mislead; hours from the hours as shown */
+  /* the difference in words, so a sign can never mislead; hours from the unrounded totals */
   function dh(d,per){ var t=nf1.format(Math.abs(d)); return t==='0.0'?'No difference in hours '+per:t+(d>0?' fewer':' more')+' hours '+per; }
   function dc(c,cc,per){ return c===0?'No difference in cost '+per:usd(Math.abs(c),cc)+(c>0?' less ':' more ')+per; }
   function lc(t){ return t.replace(/^No /,'no '); }
@@ -328,7 +330,7 @@
     } else {
       var c=calc(r.b.n,r.m2.n,r.h.n,r.e2.n,r.x2.n);
       panel('2',c);
-      var dmh=r1(a.h1-c.h1), dmc=a.c-c.c, dcc=cents(dmc);
+      var dmh=a.hrs-c.hrs, dmc=a.c-c.c, dcc=cents(dmc);
       set('dhours',dh(dmh,'a month')); set('dhoursy',dh(dmh*12,'a year'));
       set('dmonth',dc(dmc,dcc,'a month')); set('dyear',dc(dmc*12,dcc,'a year'));
       set('msg2','');

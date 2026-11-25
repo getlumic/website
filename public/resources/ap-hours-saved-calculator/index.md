@@ -35,10 +35,12 @@ Extra minutes per exception Example. Edit to match the work.
 
 - Today
 - Hours per month 36.7
-- Hours per year 440.4
+- Hours per year 440.0
 - Cost per month $1,650
 - Cost per year $19,800
 - Cost per bill $8.25
+
+Hours are rounded to one decimal; yearly figures use the unrounded numbers.
 
 These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.
 
@@ -60,7 +62,7 @@ Extra minutes per exception Starts at today’s number.
 
 - If it took less time
 - Hours per month 36.7
-- Hours per year 440.4
+- Hours per year 440.0
 - Cost per month $1,650
 - Cost per year $19,800
 - Cost per bill $8.25
@@ -69,6 +71,8 @@ Extra minutes per exception Starts at today’s number.
 - No difference in hours a year
 - No difference in cost a month
 - No difference in cost a year
+
+Hours are rounded to one decimal; yearly figures use the unrounded numbers.
 
 These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.
 

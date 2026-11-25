@@ -294,7 +294,7 @@ def check_phase5(b):
 # /resources/ap-hours-saved-calculator/ (2026-11-25): the browser calculator. The example numbers give the figures below, bad
 # input shows a dash (never NaN), the disclaimer and the comparison label are word for word, and no lumic-result wording.
 CALC_PATH = "/resources/ap-hours-saved-calculator/"
-CALC_DEFAULTS = {"hours": "36.7", "hoursy": "440.4", "month": "$1,650", "year": "$19,800", "bill": "$8.25"}  # the year is the month as shown x 12
+CALC_DEFAULTS = {"hours": "36.7", "hoursy": "440.0", "month": "$1,650", "year": "$19,800", "bill": "$8.25"}  # yearly hours from the unrounded total
 CALC_LINES = ["These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.",
               "Difference, from the numbers entered above.", "Example. Edit to match the work.",
               "Hours per month = (B × M + B × E × X) ÷ 60"]
@@ -325,9 +325,18 @@ def check_calculator(b):
     cents = lambda t: round(float(t.replace("$", "").replace(",", "")) * 100)
     if mo != "$1,949.25" or yr != "$23,391.00" or cents(mo) * 12 != cents(yr):
         fails.append(f"{CALC_PATH}: exception rate 33.3 shows {mo} a month and {yr} a year (month x 12 must equal the year, both in cents)")
-    hm, hy = (pg.text_content(f'[data-o="{k}"]').strip() for k in ("hours", "hoursy"))
-    if round(float(hm.replace(",", "")) * 12, 1) != float(hy.replace(",", "")):
-        fails.append(f"{CALC_PATH}: {hm} hours a month but {hy} a year (the year must be the month as shown x 12)")
+    # hours per year is exact: total minutes x 12 / 60 from the unrounded total, rounded once
+    for vals, want in (({"#calc-e": "20"}, "440.0"), ({"#calc-e": "33.3"}, "519.8"),
+                       ({"#calc-b": "1", "#calc-m": "1", "#calc-cost": "1", "#calc-e": "20"}, "0.8")):
+        for k, v in vals.items():
+            pg.fill(k, v)
+        hy = pg.text_content('[data-o="hoursy"]').strip()
+        if hy != want:
+            fails.append(f"{CALC_PATH}: {vals}: {hy} hours a year, want the exact {want}")
+        for k, v in (("#calc-b", "200"), ("#calc-m", "8"), ("#calc-cost", "45"), ("#calc-e", "33.3")):
+            pg.fill(k, v)
+    if "Hours are rounded to one decimal; yearly figures use the unrounded numbers." not in pg.evaluate("document.body.innerText"):
+        fails.append(f"{CALC_PATH}: no rounding note under the results")
     if re.search(r"red", text, re.I):
         fails.append(f"{CALC_PATH}: copy leans on colour ('red')")
     # a number still being typed is not flagged; it is after 800 ms
@@ -340,7 +349,7 @@ def check_calculator(b):
     pg.fill("#calc-m", "8")
     pg.fill("#calc-e", "20")
     pg.evaluate("document.getElementById('compare').open = true")
-    for m2, want in (("4", "13.4 fewer hours a month"),  # 36.7 - 23.3, the hours as shown
+    for m2, want in (("4", "13.3 fewer hours a month"),  # 36.67 - 23.33, unrounded
                       ("12", "13.3 more hours a month"), ("8", "No difference in hours a month")):
         pg.fill("#calc-m2", m2)
         got = pg.text_content('[data-o="dhours"]').strip()
