@@ -3373,6 +3373,59 @@
    },
    "datePublished": "2026-11-24",
    "inLanguage": "en"
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#webpage",
+   "url": "https://get-lumic.com/resources/ap-hours-saved-calculator/",
+   "name": "AP automation hours-saved calculator | lumic",
+   "description": "A free AP automation ROI calculator: enter bills per month, minutes per bill, hourly cost and exception rate to see the hours and cost of invoice processing.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "AP hours-saved calculator",
+     "item": "https://get-lumic.com/resources/ap-hours-saved-calculator/"
+    }
+   ]
+  },
+  {
+   "@type": "WebApplication",
+   "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#app",
+   "name": "AP automation hours-saved calculator",
+   "url": "https://get-lumic.com/resources/ap-hours-saved-calculator/",
+   "description": "A browser calculator for the hours and cost of invoice processing by hand, from the numbers a person enters: bills per month, minutes per bill, loaded hourly cost, exception rate and extra minutes per exception.",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Any",
+   "browserRequirements": "Requires JavaScript",
+   "isAccessibleForFree": true,
+   "inLanguage": "en",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "mainEntityOfPage": {
+    "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#webpage"
+   }
   }
  ]
 }

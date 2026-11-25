@@ -1,0 +1,228 @@
+<!-- ============ HERO ============ -->
+<section class="hero page-hero" id="top">
+  <div class="wrap hero-grid solo">
+    <div>
+      {{crumbs}}
+      <h1>How many hours does <em class="s">invoice processing take?</em></h1>
+      <p class="lead">This AP automation ROI calculator works out the hours and the cost of handling vendor bills by hand, from five numbers you enter. It runs in your browser: nothing you type leaves this page, and no email is asked for.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#calculator">Open the calculator <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
+        <a class="btn btn-g" href="#formulas">See the formulas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULATOR ============ -->
+<section id="calculator" aria-labelledby="calc-h" style="padding-top:clamp(24px,3vw,48px)">
+  <div class="wrap">
+    <div class="two-head rv">
+      <h2 id="calc-h">Enter the work <em class="s">as it is today.</em></h2>
+      <p class="lead">An invoice processing cost calculator in five numbers. The figures update as you type.</p>
+    </div>
+    <div class="keep calc" data-calc>
+      <form class="calc-form" novalidate aria-label="Invoice processing numbers" onsubmit="return false">
+        <fieldset class="calc-set">
+          <legend>Today</legend>
+          <div class="calc-f">
+            <label for="calc-b">Bills per month</label>
+            <input id="calc-b" name="bills" type="text" inputmode="numeric" autocomplete="off" value="200" data-k="b" data-min="1" data-max="100000" data-unit="bills" aria-describedby="calc-b-h">
+            <span class="calc-h" id="calc-b-h">Example. Edit to match the work.</span>
+          </div>
+          <div class="calc-f">
+            <label for="calc-m">Minutes per straight-through bill</label>
+            <input id="calc-m" name="minutes" type="text" inputmode="decimal" autocomplete="off" value="8" data-k="m" data-min="0" data-max="240" aria-describedby="calc-m-h">
+            <span class="calc-h" id="calc-m-h">Example. Edit to match the work.</span>
+          </div>
+          <div class="calc-f">
+            <label for="calc-cost">Loaded hourly cost, in dollars</label>
+            <input id="calc-cost" name="hourly" type="text" inputmode="decimal" autocomplete="off" value="45" data-k="h" data-min="1" data-max="500" aria-describedby="calc-cost-h">
+            <span class="calc-h" id="calc-cost-h">Example. Edit to match the work.</span>
+          </div>
+          <div class="calc-f">
+            <label for="calc-e">Exception rate, in percent</label>
+            <input id="calc-e" name="exceptions" type="text" inputmode="decimal" autocomplete="off" value="20" data-k="e" data-min="0" data-max="100" aria-describedby="calc-e-h">
+            <span class="calc-h" id="calc-e-h">Example. Edit to match the work.</span>
+          </div>
+          <div class="calc-f">
+            <label for="calc-x">Extra minutes per exception</label>
+            <input id="calc-x" name="extra" type="text" inputmode="decimal" autocomplete="off" value="15" data-k="x" data-min="0" data-max="480" aria-describedby="calc-x-h">
+            <span class="calc-h" id="calc-x-h">Example. Edit to match the work.</span>
+          </div>
+        </fieldset>
+        <noscript><p class="calc-note">The live calculator needs JavaScript. The figures shown use the example numbers; the formulas below work by hand with your own.</p></noscript>
+      </form>
+
+      <div class="calc-out">
+        <div aria-live="polite" data-out="a">
+          <ul class="ledger calc-led" aria-label="Today's figures">
+            <li class="hd"><span>Today</span></li>
+            <li><span>Hours per month</span><span class="st" data-o="hours">36.7</span></li>
+            <li><span>Hours per year</span><span class="st" data-o="hoursy">440.0</span></li>
+            <li><span>Cost per month</span><span class="st" data-o="month">$1,650</span></li>
+            <li><span>Cost per year</span><span class="st" data-o="year">$19,800</span></li>
+            <li><span>Cost per bill</span><span class="st" data-o="bill">$8.25</span></li>
+          </ul>
+          <p class="calc-msg" data-o="msg"></p>
+        </div>
+        <p class="calc-note">These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.</p>
+      </div>
+    </div>
+
+    <div class="calc-work rv">
+      <h3>With the numbers entered</h3>
+      <p data-o="work"><span class="tn">200 &times; 8 = 1,600</span> minutes on straight-through bills, plus <span class="tn">200 &times; 20% &times; 15 = 600</span> minutes on exceptions, makes <span class="tn">2,200</span> minutes, or <span class="tn">2,200 &divide; 60 = 36.7</span> hours a month. At <span class="tn">$45</span> an hour that is <span class="tn">$1,650</span> a month, <span class="tn">$1,650 &times; 12 = $19,800</span> a year, and <span class="tn">$1,650 &divide; 200 = $8.25</span> a bill.</p>
+    </div>
+
+    <div class="extras rv">
+      <details class="more" id="compare">
+        <summary>If it took less time<span class="chev" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></span></summary>
+        <div class="more-in">
+          <p class="lead" style="margin-top:0">Enter your own minutes per bill, exception rate and extra minutes for the same bills at the same hourly cost. The same math runs on both.</p>
+          <div class="keep calc">
+            <form class="calc-form" novalidate aria-label="Numbers for the comparison" onsubmit="return false">
+              <fieldset class="calc-set">
+                <legend>If it took less time</legend>
+                <div class="calc-f">
+                  <label for="calc-m2">Minutes per straight-through bill</label>
+                  <input id="calc-m2" name="minutes2" type="text" inputmode="decimal" autocomplete="off" value="8" data-k="m2" data-min="0" data-max="240" data-follow="m" aria-describedby="calc-m2-h">
+                  <span class="calc-h" id="calc-m2-h">Starts at the number above. Edit to compare.</span>
+                </div>
+                <div class="calc-f">
+                  <label for="calc-e2">Exception rate, in percent</label>
+                  <input id="calc-e2" name="exceptions2" type="text" inputmode="decimal" autocomplete="off" value="20" data-k="e2" data-min="0" data-max="100" data-follow="e" aria-describedby="calc-e2-h">
+                  <span class="calc-h" id="calc-e2-h">Starts at the number above. Edit to compare.</span>
+                </div>
+                <div class="calc-f">
+                  <label for="calc-x2">Extra minutes per exception</label>
+                  <input id="calc-x2" name="extra2" type="text" inputmode="decimal" autocomplete="off" value="15" data-k="x2" data-min="0" data-max="480" data-follow="x" aria-describedby="calc-x2-h">
+                  <span class="calc-h" id="calc-x2-h">Starts at the number above. Edit to compare.</span>
+                </div>
+              </fieldset>
+            </form>
+            <div class="calc-out">
+              <div aria-live="polite" data-out="b">
+                <ul class="ledger calc-led" aria-label="Figures if it took less time">
+                  <li class="hd"><span>If it took less time</span></li>
+                  <li><span>Hours per month</span><span class="st" data-o="hours2">36.7</span></li>
+                  <li><span>Hours per year</span><span class="st" data-o="hoursy2">440.0</span></li>
+                  <li><span>Cost per month</span><span class="st" data-o="month2">$1,650</span></li>
+                  <li><span>Cost per year</span><span class="st" data-o="year2">$19,800</span></li>
+                  <li><span>Cost per bill</span><span class="st" data-o="bill2">$8.25</span></li>
+                </ul>
+                <ul class="ledger calc-led" aria-label="Difference">
+                  <li class="hd"><span>Difference, from the numbers entered above.</span></li>
+                  <li><span>Hours per month</span><span class="st" data-o="dhours">0.0</span></li>
+                  <li><span>Hours per year</span><span class="st" data-o="dhoursy">0.0</span></li>
+                  <li><span>Cost per month</span><span class="st" data-o="dmonth">$0</span></li>
+                  <li><span>Cost per year</span><span class="st" data-o="dyear">$0</span></li>
+                </ul>
+                <p class="calc-msg" data-o="msg2"></p>
+              </div>
+              <p class="calc-note">These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULAS ============ -->
+<section id="formulas" aria-labelledby="formulas-h">
+  <div class="wrap">
+    <div class="thread d2" aria-hidden="true"><i></i></div>
+    <div class="two-head rv">
+      <h2 id="formulas-h">The formulas, <em class="s">in plain text.</em></h2>
+      <p class="lead">Every figure in this AP automation savings calculator comes from these four lines. They work the same on paper.</p>
+    </div>
+    <div class="page-narrow">
+      <ul class="wl calc-fx rv" style="margin-top:40px">
+        <li class="q"><div><h3>Hours per month = (B &times; M + B &times; E &times; X) &divide; 60</h3><p>B is bills per month, M is minutes per straight-through bill, E is the exception rate as a share (20% is 0.20), and X is the extra minutes per exception.</p></div></li>
+        <li class="q"><div><h3>Cost per month = hours per month &times; H</h3><p>H is the loaded hourly cost: pay plus taxes and benefits, for the people who do the work.</p></div></li>
+        <li class="q"><div><h3>Year = month &times; 12</h3><p>The same for hours and for cost.</p></div></li>
+        <li class="q"><div><h3>Cost per bill = cost per month &divide; B</h3><p>Worked with the example numbers: (200 &times; 8 + 200 &times; 0.20 &times; 15) &divide; 60 = 2,200 &divide; 60 = 36.7 hours a month (440.0 a year); 2,200 &divide; 60 hours at $45 is $1,650 a month, $19,800 a year and $8.25 a bill.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT DRIVES THE TIME ============ -->
+<section id="drivers" aria-labelledby="drivers-h">
+  <div class="wrap">
+    <div class="thread d3" aria-hidden="true"><i></i></div>
+    <h2 id="drivers-h" class="rv">What drives <em class="s">invoice processing time.</em></h2>
+    <div class="page-narrow rv">
+      <p class="lead"><strong>Straight-through bills.</strong> A straight-through bill matches the purchase order and the receipt. Someone still opens it, reads the vendor, the lines and the total, keys it in and files the copy. A few minutes a bill looks small; multiplied by every bill in a month, it adds up.</p>
+      <p class="lead"><strong>Exceptions.</strong> A price that differs from the PO, a short shipment, a missing PO number or a duplicate takes a person away from the queue to call the vendor, ask the buyer and wait for an answer. A small share of bills can take a large share of the time, so the exception rate and the extra minutes move the result more than they seem to.</p>
+      <p class="lead"><strong>Retyping into a second system.</strong> When the PO lives in one system and the payables in another, each bill is keyed twice and the two are checked against each other. That can double the straight-through minutes and adds exceptions of its own. <a href="/services/ap-automation/">lumic&rsquo;s AP automation</a> reads each bill, matches it to the PO and enters it once. A person approves before anything posts. <a href="/pricing/">See pricing</a>.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+/* AP hours-saved calculator: runs in the browser only (no network call, nothing stored). Hours = (B*M + B*E*X)/60. */
+(function(){
+  var root=document.querySelector('[data-calc]'); if(!root) return;
+  var page=document.getElementById('calculator');
+  var ins={}; [].forEach.call(page.querySelectorAll('input[data-k]'),function(i){ ins[i.getAttribute('data-k')]=i; });
+  var dirty={};
+  var nf1=new Intl.NumberFormat('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});
+  var nf0=new Intl.NumberFormat('en-US',{maximumFractionDigits:0});
+  var nfp=new Intl.NumberFormat('en-US',{maximumFractionDigits:2});
+  var usd0=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0,minimumFractionDigits:0});
+  var usd2=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2,maximumFractionDigits:2});
+  var DASH='—', MINUS='−';
+  function out(k){ return page.querySelector('[data-o="'+k+'"]'); }
+  function set(k,v){ var e=out(k); if(e&&e.textContent!==v) e.textContent=v; }
+  function signed(n,f){ var r=f.format(Math.abs(n)); return (n<0&&f.format(Math.abs(n))!==f.format(0))?MINUS+r:r; }
+  function label(i){ return document.querySelector('label[for="'+i.id+'"]').textContent; }
+  /* one field: a number inside its range, or an error that names the fix */
+  function read(k){
+    var i=ins[k], raw=i.value.replace(/[\s,$%]/g,''), lo=+i.getAttribute('data-min'), hi=+i.getAttribute('data-max'), err='';
+    var n=raw===''?NaN:Number(raw);
+    if(raw==='') err='Enter a number.';
+    else if(!isFinite(n)) err='Use digits only, for example '+i.defaultValue+'.';
+    else if(n<lo||n>hi) err='Enter a number from '+nf0.format(lo)+' to '+nf0.format(hi)+'.';
+    var h=document.getElementById(i.id+'-h');
+    if(!h.hasAttribute('data-hint')) h.setAttribute('data-hint',h.textContent);
+    h.textContent=err||h.getAttribute('data-hint');
+    h.classList.toggle('bad',!!err);
+    if(err) i.setAttribute('aria-invalid','true'); else i.removeAttribute('aria-invalid');
+    return err?{err:label(i)+': '+err}:{n:n};
+  }
+  function calc(b,m,h,e,x){ var min=b*m+b*(e/100)*x, hrs=min/60, mo=hrs*h; return {min:min,hrs:hrs,mo:mo,yr:mo*12,bill:mo/b}; }
+  function bad(list){ return list.filter(function(r){ return r.err; }).map(function(r){ return r.err; }); }
+  function run(){
+    /* the comparison starts at today's numbers and follows them until it is edited */
+    ['m2','e2','x2'].forEach(function(k){ if(!dirty[k]) ins[k].value=ins[ins[k].getAttribute('data-follow')].value; });
+    var r={}; ['b','m','h','e','x','m2','e2','x2'].forEach(function(k){ r[k]=read(k); });
+    var errA=bad([r.b,r.m,r.h,r.e,r.x]), a=null;
+    if(errA.length){
+      ['hours','hoursy','month','year','bill'].forEach(function(k){ set(k,DASH); });
+      set('msg','No figures yet. '+errA[0]);
+      set('work','The worked figures show here once every number above is filled in.');
+    } else {
+      var B=r.b.n,M=r.m.n,H=r.h.n,E=r.e.n,X=r.x.n; a=calc(B,M,H,E,X);
+      set('hours',nf1.format(a.hrs)); set('hoursy',nf1.format(a.hrs*12)); set('month',usd0.format(a.mo)); set('year',usd0.format(a.yr)); set('bill',usd2.format(a.bill));
+      set('msg','');
+      set('work',nf0.format(B)+' × '+nfp.format(M)+' = '+nf0.format(B*M)+' minutes on straight-through bills, plus '+nf0.format(B)+' × '+nfp.format(E)+'% × '+nfp.format(X)+' = '+nf0.format(B*E/100*X)+' minutes on exceptions, makes '+nf0.format(a.min)+' minutes, or '+nf0.format(a.min)+' ÷ 60 = '+nf1.format(a.hrs)+' hours a month. At '+usd2.format(H).replace('.00','')+' an hour that is '+usd0.format(a.mo)+' a month, '+usd0.format(a.mo)+' × 12 = '+usd0.format(a.yr)+' a year, and '+usd0.format(a.mo)+' ÷ '+nf0.format(B)+' = '+usd2.format(a.bill)+' a bill.');
+    }
+    var errB=bad([r.m2,r.e2,r.x2]);
+    if(errA.length||errB.length){
+      ['hours2','hoursy2','month2','year2','bill2','dhours','dhoursy','dmonth','dyear'].forEach(function(k){ set(k,DASH); });
+      set('msg2','No figures yet. '+(errB[0]||'Fill in every number above first.'));
+    } else {
+      var c=calc(r.b.n,r.m2.n,r.h.n,r.e2.n,r.x2.n);
+      set('hours2',nf1.format(c.hrs)); set('hoursy2',nf1.format(c.hrs*12)); set('month2',usd0.format(c.mo)); set('year2',usd0.format(c.yr)); set('bill2',usd2.format(c.bill));
+      set('dhours',signed(a.hrs-c.hrs,nf1)); set('dhoursy',signed((a.hrs-c.hrs)*12,nf1));
+      set('dmonth',signed(a.mo-c.mo,usd0)); set('dyear',signed(a.yr-c.yr,usd0));
+      set('msg2','');
+    }
+  }
+  Object.keys(ins).forEach(function(k){ ins[k].addEventListener('input',function(){ if(ins[k].hasAttribute('data-follow')) dirty[k]=true; run(); }); });
+  run();
+})();
+</script>
+
+{{related /services/ap-automation/ /pricing/ /resources/ai-agent-for-accounting/ /guardrails/}}

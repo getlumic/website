@@ -10,7 +10,8 @@ flow chart lays out with its lines.
 
 Every page in scripts/pages.json, at the same widths: no horizontal scroll, its declared film players fit (and autoplay
 muted, take the sound, carry the sample-data note), in-page links have targets, internal links and media answer 200,
-one <h1>, canonical and og:url match, a BreadcrumbList. On every page (home included): JSON-LD parses, no we/our/us,
+one <h1>, canonical and og:url match, a BreadcrumbList. The AP hours-saved calculator: its example figures, a dash
+(never NaN) on bad input, the disclaimer word for word. On every page (home included): JSON-LD parses, no we/our/us,
 no size-reveal or gap phrases; on inner pages also no banned term and no product name at all (visible text, title,
 meta and JSON-LD). /st-louis/ carries no street address. The sitemap lists every page and each answers 200 with a
 matching canonical. Home: the revamp title, H1, tagline in the footer and the schema slogan, the nav labels, and the
@@ -290,8 +291,43 @@ def check_phase5(b):
     return fails
 
 
+# /resources/ap-hours-saved-calculator/ (2026-11-25): the browser calculator. The example numbers give the figures below, bad
+# input shows a dash (never NaN), the disclaimer and the comparison label are word for word, and no lumic-result wording.
+CALC_PATH = "/resources/ap-hours-saved-calculator/"
+CALC_DEFAULTS = {"hours": "36.7", "hoursy": "440.0", "month": "$1,650", "year": "$19,800", "bill": "$8.25"}
+CALC_LINES = ["These figures come only from the numbers entered. They are not a lumic result, a quote or a promise.",
+              "Difference, from the numbers entered above.", "Example. Edit to match the work.",
+              "Hours per month = (B × M + B × E × X) ÷ 60"]
+CALC_BANNED = [r"hours lumic saves", r"lumic saves", r"you(?:'|’)ll save", r"industry average", r"on average"]
+
+
+def check_calculator(b):
+    fails = []
+    if not any(p["path"] == CALC_PATH for p in CFG["pages"]):
+        return [f"{CALC_PATH}: not in pages.json"]
+    pg = b.new_page(viewport={"width": 1440, "height": 900})
+    pg.goto(BASE + CALC_PATH, wait_until="domcontentloaded")
+    text = norm(pg.evaluate(OPEN_DETAILS_TEXT))
+    fails += [f"{CALC_PATH}: missing {l!r}" for l in CALC_LINES if norm(l) not in text]
+    for pat in CALC_BANNED:
+        fails += [f"{CALC_PATH}: wording {m.group(0)!r}" for m in re.finditer(pat, text, re.I)]
+    got = pg.evaluate("Object.fromEntries([...document.querySelectorAll('[data-o]')].map(e => [e.dataset.o, e.textContent.trim()]))")
+    fails += [f"{CALC_PATH}: default {k} = {got.get(k)!r}, want {v!r}" for k, v in CALC_DEFAULTS.items() if got.get(k) != v]
+    for bad in ("", "0", "-5", "abc"):
+        pg.fill("#calc-b", bad)
+        o = pg.evaluate("[...document.querySelectorAll('[data-o]')].map(e => e.textContent).join(' | ')")
+        if "NaN" in o or "Infinity" in o or pg.text_content('[data-o="hours"]').strip() != "—":
+            fails.append(f"{CALC_PATH}: bills {bad!r} shows {o[:120]!r} (want a dash, no NaN)")
+    if pg.evaluate("document.documentElement.outerHTML").count('aria-live="polite"') < 1:
+        fails.append(f"{CALC_PATH}: no aria-live result")
+    if pg.evaluate("[...document.querySelectorAll('.calc input')].some(i => !document.querySelector('label[for=\"' + i.id + '\"]') || parseFloat(getComputedStyle(i).fontSize) < 16)"):
+        fails.append(f"{CALC_PATH}: an input without a visible label, or under 16px")
+    pg.close()
+    return fails
+
+
 def check_pages(b):
-    fails = check_phase5(b)
+    fails = check_phase5(b) + check_calculator(b)
     local = re.match(r"https?://(127\.0\.0\.1|localhost)", BASE) is not None
     # home: JSON-LD parses, voice and size rules, and its FAQPage covers exactly the questions it shows
     st, home = fetch(BASE + "/")

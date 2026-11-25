@@ -1,0 +1,20 @@
+[
+ {
+  "@type": "WebApplication",
+  "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#app",
+  "name": "AP automation hours-saved calculator",
+  "url": "https://get-lumic.com/resources/ap-hours-saved-calculator/",
+  "description": "A browser calculator for the hours and cost of invoice processing by hand, from the numbers a person enters: bills per month, minutes per bill, loaded hourly cost, exception rate and extra minutes per exception.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "mainEntityOfPage": {
+   "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#webpage"
+  }
+ }
+]

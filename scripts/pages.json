@@ -168,7 +168,7 @@
       "id": "managed-ai",
       "path": "/managed-ai/",
       "crumb": "Managed AI",
-      "purpose": "managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what kept working means: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk",
+      "purpose": "managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what upkeep covers: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk",
       "title": "Managed AI on retainer: monitored and supported | lumic",
       "description": "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.",
       "type": "WebPage",
@@ -704,6 +704,17 @@
       "type": "WebPage",
       "films": [],
       "h1": "AI agents for accounting: what they do, and how to start."
+    },
+    {
+      "id": "ap-hours-saved-calculator",
+      "path": "/resources/ap-hours-saved-calculator/",
+      "crumb": "AP hours-saved calculator",
+      "purpose": "a free calculator that runs in the browser: the hours and cost of invoice processing by hand, from the visitor's own numbers (bills per month, minutes per bill, loaded hourly cost, exception rate, extra minutes per exception), with the formulas shown and an optional second scenario; nothing is sent",
+      "title": "AP automation hours-saved calculator | lumic",
+      "description": "A free AP automation ROI calculator: enter bills per month, minutes per bill, hourly cost and exception rate to see the hours and cost of invoice processing.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "How many hours does invoice processing take?"
     }
   ],
   "faq": [

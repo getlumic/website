@@ -557,3 +557,34 @@ section:has(+ .related-s){padding-bottom:clamp(56px,6vw,80px) !important}
   .short-cards .keep .ledger{display:none}
   ul.links{gap:2px}  /* each link already carries a 44px tap target */
 }
+
+/* ---------- calculator (/resources/ap-hours-saved-calculator/): the .keep card and .ledger, plus fields ---------- */
+.calc{align-items:start}
+.calc-set{border:0;margin:0;padding:0;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}
+.calc-set legend{grid-column:1/-1;padding:0;margin-bottom:18px;font-size:21px;font-weight:500;letter-spacing:-.03em;color:var(--text-strong)}
+.calc-f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.calc-f label{font-size:14.5px;font-weight:600;line-height:1.35;color:var(--text-strong)}
+.calc-f input{font:inherit;font-size:17px;font-variant-numeric:tabular-nums;height:48px;padding:0 14px;width:100%;min-width:0;color:var(--text-strong);
+  background:#ffffff;border:1px solid #8a93a6;border-radius:12px;outline:2px solid transparent;outline-offset:2px;transition:border-color .2s,background-color .2s}
+@media (hover:hover){.calc-f input:hover{border-color:var(--muted)}}
+.calc-f input:focus-visible{outline-color:var(--primary);border-color:var(--primary-d)}
+.calc-f input[aria-invalid="true"]{border-color:var(--down);background:#fff7f7}
+.calc-h{font-size:13px;line-height:1.4;color:var(--muted);min-height:1.4em}
+.calc-h.bad{color:var(--down);font-weight:600}
+.calc-out{display:grid;gap:14px;min-width:0}
+.calc-led+.calc-led{margin-top:14px}
+.calc-led li{gap:16px}
+.calc-led li:not(.hd) .st{font-size:17px;color:var(--text-strong);font-variant-numeric:tabular-nums}
+.calc-led .hd{white-space:normal;text-transform:none;letter-spacing:0;font-size:13px;color:var(--muted)}
+.calc-msg{font-size:14px;font-weight:600;color:var(--down);min-height:0}
+.calc-msg:empty{display:none}
+.calc-note{font-size:13.5px;line-height:1.5;color:var(--muted)}
+.calc-work{margin-top:28px;max-width:820px}
+.calc-work h3{font-size:17px;margin-bottom:6px}
+.calc-work p{font-size:15.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.calc-fx h3{font-variant-numeric:tabular-nums}
+.tn{font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:620px){
+  .calc-set{grid-template-columns:minmax(0,1fr);gap:16px}
+  .tn{white-space:normal}
+}

@@ -254,6 +254,7 @@ LABELS = {"/services/": "Services", "/ai-implementation/": "AI implementation", 
           "/industries/service-firms/": "Service firms",
           "/resources/how-to-implement-ai-in-a-small-business/": "How to implement AI in a small business",
           "/resources/ai-agent-for-accounting/": "AI agents for accounting",
+          "/resources/ap-hours-saved-calculator/": "AP hours-saved calculator",
           "/systems/sage-100/": "Sage 100", "/systems/sage-100/ap-automation/": "Sage 100 AP automation"}
 
 
