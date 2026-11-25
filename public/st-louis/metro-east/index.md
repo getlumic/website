@@ -13,7 +13,7 @@ Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.co
 
 # AI automation for Metro East businesses, on site.
 
-lumic does AI implementation for Metro East businesses: its St. Louis-based Forward Deployed Engineers (FDEs) work on site across Madison and St. Clair counties, Illinois, and build back-office AI agents inside the systems you already run. They keep them working, and a person on your team approves every entry before it posts.
+lumic builds custom AI for Metro East businesses, on site in Madison and St. Clair counties, Illinois. Its Forward Deployed Engineers (FDEs) are based in St. Louis. They build back-office AI agents inside the systems you already run and keep them working. A person on your team approves every entry before it posts.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Where lumic works
 
@@ -113,11 +113,11 @@ lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You ru
 
 On-site work $1,500/day, credited toward phase one.
 
-## The Metro East, in plain answers.
+## Before you book, on the Illinois side.
 
-### Does lumic serve Belleville, Edwardsville, Collinsville, O’Fallon and Alton?
+### Which Metro East towns does lumic serve?
 
-Yes. lumic’s FDEs come on site to businesses in Belleville, Edwardsville, Collinsville, O’Fallon, Alton and the rest of Madison and St. Clair counties. These are places lumic serves, not office locations; lumic is based in St. Louis.
+Belleville, Edwardsville, Collinsville, O’Fallon and Alton, among others. These are places lumic serves, not office locations; lumic is based in St. Louis.
 
 ### Is the on-site day the same in Illinois?
 

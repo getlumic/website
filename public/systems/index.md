@@ -108,12 +108,6 @@ No migration. No new system.
 - Re-keying between two systems → An agent enters it; you approve
 - Build-and-ghost consultants → A team that stays on
 
-## Systems, in plain answers.
-
-### Does lumic need an API?
-
-No. Where a system has an API, the agent uses it. Where it doesn’t, the agent works through the system’s own screens on its own computer and login, and every step is checked.
-
 ## Related
 
 - [Services](https://get-lumic.com/services/)

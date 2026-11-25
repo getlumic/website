@@ -104,7 +104,7 @@ Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County
 ## Pricing
 - Free consultation.
 - On-site work $1,500/day, credited toward phase one.
-- Managed AI from $250 to $5,000 a month, depending on scope. Includes night releases, monitoring and the support desk.
+- Managed AI from $250 to $5,000 a month, depending on scope. Includes monitoring, monthly tests, fixes, upgrades, night releases and the support desk.
 - Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
@@ -135,7 +135,7 @@ A 20-minute call, then an on-site day beside the team, then a written proposal w
 - [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
 - [AI consulting](https://get-lumic.com/st-louis/ai-consulting/): AI consulting and automation in St. Louis: on-site FDEs, the five back-office jobs, how an engagement runs, starting prices ([markdown](https://get-lumic.com/st-louis/ai-consulting/index.md))
 - [Metro East](https://get-lumic.com/st-louis/metro-east/): AI automation on site for Metro East businesses: Madison and St. Clair counties, Illinois; the five back-office jobs; proof; on-site day rate ([markdown](https://get-lumic.com/st-louis/metro-east/index.md))
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/): what a forward-deployed engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant ([markdown](https://get-lumic.com/forward-deployed-engineers/index.md))
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/): what a Forward Deployed Engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant ([markdown](https://get-lumic.com/forward-deployed-engineers/index.md))
 - [Small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/): Forward Deployed Engineers (FDEs) for small and mid-size businesses: what an FDE is, why instead of a hire or a software license, one job at a time, proof, starting prices, approval ([markdown](https://get-lumic.com/forward-deployed-engineers/small-business/index.md))
 - [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
 - [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page; with an API or without one ([markdown](https://get-lumic.com/systems/index.md))

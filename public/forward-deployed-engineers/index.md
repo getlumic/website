@@ -13,13 +13,13 @@ Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-l
 
 # Forward Deployed Engineers (FDEs) in St. Louis
 
-lumic provides forward-deployed engineers (FDEs) to businesses in St. Louis: engineers who work on site, build AI inside your own systems, and stay to run what was built after launch. A consultant advises and leaves. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time.
+A Forward Deployed Engineer (FDE) works on site, builds inside your own systems, and stays to run what was built after launch. A consultant advises and leaves. lumic’s FDEs are based in St. Louis, have finance backgrounds, and build AI into one back-office job at a time.
 
 [Book a call](https://cal.com/lumic/20-minute-call) FDE or consultant
 
-## What is a forward deployed engineer?
+## What is a Forward Deployed Engineer?
 
-A forward deployed engineer (FDE) is an engineer who works on site with a business, inside its own systems. An FDE builds the work there, then stays to run it after launch. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time.
+A Forward Deployed Engineer (FDE) is an engineer who works on site with a business, inside its own systems. An FDE builds the work there, then stays to run it after launch. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time.
 
 [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/)
 
@@ -67,9 +67,9 @@ lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You ru
 
 Questions
 
-## Forward-deployed engineers, in plain answers.
+## Forward Deployed Engineers, in plain answers.
 
-### What is a forward-deployed engineer?
+### What is a Forward Deployed Engineer?
 
 An engineer who works on site with a business, builds inside its own systems, and stays to run what was built. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time.
 

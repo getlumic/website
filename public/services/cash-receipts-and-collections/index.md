@@ -89,19 +89,11 @@ lumic builds it, and keeps it working.
 - A morning spent on collections emails → Drafts ready when the day starts
 - Build-and-ghost consultants → A team that stays on
 
-## Cash receipts and collections, in plain answers.
+## Before you book, one more answer.
 
-### Does a person approve before anything posts?
+### Which systems do the cash agents work with?
 
-Yes. The agent keys each receipt and drafts each collections email. A person approves every receipt before it posts and sends every email.
-
-### Which systems does it work with?
-
-The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. Through an API where there is one, through the screen where there isn’t. The list: [Systems lumic works with](https://get-lumic.com/systems/).
-
-### How long does it take to go live?
-
-Weeks, not quarters. After the on-site day, lumic builds and tests the agents in your systems, then they go live and lumic keeps them working.
+The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. The list: [Systems lumic works with](https://get-lumic.com/systems/).
 
 ### Free consultation.
 

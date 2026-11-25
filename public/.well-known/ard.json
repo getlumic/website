@@ -225,7 +225,7 @@
   },
   {
    "identifier": "urn:air:get-lumic.com:docs:forward-deployed-engineers-markdown",
-   "displayName": "Forward-deployed engineers as markdown",
+   "displayName": "Forward Deployed Engineers as markdown",
    "type": "text/markdown",
    "url": "https://get-lumic.com/forward-deployed-engineers/index.md",
    "representativeQueries": [

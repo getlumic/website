@@ -73,16 +73,6 @@ Any agent can be paused, or its access revoked, at any time.
 
 List the accounting jobs your team does by hand, with the hours each one takes. Pick one. Watch it done, write down the checks and the exceptions, then build the agent around how the work is really done.
 
-## AI agents for accounting, in plain answers.
-
-### What is an AI agent for accounting?
-
-Software that does one job a clerk does today, such as entering vendor bills or preparing month-end entries, inside the accounting software or ERP already in use. It prepares the entry; a person approves it before anything posts.
-
-### Which accounting job is the best place to start?
-
-The job that takes the most hours by hand and repeats every day or every month, such as vendor bills or cash receipts. It should follow rules a controller can write down and already end in a review.
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.

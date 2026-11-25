@@ -21,11 +21,11 @@ The checklist
 
 ### On site, or remote?
 
-Ask where the work will be mapped. A partner who sits beside the person doing the job sees the screens, the checks and the exceptions that never make it into a process document. Remote work can fit once a job is mapped, but a partner who has never watched the job done by hand is guessing at the hard parts.
+Ask where the work will be mapped. A partner who sits beside the person doing the job sees the screens, the checks and the exceptions that never make it into a process document. Remote work can fit once a job is mapped, but a partner who has never watched the job done by hand is guessing at the hard parts. Remote fits better when the job is already written down step by step and the systems all run in the cloud.
 
 ### Built inside your systems, or a license to set up?
 
-Some partners build inside the ERP, accounting software, email and spreadsheets a team already runs. Others sell a software license and leave the setup to your staff. Ask which one you are buying, who does the configuration, and whether your team will have a new system to learn.
+Some partners build inside the ERP, accounting software, email and spreadsheets a team already runs. Others sell a software license and leave the setup to your staff. Ask which one you are buying, who does the configuration, and whether your team will have a new system to learn. A license can fit a team with staff to set it up and maintain it.
 
 ### Who approves before anything posts?
 
@@ -35,9 +35,9 @@ An AI agent should prepare the work. A person who knows the work should approve 
 
 AI needs upkeep. Vendors change their bill layouts, systems update their screens, and AI models improve. Ask what the monthly fee covers: monitoring, regular tests, fixes, upgrades and support. Ask how a problem is reported, who owns it, and when it counts as fixed.
 
-### Are the prices published?
+### Can you compare the price before a long sales process?
 
-A partner that publishes starting prices lets you budget before a call. Ask for the rate of any paid discovery work and whether it is credited toward the build, how the build itself is priced, and the range of the monthly fee. A price that appears only at the end of a long sales process is hard to compare.
+Starting prices, published or given on a short call, let you budget early. Ask for the rate of any paid discovery work and whether it is credited toward the build, how the build itself is priced, and the range of the monthly fee. A quote built from scratch fits better when the job is unusual and a starting price would mislead.
 
 ### How is the work kept running?
 
@@ -53,25 +53,9 @@ The proposal should name the one job to automate, the systems it will touch, who
 
 ## Choosing a partner in St. Louis.
 
-For a business in Greater St. Louis, on site is practical, not a luxury. A local partner can spend a day beside the team, come back when a job changes, and meet the people who approve the work. That matters most for owner-run firms on either side of the river, where the know-how sits with a few people rather than in a manual.
+For a business in Greater St. Louis, on site is practical. A local partner can spend a day beside the team, come back when a job changes, and meet the people who approve the work. That matters most for owner-run firms, where the know-how sits with a few people rather than in a manual.
 
-## One option to compare.
-
-lumic, a St. Louis firm, is one such partner: its Forward Deployed Engineers work on site, build inside the systems a business already runs, and keep the work running on a monthly retainer. Compare its [AI implementation](https://get-lumic.com/ai-implementation/) and [managed AI](https://get-lumic.com/managed-ai/) pages, and its published [pricing](https://get-lumic.com/pricing/), against the checklist above.
-
-## Choosing a partner, in plain answers.
-
-### What should an AI implementation proposal include?
-
-The job to be automated, the systems it will touch, who approves its work, the timeline, the one-time build cost, the monthly fee and what it covers, and what the business owns if it leaves.
-
-### Is on-site or remote AI implementation better?
-
-For work done by hand inside a business, on site usually wins: the partner sees the screens, the checks and the exceptions. Remote work fits once the job is mapped.
-
-### Who should own what an AI partner builds?
-
-Settle it in writing before the build starts: what the business keeps if the relationship ends, such as the written procedures, the configuration and its data, and how a hand-off would work.
+lumic, a St. Louis firm, is one such partner: its Forward Deployed Engineers work on site, build inside the systems a business already runs, and keep the work running on a monthly retainer. Compare its [AI implementation](https://get-lumic.com/ai-implementation/) and [managed AI](https://get-lumic.com/managed-ai/) pages, and its [pricing](https://get-lumic.com/pricing/), against the checklist above.
 
 ## Related
 

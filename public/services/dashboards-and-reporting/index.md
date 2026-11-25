@@ -137,19 +137,15 @@ lumic builds it, and keeps it working.
 - Stale spreadsheets nobody trusts → One live set of data
 - Build-and-ghost consultants → A team that stays on
 
-## Dashboards, in plain answers.
+## Before you book, two answers.
 
-### Does a person approve before anything posts?
+### Can a dashboard change the data?
 
-Nothing posts from a dashboard: dashboards only read. When work needs doing, an agent prepares the entry, and a person approves it before it posts.
+No. Dashboards only read; they cannot post, edit or delete a record. Any change is an entry an agent prepares and a person approves.
 
-### Which systems does it work with?
+### Which systems do the dashboards read?
 
-The ERP or accounting software your team already runs, and the spreadsheets and other data around it. Dashboards read that data live; nothing is migrated. The list: [Systems lumic works with](https://get-lumic.com/systems/).
-
-### How long does it take to go live?
-
-Weeks, not quarters. After the on-site day, lumic builds the dashboards on your live data, your team checks them, and lumic keeps them working.
+The ERP or accounting software your team already runs, and the spreadsheets and other data around it. The list: [Systems lumic works with](https://get-lumic.com/systems/).
 
 ### Free consultation.
 

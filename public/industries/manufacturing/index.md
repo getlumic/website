@@ -104,11 +104,7 @@ lumic builds it, and keeps it working.
 
 ### Which back-office jobs can AI do for a manufacturer?
 
-Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries. lumic builds one agent per job.
-
-### Does a person approve the agent’s work?
-
-Yes. The agent prepares each entry in your systems, and a person on your team approves it before it posts.
+Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries.
 
 ### Free consultation.
 

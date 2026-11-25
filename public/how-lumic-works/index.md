@@ -19,37 +19,21 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 ## lumic at a glance.
 
-### What it is
-
-A custom AI implementation firm. Its Forward Deployed Engineers (FDEs) build AI into the processes and systems a business already runs, then keep it working on a monthly retainer.
-
-### Where
+Where
 
 St. Louis, Missouri. On site across Greater St. Louis on both sides of the river, including the Metro East in Illinois. lumic travels for the right fit.
 
-### Who it is for
+Who it is for
 
 Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms.
 
-### What it builds
-
-AI agents, automations and live dashboards for the order desk, email, vendor bills, cash receipts, payroll entries, month-end and reporting.
-
-### How it is controlled
-
-A person approves what matters before anything posts, and every action is logged.
-
-### Systems
+Systems
 
 lumic works with the ERP, accounting, email and spreadsheet tools a team already uses: [Systems lumic works with](https://get-lumic.com/systems/).
 
-### Pricing
+Pricing
 
 Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.
-
-### How to start
-
-A 20‑minute call, an on-site day, then a written proposal. [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
@@ -140,7 +124,7 @@ Every engagement is run by FDEs with finance training, backed by a bench of agen
 
 Most FDE teams are engineers who learn finance on the job. lumic’s team knows the work: it has done these back-office jobs by hand, then built the agents that do them.
 
-### Is lumic the right fit?
+### Where lumic fits, and where it does not.
 
 lumic fits a business with people doing repetitive work by hand, that wants it done inside the systems the team already uses, with a person approving what matters. lumic may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
 

@@ -25,9 +25,9 @@ in the footer and /st-louis/ links both of its children; /privacy/ is third pers
 
 GEO round (2026-11-25): home's Organization is also a ProfessionalService with the disambiguation line and its profiles;
 llms.txt and llms-full.txt open with "lumic at a glance", the Updated date and the not-to-be-confused line; every WebPage's
-dateModified equals its sitemap lastmod; each shown FAQ answer matches its FAQPage text; guides carry Article markup and a
-shown FAQ; /how-lumic-works/ shows its prices only in the at-a-glance block; the partner guide is 600 to 900 words and names
-lumic once.
+dateModified equals its sitemap lastmod; each shown FAQ answer matches its FAQPage text; guides carry Article markup; no FAQ answer
+repeats 8 words of its page and no question sits on 3 or more pages (home and /faq/ count as one); /how-lumic-works/ shows
+its prices only in the at-a-glance block; the partner guide is 600 to 900 words and names lumic once.
 
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
@@ -430,8 +430,6 @@ def check_geo(b):
                 fails.append(f"{p['path']}: no Article with author and publisher = the lumic Organization")
             if arts and arts[0].get("dateModified") != lastmods.get(url):
                 fails.append(f"{p['path']}: Article dateModified is not the sitemap lastmod")
-            if not p.get("faq"):
-                fails.append(f"{p['path']}: a guide without a shown FAQ")
         if p["id"] == "how-lumic-works":
             glance = norm(pg.evaluate("(e => e ? e.innerText : '')(document.getElementById('glance'))"))
             fails += [f"{p['path']}: the at-a-glance block lacks {l!r}" for l in GLANCE_PRICE_LINES if l not in glance]
@@ -454,8 +452,69 @@ def check_geo(b):
     return fails
 
 
+# FAQ content rules (review of the GEO round, 2026-11-25): an answer must add a fact its page does not already state, and a
+# question is not boilerplate across the site.
+FAQ_RUN = 8  # (a) an answer may not share 8 or more consecutive words with the rest of its page's visible text
+FAQ_RUN_EXEMPT = PRICING_BLOCK_LINES + ["Free consultation.", "The build is a separate, one-time cost, priced in the written proposal.",
+                                        "Weeks, not quarters."]
+FAQ_MAX_PAGES = 3  # (b) the same question text may not appear on 3 or more pages
+# Home shows a subset of the /faq/ list, from the same pages.json "faq" entries: the two count as one source for (b).
+# Older pages these rules caught, kept as they are until the partners pick the fix (listed in the GEO review report):
+# Each needs a new fact from the partners, not a one-line edit. Rule (b) caught nothing that a one-line rename did not fix.
+FAQ_RUN_EXEMPT_PAGES = {
+    "/": {"What is an FDE?", "Who approves what the agent does?"},
+    "/ai-implementation/": {"What does AI implementation mean for a small business?"},
+    "/managed-ai/": {"What is a managed AI agent?", "Can an agent be paused?"},
+    "/ai-consulting/": {"How is lumic different from an AI consultant?", "What comes out of the on-site day?"},
+    "/ai-agent-skills/": {"What is a packaged AI job?", "What does it cost?"},
+    "/services/order-desk-and-customer-service/": {"Does the agent send replies to customers on its own?"},
+    "/forward-deployed-engineers/": {"What is a Forward Deployed Engineer?", "How is an FDE different from a consultant?",
+                                     "Where are lumic’s FDEs based?", "How does an engagement start?"},
+    "/forward-deployed-engineers/small-business/": {"How is an FDE different from a hire or a software license?"},
+    "/systems/sage-100/ap-automation/": {"Can AI work with Sage 100?"},
+}
+FAQ_REPEAT_EXEMPT = set()
+
+
+def words(t):
+    return re.findall(r"[a-z0-9$%]+(?:[',./-][a-z0-9$%]+)*", norm(t).lower().replace("’", "'"))
+
+
+def check_faq_rules(b):
+    fails, seen = [], {}
+    pg = b.new_page(viewport={"width": 1440, "height": 900})
+    for path in ["/"] + [p["path"] for p in CFG["pages"]]:
+        html = fetch(BASE + path)[1]
+        qs = [(q["name"], q["acceptedAnswer"]["text"]) for blk in ld_blocks(html) if isinstance(blk, dict)
+              for g in blk.get("@graph", []) if g.get("@type") == "FAQPage" for q in g["mainEntity"]]
+        if not qs:
+            continue
+        src = "/faq/" if path in ("/", "/faq/") else path
+        for q, _ in qs:
+            seen.setdefault(norm(q), set()).add(src)
+        pg.goto(BASE + path, wait_until="domcontentloaded")
+        rest = pg.evaluate("""(() => { const m = document.querySelector('main').cloneNode(true);
+            m.querySelectorAll('#faq').forEach(e => e.remove()); return m.textContent; })()""")
+        w = words(rest)
+        grams = {tuple(w[i:i + FAQ_RUN]) for i in range(len(w) - FAQ_RUN + 1)}
+        for q, a in qs:
+            if q in FAQ_RUN_EXEMPT_PAGES.get(path, ()):
+                continue
+            for x in FAQ_RUN_EXEMPT:
+                a = a.replace(x, " ")
+            aw = words(a)
+            hit = next((" ".join(aw[i:i + FAQ_RUN]) for i in range(len(aw) - FAQ_RUN + 1) if tuple(aw[i:i + FAQ_RUN]) in grams), None)
+            if hit:
+                fails.append(f"{path}: the answer to {q!r} repeats the page ({hit!r}); an answer must add a fact")
+    pg.close()
+    for q, where in sorted(seen.items()):
+        if len(where) >= FAQ_MAX_PAGES and q not in FAQ_REPEAT_EXEMPT:
+            fails.append(f"FAQ question {q!r} on {len(where)} pages {sorted(where)} (at most {FAQ_MAX_PAGES - 1})")
+    return fails
+
+
 def check_pages(b):
-    fails = check_phase5(b) + check_calculator(b) + check_geo(b)
+    fails = check_phase5(b) + check_calculator(b) + check_geo(b) + check_faq_rules(b)
     local = re.match(r"https?://(127\.0\.0\.1|localhost)", BASE) is not None
     # home: JSON-LD parses, voice and size rules, and its FAQPage covers exactly the questions it shows
     st, home = fetch(BASE + "/")

@@ -52,6 +52,18 @@ PRICE_AGENTS = "Managed AI from $250 to $5,000 a month, depending on scope."  # 
 PRICE_BUILD_LINE = "The build is a separate, one-time cost, priced in the written proposal."  # the approved build line on its own
 PRICE_BUILD = "Monthly pricing covers running and supporting your agents. " + PRICE_BUILD_LINE  # Christian 2026-11-24: the build is priced in the proposal, after the on-site day
 PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
+# What the monthly fee covers: one list, the same on /managed-ai/ and /pricing/ ({{fee_covers}}), and one sentence for the
+# Managed AI price card and llms.txt ({{fee_covers_line}}).
+FEE_COVERS_LINE = "Includes monitoring, monthly tests, fixes, upgrades, night releases and the support desk."
+FEE_COVERS = """<ul class="ledger" aria-label="Covered for each managed agent">
+        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>
+        <li><span>Monitoring</span><span class="st">Ongoing</span></li>
+        <li><span>Testing</span><span class="st">Monthly</span></li>
+        <li><span>Fixes</span><span class="st">Included</span></li>
+        <li><span>Upgrades as tools improve</span><span class="st">Included</span></li>
+        <li><span>A summary of its work</span><span class="st">Monthly</span></li>
+        <li><span>Human approval</span><span class="st">Built in</span></li>
+      </ul>"""
 # The short pricing block on home and the Services hub (the same card and ledger as the offers above it); links /pricing/.
 PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
       <div>
@@ -91,9 +103,10 @@ assert FOUR_STEPS_PLAIN.count("$") == 0 and FOUR_STEPS_PLAIN.count('class="step"
 
 
 def glance_items():
-    """The "lumic at a glance" facts (pages.json "glance"): the same list on /how-lumic-works/ ({{at_a_glance}}) and first
-    in llms.txt (scripts/build_markdown.py). Reuses the FAQ list markup (li.q: a short heading and a sentence)."""
-    return faq_items(CFG["glance"], "        ")
+    """The "lumic at a glance" facts (pages.json "glance"): all of them open llms.txt (scripts/build_markdown.py); the ones
+    marked "page" show on /how-lumic-works/ ({{at_a_glance}}) as a <dl>, two by two from 960px (site.css .glance)."""
+    return "\n".join(f'      <div><dt>{esc(g["q"])}</dt><dd>{curly(g.get("html") or esc(g["a"]))}</dd></div>'
+                     for g in CFG["glance"] if g.get("page"))
 
 
 # The pricing block as its own section (home, and the service / industry / system pages before the checklist).
@@ -356,7 +369,7 @@ def build_page(p):
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
                  "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{pricing_section}}": PRICING_SECTION, "{{checklist}}": checklist(p["path"]), "{{price_onsite}}": PRICE_ONSITE,
-                 "{{price_build}}": PRICE_BUILD, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{four_steps_plain}}": FOUR_STEPS_PLAIN, "{{at_a_glance}}": glance_items(), "{{price_build_line}}": PRICE_BUILD_LINE, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
+                 "{{price_build}}": PRICE_BUILD, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{four_steps_plain}}": FOUR_STEPS_PLAIN, "{{at_a_glance}}": glance_items(), "{{price_build_line}}": PRICE_BUILD_LINE, "{{fee_covers}}": FEE_COVERS, "{{fee_covers_line}}": FEE_COVERS_LINE, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
                  "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
                  "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
         body = body.replace(k, v)

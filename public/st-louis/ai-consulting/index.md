@@ -94,7 +94,7 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
-The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). On site across the region: [St. Louis](https://get-lumic.com/st-louis/). What an FDE is: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/).
+The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). On site across the region: [St. Louis](https://get-lumic.com/st-louis/). What an FDE is: [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/).
 
 ## AI consulting in St. Louis, in plain answers.
 

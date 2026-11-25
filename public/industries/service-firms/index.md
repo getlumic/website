@@ -106,11 +106,7 @@ lumic builds it, and keeps it working.
 
 ### Which back-office jobs can AI do for a service firm?
 
-The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries. lumic builds one agent per job.
-
-### Does a person approve the agent’s work?
-
-Yes. The agent prepares each entry, and a person on your team approves it before it posts. The final post stays in your hands.
+The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries.
 
 ### Free consultation.
 

@@ -26,7 +26,7 @@ A consultant advises and leaves. lumic’s FDEs build the agent inside your own 
 - A roadmap someone else builds → The same team builds it
 - Build-and-ghost consultants → A team that stays on
 
-[Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/)
+[Forward Deployed Engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/)
 
 ## A day beside your team. A written proposal.
 

@@ -154,7 +154,7 @@ Putting AI to work inside the systems the business already runs, not buying a ne
 
 Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
-### What does it cost?
+### What does an AI implementation cost?
 
 Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 

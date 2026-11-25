@@ -16,7 +16,7 @@ SITE = "https://get-lumic.com"
 SKIP = {"script", "style", "svg", "video", "button", "dialog", "noscript", "img"}
 VOID = {"br", "img", "source", "input", "meta", "link", "hr"}
 HEAD = {"h1": "# ", "h2": "## ", "h3": "### ", "summary": "### "}
-BLOCK = {"h1", "h2", "h3", "p", "li", "summary", "figcaption", "blockquote", "cite", "tr", "div", "article", "section", "ul", "ol", "table"}
+BLOCK = {"dt", "dd", "h1", "h2", "h3", "p", "li", "summary", "figcaption", "blockquote", "cite", "tr", "div", "article", "section", "ul", "ol", "table"}
 
 
 class MD(HTMLParser):

@@ -38,7 +38,7 @@ On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Includes night releases, monitoring and the support desk.
+Includes monitoring, monthly tests, fixes, upgrades, night releases and the support desk.
 
 - lumic runs and supports the agents
 - A person approves every entry
@@ -70,21 +70,8 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Testing Monthly
 - Fixes Included
 - Upgrades as tools improve Included
+- A summary of its work Monthly
 - Human approval Built in
-
-## Pricing, in plain answers.
-
-### What does managed AI cost?
-
-Managed AI from $250 to $5,000 a month, depending on scope. The monthly fee covers monitoring, monthly testing, fixes and upgrades.
-
-### Is the on-site day credited?
-
-Yes. On-site work $1,500/day, credited toward phase one.
-
-### Is the build priced separately?
-
-Yes. The build is a separate, one-time cost, priced in the written proposal. The proposal comes after the on-site day.
 
 ## Related
 

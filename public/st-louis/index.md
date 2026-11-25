@@ -13,7 +13,7 @@ Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 
 # Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 
-lumic is a St. Louis AI implementation firm: its Forward Deployed Engineers work on site with businesses across Greater St. Louis, build custom AI into the work done by hand, and keep it working. They have finance backgrounds and work beside your team at your place of business, from vendor bills to month-end, one job at a time. St. Louis first; the team travels for the right fit.
+lumic is an AI implementation firm in St. Louis. Its Forward Deployed Engineers have finance backgrounds. They work beside your team at your place of business, build custom AI into one job at a time, and keep it working. The team travels for the right fit.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Area served
 
@@ -70,15 +70,7 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
 
-## Local, and live in production.
-
-### Does lumic work on site in St. Louis?
-
-Yes. lumic is based in St. Louis, and its Forward Deployed Engineers work beside your team at your place of business, by appointment.
-
-### Which areas does lumic serve?
-
-St. Louis City and St. Louis, St. Charles, Jefferson and Franklin counties in Missouri; Madison and St. Clair counties in Illinois.
+## Local questions, and the work to see.
 
 ### Does lumic work outside St. Louis?
 
@@ -86,7 +78,7 @@ Yes. St. Louis first: the team is based here and comes on site in person. lumic 
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer: an engineer who comes to you, learns how the work is really done, and builds AI inside your own systems.
 
 See the work, then meet the team.
 
