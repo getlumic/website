@@ -177,6 +177,17 @@
        "name": "Managed AI agents",
        "url": "https://get-lumic.com/managed-ai/"
       }
+     },
+     {
+      "@type": "Offer",
+      "name": "Installable AI job",
+      "description": "One job packaged for the customer's own AI agent. A fixed setup fee, then a monthly fee, quoted per job.",
+      "itemOffered": {
+       "@type": "Service",
+       "@id": "https://get-lumic.com/installable-ai-jobs/#service",
+       "name": "Installable AI jobs",
+       "url": "https://get-lumic.com/installable-ai-jobs/"
+      }
      }
     ]
    }
@@ -616,6 +627,129 @@
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "A written proposal: what lumic would build, the timeline, and the cost."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/installable-ai-jobs/#webpage",
+   "url": "https://get-lumic.com/installable-ai-jobs/",
+   "name": "Installable AI jobs for your own AI agent | lumic",
+   "description": "lumic packages one paid job for the AI agent your business already runs: the written procedure, the tools it needs and your own file. A person approves.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/installable-ai-jobs/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/installable-ai-jobs/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Installable AI jobs",
+     "item": "https://get-lumic.com/installable-ai-jobs/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/installable-ai-jobs/#service",
+   "name": "Installable AI jobs",
+   "serviceType": "Installable AI jobs for a customer's own AI agent",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses that run their own AI agent"
+   },
+   "url": "https://get-lumic.com/installable-ai-jobs/",
+   "description": "lumic packages one paid job so a customer's own AI agent can install and run it: a skill (the written procedure), tools only when the job needs them, and one file for the customer's systems and approval rules, bundled as a plugin. A fixed setup fee, then a monthly fee, quoted per job. A person on the customer's team approves anything that sends, spends, posts or deletes.",
+   "offers": {
+    "@type": "Offer",
+    "name": "Installable AI job",
+    "description": "A fixed setup fee, then a monthly fee, quoted per job."
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/installable-ai-jobs/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is an installable AI job?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "One job a business pays for, packaged so its own AI agent can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), tools only when the job needs them, and one file for the business's systems and approval rules, bundled as a plugin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which AI agents can run it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The packages are built for AI agents that load skills and plugins, such as Claude. lumic confirms the fit for your agent in the free consultation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who approves what the agent does?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A person on your team. The agent prepares the work, and the people who know it approve anything that sends, spends, posts or deletes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Installable jobs: a fixed setup fee, then a monthly fee, quoted per job. The setup has a start and an end date; the monthly fee keeps the package current."
      }
     }
    ]

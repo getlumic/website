@@ -45,6 +45,10 @@
       "href": "/ai-consulting/"
     },
     {
+      "label": "Installable jobs",
+      "href": "/installable-ai-jobs/"
+    },
+    {
       "label": "AP automation",
       "href": "/services/ap-automation/"
     },
@@ -209,6 +213,36 @@
         {
           "q": "What comes out of the on-site day?",
           "a": "A written proposal: what lumic would build, the timeline, and the cost."
+        }
+      ]
+    },
+    {
+      "id": "installable-ai-jobs",
+      "path": "/installable-ai-jobs/",
+      "crumb": "Installable AI jobs",
+      "purpose": "the installable job: one paid job packaged for a customer's own AI agent (a skill, tools only when needed, one customer file, bundled as a plugin); the order desk, accounts payable and the stock inbox; a fixed setup fee then a monthly fee, quoted per job; which offer fits",
+      "title": "Installable AI jobs for your own AI agent | lumic",
+      "description": "lumic packages one paid job for the AI agent your business already runs: the written procedure, the tools it needs and your own file. A person approves.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "One job, packaged for your own AI agent.",
+      "faq": [
+        {
+          "q": "What is an installable AI job?",
+          "a": "One job a business pays for, packaged so its own AI agent can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), tools only when the job needs them, and one file for the business's systems and approval rules, bundled as a plugin."
+        },
+        {
+          "q": "Which AI agents can run it?",
+          "a": "The packages are built for AI agents that load skills and plugins, such as Claude. lumic confirms the fit for your agent in the free consultation."
+        },
+        {
+          "q": "Who approves what the agent does?",
+          "a": "A person on your team. The agent prepares the work, and the people who know it approve anything that sends, spends, posts or deletes."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "Installable jobs: a fixed setup fee, then a monthly fee, quoted per job. The setup has a start and an end date; the monthly fee keeps the package current.",
+          "html": "Installable jobs: a fixed setup fee, then a monthly fee, quoted per job. The setup has a start and an end date; the monthly fee keeps the package current. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },

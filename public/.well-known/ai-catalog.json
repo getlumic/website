@@ -62,6 +62,15 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:installable-ai-jobs-markdown",
+   "displayName": "Installable AI jobs as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/installable-ai-jobs/index.md",
+   "representativeQueries": [
+    "Installable AI jobs for your own AI agent"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:services-markdown",
    "displayName": "Services as markdown",
    "type": "text/markdown",

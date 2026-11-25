@@ -146,6 +146,14 @@ Custom AI is not only for accounting. lumic builds agents for production, purcha
 
 [AI implementation, any process and any system](https://get-lumic.com/ai-implementation/)
 
+For your own agent
+
+## Already running an AI agent?
+
+lumic also packages one job, such as the order desk or accounts payable, so the AI agent your business already runs can install it and run it, with a person approving what matters.
+
+[Installable AI jobs](https://get-lumic.com/installable-ai-jobs/)
+
 How lumic engages
 
 ## An agent on the job, and a team behind it.

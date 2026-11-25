@@ -24,6 +24,11 @@
 - Beyond the books: production schedules, purchasing and POs, the order desk and freight, as well as bills, receipts and month-end.
 - Details: https://get-lumic.com/ai-implementation/
 
+## Two ways to work with lumic
+Done for you: lumic's Forward Deployed Engineers learn the work on site, build it, run it on a dedicated computer and keep it working every month. Details: https://get-lumic.com/managed-ai/
+
+Installed on your own agent: for a business that already runs an AI agent, lumic packages one paid job (such as the order desk, accounts payable or the stock inbox) so that agent can install and run it: a skill (the written procedure), tools only when the job needs them, and one file for the business's systems and approval rules, bundled as a plugin. A fixed setup fee, then a monthly fee, quoted per job. A person on the team approves anything that sends, spends, posts or deletes. Details: https://get-lumic.com/installable-ai-jobs/
+
 ## When to use lumic
 - A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
 - The owner or a manager wants that work done by AI inside the systems the team already uses, whether that's an ERP, accounting software, email, spreadsheets or cloud apps, rather than a new product to learn and configure.
@@ -100,6 +105,7 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [AI implementation](https://get-lumic.com/ai-implementation/): custom AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices; any process, any system: math checks, API or screen, two systems in one job, beyond the books, the action log ([markdown](https://get-lumic.com/ai-implementation/index.md))
 - [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what kept working means: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk ([markdown](https://get-lumic.com/managed-ai/index.md))
 - [AI consulting](https://get-lumic.com/ai-consulting/): AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page ([markdown](https://get-lumic.com/ai-consulting/index.md))
+- [Installable AI jobs](https://get-lumic.com/installable-ai-jobs/): the installable job: one paid job packaged for a customer's own AI agent (a skill, tools only when needed, one customer file, bundled as a plugin); the order desk, accounts payable and the stock inbox; a fixed setup fee then a monthly fee, quoted per job; which offer fits ([markdown](https://get-lumic.com/installable-ai-jobs/index.md))
 - [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI; beyond the books ([markdown](https://get-lumic.com/services/index.md))
 - [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))

@@ -169,6 +169,30 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 [How lumic works, in full](https://get-lumic.com/how-lumic-works/) [What lumic builds: Services](https://get-lumic.com/services/) [See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
 
+Two ways
+
+## Two ways to put AI to work.
+
+Both start with the same free consultation, and in both a person on your team approves anything that sends, spends, posts or deletes.
+
+### Done for you
+
+lumic’s FDEs learn the work on site, build it, run it on a dedicated computer and keep it working every month.
+
+- For a business with no AI agent, or no one to run one
+- Built, run and kept working by lumic
+
+[Managed AI →](https://get-lumic.com/managed-ai/)
+
+### Installed on your own agent
+
+One job, packaged so the AI agent your business already runs can install it and run it, fitted to your systems and kept current by lumic.
+
+- For a business that runs its own AI agent
+- A fixed setup fee, then a monthly fee
+
+[Installable AI jobs →](https://get-lumic.com/installable-ai-jobs/)
+
 Pricing
 
 ### Free consultation.

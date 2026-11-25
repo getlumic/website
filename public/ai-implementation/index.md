@@ -100,7 +100,7 @@ Production schedules, purchasing and POs, the order desk and freight, as well as
 
 Every action is logged. Entries are added to the log, not edited.
 
-How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
+How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). For a business that runs its own AI agent: [Installable AI jobs](https://get-lumic.com/installable-ai-jobs/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
 
 Four steps
 
