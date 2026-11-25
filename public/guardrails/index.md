@@ -13,7 +13,7 @@ Source: https://get-lumic.com/guardrails/ | Contact: hello@get-lumic.com
 
 Guardrails On every agent
 
-# Guardrails: nothing posts without you.
+# Guardrails: gated by the people who know the work.
 
 The practices lumic follows on every agent, in one place. A person approves every entry before it posts, every action is logged, and each agent can reach only what its job needs.
 
@@ -29,7 +29,7 @@ The agent prepares each entry. A person on your team checks it and approves it b
 
 ### Everything is logged.
 
-Every action an agent takes is logged. A posted payroll entry is logged with its transaction number, and it can’t be posted twice.
+Every action an agent takes is logged. A posted payroll entry is logged with its transaction number. A duplicate check runs before every write.
 
 ### Access is limited to the job.
 

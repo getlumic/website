@@ -1,13 +1,13 @@
 ---
 title: "Managed AI on retainer: monitored and supported | lumic"
-description: "Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month."
+description: "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/managed-ai/
 last_updated: 2026-11-24
 ---
 
 # Managed AI on retainer: monitored and supported | lumic
 
-> Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month.
+> Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.
 
 Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
 
@@ -57,6 +57,10 @@ It checks each app around the clock and restarts what stops. If the watchdog its
 
 Every lumic dashboard has Send feedback and an Updates page with plain-word release notes.
 
+### In production every working day.
+
+lumic’s agents run in production every working day, monitored around the clock. Night releases roll back by themselves, and every request gets a ticket number.
+
 ### A support desk with ticket numbers.
 
 Every request gets a number and an owner. A ticket closes when the fix is live in your system.
@@ -98,9 +102,7 @@ Pricing
 
 ### The monthly retainer.
 
-Managed agents from $1,000/month.
-
-Full build-and-run from $2,500–6,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -109,8 +111,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 [Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
 
 - At a glance
-- Managed agents Monthly
-- Full build-and-run Monthly
+- Managed AI Monthly, by scope
 - The build One-time, scoped
 
 Questions
@@ -127,7 +128,7 @@ Yes. Any agent can be paused, or its access revoked, at any time.
 
 ### What does the retainer cost?
 
-Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ## Based in St. Louis. Start with a conversation.
 

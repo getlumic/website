@@ -130,11 +130,11 @@ Clients are kept private; every figure is from production.
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -156,7 +156,7 @@ lumic does not sell software to configure yourself. lumic's Forward Deployed Eng
 
 ### What does it cost to start?
 
-Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 Pricing
 
@@ -164,7 +164,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

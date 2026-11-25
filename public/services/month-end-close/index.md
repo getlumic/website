@@ -67,7 +67,7 @@ The inventory clearing entries, prepared for the controller to review.
 The monthly adjusting entries, built the same way every month.
 
 - Balanced before staging
-- Never entered twice
+- A duplicate check runs before every write.
 
 ### Tie-outs first
 
@@ -91,7 +91,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

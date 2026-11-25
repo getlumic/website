@@ -57,7 +57,7 @@ Live dashboards read from the books, so nobody rebuilds the same report every mo
 
 Controls
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
 ### A person approves every entry.
 
@@ -89,7 +89,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

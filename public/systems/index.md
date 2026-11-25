@@ -46,7 +46,6 @@ Systems lumic works with
 - Power BI
 - SQL Server
 - Google Workspace
-- FileMaker
 - Shopify
 - …and hundreds more.
 
@@ -106,9 +105,9 @@ Each agent works on its own dedicated computer, wherever fits your business, und
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 No migration. No new system.
 

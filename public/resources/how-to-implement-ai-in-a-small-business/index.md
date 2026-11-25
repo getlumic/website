@@ -77,7 +77,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -85,7 +85,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 

@@ -39,11 +39,11 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 ### What does it cost?
 
-It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ### Do you work outside St. Louis?
 

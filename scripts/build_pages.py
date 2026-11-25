@@ -6,7 +6,8 @@ page come from src/pages/<id>.jsonld (a JSON list; the string "@AREA" becomes th
 come from its pages.json "faq" list: {{page_faq}} shows them and the same list writes the page's FAQPage.
 
 Also, in place:
-- public/index.html: the header, footer, FAQ (list and FAQPage JSON-LD), the pricing section and the four steps between their markers. The rest of the home
+- public/index.html: the header, footer, FAQ (list and FAQPage JSON-LD), the pricing section and the four steps between their markers.
+- Every "<n> live dashboards" (home, the pages, llms.txt): the count from scripts/dashboard_count.py, as a word. The rest of the home
   page stays hand-edited.
 - public/sitemap.xml: home, every page, privacy; lastmod is each source file's last commit date (today if uncommitted).
 - src/worker.js: the list of paths that have a markdown copy (between the md-pages markers).
@@ -22,6 +23,14 @@ ROOT = Path(__file__).resolve().parent.parent
 PUB, SRC = ROOT / "public", ROOT / "src" / "pages"
 SITE = "https://get-lumic.com"
 CFG = json.loads(io.open(ROOT / "scripts" / "pages.json", encoding="utf-8").read())
+import sys; sys.path.insert(0, str(ROOT / "scripts"))
+import dashboard_count  # the live dashboard count, counted from the code (scripts/dashboard_count.py)
+_DASH = re.compile(r"\b(" + "|".join(sorted(dashboard_count.NUMBER_WORDS, key=len, reverse=True)) + r")( live dashboards)\b", re.I)
+
+
+def dashboards(text):
+    """Every "<number word> live dashboards" gets the counted number, keeping the capital letter of the sentence."""
+    return _DASH.sub(lambda m: (dashboard_count.WORD.capitalize() if m.group(1)[0].isupper() else dashboard_count.WORD) + m.group(2), text)
 CAL = "https://cal.com/lumic/20-minute-call"
 # Google Fonts: loaded without blocking render (a preload that turns into the stylesheet once it arrives; noscript fallback).
 FONTS = "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap"
@@ -38,7 +47,7 @@ BOOK = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a
 # Pricing (Christian 2026-10-12, via the Phase 5 brief): the lines are approved word for word; do not reword them.
 BOOK_PRICING = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a call to talk real pricing\n          {ARROW}</a>'
 PRICE_ONSITE = "On-site work $1,500/day, credited toward phase one."
-PRICE_AGENTS = "Managed agents from $1,000/month."
+PRICE_AGENTS = "Managed AI from $250 to $5,000 a month, depending on scope."  # Christian 2026-11-25: one range, floor $250
 PRICE_BUILD = ("Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, "
                "scoped after the free consultation.")
 PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
@@ -64,7 +73,6 @@ PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
         <li><span>Running and support</span><span class="st">Monthly</span></li>
       </ul>
     </article>"""
-PRICE_FULL = "Full build-and-run from $2,500&ndash;6,000/month."  # as live on /pricing/ (shown text: an en dash)
 # The four steps (revamp 2026-11-24): the same wording on home (between its steps markers) and /how-lumic-works/
 # ({{four_steps}}). Each step links its own page and carries its approved pricing line word for word. Reuses .steps
 # (.s4: four columns on wide screens).
@@ -73,7 +81,7 @@ FOUR_STEPS = f"""<ol class="steps s4 rv">
       <li class="track" aria-hidden="true"><i></i></li>
       <li class="step"><span class="n" aria-hidden="true">01</span><h3>Free consultation.</h3><p>A 20&#8209;minute call. You walk the team through the work your people do by hand.</p><a class="founder-link" {_STEP_LINK} href="{CAL}" target="_blank" rel="noopener">Book a call →</a></li>
       <li class="step"><span class="n" aria-hidden="true">02</span><h3>On-site day and written proposal.</h3><p>lumic&rsquo;s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.</p><p style="margin-top:10px"><strong>{PRICE_ONSITE}</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-consulting/">AI consulting →</a></li>
-      <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.</p><p style="margin-top:10px"><strong>{PRICE_FULL}</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.</p><p style="margin-top:10px"><strong>Scoped after the on-site day.</strong> {PRICE_BUILD} {PRICE_FINAL}</p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
       <li class="step"><span class="n" aria-hidden="true">04</span><h3>Managed AI.</h3><p>lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.</p><p style="margin-top:10px"><strong>{PRICE_AGENTS}</strong></p><a class="founder-link" {_STEP_LINK} href="/managed-ai/">Managed AI →</a></li>
     </ol>"""
 # The pricing block as its own section (home, and the service / industry / system pages before the checklist).
@@ -289,11 +297,12 @@ def build_page(p):
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
                  "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{pricing_section}}": PRICING_SECTION, "{{checklist}}": checklist(p["path"]), "{{price_onsite}}": PRICE_ONSITE,
-                 "{{price_build}}": PRICE_BUILD, "{{price_full}}": PRICE_FULL, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
+                 "{{price_build}}": PRICE_BUILD, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
                  "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
                  "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
         body = body.replace(k, v)
     assert "{{" not in body, f'{p["id"]}: unfilled token {re.search(r"{{.*?}}", body).group(0)}'
+    body = dashboards(body)
     t, d = esc(p["title"]), esc(p["description"])
     ld = json.dumps(page_ld(p), ensure_ascii=False, separators=(",", ":"))
     doc = f"""<!DOCTYPE html>
@@ -373,7 +382,11 @@ def build_home():
     ld = json.loads(m.group(2))
     ld["@graph"] = [faq_ld(home_faq, SITE + "/#faq") if g.get("@type") == "FAQPage" else g for g in ld["@graph"]]
     h = h[:m.start(2)] + json.dumps(ld, ensure_ascii=False, separators=(",", ":")) + h[m.end(2):]
+    h = dashboards(h)
     io.open(f, "w", encoding="utf-8", newline="\n").write(h)
+    llms = PUB / "llms.txt"
+    text = dashboards(io.open(llms, encoding="utf-8").read())  # read it before the write opens (and empties) the file
+    io.open(llms, "w", encoding="utf-8", newline="\n").write(text)
 
 
 def lastmod(*files):

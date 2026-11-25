@@ -27,7 +27,7 @@ Portfolio
 
 Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- A specialty manufacturer · accounting software + a custom operations database
+- Agent · accounting software + the system that holds the POs
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
 
@@ -35,10 +35,10 @@ Every vendor bill was typed in twice, into two systems, about 30 a day. The agen
 
 ### A finance team run on agents
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
 - About 13 agent roles
-- Nine live dashboards
+- Eighteen live dashboards
 
 ### Collections agent
 

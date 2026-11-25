@@ -81,9 +81,9 @@ The post stays with you.
 
 The agent prepares the batch and leaves it unposted. A person on your team reviews it and posts it. The final post stays in your hands.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent never posts the batch itself. Flagged bills wait for a person’s approval.
+The agent leaves the batch unposted. Flagged bills wait for a person’s approval.
 
 The AP job on any system: [AP automation](https://get-lumic.com/services/ap-automation/). Every job an agent does with Sage 100: [Sage 100](https://get-lumic.com/systems/sage-100/). Starting prices: [Pricing](https://get-lumic.com/pricing/).
 

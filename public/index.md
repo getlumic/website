@@ -77,7 +77,7 @@ Agents and dashboards lumic built run every day inside operating companies, on e
 
 Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- A specialty manufacturer · accounting software + a custom operations database
+- Agent · accounting software + the system that holds the POs
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
 
@@ -85,10 +85,10 @@ Every vendor bill was typed in twice, into two systems, about 30 a day. The agen
 
 ### A finance team run on agents
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
 - About 13 agent roles
-- Nine live dashboards
+- Eighteen live dashboards
 
 ### Collections agent
 
@@ -125,7 +125,6 @@ If your team runs it, lumic can work with it.
 - Power BI
 - SQL Server
 - Google Workspace
-- FileMaker
 - Shopify
 
 Client names stay private.
@@ -156,7 +155,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -164,7 +163,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
@@ -176,7 +175,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -204,7 +203,7 @@ The agent enters the work in your systems, the same records a clerk would key. A
 
 ### Live and measured.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated. It runs in production every working day, monitored around the clock.
 
 ### Finance people who code.
 
@@ -218,9 +217,9 @@ Each agent works on its own dedicated computer, wherever fits your business, und
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 lumic builds it, and keeps it working.
 
@@ -245,7 +244,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 [All questions](https://get-lumic.com/faq/)
 
@@ -291,7 +290,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 All questions: https://get-lumic.com/faq/
 

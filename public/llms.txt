@@ -5,8 +5,8 @@
 ## Offers
 - Free consultation. A 20-minute call.
 - On-site work $1,500/day, credited toward phase one. AI consulting, on site: https://get-lumic.com/ai-consulting/
-- Full build-and-run from $2,500–6,000/month. AI implementation: https://get-lumic.com/ai-implementation/
-- Managed agents from $1,000/month. Managed AI: https://get-lumic.com/managed-ai/
+- The build is a separate, one-time cost, scoped after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
+- Managed AI from $250 to $5,000 a month, depending on scope. Managed AI: https://get-lumic.com/managed-ai/
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 ## How lumic keeps it working
@@ -47,8 +47,8 @@
 ## Portfolio
 Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; every figure is from production.
 
-- AP invoice agent (a specialty manufacturer; accounting software + a custom operations database): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
-- A finance team run on agents: at a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with nine live dashboards. A person approves each entry.
+- AP invoice agent (accounting software + the system that holds the POs): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
+- A finance team run on agents: across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with eighteen live dashboards. A person approves each entry.
 
 Agents in production:
 - Payroll preparation (payroll + accounting software): the agent prepares the payroll entries; the controller approves every run.
@@ -70,7 +70,7 @@ Live dashboards in production:
 - Ask your data (AI): plain-English questions over the same live data.
 
 ## Systems
-Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage Intacct, Sage 100, Microsoft Dynamics 365 Business Central, Xero, Acumatica, Bill.com, Ramp, Expensify, ADP, Paychex, Gusto, Salesforce, HubSpot, Microsoft 365 / Outlook, Excel, Power BI, SQL Server, Google Workspace, FileMaker, Shopify.
+Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage Intacct, Sage 100, Microsoft Dynamics 365 Business Central, Xero, Acumatica, Bill.com, Ramp, Expensify, ADP, Paychex, Gusto, Salesforce, HubSpot, Microsoft 365 / Outlook, Excel, Power BI, SQL Server, Google Workspace, Shopify.
 
 Client names stay private.
 
@@ -87,8 +87,7 @@ Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County
 ## Pricing
 - Free consultation.
 - On-site work $1,500/day, credited toward phase one.
-- Managed agents from $1,000/month (one workflow, one system, a person approves every entry, a monthly summary).
-- Full build-and-run from $2,500–6,000/month.
+- Managed AI from $250 to $5,000 a month, depending on scope. Includes night releases, monitoring and the support desk.
 - Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
@@ -106,12 +105,12 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
 - [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))
 - [Month-end close](https://get-lumic.com/services/month-end-close/): the month-end agent: reads the period, prepares recurring entries, runs tie-outs; every entry unposted until the controller posts ([markdown](https://get-lumic.com/services/month-end-close/index.md))
-- [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): nine live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
+- [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
 - [Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/): the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one ([markdown](https://get-lumic.com/services/order-desk-and-customer-service/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
 - [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
 - [Guardrails](https://get-lumic.com/guardrails/): the practices on every agent, as already stated across the site: a person approves every entry, everything logged, access limited to the job, and any agent can be paused or revoked at any time ([markdown](https://get-lumic.com/guardrails/index.md))
-- [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed agents and full build-and-run per month; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
+- [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
 - [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))
 - [Distribution](https://get-lumic.com/industries/distribution/): AI agents for a distributor's back office: cash receipts, collections, margin by customer, multi-company; anonymized live proof ([markdown](https://get-lumic.com/industries/distribution/index.md))
 - [Service firms](https://get-lumic.com/industries/service-firms/): AI agents for a service firm's back office: bills, receipts, collections, payroll, month-end; general process only ([markdown](https://get-lumic.com/industries/service-firms/index.md))

@@ -37,7 +37,7 @@ The agent works on its own dedicated computer, under its own login, inside the S
 The agent prepares each entry, and a person on your team approves it before anything posts. The final post stays in your hands.
 
 - A person approves each entry
-- Nothing posts without you
+- Gated by the people who know the work
 
 ### Live dashboards on the same data
 
@@ -62,7 +62,7 @@ Remittances read and keyed as receipts for approval, and collections emails draf
 
 Sales, margin and receivables read live from Sage 100, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
-Nothing posts without you.
+Gated by the people who know the work.
 
 ### It touches only its job.
 
@@ -80,7 +80,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

@@ -121,7 +121,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### What does AI consulting and automation cost?
 
-Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ### Which areas does lumic serve?
 

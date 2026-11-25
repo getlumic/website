@@ -1,13 +1,13 @@
 ---
 title: "How lumic works: FDEs, approvals and data security | lumic"
-description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you."
+description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it."
 canonical: https://get-lumic.com/how-lumic-works/
 last_updated: 2026-11-24
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
 
-> lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.
+> lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it.
 
 Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com
 
@@ -41,7 +41,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -49,7 +49,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
@@ -98,11 +98,11 @@ The team watches it, tests it every month, fixes what breaks, and upgrades it as
 
 Approval, access and data
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 

@@ -1,13 +1,13 @@
 ---
 title: "Pricing: custom AI implementation and managed AI | lumic"
-description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes."
+description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
 last_updated: 2026-11-24
 ---
 
 # Pricing: custom AI implementation and managed AI | lumic
 
-> Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.
+> Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes.
 
 Source: https://get-lumic.com/pricing/ | Contact: hello@get-lumic.com
 
@@ -39,23 +39,15 @@ On-site work $1,500/day, credited toward phase one.
 - lumic’s FDEs at your place of business
 - Maps the job, the systems and the data
 
-### Managed agents
+### Managed AI
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 [Includes night releases, monitoring and the support desk.](https://get-lumic.com/managed-ai/)
 
-- One workflow
-- One system
-- A person approves every entry
-- A monthly summary
-
-### Full build-and-run
-
-Full build-and-run from $2,500–6,000/month.
-
 - lumic builds the agents and runs them
 - A person approves every entry
+- A monthly summary
 
 What the monthly fee covers
 

@@ -79,15 +79,15 @@ Sales and gross margin by customer, product and rep, read live, with the costs t
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
 ### It makes the entry itself.
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -108,7 +108,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

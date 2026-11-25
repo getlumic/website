@@ -124,7 +124,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -132,7 +132,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
@@ -155,6 +155,7 @@ A managed AP agent from lumic went live about six weeks after the on-site day. C
 The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
 
 - 64 of 67 bills through the agent in week one
+- In production every working day, monitored around the clock
 - Kept running for a monthly fee
 
 ### A finance team run on agents
@@ -170,11 +171,11 @@ Clients are kept private; every figure is from production.
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### An approval queue for every entry.
 
@@ -196,7 +197,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -220,11 +221,11 @@ Putting AI to work inside the systems the business already runs, not buying a ne
 
 ### How long does an AI implementation take?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one.
 
 ### What does it cost?
 
-Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ## Based in St. Louis. Start with a conversation.
 

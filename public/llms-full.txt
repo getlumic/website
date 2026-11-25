@@ -5,8 +5,8 @@
 ## Offers
 - Free consultation. A 20-minute call.
 - On-site work $1,500/day, credited toward phase one. AI consulting, on site: https://get-lumic.com/ai-consulting/
-- Full build-and-run from $2,500–6,000/month. AI implementation: https://get-lumic.com/ai-implementation/
-- Managed agents from $1,000/month. Managed AI: https://get-lumic.com/managed-ai/
+- The build is a separate, one-time cost, scoped after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
+- Managed AI from $250 to $5,000 a month, depending on scope. Managed AI: https://get-lumic.com/managed-ai/
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 ## How lumic keeps it working
@@ -47,8 +47,8 @@
 ## Portfolio
 Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; every figure is from production.
 
-- AP invoice agent (a specialty manufacturer; accounting software + a custom operations database): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
-- A finance team run on agents: at a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with nine live dashboards. A person approves each entry.
+- AP invoice agent (accounting software + the system that holds the POs): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
+- A finance team run on agents: across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with eighteen live dashboards. A person approves each entry.
 
 Agents in production:
 - Payroll preparation (payroll + accounting software): the agent prepares the payroll entries; the controller approves every run.
@@ -70,7 +70,7 @@ Live dashboards in production:
 - Ask your data (AI): plain-English questions over the same live data.
 
 ## Systems
-Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage Intacct, Sage 100, Microsoft Dynamics 365 Business Central, Xero, Acumatica, Bill.com, Ramp, Expensify, ADP, Paychex, Gusto, Salesforce, HubSpot, Microsoft 365 / Outlook, Excel, Power BI, SQL Server, Google Workspace, FileMaker, Shopify.
+Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage Intacct, Sage 100, Microsoft Dynamics 365 Business Central, Xero, Acumatica, Bill.com, Ramp, Expensify, ADP, Paychex, Gusto, Salesforce, HubSpot, Microsoft 365 / Outlook, Excel, Power BI, SQL Server, Google Workspace, Shopify.
 
 Client names stay private.
 
@@ -87,8 +87,7 @@ Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County
 ## Pricing
 - Free consultation.
 - On-site work $1,500/day, credited toward phase one.
-- Managed agents from $1,000/month (one workflow, one system, a person approves every entry, a monthly summary).
-- Full build-and-run from $2,500–6,000/month.
+- Managed AI from $250 to $5,000 a month, depending on scope. Includes night releases, monitoring and the support desk.
 - Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
@@ -106,12 +105,12 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
 - [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))
 - [Month-end close](https://get-lumic.com/services/month-end-close/): the month-end agent: reads the period, prepares recurring entries, runs tie-outs; every entry unposted until the controller posts ([markdown](https://get-lumic.com/services/month-end-close/index.md))
-- [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): nine live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
+- [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
 - [Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/): the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one ([markdown](https://get-lumic.com/services/order-desk-and-customer-service/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
 - [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
 - [Guardrails](https://get-lumic.com/guardrails/): the practices on every agent, as already stated across the site: a person approves every entry, everything logged, access limited to the job, and any agent can be paused or revoked at any time ([markdown](https://get-lumic.com/guardrails/index.md))
-- [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed agents and full build-and-run per month; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
+- [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
 - [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))
 - [Distribution](https://get-lumic.com/industries/distribution/): AI agents for a distributor's back office: cash receipts, collections, margin by customer, multi-company; anonymized live proof ([markdown](https://get-lumic.com/industries/distribution/index.md))
 - [Service firms](https://get-lumic.com/industries/service-firms/): AI agents for a service firm's back office: bills, receipts, collections, payroll, month-end; general process only ([markdown](https://get-lumic.com/industries/service-firms/index.md))
@@ -216,7 +215,7 @@ Agents and dashboards lumic built run every day inside operating companies, on e
 
 Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- A specialty manufacturer · accounting software + a custom operations database
+- Agent · accounting software + the system that holds the POs
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
 
@@ -224,10 +223,10 @@ Every vendor bill was typed in twice, into two systems, about 30 a day. The agen
 
 ### A finance team run on agents
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
 - About 13 agent roles
-- Nine live dashboards
+- Eighteen live dashboards
 
 ### Collections agent
 
@@ -264,7 +263,6 @@ If your team runs it, lumic can work with it.
 - Power BI
 - SQL Server
 - Google Workspace
-- FileMaker
 - Shopify
 
 Client names stay private.
@@ -295,7 +293,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -303,7 +301,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
@@ -315,7 +313,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -343,7 +341,7 @@ The agent enters the work in your systems, the same records a clerk would key. A
 
 ### Live and measured.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated. It runs in production every working day, monitored around the clock.
 
 ### Finance people who code.
 
@@ -357,9 +355,9 @@ Each agent works on its own dedicated computer, wherever fits your business, und
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 lumic builds it, and keeps it working.
 
@@ -384,7 +382,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 [All questions](https://get-lumic.com/faq/)
 
@@ -430,7 +428,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 All questions: https://get-lumic.com/faq/
 
@@ -567,7 +565,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -575,7 +573,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
@@ -598,6 +596,7 @@ A managed AP agent from lumic went live about six weeks after the on-site day. C
 The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
 
 - 64 of 67 bills through the agent in week one
+- In production every working day, monitored around the clock
 - Kept running for a monthly fee
 
 ### A finance team run on agents
@@ -613,11 +612,11 @@ Clients are kept private; every figure is from production.
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### An approval queue for every entry.
 
@@ -639,7 +638,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -663,11 +662,11 @@ Putting AI to work inside the systems the business already runs, not buying a ne
 
 ### How long does an AI implementation take?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one.
 
 ### What does it cost?
 
-Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -692,14 +691,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "Managed AI on retainer: monitored and supported | lumic"
-description: "Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month."
+description: "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/managed-ai/
 last_updated: 2026-11-24
 ---
 
 # Managed AI on retainer: monitored and supported | lumic
 
-> Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month.
+> Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.
 
 Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
 
@@ -749,6 +748,10 @@ It checks each app around the clock and restarts what stops. If the watchdog its
 
 Every lumic dashboard has Send feedback and an Updates page with plain-word release notes.
 
+### In production every working day.
+
+lumic’s agents run in production every working day, monitored around the clock. Night releases roll back by themselves, and every request gets a ticket number.
+
 ### A support desk with ticket numbers.
 
 Every request gets a number and an owner. A ticket closes when the fix is live in your system.
@@ -790,9 +793,7 @@ Pricing
 
 ### The monthly retainer.
 
-Managed agents from $1,000/month.
-
-Full build-and-run from $2,500–6,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -801,8 +802,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 [Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
 
 - At a glance
-- Managed agents Monthly
-- Full build-and-run Monthly
+- Managed AI Monthly, by scope
 - The build One-time, scoped
 
 Questions
@@ -819,7 +819,7 @@ Yes. Any agent can be paused, or its access revoked, at any time.
 
 ### What does the retainer cost?
 
-Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1147,7 +1147,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -1233,7 +1233,7 @@ A managed AP agent from lumic went live about six weeks after the on-site day. I
 
 Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- A specialty manufacturer · accounting software + a custom operations database
+- Agent · accounting software + the system that holds the POs
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
 
@@ -1257,15 +1257,15 @@ Clients are kept private; every figure is from production.
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
 ### It makes the entry itself.
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -1293,7 +1293,7 @@ Questions
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 ### Who approves what the agent does?
 
@@ -1307,7 +1307,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -1391,7 +1391,7 @@ In production
 
 ## Running every day.
 
-These agents and the aging view behind them run every day inside an operating company. Clients are kept private.
+These agents and the aging view behind them run every day inside operating companies. Clients are kept private.
 
 ### Cash receipts
 
@@ -1423,11 +1423,11 @@ Clients are kept private; every figure is from production.
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -1452,7 +1452,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -1566,7 +1566,7 @@ When the controller clicks post, every guard runs again: balanced, active accoun
 - Only on the controller’s click
 - Stops at the first failure
 
-### Never posted twice
+### A duplicate check runs before every write.
 
 Each posted entry is logged with its transaction number, and the source files are fingerprinted. A posted payroll can’t be rebuilt or posted twice.
 
@@ -1588,7 +1588,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -1700,7 +1700,7 @@ The inventory clearing entries, prepared for the controller to review.
 The monthly adjusting entries, built the same way every month.
 
 - Balanced before staging
-- Never entered twice
+- A duplicate check runs before every write.
 
 ### Tie-outs first
 
@@ -1724,7 +1724,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -1790,9 +1790,9 @@ Sales and margin, receivables, purchasing, job costing and consolidated financia
 
 In production
 
-## Nine live dashboards, running every day.
+## Eighteen live dashboards, running every day.
 
-These dashboards run every day inside an operating company, on the same live data the agents work from. Clients are kept private.
+lumic’s dashboards run every day inside operating companies, on the same live data the agents work from. Some of them, below. Clients are kept private.
 
 ### Sales & margin
 
@@ -1911,7 +1911,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -2033,7 +2033,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -2097,7 +2097,7 @@ Portfolio
 
 Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- A specialty manufacturer · accounting software + a custom operations database
+- Agent · accounting software + the system that holds the POs
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
 
@@ -2105,10 +2105,10 @@ Every vendor bill was typed in twice, into two systems, about 30 a day. The agen
 
 ### A finance team run on agents
 
-At a multi-company manufacturer and distributor, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
 - About 13 agent roles
-- Nine live dashboards
+- Eighteen live dashboards
 
 ### Collections agent
 
@@ -2252,14 +2252,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "How lumic works: FDEs, approvals and data security | lumic"
-description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you."
+description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it."
 canonical: https://get-lumic.com/how-lumic-works/
 last_updated: 2026-11-24
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
 
-> lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.
+> lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it.
 
 Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com
 
@@ -2293,7 +2293,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -2301,7 +2301,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
@@ -2350,11 +2350,11 @@ The team watches it, tests it every month, fixes what breaks, and upgrades it as
 
 Approval, access and data
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -2459,7 +2459,7 @@ Source: https://get-lumic.com/guardrails/ | Contact: hello@get-lumic.com
 
 Guardrails On every agent
 
-# Guardrails: nothing posts without you.
+# Guardrails: gated by the people who know the work.
 
 The practices lumic follows on every agent, in one place. A person approves every entry before it posts, every action is logged, and each agent can reach only what its job needs.
 
@@ -2475,7 +2475,7 @@ The agent prepares each entry. A person on your team checks it and approves it b
 
 ### Everything is logged.
 
-Every action an agent takes is logged. A posted payroll entry is logged with its transaction number, and it can’t be posted twice.
+Every action an agent takes is logged. A posted payroll entry is logged with its transaction number. A duplicate check runs before every write.
 
 ### Access is limited to the job.
 
@@ -2538,14 +2538,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "Pricing: custom AI implementation and managed AI | lumic"
-description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes."
+description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
 last_updated: 2026-11-24
 ---
 
 # Pricing: custom AI implementation and managed AI | lumic
 
-> Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.
+> Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes.
 
 Source: https://get-lumic.com/pricing/ | Contact: hello@get-lumic.com
 
@@ -2577,23 +2577,15 @@ On-site work $1,500/day, credited toward phase one.
 - lumic’s FDEs at your place of business
 - Maps the job, the systems and the data
 
-### Managed agents
+### Managed AI
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 [Includes night releases, monitoring and the support desk.](https://get-lumic.com/managed-ai/)
 
-- One workflow
-- One system
-- A person approves every entry
-- A monthly summary
-
-### Full build-and-run
-
-Full build-and-run from $2,500–6,000/month.
-
 - lumic builds the agents and runs them
 - A person approves every entry
+- A monthly summary
 
 What the monthly fee covers
 
@@ -2716,15 +2708,15 @@ Sales and gross margin by customer, product and rep, read live, with the costs t
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
 ### It makes the entry itself.
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -2745,7 +2737,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -2869,11 +2861,11 @@ Plain-English questions over the same live data. It drafts entries for a person 
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -2898,7 +2890,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -3024,11 +3016,11 @@ Revenue, margin and receivables read live from your books, so nobody rebuilds th
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -3053,7 +3045,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -3320,7 +3312,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### What does AI consulting and automation cost?
 
-Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ### Which areas does lumic serve?
 
@@ -3744,11 +3736,11 @@ Clients are kept private; every figure is from production.
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -3770,7 +3762,7 @@ lumic does not sell software to configure yourself. lumic's Forward Deployed Eng
 
 ### What does it cost to start?
 
-Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 Pricing
 
@@ -3778,7 +3770,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -3854,11 +3846,11 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 ### What does it cost?
 
-It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ### Do you work outside St. Louis?
 
@@ -3951,7 +3943,6 @@ Systems lumic works with
 - Power BI
 - SQL Server
 - Google Workspace
-- FileMaker
 - Shopify
 - …and hundreds more.
 
@@ -4011,9 +4002,9 @@ Each agent works on its own dedicated computer, wherever fits your business, und
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 No migration. No new system.
 
@@ -4127,7 +4118,7 @@ Remittances read and keyed as receipts for approval, and collections emails draf
 
 Sales, margin and receivables read live from QuickBooks, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
-Nothing posts without you.
+Gated by the people who know the work.
 
 ### It touches only its job.
 
@@ -4153,7 +4144,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -4275,7 +4266,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -4357,7 +4348,7 @@ The agent works on its own dedicated computer, under its own login, inside the S
 The agent prepares each entry, and a person on your team approves it before anything posts. The final post stays in your hands.
 
 - A person approves each entry
-- Nothing posts without you
+- Gated by the people who know the work
 
 ### Live dashboards on the same data
 
@@ -4382,7 +4373,7 @@ Remittances read and keyed as receipts for approval, and collections emails draf
 
 Sales, margin and receivables read live from Sage 100, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
-Nothing posts without you.
+Gated by the people who know the work.
 
 ### It touches only its job.
 
@@ -4400,7 +4391,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -4526,9 +4517,9 @@ The post stays with you.
 
 The agent prepares the batch and leaves it unposted. A person on your team reviews it and posts it. The final post stays in your hands.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent never posts the batch itself. Flagged bills wait for a person’s approval.
+The agent leaves the batch unposted. Flagged bills wait for a person’s approval.
 
 The AP job on any system: [AP automation](https://get-lumic.com/services/ap-automation/). Every job an agent does with Sage 100: [Sage 100](https://get-lumic.com/systems/sage-100/). Starting prices: [Pricing](https://get-lumic.com/pricing/).
 
@@ -4600,7 +4591,7 @@ The agent works in Sage Intacct under its own login, with access to the records 
 The agent prepares each entry, and a person on your team approves it before anything posts. The final post stays in your hands.
 
 - A person approves each entry
-- Nothing posts without you
+- Gated by the people who know the work
 
 ### Live dashboards on the same data
 
@@ -4625,7 +4616,7 @@ Remittances read and keyed as receipts for approval, and collections emails draf
 
 Sales, margin and receivables read live from Sage Intacct, so nobody exports the same report every morning. [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
-Nothing posts without you.
+Gated by the people who know the work.
 
 ### It touches only its job.
 
@@ -4643,7 +4634,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
@@ -4853,7 +4844,7 @@ On-site work $1,500/day, credited toward phase one.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
 
-Full build-and-run from $2,500–6,000/month.
+Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
 - [AI implementation →](https://get-lumic.com/ai-implementation/)
 
@@ -4861,7 +4852,7 @@ Full build-and-run from $2,500–6,000/month.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
@@ -4947,7 +4938,7 @@ Live dashboards read from the books, so nobody rebuilds the same report every mo
 
 Controls
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
 ### A person approves every entry.
 
@@ -4979,7 +4970,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

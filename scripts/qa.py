@@ -28,6 +28,7 @@ Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure
 import json
 import re
 import sys
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parent))
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -67,7 +68,8 @@ FAMILIES = {"quickbooks": [r"/systems/quickbooks/", r"\bQuickBooks Online\b", r"
 # Pages that carry the general process only (Christian 2026-10-11, 9:33 PM CT): no client proof at all
 NO_PROOF_PATHS = ("/systems/", "/industries/", "/services/payroll/", "/services/month-end-close/")
 # No proof, figure or client description on a /systems/ page (a product must never be tied to a client or a number)
-PROOF = [r"64 of 67", r"six weeks", r"\b13 agent roles\b", r"nine (?:live )?dashboards", r"specialty manufacturer",
+import dashboard_count  # noqa: E402  (scripts/dashboard_count.py, the counted dashboards)
+PROOF = [r"64 of 67", r"six weeks", r"\b13 agent roles\b", rf"\b(?:{'|'.join(dashboard_count.NUMBER_WORDS)}) (?:live )?dashboards", r"specialty manufacturer",
          r"multi-company manufacturer", r"30 a day"]
 # Copy that predates the list and stays as written (the flow chart's source tile; Josh's bio, kept verbatim)
 OUTSIDE_OK = ["Excel and CSV files", "with Power BI and SQL by trade"]
@@ -80,7 +82,10 @@ WE = r"\b(?:we|our|us|ours|we['’]re|we['’]ve|we['’]ll)\b"
 # Size reveals and gap admissions (public wording rules)
 SIZE_REVEAL = [r"\bfirst client\b", r"\bso far\b", r"\bone of us\b", r"\bboth of us\b", r"\bChristian or Josh\b",
                r"\bspeak with a founder\b", r"\bteam of (?:\d+|two|three|four|five|six|seven|eight|nine|ten)\b",
-               r"\bfounder[- ]led\b", r"\bcoming soon\b", r"\bnext\b"]
+               r"\bfounder[- ]led\b", r"\bcoming soon\b", r"\bnext\b",
+               # Christian 2026-11-25: show ability, never size (no client counts, no "first" deployments)
+               r"\b(?:two|both|second|one|single|first|only) clients?\b", r"\bour first\b", r"\bfirst (?:managed|AP|client)\b",
+               r"\bflagship client\b"]
 HOME_OK = ["What happens next"]  # the home contact block's heading (live copy, unchanged); inner pages say "How to start"
 # A service-area business: no street address anywhere on /st-louis/, including the schema
 ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
@@ -89,16 +94,18 @@ ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
 # paths exactly as written, and the CTA must read as approved and go to the booking page.
 CAL = "https://cal.com/lumic/20-minute-call"
 PRICING_CTA = "Book a call to talk real pricing"
-PRICING_BLOCK_LINES = ["On-site work $1,500/day, credited toward phase one.", "Managed agents from $1,000/month.",
+PRICING_BLOCK_LINES = ["On-site work $1,500/day, credited toward phase one.", "Managed AI from $250 to $5,000 a month, depending on scope.",
                        "Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.",
                        "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."]
 PRICING_LINES = {"/": PRICING_BLOCK_LINES, "/services/": PRICING_BLOCK_LINES,
-                 "/pricing/": ["Free consultation.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES,
+                 "/pricing/": ["Free consultation."] + PRICING_BLOCK_LINES,
                  # revamp 2026-11-24: the four offer steps (home, /how-lumic-works/) and the Managed AI page carry their lines too
                  "/how-lumic-works/": ["Free consultation.", "On-site work $1,500/day, credited toward phase one.",
-                                       "Full build-and-run from $2,500–6,000/month.", "Managed agents from $1,000/month."],
-                 "/managed-ai/": ["Managed agents from $1,000/month.", "Full build-and-run from $2,500–6,000/month."] + PRICING_BLOCK_LINES[2:]}
-PRICING_LINES["/"] = PRICING_LINES["/"] + ["Free consultation.", "Full build-and-run from $2,500–6,000/month."]
+                                       "Managed AI from $250 to $5,000 a month, depending on scope."] + PRICING_BLOCK_LINES[2:],
+                 "/managed-ai/": PRICING_BLOCK_LINES[1:]}
+PRICING_LINES["/"] = PRICING_LINES["/"] + ["Free consultation."]
+# Christian 2026-11-25: one monthly range replaced the two monthly lines; neither old line may come back
+OLD_PRICE_LINES = ["Managed agents from $1,000/month", "Full build-and-run from $2,500"]
 # pages that carry the full pricing block (CTA + a link to /pricing/); the others only show their lines
 PRICING_BLOCK_PATHS = ("/", "/services/", "/pricing/", "/managed-ai/")
 # /guardrails/ collects only practices the site already states: no new security or control claims
@@ -207,6 +214,7 @@ def check_phase5(b):
     for path, lines in PRICING_LINES.items():
         text, _ = load(path)
         fails += [f"{path}: pricing line missing or reworded: {l!r}" for l in lines if l not in text]
+        fails += [f"{path}: retired pricing line {l!r}" for l in OLD_PRICE_LINES if l in text]
         if path not in PRICING_BLOCK_PATHS:
             continue
         ctas = pg.evaluate(f"[...document.querySelectorAll('a')].filter(a => a.textContent.trim() === {json.dumps(PRICING_CTA)}).map(a => a.href)")

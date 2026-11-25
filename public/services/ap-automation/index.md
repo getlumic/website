@@ -47,7 +47,7 @@ A managed AP agent from lumic went live about six weeks after the on-site day. I
 
 Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- A specialty manufacturer · accounting software + a custom operations database
+- Agent · accounting software + the system that holds the POs
 - 64 of 67 bills through the agent in week one
 - Kept running for a monthly fee
 
@@ -71,15 +71,15 @@ Clients are kept private; every figure is from production.
 
 Approval and access
 
-## Nothing posts without you.
+## Gated by the people who know the work.
 
 ### It makes the entry itself.
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
-### Nothing posts without you.
+### Gated by the people who know the work.
 
-The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
 
 ### It touches only its job.
 
@@ -107,7 +107,7 @@ Questions
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
 
 ### Who approves what the agent does?
 
@@ -121,7 +121,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

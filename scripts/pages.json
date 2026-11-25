@@ -151,12 +151,12 @@
         },
         {
           "q": "How long does an AI implementation take?",
-          "a": "Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one."
+          "a": "Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one."
         },
         {
           "q": "What does it cost?",
-          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
-          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500&ndash;6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },
@@ -166,7 +166,7 @@
       "crumb": "Managed AI",
       "purpose": "managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what kept working means: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk",
       "title": "Managed AI on retainer: monitored and supported | lumic",
-      "description": "Night releases that roll back on a failure, a watchdog on every app, a ticketed support desk and monthly tests. Managed agents from $1,000/month.",
+      "description": "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.",
       "type": "WebPage",
       "films": [],
       "h1": "Managed AI: lumic keeps it working.",
@@ -181,8 +181,8 @@
         },
         {
           "q": "What does the retainer cost?",
-          "a": "Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
-          "html": "Managed agents from $1,000/month. Full build-and-run from $2,500&ndash;6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+          "a": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
+          "html": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },
@@ -289,7 +289,7 @@
         "label": "Services",
         "href": "/services/"
       },
-      "purpose": "nine live dashboards read from the ERP; dashboards only read; the dashboard films",
+      "purpose": "live dashboards read from the ERP; dashboards only read; the dashboard films",
       "title": "Live ERP dashboards and reporting | lumic",
       "description": "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them.",
       "type": "WebPage",
@@ -336,7 +336,7 @@
       "crumb": "How lumic works",
       "purpose": "the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership",
       "title": "How lumic works: FDEs, approvals and data security | lumic",
-      "description": "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you.",
+      "description": "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it.",
       "type": "AboutPage",
       "films": []
     },
@@ -349,15 +349,15 @@
       "description": "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent.",
       "type": "WebPage",
       "films": [],
-      "h1": "Guardrails: nothing posts without you."
+      "h1": "Guardrails: gated by the people who know the work."
     },
     {
       "id": "pricing",
       "path": "/pricing/",
       "crumb": "Pricing",
-      "purpose": "starting prices: free consultation, on-site day rate, managed agents and full build-and-run per month; starting points, not quotes",
+      "purpose": "starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope; starting points, not quotes",
       "title": "Pricing: custom AI implementation and managed AI | lumic",
-      "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.",
+      "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes.",
       "type": "WebPage",
       "films": [],
       "h1": "Pricing, in plain numbers."
@@ -439,8 +439,8 @@
         },
         {
           "q": "What does AI consulting and automation cost?",
-          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500–6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
-          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Full build-and-run from $2,500&ndash;6,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
         },
         {
           "q": "Which areas does lumic serve?",
@@ -523,8 +523,8 @@
         },
         {
           "q": "What does it cost to start?",
-          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
-          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },
@@ -697,13 +697,13 @@
     },
     {
       "q": "How long does it take to go live?",
-      "a": "Weeks, not quarters. A recent managed AP agent went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.",
+      "a": "Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.",
       "home": true
     },
     {
       "q": "What does it cost?",
-      "a": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500–6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
-      "html": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed agents from $1,000/month; full build-and-run from $2,500&ndash;6,000/month. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+      "a": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
+      "html": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
     },
     {
       "q": "Do you work outside St. Louis?",

@@ -69,7 +69,7 @@ When the controller clicks post, every guard runs again: balanced, active accoun
 - Only on the controller’s click
 - Stops at the first failure
 
-### Never posted twice
+### A duplicate check runs before every write.
 
 Each posted entry is logged with its transaction number, and the source files are fingerprinted. A posted payroll can’t be rebuilt or posted twice.
 
@@ -91,7 +91,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 

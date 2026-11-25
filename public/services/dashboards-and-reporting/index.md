@@ -21,9 +21,9 @@ Sales and margin, receivables, purchasing, job costing and consolidated financia
 
 In production
 
-## Nine live dashboards, running every day.
+## Eighteen live dashboards, running every day.
 
-These dashboards run every day inside an operating company, on the same live data the agents work from. Clients are kept private.
+lumic’s dashboards run every day inside operating companies, on the same live data the agents work from. Some of them, below. Clients are kept private.
 
 ### Sales & margin
 
@@ -142,7 +142,7 @@ Pricing
 
 On-site work $1,500/day, credited toward phase one.
 
-Managed agents from $1,000/month.
+Managed AI from $250 to $5,000 a month, depending on scope.
 
 Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
 
