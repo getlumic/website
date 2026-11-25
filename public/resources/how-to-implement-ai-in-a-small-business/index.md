@@ -1,11 +1,11 @@
 ---
-title: "How to implement AI in a small business: a step-by-step guide | lumic"
+title: "How to implement AI in a small business | lumic"
 description: "A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working."
 canonical: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/
 last_updated: 2026-11-24
 ---
 
-# How to implement AI in a small business: a step-by-step guide | lumic
+# How to implement AI in a small business | lumic
 
 > A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working.
 
