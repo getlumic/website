@@ -592,7 +592,7 @@ section:has(+ .related-s){padding-bottom:clamp(56px,6vw,80px) !important}
 @media (max-width:620px){
   .calc-set{grid-template-columns:minmax(0,1fr);gap:16px}
   /* phones: a focused field and its note scroll clear of the summary bar and the header */
-  html{scroll-padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  html:has(.calc-f){scroll-padding-bottom:calc(64px + env(safe-area-inset-bottom))}
   .calc-f{scroll-margin-bottom:72px;scroll-margin-top:110px}
   /* phones: the result stays in sight while the five fields are edited */
   .calc-peek:not([hidden]){display:block;position:sticky;bottom:0;z-index:2;margin:16px -12px 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
