@@ -1,13 +1,29 @@
 # lumic
 
-> lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
+> lumic is a custom AI implementation firm based in St. Louis, Missouri, that works with businesses nationwide. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
-## How an engagement runs, and what it costs
-- Free consultation. A 20-minute call.
-- On-site work $1,500/day, credited toward phase one. AI consulting, on site: https://get-lumic.com/ai-consulting/
-- The build is a separate, one-time cost, priced in the written proposal after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
-- Managed AI from $250 to $5,000 a month, depending on scope. Managed AI: https://get-lumic.com/managed-ai/
-- Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+Updated: 2026-11-25
+
+Not to be confused with lumic.ai, Lumiq, Lumicera, Lumico, getlumic.com or lumic.fr.
+
+Profiles: https://www.linkedin.com/company/get-lumic | https://clutch.co/profile/lumic
+
+## lumic at a glance
+- What it is: A custom AI implementation firm. Its Forward Deployed Engineers (FDEs) build AI into the processes and systems a business already runs, then keep it working on a monthly retainer.
+- Where: Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.
+- Who it is for: Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms.
+- What it builds: AI agents, automations and live dashboards for the order desk, email, vendor bills, cash receipts, payroll entries, month-end and reporting.
+- How it is controlled: A person approves what matters before anything posts, and every action is logged.
+- Systems: lumic works with the ERP, accounting, email and spreadsheet tools a team already uses. https://get-lumic.com/systems/
+- Pricing: Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.
+- How to start: A 20-minute call, an on-site day, then a written proposal. hello@get-lumic.com
+
+## How an engagement runs
+- A 20-minute call.
+- An on-site day beside the team. AI consulting, on site: https://get-lumic.com/ai-consulting/
+- The build, priced in the written proposal after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
+- Managed AI on a monthly retainer. Managed AI: https://get-lumic.com/managed-ai/
+- The prices are in "lumic at a glance" above and at https://get-lumic.com/pricing/
 
 ## How lumic keeps it working
 - Releases at night, checked by morning: changes ship after hours; before the day starts, every app is restarted and checked, and one that fails its check rolls back to the last good version by itself.
@@ -82,14 +98,11 @@ lumic's leadership includes a controller and a CFP®, based in St. Louis. They h
 - Joshua Wittenauer, CFP®, co-founder. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's AI-agent work and how each agent handles your data.
 - Every engagement is led by a senior FDE, on site.
 
-## Area served
-Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
+## On-site area
+On site in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
 
-## Pricing
-- Free consultation.
-- On-site work $1,500/day, credited toward phase one.
-- Managed AI from $250 to $5,000 a month, depending on scope. Includes night releases, monitoring and the support desk.
-- Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
+## Pricing details
+- The monthly fee: Includes monitoring, monthly tests, fixes, upgrades as tools improve, releases at night, the support desk, the AI usage the agents need, a monthly summary of its work and human approval.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
 
@@ -99,7 +112,7 @@ A 20-minute call, then an on-site day beside the team, then a written proposal w
 ## Pages
 - [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
 - [AI implementation](https://get-lumic.com/ai-implementation/): custom AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices; any process, any system: math checks, API or screen, two systems in one job, beyond the books, the action log ([markdown](https://get-lumic.com/ai-implementation/index.md))
-- [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what kept working means: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk ([markdown](https://get-lumic.com/managed-ai/index.md))
+- [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what upkeep covers: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk ([markdown](https://get-lumic.com/managed-ai/index.md))
 - [AI consulting](https://get-lumic.com/ai-consulting/): AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page ([markdown](https://get-lumic.com/ai-consulting/index.md))
 - [AI agent skills](https://get-lumic.com/ai-agent-skills/): AI agent skills: a lumic job packaged for the AI assistant a team already uses (the written procedure, the tools when the job needs them, the approval steps, one file for the business, bundled as a plugin); the jobs lumic packages; a setup fee then a monthly fee; or lumic runs it ([markdown](https://get-lumic.com/ai-agent-skills/index.md))
 - [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, how lumic builds and runs each agent, links to AI implementation and Managed AI; beyond the books ([markdown](https://get-lumic.com/services/index.md))
@@ -119,7 +132,7 @@ A 20-minute call, then an on-site day beside the team, then a written proposal w
 - [St. Louis](https://get-lumic.com/st-louis/): on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served ([markdown](https://get-lumic.com/st-louis/index.md))
 - [AI consulting](https://get-lumic.com/st-louis/ai-consulting/): AI consulting and automation in St. Louis: on-site FDEs, the five back-office jobs, how an engagement runs, starting prices ([markdown](https://get-lumic.com/st-louis/ai-consulting/index.md))
 - [Metro East](https://get-lumic.com/st-louis/metro-east/): AI automation on site for Metro East businesses: Madison and St. Clair counties, Illinois; the five back-office jobs; proof; on-site day rate ([markdown](https://get-lumic.com/st-louis/metro-east/index.md))
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/): what a forward-deployed engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant ([markdown](https://get-lumic.com/forward-deployed-engineers/index.md))
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/): what a Forward Deployed Engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant ([markdown](https://get-lumic.com/forward-deployed-engineers/index.md))
 - [Small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/): Forward Deployed Engineers (FDEs) for small and mid-size businesses: what an FDE is, why instead of a hire or a software license, one job at a time, proof, starting prices, approval ([markdown](https://get-lumic.com/forward-deployed-engineers/small-business/index.md))
 - [FAQ](https://get-lumic.com/faq/): common questions: FDEs, where the agent runs, access, approvals, time to go live, cost, area ([markdown](https://get-lumic.com/faq/index.md))
 - [Systems](https://get-lumic.com/systems/): the systems lumic works with; how an agent works inside a system; links to each systems page; with an API or without one ([markdown](https://get-lumic.com/systems/index.md))
@@ -131,5 +144,6 @@ A 20-minute call, then an on-site day beside the team, then a written proposal w
 - [Month-end red flags](https://get-lumic.com/resources/month-end-red-flags/): the free checklist: ten month-end red flags service firms usually miss; PDF download ([markdown](https://get-lumic.com/resources/month-end-red-flags/index.md))
 - [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/): a guide: how to implement AI in a small business, step by step: pick one job, map it, build inside the systems, put a person on approval, keep it working ([markdown](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/index.md))
 - [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/): a guide: what an AI agent for accounting does, which accounting jobs fit, how approval and access work, and how to start ([markdown](https://get-lumic.com/resources/ai-agent-for-accounting/index.md))
+- [How to choose an AI implementation partner](https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/): a buyer's checklist for choosing an AI implementation partner: on site or remote, builds inside your systems or sells a license, who approves before anything posts, what monthly upkeep covers, whether prices are published, how the work is kept running, who owns what was built, what the written proposal should say; why on site matters in St. Louis ([markdown](https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/index.md))
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)

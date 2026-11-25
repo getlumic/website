@@ -98,15 +98,19 @@ It is the same job either way. lumic runs it on a dedicated computer and keeps i
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
-## Before you book.
+## AP automation, in plain answers.
 
 ### How long does it take to go live?
 
 Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
-### Who approves what the agent does?
+### Who approves each bill?
 
 A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
+
+### Which systems does the AP agent work with?
+
+The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs. The list: [Systems lumic works with](https://get-lumic.com/systems/).
 
 ### Free consultation.
 

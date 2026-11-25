@@ -17,6 +17,24 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 [Book a call](https://cal.com/lumic/20-minute-call) The four steps
 
+## lumic at a glance.
+
+Where
+
+Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.
+
+Who it is for
+
+Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms.
+
+Systems
+
+lumic works with the ERP, accounting, email and spreadsheet tools a team already uses: [Systems lumic works with](https://get-lumic.com/systems/).
+
+Pricing
+
+Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.
+
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### Free consultation.
@@ -29,23 +47,17 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
-On-site work $1,500/day, credited toward phase one.
-
 - [AI consulting](https://get-lumic.com/ai-consulting/)
 
 ### Build.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
-Priced in the written proposal.
-
 - [AI implementation](https://get-lumic.com/ai-implementation/)
 
 ### Managed AI.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
-
-Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
 
@@ -112,7 +124,7 @@ Every engagement is run by FDEs with finance training, backed by a bench of agen
 
 Most FDE teams are engineers who learn finance on the job. lumic’s team knows the work: it has done these back-office jobs by hand, then built the agents that do them.
 
-### Is lumic the right fit?
+### Where lumic fits, and where it does not.
 
 lumic fits a business with people doing repetitive work by hand, that wants it done inside the systems the team already uses, with a person approving what matters. lumic may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
 
@@ -143,7 +155,7 @@ Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Le
 - [Portfolio](https://get-lumic.com/portfolio/)
 - [Guardrails](https://get-lumic.com/guardrails/)
 - [Pricing](https://get-lumic.com/pricing/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 
 ## Based in St. Louis. Start with a conversation.
 

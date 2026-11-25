@@ -81,7 +81,7 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [AI implementation](https://get-lumic.com/ai-implementation/)
 - [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/)
-- [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/)
+- [How to choose an AI implementation partner](https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/)
 - [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.

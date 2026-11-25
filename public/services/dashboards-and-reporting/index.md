@@ -137,6 +137,16 @@ lumic builds it, and keeps it working.
 - Stale spreadsheets nobody trusts → One live set of data
 - Build-and-ghost consultants → A team that stays on
 
+## Dashboards, in plain answers.
+
+### Can a dashboard change the data?
+
+No. Dashboards only read; they cannot post, edit or delete a record. Any change is an entry an agent prepares and a person approves.
+
+### Which systems do the dashboards read?
+
+The ERP or accounting software your team already runs, and the spreadsheets and other data around it. The list: [Systems lumic works with](https://get-lumic.com/systems/).
+
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.

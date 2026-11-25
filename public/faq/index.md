@@ -45,7 +45,7 @@ It depends on the job. The consultation is free, and on-site work is $1,500/day,
 
 ### Do you work outside St. Louis?
 
-Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
+Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit.
 
 ### Does lumic sell software?
 

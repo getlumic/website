@@ -13,7 +13,7 @@ Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 
 # Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 
-lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
+lumic is an AI implementation firm in St. Louis. Its Forward Deployed Engineers have finance backgrounds. They work beside your team at your place of business, build custom AI into one job at a time, and keep it working. The team travels for the right fit.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Area served
 
@@ -70,15 +70,15 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
 
-## Local, and live in production.
+## St. Louis, in plain answers.
 
-### Do you work outside St. Louis?
+### Does lumic work outside St. Louis?
 
-Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
+Yes. lumic is based in St. Louis and works with businesses across the United States. On-site days happen in person in Greater St. Louis; elsewhere the team works remotely and travels for the right fit.
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer: an engineer who comes to you, learns how the work is really done, and builds AI inside your own systems.
 
 See the work, then meet the team.
 
@@ -87,7 +87,7 @@ Watch the AP agent read, match and enter a vendor bill on the [AP automation](ht
 ## Related
 
 - [AI consulting in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 - [Services](https://get-lumic.com/services/)
 - [Pricing](https://get-lumic.com/pricing/)
 

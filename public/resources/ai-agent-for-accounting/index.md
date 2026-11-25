@@ -94,8 +94,8 @@ Final pricing depends on your workflow and systems. These figures are starting p
 ## Related
 
 - [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/)
+- [How to choose an AI implementation partner](https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/)
 - [AI implementation](https://get-lumic.com/ai-implementation/)
-- [Month-end close](https://get-lumic.com/services/month-end-close/)
 - [AP automation](https://get-lumic.com/services/ap-automation/)
 
 ## Based in St. Louis. Start with a conversation.

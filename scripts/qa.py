@@ -22,6 +22,12 @@ real pricing" button; each page with an "h1" in pages.json shows it; a page's FA
 shows; /guardrails/ adds no new security claim; no JSON-LD carries a fixed price (minPrice only); the four new pages sit
 in the footer and /st-louis/ links both of its children; /privacy/ is third person and names what the checklist stores.
 
+GEO round (2026-11-25): home's Organization is also a ProfessionalService with the disambiguation line and its profiles;
+llms.txt and llms-full.txt open with "lumic at a glance", the Updated date and the not-to-be-confused line; every WebPage's
+dateModified equals its sitemap lastmod; each shown FAQ answer matches its FAQPage text; guides carry Article markup; no FAQ answer
+repeats 8 words of its page and no question sits on 3 or more pages (home and /faq/ count as one); /how-lumic-works/ shows
+its prices only in the at-a-glance block; the partner guide is 600 to 900 words and names lumic once.
+
 Usage: python scripts/qa.py [base_url]      default http://localhost:8766  (serve public/, not the repo root)
 Needs: playwright (uses the installed Google Chrome). Exit code 1 on any failure.
 """
@@ -108,7 +114,7 @@ STEP_PRICE_LINES = ["Free consultation.", "On-site work $1,500/day, credited tow
 PRICING_LINES = {"/": STEP_PRICE_LINES, "/services/": PRICING_BLOCK_LINES,
                  "/pricing/": ["Free consultation."] + PRICING_BLOCK_LINES,
                  # revamp 2026-11-24: the four offer steps (home, /how-lumic-works/) and the Managed AI page carry their lines too
-                 "/how-lumic-works/": STEP_PRICE_LINES, "/ai-implementation/": STEP_PRICE_LINES, "/st-louis/": STEP_PRICE_LINES,
+                 "/how-lumic-works/": STEP_PRICE_LINES,  # GEO round: shown in its at-a-glance block (the steps there carry no price) "/ai-implementation/": STEP_PRICE_LINES, "/st-louis/": STEP_PRICE_LINES,
                  "/managed-ai/": PRICING_BLOCK_LINES[1:]}
 # Christian 2026-11-25: one monthly range replaced the two monthly lines; neither old line may come back
 OLD_PRICE_LINES = ["Managed agents from $1,000/month", "Full build-and-run from $2,500"]
@@ -129,6 +135,31 @@ STEP_LINKS = [CAL, "/ai-consulting/", "/ai-implementation/", "/managed-ai/"]
 FIXED_PRICE_KEYS = ("price",)
 OPEN_DETAILS_TEXT = """(() => { const c = [...document.querySelectorAll('details:not([open])')]; c.forEach(d => { d.open = true; });
     const t = document.body.innerText; c.forEach(d => { d.open = false; }); return t; })()"""
+
+
+# GEO round (2026-11-25): the entity schema on home, and llms.txt's generated top
+ORG_DISAMBIG = ("lumic (get-lumic.com) is an AI implementation firm based in St. Louis that works with businesses across the "
+                "United States. It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.")
+# Based in St. Louis, works with businesses anywhere in the United States (the owner, 2026-11-25)
+GLANCE_WHERE = ("Based in St. Louis, Missouri. lumic works with businesses across the United States: on site across Greater St. "
+                "Louis, including the Metro East in Illinois, and remotely or by travel everywhere else.")
+LLMS_LEAD = "lumic is a custom AI implementation firm based in St. Louis, Missouri, that works with businesses nationwide."
+ORG_SAMEAS = ["https://www.linkedin.com/company/get-lumic", "https://clutch.co/profile/lumic"]
+# The Manifest profile is left out until its text is corrected (it states a size, a founding year and a different category)
+ORG_SAMEAS_NOT = ["themanifest.com"]
+LLMS_LINES = ["Not to be confused with lumic.ai, Lumiq, Lumicera, Lumico, getlumic.com or lumic.fr.",
+              "https://clutch.co/profile/lumic", "https://www.linkedin.com/company/get-lumic"]
+GLANCE_PRICE_LINES = ["Free consultation.", "On-site work $1,500/day, credited toward phase one.",
+                      "The build is a separate, one-time cost, priced in the written proposal.",
+                      "Managed AI from $250 to $5,000 a month, depending on scope."]
+# Guides (pages.json ids starting "guide-"): an Article by the lumic Organization, a shown FAQ with its FAQPage. The partner
+# guide is a buyer's checklist: 600 to 900 words of its own copy, lumic named once (the contact block and Related excluded).
+GUIDE_PARTNER = "/resources/how-to-choose-an-ai-implementation-partner/"
+
+
+def types_of(g):
+    t = g.get("@type")
+    return t if isinstance(t, list) else [t]
 
 
 def fetch(url, method="GET"):
@@ -290,8 +321,133 @@ def check_phase5(b):
     return fails
 
 
+def check_geo(b):
+    """GEO round (2026-11-25): llms.txt's generated top, the at-a-glance block (prices in one place on /how-lumic-works/),
+    a build-stamped dateModified on every WebPage that equals its sitemap lastmod, each shown FAQ answer matching its
+    FAQPage text, the guides' Article markup, and the partner guide's length and single brand mention."""
+    fails = []
+    for name in ("llms.txt", "llms-full.txt"):
+        t = fetch(BASE + "/" + name)[1]
+        h2 = re.findall(r"^## (.+)$", t, re.M)
+        if not t.startswith("# lumic\n") or not h2 or h2[0] != "lumic at a glance":
+            fails.append(f"/{name}: 'lumic at a glance' is not the first section (first: {h2[:1]})")
+        if not re.search(r"^Updated: \d{4}-\d\d-\d\d$", t, re.M):
+            fails.append(f"/{name}: no 'Updated: <date>' line")
+        fails += [f"/{name}: missing {l!r}" for l in LLMS_LINES + GLANCE_PRICE_LINES + ["- Where: " + GLANCE_WHERE, "> " + LLMS_LEAD] if l not in t]
+        if re.search(r"what kept working means", t, re.I):
+            fails.append(f"/{name}: leftover 'what kept working means'")
+    sm = fetch(BASE + "/sitemap.xml")[1]
+    lastmods = dict(re.findall(r"<loc>(.*?)</loc>\s*<lastmod>(.*?)</lastmod>", sm))
+    pg = b.new_page(viewport={"width": 1440, "height": 900})
+    for p in CFG["pages"]:
+        url = SITE + p["path"]
+        html = fetch(BASE + p["path"])[1]
+        nodes = [g for blk in ld_blocks(html) if isinstance(blk, dict) for g in blk.get("@graph", [])]
+        wp = [g for g in nodes if g.get("@id") == url + "#webpage"]
+        if not wp or wp[0].get("dateModified") != lastmods.get(url):
+            fails.append(f"{p['path']}: WebPage dateModified {wp and wp[0].get('dateModified')!r} is not the sitemap lastmod {lastmods.get(url)!r}")
+        if not (p.get("faq") or p["id"].startswith("guide-") or p["id"] == "how-lumic-works"):
+            continue
+        pg.goto(BASE + p["path"], wait_until="domcontentloaded")
+        shown = pg.evaluate("[...document.querySelectorAll('#faq .wl li')].map(li => [li.querySelector('h3').textContent, li.querySelector('p').textContent])")
+        ld = [(q["name"], q["acceptedAnswer"]["text"]) for g in nodes if g.get("@type") == "FAQPage" for q in g["mainEntity"]]
+        if p.get("faq"):
+            if len(shown) != len(ld):
+                fails.append(f"{p['path']}: {len(shown)} questions shown, {len(ld)} in FAQPage")
+            for (sq, sa), (lq, la) in zip(shown, ld):
+                if norm(sq) != norm(lq) or not norm(sa).startswith(norm(la)):
+                    fails.append(f"{p['path']}: shown answer to {norm(sq)!r} does not match its FAQPage text")
+        if p["id"].startswith("guide-"):
+            arts = [g for g in nodes if g.get("@type") == "Article"]
+            if not arts or arts[0].get("author") != {"@id": SITE + "/#org"} or arts[0].get("publisher") != {"@id": SITE + "/#org"}:
+                fails.append(f"{p['path']}: no Article with author and publisher = the lumic Organization")
+            if arts and arts[0].get("dateModified") != lastmods.get(url):
+                fails.append(f"{p['path']}: Article dateModified is not the sitemap lastmod")
+        if p["id"] == "how-lumic-works":
+            glance = norm(pg.evaluate("(e => e ? e.innerText : '')(document.getElementById('glance'))"))
+            fails += [f"{p['path']}: the at-a-glance block lacks {l!r}" for l in GLANCE_PRICE_LINES if l not in glance]
+            rest = pg.evaluate("""(() => { const g = document.getElementById('glance'); g.style.display = 'none';
+                const t = document.querySelector('main').innerText; g.style.display = ''; return t; })()""")
+            if "$" in rest:
+                fails.append(f"{p['path']}: a price outside the at-a-glance block (a page shows prices in one place)")
+        if p["path"] == GUIDE_PARTNER:
+            if len(p["title"]) > 60:
+                fails.append(f"{GUIDE_PARTNER}: title is {len(p['title'])} characters (60 or fewer)")
+            own = pg.evaluate("""(() => { const m = document.querySelector('main').cloneNode(true);
+                m.querySelectorAll('#contact, .related-s, .crumbs, .cta').forEach(e => e.remove()); return m.textContent; })()""")
+            words = len(re.findall(r"[A-Za-z0-9$]\S*", own))
+            if not 600 <= words <= 900:
+                fails.append(f"{GUIDE_PARTNER}: {words} words of guide copy (want 600 to 900)")
+            n = len(re.findall(r"\blumic\b", own, re.I))
+            if n != 1:
+                fails.append(f"{GUIDE_PARTNER}: lumic named {n} times in the guide copy (want once, near the end)")
+    pg.close()
+    return fails
+
+
+# FAQ content rules (review of the GEO round, 2026-11-25): an answer must add a fact its page does not already state, and a
+# question is not boilerplate across the site.
+FAQ_RUN = 8  # (a) an answer may not share 8 or more consecutive words with the rest of its page's visible text
+FAQ_RUN_EXEMPT = PRICING_BLOCK_LINES + ["Free consultation.", "The build is a separate, one-time cost, priced in the written proposal.",
+                                        "Weeks, not quarters."]
+FAQ_MAX_PAGES = 3  # (b) the same question text may not appear on 3 or more pages
+# Home shows a subset of the /faq/ list, from the same pages.json "faq" entries: the two count as one source for (b).
+# Older pages these rules caught, kept as they are until the partners pick the fix (listed in the GEO review report):
+# Each needs a new fact from the partners, not a one-line edit. Rule (b) caught nothing that a one-line rename did not fix.
+FAQ_RUN_EXEMPT_PAGES = {
+    "/": {"What is an FDE?", "Who approves what the agent does?"},
+    "/ai-implementation/": {"What does AI implementation mean for a small business?"},
+    "/managed-ai/": {"What is a managed AI agent?", "Can an agent be paused?"},
+    "/ai-consulting/": {"How is lumic different from an AI consultant?", "What comes out of the on-site day?"},
+    "/ai-agent-skills/": {"What is a packaged AI job?", "What does it cost?"},
+    "/services/order-desk-and-customer-service/": {"Does the agent send replies to customers on its own?"},
+    "/forward-deployed-engineers/": {"What is a Forward Deployed Engineer?", "How is an FDE different from a consultant?",
+                                     "Where are lumic’s FDEs based?", "How does an engagement start?"},
+    "/forward-deployed-engineers/small-business/": {"How is an FDE different from a hire or a software license?"},
+    "/systems/sage-100/ap-automation/": {"Can AI work with Sage 100?"},
+}
+FAQ_REPEAT_EXEMPT = set()
+
+
+def words(t):
+    return re.findall(r"[a-z0-9$%]+(?:[',./-][a-z0-9$%]+)*", norm(t).lower().replace("’", "'"))
+
+
+def check_faq_rules(b):
+    fails, seen = [], {}
+    pg = b.new_page(viewport={"width": 1440, "height": 900})
+    for path in ["/"] + [p["path"] for p in CFG["pages"]]:
+        html = fetch(BASE + path)[1]
+        qs = [(q["name"], q["acceptedAnswer"]["text"]) for blk in ld_blocks(html) if isinstance(blk, dict)
+              for g in blk.get("@graph", []) if g.get("@type") == "FAQPage" for q in g["mainEntity"]]
+        if not qs:
+            continue
+        src = "/faq/" if path in ("/", "/faq/") else path
+        for q, _ in qs:
+            seen.setdefault(norm(q), set()).add(src)
+        pg.goto(BASE + path, wait_until="domcontentloaded")
+        rest = pg.evaluate("""(() => { const m = document.querySelector('main').cloneNode(true);
+            m.querySelectorAll('#faq').forEach(e => e.remove()); return m.textContent; })()""")
+        w = words(rest)
+        grams = {tuple(w[i:i + FAQ_RUN]) for i in range(len(w) - FAQ_RUN + 1)}
+        for q, a in qs:
+            if q in FAQ_RUN_EXEMPT_PAGES.get(path, ()):
+                continue
+            for x in FAQ_RUN_EXEMPT:
+                a = a.replace(x, " ")
+            aw = words(a)
+            hit = next((" ".join(aw[i:i + FAQ_RUN]) for i in range(len(aw) - FAQ_RUN + 1) if tuple(aw[i:i + FAQ_RUN]) in grams), None)
+            if hit:
+                fails.append(f"{path}: the answer to {q!r} repeats the page ({hit!r}); an answer must add a fact")
+    pg.close()
+    for q, where in sorted(seen.items()):
+        if len(where) >= FAQ_MAX_PAGES and q not in FAQ_REPEAT_EXEMPT:
+            fails.append(f"FAQ question {q!r} on {len(where)} pages {sorted(where)} (at most {FAQ_MAX_PAGES - 1})")
+    return fails
+
+
 def check_pages(b):
-    fails = check_phase5(b)
+    fails = check_phase5(b) + check_geo(b) + check_faq_rules(b)
     local = re.match(r"https?://(127\.0\.0\.1|localhost)", BASE) is not None
     # home: JSON-LD parses, voice and size rules, and its FAQPage covers exactly the questions it shows
     st, home = fetch(BASE + "/")
@@ -309,9 +465,27 @@ def check_pages(b):
     foot = pg.evaluate("document.querySelector('footer').innerText")
     if TAGLINE not in foot:
         fails.append(f"home: the tagline {TAGLINE!r} is not in the footer")
-    orgs = [g for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", []) if g.get("@type") == "Organization"]
+    orgs = [g for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", []) if "Organization" in types_of(g)]
     if not orgs or orgs[0].get("slogan") != TAGLINE:
         fails.append("home: Organization slogan is not the tagline")
+    # entity schema (GEO round 2026-11-25): Organization + ProfessionalService, the disambiguation line, the profiles
+    if orgs:
+        o = orgs[0]
+        if types_of(o) != ["Organization", "ProfessionalService"]:
+            fails.append(f"home: Organization @type {o.get('@type')!r}, want ['Organization', 'ProfessionalService']")
+        if o.get("disambiguatingDescription") != ORG_DISAMBIG:
+            fails.append(f"home: Organization disambiguatingDescription {o.get('disambiguatingDescription')!r}")
+        fails += [f"home: Organization sameAs lacks {u}" for u in ORG_SAMEAS if u not in o.get("sameAs", [])]
+        fails += [f"home: Organization sameAs carries {u}" for u in o.get("sameAs", []) if any(x in u for x in ORG_SAMEAS_NOT)]
+        fails += [f"home: Organization lacks {k}" for k in ("knowsAbout", "areaServed") if not o.get(k)]
+        if {"@type": "Country", "name": "United States"} not in (o.get("areaServed") or []):
+            fails.append("home: Organization areaServed does not include the United States")
+        if not o.get("description", "").startswith(LLMS_LEAD):
+            fails.append("home: Organization description does not open with the nationwide line")
+        fails += [f"home: Organization carries {k} (no street address, no fixed price range)" for k in ("priceRange",) if k in o]
+    if not any(g.get("@id") == SITE + "/#webpage" and re.fullmatch(r"\d{4}-\d\d-\d\d", g.get("dateModified", ""))
+               for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", [])):
+        fails.append("home: no WebPage node with a build-stamped dateModified")
     if [n["label"] for n in CFG["nav"]] != NAV_LABELS:
         fails.append(f"pages.json nav {[n['label'] for n in CFG['nav']]}, want {NAV_LABELS}")
     navl = pg.evaluate("[...document.querySelectorAll('header.nav nav li a')].map(a => a.textContent.trim())")

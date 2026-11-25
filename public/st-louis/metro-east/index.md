@@ -13,7 +13,7 @@ Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.co
 
 # AI automation for Metro East businesses, on site.
 
-lumic’s Forward Deployed Engineers (FDEs) are based in St. Louis and spend in-person days with businesses across Madison County and St. Clair County, on the Illinois side of Greater St. Louis. They build back-office AI agents inside the systems you already run and keep them working. A person on your team approves every entry before it posts.
+lumic builds custom AI for Metro East businesses, on site in Madison and St. Clair counties, Illinois. Its Forward Deployed Engineers (FDEs) are based in St. Louis. They build back-office AI agents inside the systems you already run and keep them working. A person on your team approves every entry before it posts.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Where lumic works
 
@@ -113,12 +113,22 @@ lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You ru
 
 On-site work $1,500/day, credited toward phase one.
 
+## The Metro East, in plain answers.
+
+### Which Metro East towns does lumic serve?
+
+Belleville, Edwardsville, Collinsville, O’Fallon and Alton, among others. These are places lumic serves, not office locations; lumic is based in St. Louis.
+
+### Is the on-site day the same in Illinois?
+
+Yes. The on-site day, its rate and the written proposal after it are the same on the Illinois side of the river as in Missouri.
+
 ## Related
 
 - [Pricing](https://get-lumic.com/pricing/)
 - [How lumic works](https://get-lumic.com/how-lumic-works/)
 - [Guardrails](https://get-lumic.com/guardrails/)
-- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Forward Deployed Engineers](https://get-lumic.com/forward-deployed-engineers/)
 
 ## Based in St. Louis. Start with a conversation.
 

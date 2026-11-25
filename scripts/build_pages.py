@@ -10,6 +10,7 @@ Also, in place:
 - Every "<n> live dashboards" (home, the pages, llms.txt): the count from scripts/dashboard_count.py, as a word. The rest of the home
   page stays hand-edited.
 - public/sitemap.xml: home, every page, privacy; lastmod is each source file's last commit date (today if uncommitted).
+  The same date is the dateModified of each page's WebPage (and Article) node, and of home's WebPage node.
 - src/worker.js: the list of paths that have a markdown copy (between the md-pages markers).
 
 Run it after any change to a page, the nav, the footer or the FAQ, then build_markdown.py:
@@ -48,9 +49,21 @@ BOOK = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a
 BOOK_PRICING = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener">Book a call to talk real pricing\n          {ARROW}</a>'
 PRICE_ONSITE = "On-site work $1,500/day, credited toward phase one."
 PRICE_AGENTS = "Managed AI from $250 to $5,000 a month, depending on scope."  # Christian 2026-11-25: one range, floor $250
-PRICE_BUILD = ("Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, "
-               "priced in the written proposal.")  # Christian 2026-11-24: the build is priced in the proposal, after the on-site day
+PRICE_BUILD_LINE = "The build is a separate, one-time cost, priced in the written proposal."  # the approved build line on its own
+PRICE_BUILD = "Monthly pricing covers running and supporting your agents. " + PRICE_BUILD_LINE  # Christian 2026-11-24: the build is priced in the proposal, after the on-site day
 PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
+# What the monthly fee covers: one list, the same on /managed-ai/ and /pricing/ ({{fee_covers}}), and one sentence for the
+# Managed AI price card and llms.txt ({{fee_covers_line}}).
+FEE_ROWS = [("Monitoring", "Ongoing", "monitoring"), ("Testing", "Monthly", "monthly tests"), ("Fixes", "Included", "fixes"),
+            ("Upgrades as tools improve", "Included", "upgrades as tools improve"),
+            ("Releases", "At night", "releases at night"),  # releases ship at night when there is a change (not "nightly")
+            ("Support desk", "Included", "the support desk"), ("AI usage", "Included", "the AI usage the agents need"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
+            ("Human approval", "Built in", "human approval")]
+FEE_COVERS_LINE = "Includes " + ", ".join(x[2] for x in FEE_ROWS[:-1]) + " and " + FEE_ROWS[-1][2] + "."
+FEE_COVERS_SHORT = "Includes monitoring, monthly tests, fixes and upgrades."  # the /pricing/ card; the ledger below it is hidden on phones, so the sentence must stand alone
+FEE_COVERS = ('<ul class="ledger" aria-label="Covered for each managed agent">\n'
+              '        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>\n'
+              + "\n".join(f'        <li><span>{a}</span><span class="st">{b}</span></li>' for a, b, _ in FEE_ROWS) + "\n      </ul>")
 # The short pricing block on home and the Services hub (the same card and ledger as the offers above it); links /pricing/.
 PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
       <div>
@@ -83,6 +96,19 @@ FOUR_STEPS = f"""<ol class="steps s4 rv">
       <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step.<span class="ph-x"> Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.</span></p><p style="margin-top:10px"><strong>Priced in the written proposal.</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
       <li class="step"><span class="n" aria-hidden="true">04</span><h3>Managed AI.</h3><p>lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.</p><p style="margin-top:10px"><strong>{PRICE_AGENTS}</strong></p><a class="founder-link" {_STEP_LINK} href="/managed-ai/">Managed AI →</a></li>
     </ol>"""
+# The same four steps with their price lines taken out, for a page that shows the prices in one other place
+# (/how-lumic-works/: its "lumic at a glance" block carries all four price lines). {{four_steps_plain}}
+FOUR_STEPS_PLAIN = re.sub(r'<p style="margin-top:10px"><strong>.*?</strong></p>', "", FOUR_STEPS)
+assert FOUR_STEPS_PLAIN.count("$") == 0 and FOUR_STEPS_PLAIN.count('class="step"') == 4
+
+
+def glance_items():
+    """The "lumic at a glance" facts (pages.json "glance"): all of them open llms.txt (scripts/build_markdown.py); the ones
+    marked "page" show on /how-lumic-works/ ({{at_a_glance}}) as a <dl>, two by two from 960px (site.css .glance)."""
+    return "\n".join(f'      <div><dt>{esc(g["q"])}</dt><dd>{curly(g.get("html") or esc(g["a"]))}</dd></div>'
+                     for g in CFG["glance"] if g.get("page"))
+
+
 # The pricing block as its own section (home, and the service / industry / system pages before the checklist).
 PRICING_SECTION = f"""<!-- ============ PRICING ============ -->
 <section id="plans" aria-label="Pricing">
@@ -244,7 +270,7 @@ LABELS = {"/services/": "Services", "/ai-implementation/": "AI implementation", 
           "/how-lumic-works/": "How lumic works", "/guardrails/": "Guardrails", "/portfolio/": "Portfolio",
           "/systems/": "Systems lumic works with", "/faq/": "Common questions", "/st-louis/": "St.\u00a0Louis",
           "/st-louis/ai-consulting/": "AI consulting in St.\u00a0Louis", "/st-louis/metro-east/": "Metro East",
-          "/forward-deployed-engineers/": "Forward-deployed engineers",
+          "/forward-deployed-engineers/": "Forward Deployed Engineers",
           "/forward-deployed-engineers/small-business/": "FDEs for small and mid-size businesses",
           "/services/ap-automation/": "AP automation", "/services/cash-receipts-and-collections/": "Cash receipts and collections",
           "/services/payroll/": "Payroll", "/services/month-end-close/": "Month-end close",
@@ -254,6 +280,7 @@ LABELS = {"/services/": "Services", "/ai-implementation/": "AI implementation", 
           "/industries/service-firms/": "Service firms",
           "/resources/how-to-implement-ai-in-a-small-business/": "How to implement AI in a small business",
           "/resources/ai-agent-for-accounting/": "AI agents for accounting",
+          "/resources/how-to-choose-an-ai-implementation-partner/": "How to choose an AI implementation partner",
           "/systems/sage-100/": "Sage 100", "/systems/sage-100/ap-automation/": "Sage 100 AP automation"}
 
 
@@ -276,12 +303,23 @@ def crumbs(p):
             f'<li aria-current="page">{esc(p["crumb"])}</li></ol></nav>')
 
 
+def page_lastmod(p):
+    """The date a page last changed: the sitemap's lastmod and the JSON-LD dateModified, from the same git dates."""
+    return lastmod(SRC / f'{p["id"]}.html', ROOT / "scripts" / "pages.json")
+
+
+# lumic is based in St. Louis and works with businesses anywhere in the United States (the owner, 2026-11-25): a Service
+# node's "@AREA" is the country first, then the local areas; the local pages (/st-louis/...) keep the local list only.
+AREA_US = [{"@type": "Country", "name": "United States"}] + AREA
+
+
 def page_ld(p):
     url = SITE + p["path"]
+    modified = page_lastmod(p)
     graph = [
         {"@type": p["type"], "@id": url + "#webpage", "url": url, "name": p["title"], "description": p["description"],
          "inLanguage": "en", "about": {"@id": SITE + "/#org"}, "publisher": {"@id": SITE + "/#org"},
-         "breadcrumb": {"@id": url + "#breadcrumb"}},
+         "breadcrumb": {"@id": url + "#breadcrumb"}, "dateModified": modified},
         {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(
                 [("Home", SITE + "/")] + [(x["label"], SITE + x["href"]) for x in trail(p)]
@@ -290,6 +328,9 @@ def page_ld(p):
     extra = SRC / f'{p["id"]}.jsonld'
     if extra.exists():
         graph += json.loads(io.open(extra, encoding="utf-8").read())
+        for g in graph:  # an Article carries the same build-stamped date as its page (never hand-typed)
+            if g.get("@type") == "Article":
+                g["dateModified"] = modified
     if p["id"] == "faq":
         graph.append(faq_ld(CFG["faq"], url + "#faq"))
     if p.get("faq"):  # a page's own questions (pages.json "faq"), shown by {{page_faq}} and marked up from the same list
@@ -306,7 +347,7 @@ def page_ld(p):
 
     def fill(x):
         if x == "@AREA":
-            return AREA
+            return AREA if p["path"].startswith("/st-louis/") else AREA_US
         if isinstance(x, dict):
             return {k: fill(v) for k, v in x.items()}
         if isinstance(x, list):
@@ -332,7 +373,7 @@ def build_page(p):
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
                  "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{pricing_section}}": PRICING_SECTION, "{{checklist}}": checklist(p["path"]), "{{price_onsite}}": PRICE_ONSITE,
-                 "{{price_build}}": PRICE_BUILD, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
+                 "{{price_build}}": PRICE_BUILD, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{four_steps_plain}}": FOUR_STEPS_PLAIN, "{{at_a_glance}}": glance_items(), "{{price_build_line}}": PRICE_BUILD_LINE, "{{fee_covers}}": FEE_COVERS, "{{fee_covers_line}}": FEE_COVERS_LINE, "{{fee_covers_short}}": FEE_COVERS_SHORT, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
                  "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
                  "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
         body = body.replace(k, v)
@@ -407,6 +448,7 @@ def stamp(text, name, new, comment=("<!-- ", " -->")):
 
 def build_home():
     f = PUB / "index.html"
+    modified = lastmod(f)  # before the write below, so a rebuild with no change keeps the committed date
     h = io.open(f, encoding="utf-8").read()
     h = stamp(h, "nav", nav("/", home=True))
     h = stamp(h, "footer", footer(home=True))
@@ -417,6 +459,11 @@ def build_home():
     m = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', h, re.S)
     ld = json.loads(m.group(2))
     ld["@graph"] = [faq_ld(home_faq, SITE + "/#faq") if g.get("@type") == "FAQPage" else g for g in ld["@graph"]]
+    title = html.unescape(re.search(r"<title>(.*?)</title>", h).group(1))
+    desc = html.unescape(re.search(r'<meta name="description" content="(.*?)">', h).group(1))
+    webpage = {"@type": "WebPage", "@id": SITE + "/#webpage", "url": SITE + "/", "name": title, "description": desc, "inLanguage": "en",
+               "about": {"@id": SITE + "/#org"}, "publisher": {"@id": SITE + "/#org"}, "dateModified": modified}
+    ld["@graph"] = [g for g in ld["@graph"] if g.get("@id") != webpage["@id"]] + [webpage]
     h = h[:m.start(2)] + json.dumps(ld, ensure_ascii=False, separators=(",", ":")) + h[m.end(2):]
     h = arrows(dashboards(h))
     io.open(f, "w", encoding="utf-8", newline="\n").write(h)
@@ -437,7 +484,7 @@ def lastmod(*files):
 
 def build_sitemap():
     urls = [("/", lastmod(PUB / "index.html"))]
-    urls += [(p["path"], lastmod(SRC / f'{p["id"]}.html', ROOT / "scripts" / "pages.json")) for p in CFG["pages"]]
+    urls += [(p["path"], page_lastmod(p)) for p in CFG["pages"]]
     urls += [("/privacy/", lastmod(PUB / "privacy" / "index.html"))]
     body = "".join(f"  <url>\n    <loc>{SITE}{u}</loc>\n    <lastmod>{d}</lastmod>\n  </url>\n" for u, d in urls)
     io.open(PUB / "sitemap.xml", "w", encoding="utf-8", newline="\n").write(

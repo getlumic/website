@@ -225,7 +225,7 @@
   },
   {
    "identifier": "urn:air:get-lumic.com:docs:forward-deployed-engineers-markdown",
-   "displayName": "Forward-deployed engineers as markdown",
+   "displayName": "Forward Deployed Engineers as markdown",
    "type": "text/markdown",
    "url": "https://get-lumic.com/forward-deployed-engineers/index.md",
    "representativeQueries": [
@@ -329,6 +329,15 @@
    "url": "https://get-lumic.com/resources/ai-agent-for-accounting/index.md",
    "representativeQueries": [
     "AI agents for accounting: what they do, how to start"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:guide-choose-ai-partner-markdown",
+   "displayName": "How to choose an AI implementation partner as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/index.md",
+   "representativeQueries": [
+    "How to choose an AI implementation partner"
    ]
   },
   {
