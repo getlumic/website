@@ -39,7 +39,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
 ### What does it cost?
 
@@ -83,4 +83,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

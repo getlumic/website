@@ -151,7 +151,7 @@
         },
         {
           "q": "How long does an AI implementation take?",
-          "a": "Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one."
+          "a": "Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working."
         },
         {
           "q": "What does it cost?",
@@ -229,7 +229,7 @@
       "crumb": "AP automation",
       "purpose": "the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals",
       "title": "AI agent for accounts payable: bill entry and PO matching | lumic",
-      "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day.",
+      "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
       "type": "WebPage",
       "films": [
         "overview-film"
@@ -326,7 +326,7 @@
       "crumb": "Portfolio",
       "purpose": "every agent and dashboard lumic runs in production; clients kept private",
       "title": "Portfolio: AI agents and dashboards in production | lumic",
-      "description": "Agents and live dashboards lumic built, running every day inside operating companies. Clients are kept private; every figure is from production.",
+      "description": "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production.",
       "type": "CollectionPage",
       "films": []
     },
@@ -697,7 +697,7 @@
     },
     {
       "q": "How long does it take to go live?",
-      "a": "Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.",
+      "a": "Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.",
       "home": true
     },
     {

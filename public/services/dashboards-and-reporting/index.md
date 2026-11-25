@@ -23,7 +23,7 @@ In production
 
 ## Eighteen live dashboards, running every day.
 
-lumic’s dashboards run every day inside operating companies, on the same live data the agents work from. Some of them, below. Clients are kept private.
+lumic’s dashboards run every day in production, on the same live data the agents work from. Some of them, below. Clients are kept private.
 
 ### Sales & margin
 
@@ -95,7 +95,7 @@ Plain-English questions over the same live data. It drafts entries for a person 
 - AI assistant · the same live data
 - A person approves each entry
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 See them running
 
@@ -180,4 +180,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

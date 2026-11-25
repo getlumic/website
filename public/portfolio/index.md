@@ -1,43 +1,43 @@
 ---
 title: "Portfolio: AI agents and dashboards in production | lumic"
-description: "Agents and live dashboards lumic built, running every day inside operating companies. Clients are kept private; every figure is from production."
+description: "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production."
 canonical: https://get-lumic.com/portfolio/
 last_updated: 2026-11-24
 ---
 
 # Portfolio: AI agents and dashboards in production | lumic
 
-> Agents and live dashboards lumic built, running every day inside operating companies. Clients are kept private; every figure is from production.
+> Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production.
 
 Source: https://get-lumic.com/portfolio/ | Contact: hello@get-lumic.com
 
-Portfolio Live and measured
+Portfolio Live and working
 
 # In production, every day.
 
-Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic’s leaders run finance themselves, so they use what they build.
+Agents and dashboards lumic built run every day in production, on entirely different systems, live and measured. lumic’s leaders run finance themselves, so they use what they build.
 
 [Book a call](https://cal.com/lumic/20-minute-call) What runs today
 
 Portfolio
 
-## Three lead examples.
+## Examples in production.
 
 ### AP invoice agent
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
 - Agent · accounting software + the system that holds the POs
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
 [AP automation →](https://get-lumic.com/services/ap-automation/)
 
 ### A finance team run on agents
 
-Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
-- About 13 agent roles
+- One agent role per job
 - Eighteen live dashboards
 
 ### Collections agent
@@ -50,7 +50,7 @@ From live aging, the agent drafts the collections email and the statement for ea
 
 ### Portfolio: what runs on lumic today.
 
-Agents and live dashboards in production at operating companies. Clients are kept private; every figure is from production.
+Agents and live dashboards in production at operating companies. Clients are kept private; everything shown runs in production.
 
 ### Payroll preparation
 
@@ -175,4 +175,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

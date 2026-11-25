@@ -70,9 +70,9 @@ Yes. St. Louis first: the team is based here and comes on site in person. lumic 
 
 FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
-### Live and measured.
+### Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 See the work, then meet the team.
 
@@ -94,4 +94,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

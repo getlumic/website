@@ -15,8 +15,7 @@
    "email": "hello@get-lumic.com",
    "telephone": "+1-618-979-6837",
    "slogan": "AI, deployed into your business and kept working.",
-   "foundingDate": "2026-05",
-   "description": "lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. Proven in production: an AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one.",
+   "description": "lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters.",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "St. Louis",
@@ -251,7 +250,7 @@
      "name": "How long does it take to go live?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent."
+      "text": "Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working."
      }
     }
    ]
@@ -365,7 +364,7 @@
      "name": "How long does an AI implementation take?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one."
+      "text": "Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working."
      }
     },
     {
@@ -748,7 +747,7 @@
    "@id": "https://get-lumic.com/services/ap-automation/#webpage",
    "url": "https://get-lumic.com/services/ap-automation/",
    "name": "AI agent for accounts payable: bill entry and PO matching | lumic",
-   "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day.",
+   "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -827,7 +826,7 @@
     "name": "Small and mid-sized businesses"
    },
    "url": "https://get-lumic.com/services/ap-automation/",
-   "description": "The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in the client's accounting software, ready to post. lumic keeps it running for a monthly fee. A managed AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one."
+   "description": "The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in the client's accounting software, ready to post. lumic keeps it running for a monthly fee. An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters."
   },
   {
    "@type": "VideoObject",
@@ -1298,7 +1297,7 @@
    "@id": "https://get-lumic.com/portfolio/#webpage",
    "url": "https://get-lumic.com/portfolio/",
    "name": "Portfolio: AI agents and dashboards in production | lumic",
-   "description": "Agents and live dashboards lumic built, running every day inside operating companies. Clients are kept private; every figure is from production.",
+   "description": "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1342,7 +1341,7 @@
      "item": {
       "@type": "Service",
       "name": "AP invoice agent",
-      "description": "Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.",
+      "description": "Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
       }
@@ -1354,7 +1353,7 @@
      "item": {
       "@type": "Service",
       "name": "A finance team run on agents",
-      "description": "Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.",
+      "description": "Across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
       }
@@ -2552,7 +2551,7 @@
      "name": "How long does it take to go live?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent."
+      "text": "Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working."
      }
     },
     {

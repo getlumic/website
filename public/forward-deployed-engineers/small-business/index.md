@@ -106,25 +106,25 @@ An agent prepares the recurring month-end entries and runs the tie-outs. Every e
 
 Proof
 
-## Live and measured.
+## Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### AP invoice agent
 
-The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
+The agent reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
 
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
 ### A finance team run on agents
 
-About 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
-- About 13 agent roles
+- One agent role per job
 - A person approves each entry
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -194,4 +194,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

@@ -135,11 +135,11 @@ Every engagement is run by FDEs with finance training, backed by a bench of agen
 
 ### Finance people who code.
 
-Most FDE teams are engineers who learn finance on the job. lumic’s team lived it first: it has done these back-office jobs by hand, then built the agents that do them.
+Most FDE teams are engineers who learn finance on the job. lumic’s team knows the work: it has done these back-office jobs by hand, then built the agents that do them.
 
-### Live and measured.
+### Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### Is lumic the right fit?
 
@@ -187,4 +187,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

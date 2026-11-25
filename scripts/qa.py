@@ -85,7 +85,12 @@ SIZE_REVEAL = [r"\bfirst client\b", r"\bso far\b", r"\bone of us\b", r"\bboth of
                r"\bfounder[- ]led\b", r"\bcoming soon\b", r"\bnext\b",
                # Christian 2026-11-25: show ability, never size (no client counts, no "first" deployments)
                r"\b(?:two|both|second|one|single|first|only) clients?\b", r"\bour first\b", r"\bfirst (?:managed|AP|client)\b",
-               r"\bflagship client\b"]
+               r"\bflagship client\b",
+               # Round 3 (Christian's no-size rule, 2026-11-25): proof states ability, never age, firsts or counts
+               r"\bfirst week\b", r"\bweek one\b", r"\bin its first\b", r"\bfirst (?:client|managed|deployment)s?\b",
+               r"\b(?:one|two|three) clients?\b",
+               r"\bsince (?:January|February|March|April|May|June|July|August|September|October|November|December|late|early|mid|20\d\d)\b",
+               r"\bso far\b", r"(?<!up )\bto date\b", r"\bFounded\b", r"\bfoundingDate\b", r"\ba recent\b"]
 HOME_OK = ["What happens next"]  # the home contact block's heading (live copy, unchanged); inner pages say "How to start"
 # A service-area business: no street address anywhere on /st-louis/, including the schema
 ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
@@ -158,6 +163,8 @@ def content_checks(where, text, html, home=False, allow=()):
     fails = []
     blocks = ld_blocks(html)
     fails += [f"{where}: {b}" for b in blocks if isinstance(b, str)]
+    if "foundingDate" in html:
+        fails.append(f"{where}: JSON-LD carries foundingDate (no-size rule)")
     lds = "\n".join(s for b in blocks if not isinstance(b, str) for s in ld_strings(b))
     meta = meta_text(html)
     for label, t in (("text", text), ("meta", meta), ("JSON-LD", lds)):

@@ -39,7 +39,7 @@ In production
 
 ## Running every day.
 
-These agents and the aging view behind them run every day inside operating companies. Clients are kept private.
+These agents and the aging view behind them run every day in production. Clients are kept private.
 
 ### Cash receipts
 
@@ -65,7 +65,7 @@ Live aging by customer, the same view that feeds the collections agent.
 
 [Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -138,4 +138,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

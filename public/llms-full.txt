@@ -1,6 +1,6 @@
 # lumic
 
-> lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. Proven in production: an AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. Serves Greater St. Louis on both sides of the river and travels for the right fit.
+> lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
 ## Offers
 - Free consultation. A 20-minute call.
@@ -33,7 +33,7 @@
 
 ## What makes lumic different
 1. The agent makes the entry itself, the same records a clerk would key. A person approves it, and nobody retypes it.
-2. Live and measured: a managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+2. Live and working: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters.
 3. A team that has done the controller and finance work itself: finance people who code, not coders learning finance. Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
 
 ## What lumic does
@@ -45,10 +45,10 @@
 - Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it, for a monthly fee.
 
 ## Portfolio
-Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; every figure is from production.
+Agents and dashboards lumic built run every day in production, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; everything shown runs in production.
 
-- AP invoice agent (accounting software + the system that holds the POs): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
-- A finance team run on agents: across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with eighteen live dashboards. A person approves each entry.
+- AP invoice agent (accounting software + the system that holds the POs): every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. The bills it can't match go to a person with the reason.
+- A finance team run on agents: across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with eighteen live dashboards. A person approves each entry.
 
 Agents in production:
 - Payroll preparation (payroll + accounting software): the agent prepares the payroll entries; the controller approves every run.
@@ -209,23 +209,23 @@ Portfolio
 
 ## In production, every day.
 
-Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic’s leaders run finance themselves, so they use what they build.
+Agents and dashboards lumic built run every day in production, on entirely different systems, live and measured. lumic’s leaders run finance themselves, so they use what they build.
 
 ### AP invoice agent
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
 - Agent · accounting software + the system that holds the POs
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
 [AP automation →](https://get-lumic.com/services/ap-automation/)
 
 ### A finance team run on agents
 
-Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
-- About 13 agent roles
+- One agent role per job
 - Eighteen live dashboards
 
 ### Collections agent
@@ -339,13 +339,13 @@ Every engagement is run by FDEs with finance training, backed by a bench of agen
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
-### Live and measured.
+### Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated. It runs in production every working day, monitored around the clock.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters. It runs in production every working day, monitored around the clock.
 
 ### Finance people who code.
 
-Most FDE teams are engineers who learn finance on the job. lumic’s team lived it first: it has done these back-office jobs by hand, then built the agents that do them.
+Most FDE teams are engineers who learn finance on the job. lumic’s team knows the work: it has done these back-office jobs by hand, then built the agents that do them.
 
 ### It runs where it fits.
 
@@ -382,7 +382,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
 [All questions](https://get-lumic.com/faq/)
 
@@ -428,13 +428,13 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
 All questions: https://get-lumic.com/faq/
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -587,26 +587,26 @@ The work happens where your team works, whether that’s an ERP, accounting soft
 
 Proof
 
-## Live and measured.
+## Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### AP invoice agent
 
-The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
+The agent reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
 
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - In production every working day, monitored around the clock
 - Kept running for a monthly fee
 
 ### A finance team run on agents
 
-About 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
-- About 13 agent roles
+- One agent role per job
 - A person approves each entry
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -662,7 +662,7 @@ Putting AI to work inside the systems the business already runs, not buying a ne
 
 ### How long does an AI implementation take?
 
-Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day, and 64 of 67 bills went through the agent in week one.
+Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
 ### What does it cost?
 
@@ -684,7 +684,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -837,7 +837,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -952,7 +952,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1179,21 +1179,21 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
 
 ---
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
-description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day."
+description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
 canonical: https://get-lumic.com/services/ap-automation/
 last_updated: 2026-11-24
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
 
-> lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day.
+> lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.
 
 Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com
 
@@ -1225,16 +1225,16 @@ A person on your team checks the entry and approves it. It lands in your account
 
 Proof
 
-## Live and measured.
+## Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### AP invoice agent
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
 - Agent · accounting software + the system that holds the POs
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
 ### AP workbench
@@ -1251,7 +1251,7 @@ The agent drafts purchase orders and writes them back to the ERP.
 - Agent · ERP
 - Approval-gated
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -1293,7 +1293,7 @@ Questions
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
 ### Who approves what the agent does?
 
@@ -1345,7 +1345,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1391,7 +1391,7 @@ In production
 
 ## Running every day.
 
-These agents and the aging view behind them run every day inside operating companies. Clients are kept private.
+These agents and the aging view behind them run every day in production. Clients are kept private.
 
 ### Cash receipts
 
@@ -1417,7 +1417,7 @@ Live aging by customer, the same view that feeds the collections agent.
 
 [Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -1490,7 +1490,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1626,7 +1626,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1762,7 +1762,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -1792,7 +1792,7 @@ In production
 
 ## Eighteen live dashboards, running every day.
 
-lumic’s dashboards run every day inside operating companies, on the same live data the agents work from. Some of them, below. Clients are kept private.
+lumic’s dashboards run every day in production, on the same live data the agents work from. Some of them, below. Clients are kept private.
 
 ### Sales & margin
 
@@ -1864,7 +1864,7 @@ Plain-English questions over the same live data. It drafts entries for a person 
 - AI assistant · the same live data
 - A person approves each entry
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 See them running
 
@@ -1949,7 +1949,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2063,51 +2063,51 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
 
 ---
 title: "Portfolio: AI agents and dashboards in production | lumic"
-description: "Agents and live dashboards lumic built, running every day inside operating companies. Clients are kept private; every figure is from production."
+description: "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production."
 canonical: https://get-lumic.com/portfolio/
 last_updated: 2026-11-24
 ---
 
 # Portfolio: AI agents and dashboards in production | lumic
 
-> Agents and live dashboards lumic built, running every day inside operating companies. Clients are kept private; every figure is from production.
+> Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production.
 
 Source: https://get-lumic.com/portfolio/ | Contact: hello@get-lumic.com
 
-Portfolio Live and measured
+Portfolio Live and working
 
 # In production, every day.
 
-Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic’s leaders run finance themselves, so they use what they build.
+Agents and dashboards lumic built run every day in production, on entirely different systems, live and measured. lumic’s leaders run finance themselves, so they use what they build.
 
 [Book a call](https://cal.com/lumic/20-minute-call) What runs today
 
 Portfolio
 
-## Three lead examples.
+## Examples in production.
 
 ### AP invoice agent
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
 - Agent · accounting software + the system that holds the POs
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
 [AP automation →](https://get-lumic.com/services/ap-automation/)
 
 ### A finance team run on agents
 
-Across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
-- About 13 agent roles
+- One agent role per job
 - Eighteen live dashboards
 
 ### Collections agent
@@ -2120,7 +2120,7 @@ From live aging, the agent drafts the collections email and the statement for ea
 
 ### Portfolio: what runs on lumic today.
 
-Agents and live dashboards in production at operating companies. Clients are kept private; every figure is from production.
+Agents and live dashboards in production at operating companies. Clients are kept private; everything shown runs in production.
 
 ### Payroll preparation
 
@@ -2245,7 +2245,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2387,11 +2387,11 @@ Every engagement is run by FDEs with finance training, backed by a bench of agen
 
 ### Finance people who code.
 
-Most FDE teams are engineers who learn finance on the job. lumic’s team lived it first: it has done these back-office jobs by hand, then built the agents that do them.
+Most FDE teams are engineers who learn finance on the job. lumic’s team knows the work: it has done these back-office jobs by hand, then built the agents that do them.
 
-### Live and measured.
+### Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### Is lumic the right fit?
 
@@ -2439,7 +2439,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2531,7 +2531,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2622,7 +2622,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2775,7 +2775,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -2928,7 +2928,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3083,7 +3083,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3160,9 +3160,9 @@ Yes. St. Louis first: the team is based here and comes on site in person. lumic 
 
 FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
-### Live and measured.
+### Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 See the work, then meet the team.
 
@@ -3184,7 +3184,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3334,7 +3334,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3428,18 +3428,18 @@ Sales and margin, receivables, purchasing, job costing and consolidated financia
 
 Proof
 
-## Live and measured.
+## Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### AP invoice agent
 
 The agent reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
 
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -3477,7 +3477,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3599,7 +3599,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3712,25 +3712,25 @@ An agent prepares the recurring month-end entries and runs the tie-outs. Every e
 
 Proof
 
-## Live and measured.
+## Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### AP invoice agent
 
-The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
+The agent reads each bill from email, matches it to the purchase order, and enters it once the clerk approves.
 
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
 ### A finance team run on agents
 
-About 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
+Agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
-- About 13 agent roles
+- One agent role per job
 - A person approves each entry
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -3800,7 +3800,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -3846,7 +3846,7 @@ A person on your team. The agent makes the entry, and a person checks it and app
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
 ### What does it cost?
 
@@ -3890,7 +3890,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4031,7 +4031,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4182,7 +4182,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4304,7 +4304,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4429,7 +4429,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4547,7 +4547,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4672,7 +4672,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4760,7 +4760,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4818,7 +4818,7 @@ In production
 
 ## What the method looks like live.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In week one, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 [See that agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
 
@@ -4874,7 +4874,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
 
 
 ---
@@ -4960,7 +4960,7 @@ How to start
 
 ## Start with the job that takes the most hours.
 
-List the accounting jobs your team does by hand, with the hours each one takes. Pick one. Watch it done, write down the checks and the exceptions, then build the agent around how the work is really done. A managed AP agent from lumic went live about six weeks after the on-site day; in week one, 64 of 67 bills went through it.
+List the accounting jobs your team does by hand, with the hours each one takes. Pick one. Watch it done, write down the checks and the exceptions, then build the agent around how the work is really done. An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 [The full method: how to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/) [AI implementation with lumic](https://get-lumic.com/ai-implementation/)
 
@@ -5000,4 +5000,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

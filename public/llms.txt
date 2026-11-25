@@ -1,6 +1,6 @@
 # lumic
 
-> lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. Proven in production: an AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. Serves Greater St. Louis on both sides of the river and travels for the right fit.
+> lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
 ## Offers
 - Free consultation. A 20-minute call.
@@ -33,7 +33,7 @@
 
 ## What makes lumic different
 1. The agent makes the entry itself, the same records a clerk would key. A person approves it, and nobody retypes it.
-2. Live and measured: a managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+2. Live and working: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters.
 3. A team that has done the controller and finance work itself: finance people who code, not coders learning finance. Every engagement is run by FDEs with finance training, backed by a bench of agents that do the volume.
 
 ## What lumic does
@@ -45,10 +45,10 @@
 - Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it, for a monthly fee.
 
 ## Portfolio
-Agents and dashboards lumic built run every day inside operating companies, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; every figure is from production.
+Agents and dashboards lumic built run every day in production, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; everything shown runs in production.
 
-- AP invoice agent (accounting software + the system that holds the POs): every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. In its first week, 64 of 67 bills went through the agent.
-- A finance team run on agents: across a multi-company finance team, about 13 agent roles do daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with eighteen live dashboards. A person approves each entry.
+- AP invoice agent (accounting software + the system that holds the POs): every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. The bills it can't match go to a person with the reason.
+- A finance team run on agents: across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with eighteen live dashboards. A person approves each entry.
 
 Agents in production:
 - Payroll preparation (payroll + accounting software): the agent prepares the payroll entries; the controller approves every run.

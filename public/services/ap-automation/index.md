@@ -1,13 +1,13 @@
 ---
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
-description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day."
+description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
 canonical: https://get-lumic.com/services/ap-automation/
 last_updated: 2026-11-24
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
 
-> lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live about six weeks after the on-site day.
+> lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.
 
 Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com
 
@@ -39,16 +39,16 @@ A person on your team checks the entry and approves it. It lands in your account
 
 Proof
 
-## Live and measured.
+## Live and working.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In its first week, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 ### AP invoice agent
 
-Every vendor bill was typed in twice, into two systems, about 30 a day. The agent went live about six weeks after the on-site day. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
 - Agent · accounting software + the system that holds the POs
-- 64 of 67 bills through the agent in week one
+- Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
 ### AP workbench
@@ -65,7 +65,7 @@ The agent drafts purchase orders and writes them back to the ERP.
 - Agent · ERP
 - Approval-gated
 
-Clients are kept private; every figure is from production.
+Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
@@ -107,7 +107,7 @@ Questions
 
 ### How long does it take to go live?
 
-Weeks, not quarters. A managed AP agent from lumic went live about six weeks after the on-site day; in its first week, 64 of 67 bills went through the agent.
+Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working.
 
 ### Who approves what the agent does?
 
@@ -159,4 +159,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

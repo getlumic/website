@@ -51,7 +51,7 @@ In production
 
 ## What the method looks like live.
 
-A managed AP agent from lumic went live about six weeks after the on-site day. In week one, 64 of 67 bills went through it. Counted, not estimated.
+An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 [See that agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
 
@@ -107,4 +107,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy

@@ -79,7 +79,7 @@ How to start
 
 ## Start with the job that takes the most hours.
 
-List the accounting jobs your team does by hand, with the hours each one takes. Pick one. Watch it done, write down the checks and the exceptions, then build the agent around how the work is really done. A managed AP agent from lumic went live about six weeks after the on-site day; in week one, 64 of 67 bills went through it.
+List the accounting jobs your team does by hand, with the hours each one takes. Pick one. Watch it done, write down the checks and the exceptions, then build the agent around how the work is really done. An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
 
 [The full method: how to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/) [AI implementation with lumic](https://get-lumic.com/ai-implementation/)
 
@@ -119,4 +119,4 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 
-© 2026 lumic | Founded May 2026 | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
