@@ -60,6 +60,7 @@ FEE_ROWS = [("Monitoring", "Ongoing", "monitoring"), ("Testing", "Monthly", "mon
             ("Support desk", "Included", "the support desk"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
             ("Human approval", "Built in", "human approval")]
 FEE_COVERS_LINE = "Includes " + ", ".join(x[2] for x in FEE_ROWS[:-1]) + " and " + FEE_ROWS[-1][2] + "."
+FEE_COVERS_SHORT = "Includes monitoring, monthly tests, fixes and upgrades. The full list is below."  # the /pricing/ card; the ledger follows
 FEE_COVERS = ('<ul class="ledger" aria-label="Covered for each managed agent">\n'
               '        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>\n'
               + "\n".join(f'        <li><span>{a}</span><span class="st">{b}</span></li>' for a, b, _ in FEE_ROWS) + "\n      </ul>")
@@ -368,7 +369,7 @@ def build_page(p):
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
     for k, v in {"{{crumbs}}": crumbs(p), "{{ck}}": CK, "{{lck}}": CK, "{{ar}}": AR, "{{book}}": BOOK,
                  "{{book_pricing}}": BOOK_PRICING, "{{pricing_block}}": PRICING_BLOCK, "{{pricing_section}}": PRICING_SECTION, "{{checklist}}": checklist(p["path"]), "{{price_onsite}}": PRICE_ONSITE,
-                 "{{price_build}}": PRICE_BUILD, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{four_steps_plain}}": FOUR_STEPS_PLAIN, "{{at_a_glance}}": glance_items(), "{{price_build_line}}": PRICE_BUILD_LINE, "{{fee_covers}}": FEE_COVERS, "{{fee_covers_line}}": FEE_COVERS_LINE, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
+                 "{{price_build}}": PRICE_BUILD, "{{price_agents}}": PRICE_AGENTS, "{{four_steps}}": FOUR_STEPS, "{{four_steps_plain}}": FOUR_STEPS_PLAIN, "{{at_a_glance}}": glance_items(), "{{price_build_line}}": PRICE_BUILD_LINE, "{{fee_covers}}": FEE_COVERS, "{{fee_covers_line}}": FEE_COVERS_LINE, "{{fee_covers_short}}": FEE_COVERS_SHORT, "{{price_final}}": PRICE_FINAL, "{{arrow}}": ARROW,
                  "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
                  "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
         body = body.replace(k, v)

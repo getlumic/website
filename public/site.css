@@ -605,4 +605,4 @@ section:has(+ .related-s){padding-bottom:clamp(56px,6vw,80px) !important}
 .glance dt{font-size:15px;font-weight:600;color:var(--text-strong)}
 .glance dd{margin:6px 0 0;color:var(--text);line-height:1.55}
 @media (min-width:960px){.glance{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:959px){#glance{padding-top:16px!important;padding-bottom:0!important}.glance{margin-top:16px}.glance>div{padding:8px 0}.glance dd{margin-top:2px;line-height:1.5}}
+@media (max-width:959px){#glance{padding-top:16px!important;padding-bottom:0!important}.glance{margin-top:16px}.glance>div{padding:12px 0}.glance dd{margin-top:2px;line-height:1.5}}
