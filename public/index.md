@@ -231,7 +231,7 @@ Leadership
 
 ### Finance first. Engineers second.
 
-lumic’s leadership includes a controller and a CFP®, based in St. Louis. They have done these back-office jobs by hand, so they know which ones are worth automating. Senior people lead every engagement, on site, from scoping to support.
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. Senior people lead every engagement, on site, from scoping to support.
 
 [Meet the leadership](https://get-lumic.com/how-lumic-works/#leadership)
 
