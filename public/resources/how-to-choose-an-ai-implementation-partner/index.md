@@ -55,7 +55,7 @@ The proposal should name the one job to automate, the systems it will touch, who
 
 A partner close by can spend a day beside the team, come back when a job changes, and meet the people who approve the work. That matters most for owner-run firms, where the know-how sits with a few people rather than in a manual. A partner further away can do the same work remotely once the job is mapped, and travel for the days that need a person in the room.
 
-lumic, based in St. Louis, is one such partner: its Forward Deployed Engineers can work with businesses anywhere in the United States: on site across Greater St. Louis, and by travel and remotely elsewhere. They build inside the systems a business already runs, and keep the work running on a monthly retainer. Compare its [AI implementation](https://get-lumic.com/ai-implementation/) and [managed AI](https://get-lumic.com/managed-ai/) pages, and its [pricing](https://get-lumic.com/pricing/), against the checklist above.
+lumic, based in St. Louis, is one such partner. Its Forward Deployed Engineers can work with businesses anywhere in the United States: on site across Greater St. Louis, and by travel and remotely elsewhere. They build inside the systems a business already runs, and keep the work running on a monthly retainer. Compare its [AI implementation](https://get-lumic.com/ai-implementation/) and [managed AI](https://get-lumic.com/managed-ai/) pages, and its [pricing](https://get-lumic.com/pricing/), against the checklist above.
 
 ## Related
 
