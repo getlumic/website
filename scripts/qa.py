@@ -141,7 +141,9 @@ OPEN_DETAILS_TEXT = """(() => { const c = [...document.querySelectorAll('details
 # GEO round (2026-11-25): the entity schema on home, and llms.txt's generated top
 ORG_DISAMBIG = ("lumic (get-lumic.com) is a St. Louis AI implementation firm. "
                 "It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.")
-ORG_SAMEAS = ["https://www.linkedin.com/company/get-lumic", "https://clutch.co/profile/lumic", "https://themanifest.com/company/lumic"]
+ORG_SAMEAS = ["https://www.linkedin.com/company/get-lumic", "https://clutch.co/profile/lumic"]
+# The Manifest profile is left out until its text is corrected (it states a size, a founding year and a different category)
+ORG_SAMEAS_NOT = ["themanifest.com"]
 LLMS_LINES = ["Not to be confused with lumic.ai, Lumiq, Lumicera, Lumico, getlumic.com or lumic.fr.",
               "https://clutch.co/profile/lumic", "https://www.linkedin.com/company/get-lumic"]
 GLANCE_PRICE_LINES = ["Free consultation.", "On-site work $1,500/day, credited toward phase one.",
@@ -543,6 +545,7 @@ def check_pages(b):
         if o.get("disambiguatingDescription") != ORG_DISAMBIG:
             fails.append(f"home: Organization disambiguatingDescription {o.get('disambiguatingDescription')!r}")
         fails += [f"home: Organization sameAs lacks {u}" for u in ORG_SAMEAS if u not in o.get("sameAs", [])]
+        fails += [f"home: Organization sameAs carries {u}" for u in o.get("sameAs", []) if any(x in u for x in ORG_SAMEAS_NOT)]
         fails += [f"home: Organization lacks {k}" for k in ("knowsAbout", "areaServed") if not o.get(k)]
         fails += [f"home: Organization carries {k} (no street address, no fixed price range)" for k in ("priceRange",) if k in o]
     if not any(g.get("@id") == SITE + "/#webpage" and re.fullmatch(r"\d{4}-\d\d-\d\d", g.get("dateModified", ""))
