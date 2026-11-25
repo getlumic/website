@@ -13,7 +13,8 @@ muted, take the sound, carry the sample-data note), in-page links have targets, 
 one <h1>, canonical and og:url match, a BreadcrumbList. On every page (home included): JSON-LD parses, no we/our/us,
 no size-reveal or gap phrases; on inner pages also no banned term and no product name at all (visible text, title,
 meta and JSON-LD). /st-louis/ carries no street address. The sitemap lists every page and each answers 200 with a
-matching canonical. Off localhost: every src/worker.js REDIRECTS path (/about/ and /about -> /how-lumic-works/ among them) answers 301 to its page. Home's FAQPage covers exactly
+matching canonical. Home: the revamp title, H1, tagline in the hero and the schema slogan, the nav labels, and the
+four offer steps with their links. Off localhost: every src/worker.js REDIRECTS path (/about/ and /about -> /how-lumic-works/ among them) answers 301 to its page. Home's FAQPage covers exactly
 the questions it shows.
 
 Phase 5: the approved pricing lines appear word for word on /pricing/, home and /services/ with the "Book a call to talk
@@ -103,6 +104,12 @@ PRICING_BLOCK_PATHS = ("/", "/services/", "/pricing/", "/managed-ai/")
 # /guardrails/ collects only practices the site already states: no new security or control claims
 GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIPAA", r"\bGDPR\b", r"penetration",
                          r"zero[- ]trust", r"compliant"]
+# Revamp 2026-11-24 (CEO brief): home title, H1 (with its kicker), the brand tagline under it, the nav, the four offer steps
+HOME_TITLE = "lumic | AI implementation on retainer, St. Louis FDEs"
+HOME_H1 = "Forward Deployed Engineers · St. Louis Your AI implementation team, on retainer."
+TAGLINE = "AI, deployed into your business and kept working."
+NAV_LABELS = ["Services", "Managed AI", "How lumic works", "Pricing", "St. Louis"]
+STEP_LINKS = [CAL, "/ai-consulting/", "/ai-implementation/", "/managed-ai/"]
 # A schema price is a starting price only (minPrice or "starting" wording); never a fixed "price" field
 FIXED_PRICE_KEYS = ("price",)
 OPEN_DETAILS_TEXT = """(() => { const c = [...document.querySelectorAll('details:not([open])')]; c.forEach(d => { d.open = true; });
@@ -274,6 +281,26 @@ def check_pages(b):
     text = pg.evaluate(OPEN_DETAILS_TEXT)
     fails += content_checks("home", text, home, home=True)
     shown = pg.evaluate("[...document.querySelectorAll('#faq .wl h3')].map(h => h.textContent.trim())")
+    # revamp 2026-11-24: the home hero, the nav and the four offer steps
+    if f"<title>{HOME_TITLE}</title>" not in home:
+        fails.append(f"home: title is not {HOME_TITLE!r}")
+    h1 = norm(pg.evaluate("document.querySelector('h1').textContent"))
+    if h1 != HOME_H1:
+        fails.append(f"home: H1 {h1!r}, want {HOME_H1!r}")
+    hero = pg.evaluate("document.querySelector('.hero').innerText")
+    if TAGLINE not in hero:
+        fails.append(f"home: the tagline {TAGLINE!r} is not in the hero")
+    orgs = [g for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", []) if g.get("@type") == "Organization"]
+    if not orgs or orgs[0].get("slogan") != TAGLINE:
+        fails.append("home: Organization slogan is not the tagline")
+    if [n["label"] for n in CFG["nav"]] != NAV_LABELS:
+        fails.append(f"pages.json nav {[n['label'] for n in CFG['nav']]}, want {NAV_LABELS}")
+    navl = pg.evaluate("[...document.querySelectorAll('header.nav nav li a')].map(a => a.textContent.trim())")
+    if navl != NAV_LABELS:
+        fails.append(f"home nav {navl}, want {NAV_LABELS}")
+    steps = pg.evaluate("[...document.querySelectorAll('#services .steps .step')].map(s => [s.querySelector('h3').textContent.trim(), (s.querySelector('a') || {}).getAttribute ? s.querySelector('a').getAttribute('href') : null])")
+    if [x[1] for x in steps] != STEP_LINKS:
+        fails.append(f"home: four steps {steps}, want links {STEP_LINKS}")
     pg.close()
     faqld = [q["name"] for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", []) if g.get("@type") == "FAQPage"
              for q in g["mainEntity"]]

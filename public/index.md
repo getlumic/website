@@ -17,6 +17,8 @@ Forward Deployed Engineers · St. Louis
 
 # Your AI implementation team, on retainer.
 
+AI, deployed into your business and kept working.
+
 lumic’s Forward Deployed Engineers come on site, learn how the work is really done, and build AI into the systems you already run: agents, automations and live dashboards. Then lumic keeps it working, every month, and a person on your team approves what matters.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See it running
@@ -144,7 +146,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 - [Book a call →](https://cal.com/lumic/20-minute-call)
 
-### On-site day.
+### On-site day and written proposal.
 
 lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
 

@@ -1,0 +1,7 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/services/order-desk-and-customer-service/#service", "name": "Order desk and customer service agent",
+  "serviceType": "Order entry automation", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/services/order-desk-and-customer-service/",
+  "description": "An agent reads each purchase order and customer email, drafts the sales order and the reply in the systems the business already runs, and a person checks and sends each one."}
+]

@@ -116,6 +116,15 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:order-desk-and-customer-service-markdown",
+   "displayName": "Order desk and customer service as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/services/order-desk-and-customer-service/index.md",
+   "representativeQueries": [
+    "AI agent for the order desk and customer service"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:portfolio-markdown",
    "displayName": "Portfolio as markdown",
    "type": "text/markdown",
@@ -293,6 +302,24 @@
    "url": "https://get-lumic.com/resources/month-end-red-flags/index.md",
    "representativeQueries": [
     "Month-End Red Flags Service Firms Usually Miss"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:guide-implement-ai-small-business-markdown",
+   "displayName": "How to implement AI in a small business as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/index.md",
+   "representativeQueries": [
+    "How to implement AI in a small business: a step-by-step guide"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:guide-ai-agent-for-accounting-markdown",
+   "displayName": "AI agents for accounting as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/resources/ai-agent-for-accounting/index.md",
+   "representativeQueries": [
+    "AI agents for accounting: what they do and how to start"
    ]
   },
   {

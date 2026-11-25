@@ -29,7 +29,7 @@ Each managed agent
 
 ### Watched, tested, fixed and upgraded.
 
-The team watches each agent, tests it every month, fixes what breaks, and upgrades it as AI improves. When your team is ready, the same team builds the agent for another job.
+Monitoring, ongoing: the team watches each agent. Testing, monthly: it tests it every month. Fixes, included: it fixes what breaks. Upgrades, included: it upgrades the agent as AI improves. When your team is ready, the same team builds the agent for another job.
 
 Every month, a summary of what the agent did. A person on your team approves anything before it posts.
 
@@ -64,9 +64,13 @@ Any agent can be paused, or its access revoked, at any time.
 
 The agent prepares each entry. A person on your team checks it and approves it before anything posts, and the final post stays in your hands.
 
-### Everything is logged.
+### An approval queue for every entry.
 
-Every action an agent takes is logged.
+Each entry the agent prepares waits in an approval queue, ready for a person to approve.
+
+### A log of every action.
+
+Every action an agent takes is logged: what it did, and who approved it.
 
 The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). How an agent gets built: [AI implementation](https://get-lumic.com/ai-implementation/). Where it starts: [AI consulting](https://get-lumic.com/ai-consulting/).
 

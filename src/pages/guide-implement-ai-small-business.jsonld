@@ -1,0 +1,8 @@
+[
+ {"@type": "Article", "@id": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/#article",
+  "headline": "How to implement AI in a small business, one job at a time",
+  "description": "A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working.",
+  "author": {"@id": "https://get-lumic.com/#org"}, "publisher": {"@id": "https://get-lumic.com/#org"},
+  "mainEntityOfPage": {"@id": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/#webpage"},
+  "datePublished": "2026-11-24", "inLanguage": "en"}
+]

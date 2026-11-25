@@ -55,7 +55,8 @@ A live connection to the systems the work touches, so the same record is never t
 Sales and margin, receivables, purchasing and financials, read live from your own data. No more morning export.
 
 - Live, on your own data
-- Dashboards only read
+- Purchase orders drafted by an agent and written back to the ERP, approval-gated
+- Ask your data: questions answered from your ERP, email and files, with entries drafted for a person to approve
 
 [Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
@@ -65,6 +66,15 @@ Before anything is built, the team maps the job as it is done today: the screens
 
 - One job, mapped with your team
 - Built around how the work is really done
+
+### Reading the inbox
+
+Vendor bills, remittances and ACH detail, purchase orders and customer emails: read where they arrive and prepared in your systems for a person to approve.
+
+- Bills, cash receipts and orders
+- A person approves each entry
+
+[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 Four steps
 
@@ -76,7 +86,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 - [Book a call →](https://cal.com/lumic/20-minute-call)
 
-### On-site day.
+### On-site day and written proposal.
 
 lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
 
@@ -140,11 +150,19 @@ Approval and access
 
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands. Dashboards only read.
 
+### An approval queue for every entry.
+
+Each entry the agent prepares waits in an approval queue, ready for a person to approve.
+
+### A log of every action.
+
+What it did, and who approved it.
+
 ### It touches only its job.
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/). Before the build: [AI consulting](https://get-lumic.com/ai-consulting/). What an FDE is: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/).
+The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/). Before the build: [AI consulting](https://get-lumic.com/ai-consulting/). What an FDE is: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/). The method as a guide: [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/).
 
 Pricing
 

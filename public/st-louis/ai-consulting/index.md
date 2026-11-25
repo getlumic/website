@@ -70,6 +70,15 @@ Sales and margin, receivables, purchasing, job costing and consolidated financia
 
 [Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
+### Order desk and customer service
+
+The agent reads each purchase order and customer email, drafts the sales order and the reply. A person checks each one and sends it.
+
+- Orders and replies drafted
+- A person sends every reply
+
+[Order desk and customer service →](https://get-lumic.com/services/order-desk-and-customer-service/)
+
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
 How an engagement runs

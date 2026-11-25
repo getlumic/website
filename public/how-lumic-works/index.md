@@ -29,7 +29,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 - [Book a call →](https://cal.com/lumic/20-minute-call)
 
-### On-site day.
+### On-site day and written proposal.
 
 lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
 

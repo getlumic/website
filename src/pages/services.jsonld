@@ -48,6 +48,12 @@
     "position": 5,
     "name": "Month-end close",
     "url": "https://get-lumic.com/services/month-end-close/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 6,
+    "name": "Order desk and customer service",
+    "url": "https://get-lumic.com/services/order-desk-and-customer-service/"
    }
   ]
  }
