@@ -23,7 +23,7 @@
       "opt": true
     }
   ],
-"footer": [
+  "footer": [
     {
       "label": "Demo",
       "href": "/#demo"
@@ -148,9 +148,9 @@
         "label": "Services",
         "href": "/services/"
       },
-      "purpose": "cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends",
-      "title": "Cash receipts and collections automation | lumic",
-      "description": "An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one.",
+      "purpose": "cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends",
+      "title": "Cash application and collections automation | lumic",
+      "description": "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.",
       "type": "WebPage",
       "films": []
     },
@@ -322,15 +322,30 @@
       ]
     },
     {
+      "id": "metro-east",
+      "path": "/st-louis/metro-east/",
+      "crumb": "Metro East",
+      "parent": {
+        "label": "St. Louis",
+        "href": "/st-louis/"
+      },
+      "purpose": "AI automation on site for Metro East businesses: Madison and St. Clair counties, Illinois; the five back-office jobs; proof; on-site day rate",
+      "title": "AI automation for Metro East businesses, on site | lumic",
+      "description": "lumic's FDEs spend in-person days across Madison and St. Clair counties, building back-office AI agents a person approves before anything posts.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "AI automation for Metro East businesses, on site."
+    },
+    {
       "id": "forward-deployed-engineers",
       "path": "/forward-deployed-engineers/",
       "crumb": "Forward-deployed engineers",
       "purpose": "what a forward-deployed engineer is, for a business buying the service: on site, builds inside the client's systems, stays to run it; FDE vs a consultant",
-      "title": "St. Louis FDE team for business AI | lumic",
-      "description": "lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch.",
+      "title": "Forward Deployed Engineers (FDEs) in St. Louis | lumic",
+      "description": "What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch.",
       "type": "WebPage",
       "films": [],
-      "h1": "Forward-deployed engineers in St. Louis",
+      "h1": "Forward Deployed Engineers (FDEs) in St. Louis",
       "faq": [
         {
           "q": "What is a forward-deployed engineer?",
@@ -352,6 +367,36 @@
         {
           "q": "How does an engagement start?",
           "a": "With a free consultation: a 20-minute call. Then a written proposal with what lumic would build, the timeline and the cost, and an on-site visit."
+        }
+      ]
+    },
+    {
+      "id": "fde-small-business",
+      "path": "/forward-deployed-engineers/small-business/",
+      "crumb": "Small and mid-size businesses",
+      "parent": {
+        "label": "Forward-deployed engineers",
+        "href": "/forward-deployed-engineers/"
+      },
+      "purpose": "Forward Deployed Engineers (FDEs) for small and mid-size businesses: what an FDE is, why instead of a hire or a software license, one job at a time, proof, starting prices, approval",
+      "title": "Forward Deployed Engineers for small and mid-size businesses | lumic",
+      "description": "lumic's FDEs work on site, build one back-office AI agent at a time inside the systems a business already runs, and stay to keep it working.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "Forward Deployed Engineers for small and mid-size businesses.",
+      "faq": [
+        {
+          "q": "Is an FDE a fit for a smaller business?",
+          "a": "Yes. A Forward Deployed Engineer (FDE) fits a business with people doing repetitive work by hand, that wants it done inside the systems the team already uses, with a person approving what matters. A smaller business gets the same on-site build and the same team that stays to run it."
+        },
+        {
+          "q": "How is an FDE different from a hire or a software license?",
+          "a": "lumic does not sell software to configure yourself. lumic's Forward Deployed Engineers build the agent inside the systems you already run, and the team stays to run it for a monthly fee. A person on your team approves every entry before it posts."
+        },
+        {
+          "q": "What does it cost to start?",
+          "a": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+          "html": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },
@@ -385,11 +430,17 @@
         "href": "/systems/"
       },
       "system": "quickbooks",
-      "purpose": "capability page: lumic works with QuickBooks Online and Desktop; the jobs an agent does there; approval",
-      "title": "QuickBooks automation with AI agents | lumic",
-      "description": "lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts.",
+      "purpose": "capability page: lumic works with QuickBooks Online and Desktop; vendor bills in QuickBooks Desktop; the jobs an agent does there; approval",
+      "title": "QuickBooks AP automation with AI agents | lumic",
+      "description": "lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves.",
       "type": "WebPage",
-      "films": []
+      "films": [],
+      "faq": [
+        {
+          "q": "Does QuickBooks have AI agents?",
+          "a": "QuickBooks has its own built-in AI features. A lumic agent is built around your process and the other systems around your books, and a person on your team approves every bill."
+        }
+      ]
     },
     {
       "id": "netsuite",
@@ -420,6 +471,34 @@
       "description": "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry.",
       "type": "WebPage",
       "films": []
+    },
+    {
+      "id": "sage-100-ap-automation",
+      "path": "/systems/sage-100/ap-automation/",
+      "crumb": "AP automation",
+      "ancestors": [
+        {
+          "label": "Systems",
+          "href": "/systems/"
+        }
+      ],
+      "parent": {
+        "label": "Sage 100",
+        "href": "/systems/sage-100/"
+      },
+      "system": "sage-100",
+      "purpose": "Sage 100 AP automation: an agent reads each vendor bill, matches the PO, prepares the AP invoice and PO receipt in an unposted batch; flags; access; a person posts",
+      "title": "Sage 100 AP automation with an AI agent | lumic",
+      "description": "An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "Sage 100 AP automation, with a person posting every batch.",
+      "faq": [
+        {
+          "q": "Can AI work with Sage 100?",
+          "a": "Yes. A lumic agent works with Sage 100 on its own dedicated computer, under its own login. It reads each vendor bill, matches it to the PO, and prepares the AP invoice and PO receipt in an unposted batch. A person reviews the batch and posts it."
+        }
+      ]
     },
     {
       "id": "sage-intacct",

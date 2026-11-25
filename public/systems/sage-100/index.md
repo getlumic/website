@@ -2,7 +2,7 @@
 title: "Sage 100 automation and dashboards | lumic"
 description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
 canonical: https://get-lumic.com/systems/sage-100/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
 # Sage 100 automation and dashboards | lumic
@@ -52,7 +52,7 @@ The jobs
 
 ### Vendor bills.
 
-The agent reads each vendor bill from email, matches it to the purchase order, and prepares the bill in Sage 100 for a person to approve. [AP automation](https://get-lumic.com/services/ap-automation/)
+The agent reads each vendor bill from email, matches it to the purchase order, and prepares the bill in Sage 100 for a person to approve. [Sage 100 AP automation](https://get-lumic.com/systems/sage-100/ap-automation/)
 
 ### Cash receipts and collections.
 
@@ -72,7 +72,7 @@ lumic gives each agent access to the screens and records its job needs, and noth
 
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
 
-Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
+The AP job in Sage 100, step by step: [Sage 100 AP automation](https://get-lumic.com/systems/sage-100/ap-automation/). Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
 
 Pricing
 

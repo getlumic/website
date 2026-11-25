@@ -1,13 +1,13 @@
 ---
-title: "QuickBooks automation with AI agents | lumic"
-description: "lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts."
+title: "QuickBooks AP automation with AI agents | lumic"
+description: "lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves."
 canonical: https://get-lumic.com/systems/quickbooks/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
-# QuickBooks automation with AI agents | lumic
+# QuickBooks AP automation with AI agents | lumic
 
-> lumic works with QuickBooks Online and Desktop. An agent prepares bills, receipts and entries in QuickBooks, and a person approves before anything posts.
+> lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves.
 
 Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com
 
@@ -46,6 +46,24 @@ Bills arrive by email, purchase orders may live in another system, and reports e
 - Email, spreadsheets, other systems
 - One job, end to end
 
+Vendor bills
+
+## Vendor bills in QuickBooks Desktop
+
+The agent reads each vendor bill, matches it to the purchase order, and enters the bill in QuickBooks Desktop once a person approves it. When the purchase orders live in a separate operations database, it enters the bill there too, so nobody types it twice.
+
+### It reads each bill.
+
+The agent reads each vendor bill as it arrives by email, the same bill a clerk would open.
+
+### It matches the PO.
+
+It matches the bill to the purchase order and flags a price difference before anyone pays.
+
+### A person approves, then it enters.
+
+After a person approves it, the agent enters the bill in QuickBooks Desktop, and in the operations database that holds the purchase orders when there is one.
+
 The jobs
 
 ## What an agent does in QuickBooks.
@@ -73,6 +91,14 @@ lumic gives each agent access to the screens and records its job needs, and noth
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
 
 Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
+
+Questions
+
+## QuickBooks and AI agents, in plain answers.
+
+### Does QuickBooks have AI agents?
+
+QuickBooks has its own built-in AI features. A lumic agent is built around your process and the other systems around your books, and a person on your team approves every bill.
 
 Pricing
 

@@ -58,7 +58,7 @@
    "type": "text/markdown",
    "url": "https://get-lumic.com/services/cash-receipts-and-collections/index.md",
    "representativeQueries": [
-    "Cash receipts and collections automation"
+    "Cash application and collections automation"
    ]
   },
   {
@@ -170,12 +170,30 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:metro-east-markdown",
+   "displayName": "Metro East as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/st-louis/metro-east/index.md",
+   "representativeQueries": [
+    "AI automation for Metro East businesses, on site"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:forward-deployed-engineers-markdown",
    "displayName": "Forward-deployed engineers as markdown",
    "type": "text/markdown",
    "url": "https://get-lumic.com/forward-deployed-engineers/index.md",
    "representativeQueries": [
-    "St. Louis FDE team for business AI"
+    "Forward Deployed Engineers (FDEs) in St. Louis"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:fde-small-business-markdown",
+   "displayName": "Small and mid-size businesses as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/forward-deployed-engineers/small-business/index.md",
+   "representativeQueries": [
+    "Forward Deployed Engineers for small and mid-size businesses"
    ]
   },
   {
@@ -202,7 +220,7 @@
    "type": "text/markdown",
    "url": "https://get-lumic.com/systems/quickbooks/index.md",
    "representativeQueries": [
-    "QuickBooks automation with AI agents"
+    "QuickBooks AP automation with AI agents"
    ]
   },
   {
@@ -221,6 +239,15 @@
    "url": "https://get-lumic.com/systems/sage-100/index.md",
    "representativeQueries": [
     "Sage 100 automation and dashboards"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:sage-100-ap-automation-markdown",
+   "displayName": "AP automation as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/systems/sage-100/ap-automation/index.md",
+   "representativeQueries": [
+    "Sage 100 AP automation with an AI agent"
    ]
   },
   {

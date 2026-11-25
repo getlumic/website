@@ -1,0 +1,7 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/systems/sage-100/ap-automation/#service", "name": "Sage 100 AP automation with an AI agent",
+  "serviceType": "Accounts payable automation", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/systems/sage-100/ap-automation/",
+  "description": "An agent reads each vendor bill, matches it to the PO and prepares the AP invoice and PO receipt in an unposted Sage 100 batch. A person reviews and posts."}
+]

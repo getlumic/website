@@ -2,7 +2,7 @@
 title: "lumic | Forward Deployed Engineers for business, St. Louis"
 description: "lumic's Forward Deployed Engineers put AI to work inside St. Louis businesses — from vendor bills to month-end — with a person approving what matters."
 canonical: https://get-lumic.com/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
 # lumic | Forward Deployed Engineers for business, St. Louis

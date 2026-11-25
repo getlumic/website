@@ -14,7 +14,7 @@ import { EmailMessage } from "cloudflare:email";
 
 const APEX = "get-lumic.com";
 // md-pages:start
-const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/forward-deployed-engineers/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
+const MD_PAGES = new Set(["/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/st-louis/metro-east/", "/forward-deployed-engineers/", "/forward-deployed-engineers/small-business/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-100/ap-automation/", "/systems/sage-intacct/", "/resources/month-end-red-flags/"]);
 // md-pages:end
 const REDIRECTS = { "/about": "/how-lumic-works/", "/about/": "/how-lumic-works/" };
 function mdFor(path) {

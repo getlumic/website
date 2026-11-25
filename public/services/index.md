@@ -2,7 +2,7 @@
 title: "Back-office automation services: AI agents | lumic"
 description: "lumic builds an AI agent for one back-office job at a time: AP, cash receipts, collections, purchasing and reporting. A person approves before anything posts."
 canonical: https://get-lumic.com/services/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
 # Back-office automation services: AI agents | lumic
@@ -131,7 +131,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, scoped
 - Running and support Monthly
 
-The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
+The method, step by step: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The systems the agents work in: [Systems](https://get-lumic.com/systems/). Common questions: [FAQ](https://get-lumic.com/faq/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/). For manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). Service firms: [service firms](https://get-lumic.com/industries/service-firms/).
 
 ## Based in St. Louis. Start with a conversation.
 

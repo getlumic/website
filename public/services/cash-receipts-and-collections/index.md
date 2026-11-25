@@ -1,13 +1,13 @@
 ---
-title: "Cash receipts and collections automation | lumic"
-description: "An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one."
+title: "Cash application and collections automation | lumic"
+description: "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
-# Cash receipts and collections automation | lumic
+# Cash application and collections automation | lumic
 
-> An agent reads remittances and ACH detail, keys them into the ERP, and drafts collections emails from live aging. A person approves and sends every one.
+> An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.
 
 Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact: hello@get-lumic.com
 
@@ -21,7 +21,7 @@ An agent reads remittances and ACH detail and keys them into the ERP. Another dr
 
 The job, step by step
 
-## From remittance to statement. A person signs off.
+## Cash application, from remittance to statement. A person signs off.
 
 ### It reads the remittance.
 
@@ -29,7 +29,7 @@ The agent reads remittances and ACH detail, the same documents a clerk would key
 
 ### It keys the receipt.
 
-It prepares the cash receipt in the ERP. A person approves each entry before it posts.
+It prepares the cash receipt in the ERP, the cash application a clerk would key by hand. A person approves each entry before it posts.
 
 ### It drafts collections.
 

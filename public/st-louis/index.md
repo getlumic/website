@@ -2,7 +2,7 @@
 title: "St. Louis AI automation: on-site FDEs | lumic"
 description: "lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
 # St. Louis AI automation: on-site FDEs | lumic
@@ -37,6 +37,8 @@ Illinois
 
 - Madison County
 - St. Clair County
+
+[On site in the Metro East: Madison and St. Clair counties](https://get-lumic.com/st-louis/metro-east/)
 
 How lumic works
 

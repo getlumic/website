@@ -2,7 +2,7 @@
 title: "How lumic works: FDEs, approvals and data security | lumic"
 description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, nothing posts without you."
 canonical: https://get-lumic.com/how-lumic-works/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
@@ -149,7 +149,7 @@ Co-founder. CFP®, corporate-finance trained, with Power BI and SQL by trade. Le
 
 When you call lumic, you speak with the people who build and run your agents.
 
-See what runs today in the [portfolio](https://get-lumic.com/portfolio/), read [common questions](https://get-lumic.com/faq/), or meet the team on site in [St. Louis](https://get-lumic.com/st-louis/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). An FDE or a consultant: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/).
+See what runs today in the [portfolio](https://get-lumic.com/portfolio/), read [common questions](https://get-lumic.com/faq/), or meet the team on site in [St. Louis](https://get-lumic.com/st-louis/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). An FDE or a consultant: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/).
 
 ## Based in St. Louis. Start with a conversation.
 

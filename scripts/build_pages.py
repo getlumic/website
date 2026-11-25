@@ -214,9 +214,14 @@ def faq_ld(items, at):
         {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in items]}
 
 
+def trail(p):
+    """The levels between Home and the page: optional "ancestors" (a list, from the top level down), then the optional "parent"."""
+    return list(p.get("ancestors", [])) + ([p["parent"]] if p.get("parent") else [])
+
+
 def crumbs(p):
-    par = p.get("parent")  # optional middle level, e.g. {"label": "Services", "href": "/services/"}
-    mid = f'<li><a href="{par["href"]}">{esc(par["label"])}</a></li>' if par else ""
+    # middle levels, e.g. "parent": {"label": "Services", "href": "/services/"}; "ancestors" adds levels above the parent
+    mid = "".join(f'<li><a href="{x["href"]}">{esc(x["label"])}</a></li>' for x in trail(p))
     return (f'<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li>{mid}'
             f'<li aria-current="page">{esc(p["crumb"])}</li></ol></nav>')
 
@@ -229,7 +234,7 @@ def page_ld(p):
          "breadcrumb": {"@id": url + "#breadcrumb"}},
         {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(
-                [("Home", SITE + "/")] + ([(p["parent"]["label"], SITE + p["parent"]["href"])] if p.get("parent") else [])
+                [("Home", SITE + "/")] + [(x["label"], SITE + x["href"]) for x in trail(p)]
                 + [(p["crumb"], url)])]},
     ]
     extra = SRC / f'{p["id"]}.jsonld'

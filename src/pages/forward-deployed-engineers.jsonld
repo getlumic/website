@@ -1,5 +1,5 @@
 [
- {"@type": "Service", "@id": "https://get-lumic.com/forward-deployed-engineers/#service", "name": "Forward-deployed engineers in St. Louis",
+ {"@type": "Service", "@id": "https://get-lumic.com/forward-deployed-engineers/#service", "name": "Forward Deployed Engineers (FDEs) in St. Louis",
   "serviceType": "Forward deployed engineering", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
   "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
   "url": "https://get-lumic.com/forward-deployed-engineers/",

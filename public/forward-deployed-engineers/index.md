@@ -1,23 +1,31 @@
 ---
-title: "St. Louis FDE team for business AI | lumic"
-description: "lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch."
+title: "Forward Deployed Engineers (FDEs) in St. Louis | lumic"
+description: "What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch."
 canonical: https://get-lumic.com/forward-deployed-engineers/
-last_updated: 2026-11-17
+last_updated: 2026-11-24
 ---
 
-# St. Louis FDE team for business AI | lumic
+# Forward Deployed Engineers (FDEs) in St. Louis | lumic
 
-> lumic's St. Louis FDEs work on site, build inside the systems a team already runs, and stay to keep agents working after launch.
+> What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch.
 
 Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-lumic.com
 
 Based in St. Louis FDEs for business
 
-# Forward-deployed engineers in St. Louis
+# Forward Deployed Engineers (FDEs) in St. Louis
 
 A forward-deployed engineer (FDE) works on site, builds inside your own systems, and stays to run what was built after launch. A consultant advises and leaves. lumic’s FDEs are based in St. Louis, have finance backgrounds, and build AI into one back-office job at a time.
 
 [Book a call](https://cal.com/lumic/20-minute-call) FDE or consultant
+
+In plain words
+
+## What is a forward deployed engineer?
+
+A forward deployed engineer (FDE) is an engineer who works on site with a business, inside its own systems. An FDE builds the work there, then stays to run it after launch. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time.
+
+[FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/)
 
 FDE or consultant
 
@@ -65,7 +73,7 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
-The jobs lumic’s FDEs automate: [Services](https://get-lumic.com/services/). AI consulting and automation in the region: [St. Louis AI consulting](https://get-lumic.com/st-louis/ai-consulting/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/).
+The jobs lumic’s FDEs automate: [Services](https://get-lumic.com/services/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/). AI consulting and automation in the region: [St. Louis AI consulting](https://get-lumic.com/st-louis/ai-consulting/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/).
 
 Questions
 
