@@ -319,6 +319,13 @@ def check_calculator(b):
         if "NaN" in o or "Infinity" in o or pg.text_content('[data-o="hours"]').strip() != "—":
             fails.append(f"{CALC_PATH}: bills {bad!r} shows {o[:120]!r} (want a dash, no NaN)")
     pg.fill("#calc-b", "200")
+    # the panel month times 12 equals the panel year as printed (exception rate 33.3: $1,949.25 a month, $23,391 a year)
+    pg.fill("#calc-e", "33.3")
+    mo, yr = (pg.text_content(f'[data-o="{k}"]').strip() for k in ("month", "year"))
+    cents = lambda t: round(float(t.replace("$", "").replace(",", "")) * 100)
+    if mo != "$1,949.25" or cents(mo) * 12 != cents(yr):
+        fails.append(f"{CALC_PATH}: exception rate 33.3 shows {mo} a month and {yr} a year (month x 12 must equal the year)")
+    pg.fill("#calc-e", "20")
     pg.evaluate("document.getElementById('compare').open = true")
     for m2, want in (("4", "13.3 fewer hours a month"), ("12", "13.3 more hours a month"), ("8", "No difference in hours a month")):
         pg.fill("#calc-m2", m2)

@@ -238,9 +238,9 @@
   function set(k,v){ var e=out(k); if(e&&e.textContent!==v) e.textContent=v; }
   function r6(n){ return Math.round(n*1e6)/1e6; }
   function same(a,b){ return Math.abs(a-b)<1e-7; }
-  /* money from whole cents: exact cents in the worked line; in the ledgers whole dollars from $100 up */
+  /* money from whole cents: whole dollars when the cents are zero, else the cents, so a month times 12 always equals the year shown */
   function money(c){ return c%100===0?usd0.format(c/100):usd2.format(c/100); }
-  function led(c){ return Math.abs(c)>=10000?usd0.format(Math.round(c/100)):usd2.format(c/100); }
+  function led(c){ return money(c); }
   function label(i){ return document.querySelector('label[for="'+i.id+'"]').textContent; }
   /* plain digits or correctly grouped thousands; decimals (up to two places) except on Bills; $ only on the
      hourly cost, % only on the rates */
