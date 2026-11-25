@@ -100,25 +100,28 @@ ADDRESS = [r"streetAddress", r"postalCode", r"\b6[23]\d{3}(?:-\d{4})?\b",
 CAL = "https://cal.com/lumic/20-minute-call"
 PRICING_CTA = "Book a call to talk real pricing"
 PRICING_BLOCK_LINES = ["On-site work $1,500/day, credited toward phase one.", "Managed AI from $250 to $5,000 a month, depending on scope.",
-                       "Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.",
+                       "Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.",
                        "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."]
-PRICING_LINES = {"/": PRICING_BLOCK_LINES, "/services/": PRICING_BLOCK_LINES,
+# Audit 2026-11-24 (P2-5): a page that shows the four steps carries their three lines and no separate pricing card
+STEP_PRICE_LINES = ["Free consultation.", "On-site work $1,500/day, credited toward phase one.",
+                    "Managed AI from $250 to $5,000 a month, depending on scope."]
+PRICING_LINES = {"/": STEP_PRICE_LINES, "/services/": PRICING_BLOCK_LINES,
                  "/pricing/": ["Free consultation."] + PRICING_BLOCK_LINES,
                  # revamp 2026-11-24: the four offer steps (home, /how-lumic-works/) and the Managed AI page carry their lines too
-                 "/how-lumic-works/": ["Free consultation.", "On-site work $1,500/day, credited toward phase one.",
-                                       "Managed AI from $250 to $5,000 a month, depending on scope."] + PRICING_BLOCK_LINES[2:],
+                 "/how-lumic-works/": STEP_PRICE_LINES, "/ai-implementation/": STEP_PRICE_LINES, "/st-louis/": STEP_PRICE_LINES,
                  "/managed-ai/": PRICING_BLOCK_LINES[1:]}
-PRICING_LINES["/"] = PRICING_LINES["/"] + ["Free consultation."]
 # Christian 2026-11-25: one monthly range replaced the two monthly lines; neither old line may come back
 OLD_PRICE_LINES = ["Managed agents from $1,000/month", "Full build-and-run from $2,500"]
 # pages that carry the full pricing block (CTA + a link to /pricing/); the others only show their lines
-PRICING_BLOCK_PATHS = ("/", "/services/", "/pricing/", "/managed-ai/")
+PRICING_BLOCK_PATHS = ("/services/", "/pricing/", "/managed-ai/")
+# the build is priced in the written proposal (Christian 2026-11-24); the old scoping sentence may not come back
+OLD_PRICE_LINES_BUILD = ["scoped after the free consultation", "Scoped after the on-site day"]
 # /guardrails/ collects only practices the site already states: no new security or control claims
 GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIPAA", r"\bGDPR\b", r"penetration",
                          r"zero[- ]trust", r"compliant"]
 # Revamp 2026-11-24 (CEO brief): home title, H1 (with its kicker), the brand tagline under it, the nav, the four offer steps
 HOME_TITLE = "lumic | Custom AI implementation, St. Louis FDEs"
-HOME_H1 = "Forward Deployed Engineers · St. Louis Custom AI, built into your business and kept working."
+HOME_H1 = "Custom AI, built into your business and kept working."  # audit P2-2: the kicker moved out of the h1 into the eyebrow
 TAGLINE = "AI, deployed into your business and kept working."
 NAV_LABELS = ["Services", "Managed AI", "How lumic works", "Pricing", "St. Louis"]
 STEP_LINKS = [CAL, "/ai-consulting/", "/ai-implementation/", "/managed-ai/"]
@@ -221,7 +224,7 @@ def check_phase5(b):
     for path, lines in PRICING_LINES.items():
         text, _ = load(path)
         fails += [f"{path}: pricing line missing or reworded: {l!r}" for l in lines if l not in text]
-        fails += [f"{path}: retired pricing line {l!r}" for l in OLD_PRICE_LINES if l in text]
+        fails += [f"{path}: retired pricing line {l!r}" for l in OLD_PRICE_LINES + OLD_PRICE_LINES_BUILD if l in text]
         if path not in PRICING_BLOCK_PATHS:
             continue
         ctas = pg.evaluate(f"[...document.querySelectorAll('a')].filter(a => a.textContent.trim() === {json.dumps(PRICING_CTA)}).map(a => a.href)")
@@ -275,7 +278,8 @@ def check_phase5(b):
                  "/ai-implementation/", "/managed-ai/", "/ai-consulting/", "/st-louis/metro-east/"):
         if not foot or f'href="{href}"' not in foot.group(0):
             fails.append(f"footer: no link to {href}")
-    # /privacy/ (hand-written, outside pages.json): third person, and it names what the checklist form stores
+    # /privacy/ (hand-written, outside pages.json): third person, and it names what the checklist form stores. It is exempt
+    # from the product-name rule on purpose: a privacy page must name its processors accurately (e.g. Microsoft 365).
     text, html = load("/privacy/")
     for m in re.finditer(WE, text, re.I):
         fails.append(f"/privacy/: first-person word {m.group(0)!r}")

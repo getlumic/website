@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/systems/sage-100/ap-automation/ | Contact: hello@get-lumic.com
 
-Sage 100 AP automation
-
 # Sage 100 AP automation, with a person posting every batch.
 
 An agent reads each vendor bill, matches it to the purchase order, and prepares the AP invoice and the PO receipt in Sage 100, in an unposted batch. A person on your team reviews the batch and posts it. lumic builds it on site and keeps it working.
@@ -85,8 +83,6 @@ The agent prepares the batch and leaves it unposted. A person on your team revie
 
 The agent leaves the batch unposted. Flagged bills wait for a person’s approval.
 
-The AP job on any system: [AP automation](https://get-lumic.com/services/ap-automation/). Every job an agent does with Sage 100: [Sage 100](https://get-lumic.com/systems/sage-100/). Starting prices: [Pricing](https://get-lumic.com/pricing/).
-
 Questions
 
 ## Sage 100 AP automation, in plain answers.
@@ -94,6 +90,12 @@ Questions
 ### Can AI work with Sage 100?
 
 Yes. A lumic agent works with Sage 100 on its own dedicated computer, under its own login. It reads each vendor bill, matches it to the PO, and prepares the AP invoice and PO receipt in an unposted batch. A person reviews the batch and posts it.
+
+## Related
+
+- [AP automation](https://get-lumic.com/services/ap-automation/)
+- [Sage 100](https://get-lumic.com/systems/sage-100/)
+- [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -105,9 +107,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

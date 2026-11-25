@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/guardrails/ | Contact: hello@get-lumic.com
 
-Guardrails On every agent
-
 # Guardrails: gated by the people who know the work.
 
 The practices lumic follows on every agent, in one place. A person approves every entry before it posts, every action is logged, and each agent can reach only what its job needs.
@@ -41,7 +39,7 @@ Any agent can be paused, or its access revoked, at any time.
 
 ### Entries are added to the log, not edited.
 
-Every action is logged. Entries are added to the log, not edited. More in [AI implementation](https://get-lumic.com/ai-implementation/).
+Nothing in the log is changed after the fact, so a reviewer sees each action as it happened. More in [AI implementation](https://get-lumic.com/ai-implementation/).
 
 ### A failed release rolls back by itself.
 
@@ -67,7 +65,12 @@ Once an agent is live, lumic watches it, tests it every month, fixes what breaks
 
 Data lumic handles for a client is covered by that client’s written agreement with lumic.
 
-The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). How an agent works inside your systems: [Systems](https://get-lumic.com/systems/). Starting prices: [Pricing](https://get-lumic.com/pricing/). Common questions: [FAQ](https://get-lumic.com/faq/).
+## Related
+
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
+- [Systems lumic works with](https://get-lumic.com/systems/)
+- [Pricing](https://get-lumic.com/pricing/)
+- [Common questions](https://get-lumic.com/faq/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -79,9 +82,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

@@ -28,6 +28,7 @@ const REDIRECTS = {
   "/installable-ai-jobs": "/ai-agent-skills/", "/installable-ai-jobs/": "/ai-agent-skills/",
   "/installable-jobs": "/ai-agent-skills/", "/installable-jobs/": "/ai-agent-skills/",
   "/agent-skills": "/ai-agent-skills/", "/agent-skills/": "/ai-agent-skills/",
+  "/services/order-desk": "/services/order-desk-and-customer-service/", "/services/order-desk/": "/services/order-desk-and-customer-service/",
 };
 function mdFor(path) {
   if (path === "/index.html") return "/index.md";

@@ -245,7 +245,7 @@
      "name": "What is an FDE?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
+      "text": "FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
      }
     },
     {
@@ -367,7 +367,7 @@
      "name": "What does AI implementation mean for a small business?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Putting AI to work inside the systems the business already runs, not buying a new tool to learn. lumic's FDEs find the work done by hand, build an agent, an automation or a live dashboard for it, and keep it working. A person on your team approves what matters."
+      "text": "Putting AI to work inside the systems the business already runs, not buying a new tool to learn. lumic’s FDEs find the work done by hand, build an agent, an automation or a live dashboard for it, and keep it working. A person on your team approves what matters."
      }
     },
     {
@@ -505,7 +505,7 @@
      "name": "What does the retainer cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes."
+      "text": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes."
      }
     }
    ]
@@ -610,7 +610,7 @@
      "name": "How is lumic different from an AI consultant?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
+      "text": "A consultant advises and leaves. lumic’s FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
      }
     },
     {
@@ -741,7 +741,7 @@
      "name": "What does it cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge."
+      "text": "A setup fee, then a monthly fee, quoted per job. There is no per-use charge."
      }
     }
    ]
@@ -751,7 +751,7 @@
    "@id": "https://get-lumic.com/services/#webpage",
    "url": "https://get-lumic.com/services/",
    "name": "Custom AI solutions: agents, automations, dashboards | lumic",
-   "description": "Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month.",
+   "description": "Custom AI dashboards, agents and automations, built on site and kept working. Managed AI from $250 to $5,000 a month, depending on scope.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1473,7 +1473,7 @@
      "item": {
       "@type": "Service",
       "name": "AP invoice agent",
-      "description": "Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.",
+      "description": "Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
       }
@@ -1544,7 +1544,7 @@
      "position": 7,
      "item": {
       "@type": "Service",
-      "name": "Sales & margin",
+      "name": "Sales and margin",
       "description": "Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
@@ -1556,7 +1556,7 @@
      "position": 8,
      "item": {
       "@type": "Service",
-      "name": "Receivables & aging",
+      "name": "Receivables and aging",
       "description": "Live aging by customer, the same view that feeds the collections agent.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
@@ -1569,7 +1569,7 @@
      "item": {
       "@type": "Service",
       "name": "Consolidated financials",
-      "description": "A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.",
+      "description": "A live income statement and product-margin view, consolidated across companies, that shows the month-end result.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
       }
@@ -1580,7 +1580,7 @@
      "position": 10,
      "item": {
       "@type": "Service",
-      "name": "Purchasing & PO write-back",
+      "name": "Purchasing and PO write-back",
       "description": "The agent drafts purchase orders and writes them back to the ERP.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
@@ -1616,7 +1616,7 @@
      "position": 13,
      "item": {
       "@type": "Service",
-      "name": "Job costing & production rates",
+      "name": "Job costing and production rates",
       "description": "Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.",
       "provider": {
        "@id": "https://get-lumic.com/#org"
@@ -1842,7 +1842,7 @@
     }
    ],
    "url": "https://get-lumic.com/pricing/",
-   "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+   "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
    "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "lumic pricing: starting points, not quotes",
@@ -1872,7 +1872,7 @@
      {
       "@type": "Offer",
       "name": "Managed AI",
-      "description": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
+      "description": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes.",
       "priceSpecification": {
        "@type": "UnitPriceSpecification",
        "minPrice": 250,
@@ -2254,7 +2254,7 @@
      "name": "Does lumic offer AI consulting in St. Louis?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site diagnostic of the back-office jobs your team does by hand."
+      "text": "Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site day beside the people who do the back-office jobs by hand."
      }
     },
     {
@@ -2270,7 +2270,7 @@
      "name": "How is lumic different from an AI consultant?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
+      "text": "A consultant advises and leaves. lumic’s FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee."
      }
     },
     {
@@ -2304,7 +2304,7 @@
    "@id": "https://get-lumic.com/st-louis/metro-east/#webpage",
    "url": "https://get-lumic.com/st-louis/metro-east/",
    "name": "AI automation for Metro East businesses, on site | lumic",
-   "description": "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI, one process at a time a person approves before anything posts.",
+   "description": "lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2454,7 +2454,7 @@
      "name": "What is a forward-deployed engineer?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "An engineer who works on site with a business, builds inside its own systems, and stays to run what was built. lumic's FDEs have finance backgrounds and build AI into one back-office job at a time."
+      "text": "An engineer who works on site with a business, builds inside its own systems, and stays to run what was built. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time."
      }
     },
     {
@@ -2467,7 +2467,7 @@
     },
     {
      "@type": "Question",
-     "name": "Where are lumic's FDEs based?",
+     "name": "Where are lumic’s FDEs based?",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit."
@@ -2475,7 +2475,7 @@
     },
     {
      "@type": "Question",
-     "name": "What do lumic's FDEs build?",
+     "name": "What do lumic’s FDEs build?",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "AI agents for back-office jobs: vendor bills, cash receipts and collections, payroll journal entries, month-end close entries, and live dashboards. A person on your team approves every entry before it posts."
@@ -2486,7 +2486,7 @@
      "name": "How does an engagement start?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "With a free consultation: a 20-minute call. Then a written proposal with what lumic would build, the timeline and the cost, and an on-site visit."
+      "text": "With a free consultation: a 20-minute call. Then an on-site day beside your team, and a written proposal with what lumic would build, the timeline and the cost."
      }
     }
    ]
@@ -2594,7 +2594,7 @@
      "name": "How is an FDE different from a hire or a software license?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "lumic does not sell software to configure yourself. lumic's Forward Deployed Engineers build the agent inside the systems you already run, and the team stays to run it for a monthly fee. A person on your team approves every entry before it posts."
+      "text": "lumic does not sell software to configure yourself. lumic’s Forward Deployed Engineers build the agent inside the systems you already run, and the team stays to run it for a monthly fee. A person on your team approves every entry before it posts."
      }
     },
     {
@@ -2651,7 +2651,7 @@
      "name": "What is an FDE?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
+      "text": "FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
      }
     },
     {
@@ -2659,7 +2659,7 @@
      "name": "Where does the agent run?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model."
+      "text": "Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model."
      }
     },
     {
@@ -2691,7 +2691,7 @@
      "name": "What does it cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes."
+      "text": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes."
      }
     },
     {
@@ -2723,7 +2723,7 @@
      "name": "What systems does lumic work with?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "If your team runs it, lumic can work with it, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. The home page lists the systems."
+      "text": "If your team runs it, lumic can work with it, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. The home page lists the systems."
      }
     },
     {

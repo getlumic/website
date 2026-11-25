@@ -3,7 +3,6 @@
   <div class="wrap hero-grid solo">
     <div>
       {{crumbs}}
-      <p class="eyebrow"><span>Managed AI</span><span class="rule" aria-hidden="true"></span><b>On a monthly retainer</b></p>
       <h1>Managed AI: <em class="s">lumic keeps it working.</em></h1>
       <p class="lead">Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts. You run the business.</p>
       <div class="cta">
@@ -24,9 +23,8 @@
     </div>
     <article class="keep rv">
       <div>
-        <span class="tag">Each managed agent</span>
         <h3>Watched, tested, fixed and upgraded.</h3>
-        <p>Monitoring, ongoing: the team watches each agent. Testing, monthly: it tests it every month. Fixes, included: it fixes what breaks. Upgrades, included: it upgrades the agent as AI improves. When your team is ready, the same team builds the agent for another job.</p>
+        <p>Every agent is watched around the clock, tested monthly, fixed when it breaks and upgraded as AI improves; the ledger shows what is included. When your team is ready, the same team builds the agent for another job.</p>
         <p>Every month, a summary of what the agent did. <strong>A person on your team approves anything before it posts.</strong></p>
       </div>
       <ul class="ledger" aria-label="Covered for each managed agent">
@@ -46,14 +44,12 @@
 <section id="kept" aria-labelledby="kept-h">
   <div class="wrap">
     <div class="thread d2" aria-hidden="true"><i></i></div>
-    <p class="kicker rv">Upkeep, in practice</p>
-    <h2 id="kept-h" class="rv">What kept working <em class="s">means.</em></h2>
+    <h2 id="kept-h" class="rv">What upkeep <em class="s">covers.</em></h2>
     <div class="page-narrow">
       <ul class="wl rv" style="margin-top:40px">
         <li>{{ck}}<div><h3>Releases at night, checked by morning.</h3><p>Changes ship after hours, when nobody is working in the system. Before the day starts, every app is restarted and checked. One that fails its check rolls back to the last good version by itself.</p></div></li>
         <li>{{ck}}<div><h3>A watchdog on every app.</h3><p>It checks each app around the clock and restarts what stops. If the watchdog itself goes quiet, an outside alarm goes off.</p></div></li>
         <li>{{ck}}<div><h3>Feedback and Updates, inside the dashboard.</h3><p>Every lumic dashboard has Send feedback and an Updates page with plain-word release notes.</p></div></li>
-        <li>{{ck}}<div><h3>In production every working day.</h3><p>lumic&rsquo;s agents run in production every working day, monitored around the clock. Night releases roll back by themselves, and every request gets a ticket number.</p></div></li>
         <li>{{ck}}<div><h3>A support desk with ticket numbers.</h3><p>Every request gets a number and an owner. A ticket closes when the fix is live in your system.</p></div></li>
       </ul>
     </div>
@@ -64,7 +60,6 @@
 <section id="upkeep" aria-labelledby="upkeep-h">
   <div class="wrap">
     <div class="thread d2" aria-hidden="true"><i></i></div>
-    <p class="kicker rv">Why AI needs upkeep</p>
     <div class="two-head rv">
       <h2 id="upkeep-h">AI looks simple from the outside. <em class="s">It takes upkeep underneath.</em></h2>
       <p class="lead">An agent depends on connections, rules and checks. The work around it changes: a vendor sends a new bill layout, a system updates its screens, a new kind of exception comes up. AI models improve too. Left alone, an agent drifts; kept up, it gets better.</p>
@@ -86,8 +81,7 @@
 <section id="control" aria-labelledby="control-h">
   <div class="wrap">
     <div class="thread d3" aria-hidden="true"><i></i></div>
-    <p class="kicker rv">In your control</p>
-    <h2 id="control-h" class="rv">Paused or revoked <em class="s">any time.</em></h2>
+    <h2 id="control-h" class="rv">The controls stay <em class="s">with your team.</em></h2>
     <div class="page-narrow">
       <ul class="wl rv" style="margin-top:40px">
         <li>{{ck}}<div><h3>Paused or revoked any time.</h3><p>Any agent can be paused, or its access revoked, at any time.</p></div></li>
@@ -95,7 +89,6 @@
         <li>{{ck}}<div><h3>An approval queue for every entry.</h3><p>Each entry the agent prepares waits in an approval queue, ready for a person to approve.</p></div></li>
         <li>{{ck}}<div><h3>A log of every action.</h3><p>Every action an agent takes is logged: what it did, and who approved it.</p></div></li>
       </ul>
-      <p class="lead rv">The practices on every agent: <a href="/guardrails/">Guardrails</a>. How an agent gets built: <a href="/ai-implementation/">AI implementation</a>. Where it starts: <a href="/ai-consulting/">AI consulting</a>. Already using an AI assistant? lumic can package the job for it instead: <a href="/ai-agent-skills/">AI agent skills</a>.</p>
     </div>
   </div>
 </section>
@@ -106,7 +99,6 @@
     <div class="thread" aria-hidden="true"><i></i></div>
     <article class="keep rv" id="pricing">
       <div>
-        <span class="tag">Pricing</span>
         <h3 id="plans-h">The monthly retainer.</h3>
         <p>Managed AI from $250 to $5,000 a month, depending on scope.</p>
         <p>{{price_build}}</p>
@@ -119,7 +111,7 @@
       <ul class="ledger" aria-label="Pricing at a glance">
         <li class="hd"><span>At a glance</span></li>
         <li><span>Managed AI</span><span class="st">Monthly, by scope</span></li>
-        <li><span>The build</span><span class="st">One-time, scoped</span></li>
+        <li><span>The build</span><span class="st">One-time, in the proposal</span></li>
       </ul>
     </article>
   </div>
@@ -137,3 +129,5 @@
     </div>
   </div>
 </section>
+
+{{related /ai-implementation/ /ai-consulting/ /ai-agent-skills/ /guardrails/}}

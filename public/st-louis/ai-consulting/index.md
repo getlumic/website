@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com
 
-Based in St. Louis AI consulting and automation
-
 # St. Louis AI consulting and automation
 
 lumic is an AI consulting and automation firm based in St. Louis. Its Forward Deployed Engineers have finance backgrounds. They come on site, find the back-office work your team does by hand, build an AI agent for one job at a time inside the systems you already run, and keep it working. A person on your team approves every entry before it posts. For St. Louis AI or STL AI work on the back office, lumic sends Forward Deployed Engineers, not a slide deck.
@@ -32,7 +30,7 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 - Vendor bills and PO matching
 - A person approves each entry
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Cash receipts and collections
 
@@ -41,7 +39,7 @@ Remittances and ACH detail, read and keyed into the ERP. Collections emails and 
 - Cash receipts keyed for approval
 - A person sends every collections email
 
-[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+[Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 ### Payroll
 
@@ -50,16 +48,16 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 - Accruals and reversals
 - Posted only on the controller’s click
 
-[Payroll →](https://get-lumic.com/services/payroll/)
+[Payroll](https://get-lumic.com/services/payroll/)
 
 ### Month-end close
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Agent · ERP
+- Runs in: ERP
 - Approved before posting, every month
 
-[Month-end close →](https://get-lumic.com/services/month-end-close/)
+[Month-end close](https://get-lumic.com/services/month-end-close/)
 
 ### Dashboards and reporting
 
@@ -68,7 +66,7 @@ Sales and margin, receivables, purchasing, job costing and consolidated financia
 - Live, on your own data
 - Dashboards only read
 
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 ### Order desk and customer service
 
@@ -77,7 +75,7 @@ The agent reads each purchase order and customer email, drafts the sales order a
 - Orders and replies drafted
 - A person sends every reply
 
-[Order desk and customer service →](https://get-lumic.com/services/order-desk-and-customer-service/)
+[Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/)
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
@@ -105,7 +103,7 @@ Questions
 
 ### Does lumic offer AI consulting in St. Louis?
 
-Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site diagnostic of the back-office jobs your team does by hand.
+Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site day beside the people who do the back-office jobs by hand.
 
 ### What does lumic automate?
 
@@ -113,7 +111,7 @@ Back-office jobs, one agent per job: vendor bills and PO matching, cash receipts
 
 ### How is lumic different from an AI consultant?
 
-A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
+A consultant advises and leaves. lumic’s FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
 
 ### Who approves what the agent does?
 
@@ -137,9 +135,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

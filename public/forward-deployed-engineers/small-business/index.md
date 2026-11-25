@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/forward-deployed-engineers/small-business/ | Contact: hello@get-lumic.com
 
-Forward Deployed Engineers Small and mid-size businesses
-
 # Forward Deployed Engineers for small and mid-size businesses.
 
 A Forward Deployed Engineer (FDE) works on site with a business, builds inside its own systems, and stays to run what was built. lumic’s FDEs have finance backgrounds. They build one back-office AI agent at a time, inside the systems your team already runs, and keep it working. A person on your team approves every entry before it posts.
@@ -73,7 +71,7 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 - Vendor bills and PO matching
 - A person approves each entry
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Cash receipts and collections
 
@@ -82,7 +80,7 @@ Remittances and ACH detail, read and keyed into the ERP. Collections emails and 
 - Cash receipts keyed for approval
 - A person sends every collections email
 
-[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+[Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 ### Payroll
 
@@ -91,16 +89,16 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 - Accruals and reversals
 - Posted only on the controller’s click
 
-[Payroll →](https://get-lumic.com/services/payroll/)
+[Payroll](https://get-lumic.com/services/payroll/)
 
 ### Month-end close
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Agent · ERP
+- Runs in: ERP
 - Approved before posting, every month
 
-[Month-end close →](https://get-lumic.com/services/month-end-close/)
+[Month-end close](https://get-lumic.com/services/month-end-close/)
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
@@ -108,7 +106,7 @@ Proof
 
 ## Live and working.
 
-An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
+A smaller business gets the same agents that run in production every working day, with a person approving each entry.
 
 ### AP invoice agent
 
@@ -140,8 +138,6 @@ An agent prepares the work. The people on your team who know it approve it befor
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-What an FDE is, in full: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/).
-
 Questions
 
 ## FDEs for a smaller business, in plain answers.
@@ -152,13 +148,11 @@ Yes. A Forward Deployed Engineer (FDE) fits a business with people doing repetit
 
 ### How is an FDE different from a hire or a software license?
 
-lumic does not sell software to configure yourself. lumic's Forward Deployed Engineers build the agent inside the systems you already run, and the team stays to run it for a monthly fee. A person on your team approves every entry before it posts.
+lumic does not sell software to configure yourself. lumic’s Forward Deployed Engineers build the agent inside the systems you already run, and the team stays to run it for a monthly fee. A person on your team approves every entry before it posts.
 
 ### What does it cost to start?
 
 Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
-
-Pricing
 
 ### Free consultation.
 
@@ -166,7 +160,7 @@ On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -175,8 +169,15 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
+
+## Related
+
+- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
+- [Guardrails](https://get-lumic.com/guardrails/)
+- [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -188,9 +189,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

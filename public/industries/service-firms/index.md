@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/industries/service-firms/ | Contact: hello@get-lumic.com
 
-Industries Service firms
-
 # Custom AI for service firms, from the inbox to the books.
 
 Vendor bills entered, cash receipts keyed, collections drafted, payroll and month-end entries prepared. lumic builds an AI agent for each back-office job a service firm does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
@@ -29,53 +27,53 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads each vendor bill from email and prepares the entry in your accounting software. A person approves it, and nobody retypes it.
 
-- Agent · accounting software
+- Runs in: accounting software
 - A person approves each entry
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Cash receipts
 
 The agent reads remittances and ACH detail and keys them as receipts for a person to approve.
 
-- Agent · accounting + bank
+- Runs in: accounting and bank
 - A person approves each entry
 
-[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+[Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 ### Collections
 
 From live aging, the agent drafts the collections email and the statement for each past-due client. A person reviews each one and sends it.
 
-- Agent · accounting + inbox
+- Runs in: accounting and inbox
 - A person sends every one
 
 ### Payroll entries
 
 The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
 
-- Agent · payroll reports + accounting
+- Runs in: payroll reports and accounting
 - Posted only on the controller’s click
 
-[Payroll →](https://get-lumic.com/services/payroll/)
+[Payroll](https://get-lumic.com/services/payroll/)
 
 ### Month-end close
 
 The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
-- Agent · accounting
+- Runs in: accounting
 - The controller posts each entry
 
-[Month-end close →](https://get-lumic.com/services/month-end-close/)
+[Month-end close](https://get-lumic.com/services/month-end-close/)
 
 ### Live reporting
 
 Revenue, margin and receivables read live from your books, so nobody rebuilds the same report every week.
 
-- Dashboard · accounting
+- Reads from: accounting
 - No more morning export
 
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
 
@@ -102,17 +100,13 @@ lumic builds it, and keeps it working.
 - Rebuilding the same report every week → Numbers live, no export
 - Build-and-ghost consultants → A team that stays on
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers and distributors: [manufacturing](https://get-lumic.com/industries/manufacturing/) and [distribution](https://get-lumic.com/industries/distribution/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
-
-Pricing
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -121,7 +115,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
 
 Free checklist
@@ -131,6 +125,13 @@ Free checklist
 Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
 
 One email field. No spam, no trackers.
+
+## Related
+
+- [Services](https://get-lumic.com/services/)
+- [Manufacturing](https://get-lumic.com/industries/manufacturing/)
+- [Distribution](https://get-lumic.com/industries/distribution/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -142,9 +143,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

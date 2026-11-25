@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/systems/sage-intacct/ | Contact: hello@get-lumic.com
 
-Systems Sage Intacct
-
 # AI agents that work in Sage Intacct.
 
 lumic works with Sage Intacct. An agent prepares bills, receipts and entries in Sage Intacct, the same records a clerk would key, and a person approves before anything posts. Dashboards read the same data live. lumic builds it on site and keeps it working.
@@ -72,17 +70,13 @@ lumic gives each agent access to the screens and records its job needs, and noth
 
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
 
-Every system lumic works with: [Systems](https://get-lumic.com/systems/). How each agent is built: [How lumic works](https://get-lumic.com/how-lumic-works/). Agents and dashboards in production: [Portfolio](https://get-lumic.com/portfolio/).
-
-Pricing
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -91,16 +85,14 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
+## Related
 
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
+- [Systems lumic works with](https://get-lumic.com/systems/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
+- [Portfolio](https://get-lumic.com/portfolio/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -112,9 +104,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

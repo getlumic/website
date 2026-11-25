@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/resources/ai-agent-for-accounting/ | Contact: hello@get-lumic.com
 
-Guide Accounting
-
 # AI agents for accounting: what they do, and how to start.
 
 An AI agent for accounting does one job a clerk does today, such as entering vendor bills or preparing month-end entries, inside the accounting software or ERP you already run. It prepares the entry; a person approves it before anything posts.
@@ -29,31 +27,31 @@ The best accounting jobs for an agent repeat every day or every month, follow ru
 
 Read each bill from email, match it to the purchase order, flag a price difference, and enter it for approval.
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Cash receipts
 
 Read remittances and payment detail, apply cash to open invoices, and leave each entry for a person to approve.
 
-[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+[Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 ### Payroll entries
 
 Build the payroll journal entry from the payroll reports and check every line. The controller posts it.
 
-[Payroll →](https://get-lumic.com/services/payroll/)
+[Payroll](https://get-lumic.com/services/payroll/)
 
 ### Month-end entries
 
 Prepare the recurring entries and run the tie-outs. Every entry waits unposted until the controller posts it.
 
-[Month-end close →](https://get-lumic.com/services/month-end-close/)
+[Month-end close](https://get-lumic.com/services/month-end-close/)
 
 ### Reporting
 
 Live dashboards read from the books, so nobody rebuilds the same report every morning. Dashboards only read.
 
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 Controls
 
@@ -75,15 +73,9 @@ Every action an agent takes is logged, so a reviewer can see what it did and who
 
 Any agent can be paused, or its access revoked, at any time.
 
-How to start
-
 ## Start with the job that takes the most hours.
 
-List the accounting jobs your team does by hand, with the hours each one takes. Pick one. Watch it done, write down the checks and the exceptions, then build the agent around how the work is really done. An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
-
-[The full method: how to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/) [AI implementation with lumic](https://get-lumic.com/ai-implementation/)
-
-Pricing
+List the accounting jobs your team does by hand, with the hours each one takes. Pick one. Watch it done, write down the checks and the exceptions, then build the agent around how the work is really done.
 
 ### Free consultation.
 
@@ -91,7 +83,7 @@ On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -100,8 +92,23 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
+
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
+
+## Related
+
+- [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/)
+- [AI implementation](https://get-lumic.com/ai-implementation/)
+- [Month-end close](https://get-lumic.com/services/month-end-close/)
+- [AP automation](https://get-lumic.com/services/ap-automation/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -113,9 +120,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

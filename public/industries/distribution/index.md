@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumic.com
 
-Industries Distribution
-
 # Custom AI for distributors, from the order desk to the books.
 
 Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. lumic builds an AI agent for each back-office job a distributor does by hand. Each entry waits for a person’s approval, and lumic keeps it working.
@@ -29,50 +27,50 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads remittances and ACH detail and keys them into the ERP for a person to approve.
 
-- Agent · ERP + bank
+- Runs in: ERP and bank
 - A person approves each entry
 
-[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+[Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 ### Collections
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
 
-- Agent · ERP + inbox
+- Runs in: ERP and inbox
 - A person sends every one
 
 ### Margin by customer, product and rep
 
 Sales and gross margin read live from the ERP, across every company the business runs, in one view.
 
-- Dashboard · ERP
+- Reads from: ERP
 - Replaces a daily export
 
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 ### Vendor bills and POs
 
 The agent reads each vendor bill, matches it to the purchase order, and flags a price difference before anyone pays. It also drafts purchase orders for approval.
 
-- Agent · accounting software
+- Runs in: accounting software
 - Approval-gated
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Month-end close
 
 The agent prepares the recurring month-end entries and runs the tie-outs, including intercompany where a business runs more than one company.
 
-- Agent · ERP
+- Runs in: ERP
 - The controller posts each entry
 
-[Month-end close →](https://get-lumic.com/services/month-end-close/)
+[Month-end close](https://get-lumic.com/services/month-end-close/)
 
 ### Ask your data
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant · the same live data
+- AI assistant, on the same live data
 - A person approves each entry
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
@@ -100,17 +98,13 @@ lumic builds it, and keeps it working.
 - Exporting the same reports every morning → Numbers live, no export
 - Build-and-ghost consultants → A team that stays on
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). Manufacturers: [AI automation for manufacturers](https://get-lumic.com/industries/manufacturing/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
-
-Pricing
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -119,16 +113,15 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
+## Related
 
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
+- [Services](https://get-lumic.com/services/)
+- [Manufacturing](https://get-lumic.com/industries/manufacturing/)
+- [Service firms](https://get-lumic.com/industries/service-firms/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -140,9 +133,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

@@ -11,25 +11,20 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/pricing/ | Contact: hello@get-lumic.com
 
-Pricing Starting points
-
 # Pricing, in plain numbers.
 
-Free consultation. On-site work $1,500/day, credited toward phase one. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. These figures are starting points, not quotes.
 
 [Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) The figures
 
-The figures
-
 ## Starting prices, before the proposal.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Each figure is where a conversation starts. The written proposal, after the on-site day, sets the price of the build.
 
 ### Consultation
 
-Free consultation.
+Free. A 20‑minute call.
 
-- A 20‑minute call
 - You walk the team through the work your people do by hand
 
 ### On-site work
@@ -43,26 +38,28 @@ On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-[Includes night releases, monitoring and the support desk.](https://get-lumic.com/managed-ai/)
+Includes night releases, monitoring and the support desk.
 
-- lumic builds the agents and runs them
+- lumic runs and supports the agents
 - A person approves every entry
 - A monthly summary
 
+[Managed AI](https://get-lumic.com/managed-ai/)
+
 ### A job installed on your own AI
 
-A job installed on your own AI: a setup fee, then a monthly fee, quoted per job.
+A setup fee, then a monthly fee, quoted per job.
 
 - Packaged for the AI assistant your team already uses
 - A person approves what matters
 
-[AI agent skills →](https://get-lumic.com/ai-agent-skills/)
+[AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
 What the monthly fee covers
 
 ### Running and supporting your agents.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -75,7 +72,12 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Upgrades as tools improve Included
 - Human approval Built in
 
-The jobs lumic automates: [Services](https://get-lumic.com/services/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). On site in [St. Louis](https://get-lumic.com/st-louis/).
+## Related
+
+- [Services](https://get-lumic.com/services/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
+- [Guardrails](https://get-lumic.com/guardrails/)
+- [St. Louis](https://get-lumic.com/st-louis/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -87,9 +89,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

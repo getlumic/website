@@ -2,10 +2,10 @@
 
 > lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
-## Offers
+## How an engagement runs, and what it costs
 - Free consultation. A 20-minute call.
 - On-site work $1,500/day, credited toward phase one. AI consulting, on site: https://get-lumic.com/ai-consulting/
-- The build is a separate, one-time cost, scoped after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
+- The build is a separate, one-time cost, priced in the written proposal after the on-site day. AI implementation: https://get-lumic.com/ai-implementation/
 - Managed AI from $250 to $5,000 a month, depending on scope. Managed AI: https://get-lumic.com/managed-ai/
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -46,10 +46,10 @@
 - lumic runs each job for the client on a dedicated computer, or packages it for the AI assistant the client's team already uses: the written procedure, the tools when the job needs them, and the approval steps, bundled as a plugin. A packaged job is a setup fee, then a monthly fee, quoted per job: https://get-lumic.com/ai-agent-skills/
 
 ## Portfolio
-Agents and dashboards lumic built run every day in production, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; everything shown runs in production.
+Eighteen live dashboards and the agents behind them run every day in production, on entirely different systems. Clients are kept private; everything shown runs in production.
 
 - AP invoice agent (accounting software + the system that holds the POs): every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems after approval. The bills it can't match go to a person with the reason.
-- A finance team run on agents: across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections, with eighteen live dashboards. A person approves each entry.
+- A finance team run on agents: across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.
 
 Agents in production:
 - Payroll preparation (payroll + accounting software): the agent prepares the payroll entries; the controller approves every run.
@@ -63,7 +63,7 @@ Live dashboards in production:
 - AP workbench (accounting software): every open bill, its PO match and its approval state.
 - Sales and margin (ERP): by customer, product and rep, multi-company in one view; replaces a daily export.
 - Receivables and aging (ERP): live aging that feeds the collections agent.
-- Consolidated financials (ERP): multi-company income statement and product margin, consolidated across sister companies; never stale.
+- Consolidated financials (ERP): multi-company income statement and product margin, consolidated across companies; never stale.
 - Job costing and production rates (production data + ERP): estimate vs. actual per job, during the job.
 - Purchasing (ERP): open POs, receipts and vendor price changes.
 - Commissions (ERP): rep commissions from live sales.
@@ -76,11 +76,11 @@ Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage 
 Client names stay private.
 
 ## Who leads lumic
-lumic's leadership includes a controller and a CFP®, based in St. Louis. Its leaders still work in finance, and that is the point: they run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+lumic's leadership includes a controller and a CFP®, based in St. Louis. They run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
 
 - Christian Gonzenbach, co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
 - Joshua Wittenauer, CFP®, co-founder. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's AI-agent work and how each agent handles your data.
-- When you call lumic, you speak with the people who build and run your agents. Every engagement is led by a senior FDE, on site.
+- Every engagement is led by a senior FDE, on site.
 
 ## Area served
 Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit.
@@ -89,12 +89,12 @@ Based in Greater St. Louis: St. Louis City, St. Louis County, St. Charles County
 - Free consultation.
 - On-site work $1,500/day, credited toward phase one.
 - Managed AI from $250 to $5,000 a month, depending on scope. Includes night releases, monitoring and the support desk.
-- Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+- Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 - Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
 
 ## How to start
-A 20-minute call, then a written proposal with what lumic would build, the timeline and the cost, then a visit to meet the team. Contact: hello@get-lumic.com
+A 20-minute call, then an on-site day beside the team, then a written proposal with what lumic would build, the timeline and the cost. Contact: hello@get-lumic.com
 
 ## Pages
 - [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
@@ -102,15 +102,15 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what kept working means: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk ([markdown](https://get-lumic.com/managed-ai/index.md))
 - [AI consulting](https://get-lumic.com/ai-consulting/): AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page ([markdown](https://get-lumic.com/ai-consulting/index.md))
 - [AI agent skills](https://get-lumic.com/ai-agent-skills/): AI agent skills: a lumic job packaged for the AI assistant a team already uses (the written procedure, the tools when the job needs them, the approval steps, one file for the business, bundled as a plugin); the jobs lumic packages; a setup fee then a monthly fee; or lumic runs it ([markdown](https://get-lumic.com/ai-agent-skills/index.md))
-- [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI; beyond the books ([markdown](https://get-lumic.com/services/index.md))
-- [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals; run by lumic or installed on your own AI ([markdown](https://get-lumic.com/services/ap-automation/index.md))
+- [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, how lumic builds and runs each agent, links to AI implementation and Managed AI; beyond the books ([markdown](https://get-lumic.com/services/index.md))
+- [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals; where it runs: a lumic computer, or packaged for your own AI ([markdown](https://get-lumic.com/services/ap-automation/index.md))
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
 - [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))
 - [Month-end close](https://get-lumic.com/services/month-end-close/): the month-end agent: reads the period, prepares recurring entries, runs tie-outs; every entry unposted until the controller posts ([markdown](https://get-lumic.com/services/month-end-close/index.md))
 - [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
-- [Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/): the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; run by lumic or installed on your own AI ([markdown](https://get-lumic.com/services/order-desk-and-customer-service/index.md))
+- [Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/): the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; where it runs: a lumic computer, or packaged for your own AI ([markdown](https://get-lumic.com/services/order-desk-and-customer-service/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
-- [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
+- [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the four steps (free consultation, on-site day and written proposal, build, managed AI), how each agent is built and run, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
 - [Guardrails](https://get-lumic.com/guardrails/): the practices on every agent, as already stated across the site: a person approves every entry, everything logged, access limited to the job, and any agent can be paused or revoked at any time ([markdown](https://get-lumic.com/guardrails/index.md))
 - [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope, a job installed on your own AI; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
 - [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))

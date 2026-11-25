@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/ | Contact: hello@get-lumic.com
 
-Guide Small business
-
 # How to implement AI in a small business, one job at a time.
 
 Most small businesses do not need an AI strategy deck. They need one job done well by AI, inside the systems they already run, with a person approving what matters. This is the method lumic’s Forward Deployed Engineers use.
@@ -23,37 +21,31 @@ The method
 
 ## Six steps, in order.
 
-### 1. Pick one job.
+### Pick one job.
 
 Start with the job that takes the most hours by hand and repeats every day or every month: entering bills, applying cash, keying orders, building the same entries or reports. One job, not a department.
 
-### 2. Watch it done by hand.
+### Watch it done by hand.
 
 Sit beside the person who does it today. Write down the screens, the checks and the exceptions. The exceptions are where an AI project succeeds or fails.
 
-### 3. Remove steps before you automate them.
+### Remove steps before you automate them.
 
 Some steps exist only because of an old workaround. Drop them. Then decide what needs AI, such as reading a document, and what only needs a plain rule.
 
-### 4. Build inside the systems you already run.
+### Build inside the systems you already run.
 
 The agent should read and enter the same records a person would, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. No new system for the team to learn.
 
-### 5. Keep a person on approval.
+### Keep a person on approval.
 
 The agent prepares each entry; a person checks it and approves it before anything posts. Give the agent access only to what its job needs, and log every action it takes. Test it on real work before it goes live.
 
-### 6. Keep it working.
+### Keep it working.
 
 Systems change, document layouts change, and AI models improve. Someone has to watch the agent, test it every month, fix what breaks and upgrade it. Then pick the following job.
 
-In production
-
-## What the method looks like live.
-
-An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
-
-[See that agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
+[See the method on one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
 
 With lumic
 
@@ -63,7 +55,7 @@ With lumic
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-- [Book a call →](https://cal.com/lumic/20-minute-call)
+- [Book a call](https://cal.com/lumic/20-minute-call)
 
 ### On-site day and written proposal.
 
@@ -71,15 +63,15 @@ lumic’s FDEs work beside your team where the work happens, map where AI fits, 
 
 On-site work $1,500/day, credited toward phase one.
 
-- [AI consulting →](https://get-lumic.com/ai-consulting/)
+- [AI consulting](https://get-lumic.com/ai-consulting/)
 
 ### Build.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
-Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+Priced in the written proposal.
 
-- [AI implementation →](https://get-lumic.com/ai-implementation/)
+- [AI implementation](https://get-lumic.com/ai-implementation/)
 
 ### Managed AI.
 
@@ -87,9 +79,22 @@ lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-- [Managed AI →](https://get-lumic.com/managed-ai/)
+- [Managed AI](https://get-lumic.com/managed-ai/)
 
-The build in full: [AI implementation](https://get-lumic.com/ai-implementation/). For accounting work: [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/). What an FDE is: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/).
+Free checklist
+
+## Month-End Red Flags Service Firms Usually Miss
+
+Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
+
+One email field. No spam, no trackers.
+
+## Related
+
+- [AI implementation](https://get-lumic.com/ai-implementation/)
+- [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/)
+- [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/)
+- [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -101,9 +106,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

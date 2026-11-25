@@ -185,8 +185,8 @@
         },
         {
           "q": "What does the retainer cost?",
-          "a": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
-          "html": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+          "a": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes.",
+          "html": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },
@@ -237,8 +237,8 @@
         },
         {
           "q": "What does it cost?",
-          "a": "A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge.",
-          "html": "A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge. Details: <a href=\"/pricing/\">Pricing</a>."
+          "a": "A setup fee, then a monthly fee, quoted per job. There is no per-use charge.",
+          "html": "A setup fee, then a monthly fee, quoted per job. There is no per-use charge. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },
@@ -246,9 +246,9 @@
       "id": "services",
       "path": "/services/",
       "crumb": "Services",
-      "purpose": "custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI; beyond the books",
+      "purpose": "custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, how lumic builds and runs each agent, links to AI implementation and Managed AI; beyond the books",
       "title": "Custom AI solutions: agents, automations, dashboards | lumic",
-      "description": "Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month.",
+      "description": "Custom AI dashboards, agents and automations, built on site and kept working. Managed AI from $250 to $5,000 a month, depending on scope.",
       "type": "CollectionPage",
       "films": [],
       "h1": "Custom AI solutions, one process at a time."
@@ -257,7 +257,7 @@
       "id": "ap-automation",
       "path": "/services/ap-automation/",
       "crumb": "AP automation",
-      "purpose": "the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals; run by lumic or installed on your own AI",
+      "purpose": "the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals; where it runs: a lumic computer, or packaged for your own AI",
       "title": "AI agent for accounts payable: bill entry and PO matching | lumic",
       "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
       "type": "WebPage",
@@ -333,7 +333,7 @@
         "label": "Services",
         "href": "/services/"
       },
-      "purpose": "the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; run by lumic or installed on your own AI",
+      "purpose": "the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; where it runs: a lumic computer, or packaged for your own AI",
       "title": "AI agent for the order desk and customer service | lumic",
       "description": "An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.",
       "type": "WebPage",
@@ -364,7 +364,7 @@
       "id": "how-lumic-works",
       "path": "/how-lumic-works/",
       "crumb": "How lumic works",
-      "purpose": "the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership",
+      "purpose": "the method: FDEs, the four steps (free consultation, on-site day and written proposal, build, managed AI), how each agent is built and run, approvals and access, leadership",
       "title": "How lumic works: FDEs, approvals and data security | lumic",
       "description": "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it.",
       "type": "AboutPage",
@@ -453,7 +453,7 @@
       "faq": [
         {
           "q": "Does lumic offer AI consulting in St. Louis?",
-          "a": "Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site diagnostic of the back-office jobs your team does by hand."
+          "a": "Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site day beside the people who do the back-office jobs by hand."
         },
         {
           "q": "What does lumic automate?",
@@ -489,7 +489,7 @@
       },
       "purpose": "AI automation on site for Metro East businesses: Madison and St. Clair counties, Illinois; the five back-office jobs; proof; on-site day rate",
       "title": "AI automation for Metro East businesses, on site | lumic",
-      "description": "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI, one process at a time a person approves before anything posts.",
+      "description": "lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry.",
       "type": "WebPage",
       "films": [],
       "h1": "AI automation for Metro East businesses, on site."
@@ -524,7 +524,7 @@
         },
         {
           "q": "How does an engagement start?",
-          "a": "With a free consultation: a 20-minute call. Then a written proposal with what lumic would build, the timeline and the cost, and an on-site visit."
+          "a": "With a free consultation: a 20-minute call. Then an on-site day beside your team, and a written proposal with what lumic would build, the timeline and the cost."
         }
       ]
     },
@@ -732,8 +732,8 @@
     },
     {
       "q": "What does it cost?",
-      "a": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
-      "html": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
+      "a": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes.",
+      "html": "It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes. Details: <a href=\"/pricing/\">Pricing</a>."
     },
     {
       "q": "Do you work outside St. Louis?",

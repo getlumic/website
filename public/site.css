@@ -1,7 +1,7 @@
 :root{
   --primary:#5e5ce6; --primary-d:#4845c2; --primary-l:#7a78f0; --wash:#eeedfd;
   --bg:#f6f7fb; --bg2:#eef1f8; --card:#ffffff;
-  --text-strong:#0f172a; --text:#1e293b; --muted:#64748b; --faint:#64748b; --line:#e2e8f0; --line2:#eef1f6;
+  --text-strong:#0f172a; --text:#1e293b; --muted:#5b6476; --faint:#5b6476; --line:#e2e8f0; --line2:#eef1f6;
   --dk:#0e1525; --dk2:#131b32; --dk3:#18213a; --dk-wash:#1f1d3a; --dk-text:#e8edf7; --dk-muted:#8a9ab8;
   --up:#16a34a; --down:#dc2626; --warn:#ea580c;
   --paper:#ffffff;
@@ -160,7 +160,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .ledger li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;font-size:14.5px;color:var(--text-strong);font-weight:500}
 .ledger li+li{border-top:1px solid var(--line2)}
 .ledger .st{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--primary-d);white-space:nowrap}
-.ledger .st::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--primary)}
+.ledger .st::before{content:none}
 .ledger .hd{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 .ledger .hd .st{color:var(--faint);font-size:11px}
 .ledger .hd .st::before{display:none}
@@ -177,7 +177,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 .runs-l{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 16px}
 .runs ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
 .runs li{display:inline-flex;align-items:center;gap:9px;padding:10px 16px 10px 14px;border:1px solid var(--line);border-radius:999px;background:#ffffff;font-size:15.5px;color:var(--text);box-shadow:0 1px 2px rgba(15,23,42,.04);white-space:nowrap}
-.runs li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 3px rgba(94,92,230,.14)}
+.runs li::before{content:none}
 .pgrid{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--hair)}
 .pf{padding:36px 32px 40px 0;border-bottom:var(--hair);display:flex;flex-direction:column}
 .pf:not(:nth-child(3n+1)){padding-left:32px;border-left:var(--hair)}
@@ -260,7 +260,7 @@ footer{padding:56px 0 44px}
 
 /* ---------- reveal ---------- */
 @media (prefers-reduced-motion:no-preference){
-  .js .rv{opacity:0;transform:translateY(16px);transition:opacity 1.1s var(--ease),transform 1.2s var(--ease)}
+  .js .rv{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
   .js .rv.in{opacity:1;transform:none}
 }
 
@@ -493,3 +493,39 @@ html.lb-open{overflow:hidden}
 .pf .founder-link{margin-top:18px}
 .lead a{color:var(--primary-d)}
 @media (max-width:620px){.more-link{padding:11px 0;margin-bottom:-11px}}
+
+/* ---------- final pass (anti-slop audit 2026-11-24) ---------- */
+/* P2-20: a split hero (text beside a film) gives its h1 about 18ch */
+@media (min-width:1061px){
+  .page-hero .hero-grid:not(.solo){grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+  .page-hero .hero-grid:not(.solo) h1{max-width:18ch;font-size:clamp(40px,4.1vw,60px)}
+}
+/* P2-4: questions carry no tick icon */
+.wl li.q{grid-template-columns:minmax(0,1fr)}
+/* P2-4: numbered method steps as an ordered list */
+.ol-steps{list-style:none;margin:40px 0 0;padding:0;counter-reset:st}
+.ol-steps li{counter-increment:st;display:grid;grid-template-columns:40px 1fr;gap:18px;padding:22px 0;border-top:var(--hair)}
+.ol-steps li:last-child{border-bottom:var(--hair)}
+.ol-steps li::before{content:counter(st,decimal-leading-zero);font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--primary-d);font-variant-numeric:tabular-nums;padding-top:3px}
+.ol-steps h3{font-size:17px;margin-bottom:4px}
+.ol-steps p{font-size:15px;color:var(--muted)}
+/* P1-4 / P2-3: one link per line, never chained */
+ul.links{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px;justify-items:start}
+ul.links .more-link{margin-top:0}
+.more-link svg,.founder-link svg{width:14px;height:14px;flex:none}
+.related-s{padding:clamp(40px,5vw,64px) 0 0}
+.related-h{font-size:15px;font-weight:600;letter-spacing:0;color:var(--text-strong);margin:0}
+.related-s ul.links{margin-top:16px}
+/* P2-7: a short band (one paragraph) takes half the section padding */
+section.band{padding:calc(var(--pad) / 2) 0}
+section.band .thread{display:none}
+/* P2-8: four cards sit 2 x 2 */
+.pgrid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pgrid.g2 .pf{padding-left:0;border-left:0}
+.pgrid.g2 .pf:nth-child(2n){padding-left:32px;border-left:var(--hair)}
+@media (max-width:860px){
+  .pgrid.g2{grid-template-columns:minmax(0,1fr)}
+  .pgrid.g2 .pf:nth-child(2n){padding-left:0;border-left:0}
+}
+/* P2-9: on the longest pages, phones show each card's title, sentence and link, not its bullet list */
+@media (max-width:620px){.short-cards .pf ul{display:none}}

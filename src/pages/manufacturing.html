@@ -3,9 +3,8 @@
   <div class="wrap hero-grid solo">
     <div>
       {{crumbs}}
-      <p class="eyebrow"><span>Industries</span><span class="rule" aria-hidden="true"></span><b>Manufacturing</b></p>
       <h1>Custom AI for manufacturers, <em class="s">from the floor to the books.</em></h1>
-      <p class="lead">Not the shop floor: the office behind it. lumic builds AI agents for a manufacturer&rsquo;s back-office jobs, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.</p>
+      <p class="lead">lumic builds AI agents for the office behind the plant floor, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.</p>
       <div class="cta">
         {{book}}
         <a class="btn btn-g" href="#jobs">See the jobs <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
@@ -17,7 +16,6 @@
 <!-- ============ JOBS ============ -->
 <section id="jobs" aria-labelledby="jobs-h" style="padding-top:clamp(24px,3vw,48px)">
   <div class="wrap">
-    <p class="kicker rv">The jobs</p>
     <div class="two-head rv">
       <h2 id="jobs-h">The back-office jobs <em class="s">a manufacturer does by hand.</em></h2>
       <p class="lead">lumic&rsquo;s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the plant office already runs. A person approves each entry.</p>
@@ -25,26 +23,26 @@
     <div class="pgrid rv">
       <article class="pf"><span class="n">01</span><h3>Vendor bills against purchase orders</h3>
         <p>The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.</p>
-        <ul><li>Agent · accounting software</li><li>A person approves each entry</li></ul>
+        <ul><li>Runs in: accounting software</li><li>A person approves each entry</li></ul>
         <a class="founder-link" href="/services/ap-automation/">AP automation →</a></article>
       <article class="pf"><span class="n">02</span><h3>Job costing during the job</h3>
         <p>Production data and costs read live, so estimate against actual shows up during the job, not at close.</p>
-        <ul><li>Dashboard · production data + ERP</li><li>Overruns surfaced early</li></ul>
+        <ul><li>Reads from: production data and ERP</li><li>Overruns surfaced early</li></ul>
         <a class="founder-link" href="/services/dashboards-and-reporting/">Dashboards and reporting →</a></article>
       <article class="pf"><span class="n">03</span><h3>Purchasing and PO write-back</h3>
         <p>The agent drafts purchase orders and writes them back to the ERP, and a dashboard tracks open POs, receipts and vendor price changes.</p>
-        <ul><li>Agent · ERP</li><li>Approval-gated</li></ul></article>
+        <ul><li>Runs in: ERP</li><li>Approval-gated</li></ul></article>
       <article class="pf"><span class="n">04</span><h3>Payroll entries</h3>
         <p>The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.</p>
-        <ul><li>Agent · payroll reports + accounting</li><li>Posted only on the controller&rsquo;s click</li></ul>
+        <ul><li>Runs in: payroll reports and accounting</li><li>Posted only on the controller&rsquo;s click</li></ul>
         <a class="founder-link" href="/services/payroll/">Payroll →</a></article>
       <article class="pf"><span class="n">05</span><h3>Month-end close</h3>
         <p>The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.</p>
-        <ul><li>Agent · ERP</li><li>The controller posts each entry</li></ul>
+        <ul><li>Runs in: ERP</li><li>The controller posts each entry</li></ul>
         <a class="founder-link" href="/services/month-end-close/">Month-end close →</a></article>
       <article class="pf"><span class="n">06</span><h3>Live margin and cost</h3>
         <p>Sales and gross margin by customer, product and rep, read live, with the costs the agents enter showing up the same day.</p>
-        <ul><li>Dashboard · ERP</li><li>No more morning export</li></ul></article>
+        <ul><li>Reads from: ERP</li><li>No more morning export</li></ul></article>
     </div>
     <a class="more-link rv" href="/portfolio/">See examples in production: Portfolio <span aria-hidden="true">→</span></a>
   </div>
@@ -59,7 +57,7 @@
     <div class="why-grid">
       <ul class="wl rv">
         <li>{{ck}}<div><h3>It makes the entry itself.</h3><p>The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.</p></div></li>
-        <li>{{ck}}<div><h3>Gated by the people who know the work.</h3><p>An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.</p></div></li>
+        <li>{{ck}}<div><h3>The final post stays with your team.</h3><p>An agent prepares the work. The people on your team who know it approve it before it posts. Dashboards only read.</p></div></li>
         <li>{{ck}}<div><h3>It touches only its job.</h3><p>lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.</p></div></li>
       </ul>
       <div class="alts rv">
@@ -74,10 +72,9 @@
         </table>
       </div>
     </div>
-    <p class="lead rv" style="margin-top:44px">Every job lumic automates: <a href="/services/">Services</a>. Distributors: <a href="/industries/distribution/">AI automation for distributors</a>. Service firms: <a href="/industries/service-firms/">back-office automation for service firms</a>. The method: <a href="/how-lumic-works/">How lumic works</a>.</p>
   </div>
 </section>
 
 {{pricing_section}}
 
-{{checklist}}
+{{related /services/ /industries/distribution/ /industries/service-firms/ /how-lumic-works/}}

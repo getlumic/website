@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/faq/ | Contact: hello@get-lumic.com
 
-FAQ Common questions
-
 # Common questions about lumic.
 
 What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job.
@@ -23,11 +21,11 @@ Questions
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 ### Where does the agent run?
 
-Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
+Wherever fits your business, on its own dedicated computer, under its own login, inside the systems you already run, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. To read a document, it uses a cloud AI model.
 
 ### What can the agent touch?
 
@@ -43,7 +41,7 @@ Weeks, not quarters. After the on-site day, lumic builds and tests the agent in 
 
 ### What does it cost?
 
-It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+It depends on the job. The consultation is free, and on-site work is $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ### Do you work outside St. Louis?
 
@@ -59,13 +57,17 @@ lumic runs it for a monthly fee. The team watches it, tests it every month, fixe
 
 ### What systems does lumic work with?
 
-If your team runs it, lumic can work with it, whether that's an ERP, accounting software, email, spreadsheets or cloud apps. The home page [lists the systems](https://get-lumic.com/#systems).
+If your team runs it, lumic can work with it, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. The home page [lists the systems](https://get-lumic.com/#systems).
 
 ### Is lumic the right fit?
 
 lumic fits a business with people doing repetitive work by hand, that wants it done inside the systems the team already uses, with a person approving what matters. lumic may not be the right fit for buyers who want a self-serve software license to set up themselves, or an agent that acts with no person approving.
 
-The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). One agent, step by step: [AP automation](https://get-lumic.com/services/ap-automation/). Every agent and dashboard: [Portfolio](https://get-lumic.com/portfolio/).
+## Related
+
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
+- [AP automation](https://get-lumic.com/services/ap-automation/)
+- [Portfolio](https://get-lumic.com/portfolio/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -77,9 +79,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

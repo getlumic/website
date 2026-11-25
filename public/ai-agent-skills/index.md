@@ -11,15 +11,11 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/ai-agent-skills/ | Contact: hello@get-lumic.com
 
-AI agent skills For the AI your team uses
-
 # One job, packaged for your AI to install.
 
-Some teams already use an AI assistant that can run agents, with someone who owns it. For them, lumic packages a lumic job so that assistant can install it and run it: the written procedure, the tools the job needs, and the approval steps, fitted to your business. Gated by the people who know the work.
+Some teams already use an AI assistant that can run agents, and someone on the team owns it. For them, lumic packages the job so that assistant can install it and run it: the written procedure, the tools the job needs, and the approval steps, fitted to your business.
 
 [Book a call](https://cal.com/lumic/20-minute-call) What’s in a package
-
-The package
 
 ## What’s in a package
 
@@ -44,8 +40,6 @@ Where a person signs off, written into the procedure, with your system, its fiel
 
 - Gated by the people who know the work
 
-The jobs
-
 ## Jobs lumic packages
 
 Each one is a job lumic builds and runs today, written down so your AI assistant can do it the same way.
@@ -54,46 +48,36 @@ Each one is a job lumic builds and runs today, written down so your AI assistant
 
 Purchase-order email to draft sales order. A person checks each one before it goes any further.
 
-[Order desk and customer service →](https://get-lumic.com/services/order-desk-and-customer-service/)
+[Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/)
 
 ### Accounts payable
 
 Vendor bill to an entry ready for approval, matched to the purchase order. A person approves it before it posts.
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Stock questions by email
 
 Stock inquiries read as they arrive, checked for the details your team requires, and answered with a drafted reply a person sends.
 
-[Stock questions by email →](https://get-lumic.com/services/order-desk-and-customer-service/#stock)
-
-Pricing
+[Stock questions by email](https://get-lumic.com/services/order-desk-and-customer-service/#stock)
 
 ## How it’s sold
 
-Each packaged job
-
 ### A setup fee, then monthly.
 
-A fixed setup fee, then a monthly fee, quoted per job. No per-use charge.
+A setup fee, then a monthly fee, quoted per job. No per-use charge.
 
 The setup has a start date and an end date: lumic writes your file, installs the job on your AI assistant, and tests it on real work with your team. The monthly fee keeps the package current as your systems and AI models change.
 
 [Book a call](https://cal.com/lumic/20-minute-call)
 
-- Each packaged job
-- Setup Fixed fee, set dates
+- At a glance
+- Setup Quoted per job, set dates
 - Package upkeep Monthly
 - Per-use charge None
 
-No AI assistant to run it?
-
-## Or lumic runs it for you
-
-The same job can run on a dedicated computer that lumic’s Forward Deployed Engineers set up, watch and keep working every month. Either way, it is gated by the people who know the work, and it starts with the same free consultation.
-
-[Managed AI](https://get-lumic.com/managed-ai/) [Guardrails](https://get-lumic.com/guardrails/)
+No AI assistant to run it? The same job can run on a dedicated computer that lumic’s Forward Deployed Engineers set up, watch and keep working every month. Either way, it is gated by the people who know the work, and it starts with the same free consultation.
 
 Questions
 
@@ -109,7 +93,14 @@ Packages are built for agents that load skills and plugins. lumic confirms the f
 
 ### What does it cost?
 
-A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge. Details: [Pricing](https://get-lumic.com/pricing/).
+A setup fee, then a monthly fee, quoted per job. There is no per-use charge. Details: [Pricing](https://get-lumic.com/pricing/).
+
+## Related
+
+- [Managed AI](https://get-lumic.com/managed-ai/)
+- [Guardrails](https://get-lumic.com/guardrails/)
+- [Pricing](https://get-lumic.com/pricing/)
+- [Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -121,9 +112,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

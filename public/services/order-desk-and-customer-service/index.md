@@ -11,15 +11,11 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/services/order-desk-and-customer-service/ | Contact: hello@get-lumic.com
 
-Services Order desk and customer service
-
 # An order desk agent, with a person sending every reply.
 
-The agent reads each purchase order and customer email, drafts the sales order in your systems, and drafts the reply. A person on your team checks each one and sends it. Nobody retypes an order: AI order entry automation, from purchase order to sales order.
+The agent reads each purchase order and customer email, drafts the sales order in your systems, and drafts the reply. A person on your team checks each one and sends it. Nobody retypes an order.
 
 [Book a call](https://cal.com/lumic/20-minute-call) How it works
-
-How it works
 
 ## From the inbox to a drafted order, checked by a person.
 
@@ -34,8 +30,6 @@ It drafts the sales order in your systems and a reply to the customer, and flags
 ### A person checks and sends.
 
 A person on your team checks each order and each reply, fixes what needs fixing, and sends it. Nothing goes to a customer without that person.
-
-What it handles
 
 ## The work that fills the order desk inbox.
 
@@ -57,19 +51,15 @@ A changed quantity, a new ship-to, a price that does not match: flagged for a pe
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/).
-
-Stock questions
-
-## Stock questions by email
+### Stock questions by email.
 
 Questions about stock often arrive in a shared inbox, and someone answers each one by hand. The agent reads each request, checks that it carries the details your team requires, and drafts the reply from the records your team points it to. A person checks the reply and sends it.
 
-Two ways to run it
+Where it runs
 
 ## Run by lumic, or installed on your own AI.
 
-It is the same job either way. lumic runs the AI order processing on a dedicated computer and keeps it working, or packages it, with the written procedure, the tools when the job needs them and the approval steps, for the AI assistant your team already uses. A setup fee, then a monthly fee. Gated by the people who know the work.
+It is the same job either way. lumic runs it on a dedicated computer and keeps it working for a monthly fee. Or lumic packages it for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps. That option is a setup fee, then a monthly fee, quoted per job. Gated by the people who know the work.
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
@@ -85,15 +75,13 @@ No. The agent drafts the sales order and the reply. A person on your team checks
 
 From the places they arrive today: purchase orders attached to email, order forms and customer questions in the inbox. The agent reads them and drafts the order in the systems you already run.
 
-Pricing
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -102,8 +90,15 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
+
+## Related
+
+- [Services](https://get-lumic.com/services/)
+- [AI implementation](https://get-lumic.com/ai-implementation/)
+- [Managed AI](https://get-lumic.com/managed-ai/)
+- [Guardrails](https://get-lumic.com/guardrails/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -115,9 +110,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

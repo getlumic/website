@@ -11,15 +11,11 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com
 
-Industries Manufacturing
-
 # Custom AI for manufacturers, from the floor to the books.
 
-Not the shop floor: the office behind it. lumic builds AI agents for a manufacturer’s back-office jobs, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.
+lumic builds AI agents for the office behind the plant floor, from vendor bills matched to purchase orders to job costing during the job. A person approves each entry, and lumic keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-The jobs
 
 ## The back-office jobs a manufacturer does by hand.
 
@@ -29,50 +25,50 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
-- Agent · accounting software
+- Runs in: accounting software
 - A person approves each entry
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Job costing during the job
 
 Production data and costs read live, so estimate against actual shows up during the job, not at close.
 
-- Dashboard · production data + ERP
+- Reads from: production data and ERP
 - Overruns surfaced early
 
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 ### Purchasing and PO write-back
 
 The agent drafts purchase orders and writes them back to the ERP, and a dashboard tracks open POs, receipts and vendor price changes.
 
-- Agent · ERP
+- Runs in: ERP
 - Approval-gated
 
 ### Payroll entries
 
 The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
 
-- Agent · payroll reports + accounting
+- Runs in: payroll reports and accounting
 - Posted only on the controller’s click
 
-[Payroll →](https://get-lumic.com/services/payroll/)
+[Payroll](https://get-lumic.com/services/payroll/)
 
 ### Month-end close
 
 The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
-- Agent · ERP
+- Runs in: ERP
 - The controller posts each entry
 
-[Month-end close →](https://get-lumic.com/services/month-end-close/)
+[Month-end close](https://get-lumic.com/services/month-end-close/)
 
 ### Live margin and cost
 
 Sales and gross margin by customer, product and rep, read live, with the costs the agents enter showing up the same day.
 
-- Dashboard · ERP
+- Reads from: ERP
 - No more morning export
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
@@ -85,9 +81,9 @@ Approval and access
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
-### Gated by the people who know the work.
+### The final post stays with your team.
 
-An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. Dashboards only read.
 
 ### It touches only its job.
 
@@ -100,17 +96,13 @@ lumic builds it, and keeps it working.
 - Job cost known only at close → Estimate vs. actual, during the job
 - Build-and-ghost consultants → A team that stays on
 
-Every job lumic automates: [Services](https://get-lumic.com/services/). Distributors: [AI automation for distributors](https://get-lumic.com/industries/distribution/). Service firms: [back-office automation for service firms](https://get-lumic.com/industries/service-firms/). The method: [How lumic works](https://get-lumic.com/how-lumic-works/).
-
-Pricing
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -119,16 +111,15 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
+## Related
 
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
+- [Services](https://get-lumic.com/services/)
+- [Distribution](https://get-lumic.com/industries/distribution/)
+- [Service firms](https://get-lumic.com/industries/service-firms/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -140,9 +131,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

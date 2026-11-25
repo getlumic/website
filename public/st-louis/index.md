@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 
-Based in St. Louis On site, by appointment
-
 # Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 
 lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
@@ -44,19 +42,35 @@ How lumic works
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
-### On-site diagnostic.
+### Free consultation.
 
-lumic’s FDEs work beside your team where the work happens. They map your systems, your data, and the manual steps that take the most time.
+A 20‑minute call. You walk the team through the work your people do by hand.
 
-### Build the agent.
+- [Book a call](https://cal.com/lumic/20-minute-call)
 
-The team builds an agent for one job, connects it to your systems, and sets up the approval step. Your team tests it on real work before it goes live.
+### On-site day and written proposal.
 
-### Managed and kept working.
+lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
 
-lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
+On-site work $1,500/day, credited toward phase one.
 
-[How lumic works, in full](https://get-lumic.com/how-lumic-works/) [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/) [Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/) [Every job lumic automates: Services](https://get-lumic.com/services/) [See pricing](https://get-lumic.com/pricing/) [Guardrails](https://get-lumic.com/guardrails/)
+- [AI consulting](https://get-lumic.com/ai-consulting/)
+
+### Build.
+
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
+
+Priced in the written proposal.
+
+- [AI implementation](https://get-lumic.com/ai-implementation/)
+
+### Managed AI.
+
+lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
+
+Managed AI from $250 to $5,000 a month, depending on scope.
+
+- [Managed AI](https://get-lumic.com/managed-ai/)
 
 Questions
 
@@ -68,15 +82,18 @@ Yes. St. Louis first: the team is based here and comes on site in person. lumic 
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
-
-### Live and working.
-
-An AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can’t match go to a person with the reason. Live in weeks, not quarters.
+FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 See the work, then meet the team.
 
 Watch the AP agent read, match and enter a vendor bill on the [AP automation](https://get-lumic.com/services/ap-automation/) page, or see every agent and dashboard in the [portfolio](https://get-lumic.com/portfolio/).
+
+## Related
+
+- [AI consulting in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
+- [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/)
+- [Services](https://get-lumic.com/services/)
+- [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -88,9 +105,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

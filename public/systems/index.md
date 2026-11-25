@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com
 
-Systems Works with what you run
-
 # If your team runs it, lumic can work with it.
 
 lumic’s agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already uses. There is no new system to learn and nothing to migrate. A person approves before anything posts.
@@ -58,7 +56,7 @@ Agents that work in QuickBooks Online and QuickBooks Desktop: bills, receipts an
 - Online and Desktop
 - A person approves each entry
 
-[QuickBooks →](https://get-lumic.com/systems/quickbooks/)
+[QuickBooks](https://get-lumic.com/systems/quickbooks/)
 
 ### NetSuite
 
@@ -67,7 +65,7 @@ Agents that work in NetSuite: vendor bills, cash receipts and close entries prep
 - Cloud ERP
 - A person approves each entry
 
-[NetSuite →](https://get-lumic.com/systems/netsuite/)
+[NetSuite](https://get-lumic.com/systems/netsuite/)
 
 ### Sage 100
 
@@ -76,7 +74,7 @@ Agents and live dashboards that work with Sage 100: bills, receipts and entries 
 - Agents and dashboards
 - A person approves each entry
 
-[Sage 100 →](https://get-lumic.com/systems/sage-100/)
+[Sage 100](https://get-lumic.com/systems/sage-100/)
 
 ### Sage Intacct
 
@@ -85,7 +83,7 @@ Agents that work in Sage Intacct: bills, cash receipts and close entries prepare
 - Cloud accounting
 - A person approves each entry
 
-[Sage Intacct →](https://get-lumic.com/systems/sage-intacct/)
+[Sage Intacct](https://get-lumic.com/systems/sage-intacct/)
 
 Any software
 
@@ -116,7 +114,10 @@ No migration. No new system.
 - Re-keying between two systems → An agent enters it; you approve
 - Build-and-ghost consultants → A team that stays on
 
-The jobs the agents do: [Services](https://get-lumic.com/services/). How each one is built: [How lumic works](https://get-lumic.com/how-lumic-works/).
+## Related
+
+- [Services](https://get-lumic.com/services/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -128,9 +129,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

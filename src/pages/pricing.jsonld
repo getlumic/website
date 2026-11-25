@@ -9,7 +9,7 @@
   },
   "areaServed": "@AREA",
   "url": "https://get-lumic.com/pricing/",
-  "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
+  "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.",
   "hasOfferCatalog": {
    "@type": "OfferCatalog",
    "name": "lumic pricing: starting points, not quotes",
@@ -39,7 +39,7 @@
     {
      "@type": "Offer",
      "name": "Managed AI",
-     "description": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes.",
+     "description": "Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes.",
      "priceSpecification": {
       "@type": "UnitPriceSpecification",
       "minPrice": 250,

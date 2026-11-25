@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
 
-Managed AI On a monthly retainer
-
 # Managed AI: lumic keeps it working.
 
 Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts. You run the business.
@@ -25,11 +23,9 @@ What the retainer covers
 
 Each agent does one role, such as AP clerk, payroll, or month-end entries, on its own dedicated computer. Once it is live, lumic runs it for a monthly fee.
 
-Each managed agent
-
 ### Watched, tested, fixed and upgraded.
 
-Monitoring, ongoing: the team watches each agent. Testing, monthly: it tests it every month. Fixes, included: it fixes what breaks. Upgrades, included: it upgrades the agent as AI improves. When your team is ready, the same team builds the agent for another job.
+Every agent is watched around the clock, tested monthly, fixed when it breaks and upgraded as AI improves; the ledger shows what is included. When your team is ready, the same team builds the agent for another job.
 
 Every month, a summary of what the agent did. A person on your team approves anything before it posts.
 
@@ -41,9 +37,7 @@ Every month, a summary of what the agent did. A person on your team approves any
 - A summary of its work Monthly
 - Human approval Built in
 
-Upkeep, in practice
-
-## What kept working means.
+## What upkeep covers.
 
 ### Releases at night, checked by morning.
 
@@ -57,15 +51,9 @@ It checks each app around the clock and restarts what stops. If the watchdog its
 
 Every lumic dashboard has Send feedback and an Updates page with plain-word release notes.
 
-### In production every working day.
-
-lumic’s agents run in production every working day, monitored around the clock. Night releases roll back by themselves, and every request gets a ticket number.
-
 ### A support desk with ticket numbers.
 
 Every request gets a number and an owner. A ticket closes when the fix is live in your system.
-
-Why AI needs upkeep
 
 ## AI looks simple from the outside. It takes upkeep underneath.
 
@@ -76,9 +64,7 @@ An agent depends on connections, rules and checks. The work around it changes: a
 - A tool that breaks when a system changes → Tested every month, fixed when it breaks
 - The AI model it shipped with → Upgraded as AI improves
 
-In your control
-
-## Paused or revoked any time.
+## The controls stay with your team.
 
 ### Paused or revoked any time.
 
@@ -96,15 +82,11 @@ Each entry the agent prepares waits in an approval queue, ready for a person to 
 
 Every action an agent takes is logged: what it did, and who approved it.
 
-The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). How an agent gets built: [AI implementation](https://get-lumic.com/ai-implementation/). Where it starts: [AI consulting](https://get-lumic.com/ai-consulting/). Already using an AI assistant? lumic can package the job for it instead: [AI agent skills](https://get-lumic.com/ai-agent-skills/).
-
-Pricing
-
 ### The monthly retainer.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -112,7 +94,7 @@ Final pricing depends on your workflow and systems. These figures are starting p
 
 - At a glance
 - Managed AI Monthly, by scope
-- The build One-time, scoped
+- The build One-time, in the proposal
 
 Questions
 
@@ -128,7 +110,14 @@ Yes. Any agent can be paused, or its access revoked, at any time.
 
 ### What does the retainer cost?
 
-Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, scoped after the free consultation. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+Managed AI from $250 to $5,000 a month, depending on scope. The build is a separate, one-time cost, priced in the written proposal. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+
+## Related
+
+- [AI implementation](https://get-lumic.com/ai-implementation/)
+- [AI consulting](https://get-lumic.com/ai-consulting/)
+- [AI agent skills](https://get-lumic.com/ai-agent-skills/)
+- [Guardrails](https://get-lumic.com/guardrails/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -140,9 +129,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

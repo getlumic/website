@@ -11,11 +11,9 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
 
-AI implementation Small and mid-size businesses
-
 # Custom AI implementation that ends in working software.
 
-lumic’s Forward Deployed Engineers find where AI fits any process in your business, build custom agents, automations and live dashboards inside the systems you already run, and keep them working. A person on your team approves what matters.
+lumic’s Forward Deployed Engineers find the work your team does by hand, build custom agents, automations and live dashboards for it inside the systems you already run, and keep them working. A person on your team approves what matters.
 
 [Book a call](https://cal.com/lumic/20-minute-call) What lumic implements
 
@@ -23,42 +21,26 @@ What lumic implements
 
 ## Working software, with AI where it fits.
 
-Each build starts from a job your team does by hand today. lumic’s FDEs pick the right tool for it, with AI where it fits, and build it around how the work is really done.
+Each build starts from a job your team does by hand today. lumic’s FDEs pick the right tool for it and build it around how the work is really done.
 
 ### AI agents
 
 An agent does one job end to end, such as entering vendor bills or preparing month-end entries, the same records a clerk would key. A person approves each entry.
 
 - One agent per job
-- A person approves each entry
+- Purchase orders drafted and written back to the ERP, approval-gated
+- Ask your data: questions answered from your ERP, email and files, with entries drafted for a person to approve
 
-[The jobs lumic automates →](https://get-lumic.com/services/)
-
-### Workflow automation
-
-The steps between people and systems, done for them: reading a document, matching it, routing it for approval, and filing the result.
-
-- Approval queues
-- A log of every step it takes
-
-### System connections
-
-A live connection to the systems the work touches, so the same record is never typed twice.
-
-- Reads and enters the same records a person would
-- No new software seats
-
-[How lumic works with your systems →](https://get-lumic.com/systems/)
+[The jobs lumic automates](https://get-lumic.com/services/)
 
 ### Live dashboards
 
 Sales and margin, receivables, purchasing and financials, read live from your own data. No more morning export.
 
 - Live, on your own data
-- Purchase orders drafted by an agent and written back to the ERP, approval-gated
-- Ask your data: questions answered from your ERP, email and files, with entries drafted for a person to approve
+- Dashboards only read
 
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 ### Workflow redesign
 
@@ -67,14 +49,7 @@ Before anything is built, the team maps the job as it is done today: the screens
 - One job, mapped with your team
 - Built around how the work is really done
 
-### Reading the inbox
-
-Vendor bills, remittances and ACH detail, purchase orders and customer emails: read where they arrive and prepared in your systems for a person to approve.
-
-- Bills, cash receipts and orders
-- A person approves each entry
-
-[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+[Workflow automation, system connections and reading the inbox](https://get-lumic.com/services/#automations)
 
 What the agents can do
 
@@ -98,9 +73,7 @@ Production schedules, purchasing and POs, the order desk and freight, as well as
 
 ### A log of every action.
 
-Every action is logged. Entries are added to the log, not edited.
-
-How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). Or packaged for the AI assistant your team already uses: [AI agent skills](https://get-lumic.com/ai-agent-skills/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
+Entries are added to the log, never edited, so a reviewer sees what the agent did and who approved it.
 
 Four steps
 
@@ -110,7 +83,7 @@ Four steps
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-- [Book a call →](https://cal.com/lumic/20-minute-call)
+- [Book a call](https://cal.com/lumic/20-minute-call)
 
 ### On-site day and written proposal.
 
@@ -118,15 +91,15 @@ lumic’s FDEs work beside your team where the work happens, map where AI fits, 
 
 On-site work $1,500/day, credited toward phase one.
 
-- [AI consulting →](https://get-lumic.com/ai-consulting/)
+- [AI consulting](https://get-lumic.com/ai-consulting/)
 
 ### Build.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
-Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
+Priced in the written proposal.
 
-- [AI implementation →](https://get-lumic.com/ai-implementation/)
+- [AI implementation](https://get-lumic.com/ai-implementation/)
 
 ### Managed AI.
 
@@ -134,15 +107,7 @@ lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-- [Managed AI →](https://get-lumic.com/managed-ai/)
-
-Your systems
-
-## It works in the systems you already run.
-
-The work happens where your team works, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. Each agent runs on its own dedicated computer, wherever fits your business, under its own login. No new system to learn.
-
-[How lumic works with your systems](https://get-lumic.com/systems/)
+- [Managed AI](https://get-lumic.com/managed-ai/)
 
 Proof
 
@@ -173,13 +138,9 @@ Approval and access
 
 ## Gated by the people who know the work.
 
-### Gated by the people who know the work.
-
-An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
-
 ### An approval queue for every entry.
 
-Each entry the agent prepares waits in an approval queue, ready for a person to approve.
+Each entry the agent prepares waits in an approval queue. The people on your team who know the work approve it before it posts, and the final post stays in your hands.
 
 ### A log of every action.
 
@@ -189,35 +150,13 @@ What it did, and who approved it.
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
-The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/). Before the build: [AI consulting](https://get-lumic.com/ai-consulting/). What an FDE is: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/). The method as a guide: [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/).
-
-Pricing
-
-### Free consultation.
-
-On-site work $1,500/day, credited toward phase one.
-
-Managed AI from $250 to $5,000 a month, depending on scope.
-
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
-
-Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
-
-[Book a call to talk real pricing](https://cal.com/lumic/20-minute-call) [See pricing](https://get-lumic.com/pricing/)
-
-- At a glance
-- Consultation Free
-- On-site work $1,500/day
-- The build One-time, scoped
-- Running and support Monthly
-
 Questions
 
 ## AI implementation, in plain answers.
 
 ### What does AI implementation mean for a small business?
 
-Putting AI to work inside the systems the business already runs, not buying a new tool to learn. lumic's FDEs find the work done by hand, build an agent, an automation or a live dashboard for it, and keep it working. A person on your team approves what matters.
+Putting AI to work inside the systems the business already runs, not buying a new tool to learn. lumic’s FDEs find the work done by hand, build an agent, an automation or a live dashboard for it, and keep it working. A person on your team approves what matters.
 
 ### How long does an AI implementation take?
 
@@ -226,6 +165,13 @@ Weeks, not quarters. After the on-site day, lumic builds and tests the agent in 
 ### What does it cost?
 
 Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
+
+## Related
+
+- [Services](https://get-lumic.com/services/)
+- [Managed AI](https://get-lumic.com/managed-ai/)
+- [AI consulting](https://get-lumic.com/ai-consulting/)
+- [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -237,9 +183,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

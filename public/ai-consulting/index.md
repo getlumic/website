@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/ai-consulting/ | Contact: hello@get-lumic.com
 
-AI consulting On site
-
 # AI consulting that ends in a working agent.
 
 lumic’s Forward Deployed Engineers spend a day on site, map where AI fits your business, and write a proposal: what to build, the timeline, and the cost. Then the same team builds it and keeps it working. On-site work $1,500/day, credited toward phase one.
@@ -74,7 +72,8 @@ On site in St. Louis
 
 lumic’s FDEs come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit.
 
-[AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/) [After the proposal: AI implementation](https://get-lumic.com/ai-implementation/)
+- [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
+- [After the proposal: AI implementation](https://get-lumic.com/ai-implementation/)
 
 Questions
 
@@ -82,7 +81,7 @@ Questions
 
 ### How is lumic different from an AI consultant?
 
-A consultant advises and leaves. lumic's FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
+A consultant advises and leaves. lumic’s FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
 
 ### What does the on-site day cost?
 
@@ -102,9 +101,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

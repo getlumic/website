@@ -49,12 +49,11 @@ BOOK_PRICING = f'<a class="btn btn-p" href="{CAL}" target="_blank" rel="noopener
 PRICE_ONSITE = "On-site work $1,500/day, credited toward phase one."
 PRICE_AGENTS = "Managed AI from $250 to $5,000 a month, depending on scope."  # Christian 2026-11-25: one range, floor $250
 PRICE_BUILD = ("Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, "
-               "scoped after the free consultation.")
+               "priced in the written proposal.")  # Christian 2026-11-24: the build is priced in the proposal, after the on-site day
 PRICE_FINAL = "Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
 # The short pricing block on home and the Services hub (the same card and ledger as the offers above it); links /pricing/.
 PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
       <div>
-        <span class="tag">Pricing</span>
         <h3>Free consultation.</h3>
         <p>{PRICE_ONSITE}</p>
         <p>{PRICE_AGENTS}</p>
@@ -69,7 +68,7 @@ PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
         <li class="hd"><span>At a glance</span></li>
         <li><span>Consultation</span><span class="st">Free</span></li>
         <li><span>On-site work</span><span class="st">$1,500/day</span></li>
-        <li><span>The build</span><span class="st">One-time, scoped</span></li>
+        <li><span>The build</span><span class="st">One-time, in the proposal</span></li>
         <li><span>Running and support</span><span class="st">Monthly</span></li>
       </ul>
     </article>"""
@@ -81,7 +80,7 @@ FOUR_STEPS = f"""<ol class="steps s4 rv">
       <li class="track" aria-hidden="true"><i></i></li>
       <li class="step"><span class="n" aria-hidden="true">01</span><h3>Free consultation.</h3><p>A 20&#8209;minute call. You walk the team through the work your people do by hand.</p><a class="founder-link" {_STEP_LINK} href="{CAL}" target="_blank" rel="noopener">Book a call →</a></li>
       <li class="step"><span class="n" aria-hidden="true">02</span><h3>On-site day and written proposal.</h3><p>lumic&rsquo;s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.</p><p style="margin-top:10px"><strong>{PRICE_ONSITE}</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-consulting/">AI consulting →</a></li>
-      <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.</p><p style="margin-top:10px"><strong>Scoped after the on-site day.</strong> {PRICE_BUILD} {PRICE_FINAL}</p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.</p><p style="margin-top:10px"><strong>Priced in the written proposal.</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
       <li class="step"><span class="n" aria-hidden="true">04</span><h3>Managed AI.</h3><p>lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.</p><p style="margin-top:10px"><strong>{PRICE_AGENTS}</strong></p><a class="founder-link" {_STEP_LINK} href="/managed-ai/">Managed AI →</a></li>
     </ol>"""
 # The pricing block as its own section (home, and the service / industry / system pages before the checklist).
@@ -211,8 +210,8 @@ CONTACT = f"""<!-- ============ CONTACT ============ -->
           <div class="kicker">How to start</div>
           <ol class="nx">
             <li><span class="n">1</span><div><b>A 20&#8209;minute call.</b><span>You walk the team through the work your people do by hand.</span></div></li>
-            <li><span class="n">2</span><div><b>A written proposal.</b><span>What lumic would build, the timeline, and the cost.</span></div></li>
-            <li><span class="n">3</span><div><b>An on-site visit.</b><span>lumic&rsquo;s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St.&nbsp;Louis and travel for the right fit.</span></div></li>
+            <li><span class="n">2</span><div><b>An on-site day.</b><span>lumic&rsquo;s FDEs work beside your team where the work happens. They come on site across Greater St.&nbsp;Louis and travel for the right fit.</span></div></li>
+            <li><span class="n">3</span><div><b>A written proposal.</b><span>What lumic would build, the timeline, and the cost.</span></div></li>
           </ol>
         </div>
       </div>
@@ -221,17 +220,49 @@ CONTACT = f"""<!-- ============ CONTACT ============ -->
 </section>"""
 
 
+def curly(s):
+    """Straight apostrophes in FAQ copy become typographic ones (attribute quotes are double quotes, so untouched)."""
+    return s.replace("&#x27;", "\u2019").replace("'", "\u2019")
+
+
 def faq_items(items, indent="            "):
+    # Questions carry no tick icon (a tick reads as "done"); li.q drops the icon column
     out = []
     for f in items:
-        a = f.get("html") or esc(f["a"])
-        out.append(f'{indent}<li>{CK}<div><h3>{esc(f["q"])}</h3><p>{a}</p></div></li>')
+        a = curly(f.get("html") or esc(f["a"]))
+        out.append(f'{indent}<li class="q"><div><h3>{esc(curly(f["q"]))}</h3><p>{a}</p></div></li>')
     return "\n".join(out)
 
 
 def faq_ld(items, at):
     return {"@type": "FAQPage", "@id": at, "mainEntity": [
-        {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in items]}
+        {"@type": "Question", "name": curly(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": curly(f["a"])}} for f in items]}
+
+
+# One "Related" list per page (at most 4 links, placed last, before the contact block): {{related /a/ /b/ ...}}
+LABELS = {"/services/": "Services", "/ai-implementation/": "AI implementation", "/managed-ai/": "Managed AI",
+          "/ai-consulting/": "AI consulting", "/ai-agent-skills/": "AI agent skills", "/pricing/": "Pricing",
+          "/how-lumic-works/": "How lumic works", "/guardrails/": "Guardrails", "/portfolio/": "Portfolio",
+          "/systems/": "Systems lumic works with", "/faq/": "Common questions", "/st-louis/": "St.\u00a0Louis",
+          "/st-louis/ai-consulting/": "AI consulting in St.\u00a0Louis", "/st-louis/metro-east/": "Metro East",
+          "/forward-deployed-engineers/": "Forward-deployed engineers",
+          "/forward-deployed-engineers/small-business/": "FDEs for small and mid-size businesses",
+          "/services/ap-automation/": "AP automation", "/services/cash-receipts-and-collections/": "Cash receipts and collections",
+          "/services/payroll/": "Payroll", "/services/month-end-close/": "Month-end close",
+          "/services/dashboards-and-reporting/": "Dashboards and reporting",
+          "/services/order-desk-and-customer-service/": "Order desk and customer service",
+          "/industries/manufacturing/": "Manufacturing", "/industries/distribution/": "Distribution",
+          "/industries/service-firms/": "Service firms",
+          "/resources/how-to-implement-ai-in-a-small-business/": "How to implement AI in a small business",
+          "/resources/ai-agent-for-accounting/": "AI agents for accounting",
+          "/systems/sage-100/": "Sage 100", "/systems/sage-100/ap-automation/": "Sage 100 AP automation"}
+
+
+def related(hrefs):
+    assert 1 <= len(hrefs) <= 4, f"related: {len(hrefs)} links (at most 4)"
+    items = "".join(f'<li><a class="more-link" href="{h}">{esc(LABELS[h])} {ARROW}</a></li>' for h in hrefs)
+    return (f'<!-- ============ RELATED ============ -->\n<section class="related-s" aria-labelledby="related-h">\n  <div class="wrap">\n'
+            f'    <h2 class="related-h" id="related-h">Related</h2>\n    <ul class="links">{items}</ul>\n  </div>\n</section>')
 
 
 def trail(p):
@@ -292,6 +323,11 @@ def films_list():
     return m.group(1) if m else ""
 
 
+def arrows(text):
+    """One arrow on every link (audit P3-3): a text arrow at the end of a link becomes the SVG arrow."""
+    return text.replace('<span aria-hidden="true">→</span>', ARROW).replace(' →</a>', f' {ARROW}</a>')
+
+
 def build_page(p):
     url = SITE + p["path"]
     body = io.open(SRC / f'{p["id"]}.html', encoding="utf-8").read().rstrip()
@@ -301,8 +337,9 @@ def build_page(p):
                  "{{film_overview}}": FILM_OVERVIEW, "{{films_list}}": films_list(), "{{faq_items}}": faq_items(CFG["faq"], "        "),
                  "{{page_faq}}": faq_items(p.get("faq", []), "        ")}.items():
         body = body.replace(k, v)
+    body = re.sub(r"\{\{related ([^}]+)\}\}", lambda m: related(m.group(1).split()), body)
     assert "{{" not in body, f'{p["id"]}: unfilled token {re.search(r"{{.*?}}", body).group(0)}'
-    body = dashboards(body)
+    body = arrows(dashboards(body))
     t, d = esc(p["title"]), esc(p["description"])
     ld = json.dumps(page_ld(p), ensure_ascii=False, separators=(",", ":"))
     doc = f"""<!DOCTYPE html>
@@ -376,13 +413,13 @@ def build_home():
     h = stamp(h, "footer", footer(home=True))
     home_faq = [x for x in CFG["faq"] if x.get("home")]
     h = stamp(h, "faq", faq_items(home_faq))
-    h = stamp(h, "pricing", PRICING_SECTION)
+    h = stamp(h, "pricing", "")  # the four steps on home carry the price lines; no separate pricing card (audit P2-5)
     h = stamp(h, "steps", "    " + FOUR_STEPS)
     m = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', h, re.S)
     ld = json.loads(m.group(2))
     ld["@graph"] = [faq_ld(home_faq, SITE + "/#faq") if g.get("@type") == "FAQPage" else g for g in ld["@graph"]]
     h = h[:m.start(2)] + json.dumps(ld, ensure_ascii=False, separators=(",", ":")) + h[m.end(2):]
-    h = dashboards(h)
+    h = arrows(dashboards(h))
     io.open(f, "w", encoding="utf-8", newline="\n").write(h)
     llms = PUB / "llms.txt"
     text = dashboards(io.open(llms, encoding="utf-8").read())  # read it before the write opens (and empties) the file

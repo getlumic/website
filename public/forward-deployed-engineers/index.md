@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-lumic.com
 
-Based in St. Louis FDEs for business
-
 # Forward Deployed Engineers (FDEs) in St. Louis
 
 A forward-deployed engineer (FDE) works on site, builds inside your own systems, and stays to run what was built after launch. A consultant advises and leaves. lumic’s FDEs are based in St. Louis, have finance backgrounds, and build AI into one back-office job at a time.
@@ -49,7 +47,7 @@ Once an agent is live, lumic runs it for a monthly fee. The team watches it, tes
 
 Most FDE teams are engineers who learn finance on the job. lumic’s team has done these back-office jobs by hand, then built the agents that do them.
 
-Two ways to bring in AI, side by side.
+A consultant and an FDE, side by side.
 
 - A consultant → An FDE from lumic
 - Advises from outside → Works on site, beside your team
@@ -73,31 +71,36 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
-The jobs lumic’s FDEs automate: [Services](https://get-lumic.com/services/). For a smaller business: [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/). AI consulting and automation in the region: [St. Louis AI consulting](https://get-lumic.com/st-louis/ai-consulting/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/).
-
 Questions
 
 ## Forward-deployed engineers, in plain answers.
 
 ### What is a forward-deployed engineer?
 
-An engineer who works on site with a business, builds inside its own systems, and stays to run what was built. lumic's FDEs have finance backgrounds and build AI into one back-office job at a time.
+An engineer who works on site with a business, builds inside its own systems, and stays to run what was built. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time.
 
 ### How is an FDE different from a consultant?
 
 A consultant advises and leaves. An FDE builds the work inside your own systems and stays to run it after launch.
 
-### Where are lumic's FDEs based?
+### Where are lumic’s FDEs based?
 
 In St. Louis. They come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit.
 
-### What do lumic's FDEs build?
+### What do lumic’s FDEs build?
 
 AI agents for back-office jobs: vendor bills, cash receipts and collections, payroll journal entries, month-end close entries, and live dashboards. A person on your team approves every entry before it posts. The jobs in full: [Services](https://get-lumic.com/services/).
 
 ### How does an engagement start?
 
-With a free consultation: a 20-minute call. Then a written proposal with what lumic would build, the timeline and the cost, and an on-site visit.
+With a free consultation: a 20-minute call. Then an on-site day beside your team, and a written proposal with what lumic would build, the timeline and the cost.
+
+## Related
+
+- [Services](https://get-lumic.com/services/)
+- [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/)
+- [AI consulting in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
+- [Guardrails](https://get-lumic.com/guardrails/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -109,9 +112,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

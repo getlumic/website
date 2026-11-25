@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/services/dashboards-and-reporting/ | Contact: hello@get-lumic.com
 
-Services Dashboards and reporting
-
 # Live dashboards on your own data. No more morning export.
 
 Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Every screen answers a question an owner asks. Dashboards only read: nothing posts from them.
@@ -23,38 +21,38 @@ In production
 
 ## Eighteen live dashboards, running every day.
 
-lumic’s dashboards run every day in production, on the same live data the agents work from. Some of them, below. Clients are kept private.
+lumic’s dashboards run every day in production, on the same live data the agents work from. A sample of them, below. Clients are kept private.
 
-### Sales & margin
+### Sales and margin
 
 Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
 
-- Dashboard · ERP
+- Reads from: ERP
 - Replaces a daily export
 - Multi-company, one view
 
-### Receivables & aging
+### Receivables and aging
 
 Live aging by customer, the same view that feeds the collections agent.
 
-- Dashboard · ERP
+- Reads from: ERP
 - Live
 
-[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+[Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 ### Consolidated financials
 
-A live income statement and product-margin view, consolidated across sister companies, that shows the month-end result.
+A live income statement and product-margin view, consolidated across companies, that shows the month-end result.
 
-- Dashboard · ERP
+- Reads from: ERP
 - Multi-company GL consolidation
 - An income statement that's never stale
 
-### Job costing & production rates
+### Job costing and production rates
 
 Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
 
-- Dashboard · production data + ERP
+- Reads from: production data and ERP
 - Estimate vs. actual per job
 - Overruns surfaced early
 
@@ -62,37 +60,37 @@ Production rates feed real per-job cost and margin: estimate against actual duri
 
 Open POs, receipts and vendor price changes.
 
-- Dashboard · ERP
+- Reads from: ERP
 - Live
 
 ### AP workbench
 
 Every open bill, its PO match and its approval state.
 
-- Dashboard · accounting software
+- Reads from: accounting software
 - Live
 
-[AP automation →](https://get-lumic.com/services/ap-automation/)
+[AP automation](https://get-lumic.com/services/ap-automation/)
 
 ### Commissions
 
 Rep commissions from live sales.
 
-- Dashboard · ERP
+- Reads from: ERP
 - Live
 
 ### PTO tracking
 
 Balances and requests.
 
-- Dashboard · HR data
+- Reads from: HR data
 - Live
 
 ### Ask your data (AI)
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant · the same live data
+- AI assistant, on the same live data
 - A person approves each entry
 
 Clients are kept private; everything shown runs in production.
@@ -134,17 +132,13 @@ lumic builds it, and keeps it working.
 - Stale spreadsheets nobody trusts → One live set of data
 - Build-and-ghost consultants → A team that stays on
 
-Other jobs lumic automates: [Services](https://get-lumic.com/services/). Every agent and dashboard in production: [Portfolio](https://get-lumic.com/portfolio/).
-
-Pricing
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -153,16 +147,13 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
+## Related
 
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
+- [Services](https://get-lumic.com/services/)
+- [Portfolio](https://get-lumic.com/portfolio/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -174,9 +165,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

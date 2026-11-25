@@ -11,11 +11,9 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com
 
-Services AP automation
-
 # An AI agent that enters your vendor bills. A person approves each one.
 
-The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in your accounting software, ready to post. lumic builds this AI accounts payable agent on site and keeps it working.
+The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in your accounting software, ready to post. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the proof
 
@@ -45,9 +43,9 @@ An AP agent reads each vendor bill from email, matches it to the purchase order 
 
 ### AP invoice agent
 
-Every vendor bill used to be typed in twice, into two systems. It reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
+Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- Agent · accounting software + the system that holds the POs
+- Runs in: accounting software and the system that holds the POs
 - Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
@@ -55,21 +53,19 @@ Every vendor bill used to be typed in twice, into two systems. It reads each bil
 
 Every open bill, its PO match and its approval state.
 
-- Dashboard · accounting software
+- Dashboard, on the accounting software
 - Live
 
-### Purchasing & PO write-back
+### Purchasing and PO write-back
 
 The agent drafts purchase orders and writes them back to the ERP.
 
-- Agent · ERP
+- Runs in: the ERP
 - Approval-gated
 
 Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -77,9 +73,9 @@ Approval and access
 
 The agent enters the work in your systems, the same records a clerk would key. A person approves it, and nobody retypes it.
 
-### Gated by the people who know the work.
+### The final post stays with your team.
 
-An agent prepares the work. The people on your team who know it approve it before it posts. The final post stays in your hands. Dashboards only read.
+An agent prepares the work. The people on your team who know it approve it before it posts. Dashboards only read.
 
 ### It touches only its job.
 
@@ -94,18 +90,12 @@ lumic builds it, and keeps it working.
 - Instead of → With lumic
 - Typing every bill into two systems → An agent enters it; you approve
 - Build-and-ghost consultants → A team that stays on
-- Each managed agent Covered
-- Monitoring Ongoing
-- Testing Monthly
-- Fixes Included
-- Upgrades as tools improve Included
-- Human approval Built in
 
-Two ways to run it
+Where it runs
 
 ## Run by lumic, or installed on your own AI.
 
-It is the same job either way. lumic runs the AP automation agent on a dedicated computer and keeps it working, or packages it, with the written procedure, the tools when the job needs them and the approval steps, for the AI assistant your team already uses, so your own AI accounts payable agent does the work. A setup fee, then a monthly fee. Gated by the people who know the work.
+It is the same job either way. lumic runs it on a dedicated computer and keeps it working for a monthly fee. Or lumic packages it for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps. That option is a setup fee, then a monthly fee, quoted per job. Gated by the people who know the work.
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
@@ -121,17 +111,13 @@ Weeks, not quarters. After the on-site day, lumic builds and tests the agent in 
 
 A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
 
-More on the method in [How lumic works](https://get-lumic.com/how-lumic-works/), every answer in [Common questions](https://get-lumic.com/faq/), and on-site work in [St. Louis](https://get-lumic.com/st-louis/).
-
-Pricing
-
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation.
+Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, priced in the written proposal.
 
 Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -140,16 +126,15 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Consultation Free
 - On-site work $1,500/day
-- The build One-time, scoped
+- The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
+## Related
 
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
+- [Services](https://get-lumic.com/services/)
+- [How lumic works](https://get-lumic.com/how-lumic-works/)
+- [Pricing](https://get-lumic.com/pricing/)
+- [Guardrails](https://get-lumic.com/guardrails/)
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -161,9 +146,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 

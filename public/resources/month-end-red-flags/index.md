@@ -11,8 +11,6 @@ last_updated: 2026-11-24
 
 Source: https://get-lumic.com/resources/month-end-red-flags/ | Contact: hello@get-lumic.com
 
-Checklist Month-end
-
 # Month-End Red Flags Service Firms Usually Miss
 
 A short checklist for engineering firms, staffing firms, construction services and agencies. Each item is a habit that quietly slows the close or leaks margin. Count how many sound familiar.
@@ -75,9 +73,9 @@ How to start
 
 A 20‑minute call. You walk the team through the work your people do by hand.
 
-A written proposal. What lumic would build, the timeline, and the cost.
+An on-site day. lumic’s FDEs work beside your team where the work happens. They come on site across Greater St. Louis and travel for the right fit.
 
-An on-site visit. lumic’s FDEs meet your team where the work happens and confirm the plan. They come on site across Greater St. Louis and travel for the right fit.
+A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
