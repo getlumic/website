@@ -1,13 +1,13 @@
 ---
-title: "St. Louis AI automation: on-site FDEs | lumic"
-description: "lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit."
+title: "St. Louis AI company: custom AI implementation | lumic"
+description: "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
 last_updated: 2026-11-24
 ---
 
-# St. Louis AI automation: on-site FDEs | lumic
+# St. Louis AI company: custom AI implementation | lumic
 
-> lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.
+> lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit.
 
 Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 

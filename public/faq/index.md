@@ -23,7 +23,7 @@ Questions
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 ### Where does the agent run?
 

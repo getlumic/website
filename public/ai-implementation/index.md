@@ -1,21 +1,21 @@
 ---
-title: "AI implementation for small and mid-size businesses | lumic"
-description: "lumic's FDEs find where AI fits, build agents, automations and dashboards inside your systems, and keep them working. A person approves what matters."
+title: "Custom AI implementation for small and mid-size businesses"
+description: "lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working."
 canonical: https://get-lumic.com/ai-implementation/
 last_updated: 2026-11-24
 ---
 
-# AI implementation for small and mid-size businesses | lumic
+# Custom AI implementation for small and mid-size businesses
 
-> lumic's FDEs find where AI fits, build agents, automations and dashboards inside your systems, and keep them working. A person approves what matters.
+> lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working.
 
 Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
 
 AI implementation Small and mid-size businesses
 
-# AI implementation that ends in working software.
+# Custom AI implementation that ends in working software.
 
-lumic’s Forward Deployed Engineers find where AI fits your business, build agents, automations and live dashboards inside the systems you already run, and keep them working. A person on your team approves what matters.
+lumic’s Forward Deployed Engineers find where AI fits any process in your business, build custom agents, automations and live dashboards inside the systems you already run, and keep them working. A person on your team approves what matters.
 
 [Book a call](https://cal.com/lumic/20-minute-call) What lumic implements
 

@@ -1,13 +1,13 @@
 ---
-title: "lumic | AI implementation on retainer, St. Louis FDEs"
-description: "lumic's Forward Deployed Engineers build AI into the systems your business already runs, then keep it working every month on retainer. Based in St. Louis."
+title: "lumic | Custom AI implementation, St. Louis FDEs"
+description: "lumic builds custom AI into any process and any system your business runs, then keeps it working on a monthly retainer. Forward Deployed Engineers, St. Louis."
 canonical: https://get-lumic.com/
 last_updated: 2026-11-24
 ---
 
-# lumic | AI implementation on retainer, St. Louis FDEs
+# lumic | Custom AI implementation, St. Louis FDEs
 
-> lumic's Forward Deployed Engineers build AI into the systems your business already runs, then keep it working every month on retainer. Based in St. Louis.
+> lumic builds custom AI into any process and any system your business runs, then keeps it working on a monthly retainer. Forward Deployed Engineers, St. Louis.
 
 Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
 
@@ -15,11 +15,9 @@ Based in St. Louis FDEs for business
 
 Forward Deployed Engineers · St. Louis
 
-# Your AI implementation team, on retainer.
+# Custom AI, built into your business and kept working.
 
-AI, deployed into your business and kept working.
-
-lumic’s Forward Deployed Engineers come on site, learn how the work is really done, and build AI into the systems you already run: agents, automations and live dashboards. Then lumic keeps it working, every month, and a person on your team approves what matters.
+lumic’s Forward Deployed Engineers build custom AI for any process in any system your team runs: agents, automations and live dashboards. lumic keeps it working on a monthly retainer; a person on your team approves what matters.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See it running
 
@@ -239,7 +237,7 @@ lumic builds it, and keeps it working.
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 ### Who approves what the agent does?
 
@@ -285,7 +283,7 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ### What is an FDE?
 
-FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
+FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working.
 
 ### Who approves what the agent does?
 

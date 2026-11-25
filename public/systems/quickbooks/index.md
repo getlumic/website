@@ -50,7 +50,7 @@ Vendor bills
 
 ## Vendor bills in QuickBooks Desktop
 
-The agent reads each vendor bill, matches it to the purchase order, and enters the bill in QuickBooks Desktop once a person approves it. When the purchase orders live in a separate operations database, it enters the bill there too, so nobody types it twice.
+The agent reads each vendor bill, matches it to the purchase order, and enters the bill in QuickBooks Desktop once a person approves it. When the purchase orders live in another system, it enters the bill there too, so nobody types it twice.
 
 ### It reads each bill.
 
@@ -62,7 +62,7 @@ It matches the bill to the purchase order and flags a price difference before an
 
 ### A person approves, then it enters.
 
-After a person approves it, the agent enters the bill in QuickBooks Desktop, and in the operations database that holds the purchase orders when there is one.
+After a person approves it, the agent enters the bill in QuickBooks Desktop, and in the other system that holds the purchase orders, when there is one.
 
 The jobs
 

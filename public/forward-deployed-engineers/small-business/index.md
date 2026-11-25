@@ -1,13 +1,13 @@
 ---
 title: "Forward Deployed Engineers for small and mid-size businesses | lumic"
-description: "lumic's FDEs work on site, build one back-office AI agent at a time inside the systems a business already runs, and stay to keep it working."
+description: "lumic's FDEs work on site, build one custom AI agent at a time inside the systems a business already runs, and stay to keep it working."
 canonical: https://get-lumic.com/forward-deployed-engineers/small-business/
 last_updated: 2026-11-24
 ---
 
 # Forward Deployed Engineers for small and mid-size businesses | lumic
 
-> lumic's FDEs work on site, build one back-office AI agent at a time inside the systems a business already runs, and stay to keep it working.
+> lumic's FDEs work on site, build one custom AI agent at a time inside the systems a business already runs, and stay to keep it working.
 
 Source: https://get-lumic.com/forward-deployed-engineers/small-business/ | Contact: hello@get-lumic.com
 

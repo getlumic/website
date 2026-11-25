@@ -4,5 +4,5 @@
   "areaServed": [{"@type": "AdministrativeArea", "name": "Madison County, Illinois"}, {"@type": "AdministrativeArea", "name": "St. Clair County, Illinois"}],
   "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
   "url": "https://get-lumic.com/st-louis/metro-east/",
-  "description": "lumic's Forward Deployed Engineers (FDEs) spend in-person days across Madison and St. Clair counties, building back-office AI agents inside the systems a business already runs. A person approves every entry before it posts."}
+  "description": "lumic's Forward Deployed Engineers (FDEs) spend in-person days across Madison and St. Clair counties, building custom AI agents inside the systems a business already runs. A person approves every entry before it posts."}
 ]

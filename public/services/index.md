@@ -1,29 +1,97 @@
 ---
-title: "AI agents, automations and dashboards | lumic"
-description: "AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working."
+title: "Custom AI solutions: agents, automations, dashboards | lumic"
+description: "Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working."
 canonical: https://get-lumic.com/services/
 last_updated: 2026-11-24
 ---
 
-# AI agents, automations and dashboards | lumic
+# Custom AI solutions: agents, automations, dashboards | lumic
 
-> AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working.
+> Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working.
 
 Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
 
 Services Agents, automations and dashboards
 
-# What lumic builds, one job at a time.
+# Custom AI solutions, one process at a time.
 
-lumic builds AI agents, automations and live dashboards, one job at a time: vendor bills, cash receipts and collections, purchase orders, payroll entries, month-end, and the reports your team rebuilds every week. The work happens inside the systems you already run, and lumic keeps it working. A person approves before anything posts. How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/).
+lumic builds custom AI agents, automations and live dashboards for any process your team does by hand, from orders and email to bills and month-end. The work happens inside the systems you already run, and lumic keeps it working. A person approves before anything posts. How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/).
 
-[Book a call](https://cal.com/lumic/20-minute-call) See the jobs
+[Book a call](https://cal.com/lumic/20-minute-call) See what lumic builds
 
-The jobs
+Agents
 
-## Pick the job that takes the most hours.
+## Custom AI agents
 
-Each agent does one job end to end. lumic’s FDEs start beside the person who does it today, then build the agent around how the work is really done.
+Each agent does one job end to end, the same records a person would key. lumic’s FDEs start beside the person who does it today, then build the agent around how the work is really done.
+
+### Order desk and customer service
+
+The agent reads each purchase order and customer email, drafts the sales order and the reply. A person checks each one and sends it.
+
+- Orders and replies drafted
+- A person sends every reply
+
+[Order desk and customer service →](https://get-lumic.com/services/order-desk-and-customer-service/)
+
+### Collections
+
+From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
+
+- Drafts from live aging
+- A person sends every one
+
+[Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
+
+### Ask your data
+
+An AI assistant answers questions from your ERP, email and files, and drafts entries for a person to approve.
+
+- Plain-English questions
+- A person approves each entry
+
+Automations
+
+## Automations and integrations
+
+The agent works where your team works, whether that’s an ERP, accounting software, email, spreadsheets or cloud apps. It reads and enters the same records a person would. No new system to learn, and no new software seats.
+
+### Workflow automation
+
+The steps between people and systems, done for them: reading a document, matching it, routing it for approval, and filing the result.
+
+- Approval queues
+- A log of every step it takes
+
+### System connections
+
+A live connection to the systems the work touches, so the same record is never typed twice.
+
+- Reads and enters the same records a person would
+- No new software seats
+
+[How lumic works with your systems →](https://get-lumic.com/systems/)
+
+### Reading the inbox
+
+Vendor bills, remittances and ACH detail, purchase orders and customer emails: read where they arrive and prepared in your systems for a person to approve.
+
+- Bills, cash receipts and orders
+- A person approves each entry
+
+Dashboards
+
+## Live dashboards
+
+Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. No more morning export. Dashboards only read.
+
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
+
+The back office
+
+## Back office
+
+Pick the job that takes the most hours. Each agent does one back-office job end to end, and a person approves before anything posts.
 
 ### AP automation
 
@@ -42,15 +110,6 @@ Remittances and ACH detail, read and keyed into the ERP. Collections emails and 
 - A person sends every collections email
 
 [Cash receipts and collections →](https://get-lumic.com/services/cash-receipts-and-collections/)
-
-### Dashboards and reporting
-
-Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. No more morning export.
-
-- Live, on your own data
-- Dashboards only read
-
-[Dashboards and reporting →](https://get-lumic.com/services/dashboards-and-reporting/)
 
 ### Purchasing and PO write-back
 

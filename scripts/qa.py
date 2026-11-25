@@ -13,7 +13,7 @@ muted, take the sound, carry the sample-data note), in-page links have targets, 
 one <h1>, canonical and og:url match, a BreadcrumbList. On every page (home included): JSON-LD parses, no we/our/us,
 no size-reveal or gap phrases; on inner pages also no banned term and no product name at all (visible text, title,
 meta and JSON-LD). /st-louis/ carries no street address. The sitemap lists every page and each answers 200 with a
-matching canonical. Home: the revamp title, H1, tagline in the hero and the schema slogan, the nav labels, and the
+matching canonical. Home: the revamp title, H1, tagline in the footer and the schema slogan, the nav labels, and the
 four offer steps with their links. Off localhost: every src/worker.js REDIRECTS path (/about/ and /about -> /how-lumic-works/ among them) answers 301 to its page. Home's FAQPage covers exactly
 the questions it shows.
 
@@ -105,8 +105,8 @@ PRICING_BLOCK_PATHS = ("/", "/services/", "/pricing/", "/managed-ai/")
 GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIPAA", r"\bGDPR\b", r"penetration",
                          r"zero[- ]trust", r"compliant"]
 # Revamp 2026-11-24 (CEO brief): home title, H1 (with its kicker), the brand tagline under it, the nav, the four offer steps
-HOME_TITLE = "lumic | AI implementation on retainer, St. Louis FDEs"
-HOME_H1 = "Forward Deployed Engineers · St. Louis Your AI implementation team, on retainer."
+HOME_TITLE = "lumic | Custom AI implementation, St. Louis FDEs"
+HOME_H1 = "Forward Deployed Engineers · St. Louis Custom AI, built into your business and kept working."
 TAGLINE = "AI, deployed into your business and kept working."
 NAV_LABELS = ["Services", "Managed AI", "How lumic works", "Pricing", "St. Louis"]
 STEP_LINKS = [CAL, "/ai-consulting/", "/ai-implementation/", "/managed-ai/"]
@@ -287,9 +287,9 @@ def check_pages(b):
     h1 = norm(pg.evaluate("document.querySelector('h1').textContent"))
     if h1 != HOME_H1:
         fails.append(f"home: H1 {h1!r}, want {HOME_H1!r}")
-    hero = pg.evaluate("document.querySelector('.hero').innerText")
-    if TAGLINE not in hero:
-        fails.append(f"home: the tagline {TAGLINE!r} is not in the hero")
+    foot = pg.evaluate("document.querySelector('footer').innerText")
+    if TAGLINE not in foot:
+        fails.append(f"home: the tagline {TAGLINE!r} is not in the footer")
     orgs = [g for blk in ld_blocks(home) if isinstance(blk, dict) for g in blk.get("@graph", []) if g.get("@type") == "Organization"]
     if not orgs or orgs[0].get("slogan") != TAGLINE:
         fails.append("home: Organization slogan is not the tagline")

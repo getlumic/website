@@ -1,6 +1,6 @@
 # lumic
 
-> lumic is an AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) come on site, learn how a business really works, build AI into the systems it already runs (agents, workflow automation, system connections and live dashboards), and keep it working on a monthly retainer. A person on the client's team approves what matters. Proven in production: an AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. Serves Greater St. Louis on both sides of the river and travels for the right fit.
+> lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. Proven in production: an AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
 ## Offers
 - Free consultation. A 20-minute call.
@@ -83,10 +83,10 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 
 ## Pages
 - [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
-- [AI implementation](https://get-lumic.com/ai-implementation/): AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices ([markdown](https://get-lumic.com/ai-implementation/index.md))
+- [AI implementation](https://get-lumic.com/ai-implementation/): custom AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices ([markdown](https://get-lumic.com/ai-implementation/index.md))
 - [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices ([markdown](https://get-lumic.com/managed-ai/index.md))
 - [AI consulting](https://get-lumic.com/ai-consulting/): AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page ([markdown](https://get-lumic.com/ai-consulting/index.md))
-- [Services](https://get-lumic.com/services/): what lumic builds: AI agents, automations and live dashboards, one job at a time; the job cards, the two offers, links to AI implementation and Managed AI ([markdown](https://get-lumic.com/services/index.md))
+- [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI ([markdown](https://get-lumic.com/services/index.md))
 - [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
 - [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))

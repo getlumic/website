@@ -1,11 +1,11 @@
 ---
-title: "Pricing: AI agents for the back office | lumic"
+title: "Pricing: custom AI agents and managed AI | lumic"
 description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
 last_updated: 2026-11-24
 ---
 
-# Pricing: AI agents for the back office | lumic
+# Pricing: custom AI agents and managed AI | lumic
 
 > Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.
 

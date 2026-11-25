@@ -16,7 +16,7 @@
    "telephone": "+1-618-979-6837",
    "slogan": "AI, deployed into your business and kept working.",
    "foundingDate": "2026-05",
-   "description": "lumic is a St. Louis AI implementation firm: Forward Deployed Engineers who build AI into how a business already runs, then keep it working on a monthly retainer. The back office stays the deepest proof, not the boundary.",
+   "description": "lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. Proven in production: an AP agent went live about six weeks after the on-site day, and 64 of 67 bills went through it in week one.",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "St. Louis",
@@ -68,11 +68,44 @@
     }
    ],
    "knowsAbout": [
-    "AI implementation",
-    "Forward deployed engineering",
-    "AI agents",
+    "Custom AI solutions",
+    "Custom AI implementation",
+    "AI implementation services",
+    "Custom AI agents",
+    "AI automation for business",
     "Workflow automation",
-    "Managed AI services"
+    "System integration",
+    "Managed AI services",
+    "Forward deployed engineering",
+    "Live dashboards",
+    "AI agents",
+    "Business process automation",
+    "Accounts payable automation",
+    "Cash receipts",
+    "Month-end close",
+    "QuickBooks Online",
+    "QuickBooks Desktop",
+    "NetSuite",
+    "Sage Intacct",
+    "Sage 100",
+    "Microsoft Dynamics 365 Business Central",
+    "Xero",
+    "Acumatica",
+    "Bill.com",
+    "Ramp",
+    "Expensify",
+    "ADP",
+    "Paychex",
+    "Gusto",
+    "Salesforce",
+    "HubSpot",
+    "Microsoft 365 / Outlook",
+    "Excel",
+    "Power BI",
+    "SQL Server",
+    "Google Workspace",
+    "FileMaker",
+    "Shopify"
    ],
    "sameAs": [
     "https://www.linkedin.com/company/get-lumic",
@@ -165,8 +198,8 @@
   {
    "@type": "Service",
    "@id": "https://get-lumic.com/#service",
-   "name": "AI deployed into your business",
-   "serviceType": "Forward deployed engineering",
+   "name": "Custom AI implementation",
+   "serviceType": "Custom AI implementation",
    "provider": {
     "@id": "https://get-lumic.com/#org"
    },
@@ -204,7 +237,7 @@
     "@type": "BusinessAudience",
     "name": "Small and mid-sized businesses"
    },
-   "description": "lumic learns how one job is really done, then builds an AI agent for it, such as entering vendor bills or preparing month-end entries. It works in the systems the team already uses, whether that's an ERP, accounting software, email, spreadsheets or cloud apps, on its own dedicated computer, wherever fits the business. A person approves what it enters, every action is logged, and the team keeps it working for a monthly fee."
+   "description": "lumic learns how one job is really done, then builds custom AI for it, such as drafting sales orders from customer emails, entering vendor bills or preparing month-end entries. It works in the systems the team already uses, whether that's an ERP, accounting software, email, spreadsheets or cloud apps, on its own dedicated computer, wherever fits the business. A person approves what it enters, every action is logged, and the team keeps it working for a monthly fee."
   },
   {
    "@type": "FAQPage",
@@ -215,7 +248,7 @@
      "name": "What is an FDE?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
+      "text": "FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
      }
     },
     {
@@ -240,8 +273,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/ai-implementation/#webpage",
    "url": "https://get-lumic.com/ai-implementation/",
-   "name": "AI implementation for small and mid-size businesses | lumic",
-   "description": "lumic's FDEs find where AI fits, build agents, automations and dashboards inside your systems, and keep them working. A person approves what matters.",
+   "name": "Custom AI implementation for small and mid-size businesses",
+   "description": "lumic's FDEs find where AI fits any process, build custom agents, automations and dashboards inside your systems, and keep them working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -483,7 +516,7 @@
    "@id": "https://get-lumic.com/ai-consulting/#webpage",
    "url": "https://get-lumic.com/ai-consulting/",
    "name": "AI consulting for small businesses, on site | lumic",
-   "description": "lumic's FDEs spend a day on site, map where AI fits your business and write a fixed proposal. On-site work $1,500/day, credited toward phase one.",
+   "description": "lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -603,8 +636,8 @@
    "@type": "CollectionPage",
    "@id": "https://get-lumic.com/services/#webpage",
    "url": "https://get-lumic.com/services/",
-   "name": "AI agents, automations and dashboards | lumic",
-   "description": "AI agents for bills, cash receipts, orders, payroll entries and month-end, plus live dashboards, built inside your systems and kept working.",
+   "name": "Custom AI solutions: agents, automations, dashboards | lumic",
+   "description": "Custom AI agents, automations and live dashboards for any process, from orders and email to bills and month-end, built in your systems and kept working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1619,7 +1652,7 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/pricing/#webpage",
    "url": "https://get-lumic.com/pricing/",
-   "name": "Pricing: AI agents for the back office | lumic",
+   "name": "Pricing: custom AI agents and managed AI | lumic",
    "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed agents from $1,000/month. Starting points, not quotes.",
    "inLanguage": "en",
    "about": {
@@ -1986,8 +2019,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/st-louis/#webpage",
    "url": "https://get-lumic.com/st-louis/",
-   "name": "St. Louis AI automation: on-site FDEs | lumic",
-   "description": "lumic's St. Louis AI team works on site beside your people, from vendor bills to month-end. St. Louis first; lumic travels for the right fit.",
+   "name": "St. Louis AI company: custom AI implementation | lumic",
+   "description": "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2022,7 +2055,7 @@
    "@id": "https://get-lumic.com/st-louis/ai-consulting/#webpage",
    "url": "https://get-lumic.com/st-louis/ai-consulting/",
    "name": "St. Louis AI consulting and automation | lumic",
-   "description": "lumic is St. Louis AI consulting that sends FDEs on site to build one back-office agent at a time. A person approves every entry before it posts.",
+   "description": "lumic is St. Louis AI consulting that sends FDEs on site to build one custom AI agent at a time. A person approves every entry before it posts.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2101,7 +2134,7 @@
     "name": "Small and mid-sized businesses"
    },
    "url": "https://get-lumic.com/st-louis/ai-consulting/",
-   "description": "lumic's Forward Deployed Engineers are based in St. Louis. They come on site, find the back-office work done by hand, build an AI agent for one job at a time inside the systems the business already runs, and keep it working. A person approves every entry before it posts."
+   "description": "lumic's Forward Deployed Engineers are based in St. Louis. They come on site, find the work done by hand, build a custom AI agent for one job at a time inside the systems the business already runs, and keep it working. A person approves every entry before it posts."
   },
   {
    "@type": "FAQPage",
@@ -2162,7 +2195,7 @@
    "@id": "https://get-lumic.com/st-louis/metro-east/#webpage",
    "url": "https://get-lumic.com/st-louis/metro-east/",
    "name": "AI automation for Metro East businesses, on site | lumic",
-   "description": "lumic's FDEs spend in-person days across Madison and St. Clair counties, building back-office AI agents a person approves before anything posts.",
+   "description": "lumic's FDEs spend in-person days across Madison and St. Clair counties, building custom AI agents a person approves before anything posts.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2221,7 +2254,7 @@
     "name": "Small and mid-sized businesses"
    },
    "url": "https://get-lumic.com/st-louis/metro-east/",
-   "description": "lumic's Forward Deployed Engineers (FDEs) spend in-person days across Madison and St. Clair counties, building back-office AI agents inside the systems a business already runs. A person approves every entry before it posts."
+   "description": "lumic's Forward Deployed Engineers (FDEs) spend in-person days across Madison and St. Clair counties, building custom AI agents inside the systems a business already runs. A person approves every entry before it posts."
   },
   {
    "@type": "WebPage",
@@ -2354,7 +2387,7 @@
    "@id": "https://get-lumic.com/forward-deployed-engineers/small-business/#webpage",
    "url": "https://get-lumic.com/forward-deployed-engineers/small-business/",
    "name": "Forward Deployed Engineers for small and mid-size businesses | lumic",
-   "description": "lumic's FDEs work on site, build one back-office AI agent at a time inside the systems a business already runs, and stay to keep it working.",
+   "description": "lumic's FDEs work on site, build one custom AI agent at a time inside the systems a business already runs, and stay to keep it working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2433,7 +2466,7 @@
     "name": "Small and mid-sized businesses"
    },
    "url": "https://get-lumic.com/forward-deployed-engineers/small-business/",
-   "description": "lumic's Forward Deployed Engineers (FDEs) work on site, build one back-office AI agent at a time inside the systems a business already runs, and stay to keep it working. A person approves every entry before it posts."
+   "description": "lumic's Forward Deployed Engineers (FDEs) work on site, build one custom AI agent at a time inside the systems a business already runs, and stay to keep it working. A person approves every entry before it posts."
   },
   {
    "@type": "FAQPage",
@@ -2509,7 +2542,7 @@
      "name": "What is an FDE?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
+      "text": "FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
      }
     },
     {
