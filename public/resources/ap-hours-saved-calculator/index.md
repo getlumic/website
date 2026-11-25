@@ -35,7 +35,7 @@ Extra minutes per exception Example. Edit to match the work.
 
 - Today
 - Hours per month 36.7
-- Hours per year 440.0
+- Hours per year 440.4
 - Cost per month $1,650
 - Cost per year $19,800
 - Cost per bill $8.25
@@ -60,7 +60,7 @@ Extra minutes per exception Starts at today’s number.
 
 - If it took less time
 - Hours per month 36.7
-- Hours per year 440.0
+- Hours per year 440.4
 - Cost per month $1,650
 - Cost per year $19,800
 - Cost per bill $8.25

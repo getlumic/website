@@ -59,7 +59,7 @@
           <ul class="ledger calc-led" aria-label="Today's figures">
             <li class="hd"><span>Today</span></li>
             <li><span>Hours per month</span><span class="st" data-o="hours">36.7</span></li>
-            <li><span>Hours per year</span><span class="st" data-o="hoursy">440.0</span></li>
+            <li><span>Hours per year</span><span class="st" data-o="hoursy">440.4</span></li>
             <li><span>Cost per month</span><span class="st" data-o="month">$1,650</span></li>
             <li><span>Cost per year</span><span class="st" data-o="year">$19,800</span></li>
             <li><span>Cost per bill</span><span class="st" data-o="bill">$8.25</span></li>
@@ -107,7 +107,7 @@
                 <ul class="ledger calc-led" aria-label="Figures if it took less time">
                   <li class="hd"><span>If it took less time</span></li>
                   <li><span>Hours per month</span><span class="st" data-o="hours2">36.7</span></li>
-                  <li><span>Hours per year</span><span class="st" data-o="hoursy2">440.0</span></li>
+                  <li><span>Hours per year</span><span class="st" data-o="hoursy2">440.4</span></li>
                   <li><span>Cost per month</span><span class="st" data-o="month2">$1,650</span></li>
                   <li><span>Cost per year</span><span class="st" data-o="year2">$19,800</span></li>
                   <li><span>Cost per bill</span><span class="st" data-o="bill2">$8.25</span></li>
@@ -166,12 +166,13 @@
 <script>
 /* AP hours calculator: runs in the browser only (no network call, nothing stored). Hours = (B*M + B*E*X)/60.
    The worked line is built from the figures it prints, so a reader who redoes it gets the same answer:
-   "=" where the step is exact, "≈" where it is rounded (hours to 0.1, money to the cent). */
+   "=" where the step is exact, "≈" where it is rounded (hours to 0.1, money to the cent). Every year is the
+   month as shown times 12, and a month with cents puts its year in cents too. */
 (function(){
   var root=document.querySelector('[data-calc]'); if(!root) return;
   var page=document.getElementById('calculator');
   var ins={}; [].forEach.call(page.querySelectorAll('input[data-k]'),function(i){ ins[i.getAttribute('data-k')]=i; });
-  var dirty={}, cmp=document.getElementById('compare');
+  var dirty={}, cmp=document.getElementById('compare'), peek=document.querySelector('[data-peek]');
   [].forEach.call(document.querySelectorAll('[data-js-only],[data-peek]'),function(e){ e.hidden=false; });
   var nf1=new Intl.NumberFormat('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});
   var nf0=new Intl.NumberFormat('en-US',{maximumFractionDigits:0});
@@ -179,30 +180,41 @@
   var usd0=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0,minimumFractionDigits:0});
   var usd2=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2,maximumFractionDigits:2});
   var DASH='—', X='×', DIV='÷', EQ=' = ', AP=' ≈ ';
+  var NOFIG='No figures yet. Check the note under the field.', NOFIG_BAR='No figures yet. See the field note.';
   function out(k){ return page.querySelector('[data-o="'+k+'"]'); }
   function set(k,v){ var e=out(k); if(e&&e.textContent!==v) e.textContent=v; }
   function r6(n){ return Math.round(n*1e6)/1e6; }
+  function r1(n){ return Math.round(n*10)/10; }
   function same(a,b){ return Math.abs(a-b)<1e-7; }
-  /* money from whole cents: whole dollars when the cents are zero, else the cents, so a month times 12 always equals the year shown */
-  function money(c){ return c%100===0?usd0.format(c/100):usd2.format(c/100); }
-  function led(c){ return money(c); }
+  /* money from whole cents. A month and its year share one form: cents on both when the month is not whole
+     dollars (or rounds to $0.00), whole dollars on both otherwise. */
+  function cents(c){ return c%100!==0||c===0; }
+  function usd(c,withCents){ return withCents?usd2.format(c/100):usd0.format(c/100); }
+  function money(c){ return usd(c,cents(c)); }
   function label(i){ return document.querySelector('label[for="'+i.id+'"]').textContent; }
   /* plain digits or correctly grouped thousands; decimals (up to two places) except on Bills; $ only on the
      hourly cost, % only on the rates */
   var NUM=/^(?:\d{1,3}(?:,\d{3})+|\d+)?(?:\.(\d+))?$/;
-  function read(k){
-    var i=ins[k], v=i.value.trim(), lo=+i.getAttribute('data-min'), hi=+i.getAttribute('data-max'), err='', n=NaN;
+  /* a number still being typed: "7.", "1,", "1,0", "$": no error yet, the last figures stay */
+  var PART=/^(?:(?:\d{1,3}(?:,\d{3})*|\d+)[.,]|\d{1,3}(?:,\d{3})*,\d{1,2}|)$/;
+  function read(k,strict){
+    var i=ins[k], raw=i.value.trim(), v=raw, lo=+i.getAttribute('data-min'), hi=+i.getAttribute('data-max'), err='', n=NaN;
     if(k==='h') v=v.replace(/^\$\s*/,'');
     if(k==='e'||k==='e2') v=v.replace(/\s*%$/,'');
+    var h=document.getElementById(i.id+'-h');
+    if(!h.hasAttribute('data-hint')) h.setAttribute('data-hint',h.textContent);
+    var hint=dirty[k]?'Edited.':h.getAttribute('data-hint');
+    if(!strict&&raw!==''&&PART.test(v)){
+      h.textContent=hint; h.classList.remove('bad'); i.removeAttribute('aria-invalid');
+      return {pending:true};
+    }
     var m=NUM.exec(v);
-    if(i.value.trim()==='') err='Enter a number.';
+    if(raw==='') err='Enter a number.';
     else if(!m||v===''||v==='.') err='Use digits only, for example '+i.defaultValue+'.';
     else if(k==='b'&&m[1]!==undefined) err='Enter a whole number of bills.';
     else if(m[1]&&m[1].length>2) err='Use at most two decimal places.';
     else { n=Number(v.replace(/,/g,'')); if(n<lo||n>hi) err='Enter a number from '+nf0.format(lo)+' to '+nf0.format(hi)+'.'; }
-    var h=document.getElementById(i.id+'-h');
-    if(!h.hasAttribute('data-hint')) h.setAttribute('data-hint',h.textContent);
-    h.textContent=err||(dirty[k]?'Edited.':h.getAttribute('data-hint'));
+    h.textContent=err||hint;
     h.classList.toggle('bad',!!err);
     if(err) i.setAttribute('aria-invalid','true'); else i.removeAttribute('aria-invalid');
     return err?{err:label(i)+': '+err}:{n:n};
@@ -210,60 +222,85 @@
   /* every figure, from the rounded steps the page prints */
   function calc(b,m,h,e,x){
     var s=r6(b*m), xm=r6(b*e*x/100), t=r6(s+xm), hrs=t/60, raw=t*h/60, c=Math.round(raw*100);
-    return {s:s,xm:xm,t:t,hrs:hrs,raw:raw,c:c,yc:c*12,bc:Math.round(c/b),braw:c/b};
+    return {s:s,xm:xm,t:t,hrs:hrs,h1:r1(hrs),raw:raw,c:c,yc:c*12,bc:Math.round(c/b),braw:c/b};
   }
   function bad(list){ return list.filter(function(r){ return r.err; }).map(function(r){ return r.err; }); }
   function hours(n){ return nf1.format(n); }
   function mins(n){ return n===1?' minute':' minutes'; }
-  /* the difference in words, so a sign can never mislead */
+  function panel(sfx,a){
+    var cc=cents(a.c);
+    set('hours'+sfx,hours(a.h1)); set('hoursy'+sfx,hours(a.h1*12));
+    set('month'+sfx,usd(a.c,cc)); set('year'+sfx,usd(a.yc,cc)); set('bill'+sfx,usd2.format(a.bc/100));
+  }
+  /* the difference in words, so a sign can never mislead; hours from the hours as shown */
   function dh(d,per){ var t=nf1.format(Math.abs(d)); return t==='0.0'?'No difference in hours '+per:t+(d>0?' fewer':' more')+' hours '+per; }
-  function dc(c,per){ return c===0?'No difference in cost '+per:led(Math.abs(c))+(c>0?' less ':' more ')+per; }
-  var say='', timer=0;
-  function announce(t){ say=t; clearTimeout(timer); timer=setTimeout(function(){ set('say',say); },600); }
-  function run(){
+  function dc(c,cc,per){ return c===0?'No difference in cost '+per:usd(Math.abs(c),cc)+(c>0?' less ':' more ')+per; }
+  function lc(t){ return t.replace(/^No /,'no '); }
+  var timer=0, pend=0;
+  function announce(t){ clearTimeout(timer); timer=setTimeout(function(){ set('say',t); },600); }
+  /* returns the sentence to announce, or null while a number is still being typed */
+  function run(strict){
     /* the comparison starts at today's numbers and follows them until it is edited */
     ['m2','e2','x2'].forEach(function(k){ if(!dirty[k]) ins[k].value=ins[ins[k].getAttribute('data-follow')].value; });
-    var r={}; ['b','m','h','e','x','m2','e2','x2'].forEach(function(k){ r[k]=read(k); });
+    var r={}, waiting=false;
+    ['b','m','h','e','x','m2','e2','x2'].forEach(function(k){ r[k]=read(k,strict); if(r[k].pending) waiting=true; });
+    if(waiting) return null;
     var errA=bad([r.b,r.m,r.h,r.e,r.x]), a=null, spoken='';
-    var peek=document.querySelector('[data-peek]');
     if(errA.length){
       ['hours','hoursy','month','year','bill'].forEach(function(k){ set(k,DASH); });
-      set('msg','No figures yet. Fix the number marked in red.');
+      set('msg',NOFIG);
       set('work','The worked figures show here once every number above is filled in.');
-      if(peek) peek.textContent='No figures yet. Fix the red field.';
+      if(peek) peek.textContent=NOFIG_BAR;
       spoken='No figures yet. '+errA[0];
     } else {
       var B=r.b.n,M=r.m.n,H=r.h.n,E=r.e.n,Xn=r.x.n; a=calc(B,M,H,E,Xn);
-      set('hours',hours(a.hrs)); set('hoursy',hours(a.hrs*12)); set('month',led(a.c)); set('year',led(a.yc)); set('bill',usd2.format(a.bc/100));
+      panel('',a);
       set('msg','');
-      var hEq=same(a.hrs*10,Math.round(a.hrs*10))?EQ:AP, cEq=same(a.raw*100,a.c)?EQ:AP, bEq=same(a.braw,a.bc)?EQ:AP;
+      var cc=cents(a.c), hEq=same(a.hrs,a.h1)?EQ:AP, cEq=same(a.raw*100,a.c)?EQ:AP, bEq=same(a.braw,a.bc)?EQ:AP;
       set('work',nf0.format(B)+' '+X+' '+nf6.format(M)+EQ+nf6.format(a.s)+mins(a.s)+' on straight-through bills, plus '+
         nf0.format(B)+' '+X+' '+nf6.format(E)+'% '+X+' '+nf6.format(Xn)+EQ+nf6.format(a.xm)+mins(a.xm)+' on exceptions, makes '+
-        nf6.format(a.s)+' + '+nf6.format(a.xm)+EQ+nf6.format(a.t)+mins(a.t)+', or '+nf6.format(a.t)+' '+DIV+' 60'+hEq+hours(a.hrs)+(hours(a.hrs)==='1.0'?' hour':' hours')+' a month. At '+
-        money(Math.round(H*100))+' an hour that is '+nf6.format(a.t)+' '+X+' '+money(Math.round(H*100))+' '+DIV+' 60'+cEq+money(a.c)+' a month, '+
-        money(a.c)+' '+X+' 12'+EQ+money(a.yc)+' a year, and '+money(a.c)+' '+DIV+' '+nf0.format(B)+bEq+usd2.format(a.bc/100)+' a bill.');
-      if(peek) peek.textContent=hours(a.hrs)+' hours · '+led(a.c)+' a month';
-      spoken=hours(a.hrs)+' hours and '+led(a.c)+' a month.';
+        nf6.format(a.s)+' + '+nf6.format(a.xm)+EQ+nf6.format(a.t)+mins(a.t)+', or '+nf6.format(a.t)+' '+DIV+' 60'+hEq+hours(a.h1)+(a.h1===1?' hour':' hours')+' a month. At '+
+        money(Math.round(H*100))+' an hour that is '+nf6.format(a.t)+' '+X+' '+money(Math.round(H*100))+' '+DIV+' 60'+cEq+usd(a.c,cc)+' a month, '+
+        usd(a.c,cc)+' '+X+' 12'+EQ+usd(a.yc,cc)+' a year, and '+usd(a.c,cc)+' '+DIV+' '+nf0.format(B)+bEq+usd2.format(a.bc/100)+' a bill.');
+      if(peek) peek.textContent=hours(a.h1)+' hours · '+usd(a.c,cc)+' a month';
+      spoken=hours(a.h1)+' hours and '+usd(a.c,cc)+' a month.';
     }
     var errB=bad([r.m2,r.e2,r.x2]);
     if(errA.length||errB.length){
       ['hours2','hoursy2','month2','year2','bill2','dhours','dhoursy','dmonth','dyear'].forEach(function(k){ set(k,DASH); });
-      set('msg2',errB.length?'No figures yet. Fix the number marked in red.':'No figures yet. Fill in every number above first.');
+      set('msg2',errB.length?NOFIG:'No figures yet. Fill in every number above first.');
       if(cmp&&cmp.open&&errB.length&&!errA.length) spoken+=' If it took less time: no figures yet. '+errB[0];
     } else {
       var c=calc(r.b.n,r.m2.n,r.h.n,r.e2.n,r.x2.n);
-      set('hours2',hours(c.hrs)); set('hoursy2',hours(c.hrs*12)); set('month2',led(c.c)); set('year2',led(c.yc)); set('bill2',usd2.format(c.bc/100));
-      var d=a.hrs-c.hrs;
-      set('dhours',dh(d,'a month')); set('dhoursy',dh(d*12,'a year'));
-      set('dmonth',dc(a.c-c.c,'a month')); set('dyear',dc(a.yc-c.yc,'a year'));
+      panel('2',c);
+      var dmh=r1(a.h1-c.h1), dmc=a.c-c.c, dcc=cents(dmc);
+      set('dhours',dh(dmh,'a month')); set('dhoursy',dh(dmh*12,'a year'));
+      set('dmonth',dc(dmc,dcc,'a month')); set('dyear',dc(dmc*12,dcc,'a year'));
       set('msg2','');
-      if(cmp&&cmp.open) spoken+=' If it took less time: '+out('dhours').textContent+', '+out('dmonth').textContent+'.';
+      if(cmp&&cmp.open){
+        var hm=out('dhours').textContent, cm=out('dmonth').textContent;
+        spoken+=' If it took less time: '+(/^No /.test(hm)&&/^No /.test(cm)?'no difference.':lc(hm)+', '+lc(cm)+'.');
+      }
     }
     return spoken;
   }
-  Object.keys(ins).forEach(function(k){ ins[k].addEventListener('input',function(){ if(ins[k].hasAttribute('data-follow')) dirty[k]=true; announce(run()); }); });
-  if(cmp) cmp.addEventListener('toggle',function(){ if(cmp.open) announce(run()); });
-  run();
+  function settle(){ clearTimeout(pend); announce(run(true)); }
+  Object.keys(ins).forEach(function(k){
+    var i=ins[k];
+    i.addEventListener('input',function(){
+      if(i.hasAttribute('data-follow')) dirty[k]=true;
+      clearTimeout(pend);
+      var s=run(false);
+      if(s===null) pend=setTimeout(settle,800); else announce(s);
+    });
+    i.addEventListener('blur',function(){ if(run(false)===null) settle(); });
+    /* phones: keep the field and its note clear of the summary bar (and of the keyboard once it opens) */
+    function clear(){ if(document.activeElement===i) i.closest('.calc-f').scrollIntoView({block:'nearest',behavior:'instant'}); }
+    i.addEventListener('focus',function(){ setTimeout(clear,0); });
+    if(window.visualViewport) window.visualViewport.addEventListener('resize',clear);
+  });
+  if(cmp) cmp.addEventListener('toggle',function(){ if(cmp.open){ var s=run(false); if(s!==null) announce(s); } });
+  run(true);
 })();
 </script>
 
