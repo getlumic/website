@@ -100,6 +100,16 @@ lumic builds it, and keeps it working.
 - Exporting the same reports every morning → Numbers live, no export
 - Build-and-ghost consultants → A team that stays on
 
+## Distribution, in plain answers.
+
+### Which back-office jobs can AI do for a distributor?
+
+Cash receipts keyed from remittances, collections drafted from live aging, and margin by customer, product and rep, live across companies. lumic builds one agent per job.
+
+### Does a person approve the agent’s work?
+
+Yes. Each entry waits for a person’s approval before it posts, and a person sends every collections email.
+
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.

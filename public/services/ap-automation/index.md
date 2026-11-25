@@ -108,6 +108,10 @@ Weeks, not quarters. After the on-site day, lumic builds and tests the agent in 
 
 A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
 
+### Which systems does it work with?
+
+The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs. Through an API where there is one, through the screen where there isn’t. The list: [Systems lumic works with](https://get-lumic.com/systems/).
+
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.

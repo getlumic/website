@@ -36,6 +36,8 @@ class MD(HTMLParser):
         a = dict(attrs)
         if tag == "main":
             self.inmain = True
+        if self.inmain and tag == "br" and not self.skip:
+            self.buf += " "  # a line break between two sentences keeps them apart
         if not self.inmain or tag in VOID:
             return
         hidden = a.get("aria-hidden") == "true" or tag in SKIP or a.get("class", "").split()[:1] in (["n"], ["flow-hub"], ["crumbs"])
@@ -143,6 +145,20 @@ def main():
     pages_md += [f"- [Full site copy for AI agents]({SITE}/llms-full.txt)", f"- [Privacy]({SITE}/privacy/)"]
     llms, n = re.subn(r"## Pages\n.*\Z", lambda m: "\n".join(pages_md) + "\n", llms, flags=re.S)
     assert n == 1, "llms.txt: no '## Pages' section"
+    # The top of llms.txt, after the summary line, is generated too: the Updated date (the newest sitemap lastmod, which
+    # build_pages.py stamps from git; never hand-typed), the not-to-be-confused line, the profiles, then "lumic at a
+    # glance" (pages.json "glance", the same list as on /how-lumic-works/) as the first section.
+    updated = max(re.findall(r"<lastmod>(\d{4}-\d\d-\d\d)</lastmod>", io.open(PUB / "sitemap.xml", encoding="utf-8").read()))
+    def gline(g):  # a fact that links a page on the site carries its full URL
+        link = re.search(r'href="(/[^"]*)"', g.get("html", ""))
+        return f"- {g['q']}: {g['a']}" + (f" {SITE}{link.group(1)}" if link else "")
+    glance = "\n".join(gline(g) for g in cfg["glance"])
+    top = (f"Updated: {updated}\n\n"
+           "Not to be confused with lumic.ai, Lumiq, Lumicera, Lumico, getlumic.com or lumic.fr.\n\n"
+           "Profiles: https://www.linkedin.com/company/get-lumic | https://clutch.co/profile/lumic\n\n"
+           f"## lumic at a glance\n{glance}\n\n")
+    llms, n = re.subn(r"\A(# lumic\n\n> [^\n]+\n\n).*?(?=^## (?!lumic at a glance))", lambda m: m.group(1) + top, llms, flags=re.S | re.M)
+    assert n == 1, "llms.txt: the top (title, summary, first section) not found"
     io.open(llms_path, "w", encoding="utf-8", newline="\n").write(llms)
     llms = llms.strip()
 

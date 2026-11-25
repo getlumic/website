@@ -2,6 +2,22 @@
 
 > lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
+Updated: 2026-11-25
+
+Not to be confused with lumic.ai, Lumiq, Lumicera, Lumico, getlumic.com or lumic.fr.
+
+Profiles: https://www.linkedin.com/company/get-lumic | https://clutch.co/profile/lumic
+
+## lumic at a glance
+- What it is: A custom AI implementation firm. Its Forward Deployed Engineers (FDEs) build AI into the processes and systems a business already runs, then keep it working on a monthly retainer.
+- Where: St. Louis, Missouri. On site across Greater St. Louis on both sides of the river, including the Metro East in Illinois. lumic travels for the right fit.
+- Who it is for: Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms.
+- What it builds: AI agents, automations and live dashboards for the order desk, email, vendor bills, cash receipts, payroll entries, month-end and reporting.
+- How it is controlled: A person approves what matters before anything posts, and every action is logged.
+- Systems: lumic works with the ERP, accounting, email and spreadsheet tools a team already uses. https://get-lumic.com/systems/
+- Pricing: Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.
+- How to start: A 20-minute call, an on-site day, then a written proposal. hello@get-lumic.com
+
 ## How an engagement runs, and what it costs
 - Free consultation. A 20-minute call.
 - On-site work $1,500/day, credited toward phase one. AI consulting, on site: https://get-lumic.com/ai-consulting/
@@ -131,6 +147,7 @@ A 20-minute call, then an on-site day beside the team, then a written proposal w
 - [Month-end red flags](https://get-lumic.com/resources/month-end-red-flags/): the free checklist: ten month-end red flags service firms usually miss; PDF download ([markdown](https://get-lumic.com/resources/month-end-red-flags/index.md))
 - [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/): a guide: how to implement AI in a small business, step by step: pick one job, map it, build inside the systems, put a person on approval, keep it working ([markdown](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/index.md))
 - [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/): a guide: what an AI agent for accounting does, which accounting jobs fit, how approval and access work, and how to start ([markdown](https://get-lumic.com/resources/ai-agent-for-accounting/index.md))
+- [How to choose an AI implementation partner](https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/): a buyer's checklist for choosing an AI implementation partner: on site or remote, builds inside your systems or sells a license, who approves before anything posts, what monthly upkeep covers, whether prices are published, how the work is kept running, who owns what was built, what the written proposal should say; why on site matters in St. Louis ([markdown](https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/index.md))
 - [AP hours calculator](https://get-lumic.com/resources/ap-hours-saved-calculator/): a free calculator that runs in the browser: the hours and cost of invoice processing by hand, from the visitor's own numbers (bills per month, minutes per bill, loaded hourly cost, exception rate, extra minutes per exception), with the formulas shown and an optional second scenario; nothing is sent ([markdown](https://get-lumic.com/resources/ap-hours-saved-calculator/index.md))
 - [Full site copy for AI agents](https://get-lumic.com/llms-full.txt)
 - [Privacy](https://get-lumic.com/privacy/)

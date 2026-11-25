@@ -100,6 +100,16 @@ lumic builds it, and keeps it working.
 - Job cost known only at close → Estimate vs. actual, during the job
 - Build-and-ghost consultants → A team that stays on
 
+## Manufacturing, in plain answers.
+
+### Which back-office jobs can AI do for a manufacturer?
+
+Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries. lumic builds one agent per job.
+
+### Does a person approve the agent’s work?
+
+Yes. The agent prepares each entry in your systems, and a person on your team approves it before it posts.
+
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.

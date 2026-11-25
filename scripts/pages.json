@@ -267,7 +267,22 @@
       "parent": {
         "label": "Services",
         "href": "/services/"
-      }
+      },
+      "faq": [
+        {
+          "q": "How long does it take to go live?",
+          "a": "Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working."
+        },
+        {
+          "q": "Who approves what the agent does?",
+          "a": "A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands."
+        },
+        {
+          "q": "Which systems does it work with?",
+          "a": "The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs. Through an API where there is one, through the screen where there isn't.",
+          "html": "The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs. Through an API where there is one, through the screen where there isn't. The list: <a href=\"/systems/\">Systems lumic works with</a>."
+        }
+      ]
     },
     {
       "id": "cash-receipts-and-collections",
@@ -281,7 +296,22 @@
       "title": "Cash application and collections automation | lumic",
       "description": "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.",
       "type": "WebPage",
-      "films": []
+      "films": [],
+      "faq": [
+        {
+          "q": "Does a person approve before anything posts?",
+          "a": "Yes. The agent keys each receipt and drafts each collections email. A person approves every receipt before it posts and sends every email."
+        },
+        {
+          "q": "Which systems does it work with?",
+          "a": "The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. Through an API where there is one, through the screen where there isn't.",
+          "html": "The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. Through an API where there is one, through the screen where there isn't. The list: <a href=\"/systems/\">Systems lumic works with</a>."
+        },
+        {
+          "q": "How long does it take to go live?",
+          "a": "Weeks, not quarters. After the on-site day, lumic builds and tests the agents in your systems, then they go live and lumic keeps them working."
+        }
+      ]
     },
     {
       "id": "payroll",
@@ -323,7 +353,22 @@
       "title": "Live ERP dashboards and reporting | lumic",
       "description": "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them.",
       "type": "WebPage",
-      "films": []
+      "films": [],
+      "faq": [
+        {
+          "q": "Does a person approve before anything posts?",
+          "a": "Nothing posts from a dashboard: dashboards only read. When work needs doing, an agent prepares the entry, and a person approves it before it posts."
+        },
+        {
+          "q": "Which systems does it work with?",
+          "a": "The ERP or accounting software your team already runs, and the spreadsheets and other data around it. Dashboards read that data live; nothing is migrated.",
+          "html": "The ERP or accounting software your team already runs, and the spreadsheets and other data around it. Dashboards read that data live; nothing is migrated. The list: <a href=\"/systems/\">Systems lumic works with</a>."
+        },
+        {
+          "q": "How long does it take to go live?",
+          "a": "Weeks, not quarters. After the on-site day, lumic builds the dashboards on your live data, your team checks them, and lumic keeps them working."
+        }
+      ]
     },
     {
       "id": "order-desk-and-customer-service",
@@ -390,7 +435,21 @@
       "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes.",
       "type": "WebPage",
       "films": [],
-      "h1": "Pricing, in plain numbers."
+      "h1": "Pricing, in plain numbers.",
+      "faq": [
+        {
+          "q": "What does managed AI cost?",
+          "a": "Managed AI from $250 to $5,000 a month, depending on scope. The monthly fee covers monitoring, monthly testing, fixes and upgrades."
+        },
+        {
+          "q": "Is the on-site day credited?",
+          "a": "Yes. On-site work $1,500/day, credited toward phase one."
+        },
+        {
+          "q": "Is the build priced separately?",
+          "a": "Yes. The build is a separate, one-time cost, priced in the written proposal. The proposal comes after the on-site day."
+        }
+      ]
     },
     {
       "id": "manufacturing",
@@ -401,7 +460,17 @@
       "description": "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry.",
       "type": "WebPage",
       "films": [],
-      "h1": "Custom AI for manufacturers, from the floor to the books."
+      "h1": "Custom AI for manufacturers, from the floor to the books.",
+      "faq": [
+        {
+          "q": "Which back-office jobs can AI do for a manufacturer?",
+          "a": "Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries. lumic builds one agent per job."
+        },
+        {
+          "q": "Does a person approve the agent's work?",
+          "a": "Yes. The agent prepares each entry in your systems, and a person on your team approves it before it posts."
+        }
+      ]
     },
     {
       "id": "distribution",
@@ -412,7 +481,17 @@
       "description": "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.",
       "type": "WebPage",
       "films": [],
-      "h1": "Custom AI for distributors, from the order desk to the books."
+      "h1": "Custom AI for distributors, from the order desk to the books.",
+      "faq": [
+        {
+          "q": "Which back-office jobs can AI do for a distributor?",
+          "a": "Cash receipts keyed from remittances, collections drafted from live aging, and margin by customer, product and rep, live across companies. lumic builds one agent per job."
+        },
+        {
+          "q": "Does a person approve the agent's work?",
+          "a": "Yes. Each entry waits for a person's approval before it posts, and a person sends every collections email."
+        }
+      ]
     },
     {
       "id": "service-firms",
@@ -423,7 +502,17 @@
       "description": "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.",
       "type": "WebPage",
       "films": [],
-      "h1": "Custom AI for service firms, from the inbox to the books."
+      "h1": "Custom AI for service firms, from the inbox to the books.",
+      "faq": [
+        {
+          "q": "Which back-office jobs can AI do for a service firm?",
+          "a": "The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries. lumic builds one agent per job."
+        },
+        {
+          "q": "Does a person approve the agent's work?",
+          "a": "Yes. The agent prepares each entry, and a person on your team approves it before it posts. The final post stays in your hands."
+        }
+      ]
     },
     {
       "id": "st-louis",
@@ -434,7 +523,25 @@
       "description": "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit.",
       "type": "WebPage",
       "films": [],
-      "h1": "Forward Deployed Engineers in St. Louis. Custom AI, built on site."
+      "h1": "Forward Deployed Engineers in St. Louis. Custom AI, built on site.",
+      "faq": [
+        {
+          "q": "Does lumic work on site in St. Louis?",
+          "a": "Yes. lumic is based in St. Louis, and its Forward Deployed Engineers work beside your team at your place of business, by appointment."
+        },
+        {
+          "q": "Which areas does lumic serve?",
+          "a": "St. Louis City and St. Louis, St. Charles, Jefferson and Franklin counties in Missouri; Madison and St. Clair counties in Illinois."
+        },
+        {
+          "q": "Does lumic work outside St. Louis?",
+          "a": "Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit."
+        },
+        {
+          "q": "What is an FDE?",
+          "a": "FDE stands for Forward Deployed Engineer. lumic's FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
+        }
+      ]
     },
     {
       "id": "st-louis-ai-consulting",
@@ -492,7 +599,17 @@
       "description": "lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry.",
       "type": "WebPage",
       "films": [],
-      "h1": "AI automation for Metro East businesses, on site."
+      "h1": "AI automation for Metro East businesses, on site.",
+      "faq": [
+        {
+          "q": "Does lumic serve Belleville, Edwardsville, Collinsville, O'Fallon and Alton?",
+          "a": "Yes. lumic's FDEs come on site to businesses in Belleville, Edwardsville, Collinsville, O'Fallon, Alton and the rest of Madison and St. Clair counties. These are places lumic serves, not office locations; lumic is based in St. Louis."
+        },
+        {
+          "q": "Is the on-site day the same in Illinois?",
+          "a": "Yes. The on-site day, its rate and the written proposal after it are the same on the Illinois side of the river as in Missouri."
+        }
+      ]
     },
     {
       "id": "forward-deployed-engineers",
@@ -577,7 +694,13 @@
       "title": "Systems lumic works with: any software you run | lumic",
       "description": "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't.",
       "type": "CollectionPage",
-      "films": []
+      "films": [],
+      "faq": [
+        {
+          "q": "Does lumic need an API?",
+          "a": "No. Where a system has an API, the agent uses it. Where it doesn't, the agent works through the system's own screens on its own computer and login, and every step is checked."
+        }
+      ]
     },
     {
       "id": "quickbooks",
@@ -692,7 +815,17 @@
       "description": "A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working.",
       "type": "WebPage",
       "films": [],
-      "h1": "How to implement AI in a small business, one job at a time."
+      "h1": "How to implement AI in a small business, one job at a time.",
+      "faq": [
+        {
+          "q": "Where should a small business start with AI?",
+          "a": "With one job: the one that takes the most hours by hand and repeats every day or every month. One job, not a department."
+        },
+        {
+          "q": "Does AI need upkeep after it goes live?",
+          "a": "Yes. Systems change, document layouts change, and AI models improve. Someone has to watch the agent, test it every month, fix what breaks and upgrade it."
+        }
+      ]
     },
     {
       "id": "guide-ai-agent-for-accounting",
@@ -703,7 +836,42 @@
       "description": "What an AI agent for accounting does: vendor bills, cash receipts, payroll entries and month-end, prepared in your systems for a person to approve.",
       "type": "WebPage",
       "films": [],
-      "h1": "AI agents for accounting: what they do, and how to start."
+      "h1": "AI agents for accounting: what they do, and how to start.",
+      "faq": [
+        {
+          "q": "What is an AI agent for accounting?",
+          "a": "Software that does one job a clerk does today, such as entering vendor bills or preparing month-end entries, inside the accounting software or ERP already in use. It prepares the entry; a person approves it before anything posts."
+        },
+        {
+          "q": "Which accounting job is the best place to start?",
+          "a": "The job that takes the most hours by hand and repeats every day or every month, such as vendor bills or cash receipts. It should follow rules a controller can write down and already end in a review."
+        }
+      ]
+    },
+    {
+      "id": "guide-choose-ai-partner",
+      "path": "/resources/how-to-choose-an-ai-implementation-partner/",
+      "crumb": "How to choose an AI implementation partner",
+      "purpose": "a buyer's checklist for choosing an AI implementation partner: on site or remote, builds inside your systems or sells a license, who approves before anything posts, what monthly upkeep covers, whether prices are published, how the work is kept running, who owns what was built, what the written proposal should say; why on site matters in St. Louis",
+      "title": "How to choose an AI implementation partner | lumic",
+      "description": "A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "How to choose an AI implementation partner.",
+      "faq": [
+        {
+          "q": "What should an AI implementation proposal include?",
+          "a": "The job to be automated, the systems it will touch, who approves its work, the timeline, the one-time build cost, the monthly fee and what it covers, and what the business owns if it leaves."
+        },
+        {
+          "q": "Is on-site or remote AI implementation better?",
+          "a": "For work done by hand inside a business, on site usually wins: the partner sees the screens, the checks and the exceptions. Remote work fits once the job is mapped."
+        },
+        {
+          "q": "Who should own what an AI partner builds?",
+          "a": "Settle it in writing before the build starts: what the business keeps if the relationship ends, such as the written procedures, the configuration and its data, and how a hand-off would work."
+        }
+      ]
     },
     {
       "id": "ap-hours-saved-calculator",
@@ -715,6 +883,43 @@
       "type": "WebPage",
       "films": [],
       "h1": "How many hours does invoice processing take?"
+    }
+  ],
+  "glance": [
+    {
+      "q": "What it is",
+      "a": "A custom AI implementation firm. Its Forward Deployed Engineers (FDEs) build AI into the processes and systems a business already runs, then keep it working on a monthly retainer."
+    },
+    {
+      "q": "Where",
+      "a": "St. Louis, Missouri. On site across Greater St. Louis on both sides of the river, including the Metro East in Illinois. lumic travels for the right fit."
+    },
+    {
+      "q": "Who it is for",
+      "a": "Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms."
+    },
+    {
+      "q": "What it builds",
+      "a": "AI agents, automations and live dashboards for the order desk, email, vendor bills, cash receipts, payroll entries, month-end and reporting."
+    },
+    {
+      "q": "How it is controlled",
+      "a": "A person approves what matters before anything posts, and every action is logged."
+    },
+    {
+      "q": "Systems",
+      "a": "lumic works with the ERP, accounting, email and spreadsheet tools a team already uses.",
+      "html": "lumic works with the ERP, accounting, email and spreadsheet tools a team already uses: <a href=\"/systems/\">Systems lumic works with</a>."
+    },
+    {
+      "q": "Pricing",
+      "a": "Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.",
+      "html": "Free consultation.<br>On-site work $1,500/day, credited toward phase one.<br>The build is a separate, one-time cost, priced in the written proposal.<br>Managed AI from $250 to $5,000 a month, depending on scope."
+    },
+    {
+      "q": "How to start",
+      "a": "A 20-minute call, an on-site day, then a written proposal. hello@get-lumic.com",
+      "html": "A 20&#8209;minute call, an on-site day, then a written proposal. <a href=\"mailto:hello@get-lumic.com?subject=lumic%20intro%20call\">hello@get-lumic.com</a>"
     }
   ],
   "faq": [

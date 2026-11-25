@@ -137,6 +137,20 @@ lumic builds it, and keeps it working.
 - Stale spreadsheets nobody trusts → One live set of data
 - Build-and-ghost consultants → A team that stays on
 
+## Dashboards, in plain answers.
+
+### Does a person approve before anything posts?
+
+Nothing posts from a dashboard: dashboards only read. When work needs doing, an agent prepares the entry, and a person approves it before it posts.
+
+### Which systems does it work with?
+
+The ERP or accounting software your team already runs, and the spreadsheets and other data around it. Dashboards read that data live; nothing is migrated. The list: [Systems lumic works with](https://get-lumic.com/systems/).
+
+### How long does it take to go live?
+
+Weeks, not quarters. After the on-site day, lumic builds the dashboards on your live data, your team checks them, and lumic keeps them working.
+
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.

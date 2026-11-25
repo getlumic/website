@@ -77,11 +77,21 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
 
+## Implementing AI, in plain answers.
+
+### Where should a small business start with AI?
+
+With one job: the one that takes the most hours by hand and repeats every day or every month. One job, not a department.
+
+### Does AI need upkeep after it goes live?
+
+Yes. Systems change, document layouts change, and AI models improve. Someone has to watch the agent, test it every month, fix what breaks and upgrade it.
+
 ## Related
 
 - [AI implementation](https://get-lumic.com/ai-implementation/)
 - [AI agents for accounting](https://get-lumic.com/resources/ai-agent-for-accounting/)
-- [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/)
+- [How to choose an AI implementation partner](https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/)
 - [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.

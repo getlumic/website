@@ -17,6 +17,40 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 [Book a call](https://cal.com/lumic/20-minute-call) The four steps
 
+## lumic at a glance.
+
+### What it is
+
+A custom AI implementation firm. Its Forward Deployed Engineers (FDEs) build AI into the processes and systems a business already runs, then keep it working on a monthly retainer.
+
+### Where
+
+St. Louis, Missouri. On site across Greater St. Louis on both sides of the river, including the Metro East in Illinois. lumic travels for the right fit.
+
+### Who it is for
+
+Owner-run and mid-size businesses with repetitive work done by hand, for example manufacturers, distributors and service firms.
+
+### What it builds
+
+AI agents, automations and live dashboards for the order desk, email, vendor bills, cash receipts, payroll entries, month-end and reporting.
+
+### How it is controlled
+
+A person approves what matters before anything posts, and every action is logged.
+
+### Systems
+
+lumic works with the ERP, accounting, email and spreadsheet tools a team already uses: [Systems lumic works with](https://get-lumic.com/systems/).
+
+### Pricing
+
+Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.
+
+### How to start
+
+A 20‑minute call, an on-site day, then a written proposal. [hello@get-lumic.com](mailto:hello@get-lumic.com?subject=lumic%20intro%20call)
+
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### Free consultation.
@@ -29,23 +63,17 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
-On-site work $1,500/day, credited toward phase one.
-
 - [AI consulting](https://get-lumic.com/ai-consulting/)
 
 ### Build.
 
 The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
-Priced in the written proposal.
-
 - [AI implementation](https://get-lumic.com/ai-implementation/)
 
 ### Managed AI.
 
 lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.
-
-Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
 

@@ -2,7 +2,10 @@
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": "Organization",
+   "@type": [
+    "Organization",
+    "ProfessionalService"
+   ],
    "@id": "https://get-lumic.com/#org",
    "name": "lumic",
    "alternateName": [
@@ -16,6 +19,7 @@
    "telephone": "+1-618-979-6837",
    "slogan": "AI, deployed into your business and kept working.",
    "description": "lumic is a custom AI implementation firm in St. Louis, Missouri. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters.",
+   "disambiguatingDescription": "lumic (get-lumic.com) is a St. Louis AI implementation firm. It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.",
    "address": {
     "@type": "PostalAddress",
     "addressLocality": "St. Louis",
@@ -111,7 +115,9 @@
    ],
    "sameAs": [
     "https://www.linkedin.com/company/get-lumic",
-    "https://github.com/getlumic"
+    "https://github.com/getlumic",
+    "https://clutch.co/profile/lumic",
+    "https://themanifest.com/company/lumic"
    ],
    "contactPoint": [
     {
@@ -268,6 +274,21 @@
   },
   {
    "@type": "WebPage",
+   "@id": "https://get-lumic.com/#webpage",
+   "url": "https://get-lumic.com/",
+   "name": "lumic | Custom AI implementation, St. Louis FDEs",
+   "description": "lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "dateModified": "2026-11-25"
+  },
+  {
+   "@type": "WebPage",
    "@id": "https://get-lumic.com/ai-implementation/#webpage",
    "url": "https://get-lumic.com/ai-implementation/",
    "name": "Custom AI implementation for small and mid-size businesses",
@@ -281,7 +302,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-implementation/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -403,7 +425,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/managed-ai/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -525,7 +548,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-consulting/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -646,7 +670,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-agent-skills/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -761,7 +786,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -889,7 +915,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/ap-automation/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -973,6 +1000,36 @@
    }
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/services/ap-automation/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How long does it take to go live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Weeks, not quarters. After the on-site day, lumic builds and tests the agent in your systems, then it goes live and lumic keeps it working."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who approves what the agent does?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which systems does it work with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs. Through an API where there is one, through the screen where there isn’t."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#webpage",
    "url": "https://get-lumic.com/services/cash-receipts-and-collections/",
@@ -987,7 +1044,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1059,6 +1117,36 @@
    "description": "An agent reads remittances and ACH detail and keys them into the ERP for a person to approve, and drafts collections emails and statements from live aging for a person to send."
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does a person approve before anything posts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The agent keys each receipt and drafts each collections email. A person approves every receipt before it posts and sends every email."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which systems does it work with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The ERP or accounting software, the remittance and ACH detail from the bank, and the email inbox your team already uses. Through an API where there is one, through the screen where there isn’t."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to go live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Weeks, not quarters. After the on-site day, lumic builds and tests the agents in your systems, then they go live and lumic keeps them working."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/payroll/#webpage",
    "url": "https://get-lumic.com/services/payroll/",
@@ -1073,7 +1161,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/payroll/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1159,7 +1248,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/month-end-close/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1245,7 +1335,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/dashboards-and-reporting/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1317,6 +1408,36 @@
    "description": "Sales and margin, receivables and aging, consolidated financials, job costing, purchasing, AP, commissions and PTO dashboards, read live from the ERP. Dashboards only read."
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/services/dashboards-and-reporting/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does a person approve before anything posts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nothing posts from a dashboard: dashboards only read. When work needs doing, an agent prepares the entry, and a person approves it before it posts."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which systems does it work with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The ERP or accounting software your team already runs, and the spreadsheets and other data around it. Dashboards read that data live; nothing is migrated."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to go live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Weeks, not quarters. After the on-site day, lumic builds the dashboards on your live data, your team checks them, and lumic keeps them working."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/order-desk-and-customer-service/#webpage",
    "url": "https://get-lumic.com/services/order-desk-and-customer-service/",
@@ -1331,7 +1452,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/order-desk-and-customer-service/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1440,6 +1562,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/portfolio/#breadcrumb"
    },
+   "dateModified": "2026-11-25",
    "mainEntity": {
     "@id": "https://get-lumic.com/portfolio/#items"
    }
@@ -1688,7 +1811,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/how-lumic-works/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1748,7 +1872,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/guardrails/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1783,7 +1908,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/pricing/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1885,6 +2011,36 @@
    }
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/pricing/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does managed AI cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Managed AI from $250 to $5,000 a month, depending on scope. The monthly fee covers monitoring, monthly testing, fixes and upgrades."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the on-site day credited?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. On-site work $1,500/day, credited toward phase one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the build priced separately?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The build is a separate, one-time cost, priced in the written proposal. The proposal comes after the on-site day."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/manufacturing/#webpage",
    "url": "https://get-lumic.com/industries/manufacturing/",
@@ -1899,7 +2055,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/manufacturing/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -1965,6 +2122,28 @@
    "description": "Custom AI for a manufacturer, from the floor to the books: production schedules, freight bills, vendor bills matched to purchase orders, job costing during the job, purchasing and month-end entries. A person approves each entry."
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/industries/manufacturing/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which back-office jobs can AI do for a manufacturer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Vendor bills matched to purchase orders, purchasing and POs, freight bills, production schedules, job costing and month-end entries. lumic builds one agent per job."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a person approve the agent’s work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The agent prepares each entry in your systems, and a person on your team approves it before it posts."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/distribution/#webpage",
    "url": "https://get-lumic.com/industries/distribution/",
@@ -1979,7 +2158,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/distribution/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2045,6 +2225,28 @@
    "description": "Custom AI for a distributor, from the order desk to the books: cash receipts, collections drafted from live aging, and margin by customer, product and rep across companies. A person approves each entry."
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/industries/distribution/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which back-office jobs can AI do for a distributor?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cash receipts keyed from remittances, collections drafted from live aging, and margin by customer, product and rep, live across companies. lumic builds one agent per job."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a person approve the agent’s work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Each entry waits for a person’s approval before it posts, and a person sends every collections email."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/industries/service-firms/#webpage",
    "url": "https://get-lumic.com/industries/service-firms/",
@@ -2059,7 +2261,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/service-firms/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2125,6 +2328,28 @@
    "description": "Custom AI for a service firm, from the inbox to the books: vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/industries/service-firms/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which back-office jobs can AI do for a service firm?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries. lumic builds one agent per job."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a person approve the agent’s work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The agent prepares each entry, and a person on your team approves it before it posts. The final post stays in your hands."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/st-louis/#webpage",
    "url": "https://get-lumic.com/st-louis/",
@@ -2139,7 +2364,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2160,6 +2386,44 @@
    ]
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/st-louis/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does lumic work on site in St. Louis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. lumic is based in St. Louis, and its Forward Deployed Engineers work beside your team at your place of business, by appointment."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which areas does lumic serve?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "St. Louis City and St. Louis, St. Charles, Jefferson and Franklin counties in Missouri; Madison and St. Clair counties in Illinois."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does lumic work outside St. Louis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is an FDE?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with finance backgrounds who come to you, learn how the work is really done, build AI into one job at a time, and keep it working."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/st-louis/ai-consulting/#webpage",
    "url": "https://get-lumic.com/st-louis/ai-consulting/",
@@ -2174,7 +2438,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/ai-consulting/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2314,7 +2579,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/metro-east/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2366,6 +2632,28 @@
    "description": "lumic's Forward Deployed Engineers (FDEs) spend in-person days across Madison and St. Clair counties, building custom AI agents inside the systems a business already runs. A person approves every entry before it posts."
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/st-louis/metro-east/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does lumic serve Belleville, Edwardsville, Collinsville, O’Fallon and Alton?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. lumic’s FDEs come on site to businesses in Belleville, Edwardsville, Collinsville, O’Fallon, Alton and the rest of Madison and St. Clair counties. These are places lumic serves, not office locations; lumic is based in St. Louis."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the on-site day the same in Illinois?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The on-site day, its rate and the written proposal after it are the same on the Illinois side of the river as in Missouri."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/forward-deployed-engineers/#webpage",
    "url": "https://get-lumic.com/forward-deployed-engineers/",
@@ -2380,7 +2668,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/forward-deployed-engineers/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2506,7 +2795,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/forward-deployed-engineers/small-business/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2622,7 +2912,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/faq/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2751,7 +3042,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2772,6 +3064,20 @@
    ]
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/systems/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does lumic need an API?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Where a system has an API, the agent uses it. Where it doesn’t, the agent works through the system’s own screens on its own computer and login, and every step is checked."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/systems/quickbooks/#webpage",
    "url": "https://get-lumic.com/systems/quickbooks/",
@@ -2786,7 +3092,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/quickbooks/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2886,7 +3193,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/netsuite/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -2972,7 +3280,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-100/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -3058,7 +3367,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-100/ap-automation/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -3164,7 +3474,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-intacct/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -3250,7 +3561,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/month-end-red-flags/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -3285,7 +3597,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -3320,7 +3633,30 @@
     "@id": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/#webpage"
    },
    "datePublished": "2026-11-24",
-   "inLanguage": "en"
+   "inLanguage": "en",
+   "dateModified": "2026-11-25"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Where should a small business start with AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "With one job: the one that takes the most hours by hand and repeats every day or every month. One job, not a department."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does AI need upkeep after it goes live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Systems change, document layouts change, and AI models improve. Someone has to watch the agent, test it every month, fix what breaks and upgrade it."
+     }
+    }
+   ]
   },
   {
    "@type": "WebPage",
@@ -3337,7 +3673,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/ai-agent-for-accounting/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",
@@ -3372,7 +3709,114 @@
     "@id": "https://get-lumic.com/resources/ai-agent-for-accounting/#webpage"
    },
    "datePublished": "2026-11-24",
-   "inLanguage": "en"
+   "inLanguage": "en",
+   "dateModified": "2026-11-25"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/resources/ai-agent-for-accounting/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is an AI agent for accounting?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Software that does one job a clerk does today, such as entering vendor bills or preparing month-end entries, inside the accounting software or ERP already in use. It prepares the entry; a person approves it before anything posts."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which accounting job is the best place to start?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The job that takes the most hours by hand and repeats every day or every month, such as vendor bills or cash receipts. It should follow rules a controller can write down and already end in a review."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#webpage",
+   "url": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/",
+   "name": "How to choose an AI implementation partner | lumic",
+   "description": "A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#breadcrumb"
+   },
+   "dateModified": "2026-11-25"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "How to choose an AI implementation partner",
+     "item": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/"
+    }
+   ]
+  },
+  {
+   "@type": "Article",
+   "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#article",
+   "headline": "How to choose an AI implementation partner",
+   "description": "A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal.",
+   "author": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "mainEntityOfPage": {
+    "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#webpage"
+   },
+   "datePublished": "2026-11-25",
+   "inLanguage": "en",
+   "dateModified": "2026-11-25"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What should an AI implementation proposal include?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The job to be automated, the systems it will touch, who approves its work, the timeline, the one-time build cost, the monthly fee and what it covers, and what the business owns if it leaves."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is on-site or remote AI implementation better?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For work done by hand inside a business, on site usually wins: the partner sees the screens, the checks and the exceptions. Remote work fits once the job is mapped."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who should own what an AI partner builds?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Settle it in writing before the build starts: what the business keeps if the relationship ends, such as the written procedures, the configuration and its data, and how a hand-off would work."
+     }
+    }
+   ]
   },
   {
    "@type": "WebPage",
@@ -3389,7 +3833,8 @@
    },
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/ap-hours-saved-calculator/#breadcrumb"
-   }
+   },
+   "dateModified": "2026-11-25"
   },
   {
    "@type": "BreadcrumbList",

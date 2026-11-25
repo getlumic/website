@@ -13,7 +13,7 @@ Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 
 # Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 
-lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
+lumic is a St. Louis AI implementation firm: its Forward Deployed Engineers work on site with businesses across Greater St. Louis, build custom AI into the work done by hand, and keep it working. They have finance backgrounds and work beside your team at your place of business, from vendor bills to month-end, one job at a time. St. Louis first; the team travels for the right fit.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Area served
 
@@ -72,7 +72,15 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 
 ## Local, and live in production.
 
-### Do you work outside St. Louis?
+### Does lumic work on site in St. Louis?
+
+Yes. lumic is based in St. Louis, and its Forward Deployed Engineers work beside your team at your place of business, by appointment.
+
+### Which areas does lumic serve?
+
+St. Louis City and St. Louis, St. Charles, Jefferson and Franklin counties in Missouri; Madison and St. Clair counties in Illinois.
+
+### Does lumic work outside St. Louis?
 
 Yes. St. Louis first: the team is based here and comes on site in person. lumic travels for the right fit.
 

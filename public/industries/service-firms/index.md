@@ -102,6 +102,16 @@ lumic builds it, and keeps it working.
 - Rebuilding the same report every week → Numbers live, no export
 - Build-and-ghost consultants → A team that stays on
 
+## Service firms, in plain answers.
+
+### Which back-office jobs can AI do for a service firm?
+
+The inbox, vendor bills, cash receipts, collections, payroll entries and month-end entries. lumic builds one agent per job.
+
+### Does a person approve the agent’s work?
+
+Yes. The agent prepares each entry, and a person on your team approves it before it posts. The final post stays in your hands.
+
 ### Free consultation.
 
 On-site work $1,500/day, credited toward phase one.
