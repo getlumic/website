@@ -14,7 +14,7 @@ import { EmailMessage } from "cloudflare:email";
 
 const APEX = "get-lumic.com";
 // md-pages:start
-const MD_PAGES = new Set(["/", "/ai-implementation/", "/managed-ai/", "/ai-consulting/", "/installable-ai-jobs/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/services/order-desk-and-customer-service/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/st-louis/metro-east/", "/forward-deployed-engineers/", "/forward-deployed-engineers/small-business/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-100/ap-automation/", "/systems/sage-intacct/", "/resources/month-end-red-flags/", "/resources/how-to-implement-ai-in-a-small-business/", "/resources/ai-agent-for-accounting/"]);
+const MD_PAGES = new Set(["/", "/ai-implementation/", "/managed-ai/", "/ai-consulting/", "/ai-agent-skills/", "/services/", "/services/ap-automation/", "/services/cash-receipts-and-collections/", "/services/payroll/", "/services/month-end-close/", "/services/dashboards-and-reporting/", "/services/order-desk-and-customer-service/", "/portfolio/", "/how-lumic-works/", "/guardrails/", "/pricing/", "/industries/manufacturing/", "/industries/distribution/", "/industries/service-firms/", "/st-louis/", "/st-louis/ai-consulting/", "/st-louis/metro-east/", "/forward-deployed-engineers/", "/forward-deployed-engineers/small-business/", "/faq/", "/systems/", "/systems/quickbooks/", "/systems/netsuite/", "/systems/sage-100/", "/systems/sage-100/ap-automation/", "/systems/sage-intacct/", "/resources/month-end-red-flags/", "/resources/how-to-implement-ai-in-a-small-business/", "/resources/ai-agent-for-accounting/"]);
 // md-pages:end
 // Old or short paths -> their page (301), with and without the trailing slash. qa.py checks each one off localhost.
 const REDIRECTS = {
@@ -25,6 +25,9 @@ const REDIRECTS = {
   "/implementation": "/ai-implementation/", "/implementation/": "/ai-implementation/",
   "/consulting": "/ai-consulting/", "/consulting/": "/ai-consulting/",
   "/fde": "/forward-deployed-engineers/", "/fde/": "/forward-deployed-engineers/",
+  "/installable-ai-jobs": "/ai-agent-skills/", "/installable-ai-jobs/": "/ai-agent-skills/",
+  "/installable-jobs": "/ai-agent-skills/", "/installable-jobs/": "/ai-agent-skills/",
+  "/agent-skills": "/ai-agent-skills/", "/agent-skills/": "/ai-agent-skills/",
 };
 function mdFor(path) {
   if (path === "/index.html") return "/index.md";

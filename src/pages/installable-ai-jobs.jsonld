@@ -1,8 +1,0 @@
-[
- {"@type": "Service", "@id": "https://get-lumic.com/installable-ai-jobs/#service", "name": "Installable AI jobs",
-  "serviceType": "Installable AI jobs for a customer's own AI agent", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
-  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses that run their own AI agent"},
-  "url": "https://get-lumic.com/installable-ai-jobs/",
-  "description": "lumic packages one paid job so a customer's own AI agent can install and run it: a skill (the written procedure), tools only when the job needs them, and one file for the customer's systems and approval rules, bundled as a plugin. A fixed setup fee, then a monthly fee, quoted per job. A person on the customer's team approves anything that sends, spends, posts or deletes.",
-  "offers": {"@type": "Offer", "name": "Installable AI job", "description": "A fixed setup fee, then a monthly fee, quoted per job."}}
-]

@@ -1,13 +1,13 @@
 ---
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
-description: "Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working."
+description: "Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month."
 canonical: https://get-lumic.com/services/
 last_updated: 2026-11-24
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic
 
-> Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working.
+> Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month.
 
 Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
 
@@ -18,6 +18,14 @@ Services Agents, automations and dashboards
 lumic builds custom AI agents, automations and live dashboards for any process your team does by hand, from orders and email to bills and month-end. The work happens inside the systems you already run, and lumic keeps it working. A person approves before anything posts. How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/).
 
 [Book a call](https://cal.com/lumic/20-minute-call) See what lumic builds
+
+Dashboards
+
+## Live dashboards
+
+Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. No more morning export. Dashboards only read.
+
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 Agents
 
@@ -50,6 +58,15 @@ An AI assistant answers questions from your ERP, email and files, and drafts ent
 - Plain-English questions
 - A person approves each entry
 
+### AI agent skills
+
+A lumic job, packaged for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps.
+
+- A setup fee, then a monthly fee
+- A person approves what matters
+
+[AI agent skills →](https://get-lumic.com/ai-agent-skills/)
+
 Automations
 
 ## Automations and integrations
@@ -78,14 +95,6 @@ Vendor bills, remittances and ACH detail, purchase orders and customer emails: r
 
 - Bills, cash receipts and orders
 - A person approves each entry
-
-Dashboards
-
-## Live dashboards
-
-Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. No more morning export. Dashboards only read.
-
-[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 The back office
 
@@ -145,14 +154,6 @@ Any process
 Custom AI is not only for accounting. lumic builds agents for production, purchasing, the order desk and freight, and joins systems that were never built to talk. If a person does it by hand every day, it is a candidate.
 
 [AI implementation, any process and any system](https://get-lumic.com/ai-implementation/)
-
-For your own agent
-
-## Already running an AI agent?
-
-lumic also packages one job, such as the order desk or accounts payable, so the AI agent your business already runs can install it and run it, with a person approving what matters.
-
-[Installable AI jobs](https://get-lumic.com/installable-ai-jobs/)
 
 How lumic engages
 

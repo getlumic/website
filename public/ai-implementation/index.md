@@ -100,7 +100,7 @@ Production schedules, purchasing and POs, the order desk and freight, as well as
 
 Every action is logged. Entries are added to the log, not edited.
 
-How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). For a business that runs its own AI agent: [Installable AI jobs](https://get-lumic.com/installable-ai-jobs/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
+How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). Or packaged for the AI assistant your team already uses: [AI agent skills](https://get-lumic.com/ai-agent-skills/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
 
 Four steps
 
@@ -122,7 +122,7 @@ On-site work $1,500/day, credited toward phase one.
 
 ### Build.
 
-The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
 Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 

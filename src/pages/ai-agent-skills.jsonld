@@ -1,0 +1,23 @@
+[
+ {
+  "@type": "Service",
+  "@id": "https://get-lumic.com/ai-agent-skills/#service",
+  "name": "AI agent skills: lumic jobs packaged for your own AI",
+  "serviceType": "AI agent skills",
+  "provider": {
+   "@id": "https://get-lumic.com/#org"
+  },
+  "areaServed": "@AREA",
+  "audience": {
+   "@type": "BusinessAudience",
+   "name": "Businesses whose team already uses an AI assistant"
+  },
+  "url": "https://get-lumic.com/ai-agent-skills/",
+  "description": "lumic packages one paid job for the AI assistant a team already uses: the written procedure, the tools when the job needs them and the approval steps, with one file for the customer's systems and rules, bundled as a plugin. Gated by the people who know the work.",
+  "offers": {
+   "@type": "Offer",
+   "name": "A job installed on your own AI",
+   "description": "A setup fee, then a monthly fee, quoted per job. No per-use charge."
+  }
+ }
+]

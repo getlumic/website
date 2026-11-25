@@ -180,13 +180,13 @@
      },
      {
       "@type": "Offer",
-      "name": "Installable AI job",
-      "description": "One job packaged for the customer's own AI agent. A fixed setup fee, then a monthly fee, quoted per job.",
+      "name": "A job installed on your own AI",
+      "description": "A lumic job packaged for the AI assistant the customer's team already uses: a setup fee, then a monthly fee, quoted per job.",
       "itemOffered": {
        "@type": "Service",
-       "@id": "https://get-lumic.com/installable-ai-jobs/#service",
-       "name": "Installable AI jobs",
-       "url": "https://get-lumic.com/installable-ai-jobs/"
+       "@id": "https://get-lumic.com/ai-agent-skills/#service",
+       "name": "AI agent skills",
+       "url": "https://get-lumic.com/ai-agent-skills/"
       }
      }
     ]
@@ -633,10 +633,10 @@
   },
   {
    "@type": "WebPage",
-   "@id": "https://get-lumic.com/installable-ai-jobs/#webpage",
-   "url": "https://get-lumic.com/installable-ai-jobs/",
-   "name": "Installable AI jobs for your own AI agent | lumic",
-   "description": "lumic packages one paid job for the AI agent your business already runs: the written procedure, the tools it needs and your own file. A person approves.",
+   "@id": "https://get-lumic.com/ai-agent-skills/#webpage",
+   "url": "https://get-lumic.com/ai-agent-skills/",
+   "name": "AI agent skills for business: jobs your AI installs | lumic",
+   "description": "One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -645,12 +645,12 @@
     "@id": "https://get-lumic.com/#org"
    },
    "breadcrumb": {
-    "@id": "https://get-lumic.com/installable-ai-jobs/#breadcrumb"
+    "@id": "https://get-lumic.com/ai-agent-skills/#breadcrumb"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://get-lumic.com/installable-ai-jobs/#breadcrumb",
+   "@id": "https://get-lumic.com/ai-agent-skills/#breadcrumb",
    "itemListElement": [
     {
      "@type": "ListItem",
@@ -661,16 +661,16 @@
     {
      "@type": "ListItem",
      "position": 2,
-     "name": "Installable AI jobs",
-     "item": "https://get-lumic.com/installable-ai-jobs/"
+     "name": "AI agent skills",
+     "item": "https://get-lumic.com/ai-agent-skills/"
     }
    ]
   },
   {
    "@type": "Service",
-   "@id": "https://get-lumic.com/installable-ai-jobs/#service",
-   "name": "Installable AI jobs",
-   "serviceType": "Installable AI jobs for a customer's own AI agent",
+   "@id": "https://get-lumic.com/ai-agent-skills/#service",
+   "name": "AI agent skills: lumic jobs packaged for your own AI",
+   "serviceType": "AI agent skills",
    "provider": {
     "@id": "https://get-lumic.com/#org"
    },
@@ -706,42 +706,34 @@
    ],
    "audience": {
     "@type": "BusinessAudience",
-    "name": "Small and mid-sized businesses that run their own AI agent"
+    "name": "Businesses whose team already uses an AI assistant"
    },
-   "url": "https://get-lumic.com/installable-ai-jobs/",
-   "description": "lumic packages one paid job so a customer's own AI agent can install and run it: a skill (the written procedure), tools only when the job needs them, and one file for the customer's systems and approval rules, bundled as a plugin. A fixed setup fee, then a monthly fee, quoted per job. A person on the customer's team approves anything that sends, spends, posts or deletes.",
+   "url": "https://get-lumic.com/ai-agent-skills/",
+   "description": "lumic packages one paid job for the AI assistant a team already uses: the written procedure, the tools when the job needs them and the approval steps, with one file for the customer's systems and rules, bundled as a plugin. Gated by the people who know the work.",
    "offers": {
     "@type": "Offer",
-    "name": "Installable AI job",
-    "description": "A fixed setup fee, then a monthly fee, quoted per job."
+    "name": "A job installed on your own AI",
+    "description": "A setup fee, then a monthly fee, quoted per job. No per-use charge."
    }
   },
   {
    "@type": "FAQPage",
-   "@id": "https://get-lumic.com/installable-ai-jobs/#faq",
+   "@id": "https://get-lumic.com/ai-agent-skills/#faq",
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "What is an installable AI job?",
+     "name": "What is a packaged AI job?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "One job a business pays for, packaged so its own AI agent can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), tools only when the job needs them, and one file for the business's systems and approval rules, bundled as a plugin."
+      "text": "A lumic job, packaged so the AI assistant its team uses can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), the tools when the job needs them, and the approval steps, bundled as a plugin."
      }
     },
     {
      "@type": "Question",
-     "name": "Which AI agents can run it?",
+     "name": "Which AI assistants can run it?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The packages are built for AI agents that load skills and plugins, such as Claude. lumic confirms the fit for your agent in the free consultation."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Who approves what the agent does?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "A person on your team. The agent prepares the work, and the people who know it approve anything that sends, spends, posts or deletes."
+      "text": "Packages are built for agents that load skills and plugins. lumic confirms the fit for the AI assistant your team uses in the free consultation."
      }
     },
     {
@@ -749,7 +741,7 @@
      "name": "What does it cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Installable jobs: a fixed setup fee, then a monthly fee, quoted per job. The setup has a start and an end date; the monthly fee keeps the package current."
+      "text": "A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge."
      }
     }
    ]
@@ -759,7 +751,7 @@
    "@id": "https://get-lumic.com/services/#webpage",
    "url": "https://get-lumic.com/services/",
    "name": "Custom AI solutions: agents, automations, dashboards | lumic",
-   "description": "Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working.",
+   "description": "Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -873,6 +865,12 @@
      "position": 6,
      "name": "Order desk and customer service",
      "url": "https://get-lumic.com/services/order-desk-and-customer-service/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "name": "AI agent skills",
+     "url": "https://get-lumic.com/ai-agent-skills/"
     }
    ]
   },

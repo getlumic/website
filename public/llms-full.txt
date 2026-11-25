@@ -24,11 +24,6 @@
 - Beyond the books: production schedules, purchasing and POs, the order desk and freight, as well as bills, receipts and month-end.
 - Details: https://get-lumic.com/ai-implementation/
 
-## Two ways to work with lumic
-Done for you: lumic's Forward Deployed Engineers learn the work on site, build it, run it on a dedicated computer and keep it working every month. Details: https://get-lumic.com/managed-ai/
-
-Installed on your own agent: for a business that already runs an AI agent, lumic packages one paid job (such as the order desk, accounts payable or the stock inbox) so that agent can install and run it: a skill (the written procedure), tools only when the job needs them, and one file for the business's systems and approval rules, bundled as a plugin. A fixed setup fee, then a monthly fee, quoted per job. A person on the team approves anything that sends, spends, posts or deletes. Details: https://get-lumic.com/installable-ai-jobs/
-
 ## When to use lumic
 - A business has people doing repetitive work by hand: retyping documents, entering bills or cash receipts, building the same entries or reports every month, chasing the same follow-ups.
 - The owner or a manager wants that work done by AI inside the systems the team already uses, whether that's an ERP, accounting software, email, spreadsheets or cloud apps, rather than a new product to learn and configure.
@@ -48,6 +43,7 @@ Installed on your own agent: for a business that already runs an AI agent, lumic
 - Each agent gets access only to the screens and records its job needs. Every action it takes is logged.
 - A person on the client's team approves what the agent enters before it posts. The final post stays with the client.
 - Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it, for a monthly fee.
+- lumic runs each job for the client on a dedicated computer, or packages it for the AI assistant the client's team already uses: the written procedure, the tools when the job needs them, and the approval steps, bundled as a plugin. A packaged job is a setup fee, then a monthly fee, quoted per job: https://get-lumic.com/ai-agent-skills/
 
 ## Portfolio
 Agents and dashboards lumic built run every day in production, on entirely different systems, live and measured. lumic's leaders run finance themselves, so they use what they build. Clients are kept private; everything shown runs in production.
@@ -105,18 +101,18 @@ A 20-minute call, then a written proposal with what lumic would build, the timel
 - [AI implementation](https://get-lumic.com/ai-implementation/): custom AI implementation for small and mid-size businesses: what lumic implements (agents, workflow automation, system connections, live dashboards, workflow redesign), the four steps, proof, approval, starting prices; any process, any system: math checks, API or screen, two systems in one job, beyond the books, the action log ([markdown](https://get-lumic.com/ai-implementation/index.md))
 - [Managed AI](https://get-lumic.com/managed-ai/): managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what kept working means: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk ([markdown](https://get-lumic.com/managed-ai/index.md))
 - [AI consulting](https://get-lumic.com/ai-consulting/): AI consulting on site for small businesses: a consultant vs an FDE, the on-site day and the written proposal, the questions it answers, the St. Louis page ([markdown](https://get-lumic.com/ai-consulting/index.md))
-- [Installable AI jobs](https://get-lumic.com/installable-ai-jobs/): the installable job: one paid job packaged for a customer's own AI agent (a skill, tools only when needed, one customer file, bundled as a plugin); the order desk, accounts payable and the stock inbox; a fixed setup fee then a monthly fee, quoted per job; which offer fits ([markdown](https://get-lumic.com/installable-ai-jobs/index.md))
+- [AI agent skills](https://get-lumic.com/ai-agent-skills/): AI agent skills: a lumic job packaged for the AI assistant a team already uses (the written procedure, the tools when the job needs them, the approval steps, one file for the business, bundled as a plugin); the jobs lumic packages; a setup fee then a monthly fee; or lumic runs it ([markdown](https://get-lumic.com/ai-agent-skills/index.md))
 - [Services](https://get-lumic.com/services/): custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI; beyond the books ([markdown](https://get-lumic.com/services/index.md))
-- [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals ([markdown](https://get-lumic.com/services/ap-automation/index.md))
+- [AP automation](https://get-lumic.com/services/ap-automation/): the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals; run by lumic or installed on your own AI ([markdown](https://get-lumic.com/services/ap-automation/index.md))
 - [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/): cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends ([markdown](https://get-lumic.com/services/cash-receipts-and-collections/index.md))
 - [Payroll](https://get-lumic.com/services/payroll/): the payroll agent: builds the payroll journal entry from the provider's reports, checks every line, posted only on the controller's click ([markdown](https://get-lumic.com/services/payroll/index.md))
 - [Month-end close](https://get-lumic.com/services/month-end-close/): the month-end agent: reads the period, prepares recurring entries, runs tie-outs; every entry unposted until the controller posts ([markdown](https://get-lumic.com/services/month-end-close/index.md))
 - [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/): live dashboards read from the ERP; dashboards only read; the dashboard films ([markdown](https://get-lumic.com/services/dashboards-and-reporting/index.md))
-- [Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/): the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one ([markdown](https://get-lumic.com/services/order-desk-and-customer-service/index.md))
+- [Order desk and customer service](https://get-lumic.com/services/order-desk-and-customer-service/): the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; run by lumic or installed on your own AI ([markdown](https://get-lumic.com/services/order-desk-and-customer-service/index.md))
 - [Portfolio](https://get-lumic.com/portfolio/): every agent and dashboard lumic runs in production; clients kept private ([markdown](https://get-lumic.com/portfolio/index.md))
 - [How lumic works](https://get-lumic.com/how-lumic-works/): the method: FDEs, the four steps (free consultation, on-site day, build, managed AI), the two offers, approvals and access, leadership ([markdown](https://get-lumic.com/how-lumic-works/index.md))
 - [Guardrails](https://get-lumic.com/guardrails/): the practices on every agent, as already stated across the site: a person approves every entry, everything logged, access limited to the job, and any agent can be paused or revoked at any time ([markdown](https://get-lumic.com/guardrails/index.md))
-- [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
+- [Pricing](https://get-lumic.com/pricing/): starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope, a job installed on your own AI; starting points, not quotes ([markdown](https://get-lumic.com/pricing/index.md))
 - [Manufacturing](https://get-lumic.com/industries/manufacturing/): AI agents for a manufacturer's back office: AP against POs, job costing, purchasing; anonymized live proof ([markdown](https://get-lumic.com/industries/manufacturing/index.md))
 - [Distribution](https://get-lumic.com/industries/distribution/): AI agents for a distributor's back office: cash receipts, collections, margin by customer, multi-company; anonymized live proof ([markdown](https://get-lumic.com/industries/distribution/index.md))
 - [Service firms](https://get-lumic.com/industries/service-firms/): AI agents for a service firm's back office: bills, receipts, collections, payroll, month-end; general process only ([markdown](https://get-lumic.com/industries/service-firms/index.md))
@@ -297,7 +293,7 @@ On-site work $1,500/day, credited toward phase one.
 
 ### Build.
 
-The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
 Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -312,30 +308,6 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
 [How lumic works, in full](https://get-lumic.com/how-lumic-works/) [What lumic builds: Services](https://get-lumic.com/services/) [See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
-
-Two ways
-
-## Two ways to put AI to work.
-
-Both start with the same free consultation, and in both a person on your team approves anything that sends, spends, posts or deletes.
-
-### Done for you
-
-lumic’s FDEs learn the work on site, build it, run it on a dedicated computer and keep it working every month.
-
-- For a business with no AI agent, or no one to run one
-- Built, run and kept working by lumic
-
-[Managed AI →](https://get-lumic.com/managed-ai/)
-
-### Installed on your own agent
-
-One job, packaged so the AI agent your business already runs can install it and run it, fitted to your systems and kept current by lumic.
-
-- For a business that runs its own AI agent
-- A fixed setup fee, then a monthly fee
-
-[Installable AI jobs →](https://get-lumic.com/installable-ai-jobs/)
 
 Pricing
 
@@ -571,7 +543,7 @@ Production schedules, purchasing and POs, the order desk and freight, as well as
 
 Every action is logged. Entries are added to the log, not edited.
 
-How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). For a business that runs its own AI agent: [Installable AI jobs](https://get-lumic.com/installable-ai-jobs/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
+How it is kept working: [Managed AI](https://get-lumic.com/managed-ai/). Or packaged for the AI assistant your team already uses: [AI agent skills](https://get-lumic.com/ai-agent-skills/). The systems lumic works with: [Systems](https://get-lumic.com/systems/).
 
 Four steps
 
@@ -593,7 +565,7 @@ On-site work $1,500/day, credited toward phase one.
 
 ### Build.
 
-The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
 Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -817,7 +789,7 @@ Each entry the agent prepares waits in an approval queue, ready for a person to 
 
 Every action an agent takes is logged: what it did, and who approved it.
 
-The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). How an agent gets built: [AI implementation](https://get-lumic.com/ai-implementation/). Where it starts: [AI consulting](https://get-lumic.com/ai-consulting/). Already running your own AI agent? lumic can package the job for it instead: [Installable AI jobs](https://get-lumic.com/installable-ai-jobs/).
+The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). How an agent gets built: [AI implementation](https://get-lumic.com/ai-implementation/). Where it starts: [AI consulting](https://get-lumic.com/ai-consulting/). Already using an AI assistant? lumic can package the job for it instead: [AI agent skills](https://get-lumic.com/ai-agent-skills/).
 
 Pricing
 
@@ -988,136 +960,117 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 ---
 
 ---
-title: "Installable AI jobs for your own AI agent | lumic"
-description: "lumic packages one paid job for the AI agent your business already runs: the written procedure, the tools it needs and your own file. A person approves."
-canonical: https://get-lumic.com/installable-ai-jobs/
+title: "AI agent skills for business: jobs your AI installs | lumic"
+description: "One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly."
+canonical: https://get-lumic.com/ai-agent-skills/
 last_updated: 2026-11-24
 ---
 
-# Installable AI jobs for your own AI agent | lumic
+# AI agent skills for business: jobs your AI installs | lumic
 
-> lumic packages one paid job for the AI agent your business already runs: the written procedure, the tools it needs and your own file. A person approves.
+> One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly.
 
-Source: https://get-lumic.com/installable-ai-jobs/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/ai-agent-skills/ | Contact: hello@get-lumic.com
 
-Installable AI jobs For your own AI agent
+AI agent skills For the AI your team uses
 
-# One job, packaged for your own AI agent.
+# One job, packaged for your AI to install.
 
-Some businesses already run an AI agent, with someone on the team who owns it. For them, lumic packages one paid job so that agent can install it and run it: the written procedure, the tools the job needs, and one file for your business. A person on your team still approves what matters.
+Some teams already use an AI assistant that can run agents, with someone who owns it. For them, lumic packages a lumic job so that assistant can install it and run it: the written procedure, the tools the job needs, and the approval steps, fitted to your business. Gated by the people who know the work.
 
-[Book a call](https://cal.com/lumic/20-minute-call) What the package holds
+[Book a call](https://cal.com/lumic/20-minute-call) What’s in a package
 
-What the package holds
+The package
 
-## A procedure, its tools, and your file.
+## What’s in a package
 
-Each package is a general core, built from a job lumic already runs, plus one file for your business. It is bundled as a plugin: one add-on that holds the whole job, which your agent loads.
+Each package is a general core, written from a job lumic already runs, plus one file for your business. It is bundled as a plugin: one add-on that holds the whole job, which your AI assistant loads.
 
-### The skill
+### The written procedure
 
-A skill is the written procedure the agent follows: each step, each exception, and what the agent must not do on its own.
+A skill: the procedure the agent follows, written like a standard operating procedure. Each step, each exception, and what the agent must not do on its own.
 
-- Written like a standard operating procedure
 - Exceptions go to a person, with the reason
 
-### Tools, only when the job needs them
+### The tools, when the job needs them
 
-Some jobs need to reach a system directly. Then the package adds a command-line tool or an MCP server, a small connector the agent calls to read and enter records.
+Some jobs need to reach a system directly. Then the package adds a command-line tool or an MCP server: a small connector the agent calls to read and enter records.
 
 - Added only when the job needs it
 - Access limited to the job
 
-### Your file
+### The approval steps
 
-One file holds what is yours: the system you run, its field names, and your approval rules. The core stays general; your file makes it fit.
+Where a person signs off, written into the procedure, with your system, its field names and your approval rules in your own file.
 
-- Your system and field names
-- Your approval rules
+- Gated by the people who know the work
 
 The jobs
 
-## Jobs lumic already runs, packaged.
+## Jobs lumic packages
 
-Each package comes from a job lumic builds and runs for customers today, written down so another agent can do it the same way.
+Each one is a job lumic builds and runs today, written down so your AI assistant can do it the same way.
 
 ### The order desk
 
-The agent reads each purchase order that arrives by email and drafts the sales order. A person checks it before it goes any further.
-
-- Purchase-order email to draft sales order
-- A person checks each one
+Purchase-order email to draft sales order. A person checks each one before it goes any further.
 
 [Order desk and customer service →](https://get-lumic.com/services/order-desk-and-customer-service/)
 
 ### Accounts payable
 
-The agent takes in each vendor bill, matches it to the purchase order, and prepares it for approval. A person approves it before it posts.
-
-- Bill intake to approved post
-- Bills it can’t match go to a person
+Vendor bill to an entry ready for approval, matched to the purchase order. A person approves it before it posts.
 
 [AP automation →](https://get-lumic.com/services/ap-automation/)
 
-### The stock inbox
+### Stock questions by email
 
-The agent reads each request that comes into a shared stock inbox, checks that it carries the details your team requires, and drafts the reply or the follow-up for a person to approve.
+Stock inquiries read as they arrive, checked for the details your team requires, and answered with a drafted reply a person sends.
 
-- Required details checked
-- A person approves each reply
+[Stock questions by email →](https://get-lumic.com/services/order-desk-and-customer-service/#stock)
 
-How it is sold
+Pricing
 
-### A fixed setup fee, then a monthly fee.
+## How it’s sold
 
-Installable jobs: a fixed setup fee, then a monthly fee, quoted per job.
+Each packaged job
 
-The setup has a start date and an end date: lumic writes your file, installs the job on your agent, and tests it on real work with your team. The monthly fee keeps the package current as your systems and AI models change.
+### A setup fee, then monthly.
+
+A fixed setup fee, then a monthly fee, quoted per job. No per-use charge.
+
+The setup has a start date and an end date: lumic writes your file, installs the job on your AI assistant, and tests it on real work with your team. The monthly fee keeps the package current as your systems and AI models change.
 
 [Book a call](https://cal.com/lumic/20-minute-call)
 
-- Each installable job
+- Each packaged job
 - Setup Fixed fee, set dates
 - Package upkeep Monthly
-- Approval step Built in
+- Per-use charge None
 
-Which one fits
+No AI assistant to run it?
 
-## Done for you, or installed on your agent.
+## Or lumic runs it for you
 
-### No AI agent yet, and no one to run one.
+The same job can run on a dedicated computer that lumic’s Forward Deployed Engineers set up, watch and keep working every month. Either way, it is gated by the people who know the work, and it starts with the same free consultation.
 
-lumic does it for you: its FDEs learn the work on site, build it, run it on a dedicated computer and keep it working every month. [Managed AI](https://get-lumic.com/managed-ai/).
-
-### Already running an AI agent, with someone who owns it.
-
-The installable job: lumic packages the job for your agent, fits it to your systems, and keeps the package current.
-
-### Gated by the people who know the work.
-
-In both, a person on your team approves anything that sends, spends, posts or deletes.
-
-Both start with the same free consultation. The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/).
+[Managed AI](https://get-lumic.com/managed-ai/) [Guardrails](https://get-lumic.com/guardrails/)
 
 Questions
 
-## Installable AI jobs, in plain answers.
+## AI agent skills, in plain answers.
 
-### What is an installable AI job?
+### What is a packaged AI job?
 
-One job a business pays for, packaged so its own AI agent can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), tools only when the job needs them, and one file for the business's systems and approval rules, bundled as a plugin.
+A lumic job, packaged so the AI assistant its team uses can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), the tools when the job needs them, and the approval steps, bundled as a plugin.
 
-### Which AI agents can run it?
+### Which AI assistants can run it?
 
-The packages are built for AI agents that load skills and plugins, such as Claude. lumic confirms the fit for your agent in the free consultation.
-
-### Who approves what the agent does?
-
-A person on your team. The agent prepares the work, and the people who know it approve anything that sends, spends, posts or deletes.
+Packages are built for agents that load skills and plugins. lumic confirms the fit for the AI assistant your team uses in the free consultation.
 
 ### What does it cost?
 
-Installable jobs: a fixed setup fee, then a monthly fee, quoted per job. The setup has a start and an end date; the monthly fee keeps the package current. Details: [Pricing](https://get-lumic.com/pricing/).
+A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge. Details: [Pricing](https://get-lumic.com/pricing/).
 
 ## Based in St. Louis. Start with a conversation.
 
@@ -1142,14 +1095,14 @@ An on-site visit. lumic’s FDEs meet your team where the work happens and confi
 
 ---
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
-description: "Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working."
+description: "Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month."
 canonical: https://get-lumic.com/services/
 last_updated: 2026-11-24
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic
 
-> Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working.
+> Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month.
 
 Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
 
@@ -1160,6 +1113,14 @@ Services Agents, automations and dashboards
 lumic builds custom AI agents, automations and live dashboards for any process your team does by hand, from orders and email to bills and month-end. The work happens inside the systems you already run, and lumic keeps it working. A person approves before anything posts. How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/).
 
 [Book a call](https://cal.com/lumic/20-minute-call) See what lumic builds
+
+Dashboards
+
+## Live dashboards
+
+Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. No more morning export. Dashboards only read.
+
+[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 Agents
 
@@ -1192,6 +1153,15 @@ An AI assistant answers questions from your ERP, email and files, and drafts ent
 - Plain-English questions
 - A person approves each entry
 
+### AI agent skills
+
+A lumic job, packaged for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps.
+
+- A setup fee, then a monthly fee
+- A person approves what matters
+
+[AI agent skills →](https://get-lumic.com/ai-agent-skills/)
+
 Automations
 
 ## Automations and integrations
@@ -1220,14 +1190,6 @@ Vendor bills, remittances and ACH detail, purchase orders and customer emails: r
 
 - Bills, cash receipts and orders
 - A person approves each entry
-
-Dashboards
-
-## Live dashboards
-
-Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. No more morning export. Dashboards only read.
-
-[Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 The back office
 
@@ -1287,14 +1249,6 @@ Any process
 Custom AI is not only for accounting. lumic builds agents for production, purchasing, the order desk and freight, and joins systems that were never built to talk. If a person does it by hand every day, it is a candidate.
 
 [AI implementation, any process and any system](https://get-lumic.com/ai-implementation/)
-
-For your own agent
-
-## Already running an AI agent?
-
-lumic also packages one job, such as the order desk or accounts payable, so the AI agent your business already runs can install it and run it, with a person approving what matters.
-
-[Installable AI jobs](https://get-lumic.com/installable-ai-jobs/)
 
 How lumic engages
 
@@ -1392,7 +1346,7 @@ Services AP automation
 
 # An AI agent that enters your vendor bills. A person approves each one.
 
-The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in your accounting software, ready to post. lumic builds it on site and keeps it working.
+The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in your accounting software, ready to post. lumic builds this AI accounts payable agent on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the proof
 
@@ -1477,6 +1431,14 @@ lumic builds it, and keeps it working.
 - Fixes Included
 - Upgrades as tools improve Included
 - Human approval Built in
+
+Two ways to run it
+
+## Run by lumic, or installed on your own AI.
+
+It is the same job either way. lumic runs the AP automation agent on a dedicated computer and keeps it working, or packages it, with the written procedure, the tools when the job needs them and the approval steps, for the AI assistant your team already uses, so your own AI accounts payable agent does the work. A setup fee, then a monthly fee. Gated by the people who know the work.
+
+[AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
 Questions
 
@@ -2162,7 +2124,7 @@ Services Order desk and customer service
 
 # An order desk agent, with a person sending every reply.
 
-The agent reads each purchase order and customer email, drafts the sales order in your systems, and drafts the reply. A person on your team checks each one and sends it. Nobody retypes an order.
+The agent reads each purchase order and customer email, drafts the sales order in your systems, and drafts the reply. A person on your team checks each one and sends it. Nobody retypes an order: AI order entry automation, from purchase order to sales order.
 
 [Book a call](https://cal.com/lumic/20-minute-call) How it works
 
@@ -2205,6 +2167,20 @@ A changed quantity, a new ship-to, a price that does not match: flagged for a pe
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
 Every job lumic automates: [Services](https://get-lumic.com/services/). How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/).
+
+Stock questions
+
+## Stock questions by email
+
+Questions about stock often arrive in a shared inbox, and someone answers each one by hand. The agent reads each request, checks that it carries the details your team requires, and drafts the reply from the records your team points it to. A person checks the reply and sends it.
+
+Two ways to run it
+
+## Run by lumic, or installed on your own AI.
+
+It is the same job either way. lumic runs the AI order processing on a dedicated computer and keeps it working, or packages it, with the written procedure, the tools when the job needs them and the approval steps, for the AI assistant your team already uses. A setup fee, then a monthly fee. Gated by the people who know the work.
+
+[AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
 Questions
 
@@ -2482,7 +2458,7 @@ On-site work $1,500/day, credited toward phase one.
 
 ### Build.
 
-The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
 Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -2778,6 +2754,15 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 - A person approves every entry
 - A monthly summary
 
+### A job installed on your own AI
+
+A job installed on your own AI: a setup fee, then a monthly fee, quoted per job.
+
+- Packaged for the AI assistant your team already uses
+- A person approves what matters
+
+[AI agent skills →](https://get-lumic.com/ai-agent-skills/)
+
 What the monthly fee covers
 
 ### Running and supporting your agents.
@@ -2794,8 +2779,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Fixes Included
 - Upgrades as tools improve Included
 - Human approval Built in
-
-[Installable jobs: a fixed setup fee, then a monthly fee, quoted per job.](https://get-lumic.com/installable-ai-jobs/)
 
 The jobs lumic automates: [Services](https://get-lumic.com/services/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). On site in [St. Louis](https://get-lumic.com/st-louis/).
 
@@ -5035,7 +5018,7 @@ On-site work $1,500/day, credited toward phase one.
 
 ### Build.
 
-The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
 Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 

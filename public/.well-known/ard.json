@@ -62,12 +62,12 @@
    ]
   },
   {
-   "identifier": "urn:air:get-lumic.com:docs:installable-ai-jobs-markdown",
-   "displayName": "Installable AI jobs as markdown",
+   "identifier": "urn:air:get-lumic.com:docs:ai-agent-skills-markdown",
+   "displayName": "AI agent skills as markdown",
    "type": "text/markdown",
-   "url": "https://get-lumic.com/installable-ai-jobs/index.md",
+   "url": "https://get-lumic.com/ai-agent-skills/index.md",
    "representativeQueries": [
-    "Installable AI jobs for your own AI agent"
+    "AI agent skills for business: jobs your AI installs"
    ]
   },
   {

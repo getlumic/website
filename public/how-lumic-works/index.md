@@ -39,7 +39,7 @@ On-site work $1,500/day, credited toward phase one.
 
 ### Build.
 
-The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
 Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 

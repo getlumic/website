@@ -66,7 +66,7 @@ FAMILIES = {"quickbooks": [r"/systems/quickbooks/", r"\bQuickBooks Online\b", r"
             "sage-100": [r"/systems/sage-100/", r"\bSage 100\b"],
             "sage-intacct": [r"/systems/sage-intacct/", r"\bSage Intacct\b"]}  # own URL slug counts; a bare "Sage" still fails
 # Pages that carry the general process only (Christian 2026-10-11, 9:33 PM CT): no client proof at all
-NO_PROOF_PATHS = ("/systems/", "/industries/", "/services/payroll/", "/services/month-end-close/")
+NO_PROOF_PATHS = ("/systems/", "/industries/", "/services/payroll/", "/services/month-end-close/", "/ai-agent-skills/")  # Track 2: no results or proof numbers
 # No proof, figure or client description on a /systems/ page (a product must never be tied to a client or a number)
 import dashboard_count  # noqa: E402  (scripts/dashboard_count.py, the counted dashboards)
 PROOF = [r"64 of 67", r"six weeks", r"\b13 agent roles\b", rf"\b(?:{'|'.join(dashboard_count.NUMBER_WORDS)}) (?:live )?dashboards", r"specialty manufacturer",

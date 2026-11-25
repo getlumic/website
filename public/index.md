@@ -153,7 +153,7 @@ On-site work $1,500/day, credited toward phase one.
 
 ### Build.
 
-The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live.
+The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.
 
 Scoped after the on-site day. Monthly pricing covers running and supporting your agents. The build is a separate, one-time cost, scoped after the free consultation. Final pricing depends on your workflow and systems. These figures are starting points, not quotes.
 
@@ -168,30 +168,6 @@ Managed AI from $250 to $5,000 a month, depending on scope.
 - [Managed AI →](https://get-lumic.com/managed-ai/)
 
 [How lumic works, in full](https://get-lumic.com/how-lumic-works/) [What lumic builds: Services](https://get-lumic.com/services/) [See one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
-
-Two ways
-
-## Two ways to put AI to work.
-
-Both start with the same free consultation, and in both a person on your team approves anything that sends, spends, posts or deletes.
-
-### Done for you
-
-lumic’s FDEs learn the work on site, build it, run it on a dedicated computer and keep it working every month.
-
-- For a business with no AI agent, or no one to run one
-- Built, run and kept working by lumic
-
-[Managed AI →](https://get-lumic.com/managed-ai/)
-
-### Installed on your own agent
-
-One job, packaged so the AI agent your business already runs can install it and run it, fitted to your systems and kept current by lumic.
-
-- For a business that runs its own AI agent
-- A fixed setup fee, then a monthly fee
-
-[Installable AI jobs →](https://get-lumic.com/installable-ai-jobs/)
 
 Pricing
 

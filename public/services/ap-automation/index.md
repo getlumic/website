@@ -15,7 +15,7 @@ Services AP automation
 
 # An AI agent that enters your vendor bills. A person approves each one.
 
-The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in your accounting software, ready to post. lumic builds it on site and keeps it working.
+The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and it lands in your accounting software, ready to post. lumic builds this AI accounts payable agent on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the proof
 
@@ -100,6 +100,14 @@ lumic builds it, and keeps it working.
 - Fixes Included
 - Upgrades as tools improve Included
 - Human approval Built in
+
+Two ways to run it
+
+## Run by lumic, or installed on your own AI.
+
+It is the same job either way. lumic runs the AP automation agent on a dedicated computer and keeps it working, or packages it, with the written procedure, the tools when the job needs them and the approval steps, for the AI assistant your team already uses, so your own AI accounts payable agent does the work. A setup fee, then a monthly fee. Gated by the people who know the work.
+
+[AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
 Questions
 

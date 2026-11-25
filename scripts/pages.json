@@ -45,8 +45,8 @@
       "href": "/ai-consulting/"
     },
     {
-      "label": "Installable jobs",
-      "href": "/installable-ai-jobs/"
+      "label": "AI agent skills",
+      "href": "/ai-agent-skills/"
     },
     {
       "label": "AP automation",
@@ -217,32 +217,28 @@
       ]
     },
     {
-      "id": "installable-ai-jobs",
-      "path": "/installable-ai-jobs/",
-      "crumb": "Installable AI jobs",
-      "purpose": "the installable job: one paid job packaged for a customer's own AI agent (a skill, tools only when needed, one customer file, bundled as a plugin); the order desk, accounts payable and the stock inbox; a fixed setup fee then a monthly fee, quoted per job; which offer fits",
-      "title": "Installable AI jobs for your own AI agent | lumic",
-      "description": "lumic packages one paid job for the AI agent your business already runs: the written procedure, the tools it needs and your own file. A person approves.",
+      "id": "ai-agent-skills",
+      "path": "/ai-agent-skills/",
+      "crumb": "AI agent skills",
+      "purpose": "AI agent skills: a lumic job packaged for the AI assistant a team already uses (the written procedure, the tools when the job needs them, the approval steps, one file for the business, bundled as a plugin); the jobs lumic packages; a setup fee then a monthly fee; or lumic runs it",
+      "title": "AI agent skills for business: jobs your AI installs | lumic",
+      "description": "One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly.",
       "type": "WebPage",
       "films": [],
-      "h1": "One job, packaged for your own AI agent.",
+      "h1": "One job, packaged for your AI to install.",
       "faq": [
         {
-          "q": "What is an installable AI job?",
-          "a": "One job a business pays for, packaged so its own AI agent can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), tools only when the job needs them, and one file for the business's systems and approval rules, bundled as a plugin."
+          "q": "What is a packaged AI job?",
+          "a": "A lumic job, packaged so the AI assistant its team uses can install and run it: a skill (the written procedure, with each step, each exception and what the agent must not do on its own), the tools when the job needs them, and the approval steps, bundled as a plugin."
         },
         {
-          "q": "Which AI agents can run it?",
-          "a": "The packages are built for AI agents that load skills and plugins, such as Claude. lumic confirms the fit for your agent in the free consultation."
-        },
-        {
-          "q": "Who approves what the agent does?",
-          "a": "A person on your team. The agent prepares the work, and the people who know it approve anything that sends, spends, posts or deletes."
+          "q": "Which AI assistants can run it?",
+          "a": "Packages are built for agents that load skills and plugins. lumic confirms the fit for the AI assistant your team uses in the free consultation."
         },
         {
           "q": "What does it cost?",
-          "a": "Installable jobs: a fixed setup fee, then a monthly fee, quoted per job. The setup has a start and an end date; the monthly fee keeps the package current.",
-          "html": "Installable jobs: a fixed setup fee, then a monthly fee, quoted per job. The setup has a start and an end date; the monthly fee keeps the package current. Details: <a href=\"/pricing/\">Pricing</a>."
+          "a": "A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge.",
+          "html": "A fixed setup fee, then a monthly fee, quoted per job. There is no per-use charge. Details: <a href=\"/pricing/\">Pricing</a>."
         }
       ]
     },
@@ -252,7 +248,7 @@
       "crumb": "Services",
       "purpose": "custom AI solutions, one process at a time: custom AI agents, automations and integrations, live dashboards, the back-office job cards, the two offers, links to AI implementation and Managed AI; beyond the books",
       "title": "Custom AI solutions: agents, automations, dashboards | lumic",
-      "description": "Custom AI agents, automations and dashboards for any process: the books, production, purchasing, the order desk and freight. Built in your systems, kept working.",
+      "description": "Custom AI: dashboards, agents and automations built on site into the systems you run, then kept working. Managed AI from $250 to $5,000 a month.",
       "type": "CollectionPage",
       "films": [],
       "h1": "Custom AI solutions, one process at a time."
@@ -261,7 +257,7 @@
       "id": "ap-automation",
       "path": "/services/ap-automation/",
       "crumb": "AP automation",
-      "purpose": "the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals",
+      "purpose": "the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals; run by lumic or installed on your own AI",
       "title": "AI agent for accounts payable: bill entry and PO matching | lumic",
       "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
       "type": "WebPage",
@@ -337,7 +333,7 @@
         "label": "Services",
         "href": "/services/"
       },
-      "purpose": "the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one",
+      "purpose": "the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; run by lumic or installed on your own AI",
       "title": "AI agent for the order desk and customer service | lumic",
       "description": "An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.",
       "type": "WebPage",
@@ -389,7 +385,7 @@
       "id": "pricing",
       "path": "/pricing/",
       "crumb": "Pricing",
-      "purpose": "starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope; starting points, not quotes",
+      "purpose": "starting prices: free consultation, on-site day rate, managed AI as one monthly range by scope, a job installed on your own AI; starting points, not quotes",
       "title": "Pricing: custom AI implementation and managed AI | lumic",
       "description": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes.",
       "type": "WebPage",

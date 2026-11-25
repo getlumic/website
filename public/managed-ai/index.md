@@ -96,7 +96,7 @@ Each entry the agent prepares waits in an approval queue, ready for a person to 
 
 Every action an agent takes is logged: what it did, and who approved it.
 
-The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). How an agent gets built: [AI implementation](https://get-lumic.com/ai-implementation/). Where it starts: [AI consulting](https://get-lumic.com/ai-consulting/). Already running your own AI agent? lumic can package the job for it instead: [Installable AI jobs](https://get-lumic.com/installable-ai-jobs/).
+The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). How an agent gets built: [AI implementation](https://get-lumic.com/ai-implementation/). Where it starts: [AI consulting](https://get-lumic.com/ai-consulting/). Already using an AI assistant? lumic can package the job for it instead: [AI agent skills](https://get-lumic.com/ai-agent-skills/).
 
 Pricing
 

@@ -54,6 +54,12 @@
     "position": 6,
     "name": "Order desk and customer service",
     "url": "https://get-lumic.com/services/order-desk-and-customer-service/"
+   },
+   {
+    "@type": "ListItem",
+    "position": 7,
+    "name": "AI agent skills",
+    "url": "https://get-lumic.com/ai-agent-skills/"
    }
   ]
  }

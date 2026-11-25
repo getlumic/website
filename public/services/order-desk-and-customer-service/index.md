@@ -15,7 +15,7 @@ Services Order desk and customer service
 
 # An order desk agent, with a person sending every reply.
 
-The agent reads each purchase order and customer email, drafts the sales order in your systems, and drafts the reply. A person on your team checks each one and sends it. Nobody retypes an order.
+The agent reads each purchase order and customer email, drafts the sales order in your systems, and drafts the reply. A person on your team checks each one and sends it. Nobody retypes an order: AI order entry automation, from purchase order to sales order.
 
 [Book a call](https://cal.com/lumic/20-minute-call) How it works
 
@@ -58,6 +58,20 @@ A changed quantity, a new ship-to, a price that does not match: flagged for a pe
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
 
 Every job lumic automates: [Services](https://get-lumic.com/services/). How a build runs: [AI implementation](https://get-lumic.com/ai-implementation/). Once it is live: [Managed AI](https://get-lumic.com/managed-ai/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/).
+
+Stock questions
+
+## Stock questions by email
+
+Questions about stock often arrive in a shared inbox, and someone answers each one by hand. The agent reads each request, checks that it carries the details your team requires, and drafts the reply from the records your team points it to. A person checks the reply and sends it.
+
+Two ways to run it
+
+## Run by lumic, or installed on your own AI.
+
+It is the same job either way. lumic runs the AI order processing on a dedicated computer and keeps it working, or packages it, with the written procedure, the tools when the job needs them and the approval steps, for the AI assistant your team already uses. A setup fee, then a monthly fee. Gated by the people who know the work.
+
+[AI agent skills](https://get-lumic.com/ai-agent-skills/)
 
 Questions
 
