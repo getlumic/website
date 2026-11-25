@@ -72,7 +72,6 @@
 <!-- ============ JOBS ============ -->
 <section id="jobs" aria-labelledby="jobs-h" style="padding-top:clamp(24px,3vw,48px)">
   <div class="wrap">
-    <p class="kicker rv">The jobs</p>
     <div class="two-head rv">
       <h2 id="jobs-h">The back-office jobs <em class="s">a service firm does by hand.</em></h2>
       <p class="lead">lumic&rsquo;s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.</p>
@@ -80,26 +79,32 @@
     <div class="pgrid rv">
       <article class="pf"><span class="n">01</span><h3>Vendor bills</h3>
         <p>The agent reads each vendor bill from email and prepares the entry in your accounting software. A person approves it, and nobody retypes it.</p>
-        <ul><li>Runs in: accounting software</li><li>A person approves each entry</li></ul>
+        <p class="pf-meta">Runs in: accounting software</p>
+        <ul><li>A person approves each entry</li></ul>
         <a class="founder-link" href="/services/ap-automation/">AP automation <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></article>
       <article class="pf"><span class="n">02</span><h3>Cash receipts</h3>
         <p>The agent reads remittances and ACH detail and keys them as receipts for a person to approve.</p>
-        <ul><li>Runs in: accounting and bank</li><li>A person approves each entry</li></ul>
+        <p class="pf-meta">Runs in: accounting and the bank</p>
+        <ul><li>A person approves each entry</li></ul>
         <a class="founder-link" href="/services/cash-receipts-and-collections/">Cash receipts and collections <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></article>
       <article class="pf"><span class="n">03</span><h3>Collections</h3>
         <p>From live aging, the agent drafts the collections email and the statement for each past-due client. A person reviews each one and sends it.</p>
-        <ul><li>Runs in: accounting and inbox</li><li>A person sends every one</li></ul></article>
+        <p class="pf-meta">Runs in: accounting and the inbox</p>
+        <ul><li>A person sends every one</li></ul></article>
       <article class="pf"><span class="n">04</span><h3>Payroll entries</h3>
         <p>The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.</p>
-        <ul><li>Runs in: payroll reports and accounting</li><li>Posted only on the controller&rsquo;s click</li></ul>
+        <p class="pf-meta">Runs in: payroll and accounting software</p>
+        <ul><li>Posted only on the controller&rsquo;s click</li></ul>
         <a class="founder-link" href="/services/payroll/">Payroll <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></article>
       <article class="pf"><span class="n">05</span><h3>Month-end close</h3>
         <p>The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.</p>
-        <ul><li>Runs in: accounting</li><li>The controller posts each entry</li></ul>
+        <p class="pf-meta">Runs in: accounting software</p>
+        <ul><li>The controller posts each entry</li></ul>
         <a class="founder-link" href="/services/month-end-close/">Month-end close <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></article>
       <article class="pf"><span class="n">06</span><h3>Live reporting</h3>
         <p>Revenue, margin and receivables read live from your books, so nobody rebuilds the same report every week.</p>
-        <ul><li>Reads from: accounting</li><li>No more morning export</li></ul>
+        <p class="pf-meta">Reads from: accounting software</p>
+        <ul><li>No more morning export</li></ul>
         <a class="founder-link" href="/services/dashboards-and-reporting/">Dashboards and reporting <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></article>
     </div>
     <a class="more-link rv" href="/portfolio/">See examples in production: Portfolio <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
@@ -110,7 +115,6 @@
 <section id="approval" aria-labelledby="approval-h">
   <div class="wrap">
     <div class="thread d3" aria-hidden="true"><i></i></div>
-    <p class="kicker rv">Approval and access</p>
     <h2 id="approval-h" class="rv">Gated by the people <em class="s">who know the work.</em></h2>
     <div class="why-grid">
       <ul class="wl rv">
@@ -165,7 +169,6 @@
 <section id="checklist" aria-labelledby="checklist-h">
   <div class="wrap">
     <div class="runs rv" data-checklist>
-      <p class="runs-l">Free checklist</p>
       <h2 id="checklist-h">Month-End Red Flags Service Firms Usually Miss</h2>
       <p class="lead">Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.</p>
       <form class="ck-form cta" method="post" action="/api/checklist" novalidate style="margin-top:20px;flex-wrap:wrap">
@@ -206,7 +209,7 @@
           <p>Every engagement is led by <b>a senior FDE</b>, on site.</p>
         </div>
         <div>
-          <div class="kicker">How to start</div>
+          <p class="cc-k">How to start</p>
           <ol class="nx">
             <li><span class="n">1</span><div><b>A 20&#8209;minute call.</b><span>You walk the team through the work your people do by hand.</span></div></li>
             <li><span class="n">2</span><div><b>An on-site day.</b><span>lumic&rsquo;s FDEs work beside your team where the work happens. They come on site across Greater St.&nbsp;Louis and travel for the right fit.</span></div></li>
@@ -259,7 +262,7 @@
         </ul>
       </nav>
     </div>
-    <p class="f-bot">© 2026 lumic · <a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a> · <a href="/privacy/">Privacy</a></p>
+    <p class="f-bot"><span>© 2026 lumic</span><a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a><a href="/privacy/">Privacy</a></p>
   </div>
 </footer>
 

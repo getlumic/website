@@ -2,7 +2,7 @@
 title: "Portfolio: AI agents and dashboards in production | lumic"
 description: "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production."
 canonical: https://get-lumic.com/portfolio/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Portfolio: AI agents and dashboards in production | lumic
@@ -25,7 +25,8 @@ Clients are kept private; everything shown runs in production at operating compa
 
 Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- Runs in: accounting software and the system that holds the POs
+Runs in: accounting software and the system that holds the POs
+
 - Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
@@ -42,7 +43,8 @@ Across a multi-company finance team, agent roles do the daily work: AP and cash 
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - Drafts from live aging
 - A person sends every one
 
@@ -52,28 +54,32 @@ From live aging, the agent drafts the collections email and the statement for ea
 
 The agent prepares the payroll entries, and the controller approves them.
 
-- Runs in: payroll and accounting software
+Runs in: payroll and accounting software
+
 - The controller approves every run
 
 ### Month-end close entries
 
 An agent prepares the month-end entries, and the controller approves them before anything posts.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 ### Cash receipts
 
 Remittances and ACH detail, read and keyed into the ERP.
 
-- Runs in: ERP and bank
+Runs in: the ERP and the bank
+
 - A person approves each entry
 
 ### Sales and margin
 
 Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Replaces a daily export
 - Multi-company, one view
 
@@ -81,14 +87,16 @@ Sales and gross margin by customer, product and rep, read straight from the ERP,
 
 Live aging by customer, the same view that feeds the collections agent.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### Consolidated financials
 
 A live income statement and product-margin view, consolidated across companies, that shows the month-end result.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Multi-company GL consolidation
 - An income statement that’s never stale
 
@@ -96,21 +104,24 @@ A live income statement and product-margin view, consolidated across companies, 
 
 The agent drafts purchase orders and writes them back to the ERP.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approval-gated
 
 ### Bank reconciliation
 
 The agent matches the bank to the book.
 
-- Runs in: ERP and bank feed
+Runs in: the ERP and the bank feed
+
 - Approval-gated
 
 ### AP workbench
 
 Every open bill, its PO match and its approval state.
 
-- Reads from: accounting software
+Reads from: accounting software
+
 - Live
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -119,7 +130,8 @@ Every open bill, its PO match and its approval state.
 
 Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
 
-- Reads from: production data and ERP
+Reads from: production data and the ERP
+
 - Estimate vs. actual per job
 - Overruns surfaced early
 
@@ -127,28 +139,32 @@ Production rates feed real per-job cost and margin: estimate against actual duri
 
 Open POs, receipts and vendor price changes.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### Commissions
 
 Rep commissions from live sales.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### PTO tracking
 
 Balances and requests.
 
-- Reads from: HR data
+Reads from: HR data
+
 - Live
 
 ### Ask your data (AI)
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant, on the same live data
+Reads from: the same live data
+
 - A person approves each entry
 
 ## Related
@@ -174,4 +190,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

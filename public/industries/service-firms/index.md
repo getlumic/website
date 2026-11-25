@@ -2,7 +2,7 @@
 title: "Custom AI for service firms: inbox, billing, close | lumic"
 description: "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI for service firms: inbox, billing, close | lumic
@@ -17,8 +17,6 @@ Vendor bills entered, cash receipts keyed, collections drafted, payroll and mont
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-The jobs
-
 ## The back-office jobs a service firm does by hand.
 
 lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.
@@ -27,7 +25,8 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads each vendor bill from email and prepares the entry in your accounting software. A person approves it, and nobody retypes it.
 
-- Runs in: accounting software
+Runs in: accounting software
+
 - A person approves each entry
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -36,7 +35,8 @@ The agent reads each vendor bill from email and prepares the entry in your accou
 
 The agent reads remittances and ACH detail and keys them as receipts for a person to approve.
 
-- Runs in: accounting and bank
+Runs in: accounting and the bank
+
 - A person approves each entry
 
 [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
@@ -45,14 +45,16 @@ The agent reads remittances and ACH detail and keys them as receipts for a perso
 
 From live aging, the agent drafts the collections email and the statement for each past-due client. A person reviews each one and sends it.
 
-- Runs in: accounting and inbox
+Runs in: accounting and the inbox
+
 - A person sends every one
 
 ### Payroll entries
 
 The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
 
-- Runs in: payroll reports and accounting
+Runs in: payroll and accounting software
+
 - Posted only on the controller’s click
 
 [Payroll](https://get-lumic.com/services/payroll/)
@@ -61,7 +63,8 @@ The agent builds the payroll journal entry from the payroll reports, checks ever
 
 The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
-- Runs in: accounting
+Runs in: accounting software
+
 - The controller posts each entry
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -70,14 +73,13 @@ The agent prepares the recurring month-end entries and runs the tie-outs. Every 
 
 Revenue, margin and receivables read live from your books, so nobody rebuilds the same report every week.
 
-- Reads from: accounting
+Reads from: accounting software
+
 - No more morning export
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -118,8 +120,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
 ## Month-End Red Flags Service Firms Usually Miss
 
 Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
@@ -149,4 +149,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

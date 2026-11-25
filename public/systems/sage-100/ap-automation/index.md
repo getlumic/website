@@ -2,7 +2,7 @@
 title: "Sage 100 AP automation with an AI agent | lumic"
 description: "An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts."
 canonical: https://get-lumic.com/systems/sage-100/ap-automation/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Sage 100 AP automation with an AI agent | lumic
@@ -17,8 +17,6 @@ An agent reads each vendor bill, matches it to the purchase order, and prepares 
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the job
 
-The job, step by step
-
 ## From the inbox to an unposted batch. A person posts it.
 
 ### A bill arrives by email.
@@ -32,8 +30,6 @@ It matches the bill to the purchase order in Sage 100.
 ### It prepares the batch.
 
 It prepares the AP invoice and the PO receipt in an unposted Sage 100 batch, ready for a person to review.
-
-Flags
 
 ## Flags before anyone pays.
 
@@ -56,8 +52,6 @@ The bill charges for more or less than the purchase order. The agent flags it fo
 The vendor’s invoice number is already in Sage 100. The agent flags it, so the same bill is not paid twice.
 
 - Flagged before anyone pays
-
-Access
 
 ## Its own computer, its own login.
 
@@ -82,8 +76,6 @@ The agent prepares the batch and leaves it unposted. A person on your team revie
 ### Gated by the people who know the work.
 
 The agent leaves the batch unposted. Flagged bills wait for a person’s approval.
-
-Questions
 
 ## Sage 100 AP automation, in plain answers.
 
@@ -113,4 +105,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

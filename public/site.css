@@ -174,7 +174,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);bac
 
 /* ---------- proof ---------- */
 .runs{margin-top:44px}
-.runs-l{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 16px}
+.runs-l{font-size:15px;font-weight:600;letter-spacing:0;color:var(--text-strong);margin:0 0 16px} /* a plain list label: only section kickers use the uppercase style */
 .runs ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
 .runs li{display:inline-flex;align-items:center;gap:9px;padding:10px 16px 10px 14px;border:1px solid var(--line);border-radius:999px;background:#ffffff;font-size:15.5px;color:var(--text);box-shadow:0 1px 2px rgba(15,23,42,.04);white-space:nowrap}
 .runs li::before{content:none}
@@ -254,7 +254,7 @@ footer{padding:56px 0 44px}
 .f-links{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px}
 .f-links a{text-decoration:none;color:var(--text)}
 .f-links a:hover{color:var(--primary)}
-.f-bot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line2);font-size:13px;color:var(--faint)}
+.f-bot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line2);font-size:13px;color:var(--faint);display:flex;flex-wrap:wrap;gap:6px 24px}
 .f-bot a{color:inherit}
 .f-bot a:hover{color:var(--primary)}
 
@@ -322,7 +322,7 @@ footer{padding:56px 0 44px}
 .faces img+img{margin-left:-12px}
 .who p{font-size:15.5px;color:var(--text);margin:0;max-width:26ch}
 .who b{color:var(--text-strong);font-weight:600}
-.cc-r .kicker{margin-bottom:16px}
+.cc-r .kicker,.cc-r .cc-k{margin-bottom:16px}
 .nx{list-style:none;margin:0;padding:0;position:relative}
 .nx::before{content:"";position:absolute;left:13px;top:14px;bottom:14px;width:1px;background:linear-gradient(180deg,rgba(94,92,230,.45),rgba(94,92,230,.08))}
 .nx li{display:grid;grid-template-columns:28px 1fr;gap:16px;padding:0 0 16px;position:relative}
@@ -513,7 +513,7 @@ html.lb-open{overflow:hidden}
 ul.links{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px;justify-items:start}
 ul.links .more-link{margin-top:0}
 .more-link svg,.founder-link svg{width:14px;height:14px;flex:none}
-.related-s{padding:clamp(40px,5vw,64px) 0 0}
+.related-s{padding:0 0 clamp(8px,1.2vw,16px)}
 .related-h{font-size:15px;font-weight:600;letter-spacing:0;color:var(--text-strong);margin:0}
 .related-s ul.links{margin-top:16px}
 /* P2-7: a short band (one paragraph) takes half the section padding */
@@ -529,3 +529,31 @@ section.band .thread{display:none}
 }
 /* P2-9: on the longest pages, phones show each card's title, sentence and link, not its bullet list */
 @media (max-width:620px){.short-cards .pf ul{display:none}}
+
+/* ---------- final pass 2 (consistency, 2026-11-25) ---------- */
+/* a section without a kicker draws no thread (the line ends in the kicker's dot) */
+section:not(:has(.kicker)) .thread{display:none}
+/* one gap above and below the Related list (about 80px at desktop): the section before it ends at that gap */
+section:has(+ .related-s){padding-bottom:clamp(56px,6vw,80px) !important}
+/* the contact card's label and the Related heading: one plain label style */
+.cc-k{font-size:15px;font-weight:600;color:var(--text-strong);letter-spacing:0}
+/* one card meta line everywhere: muted, between the card's sentence and its bullets */
+.pf .pf-meta{margin-top:14px;font-size:13px;font-weight:500;color:var(--muted)}
+@media (max-width:620px){
+  /* phones: first sentence only (the rest is .ph-x); home portfolio cards without bullets */
+  .ph-x{display:none}
+  /* the hero orbit ring crossed the secondary button */
+  .hero-fig .orbit{display:none}
+  /* phones: a tighter section rhythm (same rhythm on every page) */
+  :root{--pad:56px}
+  .steps,.steps.s4{margin-top:40px;gap:32px}
+  .pgrid{margin-top:32px}
+  .why-grid,.founders{margin-top:40px}
+  .runs li{font-size:13px;padding:6px 10px}
+  /* home: the "Instead of / With lumic" table repeats the list above it; phones show the list only */
+  #why .why-grid .alts{display:none}
+  .founders{padding-top:40px}
+  /* ledgers that repeat the card text beside them, on the longest pages */
+  .short-cards .keep .ledger{display:none}
+  ul.links{gap:2px}  /* each link already carries a 44px tap target */
+}

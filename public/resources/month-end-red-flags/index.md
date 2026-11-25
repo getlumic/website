@@ -2,7 +2,7 @@
 title: "Month-End Red Flags Service Firms Usually Miss | lumic"
 description: "Ten month-end mistakes in AP, billing, payroll and the close, on one page: a free checklist from lumic, with a PDF download."
 canonical: https://get-lumic.com/resources/month-end-red-flags/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Month-End Red Flags Service Firms Usually Miss | lumic
@@ -79,4 +79,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

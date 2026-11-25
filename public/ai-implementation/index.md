@@ -2,7 +2,7 @@
 title: "Custom AI implementation for small and mid-size businesses"
 description: "lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working."
 canonical: https://get-lumic.com/ai-implementation/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI implementation for small and mid-size businesses
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
 lumic’s Forward Deployed Engineers find the work your team does by hand, build custom agents, automations and live dashboards for it inside the systems you already run, and keep them working. A person on your team approves what matters.
 
 [Book a call](https://cal.com/lumic/20-minute-call) What lumic implements
-
-What lumic implements
 
 ## Working software, with AI where it fits.
 
@@ -75,8 +73,6 @@ Production schedules, purchasing and POs, the order desk and freight, as well as
 
 Entries are added to the log, never edited, so a reviewer sees what the agent did and who approved it.
 
-Four steps
-
 ## From a free call to managed AI.
 
 ### Free consultation.
@@ -87,7 +83,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -134,8 +130,6 @@ Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
-Approval and access
-
 ## Gated by the people who know the work.
 
 ### An approval queue for every entry.
@@ -149,8 +143,6 @@ What it did, and who approved it.
 ### It touches only its job.
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
-
-Questions
 
 ## AI implementation, in plain answers.
 
@@ -189,4 +181,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

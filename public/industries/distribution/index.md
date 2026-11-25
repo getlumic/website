@@ -2,7 +2,7 @@
 title: "Custom AI for distributors: orders, purchasing, cash | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI for distributors: orders, purchasing, cash | lumic
@@ -17,8 +17,6 @@ Cash receipts keyed, collections drafted, and margin by customer, product and re
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-The jobs
-
 ## The back-office jobs a distributor does by hand.
 
 lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.
@@ -27,7 +25,8 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads remittances and ACH detail and keys them into the ERP for a person to approve.
 
-- Runs in: ERP and bank
+Runs in: the ERP and the bank
+
 - A person approves each entry
 
 [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
@@ -36,14 +35,16 @@ The agent reads remittances and ACH detail and keys them into the ERP for a pers
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - A person sends every one
 
 ### Margin by customer, product and rep
 
 Sales and gross margin read live from the ERP, across every company the business runs, in one view.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Replaces a daily export
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
@@ -52,7 +53,8 @@ Sales and gross margin read live from the ERP, across every company the business
 
 The agent reads each vendor bill, matches it to the purchase order, and flags a price difference before anyone pays. It also drafts purchase orders for approval.
 
-- Runs in: accounting software
+Runs in: accounting software
+
 - Approval-gated
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -61,7 +63,8 @@ The agent reads each vendor bill, matches it to the purchase order, and flags a 
 
 The agent prepares the recurring month-end entries and runs the tie-outs, including intercompany where a business runs more than one company.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - The controller posts each entry
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -70,12 +73,11 @@ The agent prepares the recurring month-end entries and runs the tie-outs, includ
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant, on the same live data
+Reads from: the same live data
+
 - A person approves each entry
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -139,4 +141,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

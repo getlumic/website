@@ -89,7 +89,6 @@
 <section id="how" class="how" aria-labelledby="how-h">
   <div class="wrap">
     <div class="thread d3" aria-hidden="true"><i></i></div>
-    <p class="kicker rv">The job, step by step</p>
     <h2 id="how-h" class="rv">One agent, one job. <em class="s">Done every day.</em></h2>
     <ol class="steps rv">
       <li class="track" aria-hidden="true"><i></i></li>
@@ -112,13 +111,16 @@
     <div class="pgrid rv">
       <article class="pf"><span class="n">01</span><h3>AP invoice agent</h3>
         <p>Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.</p>
-        <ul><li>Runs in: accounting software and the system that holds the POs</li><li>Bills matched to the PO on their own; the rest go to a person</li><li>Kept running for a monthly fee</li></ul></article>
+        <p class="pf-meta">Runs in: accounting software and the system that holds the POs</p>
+        <ul><li>Bills matched to the PO on their own; the rest go to a person</li><li>Kept running for a monthly fee</li></ul></article>
       <article class="pf"><span class="n">02</span><h3>AP workbench</h3>
         <p>Every open bill, its PO match and its approval state.</p>
-        <ul><li>Dashboard, on the accounting software</li><li>Live</li></ul></article>
+        <p class="pf-meta">Reads from: accounting software</p>
+        <ul><li>Live</li></ul></article>
       <article class="pf"><span class="n">03</span><h3>Purchasing and PO write-back</h3>
         <p>The agent drafts purchase orders and writes them back to the ERP.</p>
-        <ul><li>Runs in: the ERP</li><li>Approval-gated</li></ul></article>
+        <p class="pf-meta">Runs in: the ERP</p>
+        <ul><li>Approval-gated</li></ul></article>
     </div>
     <p class="pfilms-note rv">Clients are kept private; everything shown runs in production.</p>
     <a class="more-link rv" href="/portfolio/">See the full portfolio <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
@@ -154,7 +156,6 @@
 <!-- ============ WHERE IT RUNS ============ -->
 <section id="installed" class="band" aria-labelledby="installed-h">
   <div class="wrap">
-    <p class="kicker rv">Where it runs</p>
     <div class="two-head rv">
       <h2 id="installed-h">Run by lumic, or installed on your own AI.</h2>
       <p class="lead">It is the same job either way. lumic runs it on a dedicated computer and keeps it working for a monthly fee. Or lumic packages it for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps. That option is a setup fee, then a monthly fee, quoted per job. Gated by the people who know the work.</p>
@@ -164,9 +165,8 @@
 </section>
 
 <!-- ============ QUESTIONS ============ -->
-<section id="faq" aria-labelledby="faq-h" style="padding-top:0">
+<section id="faq" aria-labelledby="faq-h">
   <div class="wrap">
-    <p class="kicker rv">Questions</p>
     <h2 id="faq-h" class="rv">Before you book.</h2>
     <div class="page-narrow">
       <ul class="wl rv" style="margin-top:40px">
@@ -232,7 +232,7 @@
           <p>Every engagement is led by <b>a senior FDE</b>, on site.</p>
         </div>
         <div>
-          <div class="kicker">How to start</div>
+          <p class="cc-k">How to start</p>
           <ol class="nx">
             <li><span class="n">1</span><div><b>A 20&#8209;minute call.</b><span>You walk the team through the work your people do by hand.</span></div></li>
             <li><span class="n">2</span><div><b>An on-site day.</b><span>lumic&rsquo;s FDEs work beside your team where the work happens. They come on site across Greater St.&nbsp;Louis and travel for the right fit.</span></div></li>
@@ -285,7 +285,7 @@
         </ul>
       </nav>
     </div>
-    <p class="f-bot">© 2026 lumic · <a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a> · <a href="/privacy/">Privacy</a></p>
+    <p class="f-bot"><span>© 2026 lumic</span><a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a><a href="/privacy/">Privacy</a></p>
   </div>
 </footer>
 

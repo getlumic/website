@@ -2,7 +2,7 @@
 title: "How lumic works: FDEs, approvals and data security | lumic"
 description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it."
 canonical: https://get-lumic.com/how-lumic-works/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
@@ -17,8 +17,6 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 [Book a call](https://cal.com/lumic/20-minute-call) The four steps
 
-Four steps
-
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### Free consultation.
@@ -29,7 +27,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -122,7 +120,7 @@ Leadership
 
 ### Finance first. Engineers second.
 
-lumic’s leadership includes a controller and a CFP®, based in St. Louis. They run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. They have done these back-office jobs by hand, so they know which ones are worth automating. Senior people lead every engagement, on site, from scoping to support.
 
 CG
 
@@ -163,4 +161,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

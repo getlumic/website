@@ -2,7 +2,7 @@
 title: "Month-end close automation | lumic"
 description: "An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it."
 canonical: https://get-lumic.com/services/month-end-close/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Month-end close automation | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/services/month-end-close/ | Contact: hello@get-lum
 An agent reads the month’s activity from your ERP, prepares the recurring entries a controller builds by hand every month, and runs the tie-outs. Every entry lands unposted, and the controller reviews and posts each one. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) How it works
-
-How it works
 
 ## Read, prepare, tie out. A person posts.
 
@@ -99,8 +97,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
 ## Month-End Red Flags Service Firms Usually Miss
 
 Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
@@ -129,4 +125,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

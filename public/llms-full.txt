@@ -76,7 +76,7 @@ Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage 
 Client names stay private.
 
 ## Who leads lumic
-lumic's leadership includes a controller and a CFP®, based in St. Louis. They run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+lumic's leadership includes a controller and a CFP®, based in St. Louis. They have done these back-office jobs by hand, so they know which ones are worth automating. Senior people lead every engagement, on site, from scoping to support.
 
 - Christian Gonzenbach, co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
 - Joshua Wittenauer, CFP®, co-founder. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's AI-agent work and how each agent handles your data.
@@ -142,7 +142,7 @@ A 20-minute call, then an on-site day beside the team, then a written proposal w
 title: "lumic | Custom AI implementation, St. Louis FDEs"
 description: "lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs."
 canonical: https://get-lumic.com/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # lumic | Custom AI implementation, St. Louis FDEs
@@ -160,8 +160,6 @@ lumic’s Forward Deployed Engineers build custom AI for any process in any syst
 [Book a call](https://cal.com/lumic/20-minute-call) See it running
 
 Why lumic. Turn sound on for the narration.
-
-See it running
 
 ## One agent, one job. Done every day.
 
@@ -213,7 +211,8 @@ Eighteen live dashboards and the agents behind them run every day in production,
 
 Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- Runs in: accounting software and the system that holds the POs
+Runs in: accounting software and the system that holds the POs
+
 - Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
@@ -230,7 +229,8 @@ Across a multi-company finance team, agent roles do the daily work: AP and cash 
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - Drafts from live aging
 - A person sends every one
 
@@ -281,7 +281,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -371,11 +371,9 @@ Leadership
 
 ### Finance first. Engineers second.
 
-lumic’s leadership includes a controller and a CFP®, based in St. Louis. They run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. They have done these back-office jobs by hand, so they know which ones are worth automating. Senior people lead every engagement, on site, from scoping to support.
 
 [Meet the leadership](https://get-lumic.com/how-lumic-works/#leadership)
-
-Free checklist
 
 ## Month-End Red Flags Service Firms Usually Miss
 
@@ -415,7 +413,7 @@ All questions: https://get-lumic.com/faq/
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -424,7 +422,7 @@ All questions: https://get-lumic.com/faq/
 title: "Custom AI implementation for small and mid-size businesses"
 description: "lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working."
 canonical: https://get-lumic.com/ai-implementation/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI implementation for small and mid-size businesses
@@ -438,8 +436,6 @@ Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
 lumic’s Forward Deployed Engineers find the work your team does by hand, build custom agents, automations and live dashboards for it inside the systems you already run, and keep them working. A person on your team approves what matters.
 
 [Book a call](https://cal.com/lumic/20-minute-call) What lumic implements
-
-What lumic implements
 
 ## Working software, with AI where it fits.
 
@@ -497,8 +493,6 @@ Production schedules, purchasing and POs, the order desk and freight, as well as
 
 Entries are added to the log, never edited, so a reviewer sees what the agent did and who approved it.
 
-Four steps
-
 ## From a free call to managed AI.
 
 ### Free consultation.
@@ -509,7 +503,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -556,8 +550,6 @@ Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
-Approval and access
-
 ## Gated by the people who know the work.
 
 ### An approval queue for every entry.
@@ -571,8 +563,6 @@ What it did, and who approved it.
 ### It touches only its job.
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
-
-Questions
 
 ## AI implementation, in plain answers.
 
@@ -611,7 +601,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -620,7 +610,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Managed AI on retainer: monitored and supported | lumic"
 description: "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/managed-ai/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Managed AI on retainer: monitored and supported | lumic
@@ -635,15 +625,13 @@ Once an agent is live, lumic watches it, tests it every month, fixes what breaks
 
 [Book a call](https://cal.com/lumic/20-minute-call) What the retainer covers
 
-What the retainer covers
-
 ## A team that stays on, every month.
 
 Each agent does one role, such as AP clerk, payroll, or month-end entries, on its own dedicated computer. Once it is live, lumic runs it for a monthly fee.
 
 ### Watched, tested, fixed and upgraded.
 
-Every agent is watched around the clock, tested monthly, fixed when it breaks and upgraded as AI improves; the ledger shows what is included. When your team is ready, the same team builds the agent for another job.
+Every agent is watched around the clock, tested monthly, fixed when it breaks and upgraded as AI improves. When your team is ready, the same team builds the agent for another job.
 
 Every month, a summary of what the agent did. A person on your team approves anything before it posts.
 
@@ -714,8 +702,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Managed AI Monthly, by scope
 - The build One-time, in the proposal
 
-Questions
-
 ## Managed AI, in plain answers.
 
 ### What is a managed AI agent?
@@ -753,7 +739,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -762,7 +748,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI consulting for small businesses, on site | lumic"
 description: "lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one."
 canonical: https://get-lumic.com/ai-consulting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI consulting for small businesses, on site | lumic
@@ -777,8 +763,6 @@ lumic’s Forward Deployed Engineers spend a day on site, map where AI fits your
 
 [Book a call](https://cal.com/lumic/20-minute-call) The on-site day
 
-A consultant or an FDE
-
 ## Advice is the start, not the deliverable.
 
 A consultant advises and leaves. lumic’s FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
@@ -789,8 +773,6 @@ A consultant advises and leaves. lumic’s FDEs build the agent inside your own 
 - Build-and-ghost consultants → A team that stays on
 
 [Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/)
-
-The on-site day
 
 ## A day beside your team. A written proposal.
 
@@ -805,8 +787,6 @@ The team sorts the jobs by hours and risk, and picks where an agent, an automati
 ### A written proposal.
 
 What lumic would build, the timeline, and the cost. On-site work $1,500/day, credited toward phase one.
-
-What the day answers
 
 ## The questions an owner actually has.
 
@@ -826,16 +806,12 @@ Where the approval step goes, and who on your team checks each entry before anyt
 
 The build, the timeline, and the monthly fee to keep it working, in writing.
 
-On site in St. Louis
-
 ## Based in St. Louis. On site in person.
 
 lumic’s FDEs come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit.
 
 - [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
 - [After the proposal: AI implementation](https://get-lumic.com/ai-implementation/)
-
-Questions
 
 ## AI consulting, in plain answers.
 
@@ -867,7 +843,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -876,7 +852,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI agent skills for business: jobs your AI installs | lumic"
 description: "One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly."
 canonical: https://get-lumic.com/ai-agent-skills/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agent skills for business: jobs your AI installs | lumic
@@ -953,8 +929,6 @@ The setup has a start date and an end date: lumic writes your file, installs the
 
 No AI assistant to run it? The same job can run on a dedicated computer that lumic’s Forward Deployed Engineers set up, watch and keep working every month. Either way, it is gated by the people who know the work, and it starts with the same free consultation.
 
-Questions
-
 ## AI agent skills, in plain answers.
 
 ### What is a packaged AI job?
@@ -992,7 +966,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -1001,7 +975,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
 description: "Custom AI dashboards, agents and automations, built on site and kept working. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/services/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic
@@ -1089,6 +1063,8 @@ Pick the job that takes the most hours. Each agent does one back-office job end 
 
 The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
+Runs in: the inbox and accounting software
+
 - Vendor bills and PO matching
 - A person approves each entry
 
@@ -1097,6 +1073,8 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 ### Cash receipts and collections
 
 Remittances and ACH detail, read and keyed into the ERP. Collections emails and statements drafted from live aging, ready when the day starts.
+
+Runs in: the ERP and the bank
 
 - Cash receipts keyed for approval
 - A person sends every collections email
@@ -1107,7 +1085,8 @@ Remittances and ACH detail, read and keyed into the ERP. Collections emails and 
 
 The agent prepares the payroll entries, and the controller approves them.
 
-- Runs in: payroll and accounting software
+Runs in: payroll and accounting software
+
 - The controller approves every run
 
 [Payroll](https://get-lumic.com/services/payroll/)
@@ -1116,7 +1095,8 @@ The agent prepares the payroll entries, and the controller approves them.
 
 An agent prepares the month-end entries, and the controller approves them before anything posts.
 
-- Runs in: the ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -1160,14 +1140,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
-
 ## Related
 
 - [AI implementation](https://get-lumic.com/ai-implementation/)
@@ -1191,7 +1163,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -1200,7 +1172,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
 description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
 canonical: https://get-lumic.com/services/ap-automation/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
@@ -1216,8 +1188,6 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 [Book a call](https://cal.com/lumic/20-minute-call) See the proof
 
 See it running. Every figure is sample data. Turn sound on for the narration.
-
-The job, step by step
 
 ## One agent, one job. Done every day.
 
@@ -1243,7 +1213,8 @@ An AP agent reads each vendor bill from email, matches it to the purchase order 
 
 Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- Runs in: accounting software and the system that holds the POs
+Runs in: accounting software and the system that holds the POs
+
 - Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
@@ -1251,14 +1222,16 @@ Every vendor bill used to be typed in twice, into two systems. The agent reads e
 
 Every open bill, its PO match and its approval state.
 
-- Dashboard, on the accounting software
+Reads from: accounting software
+
 - Live
 
 ### Purchasing and PO write-back
 
 The agent drafts purchase orders and writes them back to the ERP.
 
-- Runs in: the ERP
+Runs in: the ERP
+
 - Approval-gated
 
 Clients are kept private; everything shown runs in production.
@@ -1289,15 +1262,11 @@ lumic builds it, and keeps it working.
 - Typing every bill into two systems → An agent enters it; you approve
 - Build-and-ghost consultants → A team that stays on
 
-Where it runs
-
 ## Run by lumic, or installed on your own AI.
 
 It is the same job either way. lumic runs it on a dedicated computer and keeps it working for a monthly fee. Or lumic packages it for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps. That option is a setup fee, then a monthly fee, quoted per job. Gated by the people who know the work.
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
-
-Questions
 
 ## Before you book.
 
@@ -1350,7 +1319,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -1359,7 +1328,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Cash application and collections automation | lumic"
 description: "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Cash application and collections automation | lumic
@@ -1373,8 +1342,6 @@ Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact:
 An agent reads remittances and ACH detail and keys them into the ERP. Another drafts the collections email and the statement for each past-due customer, from live aging. A person approves each receipt and sends every email. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See how it works
-
-The job, step by step
 
 ## Cash application, from remittance to statement. A person signs off.
 
@@ -1400,14 +1367,16 @@ These agents and the aging view behind them run every day in production. Clients
 
 Remittances and ACH detail, read and keyed into the ERP.
 
-- Runs in: ERP and bank
+Runs in: the ERP and the bank
+
 - A person approves each entry
 
 ### Collections agent
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - Drafts from live aging
 - A person sends every one
 
@@ -1415,7 +1384,8 @@ From live aging, the agent drafts the collections email and the statement for ea
 
 Live aging by customer, the same view that feeds the collections agent.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
@@ -1423,8 +1393,6 @@ Live aging by customer, the same view that feeds the collections agent.
 Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -1486,7 +1454,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -1495,7 +1463,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Payroll journal entry automation | lumic"
 description: "An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click."
 canonical: https://get-lumic.com/services/payroll/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Payroll journal entry automation | lumic
@@ -1509,8 +1477,6 @@ Source: https://get-lumic.com/services/payroll/ | Contact: hello@get-lumic.com
 After each payroll run, an agent builds the journal entry from the reports your payroll provider sends, with the month-end accrual and its reversal when a pay period crosses the month. It checks every line, and the controller reviews it and posts it. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) How it works
-
-How it works
 
 ## From the payroll reports to a posted entry. The controller signs off.
 
@@ -1614,7 +1580,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -1623,7 +1589,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Month-end close automation | lumic"
 description: "An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it."
 canonical: https://get-lumic.com/services/month-end-close/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Month-end close automation | lumic
@@ -1637,8 +1603,6 @@ Source: https://get-lumic.com/services/month-end-close/ | Contact: hello@get-lum
 An agent reads the month’s activity from your ERP, prepares the recurring entries a controller builds by hand every month, and runs the tie-outs. Every entry lands unposted, and the controller reviews and posts each one. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) How it works
-
-How it works
 
 ## Read, prepare, tie out. A person posts.
 
@@ -1720,8 +1684,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
 ## Month-End Red Flags Service Firms Usually Miss
 
 Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
@@ -1750,7 +1712,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -1759,7 +1721,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Live ERP dashboards and reporting | lumic"
 description: "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them."
 canonical: https://get-lumic.com/services/dashboards-and-reporting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Live ERP dashboards and reporting | lumic
@@ -1784,7 +1746,8 @@ lumic’s dashboards run every day in production, on the same live data the agen
 
 Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Replaces a daily export
 - Multi-company, one view
 
@@ -1792,7 +1755,8 @@ Sales and gross margin by customer, product and rep, read straight from the ERP,
 
 Live aging by customer, the same view that feeds the collections agent.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
@@ -1801,7 +1765,8 @@ Live aging by customer, the same view that feeds the collections agent.
 
 A live income statement and product-margin view, consolidated across companies, that shows the month-end result.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Multi-company GL consolidation
 - An income statement that's never stale
 
@@ -1809,7 +1774,8 @@ A live income statement and product-margin view, consolidated across companies, 
 
 Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
 
-- Reads from: production data and ERP
+Reads from: production data and the ERP
+
 - Estimate vs. actual per job
 - Overruns surfaced early
 
@@ -1817,14 +1783,16 @@ Production rates feed real per-job cost and margin: estimate against actual duri
 
 Open POs, receipts and vendor price changes.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### AP workbench
 
 Every open bill, its PO match and its approval state.
 
-- Reads from: accounting software
+Reads from: accounting software
+
 - Live
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -1833,26 +1801,27 @@ Every open bill, its PO match and its approval state.
 
 Rep commissions from live sales.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### PTO tracking
 
 Balances and requests.
 
-- Reads from: HR data
+Reads from: HR data
+
 - Live
 
 ### Ask your data (AI)
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant, on the same live data
+Reads from: the same live data
+
 - A person approves each entry
 
 Clients are kept private; everything shown runs in production.
-
-See them running
 
 ## Watch each dashboard on its own.
 
@@ -1865,8 +1834,6 @@ Short films of the dashboards lumic builds, with narration. Every figure is samp
 - [Ask your data (AI)](https://get-lumic.com/video/demos/lumic-keynote-connector.mp4)
 
 Each film opens on its own. Every figure is sample data.
-
-Read only
 
 ## Dashboards only read. Agents do the work.
 
@@ -1928,7 +1895,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -1937,7 +1904,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI agent for the order desk and customer service | lumic"
 description: "An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one."
 canonical: https://get-lumic.com/services/order-desk-and-customer-service/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agent for the order desk and customer service | lumic
@@ -1990,15 +1957,11 @@ lumic gives each agent access to the screens and records its job needs, and noth
 
 Questions about stock often arrive in a shared inbox, and someone answers each one by hand. The agent reads each request, checks that it carries the details your team requires, and drafts the reply from the records your team points it to. A person checks the reply and sends it.
 
-Where it runs
-
 ## Run by lumic, or installed on your own AI.
 
 It is the same job either way. lumic runs it on a dedicated computer and keeps it working for a monthly fee. Or lumic packages it for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps. That option is a setup fee, then a monthly fee, quoted per job. Gated by the people who know the work.
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
-
-Questions
 
 ## The order desk agent, in plain answers.
 
@@ -2051,7 +2014,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -2060,7 +2023,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Portfolio: AI agents and dashboards in production | lumic"
 description: "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production."
 canonical: https://get-lumic.com/portfolio/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Portfolio: AI agents and dashboards in production | lumic
@@ -2083,7 +2046,8 @@ Clients are kept private; everything shown runs in production at operating compa
 
 Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- Runs in: accounting software and the system that holds the POs
+Runs in: accounting software and the system that holds the POs
+
 - Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
@@ -2100,7 +2064,8 @@ Across a multi-company finance team, agent roles do the daily work: AP and cash 
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - Drafts from live aging
 - A person sends every one
 
@@ -2110,28 +2075,32 @@ From live aging, the agent drafts the collections email and the statement for ea
 
 The agent prepares the payroll entries, and the controller approves them.
 
-- Runs in: payroll and accounting software
+Runs in: payroll and accounting software
+
 - The controller approves every run
 
 ### Month-end close entries
 
 An agent prepares the month-end entries, and the controller approves them before anything posts.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 ### Cash receipts
 
 Remittances and ACH detail, read and keyed into the ERP.
 
-- Runs in: ERP and bank
+Runs in: the ERP and the bank
+
 - A person approves each entry
 
 ### Sales and margin
 
 Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Replaces a daily export
 - Multi-company, one view
 
@@ -2139,14 +2108,16 @@ Sales and gross margin by customer, product and rep, read straight from the ERP,
 
 Live aging by customer, the same view that feeds the collections agent.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### Consolidated financials
 
 A live income statement and product-margin view, consolidated across companies, that shows the month-end result.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Multi-company GL consolidation
 - An income statement that’s never stale
 
@@ -2154,21 +2125,24 @@ A live income statement and product-margin view, consolidated across companies, 
 
 The agent drafts purchase orders and writes them back to the ERP.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approval-gated
 
 ### Bank reconciliation
 
 The agent matches the bank to the book.
 
-- Runs in: ERP and bank feed
+Runs in: the ERP and the bank feed
+
 - Approval-gated
 
 ### AP workbench
 
 Every open bill, its PO match and its approval state.
 
-- Reads from: accounting software
+Reads from: accounting software
+
 - Live
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -2177,7 +2151,8 @@ Every open bill, its PO match and its approval state.
 
 Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
 
-- Reads from: production data and ERP
+Reads from: production data and the ERP
+
 - Estimate vs. actual per job
 - Overruns surfaced early
 
@@ -2185,28 +2160,32 @@ Production rates feed real per-job cost and margin: estimate against actual duri
 
 Open POs, receipts and vendor price changes.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### Commissions
 
 Rep commissions from live sales.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### PTO tracking
 
 Balances and requests.
 
-- Reads from: HR data
+Reads from: HR data
+
 - Live
 
 ### Ask your data (AI)
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant, on the same live data
+Reads from: the same live data
+
 - A person approves each entry
 
 ## Related
@@ -2232,7 +2211,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -2241,7 +2220,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "How lumic works: FDEs, approvals and data security | lumic"
 description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it."
 canonical: https://get-lumic.com/how-lumic-works/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
@@ -2256,8 +2235,6 @@ FDE stands for Forward Deployed Engineer. lumic’s FDEs are engineers with fina
 
 [Book a call](https://cal.com/lumic/20-minute-call) The four steps
 
-Four steps
-
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### Free consultation.
@@ -2268,7 +2245,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -2361,7 +2338,7 @@ Leadership
 
 ### Finance first. Engineers second.
 
-lumic’s leadership includes a controller and a CFP®, based in St. Louis. They run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. They have done these back-office jobs by hand, so they know which ones are worth automating. Senior people lead every engagement, on site, from scoping to support.
 
 CG
 
@@ -2402,7 +2379,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -2411,7 +2388,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Guardrails: approval, audit log, access and upkeep | lumic"
 description: "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent."
 canonical: https://get-lumic.com/guardrails/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Guardrails: approval, audit log, access and upkeep | lumic
@@ -2425,8 +2402,6 @@ Source: https://get-lumic.com/guardrails/ | Contact: hello@get-lumic.com
 The practices lumic follows on every agent, in one place. A person approves every entry before it posts, every action is logged, and each agent can reach only what its job needs.
 
 [Book a call](https://cal.com/lumic/20-minute-call) The practices
-
-The practices
 
 ## Approval, logging, access and upkeep.
 
@@ -2448,7 +2423,7 @@ Any agent can be paused, or its access revoked, at any time.
 
 ### Entries are added to the log, not edited.
 
-Nothing in the log is changed after the fact, so a reviewer sees each action as it happened. More in [AI implementation](https://get-lumic.com/ai-implementation/).
+Every action is logged as it happens: what the agent did, and who approved it. More in [AI implementation](https://get-lumic.com/ai-implementation/).
 
 ### A failed release rolls back by itself.
 
@@ -2497,7 +2472,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -2506,7 +2481,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Pricing: custom AI implementation and managed AI | lumic"
 description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Pricing: custom AI implementation and managed AI | lumic
@@ -2533,7 +2508,7 @@ Free. A 20‑minute call.
 
 ### On-site work
 
-On-site work $1,500/day, credited toward phase one.
+Billed by the day and credited toward phase one.
 
 - lumic’s FDEs at your place of business
 - Maps the job, the systems and the data
@@ -2599,7 +2574,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -2608,7 +2583,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI for manufacturers: shop floor to books | lumic"
 description: "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI for manufacturers: shop floor to books | lumic
@@ -2631,7 +2606,8 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
-- Runs in: accounting software
+Runs in: accounting software
+
 - A person approves each entry
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -2640,7 +2616,8 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 
 Production data and costs read live, so estimate against actual shows up during the job, not at close.
 
-- Reads from: production data and ERP
+Reads from: production data and the ERP
+
 - Overruns surfaced early
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
@@ -2649,14 +2626,16 @@ Production data and costs read live, so estimate against actual shows up during 
 
 The agent drafts purchase orders and writes them back to the ERP, and a dashboard tracks open POs, receipts and vendor price changes.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approval-gated
 
 ### Payroll entries
 
 The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
 
-- Runs in: payroll reports and accounting
+Runs in: payroll and accounting software
+
 - Posted only on the controller’s click
 
 [Payroll](https://get-lumic.com/services/payroll/)
@@ -2665,7 +2644,8 @@ The agent builds the payroll journal entry from the payroll reports, checks ever
 
 The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - The controller posts each entry
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -2674,12 +2654,11 @@ The agent prepares the recurring month-end entries and runs the tie-outs. Every 
 
 Sales and gross margin by customer, product and rep, read live, with the costs the agents enter showing up the same day.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - No more morning export
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -2743,7 +2722,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -2752,7 +2731,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI for distributors: orders, purchasing, cash | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI for distributors: orders, purchasing, cash | lumic
@@ -2767,8 +2746,6 @@ Cash receipts keyed, collections drafted, and margin by customer, product and re
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-The jobs
-
 ## The back-office jobs a distributor does by hand.
 
 lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.
@@ -2777,7 +2754,8 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads remittances and ACH detail and keys them into the ERP for a person to approve.
 
-- Runs in: ERP and bank
+Runs in: the ERP and the bank
+
 - A person approves each entry
 
 [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
@@ -2786,14 +2764,16 @@ The agent reads remittances and ACH detail and keys them into the ERP for a pers
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - A person sends every one
 
 ### Margin by customer, product and rep
 
 Sales and gross margin read live from the ERP, across every company the business runs, in one view.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Replaces a daily export
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
@@ -2802,7 +2782,8 @@ Sales and gross margin read live from the ERP, across every company the business
 
 The agent reads each vendor bill, matches it to the purchase order, and flags a price difference before anyone pays. It also drafts purchase orders for approval.
 
-- Runs in: accounting software
+Runs in: accounting software
+
 - Approval-gated
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -2811,7 +2792,8 @@ The agent reads each vendor bill, matches it to the purchase order, and flags a 
 
 The agent prepares the recurring month-end entries and runs the tie-outs, including intercompany where a business runs more than one company.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - The controller posts each entry
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -2820,12 +2802,11 @@ The agent prepares the recurring month-end entries and runs the tie-outs, includ
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant, on the same live data
+Reads from: the same live data
+
 - A person approves each entry
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -2889,7 +2870,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -2898,7 +2879,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI for service firms: inbox, billing, close | lumic"
 description: "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI for service firms: inbox, billing, close | lumic
@@ -2913,8 +2894,6 @@ Vendor bills entered, cash receipts keyed, collections drafted, payroll and mont
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
 
-The jobs
-
 ## The back-office jobs a service firm does by hand.
 
 lumic’s FDEs start beside the person who does each job today, then build one agent per job, inside the systems the team already runs. A person approves each entry.
@@ -2923,7 +2902,8 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads each vendor bill from email and prepares the entry in your accounting software. A person approves it, and nobody retypes it.
 
-- Runs in: accounting software
+Runs in: accounting software
+
 - A person approves each entry
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -2932,7 +2912,8 @@ The agent reads each vendor bill from email and prepares the entry in your accou
 
 The agent reads remittances and ACH detail and keys them as receipts for a person to approve.
 
-- Runs in: accounting and bank
+Runs in: accounting and the bank
+
 - A person approves each entry
 
 [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
@@ -2941,14 +2922,16 @@ The agent reads remittances and ACH detail and keys them as receipts for a perso
 
 From live aging, the agent drafts the collections email and the statement for each past-due client. A person reviews each one and sends it.
 
-- Runs in: accounting and inbox
+Runs in: accounting and the inbox
+
 - A person sends every one
 
 ### Payroll entries
 
 The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
 
-- Runs in: payroll reports and accounting
+Runs in: payroll and accounting software
+
 - Posted only on the controller’s click
 
 [Payroll](https://get-lumic.com/services/payroll/)
@@ -2957,7 +2940,8 @@ The agent builds the payroll journal entry from the payroll reports, checks ever
 
 The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
-- Runs in: accounting
+Runs in: accounting software
+
 - The controller posts each entry
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -2966,14 +2950,13 @@ The agent prepares the recurring month-end entries and runs the tie-outs. Every 
 
 Revenue, margin and receivables read live from your books, so nobody rebuilds the same report every week.
 
-- Reads from: accounting
+Reads from: accounting software
+
 - No more morning export
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -3014,8 +2997,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
 ## Month-End Red Flags Service Firms Usually Miss
 
 Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
@@ -3045,7 +3026,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -3054,7 +3035,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "St. Louis AI company: custom AI implementation | lumic"
 description: "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # St. Louis AI company: custom AI implementation | lumic
@@ -3068,8 +3049,6 @@ Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Area served
-
-Area served
 
 ## Greater St. Louis, Missouri and Illinois.
 
@@ -3102,7 +3081,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -3123,8 +3102,6 @@ lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI
 Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
-
-Questions
 
 ## Local, and live in production.
 
@@ -3163,7 +3140,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -3172,7 +3149,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "St. Louis AI consulting and automation | lumic"
 description: "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # St. Louis AI consulting and automation | lumic
@@ -3224,7 +3201,8 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -3249,8 +3227,6 @@ The agent reads each purchase order and customer email, drafts the sales order a
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
-How an engagement runs
-
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### On-site diagnostic.
@@ -3266,8 +3242,6 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
 The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). On site across the region: [St. Louis](https://get-lumic.com/st-louis/). What an FDE is: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/).
-
-Questions
 
 ## AI consulting in St. Louis, in plain answers.
 
@@ -3311,7 +3285,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -3320,7 +3294,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI automation for Metro East businesses, on site | lumic"
 description: "lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry."
 canonical: https://get-lumic.com/st-louis/metro-east/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI automation for Metro East businesses, on site | lumic
@@ -3334,8 +3308,6 @@ Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.co
 lumic’s Forward Deployed Engineers (FDEs) are based in St. Louis and spend in-person days with businesses across Madison County and St. Clair County, on the Illinois side of Greater St. Louis. They build back-office AI agents inside the systems you already run and keep them working. A person on your team approves every entry before it posts.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Where lumic works
-
-Where lumic works on site
 
 ## The Illinois side of Greater St. Louis.
 
@@ -3385,7 +3357,8 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -3401,8 +3374,6 @@ Sales and margin, receivables, purchasing, job costing and consolidated financia
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
-Proof
-
 ## Live and working.
 
 The same agents run in production every working day, with a person approving each entry. lumic’s FDEs build them on site across the Metro East.
@@ -3417,8 +3388,6 @@ The agent reads each bill from email, matches it to the purchase order, and ente
 Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
-
-On-site work
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
@@ -3459,7 +3428,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -3468,7 +3437,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Forward Deployed Engineers (FDEs) in St. Louis | lumic"
 description: "What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch."
 canonical: https://get-lumic.com/forward-deployed-engineers/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Forward Deployed Engineers (FDEs) in St. Louis | lumic
@@ -3483,15 +3452,11 @@ A forward-deployed engineer (FDE) works on site, builds inside your own systems,
 
 [Book a call](https://cal.com/lumic/20-minute-call) FDE or consultant
 
-In plain words
-
 ## What is a forward deployed engineer?
 
 A forward deployed engineer (FDE) is an engineer who works on site with a business, inside its own systems. An FDE builds the work there, then stays to run it after launch. lumic’s FDEs have finance backgrounds and build AI into one back-office job at a time.
 
 [FDEs for small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/)
-
-FDE or consultant
 
 ## A consultant advises. An FDE builds, and stays.
 
@@ -3520,8 +3485,6 @@ A consultant and an FDE, side by side.
 - Recommends a tool to buy → Builds inside your own systems
 - Hands over a plan → Hands over a working agent
 - Leaves after the project → Stays to run it after launch
-
-How lumic’s FDEs work
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
@@ -3584,7 +3547,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -3593,7 +3556,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Forward Deployed Engineers for small and mid-size businesses | lumic"
 description: "lumic's FDEs work on site, build custom AI, one process at a time inside the systems a business already runs, and stay to keep it working."
 canonical: https://get-lumic.com/forward-deployed-engineers/small-business/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Forward Deployed Engineers for small and mid-size businesses | lumic
@@ -3608,8 +3571,6 @@ A Forward Deployed Engineer (FDE) works on site with a business, builds inside i
 
 [Book a call](https://cal.com/lumic/20-minute-call) What an FDE does
 
-In plain words
-
 ## An FDE works on site, builds, and stays.
 
 ### Works on site.
@@ -3623,8 +3584,6 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 ### Stays.
 
 Once an agent is live, lumic runs it for a monthly fee. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves.
-
-Instead of a hire or a license
 
 ## Not another hire. Not a software license.
 
@@ -3686,14 +3645,13 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
-
-Proof
 
 ## Live and working.
 
@@ -3717,8 +3675,6 @@ Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
-Approval and access
-
 ## Gated by the people who know the work.
 
 ### Gated by the people who know the work.
@@ -3728,8 +3684,6 @@ An agent prepares the work. The people on your team who know it approve it befor
 ### It touches only its job.
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
-
-Questions
 
 ## FDEs for a smaller business, in plain answers.
 
@@ -3786,7 +3740,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -3795,7 +3749,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "FAQ: FDEs, AI agents and approvals | lumic"
 description: "What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job."
 canonical: https://get-lumic.com/faq/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # FAQ: FDEs, AI agents and approvals | lumic
@@ -3878,7 +3832,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -3887,7 +3841,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Systems lumic works with: any software you run | lumic"
 description: "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't."
 canonical: https://get-lumic.com/systems/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Systems lumic works with: any software you run | lumic
@@ -3901,8 +3855,6 @@ Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com
 lumic’s agents work inside the ERP, accounting, payroll, email and spreadsheet tools your team already uses. There is no new system to learn and nothing to migrate. A person approves before anything posts.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the systems
-
-Systems
 
 ## Systems lumic works with.
 
@@ -3970,13 +3922,9 @@ Agents that work in Sage Intacct: bills, cash receipts and close entries prepare
 
 [Sage Intacct](https://get-lumic.com/systems/sage-intacct/)
 
-Any software
-
 ## With an API, or without one.
 
 Most business software has an API, and lumic’s agents use it. Older desktop software, portals and in-house databases often don’t. There, the agent works through the same screens your team uses, on its own computer and login, and checks every step.
-
-Where the agent works
 
 ## Inside your systems, under its own login.
 
@@ -4020,7 +3968,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4029,7 +3977,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "QuickBooks AP automation with AI agents | lumic"
 description: "lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves."
 canonical: https://get-lumic.com/systems/quickbooks/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # QuickBooks AP automation with AI agents | lumic
@@ -4043,8 +3991,6 @@ Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com
 lumic works with QuickBooks Online and QuickBooks Desktop. An agent prepares bills, receipts and entries in QuickBooks, the same records a clerk would key, and a person approves before anything posts. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-Online and Desktop
 
 ## Both editions, one way of working.
 
@@ -4071,8 +4017,6 @@ Bills arrive by email, purchase orders may live in another system, and reports e
 - Email, spreadsheets, other systems
 - One job, end to end
 
-Vendor bills
-
 ## Vendor bills in QuickBooks Desktop
 
 The agent reads each vendor bill, matches it to the purchase order, and enters the bill in QuickBooks Desktop once a person approves it. When the purchase orders live in another system, it enters the bill there too, so nobody types it twice.
@@ -4088,8 +4032,6 @@ It matches the bill to the purchase order and flags a price difference before an
 ### A person approves, then it enters.
 
 After a person approves it, the agent enters the bill in QuickBooks Desktop, and in the other system that holds the purchase orders, when there is one.
-
-The jobs
 
 ## What an agent does in QuickBooks.
 
@@ -4114,8 +4056,6 @@ lumic gives each agent access to the screens and records its job needs, and noth
 ### The final post stays with you.
 
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
-
-Questions
 
 ## QuickBooks and AI agents, in plain answers.
 
@@ -4163,7 +4103,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4172,7 +4112,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "NetSuite automation with AI agents | lumic"
 description: "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/netsuite/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # NetSuite automation with AI agents | lumic
@@ -4186,8 +4126,6 @@ Source: https://get-lumic.com/systems/netsuite/ | Contact: hello@get-lumic.com
 lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, the same records your team keys today, and a person approves before anything posts. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-How it works
 
 ## Built around your NetSuite, not a template.
 
@@ -4213,8 +4151,6 @@ Bills arrive by email, remittances come from the bank, and someone keeps a sprea
 
 - Email, bank detail, spreadsheets
 - One job, end to end
-
-The jobs
 
 ## What an agent does in NetSuite.
 
@@ -4277,7 +4213,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4286,7 +4222,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Sage 100 automation and dashboards | lumic"
 description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
 canonical: https://get-lumic.com/systems/sage-100/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Sage 100 automation and dashboards | lumic
@@ -4300,8 +4236,6 @@ Source: https://get-lumic.com/systems/sage-100/ | Contact: hello@get-lumic.com
 lumic works with Sage 100. An agent prepares bills, receipts and entries in Sage 100, the same records a clerk would key, and a person approves before anything posts. Dashboards read the same data live. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-How it works
 
 ## Built around your Sage 100, not a template.
 
@@ -4327,8 +4261,6 @@ Sales, margin, receivables and purchasing read live from Sage 100, so nobody exp
 
 - Dashboards only read
 - Current the moment you open it
-
-The jobs
 
 ## What an agent does with Sage 100.
 
@@ -4395,7 +4327,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4404,7 +4336,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Sage 100 AP automation with an AI agent | lumic"
 description: "An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts."
 canonical: https://get-lumic.com/systems/sage-100/ap-automation/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Sage 100 AP automation with an AI agent | lumic
@@ -4419,8 +4351,6 @@ An agent reads each vendor bill, matches it to the purchase order, and prepares 
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the job
 
-The job, step by step
-
 ## From the inbox to an unposted batch. A person posts it.
 
 ### A bill arrives by email.
@@ -4434,8 +4364,6 @@ It matches the bill to the purchase order in Sage 100.
 ### It prepares the batch.
 
 It prepares the AP invoice and the PO receipt in an unposted Sage 100 batch, ready for a person to review.
-
-Flags
 
 ## Flags before anyone pays.
 
@@ -4458,8 +4386,6 @@ The bill charges for more or less than the purchase order. The agent flags it fo
 The vendor’s invoice number is already in Sage 100. The agent flags it, so the same bill is not paid twice.
 
 - Flagged before anyone pays
-
-Access
 
 ## Its own computer, its own login.
 
@@ -4484,8 +4410,6 @@ The agent prepares the batch and leaves it unposted. A person on your team revie
 ### Gated by the people who know the work.
 
 The agent leaves the batch unposted. Flagged bills wait for a person’s approval.
-
-Questions
 
 ## Sage 100 AP automation, in plain answers.
 
@@ -4515,7 +4439,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4524,7 +4448,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Sage Intacct automation with AI agents | lumic"
 description: "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/sage-intacct/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Sage Intacct automation with AI agents | lumic
@@ -4538,8 +4462,6 @@ Source: https://get-lumic.com/systems/sage-intacct/ | Contact: hello@get-lumic.c
 lumic works with Sage Intacct. An agent prepares bills, receipts and entries in Sage Intacct, the same records a clerk would key, and a person approves before anything posts. Dashboards read the same data live. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-How it works
 
 ## Built around your Sage Intacct, not a template.
 
@@ -4565,8 +4487,6 @@ Sales, margin, receivables and purchasing read live from Sage Intacct, so nobody
 
 - Dashboards only read
 - Current the moment you open it
-
-The jobs
 
 ## What an agent does with Sage Intacct.
 
@@ -4632,7 +4552,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4641,7 +4561,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Month-End Red Flags Service Firms Usually Miss | lumic"
 description: "Ten month-end mistakes in AP, billing, payroll and the close, on one page: a free checklist from lumic, with a PDF download."
 canonical: https://get-lumic.com/resources/month-end-red-flags/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Month-End Red Flags Service Firms Usually Miss | lumic
@@ -4718,7 +4638,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4727,7 +4647,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "How to implement AI in a small business | lumic"
 description: "A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working."
 canonical: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # How to implement AI in a small business | lumic
@@ -4741,8 +4661,6 @@ Source: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/
 Most small businesses do not need an AI strategy deck. They need one job done well by AI, inside the systems they already run, with a person approving what matters. This is the method lumic’s Forward Deployed Engineers use.
 
 [Book a call](https://cal.com/lumic/20-minute-call) The method
-
-The method
 
 ## Six steps, in order.
 
@@ -4772,8 +4690,6 @@ Systems change, document layouts change, and AI models improve. Someone has to w
 
 [See the method on one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
 
-With lumic
-
 ## Four steps, from a free call to managed AI.
 
 ### Free consultation.
@@ -4784,7 +4700,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -4805,14 +4721,6 @@ lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI
 Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
-
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
 
 ## Related
 
@@ -4837,7 +4745,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
 
 
 ---
@@ -4846,7 +4754,7 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI agents for accounting: what they do, how to start | lumic"
 description: "What an AI agent for accounting does: vendor bills, cash receipts, payroll entries and month-end, prepared in your systems for a person to approve."
 canonical: https://get-lumic.com/resources/ai-agent-for-accounting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agents for accounting: what they do, how to start | lumic
@@ -4860,8 +4768,6 @@ Source: https://get-lumic.com/resources/ai-agent-for-accounting/ | Contact: hell
 An AI agent for accounting does one job a clerk does today, such as entering vendor bills or preparing month-end entries, inside the accounting software or ERP you already run. It prepares the entry; a person approves it before anything posts.
 
 [Book a call](https://cal.com/lumic/20-minute-call) The jobs that fit
-
-The jobs that fit
 
 ## Repetitive, rule-bound, and checked by a person.
 
@@ -4896,8 +4802,6 @@ Prepare the recurring entries and run the tie-outs. Every entry waits unposted u
 Live dashboards read from the books, so nobody rebuilds the same report every morning. Dashboards only read.
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
-
-Controls
 
 ## Gated by the people who know the work.
 
@@ -4939,14 +4843,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
-
 ## Related
 
 - [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/)
@@ -4970,4 +4866,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

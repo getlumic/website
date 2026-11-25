@@ -79,60 +79,76 @@
     <div class="pgrid rv">
       <article class="pf" id="ap-invoice-agent"><span class="n">01</span><h3>AP invoice agent</h3>
         <p>Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.</p>
-        <ul><li>Runs in: accounting software and the system that holds the POs</li><li>Bills matched to the PO on their own; the rest go to a person</li><li>Kept running for a monthly fee</li></ul>
+        <p class="pf-meta">Runs in: accounting software and the system that holds the POs</p>
+        <ul><li>Bills matched to the PO on their own; the rest go to a person</li><li>Kept running for a monthly fee</li></ul>
         <a class="founder-link" href="/services/ap-automation/">AP automation <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></article>
       <article class="pf"><span class="n">02</span><h3>A finance team run on agents</h3>
         <p>Across a multi-company finance team, agent roles do the daily work: AP and cash receipts entered into the ERP, payroll and month-end entries, purchase orders, and collections. A person approves each entry.</p>
         <ul><li>One agent role per job</li><li>Live dashboards, every day</li></ul></article>
       <article class="pf"><span class="n">03</span><h3>Collections agent</h3>
         <p>From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.</p>
-        <ul><li>Runs in: ERP and inbox</li><li>Drafts from live aging</li><li>A person sends every one</li></ul></article>
+        <p class="pf-meta">Runs in: the ERP and the inbox</p>
+        <ul><li>Drafts from live aging</li><li>A person sends every one</li></ul></article>
     </div>
     <h2 class="rv" id="runs" style="margin-top:72px">More in production.</h2>
     <div class="pgrid rv">
       <article class="pf"><span class="n">04</span><h3>Payroll preparation</h3>
         <p>The agent prepares the payroll entries, and the controller approves them.</p>
-        <ul><li>Runs in: payroll and accounting software</li><li>The controller approves every run</li></ul></article>
+        <p class="pf-meta">Runs in: payroll and accounting software</p>
+        <ul><li>The controller approves every run</li></ul></article>
       <article class="pf"><span class="n">05</span><h3>Month-end close entries</h3>
         <p>An agent prepares the month-end entries, and the controller approves them before anything posts.</p>
-        <ul><li>Runs in: ERP</li><li>Approved before posting, every month</li></ul></article>
+        <p class="pf-meta">Runs in: the ERP</p>
+        <ul><li>Approved before posting, every month</li></ul></article>
       <article class="pf"><span class="n">06</span><h3>Cash receipts</h3>
         <p>Remittances and ACH detail, read and keyed into the ERP.</p>
-        <ul><li>Runs in: ERP and bank</li><li>A person approves each entry</li></ul></article>
+        <p class="pf-meta">Runs in: the ERP and the bank</p>
+        <ul><li>A person approves each entry</li></ul></article>
       <article class="pf"><span class="n">07</span><h3>Sales and margin</h3>
         <p>Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.</p>
-        <ul><li>Reads from: ERP</li><li>Replaces a daily export</li><li>Multi-company, one view</li></ul></article>
+        <p class="pf-meta">Reads from: the ERP</p>
+        <ul><li>Replaces a daily export</li><li>Multi-company, one view</li></ul></article>
       <article class="pf"><span class="n">08</span><h3>Receivables and aging</h3>
         <p>Live aging by customer, the same view that feeds the collections agent.</p>
-        <ul><li>Reads from: ERP</li><li>Live</li></ul></article>
+        <p class="pf-meta">Reads from: the ERP</p>
+        <ul><li>Live</li></ul></article>
       <article class="pf"><span class="n">09</span><h3>Consolidated financials</h3>
         <p>A live income statement and product-margin view, consolidated across companies, that shows the month-end result.</p>
-        <ul><li>Reads from: ERP</li><li>Multi-company GL consolidation</li><li>An income statement that&rsquo;s never stale</li></ul></article>
+        <p class="pf-meta">Reads from: the ERP</p>
+        <ul><li>Multi-company GL consolidation</li><li>An income statement that&rsquo;s never stale</li></ul></article>
       <article class="pf"><span class="n">10</span><h3>Purchasing and PO write-back</h3>
         <p>The agent drafts purchase orders and writes them back to the ERP.</p>
-        <ul><li>Runs in: ERP</li><li>Approval-gated</li></ul></article>
+        <p class="pf-meta">Runs in: the ERP</p>
+        <ul><li>Approval-gated</li></ul></article>
       <article class="pf"><span class="n">11</span><h3>Bank reconciliation</h3>
         <p>The agent matches the bank to the book.</p>
-        <ul><li>Runs in: ERP and bank feed</li><li>Approval-gated</li></ul></article>
+        <p class="pf-meta">Runs in: the ERP and the bank feed</p>
+        <ul><li>Approval-gated</li></ul></article>
       <article class="pf"><span class="n">12</span><h3>AP workbench</h3>
         <p>Every open bill, its PO match and its approval state.</p>
-        <ul><li>Reads from: accounting software</li><li>Live</li></ul>
+        <p class="pf-meta">Reads from: accounting software</p>
+        <ul><li>Live</li></ul>
         <a class="founder-link" href="/services/ap-automation/">AP automation <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></article>
       <article class="pf"><span class="n">13</span><h3>Job costing and production rates</h3>
         <p>Production rates feed real per-job cost and margin: estimate against actual <em>during</em> the job, not at close. Costs the agents enter show up the same day.</p>
-        <ul><li>Reads from: production data and ERP</li><li>Estimate vs. actual per job</li><li>Overruns surfaced early</li></ul></article>
+        <p class="pf-meta">Reads from: production data and the ERP</p>
+        <ul><li>Estimate vs. actual per job</li><li>Overruns surfaced early</li></ul></article>
       <article class="pf"><span class="n">14</span><h3>Purchasing</h3>
         <p>Open POs, receipts and vendor price changes.</p>
-        <ul><li>Reads from: ERP</li><li>Live</li></ul></article>
+        <p class="pf-meta">Reads from: the ERP</p>
+        <ul><li>Live</li></ul></article>
       <article class="pf"><span class="n">15</span><h3>Commissions</h3>
         <p>Rep commissions from live sales.</p>
-        <ul><li>Reads from: ERP</li><li>Live</li></ul></article>
+        <p class="pf-meta">Reads from: the ERP</p>
+        <ul><li>Live</li></ul></article>
       <article class="pf"><span class="n">16</span><h3>PTO tracking</h3>
         <p>Balances and requests.</p>
-        <ul><li>Reads from: HR data</li><li>Live</li></ul></article>
+        <p class="pf-meta">Reads from: HR data</p>
+        <ul><li>Live</li></ul></article>
       <article class="pf"><span class="n">17</span><h3>Ask your data (AI)</h3>
         <p>Plain-English questions over the same live data. It drafts entries for a person to approve.</p>
-        <ul><li>AI assistant, on the same live data</li><li>A person approves each entry</li></ul></article>
+        <p class="pf-meta">Reads from: the same live data</p>
+        <ul><li>A person approves each entry</li></ul></article>
     </div>
   </div>
 </section>
@@ -164,7 +180,7 @@
           <p>Every engagement is led by <b>a senior FDE</b>, on site.</p>
         </div>
         <div>
-          <div class="kicker">How to start</div>
+          <p class="cc-k">How to start</p>
           <ol class="nx">
             <li><span class="n">1</span><div><b>A 20&#8209;minute call.</b><span>You walk the team through the work your people do by hand.</span></div></li>
             <li><span class="n">2</span><div><b>An on-site day.</b><span>lumic&rsquo;s FDEs work beside your team where the work happens. They come on site across Greater St.&nbsp;Louis and travel for the right fit.</span></div></li>
@@ -217,7 +233,7 @@
         </ul>
       </nav>
     </div>
-    <p class="f-bot">© 2026 lumic · <a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a> · <a href="/privacy/">Privacy</a></p>
+    <p class="f-bot"><span>© 2026 lumic</span><a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a><a href="/privacy/">Privacy</a></p>
   </div>
 </footer>
 

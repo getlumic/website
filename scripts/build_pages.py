@@ -78,10 +78,10 @@ PRICING_BLOCK = f"""<article class="keep rv" id="pricing">
 _STEP_LINK = 'style="margin-top:14px"'
 FOUR_STEPS = f"""<ol class="steps s4 rv">
       <li class="track" aria-hidden="true"><i></i></li>
-      <li class="step"><span class="n" aria-hidden="true">01</span><h3>Free consultation.</h3><p>A 20&#8209;minute call. You walk the team through the work your people do by hand.</p><a class="founder-link" {_STEP_LINK} href="{CAL}" target="_blank" rel="noopener">Book a call →</a></li>
-      <li class="step"><span class="n" aria-hidden="true">02</span><h3>On-site day and written proposal.</h3><p>lumic&rsquo;s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.</p><p style="margin-top:10px"><strong>{PRICE_ONSITE}</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-consulting/">AI consulting →</a></li>
-      <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step. Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.</p><p style="margin-top:10px"><strong>Priced in the written proposal.</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
-      <li class="step"><span class="n" aria-hidden="true">04</span><h3>Managed AI.</h3><p>lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves what matters.</p><p style="margin-top:10px"><strong>{PRICE_AGENTS}</strong></p><a class="founder-link" {_STEP_LINK} href="/managed-ai/">Managed AI →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">01</span><h3>Free consultation.</h3><p>A 20&#8209;minute call.<span class="ph-x"> You walk the team through the work your people do by hand.</span></p><a class="founder-link" {_STEP_LINK} href="{CAL}" target="_blank" rel="noopener">Book a call →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">02</span><h3>On-site day and written proposal.</h3><p>lumic&rsquo;s FDEs work beside your team where the work happens and write a proposal.<span class="ph-x"> They map where AI fits; the proposal says what to build, the timeline, and the cost.</span></p><p style="margin-top:10px"><strong>{PRICE_ONSITE}</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-consulting/">AI consulting →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">03</span><h3>Build.</h3><p>The team builds the agents, automations and dashboards inside your systems and sets up the approval step.<span class="ph-x"> Your team tests them on real work before they go live. lumic runs the job for you on a dedicated computer, or packages it for the AI assistant your team already uses.</span></p><p style="margin-top:10px"><strong>Priced in the written proposal.</strong></p><a class="founder-link" {_STEP_LINK} href="/ai-implementation/">AI implementation →</a></li>
+      <li class="step"><span class="n" aria-hidden="true">04</span><h3>Managed AI.</h3><p>lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves.<span class="ph-x"> A person on your team approves what matters.</span></p><p style="margin-top:10px"><strong>{PRICE_AGENTS}</strong></p><a class="founder-link" {_STEP_LINK} href="/managed-ai/">Managed AI →</a></li>
     </ol>"""
 # The pricing block as its own section (home, and the service / industry / system pages before the checklist).
 PRICING_SECTION = f"""<!-- ============ PRICING ============ -->
@@ -99,7 +99,6 @@ def checklist(path):
 <section id="checklist" aria-labelledby="checklist-h">
   <div class="wrap">
     <div class="runs rv" data-checklist>
-      <p class="runs-l">Free checklist</p>
       <h2 id="checklist-h">Month-End Red Flags Service Firms Usually Miss</h2>
       <p class="lead">Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.</p>
       <form class="ck-form cta" method="post" action="/api/checklist" novalidate style="margin-top:20px;flex-wrap:wrap">
@@ -183,7 +182,7 @@ def footer(home=False):
             f'        <a class="brand" href="{"#top" if home else "/"}" aria-label="lumic home">{BRAND}</a>\n'
             f'        <p>AI, deployed into your business and kept working.</p>\n      </div>\n'
             f'      <nav aria-label="Footer">\n        <ul class="f-links">\n' + "\n".join(items) + '\n        </ul>\n      </nav>\n    </div>\n'
-            f'    <p class="f-bot">© 2026 lumic · <a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a> · <a href="/privacy/">Privacy</a></p>\n'
+            f'    <p class="f-bot"><span>© 2026 lumic</span><a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a><a href="/privacy/">Privacy</a></p>\n'
             f'  </div>\n</footer>')
 
 
@@ -207,7 +206,7 @@ CONTACT = f"""<!-- ============ CONTACT ============ -->
           <p>Every engagement is led by <b>a senior FDE</b>, on site.</p>
         </div>
         <div>
-          <div class="kicker">How to start</div>
+          <p class="cc-k">How to start</p>
           <ol class="nx">
             <li><span class="n">1</span><div><b>A 20&#8209;minute call.</b><span>You walk the team through the work your people do by hand.</span></div></li>
             <li><span class="n">2</span><div><b>An on-site day.</b><span>lumic&rsquo;s FDEs work beside your team where the work happens. They come on site across Greater St.&nbsp;Louis and travel for the right fit.</span></div></li>

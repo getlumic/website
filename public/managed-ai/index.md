@@ -2,7 +2,7 @@
 title: "Managed AI on retainer: monitored and supported | lumic"
 description: "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/managed-ai/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Managed AI on retainer: monitored and supported | lumic
@@ -17,15 +17,13 @@ Once an agent is live, lumic watches it, tests it every month, fixes what breaks
 
 [Book a call](https://cal.com/lumic/20-minute-call) What the retainer covers
 
-What the retainer covers
-
 ## A team that stays on, every month.
 
 Each agent does one role, such as AP clerk, payroll, or month-end entries, on its own dedicated computer. Once it is live, lumic runs it for a monthly fee.
 
 ### Watched, tested, fixed and upgraded.
 
-Every agent is watched around the clock, tested monthly, fixed when it breaks and upgraded as AI improves; the ledger shows what is included. When your team is ready, the same team builds the agent for another job.
+Every agent is watched around the clock, tested monthly, fixed when it breaks and upgraded as AI improves. When your team is ready, the same team builds the agent for another job.
 
 Every month, a summary of what the agent did. A person on your team approves anything before it posts.
 
@@ -96,8 +94,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - Managed AI Monthly, by scope
 - The build One-time, in the proposal
 
-Questions
-
 ## Managed AI, in plain answers.
 
 ### What is a managed AI agent?
@@ -135,4 +131,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

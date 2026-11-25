@@ -2,7 +2,7 @@
 title: "Sage 100 automation and dashboards | lumic"
 description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
 canonical: https://get-lumic.com/systems/sage-100/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Sage 100 automation and dashboards | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/systems/sage-100/ | Contact: hello@get-lumic.com
 lumic works with Sage 100. An agent prepares bills, receipts and entries in Sage 100, the same records a clerk would key, and a person approves before anything posts. Dashboards read the same data live. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-How it works
 
 ## Built around your Sage 100, not a template.
 
@@ -43,8 +41,6 @@ Sales, margin, receivables and purchasing read live from Sage 100, so nobody exp
 
 - Dashboards only read
 - Current the moment you open it
-
-The jobs
 
 ## What an agent does with Sage 100.
 
@@ -111,4 +107,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

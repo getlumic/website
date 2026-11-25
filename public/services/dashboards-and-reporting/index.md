@@ -2,7 +2,7 @@
 title: "Live ERP dashboards and reporting | lumic"
 description: "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them."
 canonical: https://get-lumic.com/services/dashboards-and-reporting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Live ERP dashboards and reporting | lumic
@@ -27,7 +27,8 @@ lumic’s dashboards run every day in production, on the same live data the agen
 
 Sales and gross margin by customer, product and rep, read straight from the ERP, including every entry the agents made. It replaces the report someone exported every morning.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Replaces a daily export
 - Multi-company, one view
 
@@ -35,7 +36,8 @@ Sales and gross margin by customer, product and rep, read straight from the ERP,
 
 Live aging by customer, the same view that feeds the collections agent.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
@@ -44,7 +46,8 @@ Live aging by customer, the same view that feeds the collections agent.
 
 A live income statement and product-margin view, consolidated across companies, that shows the month-end result.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Multi-company GL consolidation
 - An income statement that's never stale
 
@@ -52,7 +55,8 @@ A live income statement and product-margin view, consolidated across companies, 
 
 Production rates feed real per-job cost and margin: estimate against actual during the job, not at close. Costs the agents enter show up the same day.
 
-- Reads from: production data and ERP
+Reads from: production data and the ERP
+
 - Estimate vs. actual per job
 - Overruns surfaced early
 
@@ -60,14 +64,16 @@ Production rates feed real per-job cost and margin: estimate against actual duri
 
 Open POs, receipts and vendor price changes.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### AP workbench
 
 Every open bill, its PO match and its approval state.
 
-- Reads from: accounting software
+Reads from: accounting software
+
 - Live
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -76,26 +82,27 @@ Every open bill, its PO match and its approval state.
 
 Rep commissions from live sales.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 ### PTO tracking
 
 Balances and requests.
 
-- Reads from: HR data
+Reads from: HR data
+
 - Live
 
 ### Ask your data (AI)
 
 Plain-English questions over the same live data. It drafts entries for a person to approve.
 
-- AI assistant, on the same live data
+Reads from: the same live data
+
 - A person approves each entry
 
 Clients are kept private; everything shown runs in production.
-
-See them running
 
 ## Watch each dashboard on its own.
 
@@ -108,8 +115,6 @@ Short films of the dashboards lumic builds, with narration. Every figure is samp
 - [Ask your data (AI)](https://get-lumic.com/video/demos/lumic-keynote-connector.mp4)
 
 Each film opens on its own. Every figure is sample data.
-
-Read only
 
 ## Dashboards only read. Agents do the work.
 
@@ -171,4 +176,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

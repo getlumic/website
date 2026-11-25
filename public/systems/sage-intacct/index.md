@@ -2,7 +2,7 @@
 title: "Sage Intacct automation with AI agents | lumic"
 description: "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/sage-intacct/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Sage Intacct automation with AI agents | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/systems/sage-intacct/ | Contact: hello@get-lumic.c
 lumic works with Sage Intacct. An agent prepares bills, receipts and entries in Sage Intacct, the same records a clerk would key, and a person approves before anything posts. Dashboards read the same data live. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-How it works
 
 ## Built around your Sage Intacct, not a template.
 
@@ -43,8 +41,6 @@ Sales, margin, receivables and purchasing read live from Sage Intacct, so nobody
 
 - Dashboards only read
 - Current the moment you open it
-
-The jobs
 
 ## What an agent does with Sage Intacct.
 
@@ -110,4 +106,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

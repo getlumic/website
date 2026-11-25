@@ -2,7 +2,7 @@
 title: "Guardrails: approval, audit log, access and upkeep | lumic"
 description: "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent."
 canonical: https://get-lumic.com/guardrails/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Guardrails: approval, audit log, access and upkeep | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/guardrails/ | Contact: hello@get-lumic.com
 The practices lumic follows on every agent, in one place. A person approves every entry before it posts, every action is logged, and each agent can reach only what its job needs.
 
 [Book a call](https://cal.com/lumic/20-minute-call) The practices
-
-The practices
 
 ## Approval, logging, access and upkeep.
 
@@ -39,7 +37,7 @@ Any agent can be paused, or its access revoked, at any time.
 
 ### Entries are added to the log, not edited.
 
-Nothing in the log is changed after the fact, so a reviewer sees each action as it happened. More in [AI implementation](https://get-lumic.com/ai-implementation/).
+Every action is logged as it happens: what the agent did, and who approved it. More in [AI implementation](https://get-lumic.com/ai-implementation/).
 
 ### A failed release rolls back by itself.
 
@@ -88,4 +86,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

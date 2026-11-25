@@ -76,7 +76,7 @@ Systems lumic works with: QuickBooks Online, QuickBooks Desktop, NetSuite, Sage 
 Client names stay private.
 
 ## Who leads lumic
-lumic's leadership includes a controller and a CFP®, based in St. Louis. They run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+lumic's leadership includes a controller and a CFP®, based in St. Louis. They have done these back-office jobs by hand, so they know which ones are worth automating. Senior people lead every engagement, on site, from scoping to support.
 
 - Christian Gonzenbach, co-founder. Controller. Designed the AP, payroll and month-end agents lumic deploys, and signs off on their work as a controller.
 - Joshua Wittenauer, CFP®, co-founder. Corporate-finance trained, with Power BI and SQL by trade. Leads lumic's AI-agent work and how each agent handles your data.

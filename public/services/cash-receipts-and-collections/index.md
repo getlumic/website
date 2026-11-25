@@ -2,7 +2,7 @@
 title: "Cash application and collections automation | lumic"
 description: "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Cash application and collections automation | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact:
 An agent reads remittances and ACH detail and keys them into the ERP. Another drafts the collections email and the statement for each past-due customer, from live aging. A person approves each receipt and sends every email. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See how it works
-
-The job, step by step
 
 ## Cash application, from remittance to statement. A person signs off.
 
@@ -43,14 +41,16 @@ These agents and the aging view behind them run every day in production. Clients
 
 Remittances and ACH detail, read and keyed into the ERP.
 
-- Runs in: ERP and bank
+Runs in: the ERP and the bank
+
 - A person approves each entry
 
 ### Collections agent
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - Drafts from live aging
 - A person sends every one
 
@@ -58,7 +58,8 @@ From live aging, the agent drafts the collections email and the statement for ea
 
 Live aging by customer, the same view that feeds the collections agent.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - Live
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
@@ -66,8 +67,6 @@ Live aging by customer, the same view that feeds the collections agent.
 Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -129,4 +128,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

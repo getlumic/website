@@ -2,7 +2,7 @@
 title: "Custom AI for manufacturers: shop floor to books | lumic"
 description: "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI for manufacturers: shop floor to books | lumic
@@ -25,7 +25,8 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
-- Runs in: accounting software
+Runs in: accounting software
+
 - A person approves each entry
 
 [AP automation](https://get-lumic.com/services/ap-automation/)
@@ -34,7 +35,8 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 
 Production data and costs read live, so estimate against actual shows up during the job, not at close.
 
-- Reads from: production data and ERP
+Reads from: production data and the ERP
+
 - Overruns surfaced early
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
@@ -43,14 +45,16 @@ Production data and costs read live, so estimate against actual shows up during 
 
 The agent drafts purchase orders and writes them back to the ERP, and a dashboard tracks open POs, receipts and vendor price changes.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approval-gated
 
 ### Payroll entries
 
 The agent builds the payroll journal entry from the payroll reports, checks every line, and the controller posts it.
 
-- Runs in: payroll reports and accounting
+Runs in: payroll and accounting software
+
 - Posted only on the controller’s click
 
 [Payroll](https://get-lumic.com/services/payroll/)
@@ -59,7 +63,8 @@ The agent builds the payroll journal entry from the payroll reports, checks ever
 
 The agent prepares the recurring month-end entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - The controller posts each entry
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -68,12 +73,11 @@ The agent prepares the recurring month-end entries and runs the tie-outs. Every 
 
 Sales and gross margin by customer, product and rep, read live, with the costs the agents enter showing up the same day.
 
-- Reads from: ERP
+Reads from: the ERP
+
 - No more morning export
 
 [See examples in production: Portfolio](https://get-lumic.com/portfolio/)
-
-Approval and access
 
 ## Gated by the people who know the work.
 
@@ -137,4 +141,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

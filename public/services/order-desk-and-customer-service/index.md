@@ -2,7 +2,7 @@
 title: "AI agent for the order desk and customer service | lumic"
 description: "An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one."
 canonical: https://get-lumic.com/services/order-desk-and-customer-service/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agent for the order desk and customer service | lumic
@@ -55,15 +55,11 @@ lumic gives each agent access to the screens and records its job needs, and noth
 
 Questions about stock often arrive in a shared inbox, and someone answers each one by hand. The agent reads each request, checks that it carries the details your team requires, and drafts the reply from the records your team points it to. A person checks the reply and sends it.
 
-Where it runs
-
 ## Run by lumic, or installed on your own AI.
 
 It is the same job either way. lumic runs it on a dedicated computer and keeps it working for a monthly fee. Or lumic packages it for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps. That option is a setup fee, then a monthly fee, quoted per job. Gated by the people who know the work.
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
-
-Questions
 
 ## The order desk agent, in plain answers.
 
@@ -116,4 +112,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

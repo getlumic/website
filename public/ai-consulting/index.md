@@ -2,7 +2,7 @@
 title: "AI consulting for small businesses, on site | lumic"
 description: "lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one."
 canonical: https://get-lumic.com/ai-consulting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI consulting for small businesses, on site | lumic
@@ -17,8 +17,6 @@ lumic’s Forward Deployed Engineers spend a day on site, map where AI fits your
 
 [Book a call](https://cal.com/lumic/20-minute-call) The on-site day
 
-A consultant or an FDE
-
 ## Advice is the start, not the deliverable.
 
 A consultant advises and leaves. lumic’s FDEs build the agent inside your own systems and stay to run it after launch, for a monthly fee.
@@ -29,8 +27,6 @@ A consultant advises and leaves. lumic’s FDEs build the agent inside your own 
 - Build-and-ghost consultants → A team that stays on
 
 [Forward-deployed engineers: an FDE or a consultant](https://get-lumic.com/forward-deployed-engineers/)
-
-The on-site day
 
 ## A day beside your team. A written proposal.
 
@@ -45,8 +41,6 @@ The team sorts the jobs by hours and risk, and picks where an agent, an automati
 ### A written proposal.
 
 What lumic would build, the timeline, and the cost. On-site work $1,500/day, credited toward phase one.
-
-What the day answers
 
 ## The questions an owner actually has.
 
@@ -66,16 +60,12 @@ Where the approval step goes, and who on your team checks each entry before anyt
 
 The build, the timeline, and the monthly fee to keep it working, in writing.
 
-On site in St. Louis
-
 ## Based in St. Louis. On site in person.
 
 lumic’s FDEs come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit.
 
 - [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
 - [After the proposal: AI implementation](https://get-lumic.com/ai-implementation/)
-
-Questions
 
 ## AI consulting, in plain answers.
 
@@ -107,4 +97,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

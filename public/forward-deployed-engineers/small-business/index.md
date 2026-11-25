@@ -2,7 +2,7 @@
 title: "Forward Deployed Engineers for small and mid-size businesses | lumic"
 description: "lumic's FDEs work on site, build custom AI, one process at a time inside the systems a business already runs, and stay to keep it working."
 canonical: https://get-lumic.com/forward-deployed-engineers/small-business/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Forward Deployed Engineers for small and mid-size businesses | lumic
@@ -17,8 +17,6 @@ A Forward Deployed Engineer (FDE) works on site with a business, builds inside i
 
 [Book a call](https://cal.com/lumic/20-minute-call) What an FDE does
 
-In plain words
-
 ## An FDE works on site, builds, and stays.
 
 ### Works on site.
@@ -32,8 +30,6 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 ### Stays.
 
 Once an agent is live, lumic runs it for a monthly fee. The team watches it, tests it every month, fixes what breaks, and upgrades it as AI improves.
-
-Instead of a hire or a license
 
 ## Not another hire. Not a software license.
 
@@ -95,14 +91,13 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
-
-Proof
 
 ## Live and working.
 
@@ -126,8 +121,6 @@ Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
 
-Approval and access
-
 ## Gated by the people who know the work.
 
 ### Gated by the people who know the work.
@@ -137,8 +130,6 @@ An agent prepares the work. The people on your team who know it approve it befor
 ### It touches only its job.
 
 lumic gives each agent access to the screens and records its job needs, and nothing more. Every action it takes is logged.
-
-Questions
 
 ## FDEs for a smaller business, in plain answers.
 
@@ -195,4 +186,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

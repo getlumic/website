@@ -2,7 +2,7 @@
 title: "Payroll journal entry automation | lumic"
 description: "An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click."
 canonical: https://get-lumic.com/services/payroll/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Payroll journal entry automation | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/services/payroll/ | Contact: hello@get-lumic.com
 After each payroll run, an agent builds the journal entry from the reports your payroll provider sends, with the month-end accrual and its reversal when a pay period crosses the month. It checks every line, and the controller reviews it and posts it. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) How it works
-
-How it works
 
 ## From the payroll reports to a posted entry. The controller signs off.
 
@@ -121,4 +119,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

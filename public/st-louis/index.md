@@ -2,7 +2,7 @@
 title: "St. Louis AI company: custom AI implementation | lumic"
 description: "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # St. Louis AI company: custom AI implementation | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
 lumic’s Forward Deployed Engineers have finance backgrounds and are based in St. Louis. They work beside your team at your place of business, from vendor bills to month-end, build AI into one job at a time, and keep it working. St. Louis first; the team travels for the right fit.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Area served
-
-Area served
 
 ## Greater St. Louis, Missouri and Illinois.
 
@@ -50,7 +48,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -71,8 +69,6 @@ lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI
 Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
-
-Questions
 
 ## Local, and live in production.
 
@@ -111,4 +107,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

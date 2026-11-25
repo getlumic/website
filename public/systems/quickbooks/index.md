@@ -2,7 +2,7 @@
 title: "QuickBooks AP automation with AI agents | lumic"
 description: "lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves."
 canonical: https://get-lumic.com/systems/quickbooks/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # QuickBooks AP automation with AI agents | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com
 lumic works with QuickBooks Online and QuickBooks Desktop. An agent prepares bills, receipts and entries in QuickBooks, the same records a clerk would key, and a person approves before anything posts. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the jobs
-
-Online and Desktop
 
 ## Both editions, one way of working.
 
@@ -44,8 +42,6 @@ Bills arrive by email, purchase orders may live in another system, and reports e
 - Email, spreadsheets, other systems
 - One job, end to end
 
-Vendor bills
-
 ## Vendor bills in QuickBooks Desktop
 
 The agent reads each vendor bill, matches it to the purchase order, and enters the bill in QuickBooks Desktop once a person approves it. When the purchase orders live in another system, it enters the bill there too, so nobody types it twice.
@@ -61,8 +57,6 @@ It matches the bill to the purchase order and flags a price difference before an
 ### A person approves, then it enters.
 
 After a person approves it, the agent enters the bill in QuickBooks Desktop, and in the other system that holds the purchase orders, when there is one.
-
-The jobs
 
 ## What an agent does in QuickBooks.
 
@@ -87,8 +81,6 @@ lumic gives each agent access to the screens and records its job needs, and noth
 ### The final post stays with you.
 
 The agent prepares each entry. A person on your team checks it and approves it, and the final post stays in your hands.
-
-Questions
 
 ## QuickBooks and AI agents, in plain answers.
 
@@ -136,4 +128,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

@@ -2,7 +2,7 @@
 title: "lumic | Custom AI implementation, St. Louis FDEs"
 description: "lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs."
 canonical: https://get-lumic.com/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # lumic | Custom AI implementation, St. Louis FDEs
@@ -20,8 +20,6 @@ lumic’s Forward Deployed Engineers build custom AI for any process in any syst
 [Book a call](https://cal.com/lumic/20-minute-call) See it running
 
 Why lumic. Turn sound on for the narration.
-
-See it running
 
 ## One agent, one job. Done every day.
 
@@ -73,7 +71,8 @@ Eighteen live dashboards and the agents behind them run every day in production,
 
 Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- Runs in: accounting software and the system that holds the POs
+Runs in: accounting software and the system that holds the POs
+
 - Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
@@ -90,7 +89,8 @@ Across a multi-company finance team, agent roles do the daily work: AP and cash 
 
 From live aging, the agent drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it. A morning of work in the ERP and the inbox, now ready when the day starts.
 
-- Runs in: ERP and inbox
+Runs in: the ERP and the inbox
+
 - Drafts from live aging
 - A person sends every one
 
@@ -141,7 +141,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -231,11 +231,9 @@ Leadership
 
 ### Finance first. Engineers second.
 
-lumic’s leadership includes a controller and a CFP®, based in St. Louis. They run real books on the agents lumic deploys. Senior people lead every engagement, on site, from scoping to support.
+lumic’s leadership includes a controller and a CFP®, based in St. Louis. They have done these back-office jobs by hand, so they know which ones are worth automating. Senior people lead every engagement, on site, from scoping to support.
 
 [Meet the leadership](https://get-lumic.com/how-lumic-works/#leadership)
-
-Free checklist
 
 ## Month-End Red Flags Service Firms Usually Miss
 
@@ -275,4 +273,4 @@ All questions: https://get-lumic.com/faq/
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

@@ -2,7 +2,7 @@
 title: "AI agents for accounting: what they do, how to start | lumic"
 description: "What an AI agent for accounting does: vendor bills, cash receipts, payroll entries and month-end, prepared in your systems for a person to approve."
 canonical: https://get-lumic.com/resources/ai-agent-for-accounting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agents for accounting: what they do, how to start | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/resources/ai-agent-for-accounting/ | Contact: hell
 An AI agent for accounting does one job a clerk does today, such as entering vendor bills or preparing month-end entries, inside the accounting software or ERP you already run. It prepares the entry; a person approves it before anything posts.
 
 [Book a call](https://cal.com/lumic/20-minute-call) The jobs that fit
-
-The jobs that fit
 
 ## Repetitive, rule-bound, and checked by a person.
 
@@ -52,8 +50,6 @@ Prepare the recurring entries and run the tie-outs. Every entry waits unposted u
 Live dashboards read from the books, so nobody rebuilds the same report every morning. Dashboards only read.
 
 [Dashboards and reporting](https://get-lumic.com/services/dashboards-and-reporting/)
-
-Controls
 
 ## Gated by the people who know the work.
 
@@ -95,14 +91,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
-
 ## Related
 
 - [How to implement AI in a small business](https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/)
@@ -126,4 +114,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

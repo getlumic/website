@@ -2,7 +2,7 @@
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
 description: "Custom AI dashboards, agents and automations, built on site and kept working. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/services/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic
@@ -90,6 +90,8 @@ Pick the job that takes the most hours. Each agent does one back-office job end 
 
 The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
+Runs in: the inbox and accounting software
+
 - Vendor bills and PO matching
 - A person approves each entry
 
@@ -98,6 +100,8 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 ### Cash receipts and collections
 
 Remittances and ACH detail, read and keyed into the ERP. Collections emails and statements drafted from live aging, ready when the day starts.
+
+Runs in: the ERP and the bank
 
 - Cash receipts keyed for approval
 - A person sends every collections email
@@ -108,7 +112,8 @@ Remittances and ACH detail, read and keyed into the ERP. Collections emails and 
 
 The agent prepares the payroll entries, and the controller approves them.
 
-- Runs in: payroll and accounting software
+Runs in: payroll and accounting software
+
 - The controller approves every run
 
 [Payroll](https://get-lumic.com/services/payroll/)
@@ -117,7 +122,8 @@ The agent prepares the payroll entries, and the controller approves them.
 
 An agent prepares the month-end entries, and the controller approves them before anything posts.
 
-- Runs in: the ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -161,14 +167,6 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - The build One-time, in the proposal
 - Running and support Monthly
 
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
-
 ## Related
 
 - [AI implementation](https://get-lumic.com/ai-implementation/)
@@ -192,4 +190,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

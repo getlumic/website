@@ -2,7 +2,7 @@
 title: "St. Louis AI consulting and automation | lumic"
 description: "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # St. Louis AI consulting and automation | lumic
@@ -54,7 +54,8 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -79,8 +80,6 @@ The agent reads each purchase order and customer email, drafts the sales order a
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
-How an engagement runs
-
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### On-site diagnostic.
@@ -96,8 +95,6 @@ The team builds an agent for one job, connects it to your systems, and sets up t
 lumic watches it, tests it, fixes it, and upgrades it, for a monthly fee. You run the business.
 
 The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/). Starting prices: [Pricing](https://get-lumic.com/pricing/). On site across the region: [St. Louis](https://get-lumic.com/st-louis/). What an FDE is: [Forward-deployed engineers](https://get-lumic.com/forward-deployed-engineers/).
-
-Questions
 
 ## AI consulting in St. Louis, in plain answers.
 
@@ -141,4 +138,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

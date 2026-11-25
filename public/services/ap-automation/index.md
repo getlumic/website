@@ -2,7 +2,7 @@
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
 description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
 canonical: https://get-lumic.com/services/ap-automation/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
@@ -18,8 +18,6 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 [Book a call](https://cal.com/lumic/20-minute-call) See the proof
 
 See it running. Every figure is sample data. Turn sound on for the narration.
-
-The job, step by step
 
 ## One agent, one job. Done every day.
 
@@ -45,7 +43,8 @@ An AP agent reads each vendor bill from email, matches it to the purchase order 
 
 Every vendor bill used to be typed in twice, into two systems. The agent reads each bill from email, matches it to the purchase order, and enters it in both systems once the clerk approves.
 
-- Runs in: accounting software and the system that holds the POs
+Runs in: accounting software and the system that holds the POs
+
 - Bills matched to the PO on their own; the rest go to a person
 - Kept running for a monthly fee
 
@@ -53,14 +52,16 @@ Every vendor bill used to be typed in twice, into two systems. The agent reads e
 
 Every open bill, its PO match and its approval state.
 
-- Dashboard, on the accounting software
+Reads from: accounting software
+
 - Live
 
 ### Purchasing and PO write-back
 
 The agent drafts purchase orders and writes them back to the ERP.
 
-- Runs in: the ERP
+Runs in: the ERP
+
 - Approval-gated
 
 Clients are kept private; everything shown runs in production.
@@ -91,15 +92,11 @@ lumic builds it, and keeps it working.
 - Typing every bill into two systems → An agent enters it; you approve
 - Build-and-ghost consultants → A team that stays on
 
-Where it runs
-
 ## Run by lumic, or installed on your own AI.
 
 It is the same job either way. lumic runs it on a dedicated computer and keeps it working for a monthly fee. Or lumic packages it for the AI assistant your team already uses: the written procedure, the tools when the job needs them, and the approval steps. That option is a setup fee, then a monthly fee, quoted per job. Gated by the people who know the work.
 
 [AI agent skills](https://get-lumic.com/ai-agent-skills/)
-
-Questions
 
 ## Before you book.
 
@@ -152,4 +149,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

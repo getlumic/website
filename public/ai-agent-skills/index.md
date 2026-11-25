@@ -2,7 +2,7 @@
 title: "AI agent skills for business: jobs your AI installs | lumic"
 description: "One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly."
 canonical: https://get-lumic.com/ai-agent-skills/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI agent skills for business: jobs your AI installs | lumic
@@ -79,8 +79,6 @@ The setup has a start date and an end date: lumic writes your file, installs the
 
 No AI assistant to run it? The same job can run on a dedicated computer that lumic’s Forward Deployed Engineers set up, watch and keep working every month. Either way, it is gated by the people who know the work, and it starts with the same free consultation.
 
-Questions
-
 ## AI agent skills, in plain answers.
 
 ### What is a packaged AI job?
@@ -118,4 +116,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

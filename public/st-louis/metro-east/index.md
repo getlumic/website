@@ -2,7 +2,7 @@
 title: "AI automation for Metro East businesses, on site | lumic"
 description: "lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry."
 canonical: https://get-lumic.com/st-louis/metro-east/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # AI automation for Metro East businesses, on site | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.co
 lumic’s Forward Deployed Engineers (FDEs) are based in St. Louis and spend in-person days with businesses across Madison County and St. Clair County, on the Illinois side of Greater St. Louis. They build back-office AI agents inside the systems you already run and keep them working. A person on your team approves every entry before it posts.
 
 [Book a call](https://cal.com/lumic/20-minute-call) Where lumic works
-
-Where lumic works on site
 
 ## The Illinois side of Greater St. Louis.
 
@@ -67,7 +65,8 @@ The agent builds the payroll journal entry from your payroll reports and checks 
 
 An agent prepares the recurring month-end entries and runs the tie-outs. Every entry waits unposted until the controller posts it.
 
-- Runs in: ERP
+Runs in: the ERP
+
 - Approved before posting, every month
 
 [Month-end close](https://get-lumic.com/services/month-end-close/)
@@ -83,8 +82,6 @@ Sales and margin, receivables, purchasing, job costing and consolidated financia
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
-Proof
-
 ## Live and working.
 
 The same agents run in production every working day, with a person approving each entry. lumic’s FDEs build them on site across the Metro East.
@@ -99,8 +96,6 @@ The agent reads each bill from email, matches it to the purchase order, and ente
 Clients are kept private; everything shown runs in production.
 
 [See the full portfolio](https://get-lumic.com/portfolio/)
-
-On-site work
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
@@ -141,4 +136,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy

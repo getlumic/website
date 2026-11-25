@@ -2,7 +2,7 @@
 title: "How to implement AI in a small business | lumic"
 description: "A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working."
 canonical: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/
-last_updated: 2026-11-24
+last_updated: 2026-11-25
 ---
 
 # How to implement AI in a small business | lumic
@@ -16,8 +16,6 @@ Source: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/
 Most small businesses do not need an AI strategy deck. They need one job done well by AI, inside the systems they already run, with a person approving what matters. This is the method lumic’s Forward Deployed Engineers use.
 
 [Book a call](https://cal.com/lumic/20-minute-call) The method
-
-The method
 
 ## Six steps, in order.
 
@@ -47,8 +45,6 @@ Systems change, document layouts change, and AI models improve. Someone has to w
 
 [See the method on one agent, step by step: AP automation](https://get-lumic.com/services/ap-automation/)
 
-With lumic
-
 ## Four steps, from a free call to managed AI.
 
 ### Free consultation.
@@ -59,7 +55,7 @@ A 20‑minute call. You walk the team through the work your people do by hand.
 
 ### On-site day and written proposal.
 
-lumic’s FDEs work beside your team where the work happens, map where AI fits, and write a proposal: what to build, the timeline, and the cost.
+lumic’s FDEs work beside your team where the work happens and write a proposal. They map where AI fits; the proposal says what to build, the timeline, and the cost.
 
 On-site work $1,500/day, credited toward phase one.
 
@@ -80,14 +76,6 @@ lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI
 Managed AI from $250 to $5,000 a month, depending on scope.
 
 - [Managed AI](https://get-lumic.com/managed-ai/)
-
-Free checklist
-
-## Month-End Red Flags Service Firms Usually Miss
-
-Ten month-end mistakes in AP, billing, payroll and the close, on one page. Enter an email and the checklist downloads right away.
-
-One email field. No spam, no trackers.
 
 ## Related
 
@@ -112,4 +100,4 @@ A written proposal. What lumic would build, the timeline, and the cost.
 
 ---
 
-© 2026 lumic | Serving Greater St. Louis, Missouri and Illinois | Privacy
+© 2026 lumicServing Greater St. Louis, Missouri and IllinoisPrivacy
