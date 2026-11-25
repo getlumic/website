@@ -60,7 +60,7 @@ FEE_ROWS = [("Monitoring", "Ongoing", "monitoring"), ("Testing", "Monthly", "mon
             ("Support desk", "Included", "the support desk"), ("A summary of its work", "Monthly", "a monthly summary of its work"),
             ("Human approval", "Built in", "human approval")]
 FEE_COVERS_LINE = "Includes " + ", ".join(x[2] for x in FEE_ROWS[:-1]) + " and " + FEE_ROWS[-1][2] + "."
-FEE_COVERS_SHORT = "Includes monitoring, monthly tests, fixes and upgrades. The full list is below."  # the /pricing/ card; the ledger follows
+FEE_COVERS_SHORT = "Includes monitoring, monthly tests, fixes and upgrades."  # the /pricing/ card; the ledger below it is hidden on phones, so the sentence must stand alone
 FEE_COVERS = ('<ul class="ledger" aria-label="Covered for each managed agent">\n'
               '        <li class="hd"><span>Each managed agent</span><span class="st">Covered</span></li>\n'
               + "\n".join(f'        <li><span>{a}</span><span class="st">{b}</span></li>' for a, b, _ in FEE_ROWS) + "\n      </ul>")

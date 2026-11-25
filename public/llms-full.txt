@@ -2560,7 +2560,7 @@ On-site work $1,500/day, credited toward phase one.
 
 Managed AI from $250 to $5,000 a month, depending on scope.
 
-Includes monitoring, monthly tests, fixes and upgrades. The full list is below.
+Includes monitoring, monthly tests, fixes and upgrades.
 
 - lumic runs and supports the agents
 - A person approves every entry
