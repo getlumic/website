@@ -33,11 +33,11 @@ From live aging, it drafts the collections email and the statement for each past
 
 ## An AI agent for accounts receivable.
 
-Accounts receivable automation, from remittance to collections: the agent applies cash in the ERP and drafts the collections email and statement for each past-due customer from live aging. A person approves each receipt and sends every email.
+Accounts receivable automation covers both ends of the cycle: cash application when the money comes in, and collections when it does not. lumic builds both agents inside the ERP a team already runs, then keeps them working.
 
 ## Automated dunning, drafted from live aging.
 
-The collections agent drafts each past-due reminder from live aging, ready when the day starts. A person sends every one.
+Because the collections agent drafts from live aging, each reminder matches what the customer owes that morning, not last week’s export. A person sends every one.
 
 In production
 

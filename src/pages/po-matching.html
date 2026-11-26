@@ -4,7 +4,7 @@
     <div>
       {{crumbs}}
       <h1>AI invoice-to-PO matching, <em class="s">with a person approving every bill.</em></h1>
-      <p class="lead">An AI agent reads each vendor bill, finds its purchase order and compares them line by line. It flags a price, a quantity or an invoice number that does not fit before anyone pays. A person approves each bill before anything posts. lumic builds it on site and keeps it working.</p>
+      <p class="lead">An AI agent reads each vendor bill, finds its purchase order and compares the prices and quantities. It flags a price or quantity off the PO, or a duplicate invoice number, before anyone pays. A person approves each bill before anything posts. lumic builds it on site and keeps it working.</p>
       <div class="cta">
         {{book}}
         <a class="btn btn-g" href="#how">See the match <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></a>
@@ -20,7 +20,7 @@
     <ol class="steps rv">
       <li class="track" aria-hidden="true"><i></i></li>
       <li class="step"><span class="n" aria-hidden="true">01</span><h3>It reads the bill.</h3><p>The agent reads each vendor bill as it arrives by email, the same bill a clerk would open.</p></li>
-      <li class="step"><span class="n" aria-hidden="true">02</span><h3>It finds the PO.</h3><p>It finds the purchase order the bill belongs to and compares the lines, the prices and the quantities.</p></li>
+      <li class="step"><span class="n" aria-hidden="true">02</span><h3>It finds the PO.</h3><p>It finds the purchase order the bill belongs to and compares the prices and the quantities.</p></li>
       <li class="step"><span class="n" aria-hidden="true">03</span><h3>A person decides the rest.</h3><p>The bills it can&rsquo;t match go to a person with the reason. A matched bill still waits for a person&rsquo;s approval.</p></li>
     </ol>
   </div>

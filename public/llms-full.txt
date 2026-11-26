@@ -1373,7 +1373,7 @@ Source: https://get-lumic.com/services/ap-automation/po-matching/ | Contact: hel
 
 # AI invoice-to-PO matching, with a person approving every bill.
 
-An AI agent reads each vendor bill, finds its purchase order and compares them line by line. It flags a price, a quantity or an invoice number that does not fit before anyone pays. A person approves each bill before anything posts. lumic builds it on site and keeps it working.
+An AI agent reads each vendor bill, finds its purchase order and compares the prices and quantities. It flags a price or quantity off the PO, or a duplicate invoice number, before anyone pays. A person approves each bill before anything posts. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the match
 
@@ -1385,7 +1385,7 @@ The agent reads each vendor bill as it arrives by email, the same bill a clerk w
 
 ### It finds the PO.
 
-It finds the purchase order the bill belongs to and compares the lines, the prices and the quantities.
+It finds the purchase order the bill belongs to and compares the prices and the quantities.
 
 ### A person decides the rest.
 
@@ -1457,7 +1457,7 @@ The accounting software or ERP, the inbox the bills arrive in, and the system th
 
 ### Who approves each bill?
 
-The person on your team who approves bills today. The agent never approves its own work, and any agent can be paused, or its access revoked, at any time.
+The person on your team who approves bills today. The agent only prepares each bill, and any agent can be paused, or its access revoked, at any time.
 
 ### Free consultation.
 
@@ -1539,11 +1539,11 @@ From live aging, it drafts the collections email and the statement for each past
 
 ## An AI agent for accounts receivable.
 
-Accounts receivable automation, from remittance to collections: the agent applies cash in the ERP and drafts the collections email and statement for each past-due customer from live aging. A person approves each receipt and sends every email.
+Accounts receivable automation covers both ends of the cycle: cash application when the money comes in, and collections when it does not. lumic builds both agents inside the ERP a team already runs, then keeps them working.
 
 ## Automated dunning, drafted from live aging.
 
-The collections agent drafts each past-due reminder from live aging, ready when the day starts. A person sends every one.
+Because the collections agent drafts from live aging, each reminder matches what the customer owes that morning, not last week’s export. A person sends every one.
 
 In production
 
@@ -3465,7 +3465,7 @@ The agent reads each purchase order and customer email, drafts the sales order a
 
 ## AI automation and workflow integration in St. Louis.
 
-lumic builds AI for [small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/) across the region, on site and inside the systems they already run.
+lumic builds AI for [small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/) across the region, on site.
 
 ### AI agents.
 
@@ -3481,7 +3481,7 @@ Sales, margin, receivables and purchasing, read live from the systems the busine
 
 ### Custom AI development.
 
-[Custom AI development](https://get-lumic.com/ai-implementation/) inside the systems a St. Louis business already runs, built on site and kept working.
+[Custom AI development](https://get-lumic.com/ai-implementation/) for the one job that needs it, built on site and kept working.
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
@@ -4771,7 +4771,7 @@ lumic gives the agent access to the receivables screens and records its job need
 
 ### Every action logged.
 
-Every action the agent takes is logged.
+Each step the agent takes is logged, so a person can trace any receipt back to its remittance.
 
 The approval stays with you.
 

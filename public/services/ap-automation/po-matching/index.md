@@ -13,7 +13,7 @@ Source: https://get-lumic.com/services/ap-automation/po-matching/ | Contact: hel
 
 # AI invoice-to-PO matching, with a person approving every bill.
 
-An AI agent reads each vendor bill, finds its purchase order and compares them line by line. It flags a price, a quantity or an invoice number that does not fit before anyone pays. A person approves each bill before anything posts. lumic builds it on site and keeps it working.
+An AI agent reads each vendor bill, finds its purchase order and compares the prices and quantities. It flags a price or quantity off the PO, or a duplicate invoice number, before anyone pays. A person approves each bill before anything posts. lumic builds it on site and keeps it working.
 
 [Book a call](https://cal.com/lumic/20-minute-call) See the match
 
@@ -25,7 +25,7 @@ The agent reads each vendor bill as it arrives by email, the same bill a clerk w
 
 ### It finds the PO.
 
-It finds the purchase order the bill belongs to and compares the lines, the prices and the quantities.
+It finds the purchase order the bill belongs to and compares the prices and the quantities.
 
 ### A person decides the rest.
 
@@ -97,7 +97,7 @@ The accounting software or ERP, the inbox the bills arrive in, and the system th
 
 ### Who approves each bill?
 
-The person on your team who approves bills today. The agent never approves its own work, and any agent can be paused, or its access revoked, at any time.
+The person on your team who approves bills today. The agent only prepares each bill, and any agent can be paused, or its access revoked, at any time.
 
 ### Free consultation.
 

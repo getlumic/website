@@ -86,7 +86,7 @@ The agent reads each purchase order and customer email, drafts the sales order a
 
 ## AI automation and workflow integration in St. Louis.
 
-lumic builds AI for [small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/) across the region, on site and inside the systems they already run.
+lumic builds AI for [small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/) across the region, on site.
 
 ### AI agents.
 
@@ -102,7 +102,7 @@ Sales, margin, receivables and purchasing, read live from the systems the busine
 
 ### Custom AI development.
 
-[Custom AI development](https://get-lumic.com/ai-implementation/) inside the systems a St. Louis business already runs, built on site and kept working.
+[Custom AI development](https://get-lumic.com/ai-implementation/) for the one job that needs it, built on site and kept working.
 
 ## lumic starts where the work happens. Live in weeks, not quarters.
 

@@ -47,7 +47,7 @@ lumic gives the agent access to the receivables screens and records its job need
 
 ### Every action logged.
 
-Every action the agent takes is logged.
+Each step the agent takes is logged, so a person can trace any receipt back to its remittance.
 
 The approval stays with you.
 
