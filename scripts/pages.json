@@ -311,7 +311,7 @@
       "faq": [
         {
           "q": "Is this PO matching software?",
-          "a": "No. It is a service, not a product to install. lumic's FDEs set the matching rules from the way the team checks bills by hand today, and lumic runs the agent from there."
+          "a": "No. It is a service, not a product to install. lumic's FDEs build the agent around how the work is really done on your team, and lumic runs it from there."
         },
         {
           "q": "Which systems does it work with?",

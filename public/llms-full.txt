@@ -1449,7 +1449,7 @@ The practices on every agent: [Guardrails](https://get-lumic.com/guardrails/).
 
 ### Is this PO matching software?
 
-No. It is a service, not a product to install. lumic’s FDEs set the matching rules from the way the team checks bills by hand today, and lumic runs the agent from there.
+No. It is a service, not a product to install. lumic’s FDEs build the agent around how the work is really done on your team, and lumic runs it from there.
 
 ### Which systems does it work with?
 
