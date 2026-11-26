@@ -2638,14 +2638,6 @@
     },
     {
      "@type": "Question",
-     "name": "What does AI consulting and automation cost?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes."
-     }
-    },
-    {
-     "@type": "Question",
      "name": "Which areas does lumic serve?",
      "acceptedAnswer": {
       "@type": "Answer",

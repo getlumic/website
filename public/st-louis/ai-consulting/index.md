@@ -146,10 +146,6 @@ A consultant advises and leaves. lumic’s FDEs build the agent inside your own 
 
 A person on your team. The agent makes the entry, and a person checks it and approves it before anything posts. The final post stays in your hands.
 
-### What does AI consulting and automation cost?
-
-Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Final pricing depends on your workflow and systems. These figures are starting points, not quotes. Details: [Pricing](https://get-lumic.com/pricing/).
-
 ### Which areas does lumic serve?
 
 Greater St. Louis: St. Louis City, St. Louis County, St. Charles County, Jefferson County and Franklin County in Missouri; Madison County and St. Clair County in Illinois. lumic travels for the right fit. The area in full: [St. Louis](https://get-lumic.com/st-louis/).
