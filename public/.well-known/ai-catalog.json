@@ -49,7 +49,7 @@
    "type": "text/markdown",
    "url": "https://get-lumic.com/managed-ai/index.md",
    "representativeQueries": [
-    "Managed AI on retainer: monitored and supported"
+    "Managed AI services: monitored and supported"
    ]
   },
   {
@@ -89,12 +89,21 @@
    ]
   },
   {
+   "identifier": "urn:air:get-lumic.com:docs:po-matching-markdown",
+   "displayName": "PO matching as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/services/ap-automation/po-matching/index.md",
+   "representativeQueries": [
+    "AI invoice-to-PO matching for accounts payable"
+   ]
+  },
+  {
    "identifier": "urn:air:get-lumic.com:docs:cash-receipts-and-collections-markdown",
    "displayName": "Cash receipts and collections as markdown",
    "type": "text/markdown",
    "url": "https://get-lumic.com/services/cash-receipts-and-collections/index.md",
    "representativeQueries": [
-    "Cash application and collections automation"
+    "AR automation: cash application and collections"
    ]
   },
   {
@@ -130,7 +139,7 @@
    "type": "text/markdown",
    "url": "https://get-lumic.com/services/order-desk-and-customer-service/index.md",
    "representativeQueries": [
-    "AI agent for the order desk and customer service"
+    "AI order entry and sales order automation"
    ]
   },
   {
@@ -211,7 +220,7 @@
    "type": "text/markdown",
    "url": "https://get-lumic.com/st-louis/ai-consulting/index.md",
    "representativeQueries": [
-    "St. Louis AI consulting and automation"
+    "AI consultant in St. Louis: consulting and automation"
    ]
   },
   {
@@ -293,6 +302,15 @@
    "url": "https://get-lumic.com/systems/sage-100/ap-automation/index.md",
    "representativeQueries": [
     "Sage 100 AP automation with an AI agent"
+   ]
+  },
+  {
+   "identifier": "urn:air:get-lumic.com:docs:sage-100-ar-automation-markdown",
+   "displayName": "AR automation as markdown",
+   "type": "text/markdown",
+   "url": "https://get-lumic.com/systems/sage-100/ar-automation/index.md",
+   "representativeQueries": [
+    "Sage 100 AR automation with an AI agent"
    ]
   },
   {

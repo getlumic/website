@@ -2,7 +2,7 @@
 title: "How to choose an AI implementation partner | lumic"
 description: "A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal."
 canonical: https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # How to choose an AI implementation partner | lumic

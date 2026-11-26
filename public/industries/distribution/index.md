@@ -2,7 +2,7 @@
 title: "Custom AI for distributors: orders, purchasing, cash | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # Custom AI for distributors: orders, purchasing, cash | lumic
@@ -51,7 +51,7 @@ Reads from: the ERP
 
 ### Vendor bills and POs
 
-The agent reads each vendor bill, matches it to the purchase order, and flags a price difference before anyone pays. It also drafts purchase orders for approval.
+The agent reads each vendor bill, [matches it to the purchase order](https://get-lumic.com/services/ap-automation/po-matching/), and flags a price difference before anyone pays. It also drafts purchase orders for approval.
 
 Runs in: accounting software
 

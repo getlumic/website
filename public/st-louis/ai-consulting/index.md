@@ -1,13 +1,13 @@
 ---
-title: "St. Louis AI consulting and automation | lumic"
-description: "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts."
+title: "AI consultant in St. Louis: consulting and automation | lumic"
+description: "Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
-# St. Louis AI consulting and automation | lumic
+# AI consultant in St. Louis: consulting and automation | lumic
 
-> lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts.
+> Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working.
 
 Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com
 
@@ -17,11 +17,15 @@ lumic is an AI consulting and automation firm based in St. Louis. Its Forward De
 
 [Book a call](https://cal.com/lumic/20-minute-call) Questions
 
+## Looking for an AI consultant in St. Louis?
+
+A consultant can tell you where AI fits. lumic also builds it, inside your own systems, and stays to run it.
+
 What lumic automates
 
 ## Advice that ends in a working agent.
 
-A consultant can tell you where AI fits. lumic also builds it, inside your own systems, and stays to run it. Each agent does one back-office job end to end.
+Each agent does one back-office job end to end, inside the systems your team already runs.
 
 ### AP automation
 
@@ -80,6 +84,26 @@ The agent reads each purchase order and customer email, drafts the sales order a
 
 [Every job lumic automates: Services](https://get-lumic.com/services/)
 
+## AI automation and workflow integration in St. Louis.
+
+lumic builds AI for [small and mid-size businesses](https://get-lumic.com/forward-deployed-engineers/small-business/) across the region, on site and inside the systems they already run.
+
+### AI agents.
+
+One agent for each back-office job, preparing the work for a person on your team to approve.
+
+### Two systems, one job.
+
+When the order lives in one system and the money in another, one job reads both, enters the work once and keeps them in step.
+
+### Live dashboards.
+
+Sales, margin, receivables and purchasing, read live from the systems the business runs. Dashboards only read.
+
+### Custom AI development.
+
+[Custom AI development](https://get-lumic.com/ai-implementation/) inside the systems a St. Louis business already runs, built on site and kept working.
+
 ## lumic starts where the work happens. Live in weeks, not quarters.
 
 ### On-site diagnostic.
@@ -101,6 +125,14 @@ The method in full: [How lumic works](https://get-lumic.com/how-lumic-works/). T
 ### Does lumic offer AI consulting in St. Louis?
 
 Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site day beside the people who do the back-office jobs by hand.
+
+### What does an AI consultant in St. Louis do?
+
+An AI consultant studies how a business works and says where AI fits. lumic starts the same way, on an on-site day, and ends it with a written proposal: what to build, the timeline and the cost.
+
+### Does lumic do AI workflow integration?
+
+Yes. lumic connects the systems a job spans, through an API where a system has one and through the screen where it does not, so nobody re-keys between them.
 
 ### What does lumic automate?
 

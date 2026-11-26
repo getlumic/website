@@ -2,7 +2,7 @@
 title: "Systems lumic works with: any software you run | lumic"
 description: "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't."
 canonical: https://get-lumic.com/systems/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # Systems lumic works with: any software you run | lumic
@@ -111,6 +111,7 @@ No migration. No new system.
 ## Related
 
 - [Services](https://get-lumic.com/services/)
+- [Sage 100 AR automation](https://get-lumic.com/systems/sage-100/ar-automation/)
 - [How lumic works](https://get-lumic.com/how-lumic-works/)
 
 ## Based in St. Louis. Start with a conversation.

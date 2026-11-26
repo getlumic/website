@@ -168,12 +168,12 @@
       "id": "managed-ai",
       "path": "/managed-ai/",
       "crumb": "Managed AI",
-      "purpose": "managed AI agents on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what upkeep covers: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk",
-      "title": "Managed AI on retainer: monitored and supported | lumic",
+      "purpose": "managed AI services on a monthly retainer: what the retainer covers, why AI needs upkeep, pause or revoke any time, starting prices; what upkeep covers: night releases with rollback, a watchdog on every app, feedback and Updates in every dashboard, a ticketed support desk; on site across Greater St. Louis",
+      "title": "Managed AI services: monitored and supported | lumic",
       "description": "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.",
       "type": "WebPage",
       "films": [],
-      "h1": "Managed AI: lumic keeps it working.",
+      "h1": "Managed AI services: lumic keeps it working.",
       "faq": [
         {
           "q": "What is a managed AI agent?",
@@ -257,9 +257,9 @@
       "id": "ap-automation",
       "path": "/services/ap-automation/",
       "crumb": "AP automation",
-      "purpose": "the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; proof and approvals; where it runs: a lumic computer, or packaged for your own AI",
+      "purpose": "the AP agent: reads each vendor bill from email, matches it to the PO, a person approves; AP automation as a service, not a software license; proof and approvals; where it runs: a lumic computer, or packaged for your own AI",
       "title": "AI agent for accounts payable: bill entry and PO matching | lumic",
-      "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
+      "description": "lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
       "type": "WebPage",
       "films": [
         "overview-film"
@@ -281,6 +281,46 @@
           "q": "Which systems does the AP agent work with?",
           "a": "The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs.",
           "html": "The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs. The list: <a href=\"/systems/\">Systems lumic works with</a>."
+        },
+        {
+          "q": "Is lumic accounts payable automation software?",
+          "a": "No. There is no license to buy and nothing to migrate. lumic builds the agent into the accounting software and PO system a team already runs, then runs it as a service for a monthly fee."
+        }
+      ]
+    },
+    {
+      "id": "po-matching",
+      "path": "/services/ap-automation/po-matching/",
+      "crumb": "PO matching",
+      "purpose": "AI invoice-to-PO matching: how the agent matches a bill to the PO, the flags before anyone pays (price, quantity, a duplicate invoice number), not another software license, a person approves every bill",
+      "title": "AI invoice-to-PO matching for accounts payable | lumic",
+      "description": "An AI agent matches each vendor bill to its purchase order, flags price, quantity and duplicate-invoice issues, and a person approves before anything posts.",
+      "type": "WebPage",
+      "films": [],
+      "ancestors": [
+        {
+          "label": "Services",
+          "href": "/services/"
+        }
+      ],
+      "parent": {
+        "label": "AP automation",
+        "href": "/services/ap-automation/"
+      },
+      "h1": "AI invoice-to-PO matching, with a person approving every bill.",
+      "faq": [
+        {
+          "q": "Is this PO matching software?",
+          "a": "No. It is a service, not a product to install. lumic's FDEs set the matching rules from the way the team checks bills by hand today, and lumic runs the agent from there."
+        },
+        {
+          "q": "Which systems does it work with?",
+          "a": "The accounting software or ERP, the inbox the bills arrive in, and the system that holds the purchase orders. Where a system has an API, the agent uses it; where it does not, the agent works through its screens.",
+          "html": "The accounting software or ERP, the inbox the bills arrive in, and the system that holds the purchase orders. Where a system has an API, the agent uses it; where it does not, the agent works through its screens. The list: <a href=\"/systems/\">Systems lumic works with</a>."
+        },
+        {
+          "q": "Who approves each bill?",
+          "a": "The person on your team who approves bills today. The agent never approves its own work, and any agent can be paused, or its access revoked, at any time."
         }
       ]
     },
@@ -292,11 +332,17 @@
         "label": "Services",
         "href": "/services/"
       },
-      "purpose": "cash application: cash receipts keyed from remittances and collections drafted from live aging; a person approves and sends",
-      "title": "Cash application and collections automation | lumic",
-      "description": "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.",
+      "purpose": "an AI agent for accounts receivable: cash receipts keyed from remittances, collections and dunning drafted from live aging; a person approves and sends",
+      "title": "AR automation: cash application and collections | lumic",
+      "description": "An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.",
       "type": "WebPage",
-      "films": []
+      "films": [],
+      "faq": [
+        {
+          "q": "Can an agent handle dunning?",
+          "a": "Yes, in draft. Dunning means the reminder emails and statements that go to past-due customers. The agent writes them and never sends one; a person on your team sends each."
+        }
+      ]
     },
     {
       "id": "payroll",
@@ -359,9 +405,9 @@
         "label": "Services",
         "href": "/services/"
       },
-      "purpose": "the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; where it runs: a lumic computer, or packaged for your own AI",
-      "title": "AI agent for the order desk and customer service | lumic",
-      "description": "An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.",
+      "purpose": "AI order entry and sales order automation: the order desk agent: reads purchase orders and customer emails, drafts the sales order and the reply; a person checks and sends each one; stock questions by email; where it runs: a lumic computer, or packaged for your own AI",
+      "title": "AI order entry and sales order automation | lumic",
+      "description": "AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.",
       "type": "WebPage",
       "films": [],
       "h1": "An order desk agent, with a person sending every reply.",
@@ -373,6 +419,11 @@
         {
           "q": "Where do the orders come from?",
           "a": "From the places they arrive today: purchase orders attached to email, order forms and customer questions in the inbox. The agent reads them and drafts the order in the systems you already run."
+        },
+        {
+          "q": "Can an agent enter sales orders?",
+          "a": "Yes. The agent drafts each sales order in your systems from the purchase order, and a person checks it before it goes in. It works through an API where the system has one, and through the screen where it does not.",
+          "html": "Yes. The agent drafts each sales order in your systems from the purchase order, and a person checks it before it goes in. It works through an API where the system has one, and through the screen where it does not. The list: <a href=\"/systems/\">Systems lumic works with</a>."
         }
       ]
     },
@@ -455,7 +506,7 @@
       "id": "st-louis",
       "path": "/st-louis/",
       "crumb": "St. Louis",
-      "purpose": "on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served",
+      "purpose": "on-site Forward Deployed Engineers in Greater St. Louis, Missouri and Illinois; area served; an AI company in St. Louis that builds on site",
       "title": "St. Louis AI company: custom AI implementation | lumic",
       "description": "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit.",
       "type": "WebPage",
@@ -480,9 +531,9 @@
         "label": "St. Louis",
         "href": "/st-louis/"
       },
-      "purpose": "AI consulting and automation in St. Louis: on-site FDEs, the five back-office jobs, how an engagement runs, starting prices",
-      "title": "St. Louis AI consulting and automation | lumic",
-      "description": "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts.",
+      "purpose": "AI consultant in St. Louis: AI consulting, AI automation and workflow integration on site, the back-office jobs, how an engagement runs, starting prices",
+      "title": "AI consultant in St. Louis: consulting and automation | lumic",
+      "description": "Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working.",
       "type": "WebPage",
       "films": [],
       "h1": "St. Louis AI consulting and automation",
@@ -490,6 +541,14 @@
         {
           "q": "Does lumic offer AI consulting in St. Louis?",
           "a": "Yes. lumic is based in St. Louis, and its FDEs come on site across Greater St. Louis, Missouri and Illinois. The work starts with a free consultation, then an on-site day beside the people who do the back-office jobs by hand."
+        },
+        {
+          "q": "What does an AI consultant in St. Louis do?",
+          "a": "An AI consultant studies how a business works and says where AI fits. lumic starts the same way, on an on-site day, and ends it with a written proposal: what to build, the timeline and the cost."
+        },
+        {
+          "q": "Does lumic do AI workflow integration?",
+          "a": "Yes. lumic connects the systems a job spans, through an API where a system has one and through the screen where it does not, so nobody re-keys between them."
         },
         {
           "q": "What does lumic automate?",
@@ -670,7 +729,7 @@
         "href": "/systems/"
       },
       "system": "sage-100",
-      "purpose": "capability page: lumic works with Sage 100; the jobs an agent does there; live dashboards; approval",
+      "purpose": "capability page: lumic works with Sage 100; the jobs an agent does there (AP and AR automation); Sage 100 business intelligence: live dashboards; approval",
       "title": "Sage 100 automation and dashboards | lumic",
       "description": "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry.",
       "type": "WebPage",
@@ -701,6 +760,38 @@
         {
           "q": "Can AI work with Sage 100?",
           "a": "Yes. A lumic agent works with Sage 100 on its own dedicated computer, under its own login. It reads each vendor bill, matches it to the PO, and prepares the AP invoice and PO receipt in an unposted batch. A person reviews the batch and posts it."
+        }
+      ]
+    },
+    {
+      "id": "sage-100-ar-automation",
+      "path": "/systems/sage-100/ar-automation/",
+      "crumb": "AR automation",
+      "ancestors": [
+        {
+          "label": "Systems",
+          "href": "/systems/"
+        }
+      ],
+      "parent": {
+        "label": "Sage 100",
+        "href": "/systems/sage-100/"
+      },
+      "system": "sage-100",
+      "purpose": "Sage 100 AR automation: an agent reads remittances and ACH detail, prepares the cash receipt in Sage 100 for a person to approve, and drafts collections emails from live aging for a person to send; access; approval",
+      "title": "Sage 100 AR automation with an AI agent | lumic",
+      "description": "An agent reads remittances and ACH detail, prepares cash receipts in Sage 100 for approval and drafts collections emails from live aging. A person approves and sends.",
+      "type": "WebPage",
+      "films": [],
+      "h1": "Sage 100 AR automation, with a person approving every receipt.",
+      "faq": [
+        {
+          "q": "Can AI do cash application in Sage 100?",
+          "a": "Yes. The agent reads each remittance with a cloud AI model, keys the cash receipt from it, and leaves the approval to a person on your team."
+        },
+        {
+          "q": "Does the agent send collections emails on its own?",
+          "a": "No. A person on your team sends every one. Any agent can be paused, or its access revoked, at any time."
         }
       ]
     },

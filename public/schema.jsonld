@@ -17,7 +17,7 @@
    "image": "https://get-lumic.com/og-image.png",
    "email": "hello@get-lumic.com",
    "telephone": "+1-618-979-6837",
-   "slogan": "AI, deployed into your business and kept working.",
+   "slogan": "AI that works with your systems and keeps working.",
    "description": "lumic is a custom AI implementation firm based in St. Louis, Missouri, that can work with businesses anywhere in the United States. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters.",
    "disambiguatingDescription": "lumic (get-lumic.com) is an AI implementation firm based in St. Louis that can work with businesses anywhere in the United States. It is not lumic.ai, Lumiq, Lumicera, Lumico or getlumic.com.",
    "address": {
@@ -292,7 +292,7 @@
    "publisher": {
     "@id": "https://get-lumic.com/#org"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "WebPage",
@@ -310,7 +310,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-implementation/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -425,7 +425,7 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/managed-ai/#webpage",
    "url": "https://get-lumic.com/managed-ai/",
-   "name": "Managed AI on retainer: monitored and supported | lumic",
+   "name": "Managed AI services: monitored and supported | lumic",
    "description": "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.",
    "inLanguage": "en",
    "about": {
@@ -437,7 +437,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/managed-ai/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -460,7 +460,7 @@
   {
    "@type": "Service",
    "@id": "https://get-lumic.com/managed-ai/#service",
-   "name": "Managed AI agents",
+   "name": "Managed AI services",
    "serviceType": "Managed AI services",
    "provider": {
     "@id": "https://get-lumic.com/#org"
@@ -564,7 +564,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-consulting/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -690,7 +690,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-agent-skills/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -810,7 +810,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -932,7 +932,7 @@
    "@id": "https://get-lumic.com/services/ap-automation/#webpage",
    "url": "https://get-lumic.com/services/ap-automation/",
    "name": "AI agent for accounts payable: bill entry and PO matching | lumic",
-   "description": "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
+   "description": "lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -943,7 +943,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/ap-automation/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1057,6 +1057,141 @@
       "@type": "Answer",
       "text": "The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs."
      }
+    },
+    {
+     "@type": "Question",
+     "name": "Is lumic accounts payable automation software?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. There is no license to buy and nothing to migrate. lumic builds the agent into the accounting software and PO system a team already runs, then runs it as a service for a monthly fee."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://get-lumic.com/services/ap-automation/po-matching/#webpage",
+   "url": "https://get-lumic.com/services/ap-automation/po-matching/",
+   "name": "AI invoice-to-PO matching for accounts payable | lumic",
+   "description": "An AI agent matches each vendor bill to its purchase order, flags price, quantity and duplicate-invoice issues, and a person approves before anything posts.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/services/ap-automation/po-matching/#breadcrumb"
+   },
+   "dateModified": "2026-11-26"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/services/ap-automation/po-matching/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Services",
+     "item": "https://get-lumic.com/services/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AP automation",
+     "item": "https://get-lumic.com/services/ap-automation/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "PO matching",
+     "item": "https://get-lumic.com/services/ap-automation/po-matching/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/services/ap-automation/po-matching/#service",
+   "name": "AI invoice-to-PO matching for accounts payable",
+   "serviceType": "Accounts payable automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "Country",
+     "name": "United States"
+    },
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/services/ap-automation/po-matching/",
+   "description": "An AI agent matches each vendor bill to its purchase order, flags price, quantity and duplicate-invoice issues, and a person approves before anything posts. lumic builds it inside the accounting software and PO system a team already runs, and keeps it working."
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/services/ap-automation/po-matching/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is this PO matching software?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It is a service, not a product to install. lumic’s FDEs set the matching rules from the way the team checks bills by hand today, and lumic runs the agent from there."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which systems does it work with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The accounting software or ERP, the inbox the bills arrive in, and the system that holds the purchase orders. Where a system has an API, the agent uses it; where it does not, the agent works through its screens."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who approves each bill?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The person on your team who approves bills today. The agent never approves its own work, and any agent can be paused, or its access revoked, at any time."
+     }
     }
    ]
   },
@@ -1064,8 +1199,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#webpage",
    "url": "https://get-lumic.com/services/cash-receipts-and-collections/",
-   "name": "Cash application and collections automation | lumic",
-   "description": "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.",
+   "name": "AR automation: cash application and collections | lumic",
+   "description": "An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1076,7 +1211,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1152,6 +1287,20 @@
    "description": "An agent reads remittances and ACH detail and keys them into the ERP for a person to approve, and drafts collections emails and statements from live aging for a person to send."
   },
   {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can an agent handle dunning?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, in draft. Dunning means the reminder emails and statements that go to past-due customers. The agent writes them and never sends one; a person on your team sends each."
+     }
+    }
+   ]
+  },
+  {
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/payroll/#webpage",
    "url": "https://get-lumic.com/services/payroll/",
@@ -1167,7 +1316,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/payroll/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1258,7 +1407,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/month-end-close/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1349,7 +1498,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/dashboards-and-reporting/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1450,8 +1599,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/services/order-desk-and-customer-service/#webpage",
    "url": "https://get-lumic.com/services/order-desk-and-customer-service/",
-   "name": "AI agent for the order desk and customer service | lumic",
-   "description": "An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.",
+   "name": "AI order entry and sales order automation | lumic",
+   "description": "AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -1462,7 +1611,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/order-desk-and-customer-service/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1556,6 +1705,14 @@
       "@type": "Answer",
       "text": "From the places they arrive today: purchase orders attached to email, order forms and customer questions in the inbox. The agent reads them and drafts the order in the systems you already run."
      }
+    },
+    {
+     "@type": "Question",
+     "name": "Can an agent enter sales orders?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The agent drafts each sales order in your systems from the purchase order, and a person checks it before it goes in. It works through an API where the system has one, and through the screen where it does not."
+     }
     }
    ]
   },
@@ -1575,7 +1732,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/portfolio/#breadcrumb"
    },
-   "dateModified": "2026-11-25",
+   "dateModified": "2026-11-26",
    "mainEntity": {
     "@id": "https://get-lumic.com/portfolio/#items"
    }
@@ -1825,7 +1982,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/how-lumic-works/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1886,7 +2043,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/guardrails/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -1922,7 +2079,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/pricing/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2043,7 +2200,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/manufacturing/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2128,7 +2285,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/distribution/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2213,7 +2370,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/service-firms/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2298,7 +2455,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2344,8 +2501,8 @@
    "@type": "WebPage",
    "@id": "https://get-lumic.com/st-louis/ai-consulting/#webpage",
    "url": "https://get-lumic.com/st-louis/ai-consulting/",
-   "name": "St. Louis AI consulting and automation | lumic",
-   "description": "lumic is St. Louis AI consulting that sends FDEs on site to build custom AI, one process at a time. A person approves every entry before it posts.",
+   "name": "AI consultant in St. Louis: consulting and automation | lumic",
+   "description": "Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working.",
    "inLanguage": "en",
    "about": {
     "@id": "https://get-lumic.com/#org"
@@ -2356,7 +2513,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/ai-consulting/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2441,6 +2598,22 @@
     },
     {
      "@type": "Question",
+     "name": "What does an AI consultant in St. Louis do?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An AI consultant studies how a business works and says where AI fits. lumic starts the same way, on an on-site day, and ends it with a written proposal: what to build, the timeline and the cost."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does lumic do AI workflow integration?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. lumic connects the systems a job spans, through an API where a system has one and through the screen where it does not, so nobody re-keys between them."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "What does lumic automate?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -2497,7 +2670,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/metro-east/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2586,7 +2759,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/forward-deployed-engineers/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2717,7 +2890,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/forward-deployed-engineers/small-business/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2838,7 +3011,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/faq/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -2968,7 +3141,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3004,7 +3177,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/quickbooks/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3109,7 +3282,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/netsuite/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3200,7 +3373,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-100/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3291,7 +3464,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-100/ap-automation/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3388,6 +3561,125 @@
   },
   {
    "@type": "WebPage",
+   "@id": "https://get-lumic.com/systems/sage-100/ar-automation/#webpage",
+   "url": "https://get-lumic.com/systems/sage-100/ar-automation/",
+   "name": "Sage 100 AR automation with an AI agent | lumic",
+   "description": "An agent reads remittances and ACH detail, prepares cash receipts in Sage 100 for approval and drafts collections emails from live aging. A person approves and sends.",
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "publisher": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://get-lumic.com/systems/sage-100/ar-automation/#breadcrumb"
+   },
+   "dateModified": "2026-11-26"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://get-lumic.com/systems/sage-100/ar-automation/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://get-lumic.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Systems",
+     "item": "https://get-lumic.com/systems/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Sage 100",
+     "item": "https://get-lumic.com/systems/sage-100/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "AR automation",
+     "item": "https://get-lumic.com/systems/sage-100/ar-automation/"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://get-lumic.com/systems/sage-100/ar-automation/#service",
+   "name": "Sage 100 AR automation with an AI agent",
+   "serviceType": "Accounts receivable automation",
+   "provider": {
+    "@id": "https://get-lumic.com/#org"
+   },
+   "areaServed": [
+    {
+     "@type": "Country",
+     "name": "United States"
+    },
+    {
+     "@type": "City",
+     "name": "St. Louis, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Louis County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Charles County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Jefferson County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Franklin County, Missouri"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Madison County, Illinois"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "St. Clair County, Illinois"
+    }
+   ],
+   "audience": {
+    "@type": "BusinessAudience",
+    "name": "Small and mid-sized businesses"
+   },
+   "url": "https://get-lumic.com/systems/sage-100/ar-automation/",
+   "description": "An agent reads remittances and ACH detail and prepares the cash receipt in Sage 100 for a person to approve, and drafts collections emails and statements from live Sage 100 aging for a person to send."
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://get-lumic.com/systems/sage-100/ar-automation/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can AI do cash application in Sage 100?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The agent reads each remittance with a cloud AI model, keys the cash receipt from it, and leaves the approval to a person on your team."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the agent send collections emails on its own?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A person on your team sends every one. Any agent can be paused, or its access revoked, at any time."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
    "@id": "https://get-lumic.com/systems/sage-intacct/#webpage",
    "url": "https://get-lumic.com/systems/sage-intacct/",
    "name": "Sage Intacct automation with AI agents | lumic",
@@ -3402,7 +3694,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-intacct/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3493,7 +3785,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/month-end-red-flags/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3529,7 +3821,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3565,7 +3857,7 @@
    },
    "datePublished": "2026-11-24",
    "inLanguage": "en",
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "WebPage",
@@ -3583,7 +3875,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/ai-agent-for-accounting/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3619,7 +3911,7 @@
    },
    "datePublished": "2026-11-24",
    "inLanguage": "en",
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "WebPage",
@@ -3637,7 +3929,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#breadcrumb"
    },
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   },
   {
    "@type": "BreadcrumbList",
@@ -3673,7 +3965,7 @@
    },
    "datePublished": "2026-11-25",
    "inLanguage": "en",
-   "dateModified": "2026-11-25"
+   "dateModified": "2026-11-26"
   }
  ]
 }

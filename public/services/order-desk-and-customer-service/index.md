@@ -1,13 +1,13 @@
 ---
-title: "AI agent for the order desk and customer service | lumic"
-description: "An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one."
+title: "AI order entry and sales order automation | lumic"
+description: "AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one."
 canonical: https://get-lumic.com/services/order-desk-and-customer-service/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
-# AI agent for the order desk and customer service | lumic
+# AI order entry and sales order automation | lumic
 
-> An agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.
+> AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.
 
 Source: https://get-lumic.com/services/order-desk-and-customer-service/ | Contact: hello@get-lumic.com
 
@@ -30,6 +30,10 @@ It drafts the sales order in your systems and a reply to the customer, and flags
 ### A person checks and sends.
 
 A person on your team checks each order and each reply, fixes what needs fixing, and sends it. Nothing goes to a customer without that person.
+
+## AI order entry and sales order automation.
+
+The agent reads each purchase order as it arrives by email, attached or in the body, and drafts the sales order in the ERP or accounting software the team already runs. A person checks each order before it goes in. lumic builds it on site and keeps it working.
 
 ## The work that fills the order desk inbox.
 
@@ -70,6 +74,10 @@ No. The agent drafts the sales order and the reply. A person on your team checks
 ### Where do the orders come from?
 
 From the places they arrive today: purchase orders attached to email, order forms and customer questions in the inbox. The agent reads them and drafts the order in the systems you already run.
+
+### Can an agent enter sales orders?
+
+Yes. The agent drafts each sales order in your systems from the purchase order, and a person checks it before it goes in. It works through an API where the system has one, and through the screen where it does not. The list: [Systems lumic works with](https://get-lumic.com/systems/).
 
 ### Free consultation.
 

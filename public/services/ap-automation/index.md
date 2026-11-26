@@ -1,13 +1,13 @@
 ---
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
-description: "lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
+description: "lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
 canonical: https://get-lumic.com/services/ap-automation/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
 
-> lumic's AP agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.
+> lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.
 
 Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com
 
@@ -32,6 +32,10 @@ It matches the bill to the purchase order and flags a price difference before an
 ### A person approves it.
 
 A person on your team checks the entry and approves it. It lands in your accounting software, ready to post, and nobody retypes it.
+
+## AP automation as a service, not a software license.
+
+lumic builds the AP agent inside the systems a team already runs. The agent reads each bill with a machine-learning model, then checks the math against the purchase order: [invoice-to-PO matching](https://get-lumic.com/services/ap-automation/po-matching/). lumic runs it and keeps it working for a monthly fee.
 
 Proof
 
@@ -111,6 +115,10 @@ A person on your team. The agent makes the entry, and a person checks it and app
 ### Which systems does the AP agent work with?
 
 The accounting software or ERP, the email inbox and the system that holds the purchase orders: the ones your team already runs. The list: [Systems lumic works with](https://get-lumic.com/systems/).
+
+### Is lumic accounts payable automation software?
+
+No. There is no license to buy and nothing to migrate. lumic builds the agent into the accounting software and PO system a team already runs, then runs it as a service for a monthly fee.
 
 ### Free consultation.
 

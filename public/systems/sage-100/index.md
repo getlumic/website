@@ -2,7 +2,7 @@
 title: "Sage 100 automation and dashboards | lumic"
 description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
 canonical: https://get-lumic.com/systems/sage-100/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # Sage 100 automation and dashboards | lumic
@@ -35,7 +35,7 @@ The agent prepares each entry, and a person on your team approves it before anyt
 - A person approves each entry
 - Gated by the people who know the work
 
-### Live dashboards on the same data
+## Sage 100 business intelligence: live dashboards
 
 Sales, margin, receivables and purchasing read live from Sage 100, so nobody exports the same report every morning.
 
@@ -50,7 +50,7 @@ The agent reads each vendor bill from email, matches it to the purchase order, a
 
 ### Cash receipts and collections.
 
-Remittances read and keyed as receipts for approval, and collections emails drafted from live aging for a person to send. [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
+Remittances read and keyed as receipts for approval, and collections emails drafted from live aging for a person to send. [Sage 100 AR automation](https://get-lumic.com/systems/sage-100/ar-automation/), or the job on any ERP: [Cash receipts and collections](https://get-lumic.com/services/cash-receipts-and-collections/)
 
 ### Live reports.
 

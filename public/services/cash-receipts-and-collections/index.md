@@ -1,13 +1,13 @@
 ---
-title: "Cash application and collections automation | lumic"
-description: "An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one."
+title: "AR automation: cash application and collections | lumic"
+description: "An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
-# Cash application and collections automation | lumic
+# AR automation: cash application and collections | lumic
 
-> An agent reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.
+> An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.
 
 Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact: hello@get-lumic.com
 
@@ -30,6 +30,14 @@ It prepares the cash receipt in the ERP, the cash application a clerk would key 
 ### It drafts collections.
 
 From live aging, it drafts the collections email and the statement for each past-due customer. A person reviews each one and sends it.
+
+## An AI agent for accounts receivable.
+
+Accounts receivable automation, from remittance to collections: the agent applies cash in the ERP and drafts the collections email and statement for each past-due customer from live aging. A person approves each receipt and sends every email.
+
+## Automated dunning, drafted from live aging.
+
+The collections agent drafts each past-due reminder from live aging, ready when the day starts. A person sends every one.
 
 In production
 
@@ -88,6 +96,12 @@ lumic builds it, and keeps it working.
 - Keying every remittance by hand → An agent keys it; you approve
 - A morning spent on collections emails → Drafts ready when the day starts
 - Build-and-ghost consultants → A team that stays on
+
+## Cash receipts and collections, in plain answers.
+
+### Can an agent handle dunning?
+
+Yes, in draft. Dunning means the reminder emails and statements that go to past-due customers. The agent writes them and never sends one; a person on your team sends each.
 
 ### Free consultation.
 

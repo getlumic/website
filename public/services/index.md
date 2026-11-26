@@ -2,7 +2,7 @@
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
 description: "Custom AI dashboards, agents and automations, built on site and kept working. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/services/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic

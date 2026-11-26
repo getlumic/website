@@ -2,7 +2,7 @@
 title: "AI agent skills for business: jobs your AI installs | lumic"
 description: "One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly."
 canonical: https://get-lumic.com/ai-agent-skills/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # AI agent skills for business: jobs your AI installs | lumic

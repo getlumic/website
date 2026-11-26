@@ -2,7 +2,7 @@
 title: "Custom AI for manufacturers: shop floor to books | lumic"
 description: "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # Custom AI for manufacturers: shop floor to books | lumic
@@ -23,7 +23,7 @@ lumic’s FDEs start beside the person who does each job today, then build one a
 
 ### Vendor bills against purchase orders
 
-The agent reads each vendor bill from email, matches it to the purchase order, and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
+The agent reads each vendor bill from email, [matches it to the purchase order](https://get-lumic.com/services/ap-automation/po-matching/), and flags a price difference before anyone pays. A person approves it, and nobody retypes it.
 
 Runs in: accounting software
 

@@ -2,7 +2,7 @@
 title: "Sage 100 AP automation with an AI agent | lumic"
 description: "An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts."
 canonical: https://get-lumic.com/systems/sage-100/ap-automation/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # Sage 100 AP automation with an AI agent | lumic
@@ -53,6 +53,8 @@ The vendor’s invoice number is already in Sage 100. The agent flags it, so the
 
 - Flagged before anyone pays
 
+[How invoice-to-PO matching works](https://get-lumic.com/services/ap-automation/po-matching/)
+
 ## Its own computer, its own login.
 
 ### Its own computer and login.
@@ -87,6 +89,7 @@ Yes. A lumic agent works with Sage 100 on its own dedicated computer, under its 
 
 - [AP automation](https://get-lumic.com/services/ap-automation/)
 - [Sage 100](https://get-lumic.com/systems/sage-100/)
+- [Sage 100 AR automation](https://get-lumic.com/systems/sage-100/ar-automation/)
 - [Pricing](https://get-lumic.com/pricing/)
 
 ## Based in St. Louis. Start with a conversation.

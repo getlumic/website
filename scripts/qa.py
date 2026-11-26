@@ -130,7 +130,7 @@ GUARDRAILS_NEW_CLAIMS = [r"\bSOC ?2\b", r"encrypt", r"certif", r"\bISO\b", r"HIP
 # Revamp 2026-11-24 (CEO brief): home title, H1 (with its kicker), the brand tagline under it, the nav, the four offer steps
 HOME_TITLE = "lumic | Custom AI implementation, St. Louis FDEs"
 HOME_H1 = "Custom AI, built into your business and kept working."  # audit P2-2: the kicker moved out of the h1 into the eyebrow
-TAGLINE = "AI, deployed into your business and kept working."
+TAGLINE = "AI that works with your systems and keeps working."
 NAV_LABELS = ["Services", "Managed AI", "How lumic works", "Pricing", "St. Louis"]
 STEP_LINKS = [CAL, "/ai-consulting/", "/ai-implementation/", "/managed-ai/"]
 # A schema price is a starting price only (minPrice or "starting" wording); never a fixed "price" field

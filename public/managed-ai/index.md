@@ -1,17 +1,17 @@
 ---
-title: "Managed AI on retainer: monitored and supported | lumic"
+title: "Managed AI services: monitored and supported | lumic"
 description: "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/managed-ai/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
-# Managed AI on retainer: monitored and supported | lumic
+# Managed AI services: monitored and supported | lumic
 
 > Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.
 
 Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
 
-# Managed AI: lumic keeps it working.
+# Managed AI services: lumic keeps it working.
 
 Once an agent is live, lumic watches it, tests it every month, fixes what breaks, and upgrades it as AI improves. A person on your team approves anything before it posts. You run the business.
 
@@ -95,6 +95,10 @@ Final pricing depends on your workflow and systems. These figures are starting p
 - At a glance
 - Managed AI Monthly, by scope
 - The build One-time, in the proposal
+
+## Managed AI services for St. Louis businesses.
+
+lumic is based in St. Louis. Its FDEs come on site across [Greater St. Louis](https://get-lumic.com/st-louis/), in Missouri and the Metro East, to build each agent, then keep it working every month: watched, tested, fixed and upgraded. lumic travels for the right fit.
 
 ## Managed AI, in plain answers.
 

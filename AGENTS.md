@@ -2,8 +2,8 @@
 
 # website — lumic marketing site
 
-Source for [get-lumic.com](https://get-lumic.com) — "AI, deployed into your business and
-kept working." Static site served from `public/`, deployed on
+Source for [get-lumic.com](https://get-lumic.com) — "AI that works with your systems and
+keeps working." Static site served from `public/`, deployed on
 Cloudflare Workers.
 
 ## Global / lumic doctrine

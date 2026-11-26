@@ -2,7 +2,7 @@
  {
   "@type": "Service",
   "@id": "https://get-lumic.com/managed-ai/#service",
-  "name": "Managed AI agents",
+  "name": "Managed AI services",
   "serviceType": "Managed AI services",
   "provider": {
    "@id": "https://get-lumic.com/#org"

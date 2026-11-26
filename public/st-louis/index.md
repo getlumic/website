@@ -2,7 +2,7 @@
 title: "St. Louis AI company: custom AI implementation | lumic"
 description: "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # St. Louis AI company: custom AI implementation | lumic
@@ -35,6 +35,12 @@ Illinois
 - St. Clair County
 
 [On site in the Metro East: Madison and St. Clair counties](https://get-lumic.com/st-louis/metro-east/)
+
+## An AI company in St. Louis that builds on site.
+
+lumic is an AI company based in St. Louis. Its Forward Deployed Engineers build [custom AI](https://get-lumic.com/ai-implementation/) agents, automations and live dashboards inside the systems a business already runs, and keep them working.
+
+[AI consultant in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
 
 How lumic works
 

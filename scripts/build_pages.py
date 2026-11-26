@@ -206,7 +206,7 @@ def footer(home=False):
         items.append(f'          <li><a href="{n["href"]}"{ext}>{esc(n["label"])}</a></li>')
     return (f'<footer>\n  <div class="wrap">\n    <div class="f-top">\n      <div>\n'
             f'        <a class="brand" href="{"#top" if home else "/"}" aria-label="lumic home">{BRAND}</a>\n'
-            f'        <p>AI, deployed into your business and kept working.</p>\n      </div>\n'
+            f'        <p>AI that works with your systems and keeps working.</p>\n      </div>\n'
             f'      <nav aria-label="Footer">\n        <ul class="f-links">\n' + "\n".join(items) + '\n        </ul>\n      </nav>\n    </div>\n'
             f'    <p class="f-bot"><span>© 2026 lumic</span><a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a><a href="/privacy/">Privacy</a></p>\n'
             f'  </div>\n</footer>')
@@ -281,7 +281,9 @@ LABELS = {"/services/": "Services", "/ai-implementation/": "AI implementation", 
           "/resources/how-to-implement-ai-in-a-small-business/": "How to implement AI in a small business",
           "/resources/ai-agent-for-accounting/": "AI agents for accounting",
           "/resources/how-to-choose-an-ai-implementation-partner/": "How to choose an AI implementation partner",
-          "/systems/sage-100/": "Sage 100", "/systems/sage-100/ap-automation/": "Sage 100 AP automation"}
+          "/systems/sage-100/": "Sage 100", "/systems/sage-100/ap-automation/": "Sage 100 AP automation",
+          "/systems/sage-100/ar-automation/": "Sage 100 AR automation",
+          "/services/ap-automation/po-matching/": "Invoice-to-PO matching"}
 
 
 def related(hrefs):

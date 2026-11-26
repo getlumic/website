@@ -2,7 +2,7 @@
 title: "AI consulting for small businesses, on site | lumic"
 description: "lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one."
 canonical: https://get-lumic.com/ai-consulting/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # AI consulting for small businesses, on site | lumic
@@ -64,7 +64,7 @@ The build, the timeline, and the monthly fee to keep it working, in writing.
 
 lumic’s FDEs come on site across Greater St. Louis, Missouri and Illinois, and travel for the right fit.
 
-- [AI consulting and automation in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
+- [AI consultant in St. Louis](https://get-lumic.com/st-louis/ai-consulting/)
 - [After the proposal: AI implementation](https://get-lumic.com/ai-implementation/)
 
 ## AI consulting, in plain answers.

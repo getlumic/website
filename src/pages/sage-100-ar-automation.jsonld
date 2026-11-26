@@ -1,0 +1,7 @@
+[
+ {"@type": "Service", "@id": "https://get-lumic.com/systems/sage-100/ar-automation/#service", "name": "Sage 100 AR automation with an AI agent",
+  "serviceType": "Accounts receivable automation", "provider": {"@id": "https://get-lumic.com/#org"}, "areaServed": "@AREA",
+  "audience": {"@type": "BusinessAudience", "name": "Small and mid-sized businesses"},
+  "url": "https://get-lumic.com/systems/sage-100/ar-automation/",
+  "description": "An agent reads remittances and ACH detail and prepares the cash receipt in Sage 100 for a person to approve, and drafts collections emails and statements from live Sage 100 aging for a person to send."}
+]

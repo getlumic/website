@@ -2,7 +2,7 @@
 title: "Custom AI for service firms: inbox, billing, close | lumic"
 description: "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
-last_updated: 2026-11-25
+last_updated: 2026-11-26
 ---
 
 # Custom AI for service firms: inbox, billing, close | lumic
