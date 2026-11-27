@@ -40,7 +40,7 @@ This page is not on get-lumic.com.
 
 - Home: https://get-lumic.com/ (markdown: https://get-lumic.com/index.md)
 - For AI agents: https://get-lumic.com/llms.txt
-- Contact: hello@get-lumic.com
+- Contact: hello@get-lumic.com or (618) 979-6837
 `;
 const HSTS = "max-age=31536000";
 const link = (md) => '</llms.txt>; rel="describedby"; type="text/plain"' + (md ? `, <${md}>; rel="alternate"; type="text/markdown"` : "");

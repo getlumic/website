@@ -2,14 +2,14 @@
 title: "AI invoice-to-PO matching for accounts payable | lumic"
 description: "An AI agent matches each vendor bill to its purchase order, flags price, quantity and duplicate-invoice issues, and a person approves before anything posts."
 canonical: https://get-lumic.com/services/ap-automation/po-matching/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI invoice-to-PO matching for accounts payable | lumic
 
 > An AI agent matches each vendor bill to its purchase order, flags price, quantity and duplicate-invoice issues, and a person approves before anything posts.
 
-Source: https://get-lumic.com/services/ap-automation/po-matching/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/ap-automation/po-matching/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI invoice-to-PO matching, with a person approving every bill.
 

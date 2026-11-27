@@ -2,7 +2,7 @@
 
 > lumic is a custom AI implementation firm based in St. Louis, Missouri, that can work with businesses anywhere in the United States. Its Forward Deployed Engineers (FDEs) build AI into any process, in any system a business runs, and keep it working on a monthly retainer. A person on the client's team approves what matters. It fits any business with repetitive work done by hand, for example manufacturers, distributors and service firms. In production: an AP agent reads each vendor bill from email, matches it to the purchase order and enters it once a person approves. The bills it can't match go to a person with the reason. Live in weeks, not quarters. Serves Greater St. Louis on both sides of the river and travels for the right fit.
 
-Updated: 2026-11-26
+Updated: 2026-11-27
 
 Not to be confused with lumic.ai, Lumiq, Lumicera, Lumico, getlumic.com or lumic.fr.
 
@@ -16,7 +16,7 @@ Profiles: https://www.linkedin.com/company/get-lumic | https://clutch.co/profile
 - How it is controlled: A person approves what matters before anything posts, and every action is logged.
 - Systems: lumic works with the ERP, accounting, email and spreadsheet tools a team already uses. https://get-lumic.com/systems/
 - Pricing: Free consultation. On-site work $1,500/day, credited toward phase one. The build is a separate, one-time cost, priced in the written proposal. Managed AI from $250 to $5,000 a month, depending on scope.
-- How to start: A 20-minute call, an on-site day, then a written proposal. hello@get-lumic.com
+- How to start: A 20-minute call, an on-site day, then a written proposal. hello@get-lumic.com or (618) 979-6837
 
 ## How an engagement runs
 - A 20-minute call.
@@ -107,7 +107,7 @@ On site in Greater St. Louis: St. Louis City, St. Louis County, St. Charles Coun
 - Details: https://get-lumic.com/pricing/ | Book a call to talk real pricing: https://cal.com/lumic/20-minute-call
 
 ## How to start
-A 20-minute call, then an on-site day beside the team, then a written proposal with what lumic would build, the timeline and the cost. Contact: hello@get-lumic.com
+A 20-minute call, then an on-site day beside the team, then a written proposal with what lumic would build, the timeline and the cost. Contact: hello@get-lumic.com or (618) 979-6837
 
 ## Pages
 - [Home](https://get-lumic.com/): what lumic does, the demo film, services, lead portfolio, systems, contact ([markdown](https://get-lumic.com/index.md))
@@ -158,14 +158,14 @@ A 20-minute call, then an on-site day beside the team, then a written proposal w
 title: "lumic | Custom AI implementation, St. Louis FDEs"
 description: "lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs."
 canonical: https://get-lumic.com/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # lumic | Custom AI implementation, St. Louis FDEs
 
 > lumic builds custom AI agents, automations and dashboards into the systems a business already runs, then keeps them working on retainer. St. Louis FDEs.
 
-Source: https://get-lumic.com/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 Based in St. Louis Forward Deployed Engineers
 
@@ -438,14 +438,14 @@ All questions: https://get-lumic.com/faq/
 title: "Custom AI implementation for small and mid-size businesses"
 description: "lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working."
 canonical: https://get-lumic.com/ai-implementation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI implementation for small and mid-size businesses
 
 > lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working.
 
-Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI implementation that ends in working software.
 
@@ -626,14 +626,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Managed AI services: monitored and supported | lumic"
 description: "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/managed-ai/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Managed AI services: monitored and supported | lumic
 
 > Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.
 
-Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Managed AI services: lumic keeps it working.
 
@@ -770,14 +770,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI consulting for small businesses, on site | lumic"
 description: "lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one."
 canonical: https://get-lumic.com/ai-consulting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI consulting for small businesses, on site | lumic
 
 > lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one.
 
-Source: https://get-lumic.com/ai-consulting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/ai-consulting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI consulting that ends in a working agent.
 
@@ -874,14 +874,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI agent skills for business: jobs your AI installs | lumic"
 description: "One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly."
 canonical: https://get-lumic.com/ai-agent-skills/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI agent skills for business: jobs your AI installs | lumic
 
 > One paid job, packaged for the AI assistant your team uses: the written procedure, the tools it needs and the approval steps. A setup fee, then monthly.
 
-Source: https://get-lumic.com/ai-agent-skills/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/ai-agent-skills/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # One job, packaged for your AI to install.
 
@@ -997,14 +997,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI solutions: agents, automations, dashboards | lumic"
 description: "Custom AI dashboards, agents and automations, built on site and kept working. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/services/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI solutions: agents, automations, dashboards | lumic
 
 > Custom AI dashboards, agents and automations, built on site and kept working. Managed AI from $250 to $5,000 a month, depending on scope.
 
-Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI solutions, one process at a time.
 
@@ -1194,14 +1194,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
 description: "lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
 canonical: https://get-lumic.com/services/ap-automation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
 
 > lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.
 
-Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # An AI agent that enters your vendor bills. A person approves each one.
 
@@ -1362,14 +1362,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI invoice-to-PO matching for accounts payable | lumic"
 description: "An AI agent matches each vendor bill to its purchase order, flags price, quantity and duplicate-invoice issues, and a person approves before anything posts."
 canonical: https://get-lumic.com/services/ap-automation/po-matching/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI invoice-to-PO matching for accounts payable | lumic
 
 > An AI agent matches each vendor bill to its purchase order, flags price, quantity and duplicate-invoice issues, and a person approves before anything posts.
 
-Source: https://get-lumic.com/services/ap-automation/po-matching/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/ap-automation/po-matching/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI invoice-to-PO matching, with a person approving every bill.
 
@@ -1508,14 +1508,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AR automation: cash application and collections | lumic"
 description: "An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AR automation: cash application and collections | lumic
 
 > An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.
 
-Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Cash receipts entered and collections drafted, ready when the day starts.
 
@@ -1657,14 +1657,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Payroll journal entry automation | lumic"
 description: "An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click."
 canonical: https://get-lumic.com/services/payroll/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Payroll journal entry automation | lumic
 
 > An agent builds the payroll journal entry from your payroll reports, with accruals and reversals, checks every line, and posts only on the controller's click.
 
-Source: https://get-lumic.com/services/payroll/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/payroll/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # The payroll journal entry, built for you. Posted only on your click.
 
@@ -1783,14 +1783,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Month-end close automation | lumic"
 description: "An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it."
 canonical: https://get-lumic.com/services/month-end-close/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Month-end close automation | lumic
 
 > An agent reads the month from your ERP, prepares the recurring entries and runs the tie-outs. Every entry lands unposted until the controller posts it.
 
-Source: https://get-lumic.com/services/month-end-close/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/month-end-close/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Month-end entries prepared and tied out. The controller posts them.
 
@@ -1915,14 +1915,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Live ERP dashboards and reporting | lumic"
 description: "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them."
 canonical: https://get-lumic.com/services/dashboards-and-reporting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Live ERP dashboards and reporting | lumic
 
 > Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them.
 
-Source: https://get-lumic.com/services/dashboards-and-reporting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/dashboards-and-reporting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Live dashboards on your own data. No more morning export.
 
@@ -2108,14 +2108,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI order entry and sales order automation | lumic"
 description: "AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one."
 canonical: https://get-lumic.com/services/order-desk-and-customer-service/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI order entry and sales order automation | lumic
 
 > AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.
 
-Source: https://get-lumic.com/services/order-desk-and-customer-service/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/order-desk-and-customer-service/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # An order desk agent, with a person sending every reply.
 
@@ -2235,14 +2235,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Portfolio: AI agents and dashboards in production | lumic"
 description: "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production."
 canonical: https://get-lumic.com/portfolio/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Portfolio: AI agents and dashboards in production | lumic
 
 > Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production.
 
-Source: https://get-lumic.com/portfolio/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/portfolio/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # In production, every day.
 
@@ -2432,14 +2432,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "How lumic works: FDEs, approvals and data security | lumic"
 description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it."
 canonical: https://get-lumic.com/how-lumic-works/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
 
 > lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it.
 
-Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # How lumic works: Forward Deployed Engineers, one job at a time.
 
@@ -2612,14 +2612,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Guardrails: approval, audit log, access and upkeep | lumic"
 description: "A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent."
 canonical: https://get-lumic.com/guardrails/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Guardrails: approval, audit log, access and upkeep | lumic
 
 > A person approves every entry before it posts, every action is logged, and each agent reaches only what its job needs. The practices on every lumic agent.
 
-Source: https://get-lumic.com/guardrails/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/guardrails/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Guardrails: gated by the people who know the work.
 
@@ -2705,14 +2705,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Pricing: custom AI implementation and managed AI | lumic"
 description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Pricing: custom AI implementation and managed AI | lumic
 
 > Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes.
 
-Source: https://get-lumic.com/pricing/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/pricing/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Pricing, in plain numbers.
 
@@ -2809,14 +2809,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI for manufacturers: shop floor to books | lumic"
 description: "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI for manufacturers: shop floor to books | lumic
 
 > Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry.
 
-Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI for manufacturers, from the floor to the books.
 
@@ -2957,14 +2957,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI for distributors: orders, purchasing, cash | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI for distributors: orders, purchasing, cash | lumic
 
 > Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.
 
-Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI for distributors, from the order desk to the books.
 
@@ -3105,14 +3105,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Custom AI for service firms: inbox, billing, close | lumic"
 description: "Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry."
 canonical: https://get-lumic.com/industries/service-firms/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI for service firms: inbox, billing, close | lumic
 
 > Custom AI for a service firm: the inbox, vendor bills, cash receipts, collections, payroll and month-end entries. A person approves each entry.
 
-Source: https://get-lumic.com/industries/service-firms/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/industries/service-firms/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI for service firms, from the inbox to the books.
 
@@ -3261,14 +3261,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "St. Louis AI company: custom AI implementation | lumic"
 description: "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # St. Louis AI company: custom AI implementation | lumic
 
 > lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit.
 
-Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 
@@ -3381,14 +3381,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI consultant in St. Louis: consulting and automation | lumic"
 description: "Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI consultant in St. Louis: consulting and automation | lumic
 
 > Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working.
 
-Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # St. Louis AI consulting and automation
 
@@ -3554,14 +3554,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI automation for Metro East businesses, on site | lumic"
 description: "lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry."
 canonical: https://get-lumic.com/st-louis/metro-east/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI automation for Metro East businesses, on site | lumic
 
 > lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry.
 
-Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI automation for Metro East businesses, on site.
 
@@ -3707,14 +3707,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Forward Deployed Engineers (FDEs) in St. Louis | lumic"
 description: "What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch."
 canonical: https://get-lumic.com/forward-deployed-engineers/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Forward Deployed Engineers (FDEs) in St. Louis | lumic
 
 > What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch.
 
-Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Forward Deployed Engineers (FDEs) in St. Louis
 
@@ -3826,14 +3826,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Forward Deployed Engineers for small and mid-size businesses | lumic"
 description: "lumic's FDEs work on site, build custom AI, one process at a time inside the systems a business already runs, and stay to keep it working."
 canonical: https://get-lumic.com/forward-deployed-engineers/small-business/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Forward Deployed Engineers for small and mid-size businesses | lumic
 
 > lumic's FDEs work on site, build custom AI, one process at a time inside the systems a business already runs, and stay to keep it working.
 
-Source: https://get-lumic.com/forward-deployed-engineers/small-business/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/forward-deployed-engineers/small-business/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Forward Deployed Engineers for small and mid-size businesses.
 
@@ -4019,14 +4019,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "FAQ: FDEs, AI agents and approvals | lumic"
 description: "What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job."
 canonical: https://get-lumic.com/faq/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # FAQ: FDEs, AI agents and approvals | lumic
 
 > What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job.
 
-Source: https://get-lumic.com/faq/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/faq/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Common questions about lumic.
 
@@ -4111,14 +4111,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Systems lumic works with: any software you run | lumic"
 description: "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't."
 canonical: https://get-lumic.com/systems/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Systems lumic works with: any software you run | lumic
 
 > ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't.
 
-Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # If your team runs it, lumic can work with it.
 
@@ -4248,14 +4248,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "QuickBooks AP automation with AI agents | lumic"
 description: "lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves."
 canonical: https://get-lumic.com/systems/quickbooks/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # QuickBooks AP automation with AI agents | lumic
 
 > lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves.
 
-Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents that work in QuickBooks Online and QuickBooks Desktop.
 
@@ -4383,14 +4383,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "NetSuite automation with AI agents | lumic"
 description: "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/netsuite/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # NetSuite automation with AI agents | lumic
 
 > lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts.
 
-Source: https://get-lumic.com/systems/netsuite/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/netsuite/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents that work in NetSuite.
 
@@ -4493,14 +4493,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Sage 100 automation and dashboards | lumic"
 description: "lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry."
 canonical: https://get-lumic.com/systems/sage-100/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Sage 100 automation and dashboards | lumic
 
 > lumic works with Sage 100. An agent prepares bills, receipts and entries on its own computer, dashboards read live, and a person approves each entry.
 
-Source: https://get-lumic.com/systems/sage-100/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/sage-100/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents and live dashboards that work with Sage 100.
 
@@ -4607,14 +4607,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Sage 100 AP automation with an AI agent | lumic"
 description: "An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts."
 canonical: https://get-lumic.com/systems/sage-100/ap-automation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Sage 100 AP automation with an AI agent | lumic
 
 > An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts.
 
-Source: https://get-lumic.com/systems/sage-100/ap-automation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/sage-100/ap-automation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Sage 100 AP automation, with a person posting every batch.
 
@@ -4722,14 +4722,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Sage 100 AR automation with an AI agent | lumic"
 description: "An agent reads remittances and ACH detail, prepares cash receipts in Sage 100 for approval and drafts collections emails from live aging. A person approves and sends."
 canonical: https://get-lumic.com/systems/sage-100/ar-automation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Sage 100 AR automation with an AI agent | lumic
 
 > An agent reads remittances and ACH detail, prepares cash receipts in Sage 100 for approval and drafts collections emails from live aging. A person approves and sends.
 
-Source: https://get-lumic.com/systems/sage-100/ar-automation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/sage-100/ar-automation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Sage 100 AR automation, with a person approving every receipt.
 
@@ -4820,14 +4820,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Sage Intacct automation with AI agents | lumic"
 description: "lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/sage-intacct/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Sage Intacct automation with AI agents | lumic
 
 > lumic works with Sage Intacct. An agent prepares bills, cash receipts and close entries in Intacct, and a person approves before anything posts.
 
-Source: https://get-lumic.com/systems/sage-intacct/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/sage-intacct/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents that work in Sage Intacct.
 
@@ -4933,14 +4933,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "Month-End Red Flags Service Firms Usually Miss | lumic"
 description: "Ten month-end mistakes in AP, billing, payroll and the close, on one page: a free checklist from lumic, with a PDF download."
 canonical: https://get-lumic.com/resources/month-end-red-flags/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Month-End Red Flags Service Firms Usually Miss | lumic
 
 > Ten month-end mistakes in AP, billing, payroll and the close, on one page: a free checklist from lumic, with a PDF download.
 
-Source: https://get-lumic.com/resources/month-end-red-flags/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/resources/month-end-red-flags/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Month-End Red Flags Service Firms Usually Miss
 
@@ -5019,14 +5019,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "How to implement AI in a small business | lumic"
 description: "A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working."
 canonical: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # How to implement AI in a small business | lumic
 
 > A practical method for putting AI to work in a small business: pick one job, map it, build inside your systems, keep a person on approval, and keep it working.
 
-Source: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # How to implement AI in a small business, one job at a time.
 
@@ -5126,14 +5126,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "AI agents for accounting: what they do, how to start | lumic"
 description: "What an AI agent for accounting does: vendor bills, cash receipts, payroll entries and month-end, prepared in your systems for a person to approve."
 canonical: https://get-lumic.com/resources/ai-agent-for-accounting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI agents for accounting: what they do, how to start | lumic
 
 > What an AI agent for accounting does: vendor bills, cash receipts, payroll entries and month-end, prepared in your systems for a person to approve.
 
-Source: https://get-lumic.com/resources/ai-agent-for-accounting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/resources/ai-agent-for-accounting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents for accounting: what they do, and how to start.
 
@@ -5247,14 +5247,14 @@ A written proposal. What lumic would build, the timeline, and the cost.
 title: "How to choose an AI implementation partner | lumic"
 description: "A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal."
 canonical: https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # How to choose an AI implementation partner | lumic
 
 > A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal.
 
-Source: https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # How to choose an AI implementation partner.
 

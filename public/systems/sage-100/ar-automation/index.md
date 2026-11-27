@@ -2,14 +2,14 @@
 title: "Sage 100 AR automation with an AI agent | lumic"
 description: "An agent reads remittances and ACH detail, prepares cash receipts in Sage 100 for approval and drafts collections emails from live aging. A person approves and sends."
 canonical: https://get-lumic.com/systems/sage-100/ar-automation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Sage 100 AR automation with an AI agent | lumic
 
 > An agent reads remittances and ACH detail, prepares cash receipts in Sage 100 for approval and drafts collections emails from live aging. A person approves and sends.
 
-Source: https://get-lumic.com/systems/sage-100/ar-automation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/sage-100/ar-automation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Sage 100 AR automation, with a person approving every receipt.
 

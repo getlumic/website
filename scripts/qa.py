@@ -300,6 +300,10 @@ def check_phase5(b):
     for path in ["/"] + [p["path"] for p in CFG["pages"]]:
         html = fetch(BASE + path)[1]
         seen_ld += [(path, blk) for blk in ld_blocks(html) if isinstance(blk, dict)]
+        # tap-to-call: every footered page carries the schema telephone as a tel: link in the footer
+        ft = re.search(r"<footer>.*?</footer>", html, re.S)
+        if not ft or 'href="tel:+16189796837"' not in ft.group(0) or '(618) 979-6837' not in ft.group(0):
+            fails.append(f"{path}: footer has no tap-to-call link")
     try:
         seen_ld.append(("/schema.jsonld", json.loads(fetch(BASE + "/schema.jsonld")[1])))
     except Exception as e:

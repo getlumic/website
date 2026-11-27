@@ -2,14 +2,14 @@
 title: "How to choose an AI implementation partner | lumic"
 description: "A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal."
 canonical: https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # How to choose an AI implementation partner | lumic
 
 > A buyer's checklist for an AI implementation partner: on site or remote, who approves, what upkeep covers, published prices, ownership and the proposal.
 
-Source: https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # How to choose an AI implementation partner.
 

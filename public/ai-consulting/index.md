@@ -2,14 +2,14 @@
 title: "AI consulting for small businesses, on site | lumic"
 description: "lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one."
 canonical: https://get-lumic.com/ai-consulting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI consulting for small businesses, on site | lumic
 
 > lumic's FDEs spend a day on site, map where AI fits your business and write the proposal. On-site work $1,500/day, credited toward phase one.
 
-Source: https://get-lumic.com/ai-consulting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/ai-consulting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI consulting that ends in a working agent.
 

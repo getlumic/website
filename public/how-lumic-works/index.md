@@ -2,14 +2,14 @@
 title: "How lumic works: FDEs, approvals and data security | lumic"
 description: "lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it."
 canonical: https://get-lumic.com/how-lumic-works/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # How lumic works: FDEs, approvals and data security | lumic
 
 > lumic's FDEs work on site, build one agent per job and keep it working. Each agent touches only its job, every action is logged, and the work is gated by the people who know it.
 
-Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/how-lumic-works/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # How lumic works: Forward Deployed Engineers, one job at a time.
 

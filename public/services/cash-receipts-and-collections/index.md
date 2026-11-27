@@ -2,14 +2,14 @@
 title: "AR automation: cash application and collections | lumic"
 description: "An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one."
 canonical: https://get-lumic.com/services/cash-receipts-and-collections/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AR automation: cash application and collections | lumic
 
 > An AI agent for accounts receivable: it reads remittances and ACH detail, applies cash in your ERP and drafts collections emails. A person approves and sends every one.
 
-Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/cash-receipts-and-collections/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Cash receipts entered and collections drafted, ready when the day starts.
 

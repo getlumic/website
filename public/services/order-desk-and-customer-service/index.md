@@ -2,14 +2,14 @@
 title: "AI order entry and sales order automation | lumic"
 description: "AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one."
 canonical: https://get-lumic.com/services/order-desk-and-customer-service/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI order entry and sales order automation | lumic
 
 > AI order entry: an agent reads each purchase order and customer email, drafts the sales order and the reply in your systems, and a person checks and sends each one.
 
-Source: https://get-lumic.com/services/order-desk-and-customer-service/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/order-desk-and-customer-service/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # An order desk agent, with a person sending every reply.
 

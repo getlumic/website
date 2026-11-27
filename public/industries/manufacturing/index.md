@@ -2,14 +2,14 @@
 title: "Custom AI for manufacturers: shop floor to books | lumic"
 description: "Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry."
 canonical: https://get-lumic.com/industries/manufacturing/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI for manufacturers: shop floor to books | lumic
 
 > Custom AI for a manufacturer: production schedules, purchasing and POs, freight bills, vendor bills, job costing and month-end. A person approves each entry.
 
-Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/industries/manufacturing/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI for manufacturers, from the floor to the books.
 

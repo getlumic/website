@@ -2,14 +2,14 @@
 title: "Custom AI implementation for small and mid-size businesses"
 description: "lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working."
 canonical: https://get-lumic.com/ai-implementation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI implementation for small and mid-size businesses
 
 > lumic's FDEs build custom AI into any process and any system, through an API or the screen, check every document's math and keep it all working.
 
-Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/ai-implementation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI implementation that ends in working software.
 

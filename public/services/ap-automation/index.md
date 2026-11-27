@@ -2,14 +2,14 @@
 title: "AI agent for accounts payable: bill entry and PO matching | lumic"
 description: "lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters."
 canonical: https://get-lumic.com/services/ap-automation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI agent for accounts payable: bill entry and PO matching | lumic
 
 > lumic's AP automation service: an AI agent reads each vendor bill from email, matches it to the PO and enters it once a person approves. Live in weeks, not quarters.
 
-Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/ap-automation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # An AI agent that enters your vendor bills. A person approves each one.
 

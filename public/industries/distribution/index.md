@@ -2,14 +2,14 @@
 title: "Custom AI for distributors: orders, purchasing, cash | lumic"
 description: "Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval."
 canonical: https://get-lumic.com/industries/distribution/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Custom AI for distributors: orders, purchasing, cash | lumic
 
 > Cash receipts keyed, collections drafted, and margin by customer, product and rep, live across companies. Each entry waits for a person's approval.
 
-Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/industries/distribution/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Custom AI for distributors, from the order desk to the books.
 

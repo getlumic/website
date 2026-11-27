@@ -2,14 +2,14 @@
 title: "FAQ: FDEs, AI agents and approvals | lumic"
 description: "What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job."
 canonical: https://get-lumic.com/faq/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # FAQ: FDEs, AI agents and approvals | lumic
 
 > What an FDE is, where the agent runs, what it can touch, who approves its work, how long it takes to go live, and how lumic prices a job.
 
-Source: https://get-lumic.com/faq/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/faq/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Common questions about lumic.
 

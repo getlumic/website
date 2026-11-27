@@ -2,14 +2,14 @@
 title: "Forward Deployed Engineers (FDEs) in St. Louis | lumic"
 description: "What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch."
 canonical: https://get-lumic.com/forward-deployed-engineers/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Forward Deployed Engineers (FDEs) in St. Louis | lumic
 
 > What a Forward Deployed Engineer does for a business, and how lumic's St. Louis FDEs work on site, build inside your systems and stay after launch.
 
-Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/forward-deployed-engineers/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Forward Deployed Engineers (FDEs) in St. Louis
 

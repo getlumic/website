@@ -2,14 +2,14 @@
 title: "Systems lumic works with: any software you run | lumic"
 description: "ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't."
 canonical: https://get-lumic.com/systems/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Systems lumic works with: any software you run | lumic
 
 > ERP, accounting, CRM, email, spreadsheets, payroll and desktop apps: through an API where there is one, through the screen where there isn't.
 
-Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # If your team runs it, lumic can work with it.
 

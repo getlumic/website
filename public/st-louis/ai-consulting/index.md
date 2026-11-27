@@ -2,14 +2,14 @@
 title: "AI consultant in St. Louis: consulting and automation | lumic"
 description: "Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working."
 canonical: https://get-lumic.com/st-louis/ai-consulting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI consultant in St. Louis: consulting and automation | lumic
 
 > Looking for an AI consultant in St. Louis? lumic's FDEs come on site, build AI automation and workflow integration into the systems a business runs, and keep it working.
 
-Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/st-louis/ai-consulting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # St. Louis AI consulting and automation
 

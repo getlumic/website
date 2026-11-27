@@ -183,7 +183,7 @@ def main():
     foot = re.sub(r"<[^>]+>", "", foot).replace("·", "|").strip()
     front = (f"---\ntitle: \"{title}\"\ndescription: \"{desc}\"\ncanonical: {SITE}/\n"
              f"last_updated: {today}\n---\n\n")
-    page = (front + f"# {title}\n\n> {desc}\n\nSource: {SITE}/ | Contact: hello@get-lumic.com\n\n{body}\n\n## Questions\n\n{faq_md}\n\n"
+    page = (front + f"# {title}\n\n> {desc}\n\nSource: {SITE}/ | Contact: hello@get-lumic.com or (618) 979-6837\n\n{body}\n\n## Questions\n\n{faq_md}\n\n"
             f"All questions: {SITE}/faq/\n\n---\n\n{foot}\n")
     io.open(PUB / "index.md", "w", encoding="utf-8", newline="\n").write(page)
     copies, graph = [page], list(ld["@graph"])
@@ -195,7 +195,7 @@ def main():
         h = io.open(src, encoding="utf-8").read()
         url = SITE + p["path"]
         md = (f"---\ntitle: \"{p['title']}\"\ndescription: \"{p['description']}\"\ncanonical: {url}\nlast_updated: {today}\n---\n\n"
-              f"# {p['title']}\n\n> {p['description']}\n\nSource: {url} | Contact: hello@get-lumic.com\n\n{page_md(h)}\n\n---\n\n{foot}\n")
+              f"# {p['title']}\n\n> {p['description']}\n\nSource: {url} | Contact: hello@get-lumic.com or (618) 979-6837\n\n{page_md(h)}\n\n---\n\n{foot}\n")
         io.open(src.parent / "index.md", "w", encoding="utf-8", newline="\n").write(md)
         copies.append(md)
         seen = {g.get("@id") for g in graph if g.get("@id")}

@@ -2,14 +2,14 @@
 title: "Live ERP dashboards and reporting | lumic"
 description: "Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them."
 canonical: https://get-lumic.com/services/dashboards-and-reporting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Live ERP dashboards and reporting | lumic
 
 > Sales and margin, receivables, purchasing, job costing and consolidated financials, read live from your ERP. Dashboards only read; nothing posts from them.
 
-Source: https://get-lumic.com/services/dashboards-and-reporting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/services/dashboards-and-reporting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Live dashboards on your own data. No more morning export.
 

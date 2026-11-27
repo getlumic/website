@@ -2,14 +2,14 @@
 title: "Portfolio: AI agents and dashboards in production | lumic"
 description: "Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production."
 canonical: https://get-lumic.com/portfolio/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Portfolio: AI agents and dashboards in production | lumic
 
 > Agents and live dashboards lumic built, running every day in production. Clients are kept private; everything shown runs in production.
 
-Source: https://get-lumic.com/portfolio/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/portfolio/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # In production, every day.
 

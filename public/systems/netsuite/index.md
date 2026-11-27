@@ -2,14 +2,14 @@
 title: "NetSuite automation with AI agents | lumic"
 description: "lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts."
 canonical: https://get-lumic.com/systems/netsuite/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # NetSuite automation with AI agents | lumic
 
 > lumic works with NetSuite. An agent prepares vendor bills, cash receipts and close entries in NetSuite, and a person approves before anything posts.
 
-Source: https://get-lumic.com/systems/netsuite/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/netsuite/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents that work in NetSuite.
 

@@ -292,7 +292,7 @@
    "publisher": {
     "@id": "https://get-lumic.com/#org"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "WebPage",
@@ -310,7 +310,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-implementation/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -437,7 +437,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/managed-ai/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -564,7 +564,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-consulting/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -690,7 +690,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/ai-agent-skills/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -810,7 +810,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -943,7 +943,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/ap-automation/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -1084,7 +1084,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/ap-automation/po-matching/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -1211,7 +1211,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/cash-receipts-and-collections/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -1316,7 +1316,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/payroll/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -1407,7 +1407,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/month-end-close/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -1498,7 +1498,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/dashboards-and-reporting/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -1611,7 +1611,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/services/order-desk-and-customer-service/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -1732,7 +1732,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/portfolio/#breadcrumb"
    },
-   "dateModified": "2026-11-26",
+   "dateModified": "2026-11-27",
    "mainEntity": {
     "@id": "https://get-lumic.com/portfolio/#items"
    }
@@ -1982,7 +1982,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/how-lumic-works/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2043,7 +2043,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/guardrails/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2079,7 +2079,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/pricing/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2200,7 +2200,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/manufacturing/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2285,7 +2285,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/distribution/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2370,7 +2370,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/industries/service-firms/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2455,7 +2455,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2513,7 +2513,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/ai-consulting/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2662,7 +2662,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/st-louis/metro-east/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2751,7 +2751,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/forward-deployed-engineers/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -2882,7 +2882,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/forward-deployed-engineers/small-business/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3003,7 +3003,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/faq/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3133,7 +3133,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3169,7 +3169,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/quickbooks/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3274,7 +3274,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/netsuite/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3365,7 +3365,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-100/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3456,7 +3456,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-100/ap-automation/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3567,7 +3567,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-100/ar-automation/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3686,7 +3686,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/systems/sage-intacct/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3777,7 +3777,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/month-end-red-flags/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3813,7 +3813,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/how-to-implement-ai-in-a-small-business/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3849,7 +3849,7 @@
    },
    "datePublished": "2026-11-24",
    "inLanguage": "en",
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "WebPage",
@@ -3867,7 +3867,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/ai-agent-for-accounting/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3903,7 +3903,7 @@
    },
    "datePublished": "2026-11-24",
    "inLanguage": "en",
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "WebPage",
@@ -3921,7 +3921,7 @@
    "breadcrumb": {
     "@id": "https://get-lumic.com/resources/how-to-choose-an-ai-implementation-partner/#breadcrumb"
    },
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   },
   {
    "@type": "BreadcrumbList",
@@ -3957,7 +3957,7 @@
    },
    "datePublished": "2026-11-25",
    "inLanguage": "en",
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-27"
   }
  ]
 }

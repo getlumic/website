@@ -2,14 +2,14 @@
 title: "QuickBooks AP automation with AI agents | lumic"
 description: "lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves."
 canonical: https://get-lumic.com/systems/quickbooks/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # QuickBooks AP automation with AI agents | lumic
 
 > lumic works with QuickBooks Online and Desktop. An agent reads each vendor bill, matches the PO and enters the bill once a person approves.
 
-Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/quickbooks/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents that work in QuickBooks Online and QuickBooks Desktop.
 

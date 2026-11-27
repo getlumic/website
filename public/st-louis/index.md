@@ -2,14 +2,14 @@
 title: "St. Louis AI company: custom AI implementation | lumic"
 description: "lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit."
 canonical: https://get-lumic.com/st-louis/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # St. Louis AI company: custom AI implementation | lumic
 
 > lumic's St. Louis AI team works on site beside your people and builds custom AI into any process, in any system you run. lumic travels for the right fit.
 
-Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/st-louis/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Forward Deployed Engineers in St. Louis. Custom AI, built on site.
 

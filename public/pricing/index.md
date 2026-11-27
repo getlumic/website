@@ -2,14 +2,14 @@
 title: "Pricing: custom AI implementation and managed AI | lumic"
 description: "Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes."
 canonical: https://get-lumic.com/pricing/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Pricing: custom AI implementation and managed AI | lumic
 
 > Free consultation. On-site work $1,500/day, credited toward phase one. Managed AI from $250 to $5,000 a month, depending on scope. Starting points, not quotes.
 
-Source: https://get-lumic.com/pricing/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/pricing/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Pricing, in plain numbers.
 

@@ -2,14 +2,14 @@
 title: "AI agents for accounting: what they do, how to start | lumic"
 description: "What an AI agent for accounting does: vendor bills, cash receipts, payroll entries and month-end, prepared in your systems for a person to approve."
 canonical: https://get-lumic.com/resources/ai-agent-for-accounting/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI agents for accounting: what they do, how to start | lumic
 
 > What an AI agent for accounting does: vendor bills, cash receipts, payroll entries and month-end, prepared in your systems for a person to approve.
 
-Source: https://get-lumic.com/resources/ai-agent-for-accounting/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/resources/ai-agent-for-accounting/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI agents for accounting: what they do, and how to start.
 

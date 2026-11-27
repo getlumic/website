@@ -2,14 +2,14 @@
 title: "Sage 100 AP automation with an AI agent | lumic"
 description: "An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts."
 canonical: https://get-lumic.com/systems/sage-100/ap-automation/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Sage 100 AP automation with an AI agent | lumic
 
 > An agent reads each vendor bill, matches it to the PO and prepares the invoice and receipt in Sage 100. A person reviews and posts.
 
-Source: https://get-lumic.com/systems/sage-100/ap-automation/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/systems/sage-100/ap-automation/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Sage 100 AP automation, with a person posting every batch.
 

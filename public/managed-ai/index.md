@@ -2,14 +2,14 @@
 title: "Managed AI services: monitored and supported | lumic"
 description: "Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope."
 canonical: https://get-lumic.com/managed-ai/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # Managed AI services: monitored and supported | lumic
 
 > Night releases that roll back, a watchdog on every app, a ticketed support desk and monthly tests. Managed AI from $250 to $5,000 a month, depending on scope.
 
-Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/managed-ai/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # Managed AI services: lumic keeps it working.
 

@@ -206,7 +206,7 @@ def footer(home=False):
         items.append(f'          <li><a href="{n["href"]}"{ext}>{esc(n["label"])}</a></li>')
     return (f'<footer>\n  <div class="wrap">\n    <div class="f-top">\n      <div>\n'
             f'        <a class="brand" href="{"#top" if home else "/"}" aria-label="lumic home">{BRAND}</a>\n'
-            f'        <p>AI that works with your systems and keeps working.</p>\n      </div>\n'
+            f'        <p>AI that works with your systems and keeps working.</p>\n        <p><a href="tel:+16189796837">(618) 979-6837</a></p>\n      </div>\n'
             f'      <nav aria-label="Footer">\n        <ul class="f-links">\n' + "\n".join(items) + '\n        </ul>\n      </nav>\n    </div>\n'
             f'    <p class="f-bot"><span>© 2026 lumic</span><a href="/st-louis/">Serving Greater St. Louis, Missouri and Illinois</a><a href="/privacy/">Privacy</a></p>\n'
             f'  </div>\n</footer>')

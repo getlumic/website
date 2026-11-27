@@ -2,14 +2,14 @@
 title: "AI automation for Metro East businesses, on site | lumic"
 description: "lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry."
 canonical: https://get-lumic.com/st-louis/metro-east/
-last_updated: 2026-11-26
+last_updated: 2026-11-27
 ---
 
 # AI automation for Metro East businesses, on site | lumic
 
 > lumic's FDEs work on site across the Metro East, in Madison and St. Clair counties, building custom AI one process at a time. A person approves each entry.
 
-Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.com
+Source: https://get-lumic.com/st-louis/metro-east/ | Contact: hello@get-lumic.com or (618) 979-6837
 
 # AI automation for Metro East businesses, on site.
 
